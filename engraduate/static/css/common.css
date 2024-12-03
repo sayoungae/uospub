@@ -1,0 +1,239 @@
+@import 'reset.css';
+@import 'main.css';
+
+/* fonts */
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./fonts/Pretendard-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./fonts/Pretendard-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./fonts/Pretendard-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./fonts/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./fonts/Pretendard-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./fonts/Pretendard-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./fonts/Pretendard-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./fonts/Pretendard-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./fonts/Pretendard-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+/* -- fonts */
+/*전체 공통*/
+input::placeholder{color:#757575; font-size: 14px;}
+a, span, b, strong{display: inline-block;}
+
+body{font-weight: 400; min-width: 320px; line-height: 1.4; font-family: 'Pretendard';}
+.blind {position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); margin: -1px;}
+.clearfix:after{content: "";display: block;height: 0;clear: both;visibility: hidden;}
+/* margin */
+.mt5 {margin-top:5px;}
+.mt10 {margin-top:10px;}
+.mt15 {margin-top:15px;}
+.mt20 {margin-top:20px;}
+.mt25 {margin-top:25px;}
+.mt30 {margin-top:30px;}
+.mt40 {margin-top:40px;}
+
+.mb5{margin-bottom: 5px;}
+.mb10{margin-bottom: 10px;}
+.mb15{margin-bottom: 15px;}
+.mb20{margin-bottom: 20px;}
+.mb25{margin-bottom: 25px;}
+.mb30{margin-bottom: 30px;}
+
+/* padding */
+.pl10{padding-left: 10px;}
+.pl15{padding-left: 15px;}
+.pl20{padding-left: 20px;}
+.pl25{padding-left: 25px;}
+
+
+/* text-align */
+.al{text-align:left;}
+.ac{text-align:center;}
+.ar{text-align:right;}
+/* font-size */
+.fz16{font-size: 16px;}
+.fz18{font-size: 18px;}
+.fz20{font-size: 20px;}
+.fz22{font-size: 22px;}
+.fz24{font-size: 24px;}
+
+/* font-weight */
+.f-light{font-weight: 100;}
+.f-normal{font-weight: 400;}
+.f-bold{font-weight: 700;}
+/* color */
+.fcW{color:#fff;}
+.fcBk{color:#2a2a2a;}
+.fcBl{color:#0e3174;}
+.fcBl2{color:#1b4fb4;}
+.fcR{color:#e60013;}
+.fcR2{color:#d23340;}
+.point{color:#0e3174;}
+/* var */
+:root{
+    /* font-size */
+    --fz-16: 16px;
+    --fz-18: 18px;
+    --fz-20: 20px;
+    --fz-22: 22px;
+    --fz-24: 24px;
+
+}
+@media (max-width: 480px) {
+    :root{
+            /* font-size */
+            --fz-16: 14px;
+            --fz-18: 16px;
+            --fz-20: 18px;
+            --fz-22: 20px;
+            --fz-24: 22px;
+    
+    }
+}
+/* --var */
+/* dot-list */
+.dot-list01{padding-left: 11px;}
+.dot-list01 > li{position: relative; padding-left: 14px; overflow: hidden;}
+.dot-list01 > li + li{margin-top: 10px;}
+.dot-list01 > li::before{content:""; display: inline-block; width: 5px; height: 5px; background-color: #BEBEBE; border-radius: 50%; position: absolute; left:0; top:9px}
+
+/* -- 전체 공통*/
+.inner{max-width: 1530px; margin:0 auto; padding:0 20px;}
+/* ***********************************
+            common.css
+        header / GNB / footer
+* ***********************************/
+.header-top{background-color: #003B9E; color:#fff; font-size: 14px; padding:10px 0;}
+.util-wrp{float:right;}
+.util-wrp > li{padding:0 8px; position: relative; float: left; text-transform: uppercase;}
+.util-wrp > li:after{
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    background-color: rgba(255,255,255,0.6);
+    position: absolute;
+    right:0;
+    top:5px;
+
+}
+.util-wrp > li:last-child:after{display: none;}
+
+.header-bot{background-color: #fff; position: relative;}
+.header-bot > .inner{display: flex;align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px;}
+
+.gnb-wrp{padding:40px 0px;}
+.gnb-wrp > .depth1{display: flex; gap: 50px; font-size: 20px;}
+.gnb-wrp > .depth1 .dp2-bx{display: none; position: absolute; z-index: 1000;background-color: #fff; width: 100%; left:0; top:100%;}
+.gnb-wrp > .depth1 .dp2-bx > div{display: flex; align-items: stretch;}
+.gnb-wrp > .depth1 .dp2-itx{max-width: 425px; width: 22%; font-size: 48px; font-weight: 900; color:#fff; background-image: url("../images/gnb-bg01.png"); background-repeat: no-repeat;background-size: auto 100%; position: relative;}
+.gnb-wrp > .depth1 .dp2-itx > h2{position: absolute; right: 20px; top:50px;}
+.gnb-wrp  .depth2{width: 78%; padding:40px;display: flex; gap: 30px; align-items: stretch; flex-wrap: wrap;}
+.gnb-wrp  .depth2 > li{width: calc(100% / 4 - 23px);}
+.gnb-wrp  .depth2 > li > a{width: 100%; padding:10px 20px; border:1px solid #CFCFCF; word-break: break-all;}
+.gnb-wrp  .depth2 > li > .depth3{padding:20px 10px; font-size: 18px; }
+.depth3 > li{position: relative;padding-left: 10px;}
+.depth3 > li + li{margin-top: 6px;}
+.depth3 > li::before{content:""; display: inline-block; width: 4px; height: 4px; background-color: #808080; position: absolute; left:0; top:11px; border-radius: 50%;}
+.depth3 > li > a{color:#555;}
+
+/* hover */
+.gnb-wrp  .depth2 > li.on > a{background-color: #003B9E; color:#fff; border-color: #003B9E;}
+.depth3 > li > a:hover,.depth3 > li > a:focus{color:#2665d0; text-decoration: underline;}
+
+
+.header-bot .srch-wrp > .srch-btn{width: 26px; height: 26px; background: url("../images/search-icn.png") no-repeat; margin-right: 27px;}
+.header-bot .srch-wrp > .all-menu{padding:9px 0; position: relative;}
+.header-bot .srch-wrp > .all-menu > p{width: 24px; height: 3px; background-color: #333; }
+.header-bot .srch-wrp > .all-menu >p::before,
+.header-bot .srch-wrp > .all-menu >p::after{content:""; display: inline-block; height: 3px; background-color: #333; position: absolute; right:0;}
+.header-bot .srch-wrp > .all-menu >p::before{width: 100%; top:0;}
+.header-bot .srch-wrp > .all-menu >p::after{width: 60%; bottom:0; transition: 0.2s;}
+.header-bot .srch-wrp > .all-menu:hover >p::after{width: 100%}
+
+#footer{background-color: #333333; color: #949494; padding:60px 0;}
+#footer .foot-link{display: flex; margin-bottom: 20px; flex-wrap: wrap;}
+#footer .foot-link > li{position: relative;     margin-right: 20px; margin-bottom: 5px;}
+#footer .foot-link > li:after{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    width: 1px;
+    height: 14px;
+    margin-top: -8px;
+    background: #656565;
+}
+#footer .foot-link > li:last-child:after{display: none;}
+#footer .foot-link > li:first-child{color:#fff;}
+
+
+@media (max-width: 1400px) {
+    .header-bot{padding-top: 30px;}
+    .h-logo{order:1}
+    .gnb-wrp{width: 100%; padding:20px; order:3}
+    .gnb-wrp > .depth1{justify-content: space-between}
+    .srch-wrp{order:2}
+}
+@media (max-width: 1024px) {
+    .header-bot{padding:20px 0;}
+    .gnb-wrp{display: none;}
+    .header-bot .srch-wrp > .srch-btn{margin-right: 10px;}
+}
+@media (max-width: 480px) {
+    .util-wrp > li{font-size: 13px;}
+    .h-logo{width: 250px;}
+    .h-logo img{width: 100%; margin-top: 3px;}
+    .header-bot .srch-wrp > .srch-btn{background-size: 100% 100%; width: 20px; height: 20px;vertical-align: middle;}
+    .header-bot .srch-wrp > .all-menu{padding:6px 0;}
+    .header-bot .srch-wrp > .all-menu > p{height: 2px; width: 20px;}
+    .header-bot .srch-wrp > .all-menu >p::before, .header-bot .srch-wrp > .all-menu >p::after{height: 2px;}
+
+    #footer{font-size: 13px;}
+    #footer .foot-link{font-size: 14px;}
+}
+@media (max-width: 380px) {
+    .h-logo{width: 220px;}
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>국제처 소개</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../static/css/common.css">
+    <!-- JS -->
+    <script src="../../static/js/jquery-3.7.1.js"></script>
+    <script src="../../static/js/common.js"></script>
+    <script>
+        // header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+       
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <div class="wid">
+                <h2 class="pg-tit">국제처장 인사말</h2>
+                <div id="snb-wrap"></div>
+                <div class="content-area">
+                    <div id="contents">
+                        <div class="greeting_box">
+                            <div class="img_bx">
+                                <p><img src="../../static/images/jihee_song.jpg" alt=""></p>
+                                <p class="tit">국제처장 송지희</p>
+                            </div>
+                            <div class="txt_bx">
+                                서울시립대학교 국제처는 글로벌 시대에 발맞추어 국제적 감각과 경쟁력을 갖춘 인재를 양성하기 위해 노력하고 있습니다. 우리 대학의 미래를 함께 이끌어갈 모든 구성원들을 진심으로 환영합니다.<br/><br/>
+
+                                우리 국제처는 국제협력, 국제인재, 국제역량이라는 세 가지 핵심가치를 바탕으로 서울과 함께 세계로 도약하기 위한 미션을 달성하기 위해 다양한 사업을 추진하고 있습니다.<br/><br/>
+
+                                첫째, 국제협력을 통해 세계 유수 기관들과의 글로벌 네트워크를 강화하고 공동 연구 및 교류를 활성화하여 국제적 영향력을 확대하는 데 힘쓰고 있습니다. 현재, 78개국 624개의 해외 대학과의 교류 협정을 통해 글로벌 네트워크를 구축하여 세계 유수기관들과의 공동연구 및 교류를 확대하기 위해 노력하고 있습니다.<br/><br/>
+
+                                둘째, 국제인재 양성을 위해 세계 유수 유학생을 유치하기 위한 맞춤형 프로그램을 개발하고, 재학생들에게 다양한 국제 활동 참여 기회를 제공하여 글로벌 시각과 경쟁력을 갖춘 세계 시민으로 성장할 수 있도록 지원하고 있습니다. 서울시립대 국제처는 전세계에 매년 400여명의학생들을 파견하고 연간 2,000여명의 외국인 유학생과 500여명의 교환 및 방문학생을 유치하여 재학생들의 국제적 감각을 기를 수 있는 기회를 제공하고 있습니다.<br/><br/>
+
+                                셋째, 국제역량 강화를 위해 캠퍼스의 국제화와 주요 국내외 대학 평가 지표 향상을 통해 서울시립대학교의 글로벌 경쟁력을 가시적으로 강화해 나가고 있습니다. 우리 국제처는 내실있는 학위과정 및 어학연수과정을 설계하고 추진함으로써 지난 10년간 연속으로 교육국제화역량인증제(IEQAS)에서 최고등급인 우수인증대학으로 선정되는 등 탁월한 평가를 받아오고 있습니다.<br/><br/>
+
+                                서울시립대학교는 한국 그리고 서울에서의 새로운 삶을 경험하고자 하는 외국인 학생 및 교수진들에게 항상 열려 있습니다. 또한 글로벌 사회로의 첫 발걸음을 디딛고자 하는 교내 구성원들에게 다양한 국제화 기회를 제공하고 있습니다.<br/>
+                                앞으로도 서울시립대학교 국제처는 유수의 기관과 협력을 통해 대학의 국제 인지도를 높이고, 세계 유수한 학생들을 유치하여 글로벌 인재로 양성하며, 대학의 글로벌 역량을 높이는데 최선의 노력을 다할 것입니다.<br/><br/>
+
+                                감사합니다.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

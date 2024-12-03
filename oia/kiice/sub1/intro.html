@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>국제처 소개</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../static/css/common.css">
+    <!-- JS -->
+    <script src="../../static/js/jquery-3.7.1.js"></script>
+    <script src="../../static/js/common.js"></script>
+    <script>
+        // header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        // fetch('../include/snb.html')
+        //     .then(response => response.text())
+        //     .then(data => document.getElementById('snb-wrap').innerHTML = data);
+       
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <div class="wid">
+                <h2 class="pg-tit">인사말</h2>
+                <div id="snb-wrap">
+                    <div class="sub-tp">
+                        <div class="clearfix">
+                            <script>
+                    
+                                var nowZoom = 100;
+                                var agent = navigator.userAgent.toLowerCase();
+                                function zoomIn() {
+                                    nowZoom -= 10;
+                                    if (nowZoom <= 70) nowZoom = 70;
+                                    zooms();
+                                }
+                    
+                                function zoomOut() {
+                                    nowZoom += 20;
+                                    if (nowZoom >= 500) nowZoom = 500;
+                                    zooms();
+                                }
+                    
+                                function zoomReset() {
+                                    nowZoom = 100;
+                                    zooms();
+                                }
+                    
+                                function zooms() {
+                                    document.body.style.position = "relative";
+                                    document.body.style.zoom = nowZoom + '%';
+                    
+                                    if (nowZoom == 70) {
+                                        alert("더 이상 축소할 수 없습니다.");
+                                    }
+                    
+                                    if (nowZoom == 500) {
+                                        alert("더 이상 확대할 수 없습니다.");
+                                    }
+                                }
+                    
+                                function contents_print(dName) {
+                                    printArea();
+                                }
+                                var initBody = "";
+                                function beforePrint() {
+                                    initBody = document.body.innerHTML;
+                                    document.body.innerHTML = contents.innerHTML;
+                                }
+                                function afterPrint() {
+                                    document.body.innerHTML = initBody;
+                                }
+                                function printArea() {
+                                    $('#header').hide();
+                                    $('#left').hide();
+                                    $('#footer').hide();
+                                    $('#location').hide();
+                                    $('#cmd').hide();
+                                    $('#container').css("margin-left", "-240px");
+                    
+                                    document.execCommand('print', false, null) || popupWin.window.print();
+                    
+                                    $('#header').show();
+                                    $('#left').show();
+                                    $('#footer').show();
+                                    $('#location').show();
+                                    $('#cmd').show();
+                                    $('#container').css("margin-left", "");
+                    
+                                }
+                                function fnBookmarkPop() {
+                                    var loginCheck = "false";
+                                    if (loginCheck == null || loginCheck == "" || loginCheck == "false") {
+                                        alert("로그인을 먼저 하셔야 합니다.");
+                                        return;
+                                    }
+                                    window.open("", "bookmarkPop", "width=543, height=233");
+                                    jQuery("#form").attr("target", "bookmarkPop").attr("action", "/kor/myPage/bookmark/writePop.do").submit();
+                                }
+                    
+                                function fnCopyUrl() {
+                                    var $temp = $("<input>");
+                                    $("body").append($temp);
+                                    var successful = '';
+                                    var ua = navigator.userAgent.toLowerCase();
+                                    var url = $(location).attr('href').split('.do');
+                                    var param = $('#listForm').serialize();
+                                    if (param != '' && param != "undefined") param = ".do?" + param;
+                                    else param = ".do";
+                    
+                                    //$("#copyurl").html(url[0]+param);
+                                    if (ua.indexOf('msie') != -1 || ua.indexOf('trident') != - 1) {
+                                        if (window.clipboardData) {
+                                            var ret = clipboardData.clearData();
+                                            if (ret) {
+                                                //$temp.val($("#copyurl").html()).select();
+                                                $temp.val(url[0] + param).select();
+                                                successful = document.execCommand("copy");
+                                                if (successful) alert('복사되었습니다.');
+                                            }
+                                        }
+                                    } else {
+                                        //$temp.val($("#copyurl").html()).select();
+                                        $temp.val(url[0] + param).select();
+                                        successful = document.execCommand("copy");
+                                        if (successful) alert('복사되었습니다.');
+                                    }
+                                    $temp.remove();
+                                }
+                    
+                            </script>
+                            <ul class="stp-bt clearfix">
+                                <li class="zoom clearfix">
+                                    <a href="#n" onclick="zoomIn();" class="minus"><span>화면축소</span></a>
+                                    <a href="#n" onclick="zoomReset();" class="default"><span>기본화면</span></a>
+                                    <a href="#n" onclick="zoomOut();" class="plus"><span>화면확대</span></a>
+                                </li>
+                                <li class="print"><a href="#n" onclick="contents_print('contents');"><img
+                                            src="../../static/images/print_ic.jpg" alt="인쇄"></a></li>
+                                <li class="copyUrl"><a href="#n" onclick="fnCopyUrl();">주소복사</a></li>
+                            </ul>
+                        </div>
+                        <div class="sub-nav">
+                            <ul class="line-map clearfix">
+                                <li class="home"><a href="#none"><img src="../../static/images/home_ic.png" alt="홈"></a></li>
+                                <li>
+                                    <a href="#n">UOS소개</a>
+                                    <ul style="">
+                                        <li><a href="">소개</a></li>
+                                        <li><a href="">UOS 입학</a></li>
+                                        <li><a href="">Inbound 프로그램</a></li>
+                                        <li><a href="">Outbound 프로그램</a></li>
+                                        <li><a href="">해외 교류대학</a></li>
+                                        <li><a href="">버디 프로그램</a></li>
+                                        <li><a href="">학생지원</a></li>
+                                        <li><a href="">교류교수</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#n">국제처 소개</a>
+                                    <ul style="">
+                                        <li><a href="">국제처 소개</a></li>
+                                        <li><a href="">미션&핵심가치</a></li>
+                                        <li><a href="">국제처장 인사말</a></li>
+                                        <li><a href="">조직도</a></li>
+                                        <li><a href="">오시는길</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#n">
+                                        인사말</a>
+                                    <ul style="">
+                                        <li><a href="">인사말</a></li>
+                                        <li><a href="">프로필</a></li>
+                                        <li><a href="">역대총장</a></li>
+                                        <li><a href="">총장에게 바란다</a></li>
+                                        <li><a href="">말과글</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-area">
+                    <div id="contents">
+                        <div class="txt">
+                            <b class="fcBl fz22 mt25">글로벌 시대를 이끌어 나갈 미래의 주인공이 되기 위해서는 국제적인 사고와 외국어 능력이 필요합니다.</b>
+
+                            <div class="mt10">
+                                서울시립대학교 국제처는 다양한 국제화 프로그램과 어학 프로그램 운영을 통하여 여러분이 글로벌 리더로 성장할 수 있도록 지원하고 있습니다.<br/>
+                                이를 위해 국제처에서는 전 세계 유수대학과 협정체결을 비롯한 교류협력 강화를 바탕으로 교환학생 프로그램, 복수학위 프로그램, 어학연수 프로그램, 글로벌인턴십 프로그램 등 현지에서 다양한 경험과 지식을 쌓을 수 있는 기회를 제공하고 있습니다.<br/>
+                                또한 서울메이트와 글로벌 라운지 운영을 통하여 캠퍼스 내에서도 자유롭게 외국어 능력을 향상시킬 수 있도록 지원하고 있습니다.<br/>
+                                
+                            </div>
+                            <b class="mt10">이제 국제처에서 세계로 향하는 여러분의 꿈과 희망, 그리고 능력을 키우십시오.</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>
