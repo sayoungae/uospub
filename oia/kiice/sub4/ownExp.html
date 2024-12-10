@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>국제처 소개</title>
+     <!-- CSS -->
+    <link rel="stylesheet" href="../../static/css/common.css">
+    <link rel="stylesheet" href="../../static/css/swiper.css">
+    <!-- JS -->
+    <script src="../../static/js/jquery-3.7.1.js"></script>
+    <script src="../../static/js/common.js"></script>
+    <script src="../../static/js/swiper-bundle.min.js"></script>
+    <script src="../../static/js/main.js"></script>
+    <script>
+        // header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+       
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <div class="wid">
+                <h2 class="pg-tit">자비유학 프로그램</h2>
+                <div id="snb-wrap"></div>
+                <div class="content-area">
+                    <div id="contents">
+                        <h4 class="sub-tit">프로그램 개요</h4>
+                        <div class="desc">
+                            <ul class="dotList01">
+                                <li>
+                                    <strong class="dot-tit">프로그램 안내</strong>
+                                    <ul class="dotList03">
+                                        <li>
+                                            교환학생 프로그램과는 별도로 학생 본인이 원하는 외국의 대학에서 한 학기나 1년 동 안 수학하고 돌아와서 학점을 인정받을 수 있는 프로그램으로 유학 대상기관은 우리 대학 교의 교류협정 체결 여부와 관계없이 정규 학사학위를 제공하는 총장이 인정하는 대학
+                                        </li>
+                                        <li>유학기간 : 1학기 또는 1년간 (단, 졸업학점의 1/2은 반드시 본교에서 이수한 학점 이어 야 함)</li>
+                                        <li>등록금 : 본교에도 납부하여 재학 상태를 유지할 경우 학기 및 학점을 모두 인정받을 수 있으나 휴학 상태에서 유학할 경우 학점만 인정받을 수 있음</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

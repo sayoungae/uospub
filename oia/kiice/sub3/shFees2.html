@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>국제처 소개</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../static/css/common.css">
+    <link rel="stylesheet" href="../../static/css/swiper.css">
+
+
+    <!-- JS -->
+    <script src="../../static/js/jquery-3.7.1.js"></script>
+    <script src="../../static/js/common.js"></script>
+    <script src="../../static/js/swiper-bundle.min.js"></script>
+    <script src="../../static/js/main.js"></script>
+
+    <script>
+        // header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+       
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <div class="wid">
+                <h2 class="pg-tit">수수료</h2>
+                <div id="snb-wrap"></div>
+                <div class="content-area">
+                    <div id="contents">
+                        <h3 class="sub-tit">프로그램 수수료</h3>
+                        <div class="table-wrap">
+                            <table class="type01">
+                                <caption>프로그램 수수료, 수수료, 파트너할인</caption>
+                                <thead>
+                                    <tr>
+                                        <th>프로그램 수수료</th>
+                                        <th>수수료</th>
+                                        <th>파트너 할인</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>수업료</td>
+                                        <td>2,100,000</td>
+                                        <td>1,600,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>등록금</td>
+                                        <td>100,000</td>
+                                        <td>UOS 지원</td>
+                                    </tr>
+                                    <tr>
+                                        <td>야외학습</td>
+                                        <td>400,000</td>
+                                        <td>UOS 지원</td>
+                                    </tr>
+                                    <tr>
+                                        <td>숙박비(캠퍼스 내 숙박)</td>
+                                        <td>250,000</td>
+                                        <td>UOS 지원</td>
+                                    </tr>
+                                    <tr>
+                                        <td>총 수수료</td>
+                                        <td>2,850,000</td>
+                                        <td>1,600,000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="desc">
+                            <h4 class="sub-tit2">프로그램 수수료</h4>
+                            <p class="mb10 mt10">
+                                * 캠퍼스 내 숙박은 UOS에서 지원하는 캠퍼스 내 숙박비로 보장됩니다.<br/>모든 객실은 2인 1실입니다. 자세한 숙박 정보는 당사 웹사이트(oia.uos.ac.kr)를 참조하세요.
+                            </p>
+                            <p>* 항공료, 식사, 개인 비용, 포함되지 않음</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

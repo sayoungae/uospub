@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>국제처 소개</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../static/css/common.css">
+    <link rel="stylesheet" href="../../static/css/swiper.css">
+
+
+    <!-- JS -->
+    <script src="../../static/js/jquery-3.7.1.js"></script>
+    <script src="../../static/js/common.js"></script>
+    <script src="../../static/js/swiper-bundle.min.js"></script>
+    <script src="../../static/js/main.js"></script>
+
+    <script>
+        // header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+       
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <div class="wid">
+                <h2 class="pg-tit">수수료</h2>
+                <div id="snb-wrap"></div>
+                <div class="content-area">
+                    <div id="contents">
+                        <h3 class="sub-tit">프로그램 수수료</h3>
+                        <div class="table-wrap">
+                            <table class="type01">
+                                <caption>프로그램 수수료, 수수료, 파트너할인</caption>
+                                <thead>
+                                    <tr>
+                                        <th>프로그램 수수료</th>
+                                        <th>수수료</th>
+                                        <th>파트너 할인</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>수업료</td>
+                                        <td>3,300,000</td>
+                                        <td>2,300,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>등록금</td>
+                                        <td>350,000</td>
+                                        <td>100,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>야외학습</td>
+                                        <td>800,000</td>
+                                        <td>UOS 지원</td>
+                                    </tr>
+                                    <tr>
+                                        <td>숙박비(캠퍼스 내 숙박)</td>
+                                        <td>350,000</td>
+                                        <td>UOS 지원(얼리버드)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>총 수수료</td>
+                                        <td>4,800,000</td>
+                                        <td>2,400,000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            
+                        </div>
+                        <div class="desc">
+                            <h4 class="sub-tit2">프로그램 수수료</h4>                        
+                            <p class="mb10 mt10">
+                                * Early Bird 혜택(4월 30일 이전에 지원, 지명 및 납부를 완료한 첫 60명의 학생): 캠퍼스 내 숙소 보장 및 UOS에서 지원하는 캠퍼스 내 숙소 비용. 자세한 숙소 정보는 당사 웹사이트(oia.uos.ac.kr)를 참조하세요.
+                            </p>
+                            <p>※항공료, 식사, 개인 경비는 포함되지 않음</p>
+                            <p>※당사 과정의 프로그램 비용에는 2개 과목이 포함되어 있습니다. 학생이 1개 과목만 수강하기로 선택한 경우 프로그램 비용 할인이 이미 적용되었으므로 프로그램 비용에서 수업료를 공제하지 않습니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

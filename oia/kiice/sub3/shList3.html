@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>국제처 소개</title>
+     <!-- CSS -->
+    <link rel="stylesheet" href="../../static/css/common.css">
+    <link rel="stylesheet" href="../../static/css/swiper.css">
+    <!-- JS -->
+    <script src="../../static/js/jquery-3.7.1.js"></script>
+    <script src="../../static/js/common.js"></script>
+    <script src="../../static/js/swiper-bundle.min.js"></script>
+    <script src="../../static/js/main.js"></script>
+    <script>
+        // header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+       
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <div class="wid">
+                <h2 class="pg-tit">코스 목록</h2>
+                <div id="snb-wrap"></div>
+                <div class="content-area">
+                    <div id="contents">
+                        <h3 class="sub-tit">한국학</h3>
+                        <div class="desc">
+                            각 수업일 오전 9시부터 12시까지 한국의 다양한 측면을 다룬 8개의 특별 강의가 진행됩니다.
+                        </div>
+                        <ul class="dotList00 mt10">
+                            <li>(1) K 대중매체</li>
+                            <li>(2) 케이웹툰</li>
+                            <li>(3) K 드라마 & 영화</li>
+                            <li>(4) 케이팝</li>
+                            <li>(5) K카페, 음식문화</li>
+                            <li>(6) 유네스코 세계문화유산</li>
+                            <li>(7) 케이비즈니스</li>
+                            <li>(8) K경제<p class="point mb5">* 위 주제는 변경될 수 있습니다.</p></li>
+                        </ul>
+                        <h3 class="sub-tit">한국어</h3>
+                        <div class="desc">학생들의 수준에 따라 UOS SIWS는 한국어 수업을 개설합니다. 학생들은 신청 시 한국어 수준을 표시해야 합니다. 한국어 수업은 각 수업일 오후 1시부터 4시까지 진행됩니다.</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>국제처 소개</title>
+     <!-- CSS -->
+    <link rel="stylesheet" href="../../static/css/common.css">
+    <link rel="stylesheet" href="../../static/css/swiper.css">
+    <!-- JS -->
+    <script src="../../static/js/jquery-3.7.1.js"></script>
+    <script src="../../static/js/common.js"></script>
+    <script src="../../static/js/swiper-bundle.min.js"></script>
+    <script src="../../static/js/main.js"></script>
+    <script>
+        // header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+       
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <div class="wid">
+                <h2 class="pg-tit">프로그램일정</h2>
+                <div id="snb-wrap"></div>
+                <div class="content-area">
+                    <div id="contents">
+                        <h3 class="sub-tit">서울국제여름학교 Ⅰ <span class="f-normal fz16">(2024년 6월 30일 ~ 7월 28일)</span></h3>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

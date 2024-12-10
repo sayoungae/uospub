@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>국제처 소개</title>
+     <!-- CSS -->
+    <link rel="stylesheet" href="../../static/css/common.css">
+    <link rel="stylesheet" href="../../static/css/swiper.css">
+    <!-- JS -->
+    <script src="../../static/js/jquery-3.7.1.js"></script>
+    <script src="../../static/js/common.js"></script>
+    <script src="../../static/js/swiper-bundle.min.js"></script>
+    <script src="../../static/js/main.js"></script>
+    <script>
+        // header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+       
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <div class="wid">
+                <h2 class="pg-tit">국제처 / UOS AMBASSADOR</h2>
+                <div id="snb-wrap"></div>
+                <div class="content-area">
+                    <div id="contents">
+                        <!-- select tab -->
+                        <div class="select-tabList">
+                            <select id="tab-select" aria-label="Tablist" title="">
+                                <option data-tab="selPan_ambs_01" id="sel_ambs_01">전체</option>
+                                <option data-tab="selPan_ambs_02" id="sel_ambs_02">북미권</option>
+                                <option data-tab="selPan_ambs_03" id="sel_ambs_03">유럽권</option>
+                                <option data-tab="selPan_ambs_04" id="sel_ambs_04">중화권</option>
+                                <option data-tab="selPan_ambs_05" id="sel_ambs_05">일본권</option>
+                                <option data-tab="selPan_ambs_06" id="sel_ambs_06">기타지역</option>
+                            </select>
+                        </div>
+                        <div class="select-tab-conts">
+                            <div id="selPan_ambs_01" aria-labelledby="sel_ambs_01" class="sel-tab-conts active">
+                                <ul class="brd-lstp1">
+                                    <li>
+                                        <div>
+                                            <p class="num"><span class="blind">번호</span><span>140</span></p>
+                                            <p class="imgs"><img src="../../static/images/no_image.png" alt="NO IMAGE"></p>
+                                            <div>
+                                                <div class="ti">
+                                                    <span class="blind">제목</span>
+                                                    <a href="javascript:fnView('1', '2011');">2024-1 도시샤 대학교</a>
+                                                </div>
+                                                <div class="da">
+                                                    <p><span class="blind">지역</span><span>일본권</span></p>
+                                                    <p><span class="blind">작성자</span><span>이*아</span></p>
+                                                    <p><span class="blind">등록일</span><span>2024-11-10</span></p>
+                                                    <p><span class="blind">조회</span><span>116</span></p>                                                        
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <p class="num"><span class="blind">번호</span><span>139</span></p>
+                                            <p class="imgs"><img src="https://file.uos.ac.kr/upload/kor/board/column/40012GD1/2024/11/202411092259312_thm.png" alt=""></p>
+                                            <div>
+                                                <div class="ti">
+                                                    <span class="blind">제목</span>
+                                                    <a href="javascript:fnView('1', '2011');">[2024-1학기] 미국 노스캐롤라이나 그린스보로 대학교</a>
+                                                </div>
+                                                <div class="da">
+                                                    <p><span class="blind">지역</span><span>북미권</span></p>
+                                                    <p><span class="blind">작성자</span><span>김*주</span></p>
+                                                    <p><span class="blind">등록일</span><span>2024-11-09</span></p>
+                                                    <p><span class="blind">조회</span><span>148</span></p>      
+                                                    <a href="#none">
+                                                        <span class="blind">첨부파일</span>
+                                                        <img src="../../static/images/btn_file.png" alt="첨부파일 다운로드">
+                                                    </a>                                                  
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="selPan_ambs_02" aria-labelledby="sel_ambs_02" class="sel-tab-conts">
+                                북미
+                            </div>
+                            <div id="selPan_ambs_03" aria-labelledby="sel_ambs_03" class="sel-tab-conts">
+                                유럽
+                            </div>
+                            <div id="selPan_ambs_04" aria-labelledby="sel_ambs_04" class="sel-tab-conts">
+                                중화
+                            </div>
+                            <div id="selPan_ambs_05" aria-labelledby="sel_ambs_05" class="sel-tab-conts">
+                                일본
+                            </div>
+                            <div id="selPan_ambs_06" aria-labelledby="sel_ambs_06" class="sel-tab-conts">
+                                기타지역
+                            </div>
+                        </div>
+                        <!-- //select tab -->
+                        <!-- paging -->
+                        <div class="paging">
+                            <a href="?pageIndex=1" class="first" onclick="fnPaging(1);return false;"><img src="../../static/images/paging_ic1.png" alt="처음 페이지"></a><a href="?pageIndex=0" onclick="fnPaging(0);return false;"><img src="../../static/images/paging_ic2.png" alt="이전 페이지 보기"></a><span><a class="on" href="#" onclick="return false;" title="현재페이지">1</a><a href="?pageIndex=2" onclick="fnPaging(2);return false;">2</a><a href="?pageIndex=3" onclick="fnPaging(3);return false;">3</a><a href="?pageIndex=4" onclick="fnPaging(4);return false;">4</a><a href="?pageIndex=5" onclick="fnPaging(5);return false;">5</a></span><a href="?pageIndex=2" onclick="fnPaging(2);return false;"><img src="../../static/images/paging_ic3.png" alt="다음 페이지"></a><a href="?pageIndex=86" class="last" onclick="fnPaging(86);return false;"><img src="../../static/images/paging_ic4.png" alt="마지막 페이지"></a>
+                        </div>
+                        <!-- //paging -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

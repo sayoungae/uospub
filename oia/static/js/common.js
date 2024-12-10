@@ -148,7 +148,7 @@ window.addEventListener("DOMContentLoaded", () => {
 					ele.classList.remove('active');
 					ele.setAttribute('aria-selected', 'false');
 					if (ele.classList.contains('active')) {
-						const text = ele.querySelector('.sr-only.created');
+						const text = ele.querySelector('.blind');
 						ele.querySelector('button').removeChild(text);
 					}
 				});
@@ -160,9 +160,31 @@ window.addEventListener("DOMContentLoaded", () => {
 			tab();
 		});
 	}
-	layerTab();
 
-	
+	function selectTab(){
+		const selectElement = document.getElementById('tab-select');
+		const tabContents = document.querySelectorAll('.sel-tab-conts');
+	  
+		function showTabContent() {
+		  const selectedOption = selectElement.selectedOptions[0]; // 선택된 <option>
+		  const selectedTab = selectedOption.getAttribute('data-tab'); // data-tab 값
+	  
+		  tabContents.forEach(content => {
+			if (content.id === selectedTab) {
+			  content.classList.add('active');
+			} else {
+			  content.classList.remove('active');
+			}
+		  });
+		}
+	  
+		selectElement.addEventListener('change', showTabContent);
+	  
+		// 초기 상태 설정
+		showTabContent();
+	}
+	layerTab();
+	selectTab();
 
 })
 
