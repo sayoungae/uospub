@@ -1,3 +1,46 @@
+/* ***********************************
+        sub-tit-wrap /SNB 
+* ***********************************/
+.wid {width: 96%;max-width: 1280px; margin: 0 auto;}
+.sub-tit-wrap{width: 100%; height: 228px; background-image: url("../images/sub_ban01.png"); display: flex; align-items: center; justify-content: center; background-position: left top; background-repeat: no-repeat; }
+.pg-tit{ font-size:var(--fz-45); color: #fff; font-weight: 700; text-align: center;}
+.pg-tit > span{color: #2241b6; word-break: keep-all;}
+
+#snb-wrap{background-color:#fff;border-bottom:1px solid #F0F0F0;}
+.line-map{ display: flex; position: relative; }
+.line-map > li {position: relative;font-size: 17px;}
+.line-map > li > a{ height: 58px; position: relative; display: flex; align-items: center;white-space: nowrap; overflow: hidden;  text-overflow: ellipsis; line-height: 1.5; }
+.line-map > li.home >a{justify-content: center;width: 58px; background:#2241b6; padding:0 15px;}
+.line-map > li > strong{display: table-cell;vertical-align: middle;padding: 0 20px;color: #000;line-height: 1;}
+.line-map > li:not(.home) > a{width: 200px; padding: 0 50px 0 20px;background: url('../../static/images/sub_nav_bg1.png') no-repeat right 20px  center; border-right:1px solid #F0F0F0;}
+.line-map > li > a.on{background: url('../../static/images/sub_nav_bg2.png') no-repeat right 20px  center;}
+.line-map > li > a.nl{padding: 0 20px; background: none;}
+.line-map > li > ul{display: none; width: 100%; position: absolute; top: 100%; left: -1px; right: 0; z-index: 9; padding: 15px;background: #fff; border: 1px solid #F0F0F0; box-shadow: 4px 4px 6px rgba(0,0,0,0.2);}
+.line-map > li > ul > li + li{margin-top: 10px;}
+.line-map > li > ul > li > a{display: block;color: #666;}
+
+.content-area {padding:45px 0 90px;}
+@media (max-width: 760px) {
+    #snb-wrap > .wid{width: 100%;}
+    .line-map > li{font-size: 16px;}
+    .line-map > li > a{height: 48px; }
+    .line-map > li.home >a{width: 48px;}
+    .line-map > li:not(.home){width: calc(100% / 3 );}
+    .line-map > li:not(.home) >a{width: 100%;     padding: 0 25px 0 10px; background-position: right 10px  center;}
+
+
+}
+@media (max-width: 480px) {
+    .sub-tit-wrap{height: 150px; background-size: auto 100%;}
+    .line-map > li{font-size: 15px;}
+    .line-map > li > ul{padding:15px 10px; font-size: 13px;}
+
+}
+@media (max-width: 380px) {
+    .line-map > li{font-size: 14px;}
+}
+
+
 /* 공통 */
 /* ver-bar */
 .ver-bar > li > span{display: inline-block; position: relative;}
@@ -50,11 +93,9 @@
 }
 
 .dotList03 > li+li{margin-top: 5px;}
-
 /* -- dot */
+
 /* 타이틀 */
-.pg-tit{float: left; font-size: 42px; color: #333; font-weight: 500; line-height: 1;  padding-top: 14px; border-top: 8px solid #d0d0d0;}
-.pg-tit > span{color: #2241b6; word-break: keep-all;}
 .sub-tit{
     color: #111;
     font-size: var(--fz-22);
@@ -70,9 +111,13 @@
     margin: 15px 0 5px;
     font-weight: 600;
 }
+.conts-tit{font-size:var(--fz-45); font-weight: 700; color:#014195; text-align: center; margin-top: 90px;}
+.conts-tit > span{color:#333;}
+.conts-tit-desc{font-size:20px; font-weight: 300; text-align: center; margin-top: 10px;}
 .desc{padding-left: 13px; margin-bottom: 20px;}
 .cout{font-size: 14px; text-indent: 20px; display: inline-block; margin-bottom: 20px;}
 .link-txt{text-decoration: underline;}
+
 /* -- 타이틀 */
 /* 버튼 */
 .btn-wrap{margin-top: 20px;display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
@@ -96,8 +141,8 @@
 .tab-area{width: 100%;}
 .tab-area .tab > ul{display: flex; gap: 10px;}
 .tab-area .tab > ul > li{flex: 1 1 0; text-align: center; }/*min-width 설정 필요*/
-.tab-area .tab > ul > li button{width: 100%; height: 60px; display: flex; align-items: center; justify-content: center; background-color: #F2F2F2; border:1px solid #F2F2F2; border-radius: 5px;}
-.tab-area .tab > ul > li.active button{background-color: #fff; border-color: #2241B6; color: #2241B6; font-weight: 700;}
+.tab-area .tab > ul > li button{width: 100%; height: 60px; display: flex; align-items: center; justify-content: center; background-color: #F2F2F2; border:1px solid #F2F2F2; border-radius: 5px; color:#969696; font-weight: 700;}
+.tab-area .tab > ul > li.active button{background-color: #fff; border-color: #2241B6; color: #2241B6; }
 
 .tab-conts-wrap{margin:40px 0 20px;}
 .tab-conts-wrap .tab-conts{display: none;}
@@ -172,17 +217,25 @@ table.type02 tr.al >td{padding:10px 20px; text-align: left; vertical-align: base
 .brd-lstp1 .da .dw{display: inline-block; margin: 2px 0;}
 /* -- 공지사항 */
 /* 공지사항 상세 */
-.view-wrap .vw-tii-bx{padding: 20px 0 10px; border-top: 1px solid #333;  border-bottom: 1px solid #e0dfdf;}
+.view-wrap .vw-tii-bx{padding: 20px 20px 10px; border-top: 1px solid #333;  border-bottom: 1px solid #e0dfdf;}
 .view-wrap .vw-tii-bx > h4{font-size: 24px; margin-bottom: 10px;}
 .view-wrap .vw-tii-bx .da{line-height: 1.2; margin-top: 8px;}
-.view-wrap .vw-tii-bx .da > span{display: inline-block; vertical-align: middle; font-size: 15px; color: #666; line-height: 20px; margin-right: 6px;}
-.view-wrap .vw-tii-bx .da > span:after{content: ''; display: inline-block; vertical-align: top; width: 1px; height: 12px; background: #cfcfcf; margin-top: 4px; margin-left: 10px;}
-.view-wrap .vw-tii-bx .da > span:last-child:after{display: none;}
+.view-wrap .vw-tii-bx .da > p{display: inline-block; vertical-align: middle; font-size: 15px; color: #666; line-height: 20px; margin-right: 6px;}
+.view-wrap .vw-tii-bx .da > p:after{content: ''; display: inline-block; vertical-align: top; width: 1px; height: 12px; background: #cfcfcf; margin-top: 4px; margin-left: 10px;}
+.view-wrap .vw-tii-bx .da > p:last-child:after{display: none;}
 .view-wrap .vw-file-list{margin-top: 20px; display: flex; font-size: 14px;}
-.view-wrap .vw-file-list > .tit{width: 50px;}
-.view-wrap .vw-file-list > .fl-dw{width: calc(100% - 50px);}
+.view-wrap .vw-file-list > .tit{width: 70px;}
+.view-wrap .vw-file-list > .fl-dw{width: calc(100% - 70px);}
 .view-wrap .vw-file-list > .fl-dw > li + li{margin-top: 5px;}
 .view-wrap .vw-con-bx{padding:40px 20px; border-bottom:1px solid #333;}
+
+.article-wrap{border-top: 1px solid #e0dfdf; border-bottom: 1px solid #e0dfdf; margin-top: 40px;}
+.article-wrap > li{padding:20px 0;}
+.article-wrap > li + li{border-top:1px dashed #e0dfe0}
+.article-wrap > li >div{float:left;}
+.article-wrap > li >div:nth-child(1){width: 120px; text-align: center;}
+.article-wrap > li a:hover,.article-wrap > li a:focus{text-decoration: underline; text-underline-offset: 3px;}
+.article-wrap > li::after{content: "";display: block;height: 0;clear: both;visibility: hidden;}
 /* -- 공지사항 상세 */
 
 /* pageing */
@@ -207,6 +260,33 @@ table.type02 tr.al >td{padding:10px 20px; text-align: left; vertical-align: base
 .map_box {text-align: center;}
 .map_txt{margin-top: 40px;}
 /* -- 오시는 길 */
+/* 미션 핵심가치 */
+.mis-imgs{text-align: center; margin-top: 80px;}
+.mis-conts > ul{position: relative;}
+.mis-conts > ul >li{position: relative; width: 100%; height: 180px;}
+.mis-conts > ul >li > .box{width: 500px; display: flex; flex-direction: row-reverse; position: absolute; top:0; left:50%; transform: translateX(-50%); gap: 10px; }
+.mis-conts > ul >li .tit{width: 140px; height: 140px; font-size: 17px; font-weight: 600; display: flex; align-items: center; justify-content: center; background-image: url("../images/mission_img03.png") ; background-position: center center; background-repeat: no-repeat;}
+.mis-conts > ul >li .desc{width: calc(100% - 150px);; margin-top: 30px;}
+.mis-conts > ul >li .d-tit{font-size: 30px; font-weight: 600; margin-bottom: 10px; border-bottom: 2px solid #19C098;}
+.mis-conts > ul >li .d-sub{color:#19C098}
+.mis-conts > ul >li .d-txt{margin-top: 20px; font-size: 15px;color:#5d5d5d}
+/* li1 */
+.mis-conts > ul >li.li1 > .box{flex-direction: row;transform: translateX(0%); top:130px}
+.mis-conts > ul >li.li1 .desc{text-align: right;}
+
+.mis-conts > ul >li.li2 > .box{transform: translateX(-100%);}
+.mis-conts > ul >li.li2 .tit{background-image: url("../images/mission_img02.png");}
+.mis-conts > ul >li.li2 .d-tit{border-color: #86CE2E;}
+.mis-conts > ul >li.li2 .d-sub{color: #86CE2E;}
+
+
+.mis-conts > ul >li.li3 > .box{transform: translateX(-78%); top:-85px}
+.mis-conts > ul >li.li3 .desc{margin-top: 150px;}
+.mis-conts > ul >li.li3 .tit{background-image: url("../images/mission_img04.png");}
+.mis-conts > ul >li.li3 .d-tit{border-color: #1189A5;}
+.mis-conts > ul >li.li3 .d-sub{color: #1189A5;}
+/* -- 미션 핵심가치 */
+
 /* 국제입학 */
 .if-utube{max-width: 760px; height: 480px; padding:20px;}
 .line-box{position: relative;; margin:30px 0 60px; }
@@ -282,16 +362,29 @@ table.type02 tr.al >td{padding:10px 20px; text-align: left; vertical-align: base
 .faqList01 > li > p > span:nth-child(2){width: calc(100% - 36px);}
 /* -- 해외파견프로그램 */
 
+@media (max-width: 1024px) {
+    /* 미션 핵심가치 */
+    .mis-conts > ul{padding-top: 50px;}
+    .mis-conts > ul > li{margin-top: 20px;}
+    .mis-conts > ul > li > .box {position: static; transform: translateX(0); flex-direction: row; width: 100%; max-width: 800px; margin:0 auto;}
+    .mis-conts > ul >li.li1 .desc{text-align: left;}
+    .mis-conts > ul >li.li2 > .box{transform: translateX(0);}
+    .mis-conts > ul >li.li3 > .box{transform: translateX(0);}
+    .mis-conts > ul >li.li3 .desc{margin-top: 30px;}
+    /* -- 미션 핵심가치 */
+}
 @media (max-width: 760px) {
-    .pg-tit{font-size: 34px;}
-
     /* 검색 */
     .pageSearch-wrap .search-box .serch-input {width: 100%;}
     /* -- 검색 */
+    /* 미션 핵심가치 */
+    .mis-imgs{padding:0 10px;}
+    .mis-imgs >  img{width: 100%;}
+    /* -- 미션 핵심가치 */
 }
 @media (max-width: 480px) {
-    .pg-tit{font-size: 26px;}
-
+    /* 타이틀 */
+    .conts-tit-desc{font-size: 16px;}
     /* 검색 */
     .pageSearch-wrap > ul > li > .tit{width: 100px;}
     .pageSearch-wrap > ul > li > .con{width: calc(100% - 100px);}
@@ -310,7 +403,13 @@ table.type02 tr.al >td{padding:10px 20px; text-align: left; vertical-align: base
     .brd-lstp1 .ti >a{overflow: hidden; text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;}
     .brd-lstp1 .da > p{font-size: 14px;}
     /* -- 공지사항 */
-
+    /* 미션 핵심가치 */
+    .mis-imgs{margin-top: 40px;}
+    .mis-conts > ul >li .tit{width: 110px; height: 110px; background-size: 100% 100%; font-size: 16px;}
+    .mis-conts > ul >li .desc{width: calc(100% - 120px);}
+    .mis-conts > ul >li .d-tit{font-size: 26px;}
+    .mis-conts > ul >li .d-txt{font-size: 14px;}
+    /* --미션 핵심가치 */
     /* 국제입학 */
     .if-utube{height: 300px;}
     .line-box .tit{width: 80%; left:50%; transform: translateX(-50%); word-break: keep-all; text-align: center;}

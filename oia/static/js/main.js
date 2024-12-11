@@ -3,6 +3,7 @@
 $(function(){
     const mslide = new Swiper('.m-slide', {
         // 옵션 설정
+        a11y: false,
         init:true,
         intialSlide:0,
         speed: 800,

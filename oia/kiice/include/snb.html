@@ -1,157 +1,39 @@
-<div class="sub-tp">
-    <div class="title-bk clearfix">
-        <script>
-
-            var nowZoom = 100;
-            var agent = navigator.userAgent.toLowerCase();
-            function zoomIn() {
-                nowZoom -= 10;
-                if (nowZoom <= 70) nowZoom = 70;
-                zooms();
-            }
-
-            function zoomOut() {
-                nowZoom += 20;
-                if (nowZoom >= 500) nowZoom = 500;
-                zooms();
-            }
-
-            function zoomReset() {
-                nowZoom = 100;
-                zooms();
-            }
-
-            function zooms() {
-                document.body.style.position = "relative";
-                document.body.style.zoom = nowZoom + '%';
-
-                if (nowZoom == 70) {
-                    alert("더 이상 축소할 수 없습니다.");
-                }
-
-                if (nowZoom == 500) {
-                    alert("더 이상 확대할 수 없습니다.");
-                }
-            }
-
-            function contents_print(dName) {
-                printArea();
-            }
-            var initBody = "";
-            function beforePrint() {
-                initBody = document.body.innerHTML;
-                document.body.innerHTML = contents.innerHTML;
-            }
-            function afterPrint() {
-                document.body.innerHTML = initBody;
-            }
-            function printArea() {
-                $('#header').hide();
-                $('#left').hide();
-                $('#footer').hide();
-                $('#location').hide();
-                $('#cmd').hide();
-                $('#container').css("margin-left", "-240px");
-
-                document.execCommand('print', false, null) || popupWin.window.print();
-
-                $('#header').show();
-                $('#left').show();
-                $('#footer').show();
-                $('#location').show();
-                $('#cmd').show();
-                $('#container').css("margin-left", "");
-
-            }
-            function fnBookmarkPop() {
-                var loginCheck = "false";
-                if (loginCheck == null || loginCheck == "" || loginCheck == "false") {
-                    alert("로그인을 먼저 하셔야 합니다.");
-                    return;
-                }
-                window.open("", "bookmarkPop", "width=543, height=233");
-                jQuery("#form").attr("target", "bookmarkPop").attr("action", "/kor/myPage/bookmark/writePop.do").submit();
-            }
-
-            function fnCopyUrl() {
-                var $temp = $("<input>");
-                $("body").append($temp);
-                var successful = '';
-                var ua = navigator.userAgent.toLowerCase();
-                var url = $(location).attr('href').split('.do');
-                var param = $('#listForm').serialize();
-                if (param != '' && param != "undefined") param = ".do?" + param;
-                else param = ".do";
-
-                //$("#copyurl").html(url[0]+param);
-                if (ua.indexOf('msie') != -1 || ua.indexOf('trident') != - 1) {
-                    if (window.clipboardData) {
-                        var ret = clipboardData.clearData();
-                        if (ret) {
-                            //$temp.val($("#copyurl").html()).select();
-                            $temp.val(url[0] + param).select();
-                            successful = document.execCommand("copy");
-                            if (successful) alert('복사되었습니다.');
-                        }
-                    }
-                } else {
-                    //$temp.val($("#copyurl").html()).select();
-                    $temp.val(url[0] + param).select();
-                    successful = document.execCommand("copy");
-                    if (successful) alert('복사되었습니다.');
-                }
-                $temp.remove();
-            }
-
-        </script>
-        <ul class="stp-bt clearfix">
-            <li class="zoom clearfix">
-                <a href="#n" onclick="zoomIn();" class="minus"><span>화면축소</span></a>
-                <a href="#n" onclick="zoomReset();" class="default"><span>기본화면</span></a>
-                <a href="#n" onclick="zoomOut();" class="plus"><span>화면확대</span></a>
-            </li>
-            <li class="print"><a href="#n" onclick="contents_print('contents');"><img
-                        src="../../static/images/print_ic.jpg" alt="인쇄"></a></li>
-            <li class="copyUrl"><a href="#n" onclick="fnCopyUrl();">주소복사</a></li>
-        </ul>
-    </div>
-    <div class="sub-nav">
-        <ul class="line-map clearfix">
-            <li class="home"><a href="#none"><img src="../../static/images/home_ic.png" alt="홈"></a></li>
-            <li>
-                <a href="#n">UOS소개</a>
-                <ul>
-                    <li><a href="">소개</a></li>
-                    <li><a href="">UOS 입학</a></li>
-                    <li><a href="">Inbound 프로그램</a></li>
-                    <li><a href="">Outbound 프로그램</a></li>
-                    <li><a href="">해외 교류대학</a></li>
-                    <li><a href="">버디 프로그램</a></li>
-                    <li><a href="">학생지원</a></li>
-                    <li><a href="">교류교수</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#n">국제처 소개</a>
-                <ul style="">
-                    <li><a href="">국제처 소개</a></li>
-                    <li><a href="">미션&핵심가치</a></li>
-                    <li><a href="">국제처장 인사말</a></li>
-                    <li><a href="">조직도</a></li>
-                    <li><a href="">오시는길</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#n">
-                    인사말</a>
-                <ul style="">
-                    <li><a href="">인사말</a></li>
-                    <li><a href="">프로필</a></li>
-                    <li><a href="">역대총장</a></li>
-                    <li><a href="">총장에게 바란다</a></li>
-                    <li><a href="">말과글</a></li>
-                </ul>
-            </li>
-        </ul>
-    </div>
+<div class="wid">
+    <ul class="line-map clearfix">
+        <li class="home"><a href="#none"><img src="../../static/images/home_ic.png" alt="홈"></a></li>
+        <li>
+            <a href="#n">UOS소개</a>
+            <ul>
+                <li><a href="">소개</a></li>
+                <li><a href="">UOS 입학</a></li>
+                <li><a href="">Inbound 프로그램</a></li>
+                <li><a href="">Outbound 프로그램</a></li>
+                <li><a href="">해외 교류대학</a></li>
+                <li><a href="">버디 프로그램</a></li>
+                <li><a href="">학생지원</a></li>
+                <li><a href="">교류교수</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#n">국제처 소개</a>
+            <ul>
+                <li><a href="">국제처 소개</a></li>
+                <li><a href="">미션&핵심가치</a></li>
+                <li><a href="">국제처장 인사말</a></li>
+                <li><a href="">조직도</a></li>
+                <li><a href="">오시는길</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#n">
+                인사말</a>
+            <ul>
+                <li><a href="">인사말</a></li>
+                <li><a href="">프로필</a></li>
+                <li><a href="">역대총장</a></li>
+                <li><a href="">총장에게 바란다</a></li>
+                <li><a href="">말과글</a></li>
+            </ul>
+        </li>
+    </ul>
 </div>
