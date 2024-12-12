@@ -22,9 +22,9 @@
             .then(response => response.text())
             .then(data => document.getElementById('footer').innerHTML = data);
         
-        // fetch('../include/snb.html')
-        //     .then(response => response.text())
-        //     .then(data => document.getElementById('snb-wrap').innerHTML = data);
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
     </script>
    
 </head>

@@ -10,30 +10,32 @@
 .line-map{ display: flex; position: relative; }
 .line-map > li {position: relative;font-size: 17px;}
 .line-map > li > a{ height: 58px; position: relative; display: flex; align-items: center;white-space: nowrap; overflow: hidden;  text-overflow: ellipsis; line-height: 1.5; }
-.line-map > li.home >a{justify-content: center;width: 58px; background:#2241b6; padding:0 15px;}
+.line-map > li.home >a{justify-content: center;width: 58px; background-color:#2241b6; padding:0 15px;}
 .line-map > li > strong{display: table-cell;vertical-align: middle;padding: 0 20px;color: #000;line-height: 1;}
 .line-map > li:not(.home) > a{width: 200px; padding: 0 50px 0 20px;background: url('../../static/images/sub_nav_bg1.png') no-repeat right 20px  center; border-right:1px solid #F0F0F0;}
 .line-map > li > a.on{background: url('../../static/images/sub_nav_bg2.png') no-repeat right 20px  center;}
 .line-map > li > a.nl{padding: 0 20px; background: none;}
-.line-map > li > ul{display: none; width: 100%; position: absolute; top: 100%; left: -1px; right: 0; z-index: 9; padding: 15px;background: #fff; border: 1px solid #F0F0F0; box-shadow: 4px 4px 6px rgba(0,0,0,0.2);}
-.line-map > li > ul > li + li{margin-top: 10px;}
-.line-map > li > ul > li > a{display: block;color: #666;}
+.line-map > li > ul{display: none; width: 100%; position: absolute; top: 100%; left: 0px; right: 0; z-index: 9;background: #fff; border: 1px solid #f5f5f5; box-shadow: 2px 6px 6px rgba(95, 95, 95, 0.2);}
+.line-map > li > ul > li > a{display: block;color: #666; padding:15px 30px;}
+.line-map > li > ul > li > a:hover,.line-map > li > ul > li > a:focus{color: #1969b2;  background: #ECF8FE;}
 
 .content-area {padding:45px 0 90px;}
 @media (max-width: 760px) {
     #snb-wrap > .wid{width: 100%;}
-    .line-map > li{font-size: 16px;}
-    .line-map > li > a{height: 48px; }
-    .line-map > li.home >a{width: 48px;}
+    .line-map > li:nth-child(1),.line-map > li:nth-child(2){display: none;}
+    .line-map > li{font-size: 16px; width: 50%;;}
+    .line-map > li > a{height: 48px;}
+    .line-map > li:not(.home) > a{width: 100%;}
+    /* .line-map > li.home >a{width: 48px;}
     .line-map > li:not(.home){width: calc(100% / 3 );}
-    .line-map > li:not(.home) >a{width: 100%;     padding: 0 25px 0 10px; background-position: right 10px  center;}
-
+    .line-map > li:not(.home) >a{width: 100%;     padding: 0 25px 0 10px; background-position: right 10px  center;} */
 
 }
 @media (max-width: 480px) {
     .sub-tit-wrap{height: 150px; background-size: auto 100%;}
     .line-map > li{font-size: 15px;}
-    .line-map > li > ul{padding:15px 10px; font-size: 13px;}
+    .line-map > li > ul{font-size: 13px;}
+    .line-map > li > ul > li > a{padding:10px 20px;}
 
 }
 @media (max-width: 380px) {
@@ -114,7 +116,7 @@
 .conts-tit{font-size:var(--fz-45); font-weight: 700; color:#014195; text-align: center; margin-top: 90px;}
 .conts-tit > span{color:#333;}
 .conts-tit-desc{font-size:20px; font-weight: 300; text-align: center; margin-top: 10px;}
-.desc{padding-left: 13px; margin-bottom: 20px;}
+.desc{padding-left: 6px; margin-bottom: 20px;}
 .cout{font-size: 14px; text-indent: 20px; display: inline-block; margin-bottom: 20px;}
 .link-txt{text-decoration: underline;}
 
@@ -341,6 +343,7 @@ table.type02 tr.al >td{padding:10px 20px; text-align: left; vertical-align: base
 
 /* 해외파견프로그램 */
 .program-imgs{text-align: center;}
+.program-imgs > img{max-width: 100%;}
 .faqList01 > li {
 	border-bottom:1px solid #e9e9e9;
 	padding:15px 20px;

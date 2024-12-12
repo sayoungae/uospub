@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>국제처 소개</title>
-    <!-- CSS -->
+     <!-- CSS -->
     <link rel="stylesheet" href="../../static/css/common.css">
+    <link rel="stylesheet" href="../../static/css/swiper.css">
     <!-- JS -->
     <script src="../../static/js/jquery-3.7.1.js"></script>
     <script src="../../static/js/common.js"></script>
+    <script src="../../static/js/swiper-bundle.min.js"></script>
+    <script src="../../static/js/main.js"></script>
     <script>
         // header.html을 불러오기
         fetch('../include/header.html')
@@ -19,9 +22,9 @@
             .then(response => response.text())
             .then(data => document.getElementById('footer').innerHTML = data);
         
-        fetch('../include/snb.html')
-            .then(response => response.text())
-            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+        // fetch('../include/snb.html')
+        //     .then(response => response.text())
+        //     .then(data => document.getElementById('snb-wrap').innerHTML = data);
        
     </script>
 </head>

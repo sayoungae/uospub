@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>국제처 소개</title>
+     <!-- CSS -->
+    <link rel="stylesheet" href="../../static/css/common.css">
+    <link rel="stylesheet" href="../../static/css/swiper.css">
+    <!-- JS -->
+    <script src="../../static/js/jquery-3.7.1.js"></script>
+    <script src="../../static/js/common.js"></script>
+    <script src="../../static/js/swiper-bundle.min.js"></script>
+    <script src="../../static/js/main.js"></script>
+    <script>
+        // header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+       
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <div class="sub-tit-wrap"><h3 class="pg-tit">교환학생 SeoulMate</h3></div>
+            <!-- snb -->
+            <div id="snb-wrap"></div>
+            <!-- // snb -->
+            <div class="wid">
+                <div class="content-area">
+                    <div id="contents">
+                        <div class="program-imgs">
+                            <img src="../../static/images/seoulmate_01.jpg" alt="">
+                        </div>
+                        <h4 class="sub-tit">프로그램 개요</h4>
+                        <div class="desc">
+                            <ul class="dotList01">
+                                <li>
+                                    <strong class="dot-tit">프로그램 개요</strong>
+                                    <ul class="dotList03">
+                                        <li>해외 장기 파견 프로그램 참가에 일정상 또는 경제적 부담을 느끼는 학생을 위해 여름 및 겨울 방학 중 단기 프로그램의 다양화<br/>※ 우리대학의 해외교류대학에서 방학동안 제공하는 정규교과목을 수강하고 본교로 학점이전 진행</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong class="dot-tit">파견 국가 및 대학</strong><span>(2024년 겨울 기준)</span>
+                                    <ul class="dotList03">
+                                        <li>
+                                            <p>해외 장기 파견 프로그램 참가에 일정상 또는 경제적 부담을 느끼는 학생을 위해 여름 및 겨울 방학 중 단기 프로그램의 다양화<br/>※ 우리대학의 해외교류대학에서 방학동안 제공하는 정규교과목을 수강하고 본교로 학점이전 진행</p>
+                                            <div class="table-wrap">
+                                                <table class="type02">
+                                                    <caption>복수학위 프로그램 대학별 학비</caption>
+                                                    <thead>
+                                                    <tr>
+                                                        <th>국가(도시)</th>
+                                                        <th>대학명</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td>독일</td>
+                                                        <td>베를린 자유대학<br>마르부르크대학</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>포르투갈</td>
+                                                        <td>ISCTE</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>프랑스</td>
+                                                        <td>툴루즈 경영대학</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>일본</td>
+                                                        <td>호세이대학</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>멕시코</td>
+                                                        <td>몬테레이 공과대학</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                                <p class="mt10">※ 파견 국가 및 대학은 년도별 상이할 수 있음</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong class="dot-tit">학점이전안내</strong>
+                                    <ul class="dotList03">
+                                        <li>해외교류대학에서 방학동안 제공하는 정규교과목을 수강하고, 전공, 일반 또는 교양선택 등으로
+                                            학점이전 수강하는 경우 귀국 후 학점이전(계절학기 학점이전 6학점까지 가능)</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong class="dot-tit">선발일정</strong>
+                                    <div class="table-wrap">
+                                        <table class="type01">
+                                            <caption>선발일정- 구분, 여름계절학기 단기파견, 겨울계절학기 단기파견</caption>
+                                            <thead>
+                                            <tr>
+                                                <th>구분</th>
+                                                <th>여름계절학기 단기파견</th>
+                                                <th>겨울계절학기 단기파견</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>모집공고 및 원서접수</td>
+                                                <td>3월</td>
+                                                <td>9~10월</td>
+                                            </tr>
+                                            <tr>
+                                                <td>서류심사 및 합격자 발표</td>
+                                                <td>4월</td>
+                                                <td>9~10월</td>
+                                            </tr>
+                                            <tr>
+                                                <td>합격자 오리엔테이션</td>
+                                                <td>4월 중순</td>
+                                                <td>10월</td>
+                                            </tr>
+                                            <tr>
+                                                <td>파견</td>
+                                                <td>7월 ~ 8월</td>
+                                                <td>1월</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>
