@@ -23,51 +23,23 @@
 	<script src="../js/mbaNew/filedown.js"></script>
 	<script src="../js/mbaNew/main.js?version=202401152"></script>
 	<script src="../js/mbaNew/sub.js"></script>
-	
-	<script type="text/javascript" src="../js/loader.js"></script>
+
+	<!-- chart js -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js" integrity="sha512-L0Shl7nXXzIlBSUUPpxrokqq4ojqgZFQczTYlGjzONGTDAcLremjwaWv5A+EDLnxhQzY5xUZPWLOLqYRkY0Cbw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script type="text/javascript" src="../js/mbaNew/libs/chartjs-plugin-labels.min.js"></script>
 	<script type="text/javascript">
 		$(function(){
-			// Google Charts 라이브러리 불러오기
-			google.charts.load('current', {packages:['corechart']});
-			google.charts.setOnLoadCallback(drawChart);
-			
-			// 차트 그리기 함수
-			function drawChart() {
-				var data = google.visualization.arrayToDataTable([
-					['Expense', 'Amount'],
-					['Utilities', 9093],
-					['Transportation', 3420],
-					['Maintenance', 10985],
-					['Administrative', 3075],
-					['Food', 12200],
-					['Staff', 56340],
-					['Insurance', 5000]
-				]);
-	
-				// 숫자 포맷 설정
-				var formatter = new google.visualization.NumberFormat({
-					negativeColor: 'red',
-					negativeParens: true,
-					pattern: '$###,###'
-				});
-				formatter.format(data, 1); // 데이터의 두 번째 열 포맷 적용
-	
-				// 차트 옵션 설정
-				var options = {
-					title: 'Expense Distribution',
-					is3D: true, // 3D 효과 설정
-					slices: {
-					5: {color: 'MediumSeaGreen'}, // 특정 조각 색상 설정 (Food)
-					3: {color: 'DarkRed'} // 특정 조각 색상 설정 (Administrative)
-					},
-					chartArea: {width:'500px', height:'300px'}, // 차트 영역 크기 조정
-					legend: {alignment: 'center', textStyle: {fontSize: 18}}
-				};
-	
-				// 차트 생성 및 출력
-				var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
-				chart.draw(data, options);
-			}
+			const ctx = document.getElementById('myPieChart').getContext('2d');
+			const myPieChart = new Chart(ctx, {
+				type: 'pie',
+				data: {
+					labels: ['A', 'B', 'C'],
+					datasets: [{
+						data: [10, 20, 30],
+						backgroundColor: ['red', 'green', 'blue']
+					}]
+				}
+			});
 		});
 	</script>
 </head>
@@ -455,25 +427,25 @@
 							<div>
 								<h4>SEMBA과정 직급별 기준 학생현황(입학일 기준)</h4>
 								<div class="desc">
-									<canvas id="piechart_3d"></canvas>
+									<canvas id="jobGradeStar-pie"></canvas>
 								</div>
 							</div>
 							<div>
 								<h4>SEMBA과정 연령별 기준 학생현황(입학일 기준)</h4>
 								<div class="desc">
-
+									<div id="ageStar-pie"></div>
 								</div>
 							</div>
 							<div>
 								<h4>SEMBA과정 성별 학생현황(입학일 기준)</h4>
 								<div class="desc">
-
+									<div id="gender-pie"></div>
 								</div>
 							</div>
 							<div>
 								<h4>SEMBA과정 재직기간별 학생현황(입학일 기준)</h4>
 								<div class="desc">
-
+									<div id="officePeriod-pie"></div>
 								</div>
 							</div>
 							
