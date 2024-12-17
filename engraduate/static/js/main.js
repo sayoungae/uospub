@@ -74,4 +74,55 @@ $(function(){
             t.attr("title","활성 탭").closest("li").siblings().find(".accBtn").attr("title","비활성 탭");
         }
     });
+    const quickSlide = new Swiper('.quick-slide', {
+        a11y:false,
+        speed: 800,
+		loop: true,
+        slidesPerView: 1,
+        spaceBetween: 10,
+        grid: {
+            fill: 'row',
+            rows: 2
+        },
+        navigation: {
+            prevEl: '.quickSlide_prev',
+            nextEl: '.quickSlide_next',
+        },
+        breakpoints: {
+            1200: {
+                slidesPerView: 8,
+                spaceBetween: 20,
+                grid: {
+                    fill: 'row',
+                    rows: 2
+                },
+            },
+            1024: {
+                slidesPerView: 6,
+                spaceBetween: 20,
+                grid: {
+                    fill: 'row',
+                    rows: 2
+                },
+            },
+            768: {
+                slidesPerView: 4,
+                spaceBetween: 10,
+                grid: {
+                    fill: 'row',
+                    rows: 2
+                },
+            },
+            481: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+                grid: {
+                    fill: 'row',
+                    rows: 2
+                },
+            }
+        }
+        
+    });
+    quickSlide();
 });

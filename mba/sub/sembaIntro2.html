@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+	<link rel="icon" href="../favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon-precomposed" href="..//www.uos.ac.kr/images/favicon_96.png" />
+	<meta name="WT.ti" content="행정실안내____행정실안내_대학원소개_서울시립대학교">
+	<title>
+		행정실안내 &lt;
+		대학원소개 &lt;
+
+		서울시립대학교 경영대학원</title>
+	<link rel="stylesheet" type="text/css" href="../css/mbaNew/common.css" />
+	<link rel="stylesheet" type="text/css" href="../css/mbaNew/main.css" />
+	<link rel="stylesheet" type="text/css" href="../css/mbaNew/sub.css" />
+	<script src="../js/mbaNew/jquery-1.11.3.min.js"></script>
+	<script src="../js/mbaNew/slick.js"></script>
+	<script src="../js/mbaNew/common.js"></script>
+	<script src="../js/mbaNew/filedown.js"></script>
+	<script src="../js/mbaNew/main.js?version=202401152"></script>
+	<script src="../js/mbaNew/sub.js"></script>
+	
+	<script type="text/javascript" src="../js/loader.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			// Google Charts 라이브러리 불러오기
+			google.charts.load('current', {packages:['corechart']});
+			google.charts.setOnLoadCallback(drawChart);
+			
+			// 차트 그리기 함수
+			function drawChart() {
+				var data = google.visualization.arrayToDataTable([
+					['Expense', 'Amount'],
+					['Utilities', 9093],
+					['Transportation', 3420],
+					['Maintenance', 10985],
+					['Administrative', 3075],
+					['Food', 12200],
+					['Staff', 56340],
+					['Insurance', 5000]
+				]);
+	
+				// 숫자 포맷 설정
+				var formatter = new google.visualization.NumberFormat({
+					negativeColor: 'red',
+					negativeParens: true,
+					pattern: '$###,###'
+				});
+				formatter.format(data, 1); // 데이터의 두 번째 열 포맷 적용
+	
+				// 차트 옵션 설정
+				var options = {
+					title: 'Expense Distribution',
+					is3D: true, // 3D 효과 설정
+					slices: {
+					5: {color: 'MediumSeaGreen'}, // 특정 조각 색상 설정 (Food)
+					3: {color: 'DarkRed'} // 특정 조각 색상 설정 (Administrative)
+					},
+					chartArea: {width:'500px', height:'300px'}, // 차트 영역 크기 조정
+					legend: {alignment: 'center', textStyle: {fontSize: 18}}
+				};
+	
+				// 차트 생성 및 출력
+				var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+				chart.draw(data, options);
+			}
+		});
+	</script>
+</head>
+
+<body>
+	<!-- skindivi start -->
+	<div id="skipNavigation" title="SkipNavigation">
+		<a href="#container">본문 바로가기</a>
+		<a href="#gnb">메인메뉴 바로가기</a>
+	</div>
+	<!-- skindivi end -->
+
+	<div id="wrap">
+
+		<div id="header" class="clearfix">
+			<div class="menu_bg"></div>
+			<div class="header-Line">
+				<div class="width-auto clearfix">
+					<h1 id="logo">
+						<a href="../mbaNew/main.do" target="_self">
+							<img src="../images/mbaNew/common/logo_mba.png" alt="서울시립대학교 경영대학원" />
+						</a>
+					</h1>
+					<a class="mob-menu-open" href="#none"><img src="../images/mbaNew/common/mob_menu_open.png"
+							alt="메뉴열기" /></a>
+				</div>
+			</div>
+			<div class="header-Part">
+				<div class="width-auto clearfix">
+					<div class="menu-area">
+						<span class="mK-bg"></span>
+						<div class="mob-top clearfix">
+							<div class="mL1">
+								<h1 id="logoM" style="display:none;">
+									<a href="../mbaNew/main.do" target="_self">
+										<img src="../images/mbaNew/common/logo_mba.png" alt="서울시립대학교 경영대학원">
+									</a>
+								</h1>
+								<a class="mob-menu-close" href="#none" style="display: block;"><img
+										src="../images/mbaNew/common/mob_menu_close.jpg" alt="메뉴닫기"></a>
+							</div>
+							<div class="mL2 clearfix">
+								<div class="btnV-PC">
+									<a href="https://www.uos.ac.kr" target="_blank"
+										title="시립대 국문 사이트 새창으로 열기">UOS-KOR</a>
+									<a href="https://www.uos.ac.kr/en/main.do" target="_blank"
+										title="시립대 영문 사이트 새창으로 열기">UOS-ENG</a>
+									<a href="https://biz.uos.ac.kr/biz/main.do">경영대학</a>
+									<a href="#a" onclick="callLogin();" title="로그인">
+										LOGIN
+									</a>
+								</div>
+							</div>
+						</div>
+						<div id="gnb">
+							<ul class="gnb-depth1 clearfix">
+								<li class="widBg">
+									<a href="#n" class="bg1">대학원소개</a>
+									<div class="gnb-depth2 bg1">
+										<ul>
+											<li>
+												<a
+													href="../mbaNew/html/intro/welcome.do?menuid=3010001001000000000">원장인사말</a>
+
+											</li>
+											<li>
+												<a
+													href="../mbaNew/html/intro/missionandvision.do?menuid=3010001002000000000">미션과비전</a>
+
+											</li>
+											<li>
+												<a
+													href="../mbaNew/html/intro/history.do?menuid=3010001003000000000">교육연혁</a>
+
+											</li>
+											<li>
+												<a
+													href="../mbaNew/html/intro/organization.do?menuid=3010001004000000000">조직도</a>
+
+											</li>
+											<li>
+												<a
+													href="../mbaNew/prof/list.do?code=30076&cate=1&menuid=3010001005000000000">교수진소개</a>
+
+											</li>
+											<li class="on">
+												<a
+													href="../mbaNew/html/intro/eduInfo.do?menuid=3010001006000000000">행정실안내</a>
+
+											</li>
+											<li>
+												<a
+													href="../mbaNew/html/intro/location.do?menuid=3010001007000000000">오시는길</a>
+
+											</li>
+										</ul>
+								</li>
+								<li>
+									<a href="#n" class="bg1">입학안내</a>
+									<div class="gnb-depth2 bg1">
+										<ul>
+											<li>
+												<a
+													href="../mbaNew/html/admission/admission.do?menuid=3010002001000000000">모집요강</a>
+
+											</li>
+											<li>
+												<a
+													href="../mbaNew/korFree/list.do?list_id=30076DA6&menuid=3010002005000000000">전년도모집요강</a>
+
+											</li>
+											<li>
+												<a href="https://www.uos.ac.kr/kor/html/life/scholarship/tuition/tuition.do?epTicket=LOG"
+													class="headerLiNewWin" target="_blank" title="새창으로 열기">등록안내</a>
+
+											</li>
+											<li>
+												<a
+													href="../mbaNew/korOpen/list.do?list_id=30076DA4&menuid=3010002003000000000">입학FAQ
+												</a>
+
+											</li>
+											<li>
+												<a href="../mbaNew/html/admission/brochure.do">홍보자료</a>
+
+											</li>
+										</ul>
+								</li>
+								<li>
+									<a href="#n" class="bg1">학사안내</a>
+									<div class="gnb-depth2 bg1">
+										<ul>
+											<li>
+												<a href="../mbaNew/html/bachelor/condition.do">학위수여요건</a>
+
+											</li>
+											<li>
+												<a
+													href="../mbaNew/html/bachelor/process.do?menuid=3010003002000000000">수업및교과과정</a>
+
+											</li>
+											<li>
+												<a
+													href="../mbaNew/html/bachelor/major.do?menuid=3010003004000000000">전공영역선택</a>
+
+											</li>
+											<li>
+												<a
+													href="../mbaNew/html/bachelor/edustatus.do?menuid=3010003005000000000">휴학/복학/제적·재입학</a>
+
+											</li>
+											<li>
+												<a
+													href="../mbaNew/html/bachelor/Course.do?menuid=3010003006000000000">과정특전</a>
+
+											</li>
+											<li>
+												<a href="https://rule.uos.ac.kr/lmxsrv/law/lawFullView.srv?SEQ=59"
+													class="headerLiNewWin" target="_blank" title="새창으로 열기">학칙</a>
+
+											</li>
+											<li>
+												<a
+													href="../mbaNew/korFree/list.do?list_id=30076DA5&menuid=3010003008000000000">자료실</a>
+
+											</li>
+										</ul>
+								</li>
+								<li>
+									<a href="#n" class="bg1">학교생활</a>
+									<div class="gnb-depth2 bg1">
+										<ul>
+											<li>
+												<a
+													href="../mbaNew/korNotice/list.do?list_id=30076EA1&menuid=3010004001000000000">공지사항</a>
+
+											</li>
+											<li>
+												<a
+													href="../mbaNew/korCalendarYear2/list.do?list_id=30076DA1&menuid=3010004002000000000">학사일정</a>
+
+											</li>
+											<li>
+												<a
+													href="../mbaNew/korGallery/list.do?list_id=30076HA1&menuid=3010004003000000000">갤러리</a>
+
+											</li>
+											<li>
+												<a
+													href="../mbaNew/html/wwh/welcome.do?menuid=3010004004000000000">원우회소개</a>
+
+											</li>
+											<li>
+												<a href="../mbaNew/html/alumni/welcome.do">동문회소개</a>
+
+											</li>
+											<li>
+												<a href="https://cafe.naver.com/uosmba21" class="headerLiNewWin"
+													target="_blank" title="새창으로 열기">커뮤니티</a>
+
+											</li>
+											<li>
+												<a href="http://uosmba.uos.ac.kr/" class="headerLiNewWin"
+													target="_blank" title="새창으로 열기">원우수첩</a>
+
+											</li>
+											<li>
+												<a
+													href="../mbaNew/korColumn/list.do?list_id=30076DA3&menuid=3010004008000000000">동문인터뷰</a>
+
+											</li>
+										</ul>
+								</li>
+								<li>
+									<a href="https://semba.modoo.at/" class="headerNewWin" target="_blank"
+										title="새창으로 열기">SEMBA</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="search-Gbox">
+						<a class="search-open" href="#none"><img src="../images/mbaNew/common/search_open.png"
+								alt="검색열기" /></a>
+						<a class="search-close" href="#none"><img src="../images/mbaNew/common/search_close.png"
+								alt="검색닫기" /></a>
+						<div class="searchBox-layout">
+							<div class="width-auto">
+								<div class="searchBox">
+									<form id="searchForm" name="searchForm"
+										action="https://www.uos.ac.kr/search/search.do" method="get"
+										onsubmit="return goQuicksearch();">
+										<input type="hidden" name="searchType" value="검색 타입" />
+										<input id="quicksearch" type="text" name="searchword" title="검색어"
+											placeholder="검색어를 입력하세요">
+										<button class="sbt"></button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="heightS"></div>
+					<div class="menu_bg2"></div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div id="container" class="sub">
+			<div class="sub-container">
+				<div class="width-auto">
+					<div class="leftMenu-area">
+						<h2><span>SEMBA</span></h2>
+						<ul class="leftMenu">
+							<li class="on">
+								<a href="#none">SEMBA 소개</a>
+							</li>
+							<li>
+								<a href="none">SEMBA 입학안내</a>
+							</li>
+							<li>
+								<a href="none">SEMBA 학사안내</a>
+							</li>
+							<li>
+								<a href="none">SEMBA 스토리</a>
+							</li>
+						</ul>
+					</div>
+					<div class="content-area">
+						<a href="#n" class="hidden" tabindex="-1">본문 시작</a>
+						<ul class="line-map">
+							<li><img src="../images/ithelpdesk/sub/home_ic.jpg" alt="홈"></li>
+							<li>SEMBA</li>
+							<li>SEMBA 소개</li>
+						</ul>
+						<div id="contents">
+							<h3>SEMBA 소개</h3>
+							<!-- 202412 추가 -->
+							<ul class="new2022-tab1 mt10">
+								<li ><a href="#none">소개</a></li>
+								<li class="on"><a href="#none">학생현황</a></li>
+							</ul>
+							<div>
+                                <h4>SEMBA과정 기관별 학생현황</h4>
+                                <div class="listType02 type2 desc">
+									<table>
+										<thead>
+											<tr>
+												<th>공기업</th>
+												<th>졸업생(명)</th>
+												<th>재학생(명)</th>
+												<th>합계(명)</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>서울시설공단</td>
+												<td>104</td>
+												<td>20</td>
+												<td>124</td>
+											</tr>
+											<tr>
+												<td>서울교통공사</td>
+												<td>154</td>
+												<td>8</td>
+												<td>162</td>
+											</tr>
+											<tr>
+												<td>서울주택도시공사</td>
+												<td>58</td>
+												<td>10</td>
+												<td>68</td>
+											</tr>
+											<tr>
+												<td>서울농수산식품공사</td>
+												<td>32</td>
+												<td>6</td>
+												<td>38</td>
+											</tr>
+											<tr>
+												<td>대구도시공사</td>
+												<td>4</td>
+												<td></td>
+												<td>4</td>
+											</tr>
+											<tr>
+												<td>인천교통공사</td>
+												<td>13</td>
+												<td>6</td>
+												<td>19</td>
+											</tr>
+											<tr>
+												<td>국민연금관리공단</td>
+												<td>1</td>
+												<td></td>
+												<td>1</td>
+											</tr>
+											<tr>
+												<td>중소기업진흥공단</td>
+												<td>1</td>
+												<td></td>
+												<td>1</td>
+											</tr>
+											<tr>
+												<td>경기주택도시공사</td>
+												<td>4</td>
+												<td>1</td>
+												<td>5</td>
+											</tr>
+											<tr>
+												<td>한국마사회</td>
+												<td>1</td>
+												<td></td>
+												<td>1</td>
+											</tr>
+											<tr>
+												<td>화성도시공사</td>
+												<td>1</td>
+												<td>2</td>
+												<td>3</td>
+											</tr>
+											<tr>
+												<td>서울산업진흥원</td>
+												<td></td>
+												<td>1</td>
+												<td>1</td>
+											</tr>
+											<tr>
+												<td>인천시설공단</td>
+												<td></td>
+												<td>1</td>
+												<td>1</td>
+											</tr>
+											<tr>
+												<td class="fcBl2">합계</td>
+												<td>373</td>
+												<td>55</td>
+												<td>428</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+                            </div>
+							<div>
+								<h4>SEMBA과정 직급별 기준 학생현황(입학일 기준)</h4>
+								<div class="desc">
+									<canvas id="piechart_3d"></canvas>
+								</div>
+							</div>
+							<div>
+								<h4>SEMBA과정 연령별 기준 학생현황(입학일 기준)</h4>
+								<div class="desc">
+
+								</div>
+							</div>
+							<div>
+								<h4>SEMBA과정 성별 학생현황(입학일 기준)</h4>
+								<div class="desc">
+
+								</div>
+							</div>
+							<div>
+								<h4>SEMBA과정 재직기간별 학생현황(입학일 기준)</h4>
+								<div class="desc">
+
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Footer -->
+		<div id="footer">
+			<div id="footer">
+				<div class="footer-back">
+					<div class="width-auto">
+						<div class="footerBox">
+							<div class="box1 clearfix">
+								<ul class="link1">
+									<li><a href="https://www.uos.ac.kr/kor/html/site/personalInfo/personalInfo.do"
+											style="color: #6dc1ff;">개인정보처리방침</a></li>
+									<li><a href="../mbaNew/html/intro/location.do?menuid=3010001007000000000">오시는길</a>
+									</li>
+								</ul>
+							</div>
+							<div class="box2 clearfix">
+								<a href="../mbaNew/main.do" class="logo-bottom"><img
+										src="../images/mbaNew/common/logo_bottom2.png" alt="서울시립대학교 경영대학원"></a>
+								<div class="txt">
+									<p>(02054) 서울특별시 동대문구 서울시립대로 163(전농동) 미래관 508호<br>TEL:
+										02-6490-2202~3&nbsp;/&nbsp;Email: uosmba@uos.ac.kr</p>
+									<span>Copyrightⓒ2023 The University of Seoul. All Rights Reserved.</span>
+								</div>
+							</div>
+						</div>
+						<button class="GoTop-btn">최상단이동</button>
+					</div>
+				</div>
+			</div>
+		</div>
+</body>
+
+</html>

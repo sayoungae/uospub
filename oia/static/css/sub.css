@@ -151,19 +151,18 @@
 .tab-conts-wrap .tab-conts.active{display: block;}
 /* -- tab */
 /* select tab */
-.select-tabList select{width: 100%; max-width: 200px; border:1px solid #F2F2F2; font-size: 18px; border-radius: 5px; padding:10px 10px; }
+.select-tabList select{width: 100%; max-width: 200px; border:1px solid #e4e4e4; font-size: 18px; border-radius: 5px; padding:10px 10px; }
 .select-tab-conts{margin:40px 0 20px;}
 .select-tab-conts .sel-tab-conts{display: none;}
 .select-tab-conts .sel-tab-conts.active{display: block;}
 
 /* -- select tab */
 /* table */
-/* -- table */
-.table-wrap{ margin:20px 10px 30px;}
+.table-wrap{ margin:20px 10px 30px; overflow: hidden;}
 table.type01,table.type02{width: 100%; border-top:2px solid #A7C9DE; text-align: center; position: relative;}
-table.type01 thead,table.type02 thead{border-bottom:2px solid #A7C9DE;font-weight: 700;}
+table.type01 thead,table.type02 thead{border-bottom:2px solid #A7C9DE;font-weight: 700; background-color: #fff;}
 table.type01 th,table.type01 td,
-table.type02 th,table.type02 td{padding:10px 10px; background-color: #fff;    vertical-align: middle;}
+table.type02 th,table.type02 td{padding:10px 10px; vertical-align: middle; font-size: 15px;}
 table.type01 td,table.type02 td{border-right:1px solid #cccccc; border-left:1px solid #cccccc; border-bottom:1px solid #cccccc}
 table.type01 td:last-child,table.type02 td:last-child{border-right:0}
 table.type01 td:nth-child(1){border-left:0; background-color: #F2F2F2;}
@@ -365,6 +364,13 @@ table.type02 tr.al >td{padding:10px 20px; text-align: left; vertical-align: base
 .faqList01 > li > p > span:nth-child(2){width: calc(100% - 36px);}
 /* -- 해외파견프로그램 */
 
+/* 해외교류대학 */
+.Agreement-type{margin:30px 0 20px; display: flex; gap: 40px; align-items: center; flex-wrap: wrap;}
+.Agreement-type > li{display: flex; align-items: center; gap: 10px;}
+.Agreement-type > li > span{display: inline-block;width: 35px; height: 35px; text-align: center; font-weight: 700; color:#fff; background-color: #EB8A2B; border-radius: 50%; padding:7px 0;}
+.tbl-select select{width: 100%; max-width: 300px; border: 1px solid #e4e4e4; font-size: 18px; border-radius: 5px; padding: 10px 10px;}
+/* -- 해외교류대학 */
+
 @media (max-width: 1024px) {
     /* 미션 핵심가치 */
     .mis-conts > ul{padding-top: 50px;}
@@ -377,6 +383,8 @@ table.type02 tr.al >td{padding:10px 20px; text-align: left; vertical-align: base
     /* -- 미션 핵심가치 */
 }
 @media (max-width: 760px) {
+    /* table */
+    .table-wrap{overflow-x: scroll;}
     /* 검색 */
     .pageSearch-wrap .search-box .serch-input {width: 100%;}
     /* -- 검색 */
