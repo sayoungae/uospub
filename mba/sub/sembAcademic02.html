@@ -24,98 +24,6 @@
 	<script src="../js/mbaNew/main.js?version=202401152"></script>
 	<script src="../js/mbaNew/sub.js"></script>
 
-	<!-- plotly js -->
-	<script src="../js/mbaNew/libs/plotly-2.35.2.min.js"></script>
-
-	
-
-	<script>
-		$(function(){
-			var Plotly_Configuration = {modeBarButtonsToRemove:['lasso2d', 'select2d', 'toImage'], displaylogo:false}
-			// 직급별 데이터 (jobGradeStar-pie)
-			var dataJobGradeStar = [{
-				type: "pie",
-				values: [3, 14, 43, 29, 9, 2],
-				labels: ["1급", "2급", "3급", "4급", "5급", "6급"],
-				textinfo: "label+percent",
-				insidetextorientation: "radial",
-				hoverinfo: 'none',
-				textposition: 'outside',
-				hole: .4,
-				textfont: {
-					size: 14,
-					color: '#333',
-					weight: '600'
-				},
-				showlegend: false,
-				
-			}];
-
-			// 연령별 차트 데이터 (ageStar-pie)
-			var dataAgeStar = [{
-				type: "pie",
-				values: [0, 12, 58, 30],
-				labels: ["20대", "30대", "40대", "50대"],
-				textinfo: "label+percent",
-				insidetextorientation: "radial",
-				hoverinfo: 'none',
-				textposition: 'outside',
-				hole: .4,
-				textfont: {
-					size: 14,
-					color: '#333',
-					weight: '600'
-				},
-				showlegend: false
-			}];
-
-			// 성별 차트 데이터 (gender-pie)
-			var dataGender = [{
-				type: "pie",
-				values: [85, 15],
-				labels: ["남성", "여성"],
-				textinfo: "label+percent",
-				insidetextorientation: "radial",
-				hoverinfo: 'none',
-				textposition: 'outside',
-				hole: .4,
-				textfont: {
-					size: 14,
-					color: '#333',
-					weight: '600'
-				},
-				showlegend: false
-			}];
-
-			// 네 번째 차트 데이터 (officePeriod-pie)
-			var dataOfficePeriod = [{
-				type: "pie",
-				values: [1,  4, 20, 36, 39],
-				labels: ["5년 미만", "5~10년","10~15년", "15~20년", "20년 이상"],
-				textinfo: "label+percent",
-				insidetextorientation: "radial",
-				hoverinfo: 'none',
-				textposition: 'outside',
-				hole: .4,
-				textfont: {
-					size: 14,
-					color: '#333',
-					weight: '600'
-				},
-				showlegend: false
-			}];
-
-			var layout = [{
-				autosize: true,
-			}]
-
-			// 차트 생성
-			Plotly.newPlot('jobGradeStar-pie', dataJobGradeStar, layout, Plotly_Configuration);
-			Plotly.newPlot('ageStar-pie', dataAgeStar, layout, Plotly_Configuration);
-			Plotly.newPlot('gender-pie', dataGender, layout, Plotly_Configuration);
-			Plotly.newPlot('officePeriod-pie', dataOfficePeriod, layout, Plotly_Configuration);
-		});
-	</script>
 </head>
 
 <body>
@@ -388,141 +296,137 @@
 						<ul class="line-map">
 							<li><img src="../images/ithelpdesk/sub/home_ic.jpg" alt="홈"></li>
 							<li>SEMBA</li>
-							<li>SEMBA 소개</li>
+							<li>SEMBA 학사안내</li>
 						</ul>
 						<div id="contents">
-							<h3>SEMBA 소개</h3>
-							<!-- 202412 추가 -->
-							<ul class="new2022-tab1 mt10">
-								<li ><a href="#none">소개</a></li>
-								<li class="on"><a href="#none">학생현황</a></li>
+                            <h3>수업 및 교과과정</h3>							
+
+                            <ul class="new2022-tab1 mt10">
+								<li class="on"><a href="#none">학기/수업일정</a></li>
+								<li><a href="#none">교과과정</a></li>
+								<li><a href="#none">학위수여요건</a></li>
+								<li><a href="#none">해외연수 프로그램</a></li>
 							</ul>
-							<div>
-                                <h4>SEMBA과정 기관별 학생현황</h4>
-                                <div class="listType02 type2 desc">
-									<table>
-										<thead>
-											<tr>
-												<th>공기업</th>
-												<th>졸업생(명)</th>
-												<th>재학생(명)</th>
-												<th>합계(명)</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>서울시설공단</td>
-												<td>104</td>
-												<td>20</td>
-												<td>124</td>
-											</tr>
-											<tr>
-												<td>서울교통공사</td>
-												<td>154</td>
-												<td>8</td>
-												<td>162</td>
-											</tr>
-											<tr>
-												<td>서울주택도시공사</td>
-												<td>58</td>
-												<td>10</td>
-												<td>68</td>
-											</tr>
-											<tr>
-												<td>서울농수산식품공사</td>
-												<td>32</td>
-												<td>6</td>
-												<td>38</td>
-											</tr>
-											<tr>
-												<td>대구도시공사</td>
-												<td>4</td>
-												<td></td>
-												<td>4</td>
-											</tr>
-											<tr>
-												<td>인천교통공사</td>
-												<td>13</td>
-												<td>6</td>
-												<td>19</td>
-											</tr>
-											<tr>
-												<td>국민연금관리공단</td>
-												<td>1</td>
-												<td></td>
-												<td>1</td>
-											</tr>
-											<tr>
-												<td>중소기업진흥공단</td>
-												<td>1</td>
-												<td></td>
-												<td>1</td>
-											</tr>
-											<tr>
-												<td>경기주택도시공사</td>
-												<td>4</td>
-												<td>1</td>
-												<td>5</td>
-											</tr>
-											<tr>
-												<td>한국마사회</td>
-												<td>1</td>
-												<td></td>
-												<td>1</td>
-											</tr>
-											<tr>
-												<td>화성도시공사</td>
-												<td>1</td>
-												<td>2</td>
-												<td>3</td>
-											</tr>
-											<tr>
-												<td>서울산업진흥원</td>
-												<td></td>
-												<td>1</td>
-												<td>1</td>
-											</tr>
-											<tr>
-												<td>인천시설공단</td>
-												<td></td>
-												<td>1</td>
-												<td>1</td>
-											</tr>
-											<tr>
-												<td class="fcBl2">합계</td>
-												<td>373</td>
-												<td>55</td>
-												<td>428</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-                            </div>
-							<div>
-								<h4>SEMBA과정 직급별 기준 학생현황(입학일 기준)</h4>
-								<div class="desc">
-									<div id="jobGradeStar-pie" class="graph-bx"></div>
-								</div>
+							<div class="listType02 type2" style="margin-left: 0 !important;">
+								<table>
+									<caption>학기별 이수 교과목- 학기(1학기, 여름계절, 2학기, 3학기, 4학기), 구분, 교과목명, 학점</caption>
+									<thead>
+										<tr>
+											<th>학기</th>
+											<th>구분</th>
+											<th>교과목명</th>
+											<th>학점</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th rowspan="9">1학기</th>
+											<td>전공필수</td>
+											<td>리더십과인사관리</td>
+											<td>3</td>
+										</tr>
+										<tr>
+											<td class="borderleft">전공필수</td>
+											<td>경영사례연구</td>
+											<td>3</td>
+										</tr>
+										<tr>
+											<td class="borderleft">전공필수</td>
+											<td>마케팅전략의수립과실행Ⅰ</td>
+											<td>3</td>
+										</tr>
+										<tr>
+											<td class="borderleft">전공필수</td>
+											<td>마케팅전략의수립과실행Ⅱ </td>
+											<td>3</td>
+										</tr>
+										<tr>
+											<td class="borderleft">전공필수</td>
+											<td>회계원리와재무보고</td>
+											<td>3</td>
+										</tr>
+										<tr>
+											<td class="borderleft">전공필수</td>
+											<td>원가관리와회계사례</td>
+											<td>3</td>
+										</tr>
+										<tr>
+											<td class="borderleft">전공필수</td>
+											<td>네트워크환경과공공부문의IT관리</td>
+											<td>3</td>
+										</tr>
+										<tr>
+											<td class="borderleft">전공필수</td>
+											<td>정보기술관리및전략</td>
+											<td>3</td>
+										</tr>
+										<tr>
+											<td class="borderleft"공통필수</td>
+											<td>비즈니스영어회화</td>
+											<td>2</td>
+										</tr>
+										<tr>
+											<th>여름계절</th>
+											<td>전공심화</td>
+											<td>비즈니스에티켓및커뮤니케이션스킬</td>
+											<td>3</td>
+										</tr>
+										<tr>
+											<th rowspan="8">2학기</th>
+											<td>전공필수</td>
+											<td>공기업경영과재무관리</td>
+											<td>3</td>
+										</tr>
+										<tr>
+											<td class="borderleft">전공필수</td>
+											<td>금융자산투자와위험관리</td>
+											<td>3</td>
+										</tr>
+										<tr>
+											<td class="borderleft">전공필수</td>
+											<td>서비스관리</td>
+											<td>3</td>
+										</tr>
+										<tr>
+											<td class="borderleft">전공필수</td>
+											<td>운영관리와의사결정</td>
+											<td>3</td>
+										</tr>
+										<tr>
+											<td class="borderleft">전공필수</td>
+											<td>세계경제와글로벌경영Ⅰ</td>
+											<td>3</td>
+										</tr>
+										<tr>
+											<td class="borderleft">전공필수</td>
+											<td>세계경제와글로벌경영Ⅱ</td>
+											<td>3</td>
+										</tr>
+										<tr>
+											<td class="borderleft">전공심화</td>
+											<td>위기경영</td>
+											<td>3</td>
+										</tr>
+										<tr>
+											<td class="borderleft">공통필수</td>
+											<td>비즈니스중국어회화</td>
+											<td>2</td>
+										</tr>
+										<tr>
+											<th>3학기</th>
+											<td>전공필수</td>
+											<td>경영프로젝트과제Ⅰ</td>
+											<td>3</td>
+										</tr>
+										<tr>
+											<th>4학기</th>
+											<td>전공필수</td>
+											<td>경영프로젝트과제Ⅱ</td>
+											<td>3</td>
+										</tr>
+									</tbody>
+								</table>
 							</div>
-							<div>
-								<h4>SEMBA과정 연령별 기준 학생현황(입학일 기준)</h4>
-								<div class="desc">
-									<div id="ageStar-pie" class="graph-bx"></div>
-								</div>
-							</div>
-							<div>
-								<h4>SEMBA과정 성별 학생현황(입학일 기준)</h4>
-								<div class="desc">
-									<div id="gender-pie" class="graph-bx"></div>
-								</div>
-							</div>
-							<div>
-								<h4>SEMBA과정 재직기간별 학생현황(입학일 기준)</h4>
-								<div class="desc">
-									<div id="officePeriod-pie" class="graph-bx"></div>
-								</div>
-							</div>
-							
 						</div>
 					</div>
 				</div>
