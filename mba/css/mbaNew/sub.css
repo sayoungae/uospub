@@ -1864,6 +1864,8 @@ div.intro_right2{
 	background: url("../../images/mbaNew/sub/step-arrw.png") no-repeat;
 }
 .step-area > li:last-child:after{display: none;}
+/* -- SEMBA 학사안내 */
+
 @media screen and (max-width: 480px) {
 	.step-area > li{width: calc(100% / 2 - 40px); font-size: 14px; margin:0 10px;}
 	.step-area > li:after{right:-25px}
