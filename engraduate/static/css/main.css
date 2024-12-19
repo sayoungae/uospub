@@ -55,9 +55,11 @@
 /* m-service */
 .m-service{background: url("../images/service-bg.png") right top no-repeat;}
 .m-service .service-menu{display: flex; column-gap: 60px; row-gap: 30px; flex-wrap: wrap;}
-.m-service .service-menu > li > a{width: 132px; height: 108px; text-align: center; color:#fff;font-size: 18px; line-height: 1.2; }
-.m-service .service-menu  a >p{height: 100px; display: flex; align-items: center; justify-content: center; background-color: rgba(255, 255, 255,0.3);border-radius: 30px;}
+.m-service .service-menu > li > a{width: 132px; text-align: center; color:#fff;font-size: 18px; line-height: 1.2; }
+.m-service .service-menu  a >p{height: 100px; display: flex; align-items: center; justify-content: center; background-color: rgba(255, 255, 255,0.3);border-radius: 30px; transition: 0.3s;}
 .m-service .service-menu  a > span{margin-top: 10px;}
+
+.m-service .service-menu > li > a:hover > p,.m-service .service-menu > li > a:focus >P{background-color: rgba(0, 0, 0,0.2);}
 /* -- m-service */
 
 /* m-introduce */
@@ -66,11 +68,12 @@
 
 .introduce_zone > li > .tit{max-width: 42px; font-size: 28px;font-weight: 600; text-align: center; line-height: 1.2;}
 .introduce_zone > li > .accBtn{width: 50px; height: 50px; background-color: rgba(0,0,0,0.3); border-radius: 50%; background-image: url("../images/more-icn02.png"); background-position: center center; background-repeat: no-repeat; position: absolute; left:50%; bottom:40px; transform: translateX(-50%) rotate(0); }
-.introduce_zone > li > .accBtn:hover,.introduce_zone > li > .accBtn:focus{transform: translateX(-50%) rotate(180deg); transition: 0.3s;}
+.introduce_zone > li > .accBtn:hover,.introduce_zone > li > .accBtn:focus{transform: translateX(-50%) rotate(180deg); transition: 0.3s; background-color: rgba(0,0,0,0.6);}
 .introduce_zone > li > .link_box{display: none; padding:40px 0; font-size: 18px; }
 .introduce_zone .link_box > ul{display: flex; flex-wrap: wrap; gap: 10px;}
 .introduce_zone .link_box > ul > li{flex: 1 1 45%; position: relative; padding-left: 10px;}
 .introduce_zone .link_box > ul > li::before{content:""; display: inline-block; width: 4px; height: 4px; background-color: #fff; border-radius: 50%; position: absolute; left:0; top:10px;}
+
 /* active */
 .introduce_zone > li.active{width: 740px; }
 .introduce_zone > li.active > .tit{max-width: 100%; font-size: 30px; text-align: left;position: relative;}
