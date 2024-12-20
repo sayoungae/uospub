@@ -90,6 +90,7 @@
 .teble-wrap .type1 td{padding:10px; border-right: 1px solid #DEDEDE; vertical-align: middle; font-size: var(--fz-18);}
 .teble-wrap .type1 td:last-child{border-right: 0;}
 .teble-wrap .type1 td > a{width: 36px; height: 36px; border-radius: 50%; border:1px solid #DEDEDE; display: flex; align-items: center; justify-content: center; margin:0 auto;}
+.teble-wrap .type1 td.brd-left{border-left:1px solid #DEDEDE;}
 /* table */
 
 /* center */
