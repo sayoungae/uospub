@@ -59,18 +59,23 @@
 /* tab layer */
 .tab-area .tab > ul{display: flex; align-items: center; border:1px solid #E1E1E1; font-weight: 600; font-size: var(--fz-22);}
 .tab-area .tab > ul > li{flex: 1 1 0; position: relative;}
-.tab-area .tab > ul > li:not(:first-child):before{content:""; display: inline-block; width: 1px; height: 27px; background-color: #D8D8D8; position: absolute; left:0; top:50%; transform: translateY(-50%);}
+.tab-area .tab > ul > li:not(:first-child):before{content:""; display: inline-block; width: 1px; height: 24px; background-color: #D8D8D8; position: absolute; left:0; top:50%; transform: translateY(-50%);}
 .tab-area .tab > ul > li > button{width: 100%; padding:14px; position: relative;}
-.tab-area .tab > ul > li.active > button{color: #5077B9;}
-.tab-area .tab > ul > li.active > button::before{
+.tab-area .tab > ul > li > button::before{
     content:"";
     display: inline-block;
-    width: 100%;
+    width: 0;
     height: 4px;
     background-color: #5077B9;
     position: absolute;
-    left:0;
+    left:50%;
     bottom:-2px;
+    transform: translateX(-50%);
+    transition: width 0.4s;
+}
+.tab-area .tab > ul > li.active > button{color: #5077B9;}
+.tab-area .tab > ul > li.active > button::before{
+    width: 100%;
 }
 
 .tab-conts-wrap .tab-conts{display: none;}
