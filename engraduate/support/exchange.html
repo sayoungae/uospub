@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일반대학원 영문</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/swiper.css">
+
+
+    <!-- JS -->
+    <script src="../static/js/jquery-3.7.1.js"></script>
+    <script src="../static/js/swiper-bundle.min.js"></script>
+    <script src="../static/js/common.js"></script>
+    <!-- <script src="../static/js/main.js"></script> -->
+    <script src="../static/js/sub.js"></script>
+
+
+    <script>
+        //header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+       
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <!-- sub-banner -->
+            <div class="sub-banner">
+                <div class="inner">
+                    <div class="ban-tit">University of Seoul Global Top Brand</div>
+                    <ul class="line-map">
+                        <li><img src="../static/images/home_ic.png" alt="home"></li>
+                        <li>Research</li>
+                        <li>Research Centers and Laboratores</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content">
+                <div class="inner clearfix">
+                    <!-- // sub-banner -->
+                    <!-- snb -->
+                    <div id="snb-wrap">
+                    </div>
+                    <!-- // snb -->
+                    <!-- sub content -->
+                    <div class="sub-content" id="sub-content">
+                        <div class="sub-tit-box">
+                            <h3 class="subTit01">국제교류</h3>
+                            <ul class="stp-bt">
+                                <li><a href="" class="print-ic"><span class="blind">인쇄</span></a></li>
+                                <li><a href="" class="share-ic"><span class="blind">공유 </span></a></li>
+                            </ul>
+                        </div>
+                        <!-- 본문 -->
+                        <h4 class="subTit03">국제교류</h4>
+                        <div class="desc">
+                            <a href="https://global.uos.ac.kr/" target="_blank" title="국제교육원 새창으로 열기" class="link-ty1">국제처 바로가기</a>
+
+                            <p>
+                                새천년이 요구하는 '세계로 향하여 열린 국제적인 대학'으로 자리잡기 위해 서울시립대학교가 역점을 두고 추진하고 있는
+                                사업 중의 하나가 국제교류입니다. 1986년 미국 애크론 대학을 시작으로 현재 학술교류협정이 체결되어 있는 외국대학은
+                                모두 22개국 65개교로 교수·학생 교환, 학술자료·정보교환, 직원 교류, 학술대회 개최 등 활발한 교류가 이루어지고 있습니다. 
+                                2001년에는 몽골국립대학교와 학술교류협정을 체결하여 매해 10여 명의 학생교류를 실시하고 있으며, 모스크바국립대학교와도 
+                                동년 학술교류협정을 체결하였습니다. 
+                                <br><br>
+                                2004년에는 미국, 중국지역 유수 대학들과 학술교류협정 및 학생교류협정을 활발히 체결하였으며, 2005년부터는 학부·과 단위의 
+                                교류협정 체결에도 노력하고 있습니다. 향후 영어권 국가 및 유럽지역 대학들과도 지속적으로 교류협력관계를 구축해 나갈 
+                                것입니다. 특히 2006년 9월 본교와 샌프란시스코주립대학교(SFSU) 및 뉴욕의 SUNY Stony Brook 대학교와의 
+                                복수학위제(Dual Degree Program), 학생 교환 협정을 체결하여 서울시립대학교 학생의 국제화 인재양성에 기여하고 있습니다. 
+                                <br><br>
+                                이밖에도 서울 메트로폴리탄 포라(SMF), 서울-상해 포럼, 동아시아건축연합 등의 국제학술대회를 개최하여 대만, 홍콩,미국, 
+                                중국, 일본 등 유수 대학과도 학문분야별로 심도 있는 학술교류가 진행되고 있습니다.
+                            </p>
+                        </div>
+                        <!-- 본문 -->
+                    </div>
+                    <!-- sub content -->
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

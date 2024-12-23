@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일반대학원 영문</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/swiper.css">
+
+
+    <!-- JS -->
+    <script src="../static/js/jquery-3.7.1.js"></script>
+    <script src="../static/js/swiper-bundle.min.js"></script>
+    <script src="../static/js/common.js"></script>
+    <!-- <script src="../static/js/main.js"></script> -->
+    <script src="../static/js/sub.js"></script>
+
+
+    <script>
+        //header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+       
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <!-- sub-banner -->
+            <div class="sub-banner">
+                <div class="inner">
+                    <div class="ban-tit">University of Seoul Global Top Brand</div>
+                    <ul class="line-map">
+                        <li><img src="../static/images/home_ic.png" alt="home"></li>
+                        <li>Research</li>
+                        <li>Research Centers and Laboratores</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content">
+                <div class="inner clearfix">
+                    <!-- // sub-banner -->
+                    <!-- snb -->
+                    <div id="snb-wrap">
+                    </div>
+                    <!-- // snb -->
+                    <!-- sub content -->
+                    <div class="sub-content" id="sub-content">
+                        <div class="sub-tit-box">
+                            <h3 class="subTit01">전문연구요원제도</h3>
+                            <ul class="stp-bt">
+                                <li><a href="" class="print-ic"><span class="blind">인쇄</span></a></li>
+                                <li><a href="" class="share-ic"><span class="blind">공유 </span></a></li>
+                            </ul>
+                        </div>
+                        <!-- 본문 -->
+                        <h4 class="subTit03">복무관리</h4>
+                        <h5 class="subTit04">복무규정</h5>
+                        <ul class="dot-list02">
+                            <li>박사학위 과정 수료 후부터 의무종사기간에 산입 되며 3년간 병역의무를 수행하여야 함.</li>
+                        </ul>
+                        <h5 class="subTit04">출근규정</h5>
+                        <ul class="dot-list02">
+                            <li>전문연구요원 편입자는 수료 후 다음 주 월요일부터 본 대학 학생과에 오셔서 출근부에 날인하여야 함.</li>
+                            <li>매일(토·일·공휴일 제외) 대학원 교학과에 09:00까지 출근하여 본인이 직접 출근부에 날인하여야 하고, 18:00까지 근무하여야 함.</li>
+                            <li>야근할 경우 당일 지도교수 확인서를 제출하여야 하며, 제출자만 다음날 오전 12시까지 출근을 허용함.</li>
+                            <li>비상연락망으로도 연락되지 않은 경우 무단결근 처리함. (연속 2회 이상 무단결근일 경우 지도교수에게 통보함)</li>
+                            <li>지각 2회는 결근 1회로 간주, 결근 5회 이상일 경우 지도교수 통보 및 본인 시말서 작성.</li>
+                            <li>시말서 작성 후 3회 이상 무단결근일 경우 해당 지방 병무청장에게 고발 조치함.</li>
+                        </ul>
+                        <h5 class="subTit04">겸직금지</h5>
+                        <ul class="dot-list02">
+                            <li>
+                                겸직 불가능 직무
+                                <ul>
+                                    <li>민법·상법에 의한 기업의 이사·감사·상무 등의 임원의 겸직</li>
+                                    <li>편입당시의 연구분야 및 제조·생산 분야가 아닌 사무관리, 영업 업무 등의 겸직</li>
+                                </ul>
+                            </li>
+                            <li>
+                                겸직으로 보지 않는 직무
+                                <ul>
+                                    <li>대학원 박사과정에 재학하는 연구요원이 수학에 지장이 없는 범위 내에서 당해 대학원에서 전공분야와 동일한 연구업무를 수행하는 때</li>
+                                    <li>대학원 박사과정 수료자가 다른 부설연구소로 전직한 후 연구과제를 수행하면서 대학원 수업에는 출석하지 아니하고 박사학위 취득을 위한 논문을 준비하는 때</li>
+                                    <li>연구업무 또는 제조·생산활동에 지장이 없는 일과시간 후에 다른 업무에 종사하는 때</li>
+                                </ul>
+                            </li>
+                            <li>
+                                종사할 해당분야
+                                <ul>
+                                    <li>전문연구요원은 편입 당시 해당분야에 종사하여야 하며, 다른 직무(이사, 감사 등)를 겸직할 수 없다.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <p class="point">※ 지정업체 외 다른 업체 근무의 승인을 받지 아니하고 파견 근무 · 출장 · 사무직 종사, 편입 당시 기술자격의 직무분야가 아닌 분야에 근무할 경우 의무자와 지정업체가 불이익을 당할 수 있음.</p>
+                        <h5 class="subTit04">휴가·병가등</h5>
+                        <ul class="dot-list02">
+                            <li>
+                                휴가
+                                <ul>
+                                    <li>전문연구요원의 휴가는 근로기준법의 규정에 의하되, 근로기준법이 정하는 연간 휴가일수를 초과하여 휴가를 허가한 때에는 관할지방병무청장에게 통보</li>
+                                    <li>연간 휴가일수 초과기간은 그 기간만큼 연장종사</li>
+                                    <li>휴가일수는 다음의 분기별 허가기간으로 규정하며 연속 6일 이상을 허가할 수 없다.</li>
+                                </ul>
+                                <div class="teble-wrap mt10">
+                                    <table class="type2">
+                                        <caption>교외장학안내</caption>
+                                        <thead>
+                                            <tr>
+                                                <th>분기</th>
+                                                <th>해당월</th>
+                                                <th>휴가일수</th>
+                                                <th>분기</th>
+                                                <th>해당월</th>
+                                                <th>휴가일수</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>3,4,5월</td>
+                                                <td>4일</td>
+                                                <td>3</td>
+                                                <td>9,10,11월</td>
+                                                <td>4일</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>6,7,8월</td>
+                                                <td>5일</td>
+                                                <td>4</td>
+                                                <td>12,1,2월</td>
+                                                <td>5일</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- 본문 -->
+                    </div>
+                    <!-- sub content -->
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

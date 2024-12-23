@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일반대학원 영문</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/swiper.css">
+
+
+    <!-- JS -->
+    <script src="../static/js/jquery-3.7.1.js"></script>
+    <script src="../static/js/swiper-bundle.min.js"></script>
+    <script src="../static/js/common.js"></script>
+    <!-- <script src="../static/js/main.js"></script> -->
+    <script src="../static/js/sub.js"></script>
+
+
+    <script>
+        //header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+       
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <!-- sub-banner -->
+            <div class="sub-banner">
+                <div class="inner">
+                    <div class="ban-tit">University of Seoul Global Top Brand</div>
+                    <ul class="line-map">
+                        <li><img src="../static/images/home_ic.png" alt="home"></li>
+                        <li>Research</li>
+                        <li>Research Centers and Laboratores</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content">
+                <div class="inner clearfix">
+                    <!-- // sub-banner -->
+                    <!-- snb -->
+                    <div id="snb-wrap">
+                    </div>
+                    <!-- // snb -->
+                    <!-- sub content -->
+                    <div class="sub-content" id="sub-content">
+                        <div class="sub-tit-box">
+                            <h3 class="subTit01">장학금지급 및 학자금 대출</h3>
+                            <ul class="stp-bt">
+                                <li><a href="" class="print-ic"><span class="blind">인쇄</span></a></li>
+                                <li><a href="" class="share-ic"><span class="blind">공유 </span></a></li>
+                            </ul>
+                        </div>
+                        <!-- 본문 -->
+                        <div class="txt-box">
+                            <div class="in">
+                                <p>
+                                    일반대학원생이 수혜 받을 수 있는 장학금에는 모범장학, 연구장학 등의「교내장학」과, 외부 장학재단에서 지급하는「교외장학」이 있으며, 그리고,
+                                    한국장학재단을 통하여「학자금 대출」을 받을 수 있습니다.
+                                </p>
+                            </div>
+                        </div>
+                        <h4 class="subTit03">교내장학</h4>
+                        <div class="pl5">
+                            <h5 class="subTit04">총장장학</h5>
+                            <ul class="dot-list02">
+                                <li>수혜자격 : 학생처장과 원장이 특별한 사유로 추천한 학생</li>
+                                <li>수혜내용 : 수업료 전액(신입생은 입학금 포함) </li>
+                                <li>신청방법 : 별도 신청 없이 학생처장과 원장이 추천 </li>
+                            </ul>
+                            <h5 class="subTit04">수업지원장학</h5>
+                            <ul class="dot-list02">
+                                <li>수혜자격 : 교수의 수업 및 이에 준하는 업무를 지원하기 위해 주임교수(부서장)가 추천하는 학생 중 장학위원회에서 정한 인원 및 기준에 적합한 자</li>
+                                <li>수혜내용 : 수업료 전액(수업지원A), 수업료 반액(수업지원B), 일정액(수업지원G)</li>
+                                <li>신청방법 : 장학 신청기간 중 학과사무실에 장학금신청서 제출</li>
+                                <li>신청서류 : 장학금신청서, 전일제 입증 서류</li>
+                                <li>신청자격 : 신입생 또는 직전학기 6학점 이상 이수한 재학생으로서 전일제 학생</li>
+                            </ul>
+                            <h5 class="subTit04">연구지원장학</h5>
+                            <ul class="dot-list02">
+                                <li>수혜자격 : 교수의 연구 및 이에 준하는 업무를 지원하기 위해 주임교수(부서장)가 추천하는 학생 중 장학위원회에서 정한 인원 및 기준에 적합한 자</li>
+                                <li>수혜내용 : 수업료 전액(연구지원A), 수업료 반액(연구지원B), 일정액(연구지원G)</li>
+                                <li>신청방법 : 장학 신청기간 중 학과사무실에 장학금신청서 제출</li>
+                                <li>신청서류 : 장학금신청서, 전일제 입증 서류</li>
+                                <li>신청자격 : 신입생 또는 직전학기 6학점 이상 이수한 재학생으로서 전일제 학생</li>
+                            </ul>
+                            <h5 class="subTit04">학・석사연계장학</h5>
+                            <ul class="dot-list02">
+                                <li>수혜자격 : 학․석사 연계과정을 거쳐 대학원에 입학한 학생 중 성적 등을 고려하여 주임교수가 추천한 학생</li>
+                                <li>수혜내용 : 3학기 간 수업료 일정액</li>
+                                <li>신청방법 : 별도 신청 없이 주임교수가 추천</li>
+                                <li>신청서류 : 없음</li>
+                                <li>신청자격 : 학․석사 연계과정을 거쳐 대학원에 입학한 전일제 신입생 및 전일제 재학생</li>
+                            </ul>
+                            <h5 class="subTit04">원장장학</h5>
+                            <ul class="dot-list02">
+                                <li>수혜자격 : 장학위원회에서 정한 인원 범위 안에서 원장이 특별한 사유로 판단하여 추천한 학생</li>
+                                <li>
+                                    수혜내용 : 수업료 전액(신입생은 입학금 포함) 또는 수업료 반액
+                                    <ul>
+                                        <li>배정된 인원 범위 안에서 등록금 전액 장학생 1명, 등록금 반액 장학생 2명으로 추천 가능</li>
+                                    </ul>
+                                </li>
+                                <li>신청자격 : 전일제 신입생 또는 전일제 재학생</li>
+                                <li>신청방법 : 별도 신청 없이 대학원장이 추천</li>
+                            </ul>
+                            <h5 class="subTit04">강의조교장학</h5>
+                            <ul class="dot-list02">
+                                <li>수혜자격 : 교수의 수업활동을 지원하는 학생 (※박사과정생 중 일정인원)</li>
+                                <li>수혜내용 : 수업료 전액(신입생은 입학금 포함)</li>
+                                <li>신청방법 : 장학금 신청기간 중에 첨부된 강의조교장학신청서와 전일제 입증 서류를 해당 학과사무실에 제출(전산 신청 안함)</li>
+                                <li>신청서류 : 장학금 신청서, 활동계획서, 전일제입증서류</li>
+                                <li>신청자격 : 신입생 또는 직전학기 6학점이상 이수한 일반대학원 박사과정 재학생으로서 전일제 학생</li>
+                            </ul>
+                            <h5 class="subTit04">외국인장학</h5>
+                            <ul class="dot-list02">
+                                <li>수혜자격 : 외국인 전형으로 합격한 학생 중 일정 인원</li>
+                                <li>수혜내용 : 수업료 전액(신입생은 입학금 포함) 또는 반액</li>
+                            </ul>
+                            <h5 class="subTit04">교환학생장학</h5>
+                            <ul class="dot-list02">
+                                <li>수혜자격 : 외국대학과의 협약에 의하여 수학중인 교환 학생</li>
+                                <li>수혜내용 : 일정액</li>
+                            </ul>
+                            <h5 class="subTit04">국제여름학교장학</h5>
+                            <ul class="dot-list02">
+                                <li>수혜자격 : 국제여름학교에 등록한 학생 (외국인, 본교생)</li>
+                                <li>수혜내용 : 일정액</li>
+                            </ul>
+                            <h5 class="subTit04">해외연수장학</h5>
+                            <ul class="dot-list02">
+                                <li>수혜자격 : 본교에서 해외 연수 대상자로 선정한 학생</li>
+                                <li>수혜내용 : 일정액</li>
+                            </ul>
+                            <h5 class="subTit04">연구비장학</h5>
+                            <ul class="dot-list02">
+                                <li>수혜자격 : 특정연구비를 지원받은 교수의 연구 활동에 참여하는 학생</li>
+                                <li>수혜내용 : 일정액</li>
+                            </ul>
+                            <p class="point pl10">※ 일반대학원의 장학금 지급 원칙</p>
+                            <ul class="dot-list02">
+                                <li>일반대학원생의 장학금 신청은 전일제 신입생 또는 직전학기 6학점 이상 수강한 전일제 학생에 한하나, 총장장학, 원장장학은 직전학기 6학점 미이수자도 가능함</li>
+                                <li>장학선발 직전 상(하) 반기 연구비 수혜금액이 『국가연구개발사업의 관리 등에 관한 규정』 제12조 제5항의 석·박사 학생의
+                                6개월간 외부 인건비 최대 허용 금액 금액을 초과하는 학생의 경우는 장학생 선발대상에서 제외함</li>
+                            </ul>
+                        </div>
+                        <!-- 본문 -->
+                    </div>
+                    <!-- sub content -->
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>
