@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research &gt; Research Center and Laboratories</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/swiper.css">
+
+
+    <!-- JS -->
+    <script src="../static/js/jquery-3.7.1.js"></script>
+    <script src="../static/js/swiper-bundle.min.js"></script>
+    <script src="../static/js/common.js"></script>
+    <!-- <script src="../static/js/main.js"></script> -->
+    <script src="../static/js/sub.js"></script>
+
+
+    <script>
+        //header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+       
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <!-- sub-banner -->
+            <div class="sub-banner">
+                <div class="inner">
+                    <div class="ban-tit">University of Seoul Global Top Brand</div>
+                    <ul class="line-map">
+                        <li><img src="../static/images/home_ic.png" alt="home"></li>
+                        <li>Research</li>
+                        <li>Research Centers and Laboratores</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content">
+                <div class="inner clearfix">
+                    <!-- // sub-banner -->
+                    <!-- snb -->
+                    <div id="snb-wrap"></div>
+                    <!-- // snb -->
+                    <!-- sub content -->
+                    <div class="sub-content" id="sub-content">
+                        <div class="sub-tit-box">
+                            <h3 class="subTit01">BK21 Teams</h3>
+                            <ul class="stp-bt">
+                                <li><a href="" class="print-ic"><span class="blind">인쇄</span></a></li>
+                                <li><a href="" class="share-ic"><span class="blind">공유 </span></a></li>
+                            </ul>
+                        </div>
+                        <!-- 본문 -->
+                        <div class="subTit02">Department of Landscape Architecture</div>
+                        <div class="teble-wrap">
+                            <table class="type1">
+                                <table class="type1" summary="Brief History of UOS Graduate School Table">
+                                    <thead>
+                                        <tr>
+                                            <th>Teams</th>
+                                            <th>HP addresses</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="left_L">Graduate Program of Urban Environmental System Engineering </td>
+                                            <td><a href="http://bk21-envsys.uos.ac.kr/" target="_blank">http://bk21-envsys.uos.ac.kr/</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="left_L">Human Resource Development Team in Computational Physics </td>
+                                            <td><a href="http://club.uos.ac.kr/home/bk21comphy" target="_blank">http://club.uos.ac.kr/home/bk21comphy</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="left_L">Human Resource Development team for Next-Generation Convergence Sensing Technique </td>
+                                            <td><a href="http://c-sensing.uos.ac.kr/" target="_blank">http://c-sensing.uos.ac.kr/</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="left_L">Human Resource Development Team in Advanced Public Transportation </td>
+                                            <td><a href="http://trbk21.ac.kr/" target="_blank">http://trbk21.ac.kr/</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="left_L">BK21 Research Team for Mechanical and Information Engineering </td>
+                                            <td><a href="http://bk21mie.uos.ac.kr/" target="_blank">http://bk21mie.uos.ac.kr/</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="left_L">Postgraduate Certificate in Far-east Asian Urban Administration </td>
+                                            <td><a href="http://bk21urban.org/" target="_blank">http://bk21urban.org/</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="left_L">Cellular stress response research team </td>
+                                            <td><a href="http://club.uos.ac.kr/home/lifesc" target="_blank">http://club.uos.ac.kr/home/lifesc</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="left_L">Information Convergence Systems based on Smart Networks </td>
+                                            <td><a href="http://cvl.uos.ac.kr/bk21smartnet/" target="_blank">http://cvl.uos.ac.kr/bk21smartnet/</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="left_L">Advanced Education for Global u-Spatical Information </td>
+                                            <td><a href="http://geoinfo-bk21.uos.ac.kr/" target="_blank">http://geoinfo-bk21.uos.ac.kr/</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="left_L">Development of Technology in Efficient Construction and Hazard Protection in High-Rise Buildings </td>
+                                            <td><a href="http://www.bk21.ac.kr/" target="_blank">http://www.bk21.ac.kr/</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="left_L">Semiconductor Nanotechnology Research Team </td>
+                                            <td><a href="http://geoinfo-bk21.uos.ac.kr/" target="_blank">http://geoinfo-bk21.uos.ac.kr/</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="left_L">Digital Convergence and Cities : Applied Microeconomics Human Resource Development Team </td>
+                                            <td><a href="http://campus.uos.ac.kr/bk21econ/" target="_blank">http://campus.uos.ac.kr/bk21econ/</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </table>
+                        </div>
+                        
+                        <!-- 본문 -->
+                    </div>
+                    <!-- sub content -->
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

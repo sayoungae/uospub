@@ -154,6 +154,9 @@ body{font-weight: 400; min-width: 320px; line-height: 1.3; font-family: 'Pretend
 
 /* -- 전체 공통*/
 .inner{max-width: 1530px; margin:0 auto; padding:0 20px;}
+a.linkNwin {
+    background: url("../images/nWindow_ic.png") no-repeat 96% 28%;
+}
 /* ***********************************
             common.css
         header / GNB / footer
@@ -195,7 +198,6 @@ body{font-weight: 400; min-width: 320px; line-height: 1.3; font-family: 'Pretend
 /* hover */
 .gnb-wrp  .depth2 > li.on > a{background-color: #003B9E; color:#fff; border-color: #003B9E;}
 .depth3 > li > a:hover,.depth3 > li > a:focus{color:#2665d0; text-decoration: underline;}
-
 
 .header-bot .srch-wrp > .srch-btn{width: 26px; height: 26px; background: url("../images/search-icn.png") no-repeat; margin-right: 27px;}
 .header-bot .srch-wrp > .all-menu{padding:9px 0; position: relative;}
