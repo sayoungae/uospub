@@ -77,48 +77,57 @@ $(function(){
     const quickSlide = new Swiper('.quick-slide', {
         a11y:false,
         speed: 800,
-		loop: true,
-        slidesPerView: 1,
+		//loop: true,
         spaceBetween: 10,
-        grid: {
-            fill: 'row',
-            rows: 2
-        },
         navigation: {
             prevEl: '.quickSlide_prev',
             nextEl: '.quickSlide_next',
         },
+        slidesPerView: 8,
         breakpoints: {
             1200: {
                 slidesPerView: 8,
+                slidesPerGroup:1,
                 spaceBetween: 20,
-                grid: {
-                    fill: 'row',
-                    rows: 2
+                grid:{
+                    fill:'row',
+                    rows:2,
                 },
             },
             1024: {
                 slidesPerView: 6,
+                slidesPerGroup:6,
                 spaceBetween: 20,
-                grid: {
-                    fill: 'row',
-                    rows: 2
+                grid:{
+                    fill:'row',
+                    rows:2,
                 },
             },
             768: {
                 slidesPerView: 4,
+                slidesPerGroup:4,
                 spaceBetween: 10,
-                grid: {
-                    fill: 'row',
-                    rows: 2
+                grid:{
+                    fill:'row',
+                    rows:2,
                 },
             },
             481: {
-                slidesPerView: 2,
+                slidesPerView: 3,
+                slidesPerGroup:3,
                 spaceBetween: 10,
-                grid: {
-                    fill: 'row',
-                    rows: 2
+                grid:{
+                    fill:'row',
+                    rows:3,
+                },
+            },
+            0: {
+                slidesPerView: 3,
+                slidesPerGroup:3,
+                spaceBetween: 10,
+                grid:{
+                    fill:'row',
+                    rows:3,
                 },
             }
         }

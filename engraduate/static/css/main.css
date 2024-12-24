@@ -42,6 +42,7 @@
 /* m-news */
 .m-news .m-content{display: flex;}
 .m-news .m-content > .m-tit{width: 336px;}
+.m-news .tab-area{position: relative;}
 .m-news .tab-area .tab{margin-bottom: 25px;}
 .m-news .tab-area .tab > ul{display: flex; gap: 6px;}
 .m-news .tab-area .tab > ul > li >button{width: 164px; text-align: center; border-radius: 10px; font-size: 24px; padding:10px 10px; color:#6c6c6c; background-color: #F1F1F1; }
@@ -50,6 +51,7 @@
 .m-news .tab-conts.active{display: block;}
 .m-news .tab-conts > ul > li > .news-tit{width: calc(100% - 108px); float:left; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
 .m-news .tab-conts > ul  > li > .news-date{float:right; width: 108px; color:#555;}
+.m-news .more-btn{width: 30px; height: 30px; background: url("../images/more-icn01.png") center center no-repeat; position: absolute; right:0; top:10px;}
 /* -- m-news */
 
 /* m-service */
@@ -64,7 +66,7 @@
 
 /* m-introduce */
 .introduce_zone{display: flex; gap: 8px; }
-.introduce_zone > li{width: 142px; height: 386px; border-radius: 16px; color:#fff; padding:48px 50px; background-repeat: no-repeat; background-position: center center; overflow: hidden; position: relative;transition: width 0.5s;}
+.introduce_zone > li{width: 142px; height: 386px; border-radius: 16px; color:#fff; padding:48px 50px; background-repeat: no-repeat; background-position: center center; overflow: hidden; position: relative;transition: all 0.5s;}
 
 .introduce_zone > li > .tit{max-width: 42px; font-size: 28px;font-weight: 600; text-align: center; line-height: 1.2;}
 .introduce_zone > li > .accBtn{width: 50px; height: 50px; background-color: rgba(0,0,0,0.3); border-radius: 50%; background-image: url("../images/more-icn02.png"); background-position: center center; background-repeat: no-repeat; position: absolute; left:50%; bottom:40px; transform: translateX(-50%) rotate(0); }
@@ -77,13 +79,15 @@
 /* active */
 .introduce_zone > li.active{width: 740px; }
 .introduce_zone > li.active > .tit{max-width: 100%; font-size: 30px; text-align: left;position: relative;}
-.introduce_zone > li.active > .tit:after{
+.introduce_zone > li.active > .tit span{position: relative;}
+.introduce_zone > li.active > .tit span:after{
     display: inline-block;
     width: 100%;
+    width: 640px;
     height: 1px;
     background-color: #fff;
     position: absolute;
-    left:30%;
+    left: 115%;
     bottom:5px;
     content:"";
 }
@@ -99,24 +103,26 @@
 /* -- m-introduce */
 
 /* m-quick */
-.m-quick{background-color: #fff; position: relative;}
+.m-quick{background: url("../images/quick-bg.png") no-repeat; background-size: auto 100%; position: relative; padding:70px 0;}
 .m-quick .quick-slide{overflow: hidden;}
-.m-quick .swiper-slide{ text-align: center; }
-.m-quick .swiper-slide a{width: 100%; height: 155px; border:1px solid #1348A6; padding:20px; display: flex; align-items: center; justify-content: center; flex-direction: column; font-weight: 600; font-size: 18px;}
+.m-quick .swiper-slide{ text-align: center; margin-top: 20px; margin-bottom: 20px; }
+.m-quick .swiper-slide a{width: 100%; height: 155px; background-color: #fff; padding:20px; display: flex; align-items: center; justify-content: center; flex-direction: column; font-weight: 600; font-size: 18px;}
 .m-quick .swiper-slide a span{margin-top: 10px; line-height: 1.2;}
 .m-quick .swiper-slide a img{ filter: brightness(0) saturate(100%) invert(12%) sepia(46%) saturate(6209%) hue-rotate(219deg) brightness(89%) contrast(91%);}
+.m-quick .swiper-slide a:hover,.m-quick .swiper-slide a:focus{background-color: rgba(0,0,0,0.2); color:#fff; transition: 0.3s;}
+.m-quick .swiper-slide a:hover img,.m-quick .swiper-slide a:focus img{filter:none;}
 .m-quick .quick-slide .slide-arrw{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background:#1348A6 url(../images/wh-Parw01.png) center center no-repeat;
+    background: url(../images/wh-Parw02.png) center center no-repeat;
     position: absolute;
     top:50%;
     transform: translateY(-50%);
     z-index: 99;
 }
 .m-quick .quick-slide .quickSlide_prev{left:22px;}
-.m-quick .quick-slide .quickSlide_next{right:22px; background:#1348A6 url(../images/wh-Narw01.png) center center no-repeat;}
+.m-quick .quick-slide .quickSlide_next{right:22px; background: url("../images/wh-Narw02.png") center center no-repeat;}
 
 /* -- m-quick */
 
@@ -148,13 +154,14 @@
     .introduce_zone > li{width: 100%; height: 80px; background-size: 100% auto;  padding: 25px 40px; }
     .introduce_zone > li > .accBtn{left:auto; right: 15px; top:14px }
     .introduce_zone > li > .tit{text-align: left; max-width: 100%;}
-    .introduce_zone > li.active{width: 100%; height: auto;}
+    .introduce_zone > li.active{width: 100%; height: 260px;}
     /*  -- m-introduce */
 
     /* m-quick */
     /* -- m-quick */
 }
 @media (max-width: 760px) {
+    .m-content{padding:40px 0;}
     /* m-visual */
     .m-visual .visual-slide{height: 470px;}
     .m-visual .swiper-slide .txt-wrap {padding-top: 200px;}
@@ -166,6 +173,7 @@
     /* m-news */
     .m-news .tab-area .tab > ul > li{width: calc(100% / 4);}
     .m-news .tab-area .tab > ul > li >button{width: 100%; font-size: 18px;}
+    .m-news .more-btn {top: -55px;}
     /* -- m-news */
 
     /* m-service */
@@ -180,6 +188,10 @@
     /* -- m-introduce */
 
     /* m-quick */
+    .m-quick{padding:0;}
+    .m-quick .swiper-slide {margin-top: 10px;  margin-bottom: 10px;}
+    .m-quick .swiper-slide a{padding:10px; font-size: 16px; height: 130px;}
+    .m-quick .swiper-slide a img{width: 88%;}
     /* -- m-quick */
 }
 @media (max-width: 480px) {
@@ -196,6 +208,7 @@
     /* m-news */
     .m-news .tab-area .tab > ul > li > button {font-size: 16px;padding:10px 0;}
     .m-news .tab-conts{font-size: 14px;}
+    
     /* -- m-news */
 
     /* m-service */
@@ -217,5 +230,11 @@
 
     /* m-quick */
     .m-quick .m-content{padding:40px 0;}
+    .m-quick .quick-slide {margin:0 10px;}
+    .m-quick .swiper-slide{margin:0;}
+    .m-quick .swiper-slide a{padding:20px 10px; height: 115px;}
+    .m-quick .swiper-slide a img{width: 70%;}
+    .m-quick .quick-slide .quickSlide_prev {left: -3px;}
+    .m-quick .quick-slide .quickSlide_next {right: -3px;}
     /* -- m-quick */
 }

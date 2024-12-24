@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일반대학원 영문</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/swiper.css">
+
+
+    <!-- JS -->
+    <script src="../static/js/jquery-3.7.1.js"></script>
+    <script src="../static/js/swiper-bundle.min.js"></script>
+    <script src="../static/js/common.js"></script>
+    <!-- <script src="../static/js/main.js"></script> -->
+    <script src="../static/js/sub.js"></script>
+
+
+    <script>
+        //header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+       
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <!-- sub-banner -->
+            <div class="sub-banner">
+                <div class="inner">
+                    <div class="ban-tit">University of Seoul Global Top Brand</div>
+                    <ul class="line-map">
+                        <li><img src="../static/images/home_ic.png" alt="home"></li>
+                        <li>Research</li>
+                        <li>Research Centers and Laboratores</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content">
+                <div class="inner clearfix">
+                    <!-- // sub-banner -->
+                    <!-- snb -->
+                    <div id="snb-wrap">
+                    </div>
+                    <!-- // snb -->
+                    <!-- sub content -->
+                    <div class="sub-content" id="sub-content">
+                        <div class="sub-tit-box">
+                            <h3 class="subTit01">전문연구요원제도</h3>
+                            <ul class="stp-bt">
+                                <li><a href="" class="print-ic"><span class="blind">인쇄</span></a></li>
+                                <li><a href="" class="share-ic"><span class="blind">공유 </span></a></li>
+                            </ul>
+                        </div>
+                        <!-- 본문 -->
+                        <h4 class="subTit03">편입취소</h4>
+                        <h5 class="subTit04">편입취소사유</h5>
+                        <ul class="dot-list02">
+                            <li>전문 연구요원으로 편입된 사람이 휴학하거나 제적된 때</li>
+                            <li>편입 당시 지정업체의 해당분야에 종사하지 아니한 때</li>
+                            <li>의무종사기간 중 통산 8일 이상 무단결근한 때</li>
+                            <li>정당한 사유 없이 군사훈련(교육소집)을 받지 아니한 때</li>
+                            <li>국외여행허가 의무를 위반한 사람으로서 정당한 사유 없이 기간 내 미귀국시</li>
+                            <li>의무종사기간을 35세까지 마칠 수 없는 때</li>
+                            <li>법 제38조의 2 지정업체장의 4촌 이내 혈족 편입 또는 전직 제한 규정을 위반한 때</li>
+                        </ul>
+                        <h5 class="subTit04">편입취소가 되면 의무 부과</h5>
+                        <ul>
+                            <li>전문연구요원 편입이 취소된 사람은 편입되기 전의 신분으로 복귀하여 현역병 입영 또는 공익근무요원으로 소집됨</li>
+                        </ul>
+                        <!-- 본문 -->
+                    </div>
+                    <!-- sub content -->
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>
