@@ -23,4 +23,9 @@ $(function(){
         }
     });
     
+    // faq
+    $(".faq-btn").click(function() {
+		$(this).parent().next(".faq-answer").slideToggle();
+		$(this).toggleClass("opened");
+	});
 })

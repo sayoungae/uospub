@@ -151,7 +151,6 @@
 
 /* view */
 .view-bx{border-bottom:1px solid #d2d2d2;}
-.view-bx .vw-tibx{}
 .view-bx .view-tit{font-size: var(--fz-22); font-weight: 500; }
 .view-bx .da{margin-top: 10px; font-size: var(--fz-16);color: #666; display: flex; margin-bottom: 10px;}
 .view-bx .da > p{margin-right: 6px;}
@@ -173,6 +172,20 @@
 
 .view-cont{padding: 40px 10px; line-height: 1.5;}
 /* -- view */
+/* faq */
+.faq-list-box{border-top: #3c497b solid 2px;}
+.faq-list-box dt >a{display: flex; justify-content: flex-start; align-items: center; padding: 50px 0; border-bottom: 1px solid #dcdcdc; cursor: pointer; background-image: url("../images/icon_faq_down.png"); background-position: right center; background-repeat: no-repeat; font-size: var(--fz-18);}
+.faq-list-box dt >a.opened{background-image: url("../images/icon_faq_up.png");}
+
+.faq-list-box dd{display: none; font-size: var(--fz-16);padding: 50px; background: #fcfcfc; border-bottom: 1px solid #dcdcdc; overflow: hidden;}
+.faq-list-box dd .view_txt{width: calc(100% - 70px); padding-top: 20px; float: left;}
+
+.faq-list-box .tag{display: flex; justify-content: center;  align-items: center; width: 50px; height: 50px; margin-right: 20px; border-radius: 50%;font-size: 17px; font-weight: bold;}
+.faq-list-box dt .tag {background: #ebe6e3; color: #4366c0;}
+.faq-list-box dd .tag {background: #4366C0; color: #fff; float: left;}
+
+
+/* --faq */
 /* -- boards */
 /* paging */
 .paging {
@@ -236,8 +249,15 @@
 /* 학생지원 */
 .txt-box{border: 1px solid #dde0e6; background: #f6f6f6; padding: 5px; border-radius: 0.75rem; margin-bottom: 30px;}
 .txt-box .in{background: #fff; border-radius: 0.5rem; padding: 20px 15px;}
-/* -- 학생지원 */
-
+/* 교내연구기관 */
+.txt-box2{border: 1px solid #dfdfdf; padding: 30px 20px; border-radius: 15px; margin-bottom: 30px;}
+.txt-box2 .btnBox{min-height: 40px; background: #f6f6f6; text-align: right; padding: 10px 40px 10px 0; border-radius: 10px; margin-top: 20px;}
+.txt-box2 .btnBox >a{padding-left: 25px; background: url(../images/icon_home.png) no-repeat 0 2px;}
+.txt-box3{ padding: 20px; display: flex; justify-content: space-between; align-items: center;     border: 1px solid #bbb; border-radius: 10px; margin-bottom: 20px;}
+.txt-box3 > a{margin-bottom: 0;}
+.txt-box3 .file-list-box > a{display: block; }
+.txt-box3 .file-list-box > a + a{margin-top: 30px;}
+.txt-box3 .file-list-box > a img{vertical-align: middle;}
 /* center */
 .depart-list{display: flex; flex-wrap: wrap; column-gap: 10px; row-gap: 20px; padding:20px; background-color: #F4F3F9;}
 .depart-list > li{width: calc(100% / 3 - 10px);}
