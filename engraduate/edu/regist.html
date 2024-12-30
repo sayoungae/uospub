@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일반대학원 영문</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/swiper.css">
+
+
+    <!-- JS -->
+    <script src="../static/js/jquery-3.7.1.js"></script>
+    <script src="../static/js/swiper-bundle.min.js"></script>
+    <script src="../static/js/common.js"></script>
+    <!-- <script src="../static/js/main.js"></script> -->
+    <script src="../static/js/sub.js"></script>
+
+
+    <script>
+        //header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+       
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <!-- sub-banner -->
+            <div class="sub-banner">
+                <div class="inner">
+                    <div class="ban-tit">University of Seoul Global Top Brand</div>
+                    <ul class="line-map">
+                        <li><img src="../static/images/home_ic.png" alt="home"></li>
+                        <li>Research</li>
+                        <li>Research Centers and Laboratores</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content">
+                <div class="inner clearfix">
+                    <!-- // sub-banner -->
+                    <!-- snb -->
+                    <div id="snb-wrap">
+                    </div>
+                    <!-- // snb -->
+                    <!-- sub content -->
+                    <div class="sub-content" id="sub-content">
+                        <div class="sub-tit-box">
+                            <h3 class="subTit01">휴학·복학·전과</h3>
+                            <ul class="stp-bt">
+                                <li><a href="" class="print-ic"><span class="blind">인쇄</span></a></li>
+                                <li><a href="" class="share-ic"><span class="blind">공유 </span></a></li>
+                            </ul>
+                        </div>
+                        <!-- 본문 -->
+                        <h4 class="subTit03">휴학</h4>
+                        <div class="desc">
+                            <h5 class="subTit04">휴학종류</h5>
+                            <ul class="dot-list02">
+                                <li>일반휴학 : 가정 사정, 질병(29일 이상 장기 질병으로 종합병원 발행 진단서 첨부) 기타 부득이한 사유로 인한 휴학</li>
+                                <li>입영 또는 복무휴학 : 「고등교육법」 제23조의4의 규정에 따른 휴학</li>
+                            </ul>
+                            <h5 class="subTit04">휴학신청</h5>
+                            <ul class="dot-list02">
+                                <li>일반휴학 : 등록금을 납부한 학생에 한하여 수업일수 1/4 이내<br/>(학기 초 등록기간에는 등록금을 납부하지 않고도 휴학 가능)</li>
+                                <li>입영 또는 복무휴학 : 입영통지서를 제출하면 언제든지 가능<br/>(학기 초 등록기간 이후에는 등록금을 납부한 학생에 한하여 입영휴학이 가능하며, 등록금 미납시 제적 처리됨)</li>
+                            </ul>
+                            <h5 class="subTit04">휴학신청</h5>
+                            <ul class="dot-list02">
+                                <li>일반휴학 : 등록금을 납부한 학생에 한하여 수업일수 1/4 이내<br/>(학기 초 등록기간에는 등록금을 납부하지 않고도 휴학 가능)</li>
+                                <li>입영 또는 복무휴학 : 입영통지서를 제출하면 언제든지 가능<br/>(학기 초 등록기간 이후에는 등록금을 납부한 학생에 한하여 입영휴학이 가능하며, 등록금 미납시 제적 처리됨)</li>
+                            </ul>
+                            <h5 class="subTit04">휴학기간</h5>
+                            <ul class="dot-list02">
+                                <li>일반휴학 : 1회에 1년(2학기)이내, 통산 2년(4학기) 이내, 석·박사 통합과정 4년(8학기) 이내</li>
+                                <li>
+                                    입영 또는 복무휴학 : 입영일 또는 복무 시작일이 속한 학기부터 전역일 또는 복무종료일이 속한 학기까지로 하고 휴학기간에 산입하지 아니함.<br/>
+                                    [입영 또는 복무휴학 : 사유가 소멸(입대 후 귀향조치 등) 된 때에는 7일 이내 대학원에 신고]
+                                    <p class="point mt5">※ 휴학기간을 연장할 경우 휴학기간 만료 전에 휴학연장원 제출</p>
+                                </li>
+                            </ul>
+                            <h5 class="subTit04">휴학절차</h5>
+                            <ul class="dot-list02">
+                                <li>
+                                    대학행정정보시스템<a href="https://wise.uos.ac.kr" class="link" target="_blank" class="새창열림">https://wise.uos.ac.kr</a> 신청
+                                    <p class="point mt5">※ 입영 또는 복무휴학의 경우 증빙서류(입영통지서, 군복무확인서)를 일반대학원에 제출</p>
+                                </li>
+                            </ul>
+                            <h5 class="subTit04">휴학제한</h5>
+                            <ul class="dot-list02">
+                                <li>
+                                    신입생은 입학 후 1학기 동안 휴학할 수 없음<br/>(단, 입영 또는 복무, 29일 이상의 장기질병 등의 경우 예외)
+                                </li>
+                            </ul>
+                        </div>
+                        <h4 class="subTit03">복학</h4>
+                        <div class="desc">
+                            <h5 class="subTit04">복학신청</h5>
+                            <ul class="dot-list02">
+                                <li>
+                                    휴학기간이 만료되거나 휴학 사유가 소멸한 때에 복학하여야 함.
+                                    <p class="point mt5">※ 복학 기간 내에 복학하지 않은 경우 제적처리됨.</p>
+                                </li>
+                                <li>입영 또는 복무휴학자는 전역일이 1/4 이내인 경우 당해 학기에 복학가능<br/>(전역일이 수업일수 1/4 이후인 경우 소속 부대장의 휴가 또는 수강 허가 등으로 수업일수 3/4 이상을 출석할 수 있으면 복학가능)</li>
+                            </ul>
+                            <h5 class="subTit04">복학절차</h5>
+                            <ul class="dot-list02">
+                                <li>
+                                    휴학 당시 등록금을 미납한 학생의 경우 :<br/>
+                                    [대학행정정보시스템<a href="https://wise.uos.ac.kr" class="link" target="_blank" title="새창열림"> https://wise.uos.ac.kr</a> 에서 신청 ⇒ 수강신청 ⇒ 등록금 고지서 출력 ⇒ 등록금 납부]
+                                </li>
+                                <li>
+                                    휴학 당시 등록금을 납부한 학생의 경우 :<br/>
+                                    [대학행정정보시스템<a href="https://wise.uos.ac.kr" class="link" target="_blank" title="새창열림">https://wise.uos.ac.kr</a>에서 신청 ⇒ 수강신청 ]
+                                    <p class="poinr mt5">※ 입영 휴학자의 경우 증빙서류(전역증, 전역예정증명서, 병적증명서, 병적 사항이 기재된 주민등록 초본)를 일반대학원에 제출</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <h4 class="subTit03">전과</h4>
+                        <ul class="dot-list02">
+                            <li>석사 및 박사과정 논문 지도교수가 그 학과 소속이 변경되거나 학과 간 협동과정학과의 교수를 겸직한 경우 대학원장의 허가와 총장의 승인을 얻어 전과</li>
+                        </ul>
+                        <!-- 본문 -->
+                    </div>
+                    <!-- sub content -->
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

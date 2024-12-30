@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일반대학원 영문</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/swiper.css">
+
+
+    <!-- JS -->
+    <script src="../static/js/jquery-3.7.1.js"></script>
+    <script src="../static/js/swiper-bundle.min.js"></script>
+    <script src="../static/js/common.js"></script>
+    <!-- <script src="../static/js/main.js"></script> -->
+    <script src="../static/js/sub.js"></script>
+
+
+    <script>
+        //header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+       
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <!-- sub-banner -->
+            <div class="sub-banner">
+                <div class="inner">
+                    <div class="ban-tit">University of Seoul Global Top Brand</div>
+                    <ul class="line-map">
+                        <li><img src="../static/images/home_ic.png" alt="home"></li>
+                        <li>Research</li>
+                        <li>Research Centers and Laboratores</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content">
+                <div class="inner clearfix">
+                    <!-- // sub-banner -->
+                    <!-- snb -->
+                    <div id="snb-wrap">
+                    </div>
+                    <!-- // snb -->
+                    <!-- sub content -->
+                    <div class="sub-content" id="sub-content">
+                        <div class="sub-tit-box">
+                            <h3 class="subTit01">재입학</h3>
+                            <ul class="stp-bt">
+                                <li><a href="" class="print-ic"><span class="blind">인쇄</span></a></li>
+                                <li><a href="" class="share-ic"><span class="blind">공유 </span></a></li>
+                            </ul>
+                        </div>
+                        <!-- 본문 -->
+                        <h4 class="subTit03">재입학</h4>
+                        <div class="desc">
+                            <h5 class="subTit04">대상 및 자격</h5>
+                            <ul class="dot-list02">
+                                <li>본교 학칙에 의해 자퇴 또는 제적된 자 중 아래에 해당되는 자는 여석이 있을 경우 1회에 한하여 재입학을 허가할 수 있음</li>
+                                <li>미등록⋅미복학 제적자 및 자퇴 제적자(징계 중 자퇴자 제외)로서 제적 이후 재입학 신청학기 시작일 이전에 1개 학기 이상 경과한 사람</li>
+                                <li>직전 2개 학기 평점평균이 각 3.0(Ｂ0) 미만이거나 졸업에 필요한 최저이수학점을 취득하지 못한 채 재학연한이 경과하여 제적된 사람으로서 제적 이후 재입학 신청학기 시작일 이전에 2개 학기 이상 경과한 사람</li>
+                                <li>자퇴한 사람이나 제적된 사람이 재입학을 하고자 할 때에는 소속 대학원의 당해 학년도 입학정원에서 재학생수를 뺀 범위 내에서 여석이 있을 경우 1회에 한하여 재입학을 허가할 수 있음</li>
+                                <li>징계에 의하여 퇴학된 자는 재입학을 할 수 없음</li>
+                            </ul>
+                            <h5 class="subTit04">신청</h5>
+                            <ul class="dot-list02">
+                                <li>기간 : 1학기 6월 초 / 2학기 12월 초 예정(기간은 변경될 수 있음)</li>
+                                <li>접수장소 : 해당 학과사무실</li>
+                                <li>구비서류 : 재입학원서(소정양식), 서약서(소정양식), 성적증명서, 학적부사본</li>
+                            </ul>
+                            <h5 class="subTit04">유의사항</h5>
+                            <ul class="dot-list02">
+                                <li>재입학 후 당해 학기는 반드시 등록하여야 함</li>
+                                <li>재입학은 단 1회밖에 허용이 안됨(재입학 합격 후 포기하여도 다시 재입학이 안됨)</li>
+                                <li>여석이 있음에도 재입학이 불허된 학생은 1년이 경과한 후 1회에 한하여 재입학을 허가할 수 있음</li>
+                                <li>재입학자 중 재학연한 만료로 제적된 후 재입학한 학생은 휴학기간을 제외하고 석사 2년(4학기), 박사 3년(6학기) 이내에 이수과정을 마쳐야 함</li>
+                                <li>휴학기간은 재입학생에 대하여는 재입학 전후 휴학기간을 합산하여 적용함</li>
+                            </ul>
+                        </div>
+                        
+                        <!-- 본문 -->
+                    </div>
+                    <!-- sub content -->
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

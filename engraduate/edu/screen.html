@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일반대학원 영문</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/swiper.css">
+
+
+    <!-- JS -->
+    <script src="../static/js/jquery-3.7.1.js"></script>
+    <script src="../static/js/swiper-bundle.min.js"></script>
+    <script src="../static/js/common.js"></script>
+    <!-- <script src="../static/js/main.js"></script> -->
+    <script src="../static/js/sub.js"></script>
+
+
+    <script>
+        //header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+       
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <!-- sub-banner -->
+            <div class="sub-banner">
+                <div class="inner">
+                    <div class="ban-tit">University of Seoul Global Top Brand</div>
+                    <ul class="line-map">
+                        <li><img src="../static/images/home_ic.png" alt="home"></li>
+                        <li>Research</li>
+                        <li>Research Centers and Laboratores</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content">
+                <div class="inner clearfix">
+                    <!-- // sub-banner -->
+                    <!-- snb -->
+                    <div id="snb-wrap">
+                    </div>
+                    <!-- // snb -->
+                    <!-- sub content -->
+                    <div class="sub-content" id="sub-content">
+                        <div class="sub-tit-box">
+                            <h3 class="subTit01">논문지도 및 심사</h3>
+                            <ul class="stp-bt">
+                                <li><a href="" class="print-ic"><span class="blind">인쇄</span></a></li>
+                                <li><a href="" class="share-ic"><span class="blind">공유 </span></a></li>
+                            </ul>
+                        </div>
+                        <!-- 본문 -->
+                        <h4 class="subTit03">개요</h4>
+                        <ul class="dot-list02">
+                            <li>석·박사학위 청구논문 제출 자격을 갖춘 학생이 논문을 작성 제출한 후 논문 심사를 받으면 학위 취득 여부가 결정됨</li>
+                        </ul>
+                        <h4 class="subTit03">논문지도 및 심사 흐름도</h4>
+                        <div class="course">
+                            <div class="course_square type2">
+                                <div class="course_content">
+                                    <span>논문지도교수 선정보고</span>
+                                    <p>학과 → 일반대학원</p>
+                                </div>
+                            </div>
+                            <div class="course_square type2">
+                                <div class="course_content">
+                                    <span>외국어시험 및 종합시험</span>
+                                    <p>학과 → 일반대학원</p>
+                                </div>
+                            </div>
+                            <div class="course_square type2">
+                                <div class="course_content">
+                                    <span>논문제목, 논문지도위원회(박사과정)구성, 논문지도 신청서 및 연구계획서, 연구 윤리서약서 제출</span>
+                                    <p>학과 → 일반대학원</p>
+                                </div>
+                            </div>
+                            <div class="course_square type2">
+                                <div class="course_content">
+                                    <span>논문 심사위원 추천</span>
+                                    <p>학과 → 일반대학원</p>
+                                </div>
+                            </div>
+                            <div class="course_square type2">
+                                <div class="course_content">
+                                    <span>논문 심사료 납부</span>
+                                    <p>학과 → 일반대학원</p>
+                                </div>
+                            </div>
+                            <div class="course_square type2">
+                                <div class="course_content">
+                                    <span>중간 · 공개발표 및 예비심사 후 결과보고서 제출</span>
+                                    <p>학과 → 일반대학원<br>(석 · 박사 공통)</p>
+                                </div>
+                            </div>
+                            <div class="course_square type2">
+                                <div class="course_content">
+                                    <span>본심사 및 구술시험 후 결과보고서 제출</span>
+                                    <p>학과 → 일반대학원<br>(석 · 박사 공통)</p>
+                                </div>
+                            </div>
+                            <div class="course_square type2">
+                                <div class="course_content">
+                                    <span>박사학위 논문심사 최종결과보고, 논문심사요지 제출</span>
+                                    <p>학과 → 일반대학원<br>(석 · 박사 공통)</p>
+                                </div>
+                            </div>
+                            <div class="course_square type2">
+                                <div class="course_content">
+                                    <span>학위논문 제출 후 대학행정정보시스템 논문제목 확인</span>
+                                    <p>학과 → 일반대학원</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="subTit03">관련규정</h4>
+                        <ul class="dot-list02">
+                            <li>통합 대학원 학칙 제40조(학위 청구자격과 학위논문)</li>
+                            <li>대학원 시행세칙 제41조 및 제47조</li>
+                        </ul>
+                        <h4 class="subTit03">세부절차 및 내용</h4>
+                        <div class="desc">
+                            <h5 class="subTit04">세부절차 및 내용</h5>
+                            <ul class="dot-list02">
+                                <li>입학 후 7개월 이내 지도교수 선정</li>
+                                <li>
+                                    박사과정 논문지도위원회 구성 :
+                                    <ul class="dot-list03">
+                                        <li class="num"><span>1</span>2021년 입학생까지 : 총 42학점(석사과정 인정학점 포함)을 취득한 다음 학기부터 구성할 수 있다.</li>
+                                        <li class="num"><span>2</span>2022년 입학생부터 : 총 18학점(석사과정 인정학점 포함)을 취득한 다음 학기부터 구성할 수 있다.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <h5 class="subTit04">학위논문 제출자격</h5>
+                            <ul class="dot-list02">
+                                <li>
+                                    석사학위 과정
+                                    <ul>
+                                        <li>4학기 이상 등록을 마치고 수료에 필요한 최저 이수학점(24학점) 이상을 취득한 학생</li>
+                                        <li>외국어 시험과 종합시험에 합격한 학생</li>
+                                        <li>과정 수료 후 6년을 초과하지 않은 학생(군복무 기간은 제외)</li>
+                                        <li>수료 후 대학원연구생으로 등록한 자</li>
+                                        <li>연구윤리교육을 이수한 자(2014학년도 입학생부터)</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    박사학위 과정
+                                    <ul>
+                                        <li>4학기 이상 등록을 마치고 수료에 필요한 최저 이수학점(2021년 이전 입학생: 60학점/ 2022년 이후 입학생 36학점) 이상을 취득한 학생</li>
+                                        <li>외국어 시험과 종합시험에 합격한 학생</li>
+                                        <li>학과별 학술지 게재 요건을 이행한 자 (박사과정 입학 후 게재한 실적으로서 본 대학원 소속임을 밝힌 실적만 인정)</li>
+                                        <li>과정 수료 후 8년을 초과하지 않은 학생(군복무 기간은 제외)</li>
+                                        <li>수료 후 대학원연구생으로 등록한 자</li>
+                                        <li>연구윤리교육을 이수한 자(2014학년도 입학생부터)</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    석·박사 통합과정
+                                    <ul>
+                                        <li>석·박사 통합과정 입학 후 6학기(석사과정 포함) 이상 등록을 마치고 수료에 필요한 최저 이수학점 이상을 취득한 자</li>
+                                        <li>외국어 시험과 종합시험에 합격한 학생</li>
+                                        <li>학과별 학술지 게재 요건을 이행한 자 (석·박사 통합과정 입학 후 게재한 실적으로 본 대학원 소속임을 밝힌 실적만 인정)</li>
+                                        <li>과정 수료 후 8년을 초과하지 않은 학생(군복무 기간은 제외)</li>
+                                        <li>수료 후 대학원연구생으로 등록한 자</li>
+                                        <li>연구윤리교육을 이수한 자(2014학년도 입학생부터)</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <h5 class="subTit04">업무처리 절차</h5>
+                            <ul class="dot-list02">
+                                <li>학사일정 수립 후 학과에 논문 일정계획 통보</li>
+                                <li>학과는 논문 제출 자격을 확인한 후 제출대상 학생 파악</li>
+                                <li>학과 주임교수는 학사일정에 맞추어 심사, 시험 및 결과보고서를 기한 내 제출</li>
+                                <li>학과에서는 심사 완료 후 심사결과 제출</li>
+                                <li>최종 심사 통과한 학생은 학위논문 체제 및 양식에 맞추어 논문 완성</li>
+                                <li>최종 인쇄본은 책자 논문 5부, 디지털 논문 1부를 열람·공개용 및 기증용으로 중앙도서관 논문실 제출</li>
+                            </ul>
+                        </div>
+                        <!-- 본문 -->
+                    </div>
+                    <!-- sub content -->
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

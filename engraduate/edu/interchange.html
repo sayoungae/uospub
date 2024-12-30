@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일반대학원 영문</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/swiper.css">
+
+
+    <!-- JS -->
+    <script src="../static/js/jquery-3.7.1.js"></script>
+    <script src="../static/js/swiper-bundle.min.js"></script>
+    <script src="../static/js/common.js"></script>
+    <!-- <script src="../static/js/main.js"></script> -->
+    <script src="../static/js/sub.js"></script>
+
+
+    <script>
+        //header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+       
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <!-- sub-banner -->
+            <div class="sub-banner">
+                <div class="inner">
+                    <div class="ban-tit">University of Seoul Global Top Brand</div>
+                    <ul class="line-map">
+                        <li><img src="../static/images/home_ic.png" alt="home"></li>
+                        <li>inter</li>
+                        <li>inter Centers and Laboratores</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content">
+                <div class="inner clearfix">
+                    <!-- // sub-banner -->
+                    <!-- snb -->
+                    <div id="snb-wrap">
+                    </div>
+                    <!-- // snb -->
+                    <!-- sub content -->
+                    <div class="sub-content" id="sub-content">
+                        <div class="sub-tit-box">
+                            <h3 class="subTit01">학점교류</h3>
+                            <ul class="stp-bt">
+                                <li><a href="" class="print-ic"><span class="blind">인쇄</span></a></li>
+                                <li><a href="" class="share-ic"><span class="blind">공유 </span></a></li>
+                            </ul>
+                        </div>
+                        <!-- 본문 -->
+                        <!-- tab -->
+                        <div class="tab-area layer">
+                            <!-- tab list -->
+                            <div class="tab">
+                                <ul role="tablist">
+                                    <li id="tab_inter_01" role="tab" aria-selected="true" aria-controls="panel_inter_01" class="active">
+                                        <button type="button" class="btn-tab">대학원 학과 간 학점교류</button>
+                                    </li>
+                                    <li id="tab_inter_02" role="tab" aria-selected="false" aria-controls="panel_inter_02">
+                                        <button type="button" class="btn-tab">본교 각 대학원 간 학점교류</button>
+                                    </li>
+                                    <li id="tab_inter_03" role="tab" aria-selected="false" aria-controls="panel_inter_03">
+                                        <button type="button" class="btn-tab">본교 외 대학원과 학점교류</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- //tab list -->
+                            <!-- tab contents -->
+                            <div class="tab-conts-wrap mt30">
+                                <div id="panel_inter_01" role="tabpanel" aria-labelledby="tab_inter_01" class="tab-conts active">
+                                    <h4 class="subTit03">본대학원 학과 간 학점교류</h4>
+                                    <div class="desc">
+                                        <h5 class="subTit04">관련규정</h5>
+                                        <ul class="dot-list02">
+                                            <li>서울시립대학교 대학원 시행세칙 제31조</li>
+                                        </ul>
+                                        <h5 class="subTit04">교류학과</h5>
+                                        <ul class="dot-list02">
+                                            <li>일반대학원 타학과</li>
+                                        </ul>
+                                        <h5 class="subTit04">이수자격</h5>
+                                        <ul class="dot-list02">
+                                            <li>일반대학원 재학생(해당학기 복학예정자 포함)</li>
+                                        </ul>
+                                        <h5 class="subTit04">교환이수학점 범위</h5>
+                                        <ul class="dot-list02">
+                                            <li>가. 석사과정 - 전체 재학기간 중 12학점 이내</li>
+                                            <li>
+                                                나. 박사과정 - 전체 재학기간 중 18학점 이내
+                                                <div class="point mt10">
+                                                    ※ 학과 간 협동과정의 참여학과 소속 학생이 소속 학과 및 학과 간 협동과정 학과 주임교수의 승인을 받아 학과 간 협동과정으로 개설 된 교과목을 수강하고자 하는 경우, 협동과정프로그램 참여학과 소속 학생이 해당 협동과정프로그램 주관 교수의 승인을 받아 해당 협동과정 프로그램으로 개설된 교과목을 수강하고자 하는 경우, 융합전공 참여학과 소속 학생이 소속 학과 및 융합전공 운영학과 주임교수의 승인을 받아 융합전공으로 개설된 교과목을 수강하고자 하는 경우는 대학원 타 학과에 개설된 교과목의 학점을 제한 없이 취득할 수 있다.
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <h5 class="subTit04">신청절차</h5>
+                                        <div class="course">
+                                            <div class="course_square type2">
+                                                <div class="course_content">
+                                                    <span>신청과목 수강신청</span>
+                                                </div>
+                                            </div>
+                                            <div class="course_square type2">
+                                                <div class="course_content">
+                                                    <span>소속과 지도· 주임교수 승인</span>
+                                                </div>
+                                            </div>
+                                            <div class="course_square type2">
+                                                <div class="course_content">
+                                                    <span>상대과 담당교수 승인</span>
+                                                </div>
+                                            </div>
+                                            <div class="course_square type2">
+                                                <div class="course_content">
+                                                    <span>신청과목 수강신청<br/>(대학행정정보시스템)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="panel_inter_02" role="tabpanel" aria-labelledby="tab_inter_02" class="tab-conts">
+                                    <h4 class="subTit03">교내 대학원간 학점교류</h4>
+                                    <div class="desc">
+                                        <h5 class="subTit04">관련규정</h5>
+                                        <ul class="dot-list02">
+                                            <li>서울시립대학교 대학원 시행세칙 제32조</li>
+                                        </ul>
+                                        <h5 class="subTit04">교류학과</h5>
+                                        <ul class="dot-list02">
+                                            <li>일반대학원 ⇔ 특수대학원, 전문대학원</li>
+                                        </ul>
+                                        <h5 class="subTit04">이수자격</h5>
+                                        <ul class="dot-list02">
+                                            <li>일반대학원 재학생(해당학기 복학예정자 포함)</li>
+                                        </ul>
+                                        <h5 class="subTit04">교환이수학점 범위</h5>
+                                        <ul class="dot-list02">
+                                            <li>재학기간 중 총 6학점을 초과할 수 없으며, 교환 과목 성적이 B&#8304; 이상이어야 인정됨</li>
+                                        </ul>
+                                        <h5 class="subTit04">교환 교과목 선정 범위</h5>
+                                        <ul class="dot-list02">
+                                            <li>전임교수의 담당 과목</li>
+                                            <li>소속대학원에서 개설되지 않은 과목</li>
+                                            <li>박사과정 학생은 교류대학원의 박사과정 교과목만 수강 가능 전문대학원이나 특수대학원의 석사과정 교과목은 수강할 수 없음</li>
+                                        </ul>
+                                        <h5 class="subTit04">지원서류</h5>
+                                        <ul class="dot-list02">
+                                            <li>
+                                                학점교환 수강신청서
+                                                <ul>
+                                                    <li>“대학원홈페이지 &gt; 학생지원 &gt; 학사관련 제 양식”에서 보관용, 통보용 각 1부 다운, 작성</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <h5 class="subTit04">신청절차(정규학기)</h5>
+                                        <div class="course">
+                                            <div class="course_square type2">
+                                                <div class="course_content">
+                                                    <span>수강과목 선정</span>
+                                                    <p>소속 대학원 지도교수와 협의<br/>(학생,지도교수)</p>
+                                                </div>
+                                            </div>
+                                            <div class="course_square type2">
+                                                <div class="course_content">
+                                                    <span>학점교환 수강신청서 작성</span>
+                                                    <p>(학생)</p>
+                                                </div>
+                                            </div>
+                                            <div class="course_square type2">
+                                                <div class="course_content">
+                                                    <span>소속 대학원 지도 ·<br/>주임교수 승인</span>
+                                                    <p>(학생)</p>
+                                                </div>
+                                            </div>
+                                            <div class="course_square type2">
+                                                <div class="course_content">
+                                                    <span>상대 대학원 담당교수 승인</span>
+                                                    <p>학점교환 수강신청서 지참<br/>직접 방문, 승인받음(학생)</p>
+                                                </div>
+                                            </div>
+                                            <div class="course_square type2">
+                                                <div class="course_content">
+                                                    <span>소속 대학원 교학과에 제출</span>
+                                                    <p>(학생)</p>
+                                                </div>
+                                            </div>
+                                            <div class="course_square type2">
+                                                <div class="course_content">
+                                                    <span>대학원장 승인</span>
+                                                    <p>(소속 대학원 교학과)</p>
+                                                </div>
+                                            </div>
+                                            <div class="course_square type2">
+                                                <div class="course_content">
+                                                    <span>상대 대학에 통보</span>
+                                                    <p>(일반대학원)</p>
+                                                </div>
+                                            </div>
+                                            <div class="course_square type2">
+                                                <div class="course_content">
+                                                    <span>신청과목 수강</span>
+                                                    <p>(학생)</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="panel_inter_03" role="tabpanel" aria-labelledby="tab_inter_03" class="tab-conts">
+                                    <h4 class="subTit03">국내 대학원간 학점교류</h4>
+                                    <div class="desc">
+                                        <h5 class="subTit04">관련규정</h5>
+                                        <ul class="dot-list02">
+                                            <li>서울시립대학교 대학원 시행세칙 제33조</li>
+                                        </ul>
+                                        <h5 class="subTit04">교류대학</h5>
+                                        <ul class="dot-list02">
+                                            <li>강원대, 건국대, 경희대, 고려대, 국민대, 과학기술연합대학원대학교, 단국대, 동국대, 부산대, 서강대, 서경대, 성균관대, 서울과학기술대, 서울대, 서울여대, 숙명여대, 순천대, 숭실대, 울산과학기술원(UNIST), 을지대, 이화여대, 인천대, 전남대, 전북대, 제주대, 중앙대, 충남대, 한성대, 한양대, 호서대, 홍익대</li>
+                                        </ul>
+                                        <h5 class="subTit04">이수자격</h5>
+                                        <ul class="dot-list02">
+                                            <li>일반대학원 재학생(해당학기 복학예정자 포함)</li>
+                                        </ul>
+                                        <h5 class="subTit04">교환이수학점 범위</h5>
+                                        <ul class="dot-list02">
+                                            <li>학기당 3학점 이내, 총 9학점을 초과할 수 없으며, 교류 교과목의 학점은 성적이 3.0(B&#8304;) 이상이어야 인정됨</li>
+                                        </ul>
+                                        <h5 class="subTit04">교환 교과목 선정 범위</h5>
+                                        <ul class="dot-list02">
+                                            <li>전임교수의 담당 과목</li>
+                                            <li>소속대학원에서 개설되지 않은 과목</li>
+                                            <li>박사과정 학생은 교류대학원의 박사과정 교과목만 수강 가능 전문대학원이나 특수대학원의 석사과정 교과목은 수강할 수 없음</li>
+                                        </ul>
+                                        <h5 class="subTit04">수강신청서 작성</h5>
+                                        <ul class="dot-list02">
+                                            <li>수강신청서 작성 시 교과목의 영문명 반드시 기재</li>
+                                        </ul>
+                                        <h5 class="subTit04">지원서류</h5>
+                                        <ul class="dot-list02">
+                                            <li>
+                                                학점교환 수강신청서
+                                                <ul>
+                                                    <li>“대학원홈페이지 &gt; 학생지원 &gt; 학사관련 제 양식”에서 보관용, 통보용 각 1부 다운, 작성</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <h5 class="subTit04">신청절차(정규학기)</h5>
+                                        <div class="course">
+                                            <div class="course_square type2">
+                                                <div class="course_content">
+                                                    <span>수강과목 선정</span>
+                                                    <p>소속 대학원 지도교수와 협의<br/>(학생,지도교수)</p>
+                                                </div>
+                                            </div>
+                                            <div class="course_square type2">
+                                                <div class="course_content">
+                                                    <span>학점교환 수강신청서 작성</span>
+                                                    <p>(학생)</p>
+                                                </div>
+                                            </div>
+                                            <div class="course_square type2">
+                                                <div class="course_content">
+                                                    <span>소속 대학원 지도 ·<br/>주임교수 승인</span>
+                                                    <p>(학생)</p>
+                                                </div>
+                                            </div>
+                                            <div class="course_square type2">
+                                                <div class="course_content">
+                                                    <span>상대 대학원 담당교수 승인</span>
+                                                    <p>학점교환 수강신청서 지참<br/>직접 방문, 승인받음(학생)</p>
+                                                </div>
+                                            </div>
+                                            <div class="course_square type2">
+                                                <div class="course_content">
+                                                    <span>소속 대학원 교학과에 제출</span>
+                                                    <p>(학생)</p>
+                                                </div>
+                                            </div>
+                                            <div class="course_square type2">
+                                                <div class="course_content">
+                                                    <span>대학원장 승인</span>
+                                                    <p>(소속 대학원 교학과)</p>
+                                                </div>
+                                            </div>
+                                            <div class="course_square type2">
+                                                <div class="course_content">
+                                                    <span>상대 대학에 통보</span>
+                                                    <p>(일반대학원)</p>
+                                                </div>
+                                            </div>
+                                            <div class="course_square type2">
+                                                <div class="course_content">
+                                                    <span>신청과목 수강</span>
+                                                    <p>(학생)</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //tab contents -->
+                        </div>
+                        <!-- // tab -->
+                        
+                        <!-- 본문 -->
+                    </div>
+                    <!-- sub content -->
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

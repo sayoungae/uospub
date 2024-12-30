@@ -156,7 +156,7 @@ body{font-weight: 400; min-width: 320px; line-height: 1.4; font-family: 'Pretend
 .dot-list01 > li + li{margin-top: 10px;}
 .dot-list01 > li::before{content:""; display: inline-block; width: 5px; height: 5px; background-color: #BEBEBE; border-radius: 50%; position: absolute; left:0; top:9px}
 
-.dot-list02{padding:10px 10px 15px;}
+.dot-list02{padding:0px 10px 20px;}
 .dot-list02 > li{position: relative; padding-left: 10px; overflow: hidden;}
 .dot-list02 > li + li{margin-top: 5px;}
 .dot-list02 > li::before{content:""; display: inline-block; width: 4px; height: 4px; background-color: #557CC3; border-radius: 50%; position: absolute; left:0; top:8px}
@@ -170,7 +170,7 @@ body{font-weight: 400; min-width: 320px; line-height: 1.4; font-family: 'Pretend
 }
 .dot-list02 a{font-weight: 500; color: #557cc3; padding: 0 5px; background-color: #f0f5fb;    border-radius: 10px;}
 
-.dot-list03{padding-left: 7px; padding-bottom: 20px;}
+.dot-list03{padding-left: 7px; padding-bottom: 10px;}
 .dot-list03 li:nth-child(1){margin-top: 10px;}
 .dot-list03 li + li{margin-top: 10px;}
 .dot-list03 li.num { position: relative; padding-left: 24px;}
@@ -191,6 +191,7 @@ body{font-weight: 400; min-width: 320px; line-height: 1.4; font-family: 'Pretend
     letter-spacing: 0;
     overflow: hidden;
 }
+.dot-list03 li::before{content: ""; display: none !important;}
 .dot-list04{padding-left: 0px; padding-bottom: 20px; padding-top: 10px;}
 .dot-list04 > li{position: relative; padding-left: 12px;}
 .dot-list04 > li::before{
@@ -213,6 +214,20 @@ body{font-weight: 400; min-width: 320px; line-height: 1.4; font-family: 'Pretend
     left:0;
     top:0;
 }
+
+.dot-list05{padding-left: 10px; padding-bottom: 20px; padding-top: 10px;}
+.dot-list05 > li{position: relative; padding-left: 14px;    background: url(../images/blt_03.png) no-repeat 0 6px;}
+.dot-list05 > li + li{margin-top: 10px;}
+.dot-list05 > li > ul{padding-left: 0;}
+.dot-list05 > li > ul >li{padding-left: 12px; margin-top: 5px; position: relative;}
+.dot-list05 > li > ul >li::before{
+    content:"-";
+    display: inline-block;
+    position: absolute;
+    left:0;
+    top:0;
+}
+
 /* -- 전체 공통*/
 .inner{max-width: 1530px; margin:0 auto; padding:0 20px;}
 a.linkNwin {

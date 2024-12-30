@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일반대학원 영문</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/swiper.css">
+
+
+    <!-- JS -->
+    <script src="../static/js/jquery-3.7.1.js"></script>
+    <script src="../static/js/swiper-bundle.min.js"></script>
+    <script src="../static/js/common.js"></script>
+    <!-- <script src="../static/js/main.js"></script> -->
+    <script src="../static/js/sub.js"></script>
+
+
+    <script>
+        //header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+       
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <!-- sub-banner -->
+            <div class="sub-banner">
+                <div class="inner">
+                    <div class="ban-tit">University of Seoul Global Top Brand</div>
+                    <ul class="line-map">
+                        <li><img src="../static/images/home_ic.png" alt="home"></li>
+                        <li>Research</li>
+                        <li>Research Centers and Laboratores</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content">
+                <div class="inner clearfix">
+                    <!-- // sub-banner -->
+                    <!-- snb -->
+                    <div id="snb-wrap">
+                    </div>
+                    <!-- // snb -->
+                    <!-- sub content -->
+                    <div class="sub-content" id="sub-content">
+                        <div class="sub-tit-box">
+                            <h3 class="subTit01">성적처리</h3>
+                            <ul class="stp-bt">
+                                <li><a href="" class="print-ic"><span class="blind">인쇄</span></a></li>
+                                <li><a href="" class="share-ic"><span class="blind">공유 </span></a></li>
+                            </ul>
+                        </div>
+                        <!-- 본문 -->
+                        <h4 class="subTit03">성적평가</h4>
+                        <ul class="dot-list02">
+                            <li>학업성적의 등급 및 평점은 다음과 같이 분류 표시한다.</li>
+                        </ul>
+                        <h5 class="subTit04">등급 및 평점</h5>
+                        <div class="table-wrap pl10">
+                            <table class="type1">
+                                <thead>
+                                    <tr>
+                                        <th>등급</th>
+                                        <th>평점</th>
+                                        <th>설명</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Ａ<sup>+</sup></td>
+                                        <td>4.5</td>
+                                        <td rowspan="2" class="brd-left">우수</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ａ</td>
+                                        <td>4.0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ｂ<sup>+</sup></td>
+                                        <td>3.5</td>
+                                        <td rowspan="2" class="brd-left">우량</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ｂ</td>
+                                        <td>3.0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ｃ<sup>+</sup></td>
+                                        <td>2.5</td>
+                                        <td rowspan="2" class="brd-left">양호</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ｃ</td>
+                                        <td>2.0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>F</td>
+                                        <td>0</td>
+                                        <td>불량</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <ul class="dot-list02">
+                            <li>선수과목은 합격(S), 불합격(U)으로 평가한다.</li>
+                            <li>추가시험 등으로 성적조정이 미완된 교과목에는 그 성적이 확정될 때까지(미완)의 성적을 부여한다.</li>
+                        </ul>
+                        <h5 class="subTit04">등급 및 평점 환산기준표</h5>
+                        <ul class="dot-list02">
+                            <li>
+                                성적 등급이나 평점 평균을 100점 기준으로 환산할 필요가 있을 경우에는 다음의 등급 및 평점 환산기준표를 적용한다.
+                                <div class="table-wrap">
+                                    <table class="type1">
+                                        <thead>
+                                            <tr>
+                                                <th>성적</th>
+                                                <th>평점</th>
+                                                <th>환산점수</th>
+                                                <th>성적</th>
+                                                <th>평점</th>
+                                                <th>환산점수</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td rowspan="5">Ａ+</td>
+                                            <td>4.5</td>
+                                            <td>100</td>
+                                            <td rowspan="5">C+</td>
+                                            <td>2.5</td>
+                                            <td>80</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lLine">4.4</td>
+                                            <td>99</td>
+                                            <td>2.4</td>
+                                            <td>79</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lLine">4.3</td>
+                                            <td>98</td>
+                                            <td>2.3</td>
+                                            <td>78</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lLine">4.2</td>
+                                            <td>97</td>
+                                            <td>2.2</td>
+                                            <td>77</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lLine">4.1</td>
+                                            <td>96</td>
+                                            <td>2.1</td>
+                                            <td>76</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="5">Ａ</td>
+                                            <td>4.0</td>
+                                            <td>95</td>
+                                            <td rowspan="5">Ｃ</td>
+                                            <td>2.0</td>
+                                            <td>75</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lLine">3.9</td>
+                                            <td>94</td>
+                                            <td>1.9</td>
+                                            <td>74</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lLine">3.8</td>
+                                            <td>93</td>
+                                            <td>1.8</td>
+                                            <td>73</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lLine">3.7</td>
+                                            <td>92</td>
+                                            <td>1.7</td>
+                                            <td>72</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lLine">3.6</td>
+                                            <td>91</td>
+                                            <td>1.6</td>
+                                            <td>71</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="5">Ｂ+</td>
+                                            <td>3.5</td>
+                                            <td>90</td>
+                                            <td rowspan="16">F</td>
+                                            <td>1.5</td>
+                                            <td>70</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lLine">3.4</td>
+                                            <td>89</td>
+                                            <td>1.4</td>
+                                            <td>69</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lLine">3.3</td>
+                                            <td>88</td>
+                                            <td>1.3</td>
+                                            <td>68</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lLine">3.2</td>
+                                            <td>87</td>
+                                            <td>1.2</td>
+                                            <td>67</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lLine">3.1</td>
+                                            <td>86</td>
+                                            <td>1.1</td>
+                                            <td>66</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="5">Ｂ</td>
+                                            <td>3.0</td>
+                                            <td>85</td>
+                                            <td class="lLine">1.0</td>
+                                            <td>65</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lLine">2.9</td>
+                                            <td>84</td>
+                                            <td>0.9</td>
+                                            <td>64</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lLine">2.8</td>
+                                            <td>83</td>
+                                            <td>0.8</td>
+                                            <td>63</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lLine">2.7</td>
+                                            <td>82</td>
+                                            <td>0.7</td>
+                                            <td>62</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lLine">2.6</td>
+                                            <td>81</td>
+                                            <td>0.6</td>
+                                            <td>61</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="6">&nbsp;</td>
+                                            <td class="lLine">&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>0.5</td>
+                                            <td>60</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lLine">&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>0.4</td>
+                                            <td>59</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lLine">&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>0.3</td>
+                                            <td>58</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lLine">&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>0.2</td>
+                                            <td>57</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lLine">&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>0.1</td>
+                                            <td>56</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lLine">&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>0.1 미만</td>
+                                            <td>0</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+                        </ul>
+                        <h5 class="subTit04">100점 기준점수 환산기준표</h5>
+                        <ul class="dot-list02">
+                            <li>
+                                100점 기준의 성적 등급 점수를 성적 등급으로 환산할 필요가 있을 경우에는 환산등급표를 사용한다.
+                                <div class="table-wrap">
+                                    <table class="type1">
+                                        <caption>100점 기준점수 환산기준표</caption>
+                                        <thead>
+                                            <tr>
+                                                <th>점수</th>
+                                                <th>환산등급</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>96 ~ 100</td>
+                                                <td>Ａ<sup>+</sup></td>
+                                            </tr>
+                                            <tr>
+                                                <td>91 ~ 95</td>
+                                                <td>Ａ</td>
+                                            </tr>
+                                            <tr>
+                                                <td>86 ~ 90</td>
+                                                <td>Ｂ<sup>+</sup></td>
+                                            </tr>
+                                            <tr>
+                                                <td>81 ~ 85</td>
+                                                <td>Ｂ</td>
+                                            </tr>
+                                            <tr>
+                                                <td>76 ~ 80</td>
+                                                <td>Ｃ<sup>+</sup></td>
+                                            </tr>
+                                            <tr>
+                                                <td>71 ~ 75</td>
+                                                <td>Ｃ</td>
+                                            </tr>
+                                            <tr>
+                                                <td>70 이하</td>
+                                                <td>F</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+                            <li>학점은 학업성적의 평점이 2.0(등급C) 이상을 취득학점으로 인정하되, 수료를 위한 총 이수학점의 평균 평점은3.0(등급B) 이상이어야 한다.</li>
+                        </ul>
+                        <h4 class="subTit03">성적정정</h4>
+                        <ul class="dot-list02">
+                            <li>일단 제출된 성적은 정정 불가</li>
+                            <li>성적의 착오 또는 누락이 있는 경우에는 성적 정정 기간 내에 담당교수의 사유서 및 이를 증빙할 수 있는 구체적인 자료를 첨부하여 일반대학원으로 성적 정정 신청</li>
+                        </ul>
+                        <h4 class="subTit03">성적의 취소(불인정)</h4>
+                        <ul class="dot-list02">
+                            <li>중복 수강 신청하여 취득한 성적</li>
+                            <li>최대 이수학점 초과 신청 성적(상위 성적 삭제)</li>
+                            <li>미등록생 응시자의 성적</li>
+                            <li>수강 신청하지 않은 교과목의 성적</li>
+                            <li>부정행위로 무효 판정을 받은 학생의 해당 성적</li>
+                            <li>휴학 및 징계로 인하여 출석일수 4분의 3에 미달하는 자의 성적</li>
+                            <li>수업일수 4분의 3 이후 기말시험 기간 전에 성적 취득원제출 없이 휴학 한 자의 성적</li>
+                            <li>출석 부상 임의 기재된 학생의 성적을 수강신청 확인 없이 입력한 성적</li>
+                            <li>착오로 잘못 부여된 자의 성적</li>
+                            <li>기타 부정한 방법으로 얻은 과목의 성적</li>
+                        </ul>
+                        <!-- 본문 -->
+                    </div>
+                    <!-- sub content -->
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

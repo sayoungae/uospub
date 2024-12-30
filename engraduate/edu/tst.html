@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일반대학원 영문</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/swiper.css">
+
+
+    <!-- JS -->
+    <script src="../static/js/jquery-3.7.1.js"></script>
+    <script src="../static/js/swiper-bundle.min.js"></script>
+    <script src="../static/js/common.js"></script>
+    <!-- <script src="../static/js/main.js"></script> -->
+    <script src="../static/js/sub.js"></script>
+
+
+    <script>
+        //header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+       
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <!-- sub-banner -->
+            <div class="sub-banner">
+                <div class="inner">
+                    <div class="ban-tit">University of Seoul Global Top Brand</div>
+                    <ul class="line-map">
+                        <li><img src="../static/images/home_ic.png" alt="home"></li>
+                        <li>Research</li>
+                        <li>Research Centers and Laboratores</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content">
+                <div class="inner clearfix">
+                    <!-- // sub-banner -->
+                    <!-- snb -->
+                    <div id="snb-wrap">
+                    </div>
+                    <!-- // snb -->
+                    <!-- sub content -->
+                    <div class="sub-content" id="sub-content">
+                        <div class="sub-tit-box">
+                            <h3 class="subTit01">외국어/종합시험</h3>
+                            <ul class="stp-bt">
+                                <li><a href="" class="print-ic"><span class="blind">인쇄</span></a></li>
+                                <li><a href="" class="share-ic"><span class="blind">공유 </span></a></li>
+                            </ul>
+                        </div>
+                        <!-- 본문 -->
+                        <h4 class="subTit03">개요</h4>
+                        <ul class="dot-list02">
+                            <li>석·박사학위를 취득하려는 본교 학생은 자격시험으로 외국어 시험 및 종합시험을 합격하여야 함</li>
+                        </ul>
+                        <h4 class="subTit03">관련규정</h4>
+                        <ul class="dot-list02">
+                            <li>통합 대학원 학칙 제40조</li>
+                            <li>대학원 시행세칙 제37-39조</li>
+                        </ul>
+                        <h4 class="subTit03">응시 자격</h4>
+                        <div class="desc">
+                            <h5 class="subTit04">외국어 시험</h5>
+                            <ul class="dot-list02">
+                                <li>제출시기 : 3월/9월 중</li>
+                                <li>석사 : 영어</li>
+                                <li>박사 : 영어 필수 외 제2외국어는 학과별 시행 여부 결정 실시</li>
+                            </ul>
+                            <p class="point">※ 외국인 학생의 경우 한국어시험에 응시하여야 하며, 영어를 공용어 또는 상용어로 사용하지 않는 경우 영어 응시 가능</p>
+                            <p class="point mt5">※ 외국어시험의 경우 별도의 시험은 실시하지 않으며, 아래와 같이 일정 점수 이상을 취득한 경우에 외국어 시험을 대체할 수 있음. 외부공인시험 대체자는 외국어 시험 신청기간에 증빙서류(원본)를 대학행정정보시스템을 통해 제출하여야 하며, 본교 글로벌외국어 교육센터에서 주관하는 대학원영어 강좌 성적취득자(B0이상/ 예술계열 및 계약학과는 C0이상)는 별도의 신청절차 없이 대체 인정</p>
+                            <div class="table-wrap">
+                                <table class="type1">
+                                    <caption>외국어 시험</caption>
+                                    <thead>
+                                        <tr>
+                                            <th colspan="2">구분</th>
+                                            <th>사회</th>
+                                            <th>인문</th>
+                                            <th>자연</th>
+                                            <th>공학</th>
+                                            <th>예술</th>
+                                            <th>체육</th>
+                                            <th>계약학과</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td rowspan="3">TOEFL</td>
+                                        <td class="lLine">PBT</td>
+                                        <td>560</td>
+                                        <td>560</td>
+                                        <td>540</td>
+                                        <td>540</td>
+                                        <td>500</td>
+                                        <td>560</td>
+                                        <td>500</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="lLine">CBT</td>
+                                        <td>217</td>
+                                        <td>217</td>
+                                        <td>207</td>
+                                        <td>207</td>
+                                        <td>173</td>
+                                        <td>217</td>
+                                        <td>173</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="lLine">IBT</td>
+                                        <td>82</td>
+                                        <td>82</td>
+                                        <td>76</td>
+                                        <td>76</td>
+                                        <td>60</td>
+                                        <td>82</td>
+                                        <td>60</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">TOEIC</td>
+                                        <td>760</td>
+                                        <td>760</td>
+                                        <td>700</td>
+                                        <td>700</td>
+                                        <td>580</td>
+                                        <td>760</td>
+                                        <td>580</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">TEPS</td>
+                                        <td>329</td>
+                                        <td>329</td>
+                                        <td>301</td>
+                                        <td>301</td>
+                                        <td>247</td>
+                                        <td>329</td>
+                                        <td>247</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">IELTS</td>
+                                        <td>6.5</td>
+                                        <td>6.5</td>
+                                        <td>6</td>
+                                        <td>6</td>
+                                        <td>5</td>
+                                        <td>6.5</td>
+                                        <td>5</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">TOEIC SPEAKING</td>
+                                        <td>140</td>
+                                        <td>140</td>
+                                        <td>130</td>
+                                        <td>130</td>
+                                        <td>110</td>
+                                        <td>140</td>
+                                        <td>110</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="3">G-TELP</td>
+                                        <td>level 1</td>
+                                        <td colspan="7">50</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="lLine">level 2</td>
+                                        <td>70</td>
+                                        <td>70</td>
+                                        <td>65</td>
+                                        <td>65</td>
+                                        <td>50</td>
+                                        <td>70</td>
+                                        <td>50</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="lLine">level 3</td>
+                                        <td>93</td>
+                                        <td>93</td>
+                                        <td>85</td>
+                                        <td>85</td>
+                                        <td>65</td>
+                                        <td>93</td>
+                                        <td>65</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">OPIC</td>
+                                        <td>IM3</td>
+                                        <td>IM3</td>
+                                        <td>IM2</td>
+                                        <td>IM2</td>
+                                        <td>IM1</td>
+                                        <td>IM3</td>
+                                        <td>IM1</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">한국어능력시험(TOPIK)</td>
+                                        <td colspan="6">4급</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <p class="point mt10">※ 대체시험성적은 제출일 기준 최근 2년 이내의 성적표 원본으로 인정함</p>
+                            </div>
+                            <h5 class="subTit04">종합시험(과목은 해당 학과에서 정함)</h5>
+                            <ul class="dot-list02">
+                                <li>
+                                    대학원 시행세칙 - 별표5 : 학과별 종합시험 과목수 현황 참고<br/>
+                                    대학원 시행세칙 : <a href="http://rule.uos.ac.kr/lmxsrv/law/lawFullView.srv?SEQ=68" class="link" target="_blank" title="새창열림">http://rule.uos.ac.kr/lmxsrv/law/lawFullView.srv?SEQ=68</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <h4 class="subTit03">합격점수</h4>
+                        <ul class="dot-list02">
+                            <li>외국어 시험 : 상기된 「대학원시행세칙」 제38조 ③항 및 [별표6호] 외국어시험 대체인정 하한 점수 기준표에 따름</li>
+                            <li>종합시험 : 각 100점 만점에 70점 이상 합격(과목별 합격 인정)</li>
+                        </ul>
+                        <h4 class="subTit03">재시험 응시 가능 횟수</h4>
+                        <ul class="dot-list02">
+                            <li>제한 없음</li>
+                        </ul>
+                        <!-- 본문 -->
+                    </div>
+                    <!-- sub content -->
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>
