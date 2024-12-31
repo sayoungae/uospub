@@ -124,6 +124,8 @@
 .table-wrap .type1 td.brd-left{border-left:1px solid #DEDEDE;}
 .table-wrap .type1 td.left_L{text-align: left;}
 
+.table-wrap .blt01{position: relative; padding-left: 10px; color:#555;}
+.table-wrap .blt01::before{content: ""; display: inline-block; width: 3px; height: 3px; background-color: #5A80C5; position: absolute; left:0; top:9px; border-radius: 50%;;}
 /* --table */
 /* boards */
 /* search */
@@ -249,6 +251,60 @@
 .pdfBtn{ display: flex; align-items: stretch; gap: 5px; flex-wrap: wrap;}
 .pdfBtn > .btn{width: calc(100% / 4 - 5px); display: flex; align-items: center; justify-content: center; height: 50px; line-height: 1.2; padding: 10px 20px;}
 /* -- 버튼 */
+
+/* 대학원 소개 */
+.welcomeBox{display: flex; gap: 40px;}
+.welcomeBox .intro_left{width: 30%;  overflow: hidden;padding-top: 15px;}
+.welcomeBox .intro_left > img{width: 100%;border-radius: 20px; }
+
+.welcomeBox .intro_right{width: calc(100% - 30% - 40px);}
+.welcomeBox .intro_right .tit{font-size: var(--fz-30); margin-bottom: 40px; line-height: 1.2;}
+.welcomeBox .intro_right .tit strong{color: #0e3174;}
+.welcomeBox .intro_right .txt{color:#555; word-break: keep-all;}
+.welcomeBox .intro_right .txt b{color: #4366c0;}
+.welcomeBox .intro_right .sign{font-weight: 700; color:#333;}
+
+.org-chart{margin-bottom: 60px;}
+.org-chart .cir{
+    width: 140px;
+    height: 140px;
+    background-color: #4472c4;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: var(--fz-24);
+    color:#fff;
+    margin:0 auto 30px;
+}
+.org-chart .cir.line2{background-color: #818BBA;}
+
+.org-chart .cir:after{display: inline-block; width: 2px; height: 30px; border-left: 2px dotted #ccc; position: absolute; left:50%; transform: translateX(-50%); bottom:-30px; content:"";}
+.org-chart .squa-line{display: flex; justify-content: space-between; position: relative;}
+.org-chart .squa-line > li{
+    width: 120px;
+    height: 70px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color:#666;    
+    margin-top: 40px;
+    position: relative;
+    font-size: var(--fz-18);
+}
+.org-chart .squa-line::before{display: inline-block; width:calc(100% - 120px); height: 42px; border-top: 2px dotted #ccc; border-left: 2px dotted #ccc;  border-right: 2px dotted #ccc;position: absolute; left:50%; transform: translateX(-50%); top:0; content:""; border-radius: 6px;}
+.org-chart .squa-line > li::before{display: inline-block; width: 2px; height: 40px; border-left: 2px dotted #ccc; position: absolute; left:50%; transform: translateX(-50%); top:-40px; content:"";}
+.org-chart .squa-line > li:nth-child(1):before,
+.org-chart .squa-line > li:last-child:before{display: none;}
+/* 대학원 소개 */
 
 /* 입학 */
 .pdfBox{margin-top: 30px; width: 100%;}
@@ -376,5 +432,18 @@
 }
 
 @media (max-width: 760px) {
+    /* 대학원 소개 */
+    .welcomeBox{flex-direction: column;}
+    .welcomeBox .intro_left{width: 100%;}
+    .welcomeBox .intro_left > img{width: 100%;border-radius: 20px;}
+    .welcomeBox .intro_right{width: 100%;}
+    
+    .org-chart .squa-line{flex-wrap: wrap; column-gap: 20px; overflow: hidden;}
+    .org-chart .squa-line > li{ flex: 1 1 30%;}
+    .org-chart .squa-line::before{border-left:0; border-right:0; border-radius: 0;}
+    .org-chart .squa-line > li:nth-child(1):before,
+    .org-chart .squa-line > li:last-child:before{display: inline-block;}
+
+    /* 대학원 소개 */
     .depart-list > li{width: calc(100% / 2 - 5px);}
 }

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일반대학원 영문</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/swiper.css">
+
+
+    <!-- JS -->
+    <script src="../static/js/jquery-3.7.1.js"></script>
+    <script src="../static/js/swiper-bundle.min.js"></script>
+    <script src="../static/js/common.js"></script>
+    <!-- <script src="../static/js/main.js"></script> -->
+    <script src="../static/js/sub.js"></script>
+
+
+    <script>
+        //header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+       
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <!-- sub-banner -->
+            <div class="sub-banner">
+                <div class="inner">
+                    <div class="ban-tit">University of Seoul Global Top Brand</div>
+                    <ul class="line-map">
+                        <li><img src="../static/images/home_ic.png" alt="home"></li>
+                        <li>Research</li>
+                        <li>Research Centers and Laboratores</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content">
+                <div class="inner clearfix">
+                    <!-- // sub-banner -->
+                    <!-- snb -->
+                    <div id="snb-wrap">
+                    </div>
+                    <!-- // snb -->
+                    <!-- sub content -->
+                    <div class="sub-content" id="sub-content">
+                        <div class="sub-tit-box">
+                            <h3 class="subTit01">원장인사</h3>
+                            <ul class="stp-bt">
+                                <li><a href="" class="print-ic"><span class="blind">인쇄</span></a></li>
+                                <li><a href="" class="share-ic"><span class="blind">공유 </span></a></li>
+                            </ul>
+                        </div>
+                        <!-- 본문 -->
+                        <div class="welcomeBox">
+                            <div class="intro_left">
+                                <img src="../static/images/graduate_profile.jpg" alt="대학원장 송오성 교수">
+                            </div>
+                            <div class="intro_right">
+                                <p class="tit">
+                                    서울과 함께 세계로 도약하는 
+                                    <br>
+                                    <strong>서울시립대학교 대학원</strong>
+                                </p>
+                                <div class="txt">
+                                    <p>
+                                        안녕하세요. 서울시립대학교 대학원장 송오성입니다.
+                                        <br>
+                                        여러분의 관심에 감사드리고 환영합니다.
+                                        <br>
+                                    </p><p>
+                                        서울시립대학교 대학원은 1918년 건학한 서울시립대학교에서 1980년에 설립된 후, 국내 최고 수준의 교육과 연구를
+                                        위한 국제적 수준의 대학원으로서 짧은 역사에도 5,000여 명의 <b>석·박사</b> 인력을 배출하며 다양한 분야에 기여하고 있습니다.
+                                    </p>
+                                    <br>
+                                    <p>
+                                        <b>우리 대학원은 다양한 연구 분야를 선도하는 세계적 수준의 400여명의 교수진으로 구성되어 있으며,</b>
+                                        첨단시설과 기자재를 갖추고 국내외 다양한 연구 프로젝트를 수행하고 있습니다.
+                                        특히, 지능형반도체, 인공지능, 빅데이터, 스마트시티 등 첨단분야와 기존의 공학, 자연과학, 인문학, 사회과학, 예체능, 다양한 협동과정을 융합하며 격변하는 디지털 세상을 리딩하며
+                                        서울과 함께 세계로 도약하고 있습니다.
+                                    </p>
+                                    <br>
+                                    <p>
+                                        다양한 사회적 수요와 요구를 반영할수 있도록 대학원 <b>대학혁신지원사업을 통하여 교육과정을 혁신해 가고 있으며, 학술연구 등 프로그램을
+                                            제공하고 있습니다.</b>
+                                        또한 글로벌 시대에 발맞춰 국제적인 교류와 협력을 추구하고 있습니다.
+                                    </p>
+                                    <br>
+                                    <p>
+                                        우리가 만나는 미래는 더 이상 예측의 대상이 아닙니다. 우리 대학원에서 스스로 미래를 만드는 역량을 가진 Only One 이 되도록 돕겠습니다.
+                                    </p>
+                                    <br>
+                                    <p>
+                                        함께 성장하고 발전할 수 있는 여러분들의 많은 관심과 참여를 바랍니다.
+                                    </p>
+                                    <br>
+                                    <div class="sign"><span>서울시립대학교 대학원장 송 오 성</span></div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                        <!-- 본문 -->
+                    </div>
+                    <!-- sub content -->
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

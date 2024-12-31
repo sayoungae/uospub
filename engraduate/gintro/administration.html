@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일반대학원 영문</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/swiper.css">
+
+
+    <!-- JS -->
+    <script src="../static/js/jquery-3.7.1.js"></script>
+    <script src="../static/js/swiper-bundle.min.js"></script>
+    <script src="../static/js/common.js"></script>
+    <!-- <script src="../static/js/main.js"></script> -->
+    <script src="../static/js/sub.js"></script>
+
+
+    <script>
+        //header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+       
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <!-- sub-banner -->
+            <div class="sub-banner">
+                <div class="inner">
+                    <div class="ban-tit">University of Seoul Global Top Brand</div>
+                    <ul class="line-map">
+                        <li><img src="../static/images/home_ic.png" alt="home"></li>
+                        <li>Research</li>
+                        <li>Research Centers and Laboratores</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content">
+                <div class="inner clearfix">
+                    <!-- // sub-banner -->
+                    <!-- snb -->
+                    <div id="snb-wrap">
+                    </div>
+                    <!-- // snb -->
+                    <!-- sub content -->
+                    <div class="sub-content" id="sub-content">
+                        <div class="sub-tit-box">
+                            <h3 class="subTit01">행정기구</h3>
+                            <ul class="stp-bt">
+                                <li><a href="" class="print-ic"><span class="blind">인쇄</span></a></li>
+                                <li><a href="" class="share-ic"><span class="blind">공유 </span></a></li>
+                            </ul>
+                        </div>
+                        <!-- 본문 -->
+                        <h4 class="blind">행정기구 조직도</h4>
+                        <ul class="org-chart">
+                            <li>
+                                <p class="cir">원장</p>
+                                <ul>
+                                    <li>
+                                        <p class="cir line2">부원장</p>
+                                        <ul class="squa-line">
+                                            <li><span>입학담당</span></li>
+                                            <li><span>학사담당</span></li>
+                                            <li><span>장학담당</span></li>
+                                            <li><span>연구윤리<br/>담당</span></li>
+                                            <li><span>등록담당</span></li>
+                                            <li><span>제증명담당</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <h4 class="subTit03">담당업무 및 연락처</h4>
+                        <div class="table-wrap">
+                            <table class="type1">
+                                <caption>일반대학원 대학원 담당업무 및 연락처</caption>
+                                <colgroup>
+                                    <col class="w100px">
+                                    <col>
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>구 분</th>
+                                        <th>담당업무</th>
+                                        <th>담당부서</th>
+                                        <th>연락처</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="4">입학</td>
+                                        <td>일반전형</td>
+                                        <td>일반대학원</td>
+                                        <td>6490-5012</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="lLine">외국인 특별전형</td>
+                                        <td>국제교류과</td>
+                                        <td>6490-6662</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="lLine">학·석사연계과정</td>
+                                        <td>일반대학원</td>
+                                        <td>6490-5017</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="lLine">석·박사통합과정(특별전형)</td>
+                                        <td>일반대학원</td>
+                                        <td>6490-5016</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="6">학사</td>
+                                        <td>종합·외국어 시험, 수료·졸업사정, 학위논문, 대학원 연구생, 징계, 대학원 위원회</td>
+                                        <td>일반대학원</td>
+                                        <td>6490-5014</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="lLine">대학원 위원회</td>
+                                        <td>일반대학원</td>
+                                        <td>6490-5013</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="lLine">수강신청</td>
+                                        <td>일반대학원</td>
+                                        <td>6490-5017</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="lLine">학점교류</td>
+                                        <td>일반대학원</td>
+                                        <td>6490-5016</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="lLine">휴·복학, 자퇴 등 학적사항</td>
+                                        <td>일반대학원</td>
+                                        <td>6490-5016</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="lLine">제적, 재입학, 학위수여식</td>
+                                        <td>일반대학원</td>
+                                        <td>6490-5014</td>
+                                    </tr>
+                                    <tr>
+                                        <td>장학</td>
+                                        <td>수업지원장학, 연구지원장학, 교외장학 등</td>
+                                        <td>학생과</td>
+                                        <td>6490-6221~3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>연구윤리</td>
+                                        <td>연구윤리</td>
+                                        <td>연구지원과</td>
+                                        <td>6490-6356</td>
+                                    </tr>
+                                    <tr>
+                                        <td>등록</td>
+                                        <td>등록금 납부</td>
+                                        <td>총무과</td>
+                                        <td>6490-6432</td>
+                                    </tr>
+                                    <tr>
+                                        <td>제증명</td>
+                                        <td>증명서 발급</td>
+                                        <td>학생서비스센터</td>
+                                        <td>6490-6260~2</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <h4 class="subTit03">대학원위원회</h4>
+                        <div class="table-wrap">
+                            <table class="type1">
+                                <caption>일반대학원 대학원 위원회에 관한 표</caption>
+                                <colgroup>
+                                    <col class="w140px">
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>직위</th>
+                                        <th>소속</th>
+                                        <th>성명</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>위 원 장</td>
+                                        <td>대학원장</td>
+                                        <td>송오성</td>
+                                    </tr>
+                                    <tr>
+                                        <td>부위원장</td>
+                                        <td>교무처장</td>
+                                        <td>박훈</td>
+                                    </tr>
+                                    <tr>
+                                        <td>위 원</td>
+                                        <td>입학처장</td>
+                                        <td>장금주</td>
+                                    </tr>
+                                    <tr>
+                                        <td>위 원</td>
+                                        <td>학생처장</td>
+                                        <td>황선환</td>
+                                    </tr>
+                                    <tr>
+                                        <td>위 원</td>
+                                        <td>기획처장</td>
+                                        <td>임정하</td>
+                                    </tr>
+                                    <tr>
+                                        <td>위 원</td>
+                                        <td>연구처장</td>
+                                        <td>정연두</td>
+                                    </tr>
+                                    <tr>
+                                        <td>위 원</td>
+                                        <td>미래혁신원장</td>
+                                        <td>김철한</td>
+                                    </tr>
+                                    <tr>
+                                        <td>위 원</td>
+                                        <td>법학전문대학원장</td>
+                                        <td>이상경</td>
+                                    </tr>
+                                    <tr>
+                                        <td>위 원</td>
+                                        <td>국제교육원장</td>
+                                        <td>송지희</td>
+                                    </tr>
+                                    <tr>
+                                        <td>위 원</td>
+                                        <td>정경대학장</td>
+                                        <td>형남원</td>
+                                    </tr>
+                                    <tr>
+                                        <td>위 원</td>
+                                        <td>경영대학장</td>
+                                        <td>최영준</td>
+                                    </tr>
+                                    <tr>
+                                        <td>위 원</td>
+                                        <td>공과대학장</td>
+                                        <td>김정현</td>
+                                    </tr>
+                                    <tr>
+                                        <td>위 원</td>
+                                        <td>인문대학장</td>
+                                        <td>김미영</td>
+                                    </tr>
+                                    <tr>
+                                        <td>위 원</td>
+                                        <td>자연과학대학장</td>
+                                        <td>조윤희</td>
+                                    </tr>
+                                    <tr>
+                                        <td>위 원</td>
+                                        <td>도시과학대학장</td>
+                                        <td>김강수</td>
+                                    </tr>
+                                    <tr>
+                                        <td>위 원</td>
+                                        <td>예술체육대학장</td>
+                                        <td>신재휴</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p class="point mt10"> 다만, 입학관련 위원회의 간사는 입학부처장이 맡는다.</p>
+                        </div>
+                        <!-- 본문 -->
+                    </div>
+                    <!-- sub content -->
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

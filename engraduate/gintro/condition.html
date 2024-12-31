@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일반대학원 영문</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/swiper.css">
+
+
+    <!-- JS -->
+    <script src="../static/js/jquery-3.7.1.js"></script>
+    <script src="../static/js/swiper-bundle.min.js"></script>
+    <script src="../static/js/common.js"></script>
+    <!-- <script src="../static/js/main.js"></script> -->
+    <script src="../static/js/sub.js"></script>
+
+
+    <script>
+        //header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+       
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <!-- sub-banner -->
+            <div class="sub-banner">
+                <div class="inner">
+                    <div class="ban-tit">University of Seoul Global Top Brand</div>
+                    <ul class="line-map">
+                        <li><img src="../static/images/home_ic.png" alt="home"></li>
+                        <li>Research</li>
+                        <li>Research Centers and Laboratores</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content">
+                <div class="inner clearfix">
+                    <!-- // sub-banner -->
+                    <!-- snb -->
+                    <div id="snb-wrap">
+                    </div>
+                    <!-- // snb -->
+                    <!-- sub content -->
+                    <div class="sub-content" id="sub-content">
+                        <div class="sub-tit-box">
+                            <h3 class="subTit01">일반현황</h3>
+                            <ul class="stp-bt">
+                                <li><a href="" class="print-ic"><span class="blind">인쇄</span></a></li>
+                                <li><a href="" class="share-ic"><span class="blind">공유 </span></a></li>
+                            </ul>
+                        </div>
+                        <!-- 본문 -->
+                        <h4 class="subTit03">대학원 일반현황</h4>
+                        <div class="desc mb30">
+                            대학원은 기초적인 지식을 바탕으로 심오한 학문적 이론과 전문지식을 갖춘 인재를 양성함을 목표로 한다. 대학원에는 일반과정으로 석사학위과정 36개 학과와 박사학위과정 34개 학과가 개설되어 있으며, 한국과학기술연구원, 국립산림과학원, 서울시보건환경연구원, 한국에너지기술연구원과의 학연 협동과정으로 환경공학과, 화학공학과에 석사과정이 설치되어 있다. 또한 학과간 협동과정으로는 스마트시티학과와 도시빅데이터융합학과가 석사 및 박사학위과정으로 국제도시개발학과와 재난과학과가 박사학위과정으로 설치되어 있다.
+                        </div>
+                        <h4 class="subTit03">재적생현황(2021.08.01.기준 / 단위: 명)</h4>
+                        <div class="table-wrap">
+                            <table class="type1">
+                                <caption>대학원 재적생 현황</caption>
+                                <thead>
+                                    <tr>
+                                        <th>구분</th>
+                                        <th>재학생</th>
+                                        <th>휴학생</th>
+                                        <th>총계</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>석사과정</td>
+                                    <td>2,543</td>
+                                    <td>200</td>
+                                    <td>2,743</td>
+                                </tr>
+                                <tr>
+                                    <td>박사과정</td>
+                                    <td>462</td>
+                                    <td>44</td>
+                                    <td>506</td>
+                                </tr>
+                                <tr>
+                                    <td>석박통합과정</td>
+                                    <td>30</td>
+                                    <td>1</td>
+                                    <td>31</td>
+                                </tr>
+                                </tbody>
+                                <tfoot>
+                                <tr>
+                                    <td>계</td>
+                                    <td>3,035</td>
+                                    <td>245</td>
+                                    <td>3,280</td>
+                                </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                        <h4 class="subTit03">졸업생 현황(연도별)</h4>
+                        <div class="pdfBox"></div>
+                        <!-- 본문 -->
+                    </div>
+                    <!-- sub content -->
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

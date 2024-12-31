@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일반대학원 영문</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/swiper.css">
+
+
+    <!-- JS -->
+    <script src="../static/js/jquery-3.7.1.js"></script>
+    <script src="../static/js/swiper-bundle.min.js"></script>
+    <script src="../static/js/common.js"></script>
+    <!-- <script src="../static/js/main.js"></script> -->
+    <script src="../static/js/sub.js"></script>
+
+
+    <script>
+        //header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+       
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <!-- sub-banner -->
+            <div class="sub-banner">
+                <div class="inner">
+                    <div class="ban-tit">University of Seoul Global Top Brand</div>
+                    <ul class="line-map">
+                        <li><img src="../static/images/home_ic.png" alt="home"></li>
+                        <li>Research</li>
+                        <li>Research Centers and Laboratores</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content">
+                <div class="inner clearfix">
+                    <!-- // sub-banner -->
+                    <!-- snb -->
+                    <div id="snb-wrap">
+                    </div>
+                    <!-- // snb -->
+                    <!-- sub content -->
+                    <div class="sub-content" id="sub-content">
+                        <div class="sub-tit-box">
+                            <h3 class="subTit01">연표</h3>
+                            <ul class="stp-bt">
+                                <li><a href="" class="print-ic"><span class="blind">인쇄</span></a></li>
+                                <li><a href="" class="share-ic"><span class="blind">공유 </span></a></li>
+                            </ul>
+                        </div>
+                        <!-- 본문 -->
+                        <div class="table-wrap">
+                            <table class="type1">
+                                <caption>일반대학원 연표</caption>
+                                <colgroup>
+                                    <col width="30%;">
+                                    <col>
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>시기</th>
+                                        <th>내용</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1980.11.24</td>
+                                        <td class="al">
+                                            대학원 설치 인가(석사과정)
+                                            <p class="blt01">학과 신설 : 도시행정학과, 토목공학과, 환경공학과, 화학공학과, 조경학과 --- 정원 40명</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1981.11.25</td>
+                                        <td class="al">대학원 학과 신설 : 건축공학과, 행정학과 증원 10명 --- 정원 50명</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1982.11.22</td>
+                                        <td class="al">대학원 학과 신설(석사과정) : 경영학과 증원 8명 --- 정원 58명</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1983.10.29</td>
+                                        <td class="al">
+                                            대학원 박사과정 설치인가
+                                            <p class="blt01">설치학과 : 도시행정학과, 토목공학과, 화학공학과, 환경공학과 --- 정원 18명</p>
+                                            <p class="blt01">대학원 학과 신설(석사과정) : 전자공학과(정원 자체 조정) ---- 정원 58명</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1984.11.27</td>
+                                        <td class="al">
+                                            대학원 학과 신설
+                                            <p class="blt01">석사과정 : 회계학과, 경제학과, 법학과, 무역학과 증원 25명 --- 정원 83명</p>
+                                            <p class="blt01">박사과정 : 건축공학과(정원 자체 조정) --- 정원 18명</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1987.11.09</td>
+                                        <td class="al">
+                                            대학원 학과 신설 및 증원
+                                            <p class="blt01">학과 신설(석사과정) : 환경원예학과, 도시계획학과, 국어국문학과, 산업미술학과 증원 61명 --- 정원 144명</p>
+                                            <p class="blt01">학과 신설(박사과정) : 경영학과, 경제학과 증원 28명 --- 정원 46명</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1988.11.30</td>
+                                        <td class="al">
+                                            대학원 학과 신설 및 증원
+                                            <p class="blt01">석사과정 : 영어영문학과 신설 증원 20명 --- 정원 164명</p>
+                                            <p class="blt01">박사과정 : 법학과 신설 증원 9명 --- 정원 55명</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1989.11.06</td>
+                                        <td class="al">대학원(석사과정) : 증원 20명 --- 정원 184명</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1990.11.09</td>
+                                        <td class="al">
+                                            대학원 학과 신설 및 증원<br>
+                                            <p class="blt01">석사과정 : 국사학과, 전산통계학과 신설 증원 6명 --- 정원 190명</p>
+                                            <p class="blt01">박사과정 : 조경학과, 전자공학과, 도시계획학과 신설 증원 10명 - 정원 65명</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1991.11.15</td>
+                                        <td class="al">
+                                            대학원 학과 신설 및 정원 조정
+                                            <p class="blt01">석사과정 증원 25명 --- 정원 215명</p>
+                                            <p class="blt01">박사과정 : 환경원예학과, 국어국문학과 신설 증원 35명   --- 정원 100명</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1992.07.28</td>
+                                        <td class="al">
+                                            대학원 학과 신설 정원 조정
+                                            <p class="blt01">석사과정 증원 24명 --- 정원 239명</p>
+                                            <p class="blt01">박사과정 증원 26명 --- 정원 126명</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1993.09.04</td>
+                                        <td class="al">
+                                            대학원 학과 신설, 학과 명칭 변경 및 정원 조정<br>
+                                            <p class="blt01">석사과정 신설 : 수학과</p>
+                                            <p class="blt01">명칭 변경 : 도시계획학과 → 도시공학과 --- 증원 24명 정원 263명</p>
+                                            <p class="blt01">박사과정 --- 증원 10명 정원 136명</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1995.10.18</td>
+                                        <td class="al">
+                                            대학원 학과 및 정원 조정
+                                            <p class="blt01">석사과정 신설 : 제어계측공학과</p>
+                                            <p class="blt01">석사과정 --- 증원 80명 정원 343명</p>
+                                            <p class="blt01">박사과정 --- 증원 36명 정원 172명</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1996.11.02</td>
+                                        <td class="al">
+                                            대학원 학과 신설 및 입학정원 증원
+                                            <ul class="dotList">
+                                                <li>세무학과, 교통공학과, 재료공학과, 정밀기계공학과 신설(4개 학과) 29명</li>
+                                                <li>1997 대학원 정원관리 방식 변경 : 총 정원제 → 입학정원제
+                                                    <ul>
+                                                        <li>석사과정(입학정원 201명)
+                                                            <ul>
+                                                                <li>인문사회계열 64명, 자연과학계열 26명, 공학 계열 108명, 예체능계열 3명</li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>박사과정(입학정원 69명)
+                                                            <ul>
+                                                                <li>인문사회계열 19명, 자연과학계열 89명, 공학 계열 42명</li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1997.10.25</td>
+                                        <td class="al">
+                                            대학원 입학정원 증원
+                                            <p class="blt01">석사과정 : 물리학과, 반도체공학과 신설 포함 54명 증원(입학정원 255명)</p>
+                                            <p class="blt01">박사과정 : 제어계측공학과 신설 5명 증원(입학정원 74명)</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1998.11.13</td>
+                                        <td class="al">
+                                            대학원 학과 신설, 합병, 정원 조정
+                                            <ul class="dotList01">
+                                                <li>석사과정
+                                                    <ul>
+                                                        <li>생명과학과 신설 포함 6명 증원(정원 261명)</li>
+                                                        <li>전자공 · 제어계측공 · 반도체공학과 → 전자 · 전기공학부로 합병</li>
+                                                    </ul>
+                                                </li>
+                                                <li>박사과정
+                                                    <ul>
+                                                        <li>국사학과 신설 포함 2명 증원(정원 76명)</li>
+                                                        <li>전자공 · 제어계측공학과 → 전자 · 전기공학부로 합병</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1999.11.02</td>
+                                        <td class="al">대학원 증원 : 71명(박사 18명, 석사 53명)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2000.07.18</td>
+                                        <td class="al">
+                                            대학원 정원 증원 11명(석사 6명, 박사 5명)
+                                            <ul class="dotList01">
+                                                <li>사회복지학과 석사 과정 신설</li>
+                                                <li>학과 명칭 변경
+                                                    <ul>
+                                                        <li>전자전기공학과 → 전자전기컴퓨터공학과</li>
+                                                        <li>정밀기계공학과 →기계정보공학과</li>
+                                                        <li>전산통계학과 → 컴퓨터·통계학과</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2000.08.01</td>
+                                        <td class="al">대학원 교학과 와 교무과 통합 → 「교무과」, 「학사관리과」로 분리</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2001.07.28</td>
+                                        <td class="al">
+                                            대학원 정원 증원 26명(석사 15명, 박사 11명)<br>
+                                            <ul class="dotList01">
+                                                <li>학과 신설
+                                                    <ul>
+                                                        <li>석사과정 : 도시사회학과, 나노과학기술 학과</li>
+                                                        <li>박사과정 : 생명과학과</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2002.10.30</td>
+                                        <td class="al">
+                                            대학원 정원 조정<br>
+                                            <p class="blt01">박사과정 증원 10명, 산학연협동과정 신설(한국과학기술연구원) 3명</p>
+                                            <p class="blt01">석사과정 증원 18명, 산학연협동과정 신설(한국과학기술연구원) 4명</p>
+                                            <p class="blt01">학과 신설 : 지적정보학과(석사), 건축학과(석 ·   박사)</p>
+                                            <p class="blt01">산학연협동과정 신설(석 · 박사) : 한국과학기술연구원 협약</p>
+                                            <p class="pointTxt">※ 모집단위 명칭 변경 : 일반대학원 재료공학과 → 신소재공학과</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2003.09.27</td>
+                                        <td class="al">
+                                            대학원 정원 조정
+                                            <ul class="dotList01">
+                                                <li>5명 감원(석사), 산업미술학과 내 산업디자인 전공 및 제품 디자인 전공(폐지), 세무학과(폐지)
+                                                    <ul>
+                                                        <li>모집단위 명칭 변경 : 산업미술학과 →   환경조각학과</li>
+                                                        <li>전공분야 : 컴퓨터 통계학과 → 컴퓨터학 전공, 통계학 전공 분리</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2004.09.</td>
+                                        <td class="al">
+                                            2005년도 대학원 박사과정 신설 (총 정원 범위 내에서 자율 결정)
+                                            <ul class="dotList01">
+                                                <li>학과 신설 : 박사과정 2개 학과 9명
+                                                    <ul>
+                                                        <li>지적정보학과 : 4명</li>
+                                                        <li>사회복지학과 : 5명</li>
+                                                    </ul>
+                                                </li>
+                                                <li>감원 : 석사과정 2개 학과 9명
+                                                    <ul>
+                                                        <li>지적정보학과 : 4명(8명→ 4명)</li>
+                                                        <li>사회복지학과 : 5명(15명→   10명)</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2005.08.29</td>
+                                        <td class="al">
+                                            2006학년도 대학원 정원 조정
+                                            <ul class="dotList01">
+                                                <li>학위과정 간 정원 조정
+                                                    <ul>
+                                                        <li>신설 : 학과 간 협동과정 박사과정 5명(나노공학과)</li>
+                                                        <li>감축 : 박사과정 5명(정원 133명→ 128명)</li>
+                                                    </ul>
+                                                </li>
+                                                <li>학과 통폐합
+                                                    <ul>
+                                                        <li>경영학과 + 회계학과 ⇒ 경영학과, 무역학과 + 경제학과 ⇒ 경제학과</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2006.09.07</td>
+                                        <td class="al">
+                                            2007학년도 대학원 정원 조정
+                                            <ul class="dotList01">
+                                                <li>학위과정 간 정원 조정
+                                                    <ul>
+                                                        <li>증원 : 학과 간 협동과정 1명(정원 5명→ 6명)</li>
+                                                        <li>감원 : 박사과정 1명(정원 128명→ 127명)</li>
+                                                    </ul>
+                                                </li>
+                                                <li>학과 간 협동과정 재난과학과 신설(박사과정)</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2007.07.27</td>
+                                        <td class="al">
+                                            2008학년도 대학원 학과 신설 및 정원 증원
+                                            <ul class="dotList01">
+                                                <li>학과 신설 : 석사과정 1개 학과(음악학과 총 정원 범위 내)</li>
+                                                <li>정원 증원 : 53명
+                                                    <ul>
+                                                        <li>석사과정 33명(354→ 387)</li>
+                                                        <li>박사과정 20명(136→ 156)</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2008.10.27</td>
+                                        <td class="al">
+                                            2009학년도 대학원 학과 폐지 및 신설, 정원 조정
+                                            <ul class="dotList01">
+                                                <li>학과 폐지 : 석 · 박사과정 법학과</li>
+                                                <li>학과 신설 : 박사과정 2개 학과(철학과, 도시사회학과)</li>
+                                                <li>정원 조정
+                                                    <ul>
+                                                        <li>석사과정 5명 감원(387→ 382)</li>
+                                                        <li>박사과정 5명 증원(156→ 161)</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2009.10.15</td>
+                                        <td class="al">
+                                            2010학년도 대학원 학과 신설
+                                            <p class="blt01">도시환경 시스템공학과 석사과정 및 박사과정 신설(총 정원 범위 내)</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2010.07.15</td>
+                                        <td class="al">도시환경 시스템공학과의 명칭을 에너지환경 시스템공학과로 변경</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2010.11.29</td>
+                                        <td class="al">
+                                            2011학년도 대학원 학과 신설 및 정원 증원
+                                            <ul class="dotList01">
+                                                <li>통계학과(자연과학계열)와 컴퓨터과학과(공학계열) 분리 신설</li>
+                                                <li>생활체육정보학과(예술체육계열) 석사과정 신설</li>
+                                                <li>정원 증원
+                                                    <ul>
+                                                        <li>석사과정 5명 증원(382명 → 387명)</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2013.02.25</td>
+                                        <td class="al">
+                                            학과 명칭 변경
+                                            <p class="blt01">생활체육정보학과 → 스포츠과학과</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2013. 10. 22</td>
+                                        <td class="al">
+                                            대학원 학과 신설
+                                            <p class="blt01">석사과정: 중국어 문화학과</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2014. 10. 30</td>
+                                        <td class="al">
+                                            대학원 학과 신설
+                                            <p class="blt01">박사과정: 스포츠과학과</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2017.09.05</td>
+                                        <td class="al">
+                                            대학원 학과 신설
+                                            <p class="blt01">석사과정: 법학과</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2018.11.13</td>
+                                        <td class="al">
+                                            대학원 학과 신설
+                                            <p class="blt01">박사과정 : 조형디자인학과</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2019.04.24</td>
+                                        <td class="al">
+                                            대학원 학과 신설
+                                            <p class="blt01">석 · 박사과정 :  스마트시티학과</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2019.11.06</td>
+                                        <td class="al">
+                                            대학원 학과 신설
+                                            <p class="blt01">석 · 박사과정 :  도시빅데이터융합학과</p>
+                                        </td>
+                                    </tr>
+                     
+                                    <tr>
+                                        <td>2021.04.12</td>
+                                        <td class="al">
+                                            대학원 학과 신설
+                                            <p class="blt01">석 · 박사과정 :  인공지능학과, 융합응용화학과</p>
+                                        </td>
+                                    </tr>
+                     
+                                    <tr>
+                                        <td>2021.08.03</td>
+                                        <td class="al">
+                                            대학원 학과 신설
+                                            <p class="blt01">박사과정 :  국제도시개발학과</p>
+                                        </td>
+                                    </tr>
+                     
+                                    <tr>
+                                        <td>2022.12.28</td>
+                                        <td class="al">
+                                            일반대학원 첨단학과 신설 및 증원(석사 120명, 박사 41명 총161명 증원)
+                                            <p class="blt01">신설 : 지능형반도체학과 석사과정 정원 52명, 박사과정 정원 13명</p>
+                                            <p class="blt01">
+                                                증원 <br>
+                                                - 통계데이터사이언스학과 석사과정 18명, 박사과정 7명 <br>
+                                                - 스마트시티학과 석사과정 32명, 박사과정 14명 <br>
+                                                - 인공지능학과 석사과정 18명, 박사과정 7명
+                                            </p>
+                                        </td>
+                                    </tr>
+                     
+                                    <tr>
+                                        <td>2023.02.01</td>
+                                        <td class="al">
+                                            일반대학원 학과 명칭 변경
+                                            <p class="blt01">통계학과 → 통계데이터사이언스학과</p>
+                                        </td>
+                                    </tr>
+                     
+                                    <tr>
+                                        <td>2023.11.27</td>
+                                        <td class="al">
+                                            복수학위협정체결 (프랑스 Université Paris Cité)
+                                        </td>
+                                    </tr>
+                     
+                                    <tr>
+                                        <td>2024.03.01</td>
+                                        <td class="al">
+                                            일반대학원 학과 명칭 변경
+                                            <p class="blt01">환경조각학과 → 조각학과</p>
+                                            <p class="blt01">조형디자인학과 공공환경디자인전공 → 조형디자인학과 산업디자인전공</p>
+                                            <p class="blt01">음악학과 바이올린전공 → 음악학과 현악전공</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- 본문 -->
+                    </div>
+                    <!-- sub content -->
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>
