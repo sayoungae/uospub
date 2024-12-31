@@ -65,6 +65,7 @@ a, span, b, strong{display: inline-block;}
 body{font-weight: 400; min-width: 320px; line-height: 1.4; font-family: 'Pretendard';}
 .blind {position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); margin: -1px;}
 .clearfix:after{content: "";display: block;height: 0;clear: both;visibility: hidden;}
+.hide{display: none;}
 /* margin */
 .mt5 {margin-top:5px;}
 .mt10 {margin-top:10px;}

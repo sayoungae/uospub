@@ -124,6 +124,28 @@
 .table-wrap .type1 td.brd-left{border-left:1px solid #DEDEDE;}
 .table-wrap .type1 td.left_L{text-align: left;}
 
+.table-wrap .type2 {
+    width: 100%;
+    border-top:#545454 solid 1px;
+}
+.table-wrap .type2 th{
+    background-color:#f5f5f5;
+    color:#2a2a2a;
+    padding:15px 0 13px;
+    border-bottom:1px solid #bbb;
+    border-right: 1px solid #bbb;
+}
+.table-wrap .type2 td{
+    border-bottom:1px solid #bbb;
+    padding:15px 0 13px;
+    text-align:center;
+    vertical-align: middle;
+}
+.table-wrap .type2 td:first-child, .table-wrap .type2 th:first-child{border-left:none}
+.table-wrap .type2 td.al {padding:15px 15px 13px; text-align: left; background-color: #F0F5FB;}
+.table-wrap .type2 th.th {color:#3c497b; vertical-align:top; font-size:17px; font-weight: 500;}
+.table-wrap .type2 td.th {color:#2a2a2a; font-weight:500; text-align:center; vertical-align: middle;}
+
 .table-wrap .blt01{position: relative; padding-left: 10px; color:#555;}
 .table-wrap .blt01::before{content: ""; display: inline-block; width: 3px; height: 3px; background-color: #5A80C5; position: absolute; left:0; top:9px; border-radius: 50%;;}
 /* --table */
@@ -246,10 +268,13 @@
 .btn-wrap{margin-top: 40px; display: flex; align-items: center; gap: 20px; flex-wrap: wrap;}
 .btn-wrap.Rside{justify-content: flex-end;}
 .btn-wrap.Cside{justify-content: center;}
+.btn-wrap select{    border: 1px solid #bbbbbb; height: 42px; border-radius: 5px;    vertical-align: bottom;}
 
 .btn{display: inline-block; min-width: 180px; text-align: center; border-radius: 6px; font-weight: 500; background: #4366c0; color:#fff; padding: 10px 30px;}
+.btn.smBtn{min-width: 80px; height: 42px;}
 .pdfBtn{ display: flex; align-items: stretch; gap: 5px; flex-wrap: wrap;}
 .pdfBtn > .btn{width: calc(100% / 4 - 5px); display: flex; align-items: center; justify-content: center; height: 50px; line-height: 1.2; padding: 10px 20px;}
+
 /* -- 버튼 */
 
 /* 대학원 소개 */
@@ -375,6 +400,8 @@
 .course_square.type2{min-height: 120px;}
 .course_square.type2 > .course_content{display: flex; justify-content: center; flex-direction: column;}
 
+.calYaer{color: #3c497b; font-size: var(--fz-38); text-align: center;}
+.calYaer img{vertical-align: middle;}
 
 /* -- 교육/ 학사 */
 

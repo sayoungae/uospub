@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일반대학원 영문</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/swiper.css">
+
+
+    <!-- JS -->
+    <script src="../static/js/jquery-3.7.1.js"></script>
+    <script src="../static/js/swiper-bundle.min.js"></script>
+    <script src="../static/js/common.js"></script>
+    <!-- <script src="../static/js/main.js"></script> -->
+    <script src="../static/js/sub.js"></script>
+
+
+    <script>
+        //header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+       
+    </script>
+    <script>
+		function prevYear() {
+			$("#year_code").val(Number($("#year_code").val()) - 1);
+			jQuery("#listForm").attr("action", "/graduateNew/korCalendarYear2/list.do").submit();
+		}
+
+		function nextYear() {
+			$("#year_code").val(Number($("#year_code").val()) + 1);
+			jQuery("#listForm").attr("action", "/graduateNew/korCalendarYear2/list.do").submit();
+		}
+	</script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <!-- sub-banner -->
+            <div class="sub-banner">
+                <div class="inner">
+                    <div class="ban-tit">University of Seoul Global Top Brand</div>
+                    <ul class="line-map">
+                        <li><img src="../static/images/home_ic.png" alt="home"></li>
+                        <li>Research</li>
+                        <li>Research Centers and Laboratores</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content">
+                <div class="inner clearfix">
+                    <!-- // sub-banner -->
+                    <!-- snb -->
+                    <div id="snb-wrap">
+                    </div>
+                    <!-- // snb -->
+                    <!-- sub content -->
+                    <div class="sub-content" id="sub-content">
+                        <div class="sub-tit-box">
+                            <h3 class="subTit01">일반학사일정</h3>
+                            <ul class="stp-bt">
+                                <li><a href="" class="print-ic"><span class="blind">인쇄</span></a></li>
+                                <li><a href="" class="share-ic"><span class="blind">공유 </span></a></li>
+                            </ul>
+                        </div>
+                        <!-- 본문 -->
+                        <form name="frm" method="post">
+                            <div class="calYaer">
+                                <a href="javascript:prevYear();"><img src="../static/images/btn_prev2.png" alt="이전 년도 학사일정 보기"></a>
+                                &nbsp;
+                                2025 &nbsp;
+                                <a href="javascript:nextYear();"><img src="../static/images/btn_next2.png" alt="다음 년도 학사일정 보기"></a>
+                            </div>
+                            <div class="btn-wrap Rside">
+                                <div class="flex-container">
+                                    <select title="월 선택" class="w150px" id="monthSelect">
+                                        <option value="">전체</option>
+                                        <option value="202501">1월</option>
+                                        <option value="202502">2월</option>
+                                        <option value="202503">3월</option>
+                                        <option value="202504">4월</option>
+                                        <option value="202505">5월</option>
+                                        <option value="202506">6월</option>
+                                        <option value="202507">7월</option>
+                                        <option value="202508">8월</option>
+                                        <option value="202509">9월</option>
+                                        <option value="202510">10월</option>
+                                        <option value="202511">11월</option>
+                                        <option value="202512">12월</option>
+                                        <option value="202601">2026년 1월</option>
+                                        <option value="202602">2026년 2월</option>
+                                    </select>
+                                    <a href="javascript:monthSelect('2025');" class="btn smBtn">GO</a>
+                                </div>
+                            </div>
+                            <div class="table-wrap">
+                                <table class="type2">
+                                    <caption>이 표는 월별 대학의 학사 일정을 나타내는 표입니다.</caption>
+                                    <colgroup>
+                                        <col>
+                                        <col>
+                                        <col>
+                                    </colgroup>
+                                    <tbody>
+                                    <script>
+                                        function listView(seq, year, month) {
+                                            if ($("#c" + year + month + seq).hasClass("hide")) {
+                                                $("#c" + year + month + seq).removeClass("hide");
+                                            } else {
+                                                $("#c" + year + month + seq).addClass("hide");
+                                            }
+                                        }
+    
+                                        function monthSelect(year) {
+                                            let ms = $("#monthSelect").val();
+                                            let year2 = Number(year) + 1;
+                                            if (ms == "") {
+                                                $("#year_code").val(Number($("#year_code").val()));
+                                                jQuery("#listForm").attr("action", "/graduateNew/korCalendarYear2/list.do").submit();
+                                            } else {
+                                                for (let i = 1; i <= 14; i++) {
+                                                    let it = String(i);
+                                                    let it2 = "";
+                                                    if (String(i).length == "1") {
+                                                        it = "0" + i;
+                                                    }
+                                                    let lc = $("#in" + year + it).val();
+                                                    if (it == '13') {
+                                                        lc = $("#in" + (Number(year) + 1) + "01").val();
+                                                        it2 = "01";
+                                                    } else if (it == '14') {
+                                                        lc = $("#in" + (Number(year) + 1) + "02").val();
+                                                        it2 = "02";
+                                                    }
+                                                    $("#m" + year + it).addClass("hide");
+                                                    $("#m" + year2 + it).addClass("hide");
+                                                    $("#m" + ms).removeClass("hide");
+                                                    for (let j = 0; j <= lc; j++) {
+                                                        $("#m" + year + it + "c" + j).addClass("hide");
+                                                        $("#m" + year + it + "cc" + j).addClass("hide");
+                                                        $("#m" + year2 + it + "c" + j).addClass("hide");
+                                                        $("#m" + year2 + it2 + "c" + j).addClass("hide");
+                                                        $("#m" + year2 + it + "cc" + j).addClass("hide");
+                                                        $("#m" + ms + "c" + j).removeClass("hide");
+                                                        $("#m" + ms + "cc" + j).removeClass("hide");
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    </script>
+                                    <tr id="m202501" class="">
+                                        <th class="th" rowspan="3">2025년<br>01월<input type="hidden" id="in202501" value="3">
+                                        </th>
+                                    </tr>
+                                    <tr id="m202501c0" class="">
+                                        <td class="th">[01-16
+                                            ~ 01-16]
+                                        </td>
+                                        <td>
+                                            <a title="새창으로" onclick="javascript:listView('428','2025','01'); return false">
+                                                <span style="cursor:pointer">학위논문 인쇄본제출 마감</span>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr id="m202501cc0" class="">
+                                        <td id="c202501428" class="al hide" colspan="2">
+                                            <ul class="dot-list02">
+                                                <li>주관부서 : 대학원</li>
+                                                <li>일자 : 2025-01-16 ~ 2025-01-16</li>
+                                                <li>시간 : null시 ~ null시</li>
+                                                <li>내용 : <p><span style="box-sizing: border-box; color: rgb(33, 37, 41); font-family: &quot;Nanum Barun Gothic&quot;, sans-serif; font-size: 16px; background-color: rgb(255, 255, 255);">학위논문 인쇄본제출 마감</span><span style="color: rgb(33, 37, 41); font-family: &quot;Nanum Barun Gothic&quot;, sans-serif; font-size: 16px; background-color: rgb(255, 255, 255);">&nbsp;</span>&nbsp;</p></li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr id="m202502" class="">
+                                        <th class="th">2025년<br>02월</th>
+                                        <td colspan="2">자료가 없습니다.</td>
+                                    </tr>
+                                    <tr id="m202503" class="">
+                                        <th class="th">2025년<br>03월</th>
+                                        <td colspan="2">자료가 없습니다.</td>
+                                    </tr>
+                                    <tr id="m202504" class="">
+                                        <th class="th">2025년<br>04월</th>
+                                        <td colspan="2">자료가 없습니다.</td>
+                                    </tr>
+                                    <tr id="m202505" class="">
+                                        <th class="th">2025년<br>05월</th>
+                                        <td colspan="2">자료가 없습니다.</td>
+                                    </tr>
+                                    <tr id="m202506" class="">
+                                        <th class="th">2025년<br>06월</th>
+                                        <td colspan="2">자료가 없습니다.</td>
+                                    </tr>
+                                    <tr id="m202507" class="">
+                                        <th class="th">2025년<br>07월</th>
+                                        <td colspan="2">자료가 없습니다.</td>
+                                    </tr>
+                                    <tr id="m202508" class="">
+                                        <th class="th">2025년<br>08월</th>
+                                        <td colspan="2">자료가 없습니다.</td>
+                                    </tr>
+                                    <tr id="m202509" class="">
+                                        <th class="th">2025년<br>09월</th>
+                                        <td colspan="2">자료가 없습니다.</td>
+                                    </tr>
+                                    <tr id="m202510" class="">
+                                        <th class="th">2025년<br>10월</th>
+                                        <td colspan="2">자료가 없습니다.</td>
+                                    </tr>
+                                    <tr id="m202511" class="">
+                                        <th class="th">2025년<br>11월</th>
+                                        <td colspan="2">자료가 없습니다.</td>
+                                    </tr>
+                                    <tr id="m202512" class="">
+                                        <th class="th">2025년<br>12월</th>
+                                        <td colspan="2">자료가 없습니다.</td>
+                                    </tr>
+                                    <tr id="m202601" class="">
+                                        <th class="th">2026년<br>01월</th>
+                                        <td colspan="2">자료가 없습니다.</td>
+                                    </tr>
+                                    <tr id="m202602" class="">
+                                        <th class="th">2026년<br>02월</th>
+                                        <td colspan="2">자료가 없습니다.</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </form>
+                        <!-- 본문 -->
+                    </div>
+                    <!-- sub content -->
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>
