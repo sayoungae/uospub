@@ -61,8 +61,8 @@
 /*전체 공통*/
 input::placeholder{color:#757575; font-size: 14px;}
 a, span, b, strong{display: inline-block;}
-
-body{font-weight: 400; min-width: 320px; line-height: 1.4; font-family: 'Pretendard';}
+a{    word-break: break-all;}
+body{font-weight: 400; min-width: 320px; line-height: 1.4; font-family: 'Pretendard'; color:#333;}
 .blind {position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); margin: -1px;}
 .clearfix:after{content: "";display: block;height: 0;clear: both;visibility: hidden;}
 .hide{display: none;}
@@ -112,7 +112,7 @@ body{font-weight: 400; min-width: 320px; line-height: 1.4; font-family: 'Pretend
 .fcBl2{color:#1b4fb4;}
 .fcR{color:#e60013;}
 .fcR2{color:#d23340;}
-.point{color:#0e3174; font-size: var(--fz-15);}
+.point{color:#0e3174; font-size: var(--fz-18);}
 /* var */
 :root{
     /* font-size */
@@ -123,6 +123,7 @@ body{font-weight: 400; min-width: 320px; line-height: 1.4; font-family: 'Pretend
     --fz-20: 20px;
     --fz-22: 22px;
     --fz-24: 24px;
+    --fz-28: 28px;
     --fz-30: 30px;
     --fz-36: 36px;
     --fz-38: 38px;
@@ -130,6 +131,7 @@ body{font-weight: 400; min-width: 320px; line-height: 1.4; font-family: 'Pretend
 }
 @media (max-width: 760px) {
     :root{
+        --fz-28: 26px;
         --fz-30: 28px;
         --fz-36: 30px;
         --fz-38: 32px;
@@ -144,6 +146,7 @@ body{font-weight: 400; min-width: 320px; line-height: 1.4; font-family: 'Pretend
             --fz-20: 18px;
             --fz-22: 20px;
             --fz-24: 22px;
+            --fz-28: 22px;
             --fz-30: 24px;
             --fz-36: 26px;
             --fz-38: 28px;
@@ -152,15 +155,15 @@ body{font-weight: 400; min-width: 320px; line-height: 1.4; font-family: 'Pretend
 }
 /* --var */
 /* dot-list */
-.dot-list01{padding-left: 11px;}
+.dot-list01{padding-left: 11px; font-size: var(--fz-18);}
 .dot-list01 > li{position: relative; padding-left: 14px; overflow: hidden;}
 .dot-list01 > li + li{margin-top: 10px;}
 .dot-list01 > li::before{content:""; display: inline-block; width: 5px; height: 5px; background-color: #BEBEBE; border-radius: 50%; position: absolute; left:0; top:9px}
 
-.dot-list02{padding:0px 10px 20px;}
-.dot-list02 > li{position: relative; padding-left: 10px; overflow: hidden;}
+.dot-list02{padding:0px 10px 40px; font-size: var(--fz-18);}
+.dot-list02 > li{position: relative; padding-left: 10px; overflow: hidden; position: relative;}
 .dot-list02 > li + li{margin-top: 5px;}
-.dot-list02 > li::before{content:""; display: inline-block; width: 4px; height: 4px; background-color: #557CC3; border-radius: 50%; position: absolute; left:0; top:8px}
+.dot-list02 > li::before{content:""; display: inline-block; width: 4px; height: 4px; background-color: #707070; border-radius: 50%; position: absolute; left:0; top:10px}
 .dot-list02 > li > ul >li{padding-left: 12px; margin-top: 5px; position: relative;}
 .dot-list02 > li > ul >li::before{
     content:"-";
@@ -171,7 +174,7 @@ body{font-weight: 400; min-width: 320px; line-height: 1.4; font-family: 'Pretend
 }
 .dot-list02 a{font-weight: 500; color: #557cc3; padding: 0 5px; background-color: #f0f5fb;    border-radius: 10px;}
 
-.dot-list03{padding-left: 7px; padding-bottom: 10px;}
+.dot-list03{padding-left: 7px; padding-bottom: 10px; font-size: var(--fz-18);}
 .dot-list03 li:nth-child(1){margin-top: 10px;}
 .dot-list03 li + li{margin-top: 10px;}
 .dot-list03 li.num { position: relative; padding-left: 24px;}
@@ -193,7 +196,7 @@ body{font-weight: 400; min-width: 320px; line-height: 1.4; font-family: 'Pretend
     overflow: hidden;
 }
 .dot-list03 li::before{content: ""; display: none !important;}
-.dot-list04{padding-left: 0px; padding-bottom: 20px; padding-top: 10px;}
+.dot-list04{padding-left: 0px; padding-bottom: 20px; padding-top: 10px;font-size: var(--fz-18);}
 .dot-list04 > li{position: relative; padding-left: 12px;}
 .dot-list04 > li::before{
     content: "";
@@ -216,7 +219,7 @@ body{font-weight: 400; min-width: 320px; line-height: 1.4; font-family: 'Pretend
     top:0;
 }
 
-.dot-list05{padding-left: 10px; padding-bottom: 20px; padding-top: 10px;}
+.dot-list05{padding-left: 10px; padding-bottom: 20px; padding-top: 10px;font-size: var(--fz-18);}
 .dot-list05 > li{position: relative; padding-left: 14px;    background: url(../images/blt_03.png) no-repeat 0 6px;}
 .dot-list05 > li + li{margin-top: 10px;}
 .dot-list05 > li > ul{padding-left: 0;}
