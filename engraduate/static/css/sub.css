@@ -178,7 +178,7 @@
 .s-container .tab-conts-wrap .tab-conts.active{display: block;}
 /* -- tab layer */
 /* table */
-.table-wrap {margin-top: 10px; margin-bottom: 30px;}
+.table-wrap {margin-top: 20px; margin-bottom: 60px;}
 .table-wrap .type1{width: 100%; border-top:2px solid #5076B8; text-align: center;}
 .table-wrap .type1 tr{border-bottom: 1px solid #DEDEDE;}
 .table-wrap .type1 th{font-size: var(--fz-18); font-weight: 600;padding:10px; border-right: 1px solid #DEDEDE; vertical-align: middle; background-color: #FAFBFF;}
@@ -211,6 +211,11 @@
 .table-wrap .type2 td.al {padding:15px 15px 13px; text-align: left; background-color: #F0F5FB;}
 .table-wrap .type2 th.th {vertical-align:top; font-size:17px; font-weight: 500;}
 .table-wrap .type2 td.th {color:#2a2a2a; font-weight:500; text-align:center; vertical-align: middle;}
+
+.table-wrap .type3{width: 100%; border-top:2px solid #667CB3;}
+.table-wrap .type3 tr{border-bottom:1px solid #DBDBDB; word-break: keep-all; font-size: var(--fz-18);}
+.table-wrap .type3 th{text-align: center; vertical-align: middle; background-color: #F6F8FA; padding:10px;}
+.table-wrap .type3 td{padding:20px 25px; text-align: left;}
 
 .table-wrap .blt01{position: relative; padding-left: 10px; color:#555;}
 .table-wrap .blt01::before{content: ""; display: inline-block; width: 3px; height: 3px; background-color: #5A80C5; position: absolute; left:0; top:9px; border-radius: 50%;;}
@@ -394,6 +399,37 @@
 .org-chart .squa-line > li::before{display: inline-block; width: 2px; height: 40px; border-left: 2px dotted #ccc; position: absolute; left:50%; transform: translateX(-50%); top:-40px; content:"";}
 .org-chart .squa-line > li:nth-child(1):before,
 .org-chart .squa-line > li:last-child:before{display: none;}
+
+/* 학과소개 -목록 */
+.dept-list-wrap > ul{border-top:2px solid #5077B9;}
+.dept-list-wrap > ul > li{padding:20px 15px;display: flex; justify-content: space-between;align-items: center; border-bottom:1px solid #DDDDDD;}
+.dept-list-wrap .tit-box{display: flex; align-items: center; margin-bottom: 25px;}
+.dept-list-wrap .tit-box > h4{font-size: var(--fz-22); font-weight: 600;}
+.dept-list-wrap .tag-list{display: flex; gap: 8px; margin-left: 30px;}
+.dept-list-wrap .tag-list > li{font-size: 15px; font-weight: 600; color:#0e2a67; padding:5px 15px; border-radius: 20px; background-color: #DDE0FA;}
+.dept-list-wrap .tag-list > li:nth-child(2){background-color: #F8DBFB;}
+.dept-list-wrap .tag-list > li:nth-child(3){background-color: #EDF0F5; color:#293A56;}
+.dept-list-wrap .dot-list02{padding-bottom: 0;}
+
+.dept-list-wrap .link{border:1px solid #889EB7; border-radius: 5px; color:#0e2a67; font-weight: 600; padding:10px 20px; text-align: center;}
+.dept-list-wrap .link > span{display: inline-block; padding-right: 40px; padding-top: 3px; background-image: url("../images/arrw04.png"); background-position:  right 8px center; background-repeat: no-repeat; transition: background-position 0.3s;}
+.dept-list-wrap .link:hover > span,.dept-list-wrap .link:focus > span{ background-position: right 0 center;}
+/* 학과소개 -상세 */
+.dept-link-list{display: flex; gap: 10px; justify-content: flex-end;}
+.dept-link-list > a{width: 122px; text-align: center; border:1px solid #9BADC2; border-radius: 5px; padding:7px 10px; color:#112D69;font-weight: 600;}
+.dept-link-list > a > span{padding-left: 22px; background-position: left top 1px; background-repeat: no-repeat;}
+.dept-link-list > a:hover,.dept-link-list > a:focus{border-color: #112D69; transition: 0.3s;}
+.dept-link-list > a.icn1 > span{background-image: url("../images/dept_icn1.png"); padding-left: 18px;}
+.dept-link-list > a.icn2 > span{background-image: url("../images/dept_icn2.png");}
+.dept-link-list > a.icn3 > span{background-image: url("../images/dept_icn3.png");}
+.dept-link-list > a.icn4 > span{background-image: url("../images/dept_icn4.png");}
+.dept-link-list > a.icn5 > span{background-image: url("../images/dept_icn5.png");}
+
+.dept-info{display: flex; flex-wrap: wrap;     border-top: 2px solid #667CB3;}
+.dept-info > li{flex: 1 1 30%; font-size: var(--fz-18); overflow: hidden;  display: flex;     border-bottom: 1px solid #DBDBDB;} 
+.dept-info > li > div{ padding:20px 10px; word-break: keep-all;}
+.dept-info > li > div:nth-child(1){width: 40%; background-color: #F6F8FA; font-weight: 600; text-align: center;}
+.dept-info > li > div:nth-child(2){width: 60%;}
 /* 대학원 소개 */
 
 /* 입학 */
@@ -530,6 +566,11 @@
     .depart-list > li{width: calc(100% / 2 - 5px);}
 
 
+    /* 학과소개 -목록 */
+    .dept-list-wrap > ul > li{flex-direction: column; align-items: flex-start; gap: 20px;}
+
+    /* 학과소개 -상세 */
+    .dept-info > li{flex:1 1 45%}
     /* 학점교류 */
     .course{margin:40px 0;}
     .course_square{width: calc(50% - 45px);}
@@ -553,8 +594,17 @@
     /* dot */
     .dot-list02 > li::before{top: 8px;}
     .dot-list03 li.num > span {top: 2px;}
+    /* table */
+    .table-wrap .type3 td{padding:10px 15px;}
 
-
+     /* 학과소개 -목록 */
+     .dept-list-wrap > ul > li {padding:15px 0;}
+     .dept-list-wrap .tit-box{flex-direction: column;align-items: flex-start;gap: 10px; }
+     .dept-list-wrap .tag-list{margin-left: 0;}
+     .dept-list-wrap .link{padding:5px 10px;}
+    /* 학과소개 -상세 */
+    .dept-info > li{flex:1 1 100%}
+    .dept-info > li > div{padding:10px;}
     /* 교내연구기관 */
     .txt-box2 > .tit{padding:20px; justify-content: space-between}
     .txt-box2 > .tit > h4{width: calc(100% - 44px);}
