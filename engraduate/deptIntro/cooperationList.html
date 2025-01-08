@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일반대학원 영문</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/swiper.css">
+
+
+    <!-- JS -->
+    <script src="../static/js/jquery-3.7.1.js"></script>
+    <script src="../static/js/swiper-bundle.min.js"></script>
+    <script src="../static/js/common.js"></script>
+    <script src="../static/js/main.js"></script>
+    <script src="../static/js/sub.js"></script>
+
+
+    <script>
+        //header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+       
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <!-- sub-banner -->
+            <div class="sub-banner">
+                <div class="inner">
+                    <div class="ban-tit">University of Seoul Global Top Brand</div>
+                    <ul class="line-map">
+                        <li><img src="../static/images/home_ic.png" alt="home"></li>
+                        <li>Research</li>
+                        <li>Research Centers and Laboratores</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content">
+                <div class="inner clearfix">
+                    <!-- // sub-banner -->
+                    <!-- snb -->
+                    <div id="snb-wrap">
+                    </div>
+                    <!-- // snb -->
+                    <!-- sub content -->
+                    <div class="sub-content" id="sub-content">
+                        <div class="sub-tit-box">
+                            <h3 class="subTit01">학과소개</h3>
+                            <ul class="stp-bt">
+                                <li><a href="" class="print-ic"><span class="blind">인쇄</span></a></li>
+                                <li><a href="" class="share-ic"><span class="blind">공유 </span></a></li>
+                            </ul>
+                        </div>
+                        <!-- 본문 -->
+                        <div class="dept-list-wrap">
+                            <ul>
+                                <li>
+                                    <div>
+                                        <div class="tit-box">
+                                            <h4>재난과학과</h4>
+                                            <ul class="tag-list">
+                                                <!-- <li class="li1">석사과정</li> -->
+                                                <li class="li2">박사과정</li>
+                                                <!-- <li class="li3">석박사통합과정</li> -->
+                                            </ul>
+                                        </div>
+                                        <ul class="dot-list02">
+                                            <li><b>주임교수 :</b> 최승호 교수</li>
+                                            <li><b>학과전화 :</b>  +82-2-6490-5005</li>
+                                        </ul>
+                                    </div>
+                                    <a href="#none" class="link"><span>자세히보기</span></a>
+                                </li>
+                                <li>
+                                    <div>
+                                        <div class="tit-box">
+                                            <h4>스마트시티학과</h4>
+                                            <ul class="tag-list">
+                                                <li class="li1">석사과정</li>
+                                                <li class="li2">박사과정</li>
+                                                <li class="li3">석박사통합과정</li>
+                                            </ul>
+                                        </div>
+                                        <ul class="dot-list02">
+                                            <li><b>주임교수 :</b> 홍진현 교수</li>
+                                            <li><b>학과전화 :</b> +82-2-6490-5005</li>
+                                        </ul>
+                                    </div>
+                                    <a href="#none" class="link"><span>자세히보기</span></a>
+                                </li>
+                                <li>
+                                    <div>
+                                        <div class="tit-box">
+                                            <h4>도시빅데이터융합학과</h4>
+                                            <ul class="tag-list">
+                                                <li class="li1">석사과정</li>
+                                                <li class="li2">박사과정</li>
+                                                <li class="li3">석박사통합과정</li>
+                                            </ul>
+                                        </div>
+                                        <ul class="dot-list02">
+                                            <li><b>주임교수 :</b> 장서일 교수</li>
+                                            <li><b>학과전화 :</b> +82-2-6490-5005</li>
+                                        </ul>
+                                    </div>
+                                    <a href="#none" class="link"><span>자세히보기</span></a>
+                                </li>
+                                <li>
+                                    <div>
+                                        <div class="tit-box">
+                                            <h4>국제도시개발학과</h4>
+                                            <ul class="tag-list">
+                                                <!-- <li class="li1">석사과정</li> -->
+                                                <li class="li2">박사과정</li>
+                                                <!-- <li class="li3">석박사통합과정</li> -->
+                                            </ul>
+                                        </div>
+                                        <ul class="dot-list02">
+                                            <li><b>주임교수 :</b> 진재특 교수</li>
+                                            <li><b>학과전화 :</b> +82-2-6490-5138</li>
+                                        </ul>
+                                    </div>
+                                    <a href="#none" class="link"><span>자세히보기</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 본문 -->
+                    </div>
+                    <!-- sub content -->
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

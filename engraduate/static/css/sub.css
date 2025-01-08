@@ -406,9 +406,10 @@
 .dept-list-wrap .tit-box{display: flex; align-items: center; margin-bottom: 25px;}
 .dept-list-wrap .tit-box > h4{font-size: var(--fz-22); font-weight: 600;}
 .dept-list-wrap .tag-list{display: flex; gap: 8px; margin-left: 30px;}
-.dept-list-wrap .tag-list > li{font-size: 15px; font-weight: 600; color:#0e2a67; padding:5px 15px; border-radius: 20px; background-color: #DDE0FA;}
-.dept-list-wrap .tag-list > li:nth-child(2){background-color: #F8DBFB;}
-.dept-list-wrap .tag-list > li:nth-child(3){background-color: #EDF0F5; color:#293A56;}
+.dept-list-wrap .tag-list > li{font-size: 15px; font-weight: 600; color:#0e2a67; padding:5px 15px; border-radius: 20px;}
+.dept-list-wrap .tag-list > li.li1{ background-color: #DDE0FA;}
+.dept-list-wrap .tag-list > li.li2{background-color: #F8DBFB;}
+.dept-list-wrap .tag-list > li.li3{background-color: #EDF0F5; color:#293A56;}
 .dept-list-wrap .dot-list02{padding-bottom: 0;}
 
 .dept-list-wrap .link{border:1px solid #889EB7; border-radius: 5px; color:#0e2a67; font-weight: 600; padding:10px 20px; text-align: center;}
@@ -597,11 +598,11 @@
     /* table */
     .table-wrap .type3 td{padding:10px 15px;}
 
-     /* 학과소개 -목록 */
-     .dept-list-wrap > ul > li {padding:15px 0;}
-     .dept-list-wrap .tit-box{flex-direction: column;align-items: flex-start;gap: 10px; }
-     .dept-list-wrap .tag-list{margin-left: 0;}
-     .dept-list-wrap .link{padding:5px 10px;}
+    /* 학과소개 -목록 */
+    .dept-list-wrap > ul > li {padding:15px 0;}
+    .dept-list-wrap .tit-box{flex-direction: column;align-items: flex-start;gap: 10px; }
+    .dept-list-wrap .tag-list{margin-left: 0;}
+    .dept-list-wrap .link{padding:5px 10px;}
     /* 학과소개 -상세 */
     .dept-info > li{flex:1 1 100%}
     .dept-info > li > div{padding:10px;}
