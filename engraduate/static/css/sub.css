@@ -46,7 +46,7 @@
 .dot-list01{padding-left: 11px; font-size: var(--fz-18);}
 .dot-list01 > li{position: relative; padding-left: 14px; overflow: hidden;}
 .dot-list01 > li + li{margin-top: 10px;}
-.dot-list01 > li::before{content:""; display: inline-block; width: 5px; height: 5px; background-color: #BEBEBE; border-radius: 50%; position: absolute; left:0; top:9px}
+.dot-list01 > li::before{content:""; display: inline-block; width: 5px; height: 5px; background-color: #BEBEBE; border-radius: 50%; position: absolute; left:0; top:10px}
 
 .dot-list02{padding:0px 10px 40px; font-size: var(--fz-18);}
 .dot-list02 > li{position: relative; padding-left: 10px; overflow: hidden; position: relative;}
@@ -218,7 +218,7 @@
 .table-wrap .type3 td{padding:20px 25px; text-align: left;}
 
 .table-wrap .blt01{position: relative; padding-left: 10px; color:#555;}
-.table-wrap .blt01::before{content: ""; display: inline-block; width: 3px; height: 3px; background-color: #5A80C5; position: absolute; left:0; top:9px; border-radius: 50%;;}
+.table-wrap .blt01::before{content: ""; display: inline-block; width: 3px; height: 3px; background-color: #5A80C5; position: absolute; left:0; top:10px; border-radius: 50%;;}
 /* --table */
 /* boards */
 /* search */
@@ -416,7 +416,7 @@
 .dept-list-wrap .link > span{display: inline-block; padding-right: 40px; padding-top: 3px; background-image: url("../images/arrw04.png"); background-position:  right 8px center; background-repeat: no-repeat; transition: background-position 0.3s;}
 .dept-list-wrap .link:hover > span,.dept-list-wrap .link:focus > span{ background-position: right 0 center;}
 /* 학과소개 -상세 */
-.dept-link-list{display: flex; gap: 10px; justify-content: flex-end;}
+.dept-link-list{display: flex; gap: 10px; justify-content: flex-end; margin-bottom: 20px;}
 .dept-link-list > a{width: 122px; text-align: center; border:1px solid #9BADC2; border-radius: 5px; padding:7px 10px; color:#112D69;font-weight: 600;}
 .dept-link-list > a > span{padding-left: 22px; background-position: left top 1px; background-repeat: no-repeat;}
 .dept-link-list > a:hover,.dept-link-list > a:focus{border-color: #112D69; transition: 0.3s;}
@@ -431,6 +431,9 @@
 .dept-info > li > div{ padding:20px 10px; word-break: keep-all;}
 .dept-info > li > div:nth-child(1){width: 40%; background-color: #F6F8FA; font-weight: 600; text-align: center;}
 .dept-info > li > div:nth-child(2){width: 60%;}
+
+.link-fie{display: inline-block; width: 34px; height: 34px; border-radius: 50%; background: #EDF0F5 url("../images/icon_file.png") center center no-repeat;}
+.link-web{display: inline-block; width: 34px; height: 34px; border-radius: 50%; background: #0C2E86 url("../images/icon_home.png") center center no-repeat}
 /* 대학원 소개 */
 
 /* 입학 */
@@ -604,6 +607,9 @@
     .dept-list-wrap .tag-list{margin-left: 0;}
     .dept-list-wrap .link{padding:5px 10px;}
     /* 학과소개 -상세 */
+    .dept-link-list{gap: 5px;}
+    .dept-link-list > a > span{background-image: none !important; padding-left: 0;}
+    .dept-link-list > a.icn1 > span{padding-left: 0;}
     .dept-info > li{flex:1 1 100%}
     .dept-info > li > div{padding:10px;}
     /* 교내연구기관 */
