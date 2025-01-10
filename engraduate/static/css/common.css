@@ -187,12 +187,12 @@ a.linkNwin {
 .gnb-wrp{padding:40px 0px;}
 .gnb-wrp > .depth1{display: flex; gap: 50px; font-size: 20px;}
 .gnb-wrp > .depth1 .dp2-bx{display: none; position: absolute; z-index: 1000;background-color: #fff; width: 100%; left:0; top:100%;}
-.gnb-wrp > .depth1 .dp2-bx > div{display: flex; align-items: stretch;}
-.gnb-wrp > .depth1 .dp2-itx{max-width: 425px; width: 22%; font-size: 48px; font-weight: 900; color:#fff; background-image: url("../images/gnb-bg01.png"); background-repeat: no-repeat;background-size: auto 100%; position: relative;}
+.gnb-wrp > .depth1 .dp2-bx > div{display: flex; align-items: stretch; min-height: 480px;}
+.gnb-wrp > .depth1 .dp2-itx{max-width: 425px; width: 22%; font-size: 48px; font-weight: 900; color:#fff; background-image: url("../images/gnb-bg01.png"); background-repeat: no-repeat;background-size: 100% 100%; position: relative;}
 .gnb-wrp > .depth1 .dp2-itx > h2{position: absolute; right: 20px; top:50px;}
 .gnb-wrp  .depth2{width: 78%; padding:40px;display: flex; gap: 30px; align-items: stretch; flex-wrap: wrap;}
 .gnb-wrp  .depth2 > li{width: calc(100% / 4 - 23px);}
-.gnb-wrp  .depth2 > li > a{width: 100%; padding:10px 20px; border:1px solid #CFCFCF; word-break: break-all;}
+.gnb-wrp  .depth2 > li > a{width: 100%; padding:10px 10px; border:1px solid #CFCFCF; word-break: break-all;}
 .gnb-wrp  .depth2 > li > .depth3{padding:20px 10px; font-size: 18px; }
 .depth3 > li{position: relative;padding-left: 10px;}
 .depth3 > li + li{margin-top: 6px;}
