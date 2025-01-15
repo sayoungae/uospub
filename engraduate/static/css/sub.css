@@ -130,6 +130,7 @@
 .subTit04{ color: #444343; font-size: var(--fz-24); word-break: keep-all; margin-bottom: 10px;}
 
 .desc{padding-left: 6px;}
+.imgs > img{width: 100%;}
 .link-ty1{
     font-size: 15px;
     text-align: center;
