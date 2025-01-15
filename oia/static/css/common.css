@@ -219,7 +219,7 @@ body{font-weight: 400; min-width: 320px; line-height: 1.4; font-family: 'S-Core'
 
 .depth2 .dp2-bx{display: flex; min-height: 326px;}
 .depth2 .dp2-itx{background-color: #004298; color:#fff;font-weight: 700; font-size: 37px; max-width: 425px;width: 22%; padding-top: 48px; display: flex;justify-content: flex-end}
-.depth2 .dp2-itx > h2{padding-top: 27px; position: relative; text-align: left; word-break: break-all; margin:0 90px 0 20px; width: 180px;}
+.depth2 .dp2-itx > h2{padding-top: 27px; position: relative; text-align: left; word-break: break-all; margin:0 70px 0 20px; min-width: 180px;}
 .depth2 .dp2-itx > h2::before{
         content: "";
         display: inline-block;
