@@ -594,7 +594,7 @@
     .stp-bt{width: 100%; justify-content: flex-end}
     /* tab */
     .s-container .tab-area .tab > ul{flex-wrap: wrap;}
-    .s-container .tab-area .tab > ul > li {flex:1 1 100%;}
+    .s-container .tab-area .tab > ul > li {flex:1 1 45%;}
 
     .subTit03{margin-top: 40px; margin-bottom: 25px;}
     /* dot */
