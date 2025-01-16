@@ -249,7 +249,10 @@ table.type02 tr.al >td{padding:10px 20px; text-align: left; vertical-align: base
 .paging a img{padding: 4px; margin-top: 1px;}
 /* -- pageing */
 
-
+.tag-wrap{ text-align: center; padding:20px 40px; background-color: #e0ecfa; margin: 40px 0; border-radius: 16px;}
+.tag-wrap .tit{font-size: var(--fz-22); margin-bottom: 20px;}
+.tag-wrap .tab-list{display: flex; gap: 30px; justify-content: center; flex-wrap: wrap;}
+.tag-wrap .tab-list a:hover,.tag-wrap .tab-list:focus{color:#2241B6}
 /* -- 공통  */
 
 

@@ -42,10 +42,16 @@
                             <div class="pageSearch-wrap">
                                 <ul>
                                     <li>
-                                        <div class="tit">등록일</div>
+                                        <div class="tit">카테고리</div>
                                         <div class="con date-box">
-                                            <div><input type="text" name="" id=""></div>
-                                            <div><input type="text" name="" id=""></div>
+                                            <select title="검색 조건 선택" id="">
+                                                <option value="1">교환학생</option>
+                                                <option value="2">??</option>
+                                            </select>
+                                            <select title="검색 조건 선택" id="">
+                                                <option value="1">지역</option>
+                                                <option value="2">북미권</option>
+                                            </select>
                                         </div>
                                     </li>
                                     <li>
@@ -64,77 +70,44 @@
                                 </ul>
                             </div>
                         </div>
-                        <!-- select tab -->
-                        <div class="select-tabList">
-                            <select id="tab-select" aria-label="Tablist" title="">
-                                <option data-tab="selPan_ambs_01" id="sel_ambs_01">전체</option>
-                                <option data-tab="selPan_ambs_02" id="sel_ambs_02">북미권</option>
-                                <option data-tab="selPan_ambs_03" id="sel_ambs_03">유럽권</option>
-                                <option data-tab="selPan_ambs_04" id="sel_ambs_04">중화권</option>
-                                <option data-tab="selPan_ambs_05" id="sel_ambs_05">일본권</option>
-                                <option data-tab="selPan_ambs_06" id="sel_ambs_06">기타지역</option>
-                            </select>
+                        <!-- 태그 -->
+                        <div class="tag-wrap">
+                            <h4 class="tit">주요서비스 바로가기</h4>
+                            <ul class="tab-list">
+                                <li><a href="#n">#교환학생</a></li>
+                                <li><a href="#n">#교환학생</a></li>
+                                <li><a href="#n">#교환학생</a></li>
+                                <li><a href="#n">#교환학생</a></li>
+                            </ul>
                         </div>
-                        <div class="select-tab-conts">
-                            <div id="selPan_ambs_01" aria-labelledby="sel_ambs_01" class="sel-tab-conts active">
-                                <ul class="brd-lstp1">
-                                    <li>
-                                        <div>
-                                            <p class="num"><span class="blind">번호</span><span>140</span></p>
-                                            <div>
-                                                <div class="ti">
-                                                    <span class="blind">제목</span>
-                                                    <a href="javascript:fnView('1', '2011');">2024-1 도시샤 대학교</a>
-                                                </div>
-                                                <div class="da">
-                                                    <p><span class="blind">지역</span><span>일본권</span></p>
-                                                    <p><span class="blind">작성자</span><span>이*아</span></p>
-                                                    <p><span class="blind">등록일</span><span>2024-11-10</span></p>
-                                                    <p><span class="blind">조회</span><span>116</span></p>                                                        
-                                                </div>
-                                            </div>
+                         <!-- // 태그 -->
+                        <ul class="brd-lstp1">
+                            <!-- 공지 -->
+                            <li>
+                                <div>
+                                    <p class="num"><span class="blind">번호</span><span>2012</span></p>
+                                    <div>
+                                        <div class="ti">
+                                            <span class="blind">제목</span>
+                                            <a href="javascript:fnView('1', '28356');">
+                                                [대학일자리플러스센터] 대학제휴 취업플랫폼 이용방법 안내✅</a>
                                         </div>
-                                    </li>
-                                    <li>
-                                        <div>
-                                            <p class="num"><span class="blind">번호</span><span>139</span></p>
-                                            <div>
-                                                <div class="ti">
-                                                    <span class="blind">제목</span>
-                                                    <a href="javascript:fnView('1', '2011');">[2024-1학기] 미국 노스캐롤라이나 그린스보로 대학교</a>
-                                                </div>
-                                                <div class="da">
-                                                    <p><span class="blind">지역</span><span>북미권</span></p>
-                                                    <p><span class="blind">작성자</span><span>김*주</span></p>
-                                                    <p><span class="blind">등록일</span><span>2024-11-09</span></p>
-                                                    <p><span class="blind">조회</span><span>148</span></p>      
-                                                    <a href="#none">
-                                                        <span class="blind">첨부파일</span>
-                                                        <img src="../../static/images/btn_file.png" alt="첨부파일 다운로드">
-                                                    </a>                                                  
-                                                </div>
-                                            </div>
+                                        <div class="da">
+                                            <p><span class="blind">카테고리</span><span>교환학생</span></p>
+                                            <p><span class="blind">지역</span><span>북미권</span></p>
+                                            <p><span class="blind">작성자</span><span>홍길동</span></p>
+                                            <p><span class="blind">등록일</span><span>2024-12-10</span></p>
+                                            <p><span class="blind">조회</span><span>1006</span></p>
+                                            <a  href="#none">
+                                                <span class="blind">첨부파일</span>
+                                                <img src="../../static/images/btn_file.png" alt="첨부파일 다운로드">
+                                            </a>
                                         </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div id="selPan_ambs_02" aria-labelledby="sel_ambs_02" class="sel-tab-conts">
-                                북미
-                            </div>
-                            <div id="selPan_ambs_03" aria-labelledby="sel_ambs_03" class="sel-tab-conts">
-                                유럽
-                            </div>
-                            <div id="selPan_ambs_04" aria-labelledby="sel_ambs_04" class="sel-tab-conts">
-                                중화
-                            </div>
-                            <div id="selPan_ambs_05" aria-labelledby="sel_ambs_05" class="sel-tab-conts">
-                                일본
-                            </div>
-                            <div id="selPan_ambs_06" aria-labelledby="sel_ambs_06" class="sel-tab-conts">
-                                기타지역
-                            </div>
-                        </div>
-                        <!-- //select tab -->
+                                    </div>
+                                </div>
+                            </li>
+                           
+                        </ul>
                         <div class="btn-wrap btnR">
                             <a href="#" onclick="fnWrite();" class="btnSm">글쓰기</a>
                         </div>
