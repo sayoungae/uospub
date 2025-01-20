@@ -244,7 +244,7 @@ table.type02 tr.al >td{padding:10px 20px; text-align: left; vertical-align: base
 /* 해외체험수기 등록 */
 .respon-form{border-top:2px solid #2366BF;}
 .respon-form > li {display: flex; border-bottom: 1px solid #E0E6EB;}
-.respon-form .form-label {width: 25%; min-height: 60px; padding: 10px; background-color: #F9FBFD; text-align: center; align-content: center;}
+.respon-form .form-label {width: 25%; min-height: 60px; padding: 10px; background-color: #F9FBFD; text-align: center; align-content: center; font-size: 16px;}
 .respon-form .form-label .essen {display: inline-block; margin-right: 3px; color: #ED2424; vertical-align: super; font-style: normal;}
 .respon-form .form-label .label-txt {display: block; font-weight: 500;}
 .respon-form .form-label .label-desc {display: block; margin-top: 3px; font-size: 1.4rem;}
@@ -279,7 +279,7 @@ table.type02 tr.al >td{padding:10px 20px; text-align: left; vertical-align: base
 
 .file-list {
     border: 1px solid #AFC2D8;
-    padding: 5px 10px;
+    padding: 5px 15px;
     margin-top: 10px;
     border-radius: 6px;
     min-height: 200px;
@@ -302,13 +302,11 @@ table.type02 tr.al >td{padding:10px 20px; text-align: left; vertical-align: base
 }
 
 .remove-btn {
-    color:#333;
-    font-size: 22px;
-    font-weight: 700;
-    border: none;
-    border-radius: 5px;
-    padding: 2px 8px;
+    width: 12px;
+    height: 12px;
+    background: url("../images/icon_close.png") no-repeat;
     cursor: pointer;
+    padding:0;
 }
 
 

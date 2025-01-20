@@ -124,6 +124,7 @@
                                             </ul>
                                         </div>
                                     </div>
+                                    <!-- 파일업로드 js -->
                                     <script>
                                         const fileInput = document.getElementById('file-input');
                                         const fileList = document.getElementById('file-list');
@@ -138,7 +139,7 @@
                                             fileNameSpan.textContent = fileName;
                                             
                                             const removeButton = document.createElement('button');
-                                            removeButton.textContent = '×';
+                                            removeButton.innerHTML = '<span class="blind">업로드파일 목록에서 지우기</span>';
                                             removeButton.classList.add('remove-btn');
                                             removeButton.addEventListener('click', () => {
                                                 fileItem.remove();
@@ -163,6 +164,8 @@
                                             });
                                         });
                                     </script>
+                                    <!-- // 파일업로드 js -->
+
                                 </div>
                             </li>
                         </ul>
