@@ -124,11 +124,13 @@ body{font-weight: 400; min-width: 320px; line-height: 1.4; font-family: 'S-Core'
 /* var */
 :root{
         /* font-size */
+        --fz-15: 15px;
         --fz-16: 16px;
         --fz-18: 18px;
         --fz-20: 20px;
         --fz-22: 22px;
         --fz-24: 24px;
+        --fz-38: 38px;
         --fz-45: 45px;
 
 
@@ -136,17 +138,20 @@ body{font-weight: 400; min-width: 320px; line-height: 1.4; font-family: 'S-Core'
 @media (max-width: 670px) {
         :root{
                 /* font-size */
+                --fz-38: 30px;
                 --fz-45: 38px;
         }
 }
 @media (max-width: 480px) {
         :root{
                 /* font-size */
-                --fz-16: 14px;
+                --fz-15: 14px;
+                --fz-16: 15px;
                 --fz-18: 16px;
                 --fz-20: 18px;
                 --fz-22: 20px;
                 --fz-24: 22px;
+                --fz-38: 24px;
                 --fz-45: 34px;
         
         }
