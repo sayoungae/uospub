@@ -60,17 +60,35 @@
 }
 /* -- ver-bar */
 /* dot */
-.dotList00 > li{padding-left: 13px;}
-.dotList01 > li{padding-left: 13px;}
-.dotList01 > li > .dot-tit{
+.dotList00{padding-left: 6px; margin-bottom: 20px;}
+.dotList00 > li {padding-left: 14px; position: relative;}
+.dotList00 > li::before {
+    content:"";
     display: inline-block;
-    background: url(../images/blt_02.png) 0 7px no-repeat;
-    padding-left:13px;
-    margin-bottom: 10px;
+    width: 6px;
+    height: 2px;
+    background-color: #333;
+    position: absolute;
+    left:0;
+    top:9px;
+}
+
+.dotList01{margin-bottom: 40px;}
+.dotList01 > li{position: relative; padding-left: 10px; color:#5d5d5d; margin-top: 14px;}
+.dotList01 > li::before{
+    content:"";
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    background-color: #A9A9A9;
+    border-radius: 50%;
+    position: absolute;
+    left:0;
+    top:8px;
 }
 .dotList01 > li > .desc{padding-left: 10px; font-size: 15px;}
-.dotList00 > li+li{margin-top: 10px;}
-.dotList01 > li+li{margin-top: 20px;}
+
+
 .dotList02{padding-left: 10px;}
 .dotList02 > li {padding-left: 13px;}
 .dotList02 > li {
@@ -79,7 +97,6 @@
 }
 
 .dotList02 > li+li{margin-top: 5px;}
-.dotList01,.dotList02{margin-bottom: 10px;}
 
 .dotList03{padding-left: 10px; margin-bottom: 10px;}
 .dotList03 > li {padding-left: 12px; position: relative;}
@@ -96,31 +113,37 @@
 
 .dotList03 > li+li{margin-top: 5px;}
 /* -- dot */
-
+/* num-list */
+.numList01 > li > .tit{font-size: var(--fz-22); color:#333; font-weight: 600; display: flex; gap: 10px; align-items: center; margin-bottom: 20px;}
+.numList01 > li > .tit > .numD{display: inline-block; width: 37px; height: 37px; background-color: #FFF9A3; font-size: var(--fz-24); font-weight: 800; color:#1397b5; border-radius: 50%; display: flex; align-items: center; justify-content: center;} 
+/* -- num-list */
 /* 타이틀 */
 .sub-tit{
-    color: #111;
+    color: #333;
     font-size: var(--fz-22);
-    background: url('../images/h4.png') 0 9px no-repeat;
-    text-indent: 14px;
-    margin: 30px 0 10px;
+    background: url('../images/h4.png') 0 2px no-repeat;
+    text-indent: 26px;
+    margin: 30px 0 30px;
     line-height: 28px;
-    font-weight: 700;
+    font-weight: 600;
 }
 .sub-tit2{
-    color: #1b4fb4;
-    font-size: 17px;
-    margin: 15px 0 5px;
+    color: #1799B6;
+    font-size: var(--fz-18);
     font-weight: 600;
+    margin-bottom: 20px;
 }
 .conts-tit{font-size:var(--fz-45); font-weight: 700; color:#014195; text-align: center; margin-top: 90px;}
 .conts-tit > span{color:#333;}
 .conts-tit2{font-size:var(--fz-38); font-weight: 700; color:#014195; margin-bottom: 40px;}
 .conts-tit-desc{font-size:20px; font-weight: 300; text-align: center; margin-top: 10px;}
 
-.desc{padding-left: 6px; margin-bottom: 20px;}
+.desc{padding-left: 6px; margin-bottom: 50px;}
 .cout{font-size: 14px; text-indent: 20px; display: inline-block; margin-bottom: 20px;}
 .link-txt{text-decoration: underline;}
+.point01{display: inline-block; color: #5d5d5d; font-size: var(--fz-15); margin-top: 5px;}
+.point02{display: inline-block; color:#EB521C; font-size: var(--fz-15); margin-top: 5px;}
+
 
 /* -- 타이틀 */
 /* 버튼 */
@@ -333,6 +356,67 @@ table.type02 tr.al >td{padding:10px 20px; text-align: left; vertical-align: base
 .greeting_box{display: flex; gap: 20px;}
 .greeting_box .img_bx .tit{background: #e6e6e6; padding:10px 0; text-align: center; font-weight: 700;}
 /* -- 인사말 */
+/* 조직도 */
+.organ_box{max-width: 1026px; margin:0 auto;}
+.organ_box li p{max-width: 235px; height: 52px; display: flex; align-items: center; justify-content: center; font-weight: 500; font-size: 20px; background-color: #1F4675; color: #fff; border-radius: 6px; position: relative; z-index: 9;}
+
+.organ_box .organ1 > li > p{margin-left: 240px; margin-bottom: 35px;}
+.organ_box .organ2 {position: relative; z-index: 9;}
+.organ_box .organ2 > li > p{margin-left: 240px; margin-bottom: 60px;}
+
+.organ_box .organ3{display: flex; gap: 60px;}
+.organ_box .organ3 > li:nth-child(1){width: 70%;}
+.organ_box .organ3 > li:nth-child(2){width: 235px;}
+.organ_box .organ3 > li p{margin:0 auto 30px; }
+.organ_box .organ3-2 > p{background-color: #00A1EB;}
+.organ_box .organ4 p{ background-color: #2467C2;}
+.organ_box .organ5{display: flex; gap: 5px;position: relative; z-index: 9;}
+.organ_box .organ5 > li{width: calc(100% / 3);}
+.organ_box .organ6 > li > p{margin-top: 60px; margin-bottom: 80px; background-color: #975CD3;}
+
+.organ_box .organ-list{border:1px solid #D4D4D4; border-radius: 6px; padding:10px 0px 0 10px; background-color: #fff; position: relative; z-index: 9;}
+.organ_box .organ2::before{
+    content:"";
+    display: inline-block;
+    width: 80%;
+    max-width: 538px;
+    height: 80px;
+    z-index: -1;
+    position: absolute;
+    right:129px;
+    top:80px;
+    border-top:1px solid #999999;
+    border-right:1px solid #999999;
+}
+.organ_box .organ5::before{
+    content:"";
+    display: inline-block;
+    width: 80%;
+    max-width: 484px;
+    height: 60px;
+    
+    z-index: -1;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    top:-15px;
+    border-top:1px solid #999999;
+    border-left:1px solid #999999;
+    border-right:1px solid #999999;
+}
+.organ_box li p:after{
+    content:"";
+    display: inline-block;
+    width: 1px;
+    height: 80px;
+    background-color: #767676;
+    z-index: -1;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    bottom:-80px;
+}
+/* -- 조직도 */
 /* 오시는 길 */
 .map_box {text-align: center;}
 .map_txt{margin-top: 40px;}
@@ -391,16 +475,16 @@ table.type02 tr.al >td{padding:10px 20px; text-align: left; vertical-align: base
 .room-imgs > img{width: 100%; max-width: 760px;}
 /* -- 주택 */
 
-/* inbound 프로그램소개 */
+/* Study at UOS 프로그램소개 */
 .program-intro > .tit{color:#0e3174; font-weight: 700; font-size: 22px; margin-bottom: 20px;}
 .program-intro > .tit2{color:#0e3174; font-weight: 700; font-size: 22px; margin-top: 30px;}
 .program-intro .intro-list{padding-left: 10px;}
 .program-intro .intro-list > li >span{position: relative; padding:0 4px; margin-bottom: 10px; margin-top: 20px; font-weight: 600;}
 .program-intro .intro-list > li >span::before{content:""; display: inline-block; width: 100%; height: 60%; border-radius: 20px;background-color: #9bd7ff9d; position: absolute; left:0; bottom:0px; z-index: -1;}
 .program-intro .intro-list > li >span ~ div{padding-left: 6px;}
-/* -- inbound 프로그램소개 */
+/* -- Study at UOS 프로그램소개 */
 
-/* inbound 자격및신청 */
+/* Study at UOS 자격및신청 */
 .elig-step-wrap{font-size: 15px; padding:20px 0; border-top:1px dashed #333}
 .elig-step-wrap > li{display: flex; gap: 20px;  margin-bottom: 10px;}
 .elig-step-wrap > li:nth-child(1) .desc > p{color: #DEAC3D;}
@@ -409,37 +493,30 @@ table.type02 tr.al >td{padding:10px 20px; text-align: left; vertical-align: base
 .elig-step-wrap > li:nth-child(4) .desc > p{color: #EE801E;}
 .elig-step-wrap > li .desc{padding-top: 10px;}
 .elig-step-wrap > li .desc > div{margin-top: 10px;}
-/* -- inbound 자격및신청 */
-/* -- inbound 지불 */
+/* -- Study at UOS 자격및신청 */
+/* -- Study at UOS 지불 */
 .qr-box{display: flex; gap: 20px; }
 .qr-box a{color:#1b4fb4}
 .qr-box a:hover,.qr-box a:focus{text-decoration: underline;}
-/* -- inbound 지불 */
+/* -- Study at UOS 지불 */
 
 /* 해외파견프로그램 */
 .program-imgs{text-align: center;}
 .program-imgs > img{max-width: 100%;}
-.faqList01 > li {
-	border-bottom:1px solid #e9e9e9;
-	padding:15px 20px;
-}
-.faqList01 > li > p + p{margin-top: 10px;}
-.faqList01 > li > p:after {clear:both; display:block; content:''}
-.faqList01 > li > p > span {display:block; float:left;}
-.faqList01 > li > p > span:first-child {
-	width:26px;
-	height:18px;
-	color:#fff;
-	font-size:13px;
-	text-align:center;
-	background:#37bfc2;
-	font-weight:bold;
-    margin-right: 10px;
-}
-.faqList01 > li > p.a > span:first-child {background:#eb8a2b;}
-.faqList01 > li > p > span:nth-child(2){width: calc(100% - 36px);}
-/* -- 해외파견프로그램 */
 
+/* -- 해외파견프로그램 */
+/* 학점이전 관련 FAQ */
+.faqList01 > li{border-radius: 10px; box-shadow: 0px 0px 6px rgba(78, 78, 78, 0.2); margin-bottom: 20px; overflow: hidden;}
+.faqList01 > li > div{display: flex; gap: 20px;}
+.faqList01 > li > .q{background-color: #fff; padding:16px 20px; }
+.faqList01 > li  span{color:#fff; display: flex; align-items: center; justify-content: center; font-weight: 700;}
+.faqList01 > li > .q > span{width: 46px; height: 44px; font-size: 22px;  background: url("../images/icon_q.png") no-repeat;}
+.faqList01 > li > .q > p{width: calc(100% - 66px); padding-top: 10px;}
+.faqList01 > li > .a{background-color: #F8F8F8; padding: 24px 90px;}
+.faqList01 > li > .a > span{width: 29px; height: 27px;font-size: 14px; background: url("../images/icon_a.png") no-repeat;}
+.faqList01 > li > .a > p{width: calc(100% - 50px); padding-top: 5px; color:#555;}
+
+/* 학점이전 관련 FAQ */
 /* 해외교류대학 */
 .Agreement-type{margin:30px 0 20px; display: flex; gap: 40px; align-items: center; flex-wrap: wrap;}
 .Agreement-type > li{display: flex; align-items: center; gap: 10px;}
@@ -447,6 +524,26 @@ table.type02 tr.al >td{padding:10px 20px; text-align: left; vertical-align: base
 .tbl-select select{width: 100%; max-width: 300px; border: 1px solid #e4e4e4; font-size: 18px; border-radius: 5px; padding: 10px 10px;}
 /* -- 해외교류대학 */
 
+
+@media (max-width: 1080px) {
+    /* 조직도 */
+    .organ_box .organ-list{width: 100%;}
+    .organ_box .organ1 > li > p{margin:0 auto 60px;}
+
+    .organ_box .organ2 > li > p{margin:0 auto 60px;}
+    .organ_box .organ2 > li > p:after{height: 30px; bottom: -30px;}
+    .organ_box .organ2::before{border-left:1px solid #999; width: 54%; transform: translateX(-50%); right: auto; left:50%;}
+    .organ_box .organ3 > li:nth-child(1){width: 50%;}
+    .organ_box .organ3 > li:nth-child(2){width: 50%;}
+
+    .organ_box .organ5{flex-direction: column ; gap: 20px;}
+    .organ_box .organ5 > li{width: 100%;}
+
+
+    .organ_box .organ5::before{display: none;}
+    /* -- 조직도 */
+    
+}
 @media (max-width: 1024px) {
     /* 미션 핵심가치 */
     .mis-conts > ul{padding-top: 50px;}
@@ -470,6 +567,9 @@ table.type02 tr.al >td{padding:10px 20px; text-align: left; vertical-align: base
     .mis-imgs{padding:0 10px;}
     .mis-imgs >  img{width: 100%;}
     /* -- 미션 핵심가치 */
+    /* 학점이전 관련 FAQ */
+    .faqList01 > li > .a{padding:20px 30px;}
+    /* -- 학점이전 관련 FAQ */
 }
 @media (max-width: 480px) {
     /* 타이틀 */
@@ -492,6 +592,7 @@ table.type02 tr.al >td{padding:10px 20px; text-align: left; vertical-align: base
     .brd-lstp1 .ti >a{overflow: hidden; text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;}
     .brd-lstp1 .da > p{font-size: 14px;}
     /* -- 공지사항 */
+    
     /* 해외체험수기 등록 */
     .respon-form > li{flex-direction: column;}
     .respon-form .form-label{width: 100%;text-align: left;}
@@ -508,17 +609,26 @@ table.type02 tr.al >td{padding:10px 20px; text-align: left; vertical-align: base
     .mis-conts > ul >li .d-tit{font-size: 26px;}
     .mis-conts > ul >li .d-txt{font-size: 14px;}
     /* --미션 핵심가치 */
+    /* 조직도 */
+    .organ_box li p{font-size: 16px;}
+    
+    .organ_box .organ3{gap: 30px;}
+    /* -- 조직도 */
     /* 국제입학 */
     .if-utube{height: 300px;}
     .line-box .tit{width: 80%; left:50%; transform: translateX(-50%); word-break: keep-all; text-align: center;}
     .line-box > .btn-wrap{padding:60px 20px 40px;}
     .line-box > .btn-wrap > .btn{width: 100%;}
     /* --국제입학 */
-    /* inbound 자격및신청 */
+    /* Study at UOS 자격및신청 */
     .elig-step-wrap > li{flex-direction: column; gap: 10px;}
-    /* -- inbound 자격및신청 */
+    /* -- Study at UOS 자격및신청 */
 
-    /* -- inbound 지불 */
+    /* -- Study at UOS 지불 */
     .qr-box{flex-direction: column;}
-    /* -- inbound 지불 */
+    /* -- Study at UOS 지불 */
+     /* 학점이전 관련 FAQ */
+     .faqList01 > li > .q{padding:16px 10px;}
+     .faqList01 > li > .a{padding:20px 10px;}
+     /* -- 학점이전 관련 FAQ */
 }
