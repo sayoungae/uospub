@@ -139,8 +139,11 @@
 .conts-tit-desc{font-size:20px; font-weight: 300; text-align: center; margin-top: 10px;}
 
 .desc{padding-left: 6px; margin-bottom: 50px;}
+.ind-box{padding-left: 26px;}
+.sub-txt{font-weight: 300; color: #5d5d5d; margin-top: 5px;}
 .cout{font-size: 14px; text-indent: 20px; display: inline-block; margin-bottom: 20px;}
-.link-txt{text-decoration: underline;}
+.link-txt{ color:#2366bf}
+.link-txt:hover,.link-txt:focus{text-decoration: underline;}
 .point01{display: inline-block; color: #5d5d5d; font-size: var(--fz-15); margin-top: 5px;}
 .point02{display: inline-block; color:#EB521C; font-size: var(--fz-15); margin-top: 5px;}
 
@@ -153,15 +156,24 @@
 
 .btn-wrap .btn{display: block; min-width: 160px; border-radius: 5px; font-size: var(--fz-16); padding:8px 20px;}
 .btn-wrap .btn > span{display: inline-block;}
-.btn-wrap .btn.arrwType{ color:#fff; font-weight: 700; background-color: #2241B6; min-width: 180px;}
-.btn-wrap .btn.arrwType > span{background:url("../images/arrw01.png") right 5px center no-repeat; padding-right: 80px; transition:all 0.3s;}
-.btn-wrap .btn.arrwType:hover,.btn-wrap > .btn.arrwType:focus{background-color: #1b3597;}
+.btn-wrap .btn.arrwType{ color:#fff; font-weight: 500; background-color: #1397B5; min-width: 180px;}
+.btn-wrap .btn.arrwType > span{background:url("../images/arrw04.png") right 5px center no-repeat; padding-right: 80px; transition:all 0.3s;}
+.btn-wrap .btn.arrwType:hover,.btn-wrap > .btn.arrwType:focus{background-color: #1AB5D3;}
 .btn-wrap .btn.arrwType:hover > span,.btn-wrap > .btn.arrwType:focus > span{background-position: right center; }
 
 .btn-wrap .btn.dwType{ color:#fff; font-weight: 700; background-color: #2241B6; }
 .btn-wrap .btn.dwType > span{display: inline-block; width: 100%; background:url("../images/file-dw.png") right 5px center no-repeat; padding-right: 80px;}
 
-.btn-wrap .btn.ty1{ background-color:#1397B5 ; color: #fff;     padding: 14px 20px;}
+/* 등록 */
+.btn-wrap .btn.ty1{ background-color:#1397B5 ; color: #fff;  padding: 14px 20px;}
+.btn-wrap .btn.ty1:hover,.btn-wrap .btn.ty1:focus{ background-color:#1AB5D3 ;}
+/* 수정 */
+.btn-wrap .btn.ty2{ background-color:#0E6D92 ; color: #fff;  padding: 14px 20px;}
+.btn-wrap .btn.ty2:hover,.btn-wrap .btn.ty2:focus{ background-color: #147B99 ;}
+/* 삭제 */
+.btn-wrap .btn.ty3{ background-color:#D9534F ; color: #fff;  padding: 14px 20px;}
+.btn-wrap .btn.ty3:hover,.btn-wrap .btn.ty3:focus{ background-color:#C9302C ;}
+
 .btn-wrap .btnSm{display: block;  border-radius: 5px; font-size: var(--fz-16); padding:8px 20px; background-color: #2241B6; color:#fff;}
 .btn-wrap .btnSm > span{display: inline-block;}
 /* -- 버튼 */
@@ -485,14 +497,15 @@ table.type02 tr.al >td{padding:10px 20px; text-align: left; vertical-align: base
 /* -- Study at UOS 프로그램소개 */
 
 /* Study at UOS 자격및신청 */
-.elig-step-wrap{font-size: 15px; padding:20px 0; border-top:1px dashed #333}
-.elig-step-wrap > li{display: flex; gap: 20px;  margin-bottom: 10px;}
-.elig-step-wrap > li:nth-child(1) .desc > p{color: #DEAC3D;}
-.elig-step-wrap > li:nth-child(2) .desc > p{color: #B11C6E;}
-.elig-step-wrap > li:nth-child(3) .desc > p{color: #624A9E;}
-.elig-step-wrap > li:nth-child(4) .desc > p{color: #EE801E;}
-.elig-step-wrap > li .desc{padding-top: 10px;}
-.elig-step-wrap > li .desc > div{margin-top: 10px;}
+.elig-step-wrap{font-size: 15px; padding:20px 0; border-top:2px solid #3774C5; border-bottom:2px solid #3774C5}
+.elig-step-wrap > li{display: flex; gap: 60px; padding:20px 30px; }
+.elig-step-wrap > li + li{border-top:1px solid #E3E8ED}
+.elig-step-wrap > li .step{width: 140px; height: 55px; display: flex; align-items: center; justify-content: center; font-weight: 600;  font-size: var(--fz-20); background: url("../images/eliq-step.png") no-repeat;}
+.elig-step-wrap > li .step-desc{width: calc(100% - 200px); padding-top: 10px;}
+.elig-step-wrap > li .step-desc .tit{font-weight: 600; color:#1397b5; font-size: var(--fz-20); margin-bottom: 10px;}
+.elig-step-wrap > li .step-desc > span{font-size: var(--fz-18);}
+.elig-step-wrap > li .step-desc > div{margin-top: 20px; font-weight: 300;}
+.elig-step-wrap > li .step-desc > div > b{font-weight: 500;}
 /* -- Study at UOS 자격및신청 */
 /* -- Study at UOS 지불 */
 .qr-box{display: flex; gap: 20px; }
@@ -570,8 +583,13 @@ table.type02 tr.al >td{padding:10px 20px; text-align: left; vertical-align: base
     /* 학점이전 관련 FAQ */
     .faqList01 > li > .a{padding:20px 30px;}
     /* -- 학점이전 관련 FAQ */
+    /* Study at UOS 자격및신청 */
+    .elig-step-wrap > li{flex-direction: column; gap: 20px; padding:20px;}
+    .elig-step-wrap > li .step-desc{width: 100%;}
+    /* -- Study at UOS 자격및신청 */
 }
 @media (max-width: 480px) {
+    .ind-box{padding-left: 10px;}
     /* 타이틀 */
     .conts-tit-desc{font-size: 16px;}
     /* 검색 */
@@ -620,9 +638,7 @@ table.type02 tr.al >td{padding:10px 20px; text-align: left; vertical-align: base
     .line-box > .btn-wrap{padding:60px 20px 40px;}
     .line-box > .btn-wrap > .btn{width: 100%;}
     /* --국제입학 */
-    /* Study at UOS 자격및신청 */
-    .elig-step-wrap > li{flex-direction: column; gap: 10px;}
-    /* -- Study at UOS 자격및신청 */
+
 
     /* -- Study at UOS 지불 */
     .qr-box{flex-direction: column;}
