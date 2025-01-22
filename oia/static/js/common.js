@@ -132,7 +132,7 @@ window.addEventListener("DOMContentLoaded", () => {
 			tab();
 		});
 	}
-
+	/* select tab */
 	function selectTab(){
 		const selectElement = document.getElementById('tab-select');
 		const tabContents = document.querySelectorAll('.sel-tab-conts');
@@ -160,8 +160,36 @@ window.addEventListener("DOMContentLoaded", () => {
 		// 초기 상태 설정
 		showTabContent();
 	}
+
+	// accordion
+	function accordion(){
+		const accordionButtons = document.querySelectorAll(".btn-accordion");
+
+		accordionButtons.forEach(button => {
+			button.addEventListener("click", () => {
+				// 현재 클릭한 버튼의 부모 .accordion-item 찾기
+				const accordionItem = button.closest(".accordion-item");
+				const accordionBody = accordionItem.querySelector(".accordion-body");
+
+				// 클릭한 버튼이 active 상태인지 확인
+				const isActive = button.classList.contains("active");
+
+				// 모든 btn-accordion과 accordion-body에서 active 클래스 제거
+				accordionButtons.forEach(btn => btn.classList.remove("active"));
+				document.querySelectorAll(".accordion-body").forEach(body => body.classList.remove("active"));
+
+				// 클릭한 요소가 active 상태가 아니면 active 클래스 추가
+				if (!isActive) {
+					button.classList.add("active");
+					accordionBody.classList.add("active");
+				}
+			});
+		});
+	}
+
 	layerTab();
 	selectTab();
+	accordion();
 
 })
 

@@ -9,6 +9,9 @@
 .m-visual{position: relative;}
 .m-slide .swiper-slide{max-width: 1320px; width: 100%; background-position: center top; background-repeat: no-repeat; background-image: url("../images/banner01.png"); }
 .m-slide .bg01{background-image: url("../images/banner01.png");}
+.m-slide .bg02{background-image: url("../images/banner02.png");}
+.m-slide .bg03{background-image: url("../images/banner03.png");}
+
 .m-slide .swiper-slide .txt-wrap{height: 546px; color:#fff; display: flex; align-items:  center; justify-content: center; flex-direction: column; font-size: 20px; line-height: 1.5; text-align: center; opacity: 0; transition: opacity 0.3s;}
 .m-slide .swiper-slide .txt-wrap .txt2{font-family: 'Britannic-Bold'; font-weight: 700; font-size: 100px; }
 .m-slide .swiper-slide.on .txt-wrap{opacity: 1;}

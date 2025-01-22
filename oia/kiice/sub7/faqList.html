@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>국제처 소개</title>
+     <!-- CSS -->
+    <link rel="stylesheet" href="../../static/css/common.css">
+    <link rel="stylesheet" href="../../static/css/swiper.css">
+    <!-- JS -->
+    <script src="../../static/js/jquery-3.7.1.js"></script>
+    <script src="../../static/js/common.js"></script>
+    <script src="../../static/js/swiper-bundle.min.js"></script>
+    <script src="../../static/js/main.js"></script>
+    <script>
+        // header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+       
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <div class="sub-tit-wrap"><h3 class="pg-tit">학생지원</h3></div>
+            <!-- snb -->
+            <div id="snb-wrap"></div>
+            <!-- // snb -->
+            <div class="wid">
+                <div class="content-area">
+                    <div id="contents">
+                        <h4 class="conts-tit2">FAQ</h4>
+                        <!-- 검색 -->
+                        <div id="pageSearch">
+                            <div class="pageSearch-wrap">
+                                <ul>
+                                    <li>
+                                        <div class="con date-box">
+                                            <select name="sel_board_cate_id" id="sel_board_cate_id">
+                                                <option value="" selected="selected">Category</option>
+                                                <option value="56">서류제출</option>
+                                                <option value="57">서류 언어</option>
+                                                <option value="58">자기소개서와 수학계획서</option>
+                                                <option value="59">재정보증확인서</option>
+                                                <option value="60">은행잔고증명서</option>
+                                                <option value="61">어학능력</option>
+                                                <option value="62">편입학 지원자격</option>
+                                                <option value="63">장학금</option>
+                                                <option value="64">전형방법</option>
+                                                <option value="65">가족관계증명서</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="con search-box">                                            
+                                            <select title="검색 조건 선택" id="searchCnd">
+                                                <option value="1">제목</option>
+                                                <option value="2">작성자</option>
+                                            </select>
+                                            <div class="serch-input">
+                                                <input type="text" class="in" id="searchWrd" name="searchWrd" value="" onkeydown="if(event.keyCode==13){fnSearch();}" title="게시판 내 검색어 입력란">
+                                                <button type="button" onclick="fnSearch()" ;"="" class="sear-btn"><span class="blind">검색</span></button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- //검색 -->
+                        <!-- faq accordion -->
+                        <div class="accordion-wrap">
+                            <div class="accordion-tit-list">
+                                <ul class="tit-list">
+                                    <li>
+                                        <span>No</span>
+                                    </li>
+                                    <li>
+                                        <span>Category</span>
+                                    </li>
+                                    <li>
+                                        <span>Subject</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="accordion-cont-list">
+                                <div class="accordion-item">
+                                    <div class="accordion-header">
+                                        <ul class="tit-list">
+                                            <li>
+                                                <span class="blind">No</span>
+                                                <p>36</p>
+                                            </li>
+                                            <li>
+                                                <span class="blind">Category</span>
+                                                <p>편입학지원자격</p>
+                                            </li>
+                                            <li>
+                                                <span class="blind">Subject</span>
+                                                <button type="button" class="btn-accordion active">직전대학의 전공과 다른 전공을 지원할 수 있나요?</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="accordion-body active">
+                                        <div class="accordion-txt-box ">
+                                            <div class="txt">
+                                                예전에 다녔던 대학과 다른 전공으로 편입학 지원은 가능합니다.
+                                                <br/>
+                                                <br/>
+                                                학과에서는 편입학 학년을 판단할 때 직전 대학의 전공을 포함한 여러 기준을 통해 학년을 지정합니다.
+                                                <br/>
+                                                또한, 심사위원도 편입학 지원자의 직전 대학의 전공과 성적 등을 종합적으로 심사합니다.
+                                                <br/>
+                                                <br/>
+                                                <br/>
+                                                서울시립대학교 국제교육원 드림
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-header">
+                                        <ul class="tit-list">
+                                            <li>
+                                                <span class="blind">No</span>
+                                                <p>36</p>
+                                            </li>
+                                            <li>
+                                                <span class="blind">Category</span>
+                                                <p>편입학지원자격</p>
+                                            </li>
+                                            <li>
+                                                <span class="blind">Subject</span>
+                                                <button type="button" class="btn-accordion">직전대학의 전공과 다른 전공을 지원할 수 있나요?</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="accordion-body">
+                                        <div class="accordion-txt-box">
+                                            <div class="txt">
+                                                예전에 다녔던 대학과 다른 전공으로 편입학 지원은 가능합니다.
+                                                <br/>
+                                                <br/>
+                                                학과에서는 편입학 학년을 판단할 때 직전 대학의 전공을 포함한 여러 기준을 통해 학년을 지정합니다.
+                                                <br/>
+                                                또한, 심사위원도 편입학 지원자의 직전 대학의 전공과 성적 등을 종합적으로 심사합니다.
+                                                <br/>
+                                                <br/>
+                                                <br/>
+                                                서울시립대학교 국제교육원 드림
+                                            </div>
+                                            <ul class="file-list">
+                                                <li class="file-item">
+                                                    <span>첨부파일 :</span>
+                                                    <a href="#" onclick="fnViewFileDown('/upload/kor/board/open/40013GB2/2021/05/', '202105101746141.pdf', '재정보증확인서 Statement of Financial Support.pdf');">재정보증확인서 Statement of Financial Support.pdf</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- // faq accordion -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>
