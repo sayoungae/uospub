@@ -386,15 +386,16 @@
 .new2022-tab1 > li > a{
 	display: table-cell;
 	vertical-align: middle;
-	padding: 0 10px 0 15px;
+	padding: 0 35px 0 15px;
 	font-size: 15px;
 	line-height: 20px;
-	word-break: keep-all;
 	text-decoration: none;
 	text-align: left;
 	border-radius: 0.75rem 0.75rem 0.75rem 0;
 	background: #f6f6f6 url("../../images/mbaNew/sub/icon_off.png") no-repeat calc(100% - 15px) center;
+	word-break: break-all;
 }
+.new2022-tab1 > li > a.newWin{    background-image: url(../../images/mbaNew/common/nWindow_ic.png);}
 .new2022-tab1 > li > a:hover{color: #1569b7;}
 .new2022-tab1 > li.on::before{left: 1px;right: 1px;opacity: 1;}
 .new2022-tab1-list{}

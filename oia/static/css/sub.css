@@ -379,6 +379,7 @@ table.type02 tr.al >td{padding:10px 20px; text-align: left; vertical-align: base
 .accordion-header > .tit-list > li{padding:20px 10px;}
 .accordion-header > .tit-list > li:not(:last-child){color: #717171;}
 .accordion-header > .tit-list > li > .btn-accordion{width: 100%; text-align: left; padding-left: 38px; position: relative;}
+.accordion-header > .tit-list > li > .btn-accordion > span{display: inline-block; width: calc(100% - 30px);}
 .accordion-header > .tit-list > li > .btn-accordion:after{
     content:"";
     display: inline-block;
@@ -659,6 +660,12 @@ table.type02 tr.al >td{padding:10px 20px; text-align: left; vertical-align: base
     .upload-file .upload-inst{width: 100%;}
     /* -- 해외체험수기 등록 */
 
+    /* faq */
+    .accordion-body > .accordion-txt-box{padding: 30px 20px;}
+    .accordion-body > .accordion-txt-box > .txt {padding-top: 40px;}
+    .accordion-body > .accordion-txt-box > .txt::before {left:0; top:0;}
+    .accordion-body > .accordion-txt-box .file-list{margin:20px 0;}
+    /* -- faq */
     /* 미션 핵심가치 */
     .mis-imgs{margin-top: 40px;}
     .mis-conts > ul >li .tit{width: 110px; height: 110px; background-size: 100% 100%; font-size: 16px;}
