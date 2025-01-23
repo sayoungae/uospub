@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>국제처 소개</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../static/css/common.css">
+    <link rel="stylesheet" href="../../static/css/swiper.css">
+
+
+    <!-- JS -->
+    <script src="../../static/js/jquery-3.7.1.js"></script>
+    <script src="../../static/js/common.js"></script>
+    <script src="../../static/js/swiper-bundle.min.js"></script>
+    <script src="../../static/js/main.js"></script>
+
+    <script>
+        // header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+       
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <div class="sub-tit-wrap"><h3 class="pg-tit">프로그램 소개</h3></div>
+            <div id="snb-wrap"></div>
+            <div class="wid">
+                <div class="content-area">
+                    <div id="contents">
+                        <h4 class="conts-tit2">프로그램 소개</h4>
+                        <div class="program-intro">
+                            <div class="tit">왜 서울시립대학교를 선택하시나요?</div>
+                            <ul class="intro-list">
+                                <li>
+                                    <span>“서울의 중심에서 공부하세요＂</span>
+                                    <div>
+                                        1918년에 설립된 서울시립대학교는 한국 최고의 공립대학 중 하나로 널리 알려져 있습니다.
+                                        이 대학은 서울특별시의 싱크탱크였으며, 교육, 학생 훈련 및 학술 연구를 통해 한국 사회의 발전에 기여했습니다. 8개의 단과대학과 9개의 대학원을 갖춘 서울시립대학교는 활기찬 학술적 분위기 속에서 다양한 과정을 제공합니다.
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>서울국제겨울학교 소개 </span>
+                                    <div>
+                                        2025년 2월, 서울 국제 겨울 학교 프로그램이 서울대학교(UOS)에서 시작됩니다. 이 프로그램은 전 세계 UOS 파트너 대학의 유학생들에게 한국어를 포함한 한국학에 대해 배울 수 있는 독특한 기회를 제공합니다. 이번 겨울에 우리와 함께 서울의 중심에서 한국을 경험하세요.
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="tit2">프로그램 정보</div>
+                            <ul class="intro-list">
+                                <li>
+                                    <span>프로그램 날짜</span>
+                                    <div>
+                                        - 2025년 2월 5일(수) ~ 2월 20일(목)<br/>
+                                        * 프로그램 오리엔테이션(줌) : 2025년 2월 3일
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>수업시간</span>
+                                    <div>
+                                        - 매주 평일 6시간(현장 학습 2일 제외); 오전 3시간(9-12시) & 오후 3시간(13-16시)<br/>
+                                        * 자세한 일일 일정은 프로그램 일정 메뉴에서 확인할 수 있습니다.
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>교육 언어</span>
+                                    <div>
+                                        - 영어
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>완료증명서</span>
+                                    <div>
+                                        - 프로그램을 성공적으로 완료하면 완료증이 발급되어 Farewell에서 각 학생에게 배포됩니다.
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="tit2">문화 활동</div>
+                            <ul class="intro-list">
+                                <li>
+                                    <span>하루 현장 견학</span>
+                                    <div>
+                                        저희와 함께 활기찬 서울을 탐험하세요! 한국의 풍부한 역사와 문화에 푹 빠져서 도시가 제공하는 최고의 것들을 경험하세요. 결국 저희의 주제는 "서울"입니다. 누가 저희보다 서울을 더 잘 알겠습니까? 저희는 서울시립대학교입니다! 역사적인 경복궁과 같은 상징적인 랜드마크를 방문할 기회가 있습니다. 댄스 수업으로 K팝의 세계에 뛰어드는 건 어떨까요? 맛있는 K-푸드 요리법도 배울 수 있습니다! 저희 패키지에는 2개의 견학이 포함되어 있어 체류 기간을 최대한 활용할 수 있습니다. 또한 24시간 서울 여행 티켓이 제공되어 프로그램 기간 동안 주말에 도시를 편안하게 탐험할 수 있습니다.
+                                    </div>
+                                    <p class="point">※모든 문화 활동에는 음식이 포함되지 않습니다.</p>
+                                    <p class="point">※견학 목적지와 저희가 제공하는 수업은 변경될 수 있습니다.</p>
+
+                                </li>
+                                <li>
+                                    <span>동료 옹호 프로그램</span>
+                                    <div>
+                                        SISS  에 오신 것을 환영합니다 ! 저희는 국제학생을 위한 "Peer Advocate"라는 버디 프로그램을 제공합니다. UOS 한국 학생인 저희 Peer Advocate는 국제학생이 한국 생활에 적응하도록 돕습니다. 그들은 심지어 서울을 안내하고 도시가 제공하는 모든 것을 탐험하도록 도울 수도 있습니다! 오늘 저희와 함께 한국에서의 유학 경험을 최대한 활용하세요!
+                                    </div>
+                                    <div class="btn-wrap">
+                                        <a href="#none" target="_blank" title="새창열림" class="btn arrwType"><span>2025 SIWS  프로그램 브로셔</span></a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>연락처 정보</span>
+                                    <div>
+                                        <p>- 서울국제겨울학교팀</p>
+                                        <p>- 전화: +82-2-6490-6662</p>
+                                        <p>- 이메일: uossummer@uos.ac.kr</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>
