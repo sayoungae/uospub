@@ -112,9 +112,9 @@
 .m-notice .m-cont li:hover .noti-tit,.m-notice .m-cont li .noti-tit:focus{text-decoration: underline;}
 .m-notice .more-btn:hover,.m-notice .more-btn:focus{    transition: all .3s; transform: rotate(90deg);}
 /* -- m-notice */
-/* m-visotors */
-.m-visotors{padding:45px 0 70px;}
-.m-visotors .m-tit{padding-top: 24px;}
+/* m-visitors */
+.m-visitors{padding:45px 0 70px;}
+.m-visitors .m-tit{padding-top: 24px;}
 .visit-slide .swiper-slide{position: relative; height: 300px;}
 .visit-slide .img-box{width: 45%; padding-top: 39.685%; position: relative; overflow: hidden; z-index: 9;}
 .visit-slide .img-box > img{position: absolute; left:0; top:0; width: 100%; height: 100%;}
@@ -129,7 +129,7 @@
 .visit-slide-arrw > .visitSlide_prev{background-image: url("../images/slide-arrwP02.png"); border-right:1px solid #5F5F5F}
 .visit-slide-arrw > .visitSlide_next{background-image: url("../images/slide-arrwN02.png");}
 
-/* --m-visotors */
+/* --m-visitors */
 /* m-global */
 .m-global{background: url("../images/f-ban-bg.png") no-repeat;}
 .m-global .global-tit{padding:46px 0 50px;  display: flex; align-items: center;}
@@ -161,14 +161,14 @@
     .m-guide .left-box {width: 100%;}
     .m-guide .right-box {width: 100%;}
     /* -- m-guide */
-    /* m-visotors */
+    /* m-visitors */
     .visit-slide .swiper-slide{height: auto; border:1px solid #D0D0D0}
 
     .visit-slide .img-box {width: 100%; padding-top: 60%;}
     .visit-slide .txt-box {width: 100%; position: static; box-shadow: none;}
     .visit-slide-arrw{position:static; margin:20px auto 0;width: 120px; height: 60px;     background-size: 40%;}
 
-    /* -- m-visotors */
+    /* -- m-visitors */
 
 }
 @media (max-width: 960px) {
@@ -229,9 +229,9 @@
     /* m-notice */
     .m-notice .m-cont li .noti-tit{font-size: 16px;}
     /* -- m-notice */
-    /* m-visotors */
+    /* m-visitors */
     .visit-slide .txt-box .visit-tit{font-size: 16px;}
-    /* -- m-visotors */
+    /* -- m-visitors */
     /* m-global */
     .m-global .global-tit {flex-direction: column;}
     /* -- m-global */

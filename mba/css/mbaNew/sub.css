@@ -561,7 +561,7 @@
 }
 
 
-/* 학과소개 */
+/* Departments */
 /* 학과장인사 */
 .welcomeBox {width:100%;}
 .welcomeBox > div {
@@ -1703,7 +1703,7 @@ div.intro_right2{
 }
 
 @media screen and (max-width:768px) {
-	/* 원장인사 */
+	/* Welcome */
 	.welcomeBox > div {float:none; width:100%; padding:0;}
 	.intro_left img{width: 100%;}
 	.welcomeBox > div .tit {margin-top: 10px !important;}

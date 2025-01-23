@@ -409,7 +409,7 @@
 .org-chart .squa-line > li:nth-child(1):before,
 .org-chart .squa-line > li:last-child:before{display: none;}
 
-/* 학과소개 -목록 */
+/* Departments -목록 */
 .dept-list-wrap > ul{border-top:2px solid #5077B9;}
 .dept-list-wrap > ul > li{padding:20px 15px;display: flex; justify-content: space-between;align-items: center; border-bottom:1px solid #DDDDDD;}
 .dept-list-wrap .tit-box{display: flex; align-items: center; margin-bottom: 25px;}
@@ -424,7 +424,7 @@
 .dept-list-wrap .link{border:1px solid #889EB7; border-radius: 5px; color:#0e2a67; font-weight: 600; padding:10px 20px; text-align: center;}
 .dept-list-wrap .link > span{display: inline-block; padding-right: 40px; padding-top: 3px; background-image: url("../images/arrw04.png"); background-position:  right 8px center; background-repeat: no-repeat; transition: background-position 0.3s;}
 .dept-list-wrap .link:hover > span,.dept-list-wrap .link:focus > span{ background-position: right 0 center;}
-/* 학과소개 -상세 */
+/* Departments -상세 */
 .dept-link-list{display: flex; gap: 10px; justify-content: flex-end; margin-bottom: 20px;}
 .dept-link-list > a{width: 122px; text-align: center; border:1px solid #9BADC2; border-radius: 5px; padding:7px 10px; color:#112D69;font-weight: 600;}
 .dept-link-list > a > span{padding-left: 22px; background-position: left top 1px; background-repeat: no-repeat;}
@@ -445,9 +445,9 @@
 .link-web{display: inline-block; width: 34px; height: 34px; border-radius: 50%; background: #0C2E86 url("../images/icon_home.png") center center no-repeat}
 /* 대학원 소개 */
 
-/* 입학 */
+/* Admission */
 .pdfBox{margin-top: 30px; width: 100%;}
-/* -- 입학 */
+/* -- Admission */
 /* 교육/학사 */
 /* 수강신청 절차 */
 .course{
@@ -579,12 +579,12 @@
     .depart-list > li{width: calc(100% / 2 - 5px);}
 
 
-    /* 학과소개 -목록 */
+    /* Departments -목록 */
     .dept-list-wrap > ul > li{flex-direction: column; align-items: flex-start; gap: 20px;}
 
-    /* 학과소개 -상세 */
+    /* Departments -상세 */
     .dept-info > li{flex:1 1 45%}
-    /* 학점교류 */
+    /* Credit Exchange */
     .course{margin:40px 0;}
     .course_square{width: calc(50% - 45px);}
     /* 교내연구기관 */
@@ -610,12 +610,12 @@
     /* table */
     .table-wrap .type3 td{padding:10px 15px;}
 
-    /* 학과소개 -목록 */
+    /* Departments -목록 */
     .dept-list-wrap > ul > li {padding:15px 0;}
     .dept-list-wrap .tit-box{flex-direction: column;align-items: flex-start;gap: 10px; }
     .dept-list-wrap .tag-list{margin-left: 0;}
     .dept-list-wrap .link{padding:5px 10px;}
-    /* 학과소개 -상세 */
+    /* Departments -상세 */
     .dept-link-list{gap: 5px;}
     .dept-link-list > a > span{background-image: none !important; padding-left: 0;}
     .dept-link-list > a.icn1 > span{padding-left: 0;}
