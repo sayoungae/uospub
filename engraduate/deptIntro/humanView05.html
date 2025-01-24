@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일반대학원 영문</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/swiper.css">
+
+
+    <!-- JS -->
+    <script src="../static/js/jquery-3.7.1.js"></script>
+    <script src="../static/js/swiper-bundle.min.js"></script>
+    <script src="../static/js/common.js"></script>
+    <script src="../static/js/main.js"></script>
+    <script src="../static/js/sub.js"></script>
+
+
+    <script>
+        //header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <!-- sub-banner -->
+            <div class="sub-banner sub1">
+                <div class="inner">
+                    <div class="ban-tit">University of Seoul Global Top Brand</div>
+                    <ul class="line-map">
+                        <li><img src="../static/images/home_ic.png" alt="home"></li>
+                        <li>dept</li>
+                        <li>dept Centers and Laboratores</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content">
+                <div class="inner clearfix">
+                    <!-- // sub-banner -->
+                    <!-- snb -->
+                    <div id="snb-wrap">
+                    </div>
+                    <!-- // snb -->
+                    <!-- sub content -->
+                    <div class="sub-content" id="sub-content">
+                        <div class="sub-tit-box">
+                            <h3 class="subTit01">중국어문화학과</h3>
+                            <ul class="stp-bt">
+                                <li><a href="" class="print-ic"><span class="blind">인쇄</span></a></li>
+                                <li><a href="" class="share-ic"><span class="blind">공유 </span></a></li>
+                            </ul>
+                        </div>
+                        <!-- 본문 -->
+                        <!-- tab -->
+                        <div class="tab-area layer">
+                            <!-- tab list -->
+                            <div class="tab">
+                                <ul role="tablist">
+                                    <li id="tab_dept_01" role="tab" aria-selected="true" aria-controls="panel_dept_01"
+                                        class="active">
+                                        <button type="button" class="btn-tab">Departments</button>
+                                    </li>
+                                    <li id="tab_dept_02" role="tab" aria-selected="false" aria-controls="panel_dept_02">
+                                        <button type="button" class="btn-tab">입학정보</button>
+                                    </li>
+                                    <li id="tab_dept_03" role="tab" aria-selected="false" aria-controls="panel_dept_03">
+                                        <button type="button" class="btn-tab">학생활동 및 진로</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- //tab list -->
+                            <!-- tab contents -->
+                            <div class="tab-conts-wrap">
+                                <!-- 학 과 소 개 -->
+                                <div id="panel_dept_01" role="tabpanel" aria-labelledby="tab_dept_01"
+                                    class="tab-conts active">
+                                    <div class="dept-link-list">
+                                        <a href="https://liberalarts.uos.ac.kr/liberalarts/main.do?cate_id2=000010068&identified=anonymous&"
+                                            target="_blank" title="opens in a new tab"
+                                            class="icn1"><span>Homepage</span></a>
+                                        <a href="profList.html" target="_blank" title="opens in a new tab"
+                                            class="icn2"><span>교수소개</span></a>
+                                        <a href="https://www.uos.ac.kr/kor/popup/html/auos/prospectus/2022/prospectus.do?identified=anonymous&"
+                                            target="_blank" title="opens in a new tab"
+                                            class="icn3"><span>교과과정</span></a>
+                                    </div>
+                                    <h4 class="subTit04">교육목표</h4>
+                                    <div class="table-wrap">
+                                        <table class="type3">
+                                            <colgroup>
+                                                <col width="20%">
+                                                <col width="80%">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th>핵심 목표</th>
+                                                    <td>
+                                                        중국어문화학과 석사과정은 중국의 언어 및 문화와 관련된 주제들을 전문적으로 연구함으로써 중국에 대한 우리 사회의 지식과 시야를 심화시키는 데 기여할 우 수한 인재를 양성하는 것을 목표로 한다. 체계적이고 집중적인 훈련을 통해 전문 연구 인력으로 성장한 졸업생들은 곧바로 상급 교육기관에 진학하여 심화된 학술 연구를 계속하거나, 언론사, 기업체 등에 진출하여 전문가로서의 역량을 발휘할 수 있을 것이다.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>세부 목표</th>
+                                                    <td>
+                                                        <ul>
+                                                            <li>1. 중국 언어·문화 연구자로서 기본적인 연구 능력을 배양한다.</li>
+                                                            <li>2. 중국 언어·문화 관련 지식의 체계, 기존의 연구 성과 및 연구방법론을 이해한다.</li>
+                                                            <li>3. 중국 언어·문화에 관한 독창적인 연구를 수행하고 새로운 지식을 생산할 수 있는 연구 역량을 기른다.</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>연구 분야</th>
+                                                    <td>
+                                                        중국어 관련 분야, 중국 전통문화 관련 분야, 중국 근현대문화 관련 분야
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <h4 class="subTit04">학과정보</h4>
+                                    <div class="table-wrap">
+                                        <ul class="dept-info">
+                                            <li>
+                                                <div>주임교수</div>
+                                                <div>성근제 교수</div>
+                                            </li>
+                                            <li>
+                                                <div>TEL</div>
+                                                <div>+82-2-6490-2593</div>
+                                            </li>
+                                            <li>
+                                                <div>E-mail</div>
+                                                <div>shinhk@uos.ac.kr</div>
+                                            </li>
+                                            <li>
+                                                <div>학과 사무실</div>
+                                                <div>인문학관 2층 216호</div>
+                                            </li>
+                                            <li>
+                                                <div>TEL</div>
+                                                <div>+82-2-6490-2586~7</div>
+                                            </li>
+                                            <li>
+                                                <div>FAX</div>
+                                                <div>+82-2-6490-2589</div>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- //학 과 소 개 -->
+
+                                <!-- 입 학 정 보 -->
+                                <div id="panel_dept_02" role="tabpanel" aria-labelledby="tab_dept_02" class="tab-conts">
+                                    <div class="dept-link-list">
+                                        <a href="../admission/regular.html" target="_blank" title="opens in a new tab"
+                                            class="icn4"><span>모집요강</span></a>
+                                        <a href="https://rule.uos.ac.kr/lmxsrv/main/main.srv" target="_blank"
+                                            title="opens in a new tab" class="icn5"><span>운영규정</span></a>
+                                    </div>
+                                    <h4 class="subTit04">일반전형 학위과정</h4>
+                                    <div class="table-wrap">
+                                        <table class="type3">
+                                            <colgroup>
+                                                <col width="20%">
+                                                <col width="80%">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th>석사학위</th>
+                                                    <td style="text-align: left; word-break: keep-all;">
+                                                        <ul class="dot-list01">
+                                                            <li>국내·외 대학에서 학사학위 취득한 자 또는 현재 등록 학기 종료에 따른 학위취득예정자</li>
+                                                            <li>관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정되는 자</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>박사학위</th>
+                                                    <td>
+                                                        <ul class="dot-list01">
+                                                            <li>국내·외 대학에서 석사학위 취득한 자 또는 현재 등록 학기 종료에 따른 학위취득예정자</li>
+                                                            <li>관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정되는 자</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>북한 이탈주민<br />석·박사 지원 자격</th>
+                                                    <td style="text-align: left; word-break: keep-all;">
+                                                        <ul class="dot-list01">
+                                                            <li>석사 또는 박사학위과정의 지원 자격을 갖춘 자</li>
+                                                            <li>[북한이탈주민의 보호 및 정착지원에 관한 법률]에 의한 북한이탈주민으로 등록된 자</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <h4 class="subTit04">추가 지원자격 및 제출서류</h4>
+                                    <ul class="dot-list02">
+                                        <li>구술심사 시 중국어를 포함한 문제지를 제시함</li>
+                                    </ul>
+                                    <h4 class="subTit04">과정별 기본 사항 (2022학년도 이후 입학생 기준)</h4>
+                                    <div class="table-wrap">
+                                        <table class="type1">
+                                            <thead>
+                                                <tr>
+                                                    <th>구분</th>
+                                                    <th>수업연한</th>
+                                                    <th>기본 학기 운영</th>
+                                                    <th>최저 이수 학점</th>
+                                                    <th>졸업논문</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>석사과정</td>
+                                                    <td>2년 이상</td>
+                                                    <td>4학기제</td>
+                                                    <td>24학점</td>
+                                                    <td>석사학위논문</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <p class="point mt10">※ 기타 학사 정보: 일반대학원 홈페이지 > 교육/학사 탭의 관련 항목 페이지 참조</p>
+                                    </div>
+                                </div>
+                                <!-- // 입 학 정 보 -->
+                                <!-- 학 생 활 동 및 진 로 -->
+                                <div id="panel_dept_03" role="tabpanel" aria-labelledby="tab_dept_03" class="tab-conts">
+                                    <h4 class="subTit04">학생활동</h4>
+                                    <div class="table-wrap">
+                                        <table class="type3">
+                                            <thead>
+                                                <colgroup>
+                                                    <col width="20%">
+                                                    <col width="80%">
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>연구소</th>
+                                                        <td style="text-align: left; word-break: keep-all;">
+                                                            미래철학연구센터
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </thead>
+                                        </table>
+                                    </div>
+                                    <h4 class="subTit04">장학금 지원</h4>
+                                    <ul class="dotList02">
+                                        <li>국가기관장학사업 연구보조장학, 서울인문장학 등</li>
+                                    </ul>
+                                    <a href="https://graduate.uos.ac.kr/graduateNew/html/support/scholarship.do?menuid=3000004001001000000"
+                                        class="link-ty1">장학금 지급 및 학자금 대출 안내 바로가기</a>
+                                    <h4 class="subTit04">졸업 후 진로</h4>
+                                    <ul class="dot-list02">
+                                        <li>대학교 및 연구기관 학술 연구 종사자</li>
+                                        <li>언론사, 기업체에 관련 분야 전문가로 활동</li>
+                                    </ul>
+                                    <h4 class="subTit04">학과 홍보 사항</h4>
+                                    <ul class="dot-list02">
+                                        <li>
+                                            대학원생 연구 전용 학습 공간 제공                                            
+                                        </li>
+                                    </ul>
+                                    
+                                </div>
+                                <!-- //학 생 활 동 및 진 로 -->
+                            </div>
+                            <!-- //tab contents -->
+                        </div>
+                        <!-- // tab -->
+                        <!-- 본문 -->
+                    </div>
+                    <!-- sub content -->
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+
+</html>

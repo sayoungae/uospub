@@ -74,9 +74,9 @@
     top:9px;
 }
 
-.dotList01{margin-bottom: 40px;}
-.dotList01 > li{position: relative; padding-left: 10px; color:#5d5d5d; margin-top: 14px;}
-.dotList01 > li::before{
+.dot-list01{margin-bottom: 40px;}
+.dot-list01 > li{position: relative; padding-left: 10px; color:#5d5d5d; margin-top: 14px;}
+.dot-list01 > li::before{
     content:"";
     display: inline-block;
     width: 4px;
@@ -87,7 +87,7 @@
     left:0;
     top:8px;
 }
-.dotList01 > li > .desc{padding-left: 10px; font-size: 15px;}
+.dot-list01 > li > .desc{padding-left: 10px; font-size: 15px;}
 
 
 .dotList02{padding-left: 10px;}
