@@ -1,84 +1,67 @@
-<div class="header-top">
-    <div class="inner">
-        <div class="top-logo">
-            <h1 class="h-logo">
-                <a href="#none">
-                    <img src="../../static/images/logo01.png" alt="UNIVERSITY OF SEOUL">
-                </a>
-                <a href="#none" class="h-logo-txt">국제처</a>
-            </h1>
-            <div class="g-lang">
-                <select title="언어 선택" id="topTab" name="topTab">
-                    <option value="" selected="selected">한국어</option>
-                    <option value="">English</option>
-                    <option value="">中国人</option>
-                    <option value="">Tiếng Việt</option>
-                    <option value="">Japanese</option>
-                </select>
-            </div>
-        </div>
-        <div class="top-menu">
-            <ul class="util-list clearfix">
-                <li><a href="#none" class="login-icn">LOGIN</a></li>
-                <li><a href="#none" target="_blank" title="새창열림" class="lang-icn">OIA-ENG</a></li>
-            </ul>
-            <ul class="top-gbn-pc clearfix">
-                <li><a href="#none">한국어교육센터</a></li>
-                <li><a href="#none" target="_blank" title="새창열림">UOS-KOR</a></li>
-                <li><a href="#none" target="_blank" title="새창열림">UOS-ENG</a></li>
-            </ul>
-            <a href="#n" class="menu-open"><img src="../../static/images/all-menu.png" alt="메뉴열기"></a>
-        </div>
-    </div>
-</div>
-<div class="header-bot">
-    <div class="inner">
-        <div class="menu-box">
-            <ul class="top-gbn-mo">
-                <li><a href="#none">LOGIN</a></li>
-                <li><a href="#none" target="_blank" title="새창열림">UOS-KOR</a></li>
-                <li><a href="#none" target="_blank" title="새창열림">UOS-ENG</a></li>
-            </ul>
-            <ul class="depth1_list">
-                <li>
-                    <a href="#n">
-                        <span>About OIA</span>
-                    </a>
-                    <div class="depth2">
-                        <div class="dp2-bx">
-                            <div class="dp2-itx">
-                                <h2>About OIA</h2>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>국제처 사이트맵</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../static/css/common.css">
+    <link rel="stylesheet" href="../../static/css/swiper.css">
+    <!-- JS -->
+    <script src="../../static/js/jquery-3.7.1.js"></script>
+    <script src="../../static/js/common.js"></script>
+    <script src="../../static/js/swiper-bundle.min.js"></script>
+    <script src="../../static/js/main.js"></script>
+    <script>
+        // header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+    </script>
+   
+</head>
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <div class="wid">
+                <div class="sitemap-wrap">
+                    <ul>
+                        <li>
+                            <div class="dp1">
+                                <h2>소개</h2>
                             </div>
-                            <ul class="depth2_list">
+                            <ul class="dp1">
                                 <li>
-                                    <a href="#none"><span>About Us</span></a>
+                                    <a href="#none"><span>국제처소개</span></a>
                                 </li>
                                 <li>
-                                    <a href=""><span>Mission & Core Value</span></a>
+                                    <a href=""><span>미션&핵심가치</span></a>
                                 </li>
                                 <li>
-                                    <a href=""><span>VP's message</span></a>
+                                    <a href=""><span>국제처장 인사말</span></a>
                                 </li>
                                 <li>
-                                    <a href=""><span>Staff</span></a>
+                                    <a href=""><span>조직도</span></a>
                                 </li>
                                 <li>
-                                    <a href=""><span>Location</span></a>
+                                    <a href=""><span>오시는길</span></a>
                                 </li>
                             </ul>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <a href="#n">
-                        <span>International Admission</span>
-                    </a>
-                    <div class="depth2">
-                        <div class="dp2-bx">
-                            <div class="dp2-itx">
-                                <h2>International Admission</h2>
+                        </li>
+                        <li>
+                            <div class="dp1">
+                                <h2>UOS Admission</h2>
                             </div>
-                            <ul class="depth2_list">
+                            <ul class="dp2">
                                 <li>
                                     <a href="#none"><span>International Admission</span></a>
                                 </li>
@@ -99,19 +82,12 @@
                                     </div>
                                 </li>
                             </ul>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <a href="#n">
-                        <span>Study at UOS</span>
-                    </a>
-                    <div class="depth2">
-                        <div class="dp2-bx">
-                            <div class="dp2-itx">
+                        </li>
+                        <li>
+                            <div class="dp1">
                                 <h2>Study at UOS</h2>
                             </div>
-                            <ul class="depth2_list">
+                            <ul class="dp2">
                                 <li>
                                     <a href="#none"><span>학생교환프로그램</span></a>
                                     <div class="depth3">
@@ -259,21 +235,14 @@
                                     </div>
                                 </li>
                             </ul>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <a href="#n">
-                        <span>Study Abroad</span>
-                    </a>
-                    <div class="depth2">
-                        <div class="dp2-bx">
-                            <div class="dp2-itx">
+                        </li>
+                        <li>
+                            <div class="dp1">
                                 <h2>Study Abroad</h2>
                             </div>
-                            <ul class="depth2_list">
+                            <ul class="dp2">
                                 <li>
-                                    <a href="#none"><span>Exchange Student Program</span></a>
+                                    <a href="#none"><span>교환학생 프로그램</span></a>
                                     <div class="depth3">
                                         <ul class="depth3_list">
                                             <li>
@@ -289,13 +258,13 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <a href="#none"><span>Double Degree Program</span></a>
+                                    <a href="#none"><span>복수학위 프로그램</span></a>
                                 </li>
                                 <li>
-                                    <a href="#none"><span>Self-Paid Study Abroad Program</span></a>
+                                    <a href="#none"><span>자비유학 프로그램</span></a>
                                 </li>
                                 <li>
-                                    <a href="#none"><span>Short=Term Abroad Program</span></a>
+                                    <a href="#none"><span>해외단기파견프로그램</span></a>
                                     <div class="depth3">
                                         <ul class="depth3_list">
                                             <li>
@@ -308,10 +277,10 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <a href="#none"><span>Credit Recognition Program</span></a>
+                                    <a href="#none"><span>학점인정절차</span></a>
                                 </li>
                                 <li>
-                                    <a href="#none"><span>Study Abroad Testimonials</span></a>
+                                    <a href="#none"><span>해외체험수기</span></a>
                                     <div class="depth3">
                                         <ul class="depth3_list">
                                             <li>
@@ -324,19 +293,12 @@
                                     </div>
                                 </li>
                             </ul>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <a href="#n">
-                        <span>해외 교류대학</span>
-                    </a>
-                    <div class="depth2">
-                        <div class="dp2-bx">
-                            <div class="dp2-itx">
+                        </li>
+                        <li>
+                            <div class="dp1">
                                 <h2>해외<br/>교류대학</h2>
                             </div>
-                            <ul class="depth2_list">
+                            <ul class="dp2">
                                 <li>
                                     <a href="#none"><span>교류대학</span></a>
                                 </li>
@@ -344,47 +306,33 @@
                                     <a href="#none"><span>국제처 방문자</span></a>
                                 </li>
                             </ul>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <a href="#n">
-                        <span>Buddy Program</span>
-                    </a>
-                    <div class="depth2">
-                        <div class="dp2-bx">
-                            <div class="dp2-itx">
-                                <h2>Buddy<br/> Program</h2>
+                        </li>
+                        <li>
+                            <div class="dp1">
+                                <h2>버디<br/> 프로그램</h2>
                             </div>
-                            <ul class="depth2_list">
+                            <ul class="dp2">
                                 <li>
-                                    <a href="#none"><span>SeoulMate</span></a>
+                                    <a href="#none"><span>교환학생 SeoulMate</span></a>
                                 </li>
                                 <li>
-                                    <a href="#none"><span>Peer Advocate</span></a>
+                                    <a href="#none"><span>국제계절학교<br/>Peer Advocate</span></a>
                                 </li>
                                 <li>
                                     <a href="#none"><span>Seoul Global Ambassador</span></a>
                                 </li>
                                 <li>
-                                    <a href="#none"><span>Global Ambassador</span></a>
+                                    <a href="#none"><span>글로벌 홍보대사</span></a>
                                 </li>
                             </ul>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <a href="#n">
-                        <span>Student<br/>Resources</span>
-                    </a>
-                    <div class="depth2">
-                        <div class="dp2-bx">
-                            <div class="dp2-itx">
-                                <h2>Student Resources</h2>
+                        </li>
+                        <li>
+                            <div class="dp1">
+                                <h2>학생지원</h2>
                             </div>
-                            <ul class="depth2_list">
+                            <ul class="dp2">
                                 <li>
-                                    <a href="#none"><span>News & Notice</span></a>
+                                    <a href="#none"><span>공지사항</span></a>
                                 </li>
                                 <li>
                                     <a href="#none"><span>해외대학 자료실</span></a>
@@ -425,29 +373,22 @@
                                     </div>
                                 </li>
                             </ul>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <a href="#n">
-                        <span>교류교수</span>
-                    </a>
-                    <div class="depth2">
-                        <div class="dp2-bx">
-                            <div class="dp2-itx">
+                        </li>
+                        <li>
+                            <div class="dp1">
                                 <h2>교류교수</h2>
                             </div>
-                            <ul class="depth2_list">
+                            <ul class="dp2">
                                 <li>
                                     <a href="#none"><span>교류교수</span></a>
                                 </li>
                             </ul>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-            <a href="#n" class="menu-out"><img src="../static/images/menu_out.png" alt="메뉴닫기"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="menu-back"></div>
+        <div id="footer"></div>
     </div>
-</div>
+</body>
+</html>
