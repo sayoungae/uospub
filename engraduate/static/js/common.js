@@ -144,4 +144,108 @@ window.addEventListener("DOMContentLoaded", () => {
 	function closeSearchBox() {
 		$(".srch-box").removeClass("active");
 	}
+
+
+	// -------------- 전체메뉴 ---------------------
+	let focusedElBefore;
+	var clickType = "";
+
+	$('.all-menu').on('click', function () {
+		clickType = "all";
+		openAllmenu();
+	});
+
+	$('.menu-close').on('click', function () {
+		closeAllmenu(clickType);
+	});
+
+	// 전체 메뉴 열기
+	function openAllmenu() {
+		$('#all-menu-pop').fadeIn(250, function () {
+			$('body').addClass('setAni');
+			setTimeout(function () {
+				moveFocusToFirstMenuItem();
+			}, 300);
+		});
+		focusedElBefore = document.activeElement;
+	}
+
+	// 첫 번째 메뉴 아이템에 포커스 이동
+	function moveFocusToFirstMenuItem() {
+		var firstMenuItem = $('.all-menu-box').find('a, button, input, select, textarea').filter(':visible').first();
+		if (firstMenuItem.length > 0) {
+			firstMenuItem.focus();
+		}
+	}
+
+	// 전체 메뉴 닫기
+	function closeAllmenu() {
+		$('body').removeClass('setAni');
+		$('#all-menu-pop').fadeOut(250);
+		if (focusedElBefore) {
+			setTimeout(() => {
+				focusedElBefore.focus();
+			}, 300);
+		}
+	}
+
+	// 760px 미만일 때 menu-depth1 동작 추가
+	
+	function handleMenuClick() {
+		var $menuOpen = $(".menu-depth1");
+		if ($(window).width() < 760) {
+			$menuOpen.off('click').on('click', function (e) {
+				e.preventDefault();
+				
+				var parentLi = $(this).parent('li');
+				var submenu = parentLi.children('.depth2');
+
+				if (!parentLi.hasClass('active')) {
+					// 다른 열린 메뉴 닫기
+					$menuOpen.parent('li').removeClass('active');
+				}
+
+				// 현재 클릭한 메뉴 토글
+				parentLi.toggleClass('active');
+			});
+
+			// depth 3 있으면 클릭 이벤트
+			$('.menu-depth2').off('click').on('click', function (e) {
+				var parentLi = $(this).parent('li');
+				var subSubMenu = parentLi.children('.depth3');
+				
+				if (subSubMenu.length) {
+					e.preventDefault();
+					e.stopPropagation();
+			
+					// 클릭한 요소의 active 상태를 토글
+					if (parentLi.hasClass("active")) {
+						parentLi.removeClass("active");
+						subSubMenu.stop().slideUp()
+					} else {
+						// 다른 항목의 active 제거 (하나만 열리도록)
+						$('.all-menu-depth .depth2 > li').removeClass("active").children('.depth3').stop().slideUp();;
+					
+						parentLi.addClass("active");
+						subSubMenu.stop().slideDown()
+					}
+				}
+			});
+			
+		} else {
+			$menuOpen.off('click'); // 데스크탑에서는 이벤트 해제
+
+		}
+	}
+
+	function handleResize() {
+        handleMenuClick();
+        if ($(window).width() < 760) {
+            closeAllmenu();
+        }
+    }
+
+    handleMenuClick();
+    $(window).on('resize', handleResize);
+
 })
