@@ -380,8 +380,10 @@ br.MobV1{display:none;}
 	.slick-track:after{display: table;content: '';}
 	.slick-track:after{clear: both;}
 	.slick-loading .slick-track{visibility: hidden;}
-	/* 슬라이더 높이 변경 20240206 */
-	.slick-slide{display: none;float: left;height: 650px;min-height: 1px;}
+	/* 슬라이더 높이 변경 20240206 */	
+	/* 20250205 슬라이더 높이 공통 반영되어 삭제 */
+	.slick-slide{display: none;float: left;min-height: 1px;}
+
 	[dir='rtl'] .slick-slide{float: right;}
 	.slick-slide img{display: block;}
 	.slick-slide.slick-loading img{display: none;}

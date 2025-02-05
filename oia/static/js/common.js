@@ -9,7 +9,7 @@ $(document).ready(function(){
 				if($(this).next('.depth2').find('.depth2_list > li').length > 0) {
 					$('.header').addClass('pmo');
 					$('.depth1_list > li').removeClass('ac');
-					$(this).next('.depth2').slideDown(200);
+					$(this).next('.depth2').stop().slideDown(200);
 					$(this).parents('li').addClass('ac');
 				}
 			}else{
@@ -29,7 +29,7 @@ $(document).ready(function(){
 		if (window.innerWidth > 1024){
 			$(".depth1_list > li").removeClass('ac');
 			$('.header').removeClass('pmo');
-			$(".depth2").slideUp(200);
+			$(".depth2").stop().slideUp(200);
 		}
 	});
 	$(".depth1_list a").focusout(function(){
@@ -39,12 +39,44 @@ $(document).ready(function(){
 					$(".depth1_list > li").removeClass('ac');
 					$(".depth2 > li").removeClass('ac');
 					$('.header').removeClass('pmo');
-					$(".depth2").slideUp(200);
+					$(".depth2").stop().slideUp(200);
 				}
 			},100); 
 		}
 	});
 	
+	// 검색창 열기
+	$(".srch-open").on("click keypress", function (event) {
+		if (event.type === "click" || event.key === "Enter") {
+			event.preventDefault();
+			$(".srch-box").addClass("active");
+		}
+	});
+
+	// 검색창 닫기
+	$(".srch-close").on("click", function () {
+		closeSearchBox();
+	});
+
+	// 포커스가 외부로 나가면 닫기
+	$(document).on("click", function (event) {
+		if (!$(event.target).closest(".srch-box, .srch-open").length) {
+			closeSearchBox();
+		}
+	});
+
+	$(".srch-box").on("focusout", function () {
+		setTimeout(() => {
+			if (!$(document.activeElement).closest(".srch-box, .srch-open").length) {
+				closeSearchBox();
+			}
+		}, 10);
+	});
+
+	function closeSearchBox() {
+		$(".srch-box").removeClass("active");
+	}
+
 	/* SNB line map*/
 	$(".line-map > li > a").not('.home > a').each(function(){
 		if ($(this).siblings().length < 1){

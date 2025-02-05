@@ -17,7 +17,7 @@ $(document).ready(function(){
 					centerPadding: 0,
 					dots: false,
 					//appendDots: $('.ms_paging'),
-					autoplay: true,
+					// autoplay: true,
 					autoplaySpeed: 3000,
 					infinite: true,
 					fade: true,
@@ -50,8 +50,9 @@ $(document).ready(function(){
 				.not('.slick-initialized')
 				.slick({
 					//swipeToSlide: true,
+					adaptiveHeight: true,
 					draggable: false,
-					autoplay: true,
+					autoplay: false,
 					autoplaySpeed: 3000,
 					infinite: true,
 					variableWidth: false,
@@ -59,6 +60,7 @@ $(document).ready(function(){
 					nextArrow: $('.qs_next'),
 					slidesToShow: 3,
 					slidesToScroll: 1,
+					adaptiveHeight: true,
 					responsive: [
 						{
 							breakpoint: 1024,

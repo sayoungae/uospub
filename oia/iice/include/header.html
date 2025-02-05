@@ -27,7 +27,392 @@
                 <li><a href="#none" target="_blank" title="새창열림">UOS-KOR</a></li>
                 <li><a href="#none" target="_blank" title="새창열림">UOS-ENG</a></li>
             </ul>
-            <a href="#n" class="menu-open"><img src="../../static/images/all-menu.png" alt="메뉴열기"></a>
+            <button type="button" class="srch-open" title="검색창 열기"><span class="blind">검색</span></button>
+            <!-- 검색창 -->
+            <div class="srch-box">
+                <div class="srch-box-in clearfix">
+                    <form role="search">
+                        <fieldset>
+                            <legend class="blind">통합검색</legend>
+                            <div class="srch-df">
+                                <div class="srch-line">
+                                    <input type="text" id="_word" name="_word" title="검색어 입력"  placeholder="검색어를 입력해 주세요.">
+                                    <button type="button" class="serch-btn"><span class="blind">검색</span></button>
+                                </div>
+                                <button class="srch-close" type="button" title="닫기"><span class="blind">닫기</span></button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <!-- //검색창 -->
+
+            <button type="button" class="menu-open" title="전체메뉴열기"><span class="blind">전체메뉴</span></button>
+            <!-- 전체메뉴 -->
+            <div class="all-menu-box">
+                <div class="inner">
+                    <ul class="util-list clearfix">
+                        <li><a href="#none" class="login-icn">LOGIN</a></li>
+                        <li><a href="#none" target="_blank" title="새창열림" class="lang-icn">OIA-ENG</a></li>
+                        <li><a href="#none">한국어교육센터</a></li>
+                    </ul>
+                    <button type="button" class="menu-close tp1" title="전체메뉴닫기"><span class="blind">전체메뉴닫기</span></button>
+
+                    <ul class="all-menu-depth">
+                        <li class="active">
+                            <a href="#none" class="menu-depth1">
+                                <span>소개</span>
+                            </a>
+                            <ul class="depth2_list">
+                                <li>
+                                    <a href="#none"><span>국제처소개</span></a>
+                                </li>
+                                <li>
+                                    <a href=""><span>미션&amp;핵심가치</span></a>
+                                </li>
+                                <li>
+                                    <a href=""><span>국제처장 인사말</span></a>
+                                </li>
+                                <li>
+                                    <a href=""><span>조직도</span></a>
+                                </li>
+                                <li>
+                                    <a href=""><span>오시는길</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#none" class="menu-depth1">
+                                <span>UOS 입학</span>
+                            </a>
+                            <ul class="depth2_list">
+                                <li>
+                                    <a href="#none"><span>International Admission</span></a>
+                                </li>
+                                <li>
+                                    <a href=""><span>KGSP(Korea Global Scholarship Program)</span></a>
+                                    <div class="depth3">
+                                        <ul class="depth3_list">
+                                            <li>
+                                                <a href="#none"><span>Overview</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="#none"><span>Undergradeate</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="#none"><span>Graduate</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#none" class="menu-depth1">
+                                <span>Study at UOS</span>
+                            </a>
+                            <ul class="depth2_list">
+                                <li>
+                                    <a href="#none"><span>학생교환프로그램</span></a>
+                                    <div class="depth3">
+                                        <ul class="depth3_list">
+                                            <li>
+                                                <a href="#none"><span>학사일정</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="#none"><span>UOS파트너 정보</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="#none"><span>영어로 제공되는 코스</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="#none"><span>기숙사</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="#none"><span>애플리케이션</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="#none"><span>지명</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#none"><span>방문학생프로그램</span></a>
+                                    <div class="depth3">
+                                        <ul class="depth3_list">
+                                            <li>
+                                                <a href="#none"><span>프로그램소개</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="#none"><span>수업료</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="#none"><span>자격 및 신청</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#none"><span>국제연구인턴십</span></a>
+                                </li>
+                                <li>
+                                    <a href="#none"><span>서울국제 여름학교 Ⅰ</span></a>
+                                    <div class="depth3">
+                                        <ul class="depth3_list">
+                                            <li>
+                                                <a href="#none"><span>프로그램소개</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="#none"><span>공지</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="#none"><span>프로그램 일정</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="#none"><span>자격 및 신청</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="#none"><span>코스목록</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="#none"><span>수수료</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="#none"><span>지불</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="#none"><span>기숙사</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="#none"><span>지명</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#none"><span>서울국제 여름학교 Ⅱ</span></a>
+                                    <div class="depth3">
+                                        <ul class="depth3_list">
+                                            <li>
+                                                <a href="#none"><span>프로그램소개</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="#none"><span>공지</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="#none"><span>프로그램 일정</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="#none"><span>자격 및 신청</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="#none"><span>코스목록</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="#none"><span>수수료</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="#none"><span>지불</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="#none"><span>기숙사</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="#none"><span>지명</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#none"><span>서울국제 겨울학교</span></a>
+                                    <div class="depth3">
+                                        <ul class="depth3_list">
+                                            <li>
+                                                <a href="#none"><span>프로그램소개</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="#none"><span>공지</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="#none"><span>프로그램 일정</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="#none"><span>자격 및 신청</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="#none"><span>코스목록</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="#none"><span>수수료</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="#none"><span>지불</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="#none"><span>기숙사</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="#none"><span>지명</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#none" class="menu-depth1">
+                                <span>Study Abroad</span>
+                            </a>
+                            <ul class="depth2_list">
+                                <li>
+                                    <a href="#none"><span>교환학생 프로그램</span></a>
+                                    <div class="depth3">
+                                        <ul class="depth3_list">
+                                            <li>
+                                                <a href="#none"><span>일반교환학생</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="#none"><span>ISEP 프로그램</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="#none"><span>SAF 프로그램</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#none"><span>복수학위 프로그램</span></a>
+                                </li>
+                                <li>
+                                    <a href="#none"><span>자비유학 프로그램</span></a>
+                                </li>
+                                <li>
+                                    <a href="#none"><span>해외단기파견프로그램</span></a>
+                                    <div class="depth3">
+                                        <ul class="depth3_list">
+                                            <li>
+                                                <a href="#none"><span>프로그램 개요</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="#none"><span>학생 선발 및 장학금</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#none"><span>학점인정절차</span></a>
+                                </li>
+                                <li>
+                                    <a href="#none"><span>해외체험수기</span></a>
+                                    <div class="depth3">
+                                        <ul class="depth3_list">
+                                            <li>
+                                                <a href="#none"><span>UOS AMBASSADOR</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="#none"><span>외부프로그램</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#none" class="menu-depth1">
+                                <span>해외 교류대학</span>
+                            </a>
+                            <ul class="depth2_list">
+                                <li>
+                                    <a href="#none"><span>교류대학</span></a>
+                                </li>
+                                <li>
+                                    <a href="#none"><span>국제처 방문자</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#none" class="menu-depth1">
+                                <span>버디 프로그램</span>
+                            </a>
+                            <ul class="depth2_list">
+                                <li>
+                                    <a href="#none"><span>교환학생 SeoulMate</span></a>
+                                </li>
+                                <li>
+                                    <a href="#none"><span>국제계절학교<br>Peer Advocate</span></a>
+                                </li>
+                                <li>
+                                    <a href="#none"><span>Seoul Global Ambassador</span></a>
+                                </li>
+                                <li>
+                                    <a href="#none"><span>글로벌 홍보대사</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#none" class="menu-depth1">
+                                <span>학생지원</span>
+                            </a>
+                            <ul class="depth2_list">
+                                <li>
+                                    <a href="#none"><span>공지사항</span></a>
+                                </li>
+                                <li>
+                                    <a href="#none"><span>해외대학 자료실</span></a>
+                                </li>
+                                <li>
+                                    <a href="#none"><span>서식 자료실</span></a>
+                                </li>
+                                <li>
+                                    <a href="#none"><span>Living in Korea</span></a>
+                                    <div class="depth3">
+                                        <ul class="depth3_list">
+                                            <li>
+                                                <a href="#none"><span>도착 전 정보</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="#none"><span>도착 후 정보</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="#none"><span>UOS 기숙사 신청</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#none"><span>FAQ</span></a>
+                                    <div class="depth3">
+                                        <ul class="depth3_list">
+                                            <li>
+                                                <a href="#none"><span>학점이전</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="#none"><span>장학금</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="#none"><span>기숙사</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#none" class="menu-depth1">
+                                <span>교류교수</span>
+                            </a>
+                            <ul class="depth2_list">
+                                <li>
+                                    <a href="#none"><span>교류교수</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <button type="button" class="menu-close tp2" title="전체메뉴닫기"><span class="blind">전체메뉴닫기</span></button>
+                </div>
+            </div>
+            <!-- //전체메뉴 -->
         </div>
     </div>
 </div>

@@ -2,7 +2,7 @@
 	.F1V{}
 	.header-Part .width-auto{position:static;}
 	.main_slide_box:after { content: ''; display: block; clear: both; }
-	.main_slide_box {width: 100%;position: relative;height: auto;}
+	 .main_slide_box {width: 100%;position: relative;/*height: 650px; overflow: hidden;*/ } 
 	.main_slide_box .slick-slide:focus { position: relative; }
 	.main_slide_box .slick-slide:focus:after { content: ''; display: block; width: calc(100% - 4px); height: calc(100% - 4px); outline: 2px dotted #5e8fbe; position: absolute; top: 2px; left: 2px; }
 	.main_slide_box a{display:inline-block; cursor: context-menu; }
