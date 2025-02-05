@@ -77,6 +77,59 @@ $(document).ready(function(){
 		$(".srch-box").removeClass("active");
 	}
 
+	// -------------- 전체메뉴 ---------------------
+	let focusedElBefore;
+    var clickType = "";
+    $('.menu-open').on('click',function(){
+    	clickType = "all";
+    	openAllmenu();
+    });
+
+	$('.menu-close').on('click',function(){
+    	closeAllmenu(clickType);
+    });
+
+    // focus popup
+	function openAllmenu() {
+		$('#all-menu-pop').fadeIn(250, function () { 
+			$('body').addClass('setAni');
+
+			// 메뉴가 완전히 표시된 후 포커스 강제 이동
+			setTimeout(function () {
+				moveFocusToFirstMenuItem();
+			}, 300);
+		});
+
+		focusedElBefore = document.activeElement; // 기존 포커스 저장
+	}
+
+	function moveFocusToFirstMenuItem() {
+		var firstMenuItem = $('.all-menu-box').find('a, button, input, select, textarea').filter(':visible').first();
+
+		if (firstMenuItem.length > 0) {
+			console.log("First menu item to be focused:", firstMenuItem[0]); // 디버깅
+			firstMenuItem.focus();
+		} else {
+			console.warn("No focusable elements found inside .all-menu-box.");
+		}
+	}
+
+	function closeAllmenu() {
+		$('body').removeClass('setAni');
+		var allMenu = $('#all-menu-pop');
+		allMenu.fadeOut(250);
+
+		// 메뉴 닫을 때 포커스 원래 위치로 복원
+		if (focusedElBefore) {
+			setTimeout(() => {
+				focusedElBefore.focus();
+			}, 300);
+		}
+	}
+
+
+
+
 	/* SNB line map*/
 	$(".line-map > li > a").not('.home > a').each(function(){
 		if ($(this).siblings().length < 1){
