@@ -154,7 +154,6 @@ $(document).ready(function(){
             });
 		} else {
 			$('.menu-depth1').off('click'); // 데스크탑에서는 이벤트 해제
-            $('.depth2_list').css('display', 'flex'); // 760px 이상일 때 항상 표시
 
 		}
 	}
