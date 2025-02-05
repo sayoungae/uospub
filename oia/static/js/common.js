@@ -79,47 +79,40 @@ $(document).ready(function(){
 
 	// -------------- 전체메뉴 ---------------------
 	let focusedElBefore;
-    var clickType = "";
-    $('.menu-open').on('click',function(){
-    	clickType = "all";
-    	openAllmenu();
-    });
+	var clickType = "";
 
-	$('.menu-close').on('click',function(){
-    	closeAllmenu(clickType);
-    });
+	$('.menu-open').on('click', function () {
+		clickType = "all";
+		openAllmenu();
+	});
 
-    // focus popup
+	$('.menu-close').on('click', function () {
+		closeAllmenu(clickType);
+	});
+
+	// 전체 메뉴 열기
 	function openAllmenu() {
-		$('#all-menu-pop').fadeIn(250, function () { 
+		$('#all-menu-pop').fadeIn(250, function () {
 			$('body').addClass('setAni');
-
-			// 메뉴가 완전히 표시된 후 포커스 강제 이동
 			setTimeout(function () {
 				moveFocusToFirstMenuItem();
 			}, 300);
 		});
-
-		focusedElBefore = document.activeElement; // 기존 포커스 저장
+		focusedElBefore = document.activeElement;
 	}
 
+	// 첫 번째 메뉴 아이템에 포커스 이동
 	function moveFocusToFirstMenuItem() {
 		var firstMenuItem = $('.all-menu-box').find('a, button, input, select, textarea').filter(':visible').first();
-
 		if (firstMenuItem.length > 0) {
-			console.log("First menu item to be focused:", firstMenuItem[0]); // 디버깅
 			firstMenuItem.focus();
-		} else {
-			console.warn("No focusable elements found inside .all-menu-box.");
 		}
 	}
 
+	// 전체 메뉴 닫기
 	function closeAllmenu() {
 		$('body').removeClass('setAni');
-		var allMenu = $('#all-menu-pop');
-		allMenu.fadeOut(250);
-
-		// 메뉴 닫을 때 포커스 원래 위치로 복원
+		$('#all-menu-pop').fadeOut(250);
 		if (focusedElBefore) {
 			setTimeout(() => {
 				focusedElBefore.focus();
@@ -127,6 +120,54 @@ $(document).ready(function(){
 		}
 	}
 
+	// 760px 미만일 때 menu-depth1 동작 추가
+	
+	function handleMenuClick() {
+		if ($(window).width() < 760) {
+			$('.menu-depth1').off('click').on('click', function (e) {
+				e.preventDefault();
+				
+				var parentLi = $(this).parent('li');
+				var submenu = parentLi.children('.depth2_list');
+
+				if (!parentLi.hasClass('active')) {
+					// 다른 열린 메뉴 닫기
+					$('.menu-depth1').parent('li').removeClass('active');
+					$('.depth2_list').slideUp();
+				}
+
+				// 현재 클릭한 메뉴 토글
+				parentLi.toggleClass('active');
+				submenu.slideToggle();
+			});
+
+			// depth 3 있으면 클릭 이벤트
+			$('.depth2_list > li > a').off('click').on('click', function (e) {
+                var parentLi = $(this).parent('li');
+                var subSubMenu = parentLi.children('.depth3');
+                if (subSubMenu.length) {
+                    e.preventDefault();
+                    parentLi.addClass("active");
+                }else{
+					parentLi.removeClass("active");
+				}
+            });
+		} else {
+			$('.menu-depth1').off('click'); // 데스크탑에서는 이벤트 해제
+            $('.depth2_list').css('display', 'flex'); // 760px 이상일 때 항상 표시
+
+		}
+	}
+
+	function handleResize() {
+        handleMenuClick();
+        if ($(window).width() < 760) {
+            closeAllmenu();
+        }
+    }
+
+    handleMenuClick();
+    $(window).on('resize', handleResize);
 
 
 
