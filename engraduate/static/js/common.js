@@ -111,4 +111,37 @@ window.addEventListener("DOMContentLoaded", () => {
 		}
 	});
 	
+
+	// -----------------------  검색 ------------------------------------
+	// 검색창 열기
+	$(".srch-btn").on("click keypress", function (event) {
+		if (event.type === "click" || event.key === "Enter") {
+			event.preventDefault();
+			$(".srch-box").addClass("active");
+		}
+	});
+
+	// 검색창 닫기
+	$(".srch-close").on("click", function () {
+		closeSearchBox();
+	});
+
+	// 포커스가 외부로 나가면 닫기
+	$(document).on("click", function (event) {
+		if (!$(event.target).closest(".srch-box, .srch-btn").length) {
+			closeSearchBox();
+		}
+	});
+
+	$(".srch-box").on("focusout", function () {
+		setTimeout(() => {
+			if (!$(document.activeElement).closest(".srch-box, .srch-btn").length) {
+				closeSearchBox();
+			}
+		}, 10);
+	});
+
+	function closeSearchBox() {
+		$(".srch-box").removeClass("active");
+	}
 })
