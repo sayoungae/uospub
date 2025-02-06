@@ -19,8 +19,8 @@
 /* m-visual */
 .m-visual{width: 100%;   position: relative;}
 .m-visual .visual-slide{border-radius: 0 0 0 160px; height: 674px; overflow: hidden;}
-.m-visual .swiper-slide{width: 100%; height: 100%; background-position: left center; background-repeat: no-repeat; background-size: 100% auto;  background-image: url("../images/m-visu01.png");}
-.m-visual .swiper-slide .txt-wrap{max-width: 1530px; margin:0 auto; padding:0 20px; color:#fff; font-weight: 900; padding-top: 360px; opacity: 0; transform: translateX(120px);  transition: opacity 1.5s, transform 1.6s; }
+.m-visual .swiper-slide{width: 100%; height: 100%; background-position: left center; background-repeat: no-repeat; background-size: 100% auto;  background-image: url("../images/m-visu01.png"); background-position: left top;}
+.m-visual .swiper-slide .txt-wrap{max-width: 1530px; margin:0 auto; padding:0 20px; color:#fff; font-weight: 900; padding-top: 300px; opacity: 0; transform: translateX(120px);  transition: opacity 1.5s, transform 1.6s; }
 .m-visual .swiper-slide .txt-wrap >p{font-size: 60px; }
 .m-visual .swiper-slide .txt-wrap >span{display: inline-block; font-size: 44px;}
 .m-visual .swiper-slide.on .txt-wrap{opacity: 1;transform: translateX(0px);}
@@ -144,7 +144,9 @@
     .df-box > .m-tit{width: 100%;}
     .df-box > .m-cont{width: 100%;}
     /* m-visual */
-    .m-visual .swiper-slide .txt-wrap {padding-top: 320px;}
+    .m-visual .visual-slide{height: 480px;}
+    .m-visual .swiper-slide{background-size: 100% auto;}
+    .m-visual .swiper-slide .txt-wrap {padding-top: 120px;}
     .m-visual .swiper-slide .txt-wrap >p{font-size: 50px; }
     .m-visual .swiper-slide .txt-wrap >span{display: inline-block; font-size: 38px;}
     /* -- m-visual */
@@ -168,6 +170,11 @@
 }
 
 @media (max-width: 960px) {
+    /* m-visual */
+    .m-visual .visual-slide{height: 400px;}
+    .m-visual .swiper-slide .txt-wrap >p{font-size: 40px; }
+    .m-visual .controler{bottom: 100px;}
+    /* -- m-visual */
     /* m-news */
     .m-news .tab-area .tab > ul > li{width: calc(100% / 4);}
     .m-news .tab-area .tab > ul > li >button{width: 100%; font-size: 18px;}
@@ -178,9 +185,10 @@
 @media (max-width: 760px) {
     .m-content{padding:40px 0;}
     /* m-visual */
-    .m-visual .visual-slide{height: 470px;}
-    .m-visual .swiper-slide .txt-wrap {padding-top: 200px;}
-    .m-visual .swiper-slide .txt-wrap >p{font-size: 40px; }
+    .m-visual .visual-slide{height: 300px;}
+    .m-visual .swiper-slide{background-size: 100% 100%;}
+    .m-visual .swiper-slide .txt-wrap {padding-top: 75px;}
+    .m-visual .swiper-slide .txt-wrap >p{font-size: 32px; }
     .m-visual .swiper-slide .txt-wrap >span{display: inline-block; font-size: 22px;}
     .m-visual .controler {left: 30px;}
     /* -- m-visual */
@@ -211,8 +219,8 @@
     .m-tit{font-size: 28px; margin-bottom: 20px;}
     
      /* m-visual */
-    .m-visual .visual-slide{height: 300px; border-radius: 0;}
-    .m-visual .swiper-slide .txt-wrap {padding-top: 120px;}
+    .m-visual .visual-slide{height: 230px; border-radius: 0;}
+    .m-visual .swiper-slide .txt-wrap{padding-top: 60px;}
     .m-visual .swiper-slide .txt-wrap >p{font-size: 30px; }
     .m-visual .swiper-slide .txt-wrap >span{display: inline-block; font-size: 20px;}
     .m-visual .controler {left: 20px; bottom:40px; font-size: 16px;}
