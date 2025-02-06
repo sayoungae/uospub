@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>국제처 소개</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../static/css/common.css">
+    <link rel="stylesheet" href="../../static/css/swiper.css">
+    <!-- JS -->
+    <script src="../../static/js/jquery-3.7.1.js"></script>
+    <script src="../../static/js/common.js"></script>
+    <script src="../../static/js/swiper-bundle.min.js"></script>
+    <script src="../../static/js/main.js"></script>
+    <script>
+        // header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <div class="sub-tit-wrap"><h3 class="pg-tit">학점 인정절차</h3></div>
+            <div id="snb-wrap"></div>
+            <div class="wid">
+                <div class="content-area">
+                    <div id="contents">
+                        <h4 class="conts-tit2">학점이전 절차 안내</h4>
+                        <ul class="numList01">
+                            <li>
+                                <div class="tit"><span class="numD">1</span>성적표 수령</div>
+                                <div class="desc">
+                                    <div class="sub-tit2">성적증명서 원본-국제처 수신</div>
+                                    <ul class="dotList00">
+                                        <li>
+                                            각자 파견된 대학의 관련 부서에 해당 학기 성적증명서를 서울시립대 국제처 담당자에게 우편으로 송부 요청 (수학기간 종료 후 성적증명서가 오지 않아 학점이전을 제때 못 해서 고생하는 경우가 많으므로, 파견 중에 해당 대학 담당자와 성적표 발송지 및 성적표 발송 일정에 대해 확인 필요)
+                                            <ul class="dot-list01">
+                                                <li>
+                                                    우편 발송을 해주지 않는 외국대학의 경우 외국대학 담당자가 직접 학생 성적표를 국제처 담당자에게 이메일로 발송해야 함. 
+                                                </li>
+                                                <li>영어를 모국어로 하지 않는 국가의 경우, 성적표를 영어가 아닌 해당 국가 언어로 발급해주는 경우, 가능한 성적표는 영어로 발급해주기를 사전에 요청하고, 영어 성적표가 최종적으로 발급되지 않는 경우, 현지어 성적표를 학생 본인이 간단하게 영어 또는 한국어로 번역해야 함.</li>
+                                            </ul>
+                                        </li>
+                                        <li>국제처에서 성적표를 수령하면 “이메일”로 학점이전 시작 안내</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tit"><span class="numD">2</span>귀국보고서</div>
+                                <div class="desc">
+                                    <div class="sub-tit2">귀국보고서 - 국제처 홈페이지에 업로드</div>
+                                    <ul class="dotList00">
+                                        <li>수학대학 홍보용 PPT 자료</li>
+                                        <li>교환학생 귀국보고서(양식)</li>
+                                        <li>
+                                            교환학생 만족도조사서(양식)
+                                            <div class="point01">
+                                                → 위의 3가지 파일을 학점이전 하러 오기 전에 국제처 홈페이지의 “해외체험수기”에 지역별로 업로드  <span class="point02">( ! ) UOS 포털로 로그인해서 들어가야 글을 업로드 할 수 있음.</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tit"><span class="numD">3</span>서류준비</div>
+                                <div class="desc">
+                                    <div class="sub-tit2">학점이전요청서(양식)-학기별 작성</div>
+                                    <ul class="dotList00">
+                                        <li>
+                                            학점이전요청서(양식)을 파견 학기당 1장씩 작성 및 출력
+                                            <ul class="dot-list01">
+                                                <li>(예) 파견 기간이 2016. 2학기~2017.1학기인 경우, 2016. 2학기와 2017. 1학기를 각각 1장씩, 총 2장으로 작성</li>
+                                                <li>“2. 대체인정과목 내역” 관련</li>
+                                                <li>“Partner Universities 이수과목” 부분에 각 학점이전 대상 과목의 교과목명을 성적표 상에 기재된 그대로 영문으로 기입한 후 학생 본인이 한글로 번역하여 기입. “학점” 및 “성적”은 성적표상 그대로 기입</li>
+                                                <li>“취득학점승인요청내역” 부분의 “교과구분”에 “전공선택”, “일반선택”, “교양선택” 등 이전할 교과목의 성격에 맞는 구분 내역 기재, “학점”은 성적표상 기재되어 있는 그대로 기입(단, 유럽 ECTS는 변환표에 의거, 우리대학 학점으로 환산하여 기재, “성적”은 성적표상 그대로 기입</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <div class="sub-tit2">과목당 syllabus - 수업내용 및 시수 명시</div>
+                                    <ul class="dotList00">
+                                        <li>전공선택이나 일반선택으로 이전할 교과목의 경우에는 실험실습 과목이 아니라면 시수가 명시되어 있을 필요는 없음. 단. 실험실습과목이나 외국어 수업(교양선택으로 이전할 교과목)은 강의계획서 상에 시수가 명확히 드러나 있어야 함(30시간당 1학점). 강의계획서 상에서 시수를 확인할 수 없는 경우, 해당 학기 수업 일정표 등 별도의 시수 확인 자료를 구해야 함.</li>
+                                        <li>
+                                            Syllabus를 한국에 귀국 후 구하려고 하면 구할 수 없는 경우가 많으므로 외국대학에서 수학하는 중에 반드시 syllabus를 구해 귀국할 수 있도록 함.<br/>
+                                            <div class="point02">※ 영어영문학과 학생이 중화권 대학에서 수학 시, 전공과목에 대한 syllabus 준비에 유의(세부적으로 수업내용이 명시되어야 함.)</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tit"><span class="numD">4</span>사무실 방문</div>
+                                <div class="desc">
+                                    <div class="sub-tit2">국제처에서 서류 1차 확인 & 성적표 수령 </div>
+                                    <ul class="dotList00">
+                                        <li>귀국보고서 및 기타 서류를 국제처 홈페이지에 업로드 완료 후, 국제처에서 서류 1차 확인 가능</li>
+                                    </ul>
+                                    <div class="sub-tit2">교양교육부 확인(교양 과목 수강 시)</div>
+                                    <div class="sub-tit2">복수전공 학부과 확인(복수전공 해당자)    </div>
+                                    <div class="sub-tit2">소속 학부과 확인(전공 및 일반 과목)</div>
+                                    <div class="sub-tit2">교무과 최종 승인(소속 학부과에서 공문으로 처리)</div>
+                                </div>
+                            </li>
+                        </ul>
+                        <h5 class="sub-tit">학점이전시기</h5>
+                        <ul class="dotList00">
+                            <li>
+                                “서울시립대학교 국외대학 학생교류 및 학점인정에 관한 시행세칙”<br/>
+                                제1장 제15조 ① 수학대학에서 수학한 교과목, 성적 및 학점을 인정하는 기간은 수학기간이 끝나고 본교에서 수학을 시작하는 첫 학기로 한다.<br/>
+                                다만, 4학년 졸업 예정자가 수학대학에서 정규학기나 계절 학기를 수학한 경우 졸업 사정전으로 한다. - 졸업예정자의경우 유의(졸업사정 관련)
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+
+</html>
