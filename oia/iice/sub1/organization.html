@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>국제처 소개</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../static/css/common.css">
+    <!-- JS -->
+    <script src="../../static/js/jquery-3.7.1.js"></script>
+    <script src="../../static/js/common.js"></script>
+    <script>
+        // header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+       
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <div class="sub-tit-wrap"><h3 class="pg-tit">조직도</h3></div>
+            <div id="snb-wrap"></div>
+            <div class="wid">
+                <div class="content-area">
+                    <div id="contents">
+                        <h4 class="conts-tit2">조직도</h4>
+                        <div class="organ_box">
+                            <ul class="organ1">
+                                <li>
+                                    <p>국제처</p>
+                                    <div>
+                                        <ul class="organ2">
+                                            <li>
+                                                <p>국제처장</p>
+                                                <div>
+                                                    <ul class="organ3">
+                                                        <li>
+                                                            <p>국제부처장</p>
+                                                            <ul class="organ4">
+                                                                <li>
+                                                                    <p>국제교류과장</p>
+                                                                    <ul class="organ5">
+                                                                        <li>
+                                                                            <p>국제교류팀</p>
+                                                                            <div class="organ-list">
+                                                                                <ul class="dot-list01">
+                                                                                    <li>교류협정체결 및 관리</li>
+                                                                                    <li>국제교류컨퍼런스</li>
+                                                                                    <li>교환학생(outbound, inbound)</li>
+                                                                                    <li>계절학기 해외단기 파견</li>
+                                                                                    <li>방문학생, 단기유료프로그램</li>
+                                                                                    <li>여름학교</li>
+                                                                                    <li>복수학위</li>
+                                                                                    <li>국제혁술교류지원사업</li>
+                                                                                    <li>대학혁신지원사업(글로벌)</li>
+
+                                                                                </ul>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <p>국제Admission팀</p>
+                                                                            <div class="organ-list">
+                                                                                <ul class="dot-list01">
+                                                                                    <li>학부 및 대학원외국인 입시</li>
+                                                                                    <li>외국인 입시</li>
+                                                                                    <li>유학생관리</li>
+                                                                                    <li>GKS정부초정 및 장학사업</li>
+                                                                                    <li>외국인학생관리시스템</li>
+                                                                                    <li>해외유학박람회</li>
+                                                                                    <li>외국인 유학생 및 유학생회</li>
+                                                                                    <li>Seoul Mate</li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <p>외국인지원팀</p>
+                                                                            <div class="organ-list">
+                                                                                <ul class="dot-list01">
+                                                                                    <li>
+                                                                                        글로벌지원센터 관리
+                                                                                        <ul class="dotList03">
+                                                                                            <li>외국인 학생 상담</li>
+                                                                                            <li>아웃바운드 학생 상담</li>
+                                                                                            <li>아웃바운드 학점이전</li>
+                                                                                            <li>외국인 교원 관리</li>
+                                                                                            <li>교환 및 표준비자발급</li>
+                                                                                        </ul>
+                                                                                    </li>
+                                                                                    <li>외국인지원 관련 요구자료</li>
+
+                                                                                </ul>
+                                                                            </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="organ3-2">
+                                                            <p>한국어교육센터장</p>
+                                                            <ul class="organ6">
+                                                                <li>
+                                                                    <p>한국어교육센터</p>
+                                                                    <div class="organ-list">
+                                                                        <ul class="dot-list01">
+                                                                            <li>한국어교육센터 프로그램 운영</li>
+                                                                            <li>홍보 및 Admission<br/>
+                                                                            (중국어, 영어 및 일본어 권등)</li>
+                                                                            <li>K - 라운지 운영, UOS Buddy</li>
+                                                                            <li>시간강사 관리</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

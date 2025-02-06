@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>국제처 소개</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../static/css/common.css">
+    <link rel="stylesheet" href="../../static/css/swiper.css">
+
+
+    <!-- JS -->
+    <script src="../../static/js/jquery-3.7.1.js"></script>
+    <script src="../../static/js/common.js"></script>
+    <script src="../../static/js/swiper-bundle.min.js"></script>
+    <script src="../../static/js/main.js"></script>
+
+    <script>
+        // header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+       
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <div class="sub-tit-wrap"><h3 class="pg-tit">Study at UOS</h3></div>
+            <div id="snb-wrap"></div>
+            <div class="wid">
+                <div class="content-area">
+                    <div id="contents">
+                        <h4 class="conts-tit2">수업료</h4>
+                        <h5 class="sub-tit">수업료</h5>
+                        <div class="ind-box">
+                            <div class="table-wrap">
+                                <table class="type02">
+                                    <caption>수업료 - 학부, 금액</caption>
+                                    <colgroup>
+                                        <col width="70%">
+                                        <col width="30%">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">학부</th>
+                                            <th scope="col">금액(원)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>경영학부, 경제학부, 국사학과, 영어영문학과, 국제관계학과, 도시사회학과,<br/> 도시행정학과, 사회복지학과, 세무학과, 영어영문학과, 영어문학과, 철학과, 행정학과</td>
+                                            <td>2,044,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>수학과</td>
+                                            <td>2,253,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>물리학과, 생명과학과, 융합응용화학과, 통계학과, 환경원예학과</td>
+                                            <td>2,457,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>건축공학과, 건축학과, 지리정보학과, 교통공학과, 기계정보공학과, 토목공학과, 재료과학 및 공학과,<br/> 인공지능학과, 전기컴퓨터공학과, 조경학과, 컴퓨터공학 및 디자인학과, 도시계획 및 디자인학과, 화학공학과, 환경공학부</td>
+                                            <td>2,701,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>스포츠 과학과</td>
+                                            <td>2,742,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>디자인학과, 환경조각학과</td>
+                                            <td>2,888,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>음악학과</td>
+                                            <td>3,221,000</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            
+                            </div>
+                        </div>
+                        <h5 class="sub-tit">수업료 환불 정책</h5>
+                        <div class="ind-box">
+                            <p class="sub-tit2">다음 각 호의 어느 하나에 해당하는 경우에는 납부한 수업료를 환불합니다.</p>
+                            <div class="desc">
+                                <ul class="dot-list01">
+                                    <li>법령 또는 학교규정에 의거 Admission(재Admission 및 전학 포함) 또는 학업을 계속할 수 없는 경우</li>
+                                    <li>Admission허가를 받은 자가 Admission포기 의사를 표시한 경우</li>
+                                    <li>학생이 중퇴 의사를 표시한 경우</li>
+                                    <li>질병, 사망, 천재지변 기타 부득이한 사유로 Admission이 불가능하거나 학업을 계속할 수 없게 된 경우</li>
+                                </ul>
+                            </div>
+                            <p class="sub-tit2">전항의 규정에 따라 환불되는 금액은 다음과 같이 구분됩니다.</p>
+                            <div class="desc">
+                                <div class="table-wrap">
+                                    <table class="type02">
+                                        <thead>
+                                            <tr>
+                                                <th>반품 사유 발생일</th>
+                                                <th>반환금액</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Admission일 전날 또는 해당 학기 시작일 전날까지</td>
+                                                <td>수업료 전액</td>
+                                            </tr>
+                                            <tr>
+                                                <td>학기 시작부터 30일까지</td>
+                                                <td>수업료의 5/6</td>
+                                            </tr>
+                                            <tr>
+                                                <td>학기개시일로부터 31일부터 60일까지</td>
+                                                <td>수업료의 2/3</td>
+                                            </tr>
+                                            <tr>
+                                                <td>학기개시일로부터 61일부터 90일까지</td>
+                                                <td>수업료의 절반</td>
+                                            </tr>
+                                            <tr>
+                                                <td>학기 시작 후 90일</td>
+                                                <td>반환불가</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <p class="sub-tit2">각 학기의 개강일</p>
+                            <div class="desc">1학기 : 3월 1일 ,  2학기 : 9월 1일</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

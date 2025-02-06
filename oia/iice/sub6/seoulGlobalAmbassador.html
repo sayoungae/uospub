@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>국제처 소개</title>
+     <!-- CSS -->
+    <link rel="stylesheet" href="../../static/css/common.css">
+    <link rel="stylesheet" href="../../static/css/swiper.css">
+    <!-- JS -->
+    <script src="../../static/js/jquery-3.7.1.js"></script>
+    <script src="../../static/js/common.js"></script>
+    <script src="../../static/js/swiper-bundle.min.js"></script>
+    <script src="../../static/js/main.js"></script>
+    <script>
+        // header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+       
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <div class="sub-tit-wrap"><h3 class="pg-tit">버디프로그램</h3></div>
+            <!-- snb -->
+            <div id="snb-wrap"></div>
+            <!-- // snb -->
+            <div class="wid">
+                <div class="content-area">
+                    <div id="contents">
+                        <h4 class="conts-tit2">Seoul Global Ambassador</h4>
+                        <div class="program-imgs">
+                            <img src="../../static/images/seoulmate_03.jpg" alt="">
+                        </div>
+                        <h5 class="sub-tit">Seoul Global Ambassador</h5>
+                        <div class="desc">
+                            서울시립대학교 국제처에서는 우리대학에 재학생 중 대학 구성원으로서 자부심을 가진 자를 선발하여 교육을 통해 Seoul Global Ambassador로 양성하고 있습니다. SGA 학생들은 우리 국제처의 얼굴로서 외빈의전을 담당하고 있으며, 서울시립대학교에서 생활하는 외국인학생들의 학교생활 적응에 도움을 주고 있습니다
+                        </div>
+                        <h5 class="sub-tit">SGA (Seoul Global Ambassador)</h5>
+                        <div class="ind-box">
+                            <p class="sub-tit2">지원자격</p>
+                            <div class="desc">
+                                <ul class="dot-list01">
+                                    <li>재학 예정인 서울시립대학교 학부생</li>
+                                    <li>영어 회화능력 우수자(해외 방문단 직접 응대)</li>
+                                    <li>국제 교류에 관심이 많으며 애교심을 가지고 성실하고 책임감 있게 활동 가능한 자</li>
+                                    <li>장학금 지급규정에 따른 결격 사유가 없는 자</li>
+                                </ul>
+                            </div>
+                            <p class="sub-tit2">활동내용</p>
+                            <div class="desc">
+                                <ul class="dot-list01">
+                                    <li>해외교류대학 방문단 공식 의전<br/>
+                                    (직접 학교 소개 및 홍보, 캠퍼스 투어 진행)</li>
+                                    <li>방문·교환 외국학생 OT 진행 보조 및 캠퍼스 투어를 통한 학교생활 적응 도움</li>
+                                    <li>국제처 SNS 운영 및 관리</li>
+                                </ul>
+                            </div>
+                            <p class="sub-tit2">선발방법 및 절차 (2월 중)</p>
+                            <div class="desc">
+                                <ul class="dot-list01">
+                                    <li>선발전형 : 서류 접수 → 서류 및 면접심사 → 합격자 선발</li>
+                                    <li>선발기준 : 지원동기, 활동계획, 회화 능력 등을 고려하여 선발</li>
+                                </ul>
+                            </div>
+                            <p class="sub-tit2">지원사항</p>
+                            <div class="desc">
+                                <ul class="dot-list01">
+                                    <li>교환학생 지원 시 가산점 부여</li>
+                                    <li>활동보고서 내 시간을 합산하여 근로(장학금) 지급</li>
+                                    <li>단체 유니폼(정장) 지급</li>
+                                    <li>인스타그램 주소: <a href="https://www.instagram.com/uos_global/" title="서울시립대학교 국제처 인스타그램" class="link-txt">https://www.instagram.com/uos_global/</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>
