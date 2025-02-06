@@ -120,53 +120,46 @@ $(document).ready(function(){
 		}
 	}
 
-	// 760px 미만일 때 menu-depth1 동작 추가
-	
+	// 760px 미만일 때 menu-depth1 동작 추가	
 	function handleMenuClick() {
 		if ($(window).width() < 760) {
 			$('.menu-depth1').off('click').on('click', function (e) {
 				e.preventDefault();
+				var parentLi = $(this).parent('li');
+				$('.menu-depth1').parent('li').removeClass("active");
+				parentLi.addClass("active");
+			});
+	
+			$('.menu-depth2').off('click').on('click', function (e) {
+				if ($(window).width() >= 760) return; // 760px 이상일 때 이벤트 실행 방지
 				
 				var parentLi = $(this).parent('li');
-				var submenu = parentLi.children('.depth2_list');
-
-				if (!parentLi.hasClass('active')) {
-					// 다른 열린 메뉴 닫기
-					$('.menu-depth1').parent('li').removeClass('active');
-					$('.depth2_list').slideUp();
-				}
-
-				// 현재 클릭한 메뉴 토글
-				parentLi.toggleClass('active');
-				submenu.slideToggle();
-			});
-
-			// depth 3 있으면 클릭 이벤트
-			$('.depth2_list > li > a').off('click').on('click', function (e) {
-                var parentLi = $(this).parent('li');
-                var subSubMenu = parentLi.children('.depth3');
-                if (subSubMenu.length) {
-                    e.preventDefault();
-                    parentLi.addClass("active");
-                }else{
+				var subSubMenu = parentLi.children('.depth3');
+				if (subSubMenu.length) {
+					e.preventDefault();
+					$('.menu-depth2').parent('li').removeClass("active").children('.depth3').stop().slideUp();
+					parentLi.addClass("active");
+					subSubMenu.stop().slideDown();
+				} else {
 					parentLi.removeClass("active");
+					subSubMenu.stop().slideUp();
 				}
-            });
+			});
 		} else {
-			$('.menu-depth1').off('click'); // 데스크탑에서는 이벤트 해제
-
+			$('.menu-depth1, .menu-depth2').off('click'); // 데스크탑에서는 이벤트 해제
 		}
 	}
-
+	
 	function handleResize() {
-        handleMenuClick();
-        if ($(window).width() < 760) {
-            closeAllmenu();
-        }
-    }
-
-    handleMenuClick();
-    $(window).on('resize', handleResize);
+		handleMenuClick();
+		if ($(window).width() < 760) {
+			closeAllmenu();
+		}
+	}
+	
+	handleMenuClick();
+	$(window).on('resize', handleResize);
+	
 
 
 

@@ -161,7 +161,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
 	// 전체 메뉴 열기
 	function openAllmenu() {
-		$('#all-menu-pop').fadeIn(250, function () {
+		$('#all-menu-pop').fadeIn(0, function () {
 			$('body').addClass('setAni');
 			setTimeout(function () {
 				moveFocusToFirstMenuItem();
@@ -224,7 +224,7 @@ window.addEventListener("DOMContentLoaded", () => {
 						subSubMenu.stop().slideUp()
 					} else {
 						// 다른 항목의 active 제거 (하나만 열리도록)
-						$('.all-menu-depth .depth2 > li').removeClass("active").children('.depth3').stop().slideUp();;
+						$('.all-menu-depth .depth2 > li').removeClass("active").children('.depth3').stop().slideUp();
 					
 						parentLi.addClass("active");
 						subSubMenu.stop().slideDown()
