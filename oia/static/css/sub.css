@@ -21,15 +21,14 @@
 .line-map > li > ul > li > a:hover,.line-map > li > ul > li > a:focus{color: #1969b2;  background: #ECF8FE;}
 
 .content-area {padding:45px 0 90px; min-height: 600px;}
+.con-prepar{padding: 60px 0; text-align: center;}
+
 @media (max-width: 760px) {
     #snb-wrap > .wid{width: 100%;}
     .line-map > li:nth-child(1),.line-map > li:nth-child(2){display: none;}
     .line-map > li{font-size: 16px; width: 50%;;}
     .line-map > li > a{height: 48px;}
     .line-map > li:not(.home) > a{width: 100%;}
-    /* .line-map > li.home >a{width: 48px;}
-    .line-map > li:not(.home){width: calc(100% / 3 );}
-    .line-map > li:not(.home) >a{width: 100%;     padding: 0 25px 0 10px; background-position: right 10px  center;} */
 
 }
 @media (max-width: 480px) {
