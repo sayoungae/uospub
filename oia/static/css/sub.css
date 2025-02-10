@@ -410,11 +410,12 @@ table.type02 tr.al >td{padding:10px 20px; text-align: left; vertical-align: base
 
 /* 인사말 */
 .greeting_box{display: flex; gap: 20px;}
+.greeting_box .img_bx{min-width: 190px;}
 .greeting_box .img_bx .tit{background: #e6e6e6; padding:10px 0; text-align: center; font-weight: 700;}
 /* -- 인사말 */
 /* 조직도 */
 .organ_box{max-width: 1026px; margin:0 auto;}
-.organ_box li p{max-width: 235px; height: 52px; display: flex; align-items: center; justify-content: center; font-weight: 500; font-size: 20px; background-color: #1F4675; color: #fff; border-radius: 6px; position: relative; z-index: 9;}
+.organ_box li p{max-width: 235px; height: 62px; display: flex; align-items: center; justify-content: center; font-weight: 500; font-size: 20px; background-color: #1F4675; color: #fff; border-radius: 6px; position: relative; z-index: 9; text-align: center;}
 
 .organ_box .organ1 > li > p{margin-left: 240px; margin-bottom: 35px;}
 .organ_box .organ2 {position: relative; z-index: 9;}
@@ -482,7 +483,7 @@ table.type02 tr.al >td{padding:10px 20px; text-align: left; vertical-align: base
 .mis-conts > ul{position: relative;}
 .mis-conts > ul >li{position: relative; width: 100%; height: 180px;}
 .mis-conts > ul >li > .box{width: 500px; display: flex; flex-direction: row-reverse; position: absolute; top:0; left:50%; transform: translateX(-50%); gap: 10px; }
-.mis-conts > ul >li .tit{width: 140px; height: 140px; font-size: 17px; font-weight: 600; display: flex; align-items: center; justify-content: center; background-image: url("../images/mission_img03.png") ; background-position: center center; background-repeat: no-repeat;}
+.mis-conts > ul >li .tit{width: 140px; height: 140px; font-size: 14px; font-weight: 600; display: flex; align-items: center; justify-content: center; background-image: url("../images/mission_img03.png") ; background-position: center center; background-repeat: no-repeat; padding:30px; text-align: center; word-break: break-all;}
 .mis-conts > ul >li .desc{width: calc(100% - 150px);; margin-top: 30px;}
 .mis-conts > ul >li .d-tit{font-size: 30px; font-weight: 600; margin-bottom: 10px; border-bottom: 2px solid #19C098;}
 .mis-conts > ul >li .d-sub{color:#19C098}
@@ -633,6 +634,7 @@ table.type02 tr.al >td{padding:10px 20px; text-align: left; vertical-align: base
 @media (max-width: 480px) {
     .ind-box{padding-left: 10px;}
     /* 타이틀 */
+    .conts-tit{margin-top: 50px;}
     .conts-tit-desc{font-size: 16px;}
     /* 검색 */
     .pageSearch-wrap > ul > li > .tit{width: 100px;}
@@ -667,11 +669,17 @@ table.type02 tr.al >td{padding:10px 20px; text-align: left; vertical-align: base
     /* -- faq */
     /* 미션 핵심가치 */
     .mis-imgs{margin-top: 40px;}
-    .mis-conts > ul >li .tit{width: 110px; height: 110px; background-size: 100% 100%; font-size: 16px;}
-    .mis-conts > ul >li .desc{width: calc(100% - 120px);}
+    .mis-conts > ul{padding-top: 24px;}
+    .mis-conts > ul >li .tit{display: none;}
+    .mis-conts > ul >li .desc{width: 100%;}
     .mis-conts > ul >li .d-tit{font-size: 26px;}
     .mis-conts > ul >li .d-txt{font-size: 14px;}
     /* --미션 핵심가치 */
+
+    /* 인사말 */
+    .greeting_box{flex-direction: column;}
+    .greeting_box .img_bx{width: 190px;}
+    /* -- 인사말 */
 
     /* 조직도 */
     .organ_box .organ3{flex-direction: column-reverse;}
