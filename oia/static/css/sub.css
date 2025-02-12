@@ -149,7 +149,7 @@
 .point02{color:#EB521C; font-size: var(--fz-15); margin-top: 5px;}
 .point03{color:#0e3174; font-size: var(--fz-15); margin-top: 5px;}
 /* -- 타이틀 */
-.txt-box{border-radius: 10px; background-color: #fbfcff; padding:20px; border:1px solid #4F84CC; font-size: 14px; color:#5d5d5d; margin:20px 0;}
+.txt-box{border-radius: 10px; background-color: #F9FBFD; padding:20px; border:1px solid #4F84CC; font-size: 14px; color:#5d5d5d; margin:20px 0;}
 .txt-box > .tit{font-size: 14px; font-weight: 500; margin-bottom: 10px;}
 .txt-box > .inner{padding-left: 10px;}
 .flow-wrap {margin:20px 0 40px;}
