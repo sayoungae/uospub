@@ -73,9 +73,9 @@
     top:9px;
 }
 
-.dot-list01{margin-bottom: 40px;}
-.dot-list01 > li{position: relative; padding-left: 10px; color:#5d5d5d; margin-top: 14px;}
-.dot-list01 > li::before{
+.dotList01{margin-bottom: 40px;}
+.dotList01 > li{position: relative; padding-left: 10px; color:#5d5d5d; margin-top: 14px;}
+.dotList01 > li::before{
     content:"";
     display: inline-block;
     width: 4px;
@@ -86,7 +86,7 @@
     left:0;
     top:8px;
 }
-.dot-list01 > li > .desc{padding-left: 10px; font-size: 15px;}
+.dotList01 > li > .desc{padding-left: 10px; font-size: 15px;}
 
 
 .dotList02{padding-left: 10px;}
@@ -148,10 +148,17 @@
 .point01{ color: #5d5d5d; font-size: var(--fz-15); margin-top: 5px;}
 .point02{color:#EB521C; font-size: var(--fz-15); margin-top: 5px;}
 .point03{color:#0e3174; font-size: var(--fz-15); margin-top: 5px;}
-
-
-
 /* -- 타이틀 */
+.txt-box{border-radius: 10px; background-color: #fbfcff; padding:20px; border:1px solid #4F84CC; font-size: 14px; color:#5d5d5d; margin:20px 0;}
+.txt-box > .tit{font-size: 14px; font-weight: 500; margin-bottom: 10px;}
+.txt-box > .inner{padding-left: 10px;}
+.flow-wrap {margin:20px 0 40px;}
+.flow-wrap > ul >li{border:1px solid #b8b8b8; border-radius: 10px; padding:15px; background-color: #F5FDF4;  }
+.flow-wrap > ul >li > p{display: flex; justify-content: space-between;}
+.flow-wrap > ul >li + li{margin-top: 40px; position: relative}
+.flow-wrap > ul >li + li::before{content:"↓"; display: inline-block; position: absolute; left:50%; top:-32px; transform: translateX(-50%);}
+
+.flow-wrap > ul >li .emph{display: inline-block;     background: #f7e0df; border-radius: 5px; padding:0 10px;}
 /* 버튼 */
 .btn-wrap{margin-top: 30px;display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
 .btn-wrap.btnC{justify-content: center;}
@@ -342,8 +349,6 @@ table.type02 tr.al >td{padding:10px 20px; text-align: left; vertical-align: base
     cursor: pointer;
     padding:0;
 }
-
-
 /* // 해외체험수기 등록 */
 
 /* pageing */
@@ -636,6 +641,8 @@ table.type02 tr.al >td{padding:10px 20px; text-align: left; vertical-align: base
     /* 타이틀 */
     .conts-tit{margin-top: 50px;}
     .conts-tit-desc{font-size: 16px;}
+
+    .flow-wrap > ul >li > p{flex-direction: column; gap: 10px;}
     /* 검색 */
     .pageSearch-wrap > ul > li > .tit{width: 100px;}
     .pageSearch-wrap > ul > li input, .pageSearch-wrap > ul > li select{height: 40px; border-radius:8px ;}
