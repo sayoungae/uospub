@@ -140,7 +140,7 @@
 .conts-tit-desc{font-size:20px; font-weight: 300; text-align: center; margin-top: 10px;}
 
 .desc{padding-left: 6px; margin-bottom: 50px; word-break: keep-all;}
-.ind-box{padding-left: 26px; word-break: keep-all;}
+.ind-box{padding-left: 26px; word-break: keep-all; color: #5d5d5d;}
 .sub-txt{font-weight: 300; color: #5d5d5d; margin-top: 5px;}
 .cout{font-size: 14px; text-indent: 25px; display: inline-block;}
 .link-txt{ color:#2366bf}
