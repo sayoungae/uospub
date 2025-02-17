@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,14 +26,13 @@
         fetch('../include/footer.html')
             .then(response => response.text())
             .then(data => document.getElementById('footer').innerHTML = data);
-
+        
         fetch('../include/snb.html')
             .then(response => response.text())
             .then(data => document.getElementById('snb-wrap').innerHTML = data);
-
+       
     </script>
 </head>
-
 <body>
     <div id="wrap">
         <header class="header" id="header"></header>
@@ -60,7 +58,7 @@
                     <!-- sub content -->
                     <div class="sub-content" id="sub-content">
                         <div class="sub-tit-box">
-                            <h3 class="subTit01">철학과</h3>
+                            <h3 class="subTit01">법학과</h3>
                             <ul class="stp-bt">
                                 <li><a href="" class="print-ic"><span class="blind">인쇄</span></a></li>
                                 <li><a href="" class="share-ic"><span class="blind">공유 </span></a></li>
@@ -72,12 +70,11 @@
                             <!-- tab list -->
                             <div class="tab">
                                 <ul role="tablist">
-                                    <li id="tab_dept_01" role="tab" aria-selected="true" aria-controls="panel_dept_01"
-                                        class="active">
+                                    <li id="tab_dept_01" role="tab" aria-selected="true" aria-controls="panel_dept_01" class="active">
                                         <button type="button" class="btn-tab">Departments</button>
                                     </li>
                                     <li id="tab_dept_02" role="tab" aria-selected="false" aria-controls="panel_dept_02">
-                                        <button type="button" class="btn-tab">입학정보</button>
+                                        <button type="button" class="btn-tab">Admission정보</button>
                                     </li>
                                     <li id="tab_dept_03" role="tab" aria-selected="false" aria-controls="panel_dept_03">
                                         <button type="button" class="btn-tab">학생활동 및 진로</button>
@@ -87,18 +84,11 @@
                             <!-- //tab list -->
                             <!-- tab contents -->
                             <div class="tab-conts-wrap">
-                                <!-- 학 과 소 개 -->
-                                <div id="panel_dept_01" role="tabpanel" aria-labelledby="tab_dept_01"
-                                    class="tab-conts active">
+                                <div id="panel_dept_01" role="tabpanel" aria-labelledby="tab_dept_01" class="tab-conts active">
                                     <div class="dept-link-list">
-                                        <a href="https://liberalarts.uos.ac.kr/liberalarts/main.do?cate_id2=000010068&identified=anonymous&"
-                                            target="_blank" title="opens in a new tab"
-                                            class="icn1"><span>Homepage</span></a>
-                                        <a href="profList.html" target="_blank" title="opens in a new tab"
-                                            class="icn2"><span>교수소개</span></a>
-                                        <a href="https://www.uos.ac.kr/kor/popup/html/auos/prospectus/2022/prospectus.do?identified=anonymous&"
-                                            target="_blank" title="opens in a new tab"
-                                            class="icn3"><span>교과과정</span></a>
+                                        <a href="https://liberalarts.uos.ac.kr/liberalarts/main.do?cate_id2=000010068&identified=anonymous&" target="_blank" title="opens in a new tab" class="icn1"><span>Homepage</span></a>
+                                        <a href="profList.html" target="_blank" title="opens in a new tab" class="icn2"><span>교수소개</span></a>
+                                        <a href="https://www.uos.ac.kr/kor/popup/html/auos/prospectus/2022/prospectus.do?identified=anonymous&" target="_blank" title="opens in a new tab" class="icn3"><span>교과과정</span></a>
                                     </div>
                                     <h4 class="subTit04">교육목표</h4>
                                     <div class="table-wrap">
@@ -108,32 +98,70 @@
                                                 <col width="80%">
                                             </colgroup>
                                             <tbody>
+                                            <tr>
+                                                <th>핵심 목표</th>
+                                                <td>
+                                                    학생으로 하여금 법학 이론의 단순한 습득에 그치지 아니하고 독자적으로 연구분야를 설정하여 이를 심도 있게 연구할 수 있는 독립적 학문 수행능력을 배양하도록 지도하는 동시에 각 전공분야에서 비판적이고 창의 있는 연구를 통해서 법학의 학문적 발전에 이바지함을 교육목표로 한다.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>세부 목표</th>
+                                                <td>
+                                                    <ul>
+                                                        <li>1. 기본법(헌/민/형법)에 대한 소양을 전제로 심화된 연구 역량 강화 : 기존 법 이론을 분석하고 최신의 학문적 동향을 파악하여 그 바탕 위에 새로운 법이론 발전을 추구</li>
+                                                        <li>2. 개별법(행정/상/소송법/지적재산권/세법 등)분야에 대한 연구 역량 강화 : 외국의 다양한 법제의 연구성과 및 그 최신 동향을 비교법적 분석을 통해서 도입하고 이에 비판적으로 접근함으로써 국내 법학에 접목할 수 있는 방안을 모색</li>
+                                                        <li>3. 국제사회에 대한 규범적 이해 강화(국제법, 국제거래법 등) : 복잡다기한 사회 속에서 새롭게 나타나는 현상을 분석하고 이러한 새로운 사회현상에 대하여 법이 실제적으로 수행할 수 있는 역할과 제시할 수 있는 해결방안을 모색</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>연구 분야</th>
+                                                <td>
+                                                    <ul>
+                                                        <li>1. 기본법 및 심층분야</li>
+                                                        <li>2. 개별법 및 특화분야</li>
+                                                        <li>3. 국제관련법 연구</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <h4 class="subTit04">전공/트랙 소개</h4>
+                                    <div class="table-wrap">
+                                        <table class="type3">
+                                            <colgroup>
+                                                <col width="20%">
+                                                <col width="80%">
+                                            </colgroup>
+                                            <tbody>
                                                 <tr>
-                                                    <th>핵심 목표</th>
+                                                    <th>헌법</th>
                                                     <td>
-                                                        철학 일반의 중심적인 주제들을 보다 깊이 있고 전문적으로 연구함은 물론, 가능한 현대 철학의 핵심적인 문제들을 특성화하여 현대 사회에 대한 철학적 성찰을 심층적으로 다룸으로써, 이 분야에서 경쟁력을 갖춘 우수한 연구자를 양성하는 것이 대학원(석사/박사과정) 교육의 핵심 목표다. 이들이 향후 대학과 연구기관, 관련 전문 단체 등 철학과 직?간접적으로 연관되는 사회 분야에서의 고급 전문가로 진출할 수 있도록 육성한다.
+                                                        헌법이론에서 헌법재판 등 실무에의 적용까지 헌법 전반에 걸친 내용을 연구
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <th>세부 목표</th>
+                                                    <th>행정법</th>
                                                     <td>
-                                                        <ul>
-                                                            <li>1. 예비철학자로서 갖추어야 할 연구능력 강화</li>
-                                                            <li>2. 현대사회에 대한 철학적 주제 연구 확대 강화</li>
-                                                            <li>3. 학제적 연구 강화</li>
-                                                        </ul>
+                                                        행정법 전반에 걸친 중요한 이론에서부터 실무까지 연구
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <th>연구 분야</th>
-                                                    <td>
-                                                        <div class="mb10">
-                                                            1. 철학의 전통적이고 기본적인 핵심 주제들에 대한 연구. 형이상학, 존재론, 인식론, 논리학, 언어분석철학, 동양철학, 서양 철학사 등.
-                                                        </div>
-                                                        <div>
-                                                            2. 현대사회의 중요 문제들과 대부분 깊이 관련되어 있는, 현대철학의 핵심 쟁점 들에 대한 연구. 특히 이를 크게 3영역, 곧 ‘도시 사회와 윤리 영역’, ‘과학기술과 인간’, ‘문화와 예술’ 영역으로 나누어 집중적으로 연구할 수 있다. 이것들은 궁극적으로 도시와 관련한 제 학문들의 연구에 철학적 기초 토대를 제공해 줄 수 있을 것이다.
-                                                        </div>
-                                                    </td>
+                                                    <th>형사법</th>
+                                                    <td>범죄와 형벌에 관한 제반이론 및 실무를 전반적으로 연구</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>민사법</th>
+                                                    <td>채권법, 물권법 등의 민사법에 관한 전체적인 이론 및 실무에의 적용 및 사례 등을 연구</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>상사법</th>
+                                                    <td>회사법, 국제거래법, 유가증권법 등 상사 전반 국내외 이론 및 실무에의 적용방법 및 사례 등 연구</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>노동법</th>
+                                                    <td>근로자들의 노동관계에 대한 이론 및 실무에의 적용 사례 등을 연구</td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -143,41 +171,36 @@
                                         <ul class="dept-info">
                                             <li>
                                                 <div>주임교수</div>
-                                                <div>이종환 교수</div>
+                                                <div>박지원 교수</div>
                                             </li>
                                             <li>
                                                 <div>TEL</div>
-                                                <div>+82-2-6490-2582</div>
+                                                <div>+82-2-6490-5083</div>
                                             </li>
                                             <li>
                                                 <div>E-mail</div>
-                                                <div>shinhk@uos.ac.kr</div>
+                                                <div></div>
                                             </li>
                                             <li>
                                                 <div>학과 사무실</div>
-                                                <div>인문학관 4층 419호</div>
+                                                <div>법학관 5층 532호</div>
                                             </li>
                                             <li>
                                                 <div>TEL</div>
-                                                <div>+82-2-6490-2570</div>
+                                                <div>+82-2-6490-2110</div>
                                             </li>
                                             <li>
                                                 <div>FAX</div>
-                                                <div>+82-2-6490-2574</div>
+                                                <div>+82-2-6490-2113</div>
                                             </li>
 
                                         </ul>
                                     </div>
                                 </div>
-                                <!-- //학 과 소 개 -->
-
-                                <!-- 입 학 정 보 -->
                                 <div id="panel_dept_02" role="tabpanel" aria-labelledby="tab_dept_02" class="tab-conts">
                                     <div class="dept-link-list">
-                                        <a href="../admission/regular.html" target="_blank" title="opens in a new tab"
-                                            class="icn4"><span>모집요강</span></a>
-                                        <a href="https://rule.uos.ac.kr/lmxsrv/main/main.srv" target="_blank"
-                                            title="opens in a new tab" class="icn5"><span>운영규정</span></a>
+                                        <a href="../admission/regular.html" target="_blank" title="opens in a new tab" class="icn4"><span>모집요강</span></a>
+                                        <a href="https://rule.uos.ac.kr/lmxsrv/main/main.srv" target="_blank" title="opens in a new tab" class="icn5"><span>운영규정</span></a>
                                     </div>
                                     <h4 class="subTit04">일반전형 학위과정</h4>
                                     <div class="table-wrap">
@@ -189,7 +212,7 @@
                                             <tbody>
                                                 <tr>
                                                     <th>석사학위</th>
-                                                    <td style="text-align: left; word-break: keep-all;">
+                                                    <td >
                                                         <ul class="dot-list01">
                                                             <li>국내·외 대학에서 학사학위 취득한 자 또는 현재 등록 학기 종료에 따른 학위취득예정자</li>
                                                             <li>관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정되는 자</li>
@@ -198,7 +221,7 @@
                                                 </tr>
                                                 <tr>
                                                     <th>박사학위</th>
-                                                    <td>
+                                                    <td >
                                                         <ul class="dot-list01">
                                                             <li>국내·외 대학에서 석사학위 취득한 자 또는 현재 등록 학기 종료에 따른 학위취득예정자</li>
                                                             <li>관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정되는 자</li>
@@ -206,8 +229,10 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <th>북한 이탈주민<br />석·박사 지원 자격</th>
-                                                    <td style="text-align: left; word-break: keep-all;">
+                                                    <th>북한이탈주민<br>
+                                                        석·박사지원자격
+                                                    </th>
+                                                    <td >
                                                         <ul class="dot-list01">
                                                             <li>석사 또는 박사학위과정의 지원 자격을 갖춘 자</li>
                                                             <li>[북한이탈주민의 보호 및 정착지원에 관한 법률]에 의한 북한이탈주민으로 등록된 자</li>
@@ -219,9 +244,10 @@
                                     </div>
                                     <h4 class="subTit04">추가 지원자격 및 제출서류</h4>
                                     <ul class="dot-list02">
-                                        <li>전공 영어 필답 고사 실시</li>
+                                        <li>학업계획서에 희망 전공 명시(단, 희망 전공이 확정적인 것은 아니며 재학 중 변경 가능)</li>
+                                        <li>자기소개서(자유 형식) 추가 제출 : 학업 수행과 관련된 이력 사항 등을 기재할 것</li>
                                     </ul>
-                                    <h4 class="subTit04">과정별 기본 사항 (2022학년도 이후 입학생 기준)</h4>
+                                    <h4 class="subTit04">과정별 기본 사항 (2022학년도 입학생 기준)</h4>
                                     <div class="table-wrap">
                                         <table class="type1">
                                             <thead>
@@ -250,91 +276,23 @@
                                         </table>
                                         <p class="point mt10">※ 기타 학사 정보: 일반대학원 홈페이지 > 교육/학사 탭의 관련 항목 페이지 참조</p>
                                     </div>
-                                    
                                     <h4 class="subTit04">박사과정 논문 최소 실적 요건</h4>
                                     <ul class="dot-list02">
-                                        <li>단독저자로서 한국연구재단 등재(후보)지 이상에 2편 이상 논문 게재 실적</li>
+                                        <li>제1저자로서 한국연구재단 등재(후보)지 이상에 1편 이상 논문 게재 실적</li>
                                     </ul>
                                 </div>
-                                <!-- // 입 학 정 보 -->
-                                <!-- 학 생 활 동 및 진 로 -->
                                 <div id="panel_dept_03" role="tabpanel" aria-labelledby="tab_dept_03" class="tab-conts">
-                                    <h4 class="subTit04">학생활동</h4>
-                                    <div class="table-wrap">
-                                        <table class="type3">
-                                            <thead>
-                                                <colgroup>
-                                                    <col width="20%">
-                                                    <col width="80%">
-                                                </colgroup>
-                                                <tbody>
-                                                    <tr>
-                                                        <th>연구소</th>
-                                                        <td style="text-align: left; word-break: keep-all;">
-                                                            미래철학연구센터
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </thead>
-                                        </table>
-                                    </div>
                                     <h4 class="subTit04">장학금 지원</h4>
                                     <ul class="dot-list02">
-                                        <li>
-                                            <p>교내 교수지원장학, 인문한국(HK)사업 연구보조장학, 서울인문장학 등</p>
-                                        </li>
-                                        <li>
-                                            <a href="https://graduate.uos.ac.kr/graduateNew/html/support/scholarship.do?menuid=3000004001001000000"
-                                                class="link-ty1">장학금 지급 및 학자금 대출 안내 바로가기</a>
-                                        </li>
+                                        <li><a href="https://graduate.uos.ac.kr/graduateNew/html/support/scholarship.do?menuid=3000004001001000000" class="link-ty1">장학금 지급 및 학자금 대출 안내 바로가기</a></li>
                                     </ul>
                                     <h4 class="subTit04">졸업 후 진로</h4>
                                     <ul class="dot-list02">
-                                        <li>대학 및 연구기관 연구원</li>
-                                        <li>
-                                            출판, 언론 등 철학과 직접 혹은 간접적으로 연관되는 사회 분야의 고급 전문가로 진출
-                                            학과 홍보 사항
-                                        </li>
+                                        <li>정부 및 공공기관 연구소</li>
+                                        <li>공기업</li>
+                                        <li>교육기관</li>
                                     </ul>
-                                    <h4 class="subTit04">학과 홍보 사항</h4>
-                                    <ul class="dot-list02">
-                                        <li>
-                                            3대 특성화 영역 중심으로 전문적인 연구 및 교육 실시
-                                            <div class="table-wrap">
-                                                <table class="type3">
-                                                    <thead>
-                                                        <colgroup>
-                                                            <col width="20%">
-                                                            <col width="80%">
-                                                        </colgroup>
-                                                        <tbody>
-                                                            <tr>
-                                                                <th>도시 사회 / 문화 / 예술철학</th>
-                                                                <td style="text-align: left; word-break: keep-all;">
-                                                                    도시 과학의 철학적 베이스 연구 및 교육
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <th>과학 / 기술 철학 및 윤리 영역</th>
-                                                                <td style="text-align: left; word-break: keep-all;">
-                                                                    21세기 첨단 과학기술의 철학적, 윤리적 쟁점 연구 및 교육
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <th>언어논리철학 영역</th>
-                                                                <td style="text-align: left; word-break: keep-all;">
-                                                                    LEET, MEET, DEET, PSAT, Writing & Presentation 기반인 논리와 비판적 사고 연구 및 교육
-                                                                </td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </thead>
-                                                </table>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                    
                                 </div>
-                                <!-- //학 생 활 동 및 진 로 -->
                             </div>
                             <!-- //tab contents -->
                         </div>
@@ -348,5 +306,4 @@
         <div id="footer"></div>
     </div>
 </body>
-
 </html>

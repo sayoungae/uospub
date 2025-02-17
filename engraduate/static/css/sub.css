@@ -68,7 +68,7 @@
     left:0;
     top:0;
 }
-.dot-list02 a{font-weight: 500; color: #557cc3; padding: 0 5px; background-color: #f0f5fb;    border-radius: 10px;}
+.dot-list02 a:not(.link-ty1){font-weight: 500; color: #557cc3; padding: 0 5px; background-color: #f0f5fb;    border-radius: 10px;}
 
 .dot-list03{padding-left: 7px; padding-bottom: 10px; font-size: var(--fz-18);}
 .dot-list03 li:nth-child(1){margin-top: 10px;}
