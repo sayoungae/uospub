@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,13 +27,14 @@
         fetch('../include/footer.html')
             .then(response => response.text())
             .then(data => document.getElementById('footer').innerHTML = data);
-        
+
         fetch('../include/snb.html')
             .then(response => response.text())
             .then(data => document.getElementById('snb-wrap').innerHTML = data);
-       
+
     </script>
 </head>
+
 <body>
     <div id="wrap">
         <header class="header" id="header"></header>
@@ -58,7 +60,7 @@
                     <!-- sub content -->
                     <div class="sub-content" id="sub-content">
                         <div class="sub-tit-box">
-                            <h3 class="subTit01">도시사회학과</h3>
+                            <h3 class="subTit01">통계데이터사이언스학과</h3>
                             <ul class="stp-bt">
                                 <li><a href="" class="print-ic"><span class="blind">인쇄</span></a></li>
                                 <li><a href="" class="share-ic"><span class="blind">공유 </span></a></li>
@@ -70,7 +72,8 @@
                             <!-- tab list -->
                             <div class="tab">
                                 <ul role="tablist">
-                                    <li id="tab_dept_01" role="tab" aria-selected="true" aria-controls="panel_dept_01" class="active">
+                                    <li id="tab_dept_01" role="tab" aria-selected="true" aria-controls="panel_dept_01"
+                                        class="active">
                                         <button type="button" class="btn-tab">Departments</button>
                                     </li>
                                     <li id="tab_dept_02" role="tab" aria-selected="false" aria-controls="panel_dept_02">
@@ -79,16 +82,25 @@
                                     <li id="tab_dept_03" role="tab" aria-selected="false" aria-controls="panel_dept_03">
                                         <button type="button" class="btn-tab">학생활동 및 진로</button>
                                     </li>
+                                    <li id="tab_dept_04" role="tab" aria-selected="false" aria-controls="panel_dept_04">
+                                        <button type="button" class="btn-tab">연구실 소개</button>
+                                    </li>
                                 </ul>
                             </div>
                             <!-- //tab list -->
                             <!-- tab contents -->
                             <div class="tab-conts-wrap">
-                                <div id="panel_dept_01" role="tabpanel" aria-labelledby="tab_dept_01" class="tab-conts active">
+                                <div id="panel_dept_01" role="tabpanel" aria-labelledby="tab_dept_01"
+                                    class="tab-conts active">
                                     <div class="dept-link-list">
-                                        <a href="https://liberalarts.uos.ac.kr/liberalarts/main.do?cate_id2=000010068&identified=anonymous&" target="_blank" title="opens in a new tab" class="icn1"><span>Homepage</span></a>
-                                        <a href="profList.html" target="_blank" title="opens in a new tab" class="icn2"><span>교수소개</span></a>
-                                        <a href="https://www.uos.ac.kr/kor/popup/html/auos/prospectus/2022/prospectus.do?identified=anonymous&" target="_blank" title="opens in a new tab" class="icn3"><span>교과과정</span></a>
+                                        <a href="https://liberalarts.uos.ac.kr/liberalarts/main.do?cate_id2=000010068&identified=anonymous&"
+                                            target="_blank" title="opens in a new tab"
+                                            class="icn1"><span>Homepage</span></a>
+                                        <a href="profList.html" target="_blank" title="opens in a new tab"
+                                            class="icn2"><span>교수소개</span></a>
+                                        <a href="https://www.uos.ac.kr/kor/popup/html/auos/prospectus/2022/prospectus.do?identified=anonymous&"
+                                            target="_blank" title="opens in a new tab"
+                                            class="icn3"><span>교과과정</span></a>
                                     </div>
                                     <h4 class="subTit04">교육목표</h4>
                                     <div class="table-wrap">
@@ -98,49 +110,27 @@
                                                 <col width="80%">
                                             </colgroup>
                                             <tbody>
-                                            <tr>
-                                                <th>핵심 목표</th>
-                                                <td>
-                                                    도시사회학과 대학원은 도시문화서비스, 문화산업, 문화비평, 문화기획전문가, 지역사회 전문가의 양성을 목표로 삼는다. 도시사회에 대한 학제적 접근을 바탕으로 하며, 사회문화 이론 교육, 현장 응용중심의 세부전공, 전문가 및 단체와의 협력과 인턴쉽 프로그램을 통해 이론과 실제가 융합된 교육과정을 구성한다. 특히 이론과 방법론 교육을 기반으로 복잡한 도시 현상을 독자적으로 연구 분석할 수 있는 능력을 강화시킴으로써 도시사회분야의 고급 전문인력에 대한 수요에 부응한다.
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th>세부 목표</th>
-                                                <td>
-                                                    <ul>
-                                                        <li>1. 도시사회 전문 능력의 특성화 및 집중화</li>
-                                                        <li>2. 연구 분석 능력 강화</li>
-                                                        <li>3. 현장지향적 교육을 통한 현실적합성 있는 연구능력 함양</li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th>연구 분야</th>
-                                                <td>
-                                                    문화산업분야 및 지역사회연구분야
-                                                </td>
-                                            </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <h4 class="subTit04">전공/트랙 소개</h4>
-                                    <div class="table-wrap">
-                                        <table class="type3">
-                                            <colgroup>
-                                                <col width="20%">
-                                                <col width="80%">
-                                            </colgroup>
-                                            <tbody>
                                                 <tr>
-                                                    <th>문화산업전문</th>
+                                                    <th>핵심 목표</th>
                                                     <td>
-                                                        문화산업분야의 연구는 미래 산업으로 부상하는 문화산업의 발전과 도시 변동의 관계를 밝히는 것을 목적으로 삼는다.
+                                                        통계학은 자연현상, 사회현상, 경제현상 등을 대상으로 여러 가지 자료와 정보를 과학적 으로 분석 추론하는 학문이다. 대학원에서는 통계학 이론과 응용분야와 관련한 고도의 전문지식을 갖추도록 하여 사회에서 필요로 하는 통계전문가를 양성하는데 그 목표를 둔다.
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <th>지역사회연구</th>
+                                                    <th>세부 목표</th>
                                                     <td>
-                                                        국지역사회연구분야의 연구는 산업화 및 정보화에 따라 새로이 발생하는 도시 현상들에 대한 사회과학적 분석을 목적으로 삼는다.
+                                                        <p>표본조사 이론, 기계학습 및 인공지능, 대기체계이론과 보험 관련 전공 중심으로 타 대 학과의 차별성을 추구</p>
+                                                        <ul>
+                                                            <li>1. 통계학 전문지식의 습득 : 고급 통계학, 확률론 이론 습득</li>
+                                                            <li>2. 고급 통계의 응용능력 배양 : 실전 문제 해결을 위한 통계적 응용능력 배양, 빅데이터 및 데이터마이닝 기법의 습득을 통한 거대자료의 분석 능력의 배양, 기계학습 및 인공지능 이론 습득을 통한 복잡한 현상에 대한 추론 능력 배양</li>
+                                                            <li>3. 컴퓨터 관련 능력을 갖춘 통계전문가 양성 : 데이터베이스를 통한 대용량 자료 처리 능력 습득, 다양한 컴퓨터 언어의 습득을 통한 통계적 방법의 구현</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>연구 분야</th>
+                                                    <td>
+                                                        표본조사이론, 이산자료분석, 베이지안 자료 분석, 응용확률과정, 위험관리, 데이터마이닝, 기계학습, 인공지능
                                                     </td>
                                                 </tr>
                                             </tbody>
@@ -151,36 +141,37 @@
                                         <ul class="dept-info">
                                             <li>
                                                 <div>주임교수</div>
-                                                <div>박효민 교수</div>
+                                                <div>안수한 교수</div>
                                             </li>
                                             <li>
                                                 <div>TEL</div>
-                                                <div>+82-2-6490-2747</div>
+                                                <div>+82-2-6490-2632</div>
                                             </li>
                                             <li>
                                                 <div>E-mail</div>
-                                                <div>hyominp@uos.ac.kr</div>
+                                                <div></div>
                                             </li>
                                             <li>
                                                 <div>학과 사무실</div>
-                                                <div>21세기관 4층 409호</div>
+                                                <div>미래관 7층 708호</div>
                                             </li>
                                             <li>
                                                 <div>TEL</div>
-                                                <div>+82-2-6490-2730~1</div>
+                                                <div>+82-2-6490-2625~6</div>
                                             </li>
                                             <li>
                                                 <div>FAX</div>
-                                                <div>+82-2-6490-2734</div>
+                                                <div>+82-2-6490-2629</div>
                                             </li>
-
                                         </ul>
                                     </div>
                                 </div>
                                 <div id="panel_dept_02" role="tabpanel" aria-labelledby="tab_dept_02" class="tab-conts">
                                     <div class="dept-link-list">
-                                        <a href="../admission/regular.html" target="_blank" title="opens in a new tab" class="icn4"><span>모집요강</span></a>
-                                        <a href="https://rule.uos.ac.kr/lmxsrv/main/main.srv" target="_blank" title="opens in a new tab" class="icn5"><span>운영규정</span></a>
+                                        <a href="../admission/regular.html" target="_blank" title="opens in a new tab"
+                                            class="icn4"><span>모집요강</span></a>
+                                        <a href="https://rule.uos.ac.kr/lmxsrv/main/main.srv" target="_blank"
+                                            title="opens in a new tab" class="icn5"><span>운영규정</span></a>
                                     </div>
                                     <h4 class="subTit04">일반전형 학위과정</h4>
                                     <div class="table-wrap">
@@ -192,7 +183,7 @@
                                             <tbody>
                                                 <tr>
                                                     <th>석사학위</th>
-                                                    <td >
+                                                    <td>
                                                         <ul class="dot-list01">
                                                             <li>국내·외 대학에서 학사학위 취득한 자 또는 현재 등록 학기 종료에 따른 학위취득예정자</li>
                                                             <li>관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정되는 자</li>
@@ -201,7 +192,7 @@
                                                 </tr>
                                                 <tr>
                                                     <th>박사학위</th>
-                                                    <td >
+                                                    <td>
                                                         <ul class="dot-list01">
                                                             <li>국내·외 대학에서 석사학위 취득한 자 또는 현재 등록 학기 종료에 따른 학위취득예정자</li>
                                                             <li>관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정되는 자</li>
@@ -212,7 +203,7 @@
                                                     <th>북한이탈주민<br>
                                                         석·박사지원자격
                                                     </th>
-                                                    <td >
+                                                    <td>
                                                         <ul class="dot-list01">
                                                             <li>석사 또는 박사학위과정의 지원 자격을 갖춘 자</li>
                                                             <li>[북한이탈주민의 보호 및 정착지원에 관한 법률]에 의한 북한이탈주민으로 등록된 자</li>
@@ -257,71 +248,83 @@
                                     </div>
                                     <h4 class="subTit04">박사과정 논문 최소 실적 요건</h4>
                                     <ul class="dot-list02">
-                                        <li>제1저자로서 한국연구재단 등재지 이상에 1편 이상 논문을 게재 실적</li>
+                                        <li>제1저자로서 SCI(E) 등재지 이상에 1편 이상 논문 게재 실적</li>
                                     </ul>
-                                    <h4 class="subTit04">학과 내규 - 종합시험 과목</h4>
+                                    <h4 class="subTit04">학과 내규</h4>
                                     <ul class="dot-list02">
-                                        <li>석사/박사 공통 3과목: 이론(고전사회학이론,현대사회학이론) 중 1과목, 방법론(사회통계,질적방법론) 중 1과목, 자유 1과목</li>
-                                        <li>박사 추가 2과목: 지도교수와 협의하여 문헌리뷰 형태</li>
+                                        <li><a href="#a" class="link-ty1" onclick="fnDirFileDown('/files/graduate/graduate/admission/department/nature/', '통계데이터사이언스학과내규업데이트_0309.pdf', '통계데이터사이언스학과내규업데이트_0309.pdf');return false;">학과내규
+                                            다운로드</a></li>
                                     </ul>
                                     <h4 class="subTit04">일반대학원 운영 원칙</h4>
                                     <ul class="dot-list02">
-                                        <li>전일제 우선 : 장학금 수혜 학생 선정 – 변경 시, 학과로 필히 연락</li>
+                                        <li>전일제 우선 : 장학금 수혜 학생 선정 ? 변경 시, 학과로 필히 연락</li>
                                     </ul>
                                 </div>
                                 <div id="panel_dept_03" role="tabpanel" aria-labelledby="tab_dept_03" class="tab-conts">
-                                    <h4 class="subTit04">학생활동</h4>
+                                    <h4 class="subTit04">장학금 지원</h4>
+                                    <ul class="dot-list02">
+                                        <li>박사학위과정 : 신입생으로 전일제의 학생인 경우 등록금 전액 지급</li>
+                                        <li><a href="https://graduate.uos.ac.kr/graduateNew/html/support/scholarship.do?menuid=3000004001001000000"
+                                                class="link-ty1">장학금 지급 및 학자금 대출 안내 바로가기</a></li>
+                                    </ul>
+                                    <h4 class="subTit04">졸업 후 진로</h4>
+                                    <ul class="dot-list02">
+                                        <li>교보생명 등 보험사 빅데이터활용팀</li>
+                                        <li>한국의약품안전관리원 약물역학빅데이터분석팀</li>
+                                        <li>산업연구원 산업통계분석본부 등</li>
+                                    </ul>
+                                </div>
+                                <div id="panel_dept_04" role="tabpanel" aria-labelledby="tab_dept_04" class="tab-conts">
                                     <div class="table-wrap">
-                                        <table class="type3">
+                                        <table class="type1">
+                                            <caption>통계데이터사이언스학과 연구실 · 실험실</caption>
                                             <colgroup>
-                                                <col style="width: 20%">
-                                                <col style="width: 80%">
+                                                <col class="w120px">
+                                                <col>
+                                                <col>
+                                                <col>
                                             </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th rowspan="2">학과</th>
+                                                    <th colspan="3">연구실 · 실험실 </th>
+                                                </tr>
+                                                <tr>
+                                                    <th>국문 명칭</th>
+                                                    <th>영문 명칭</th>
+                                                    <th>홈페이지/소개글</th>
+                                                </tr>
+                                            </thead>
                                             <tbody>
                                                 <tr>
-                                                    <th>연구사업참여</th>
-                                                    <td>
-                                                        <ul class="dot-list01">
-                                                            <li>SSK 대형연구센터 선정 (글로컬 문화·공감사회 연구센터)</li>
-                                                        </ul>
-                                                    </td>
+                                                    <td rowspan="5" style="text-align:center;">통계데이터<br>사이언스학과</td>
+                                                    <td class="al">표본이론연구실</td>
+                                                    <td class="al">Sampling Theory Lab</td>
+                                                    <td style="text-align: center;"><a href="http://stat.uos.ac.kr/" target="_blank" title="새창으로 열기" class="link-web"><span class="blind">website</span></a></td>
                                                 </tr>
                                                 <tr>
-                                                    <th>학회 및 학술활동</th>
-                                                    <td>
-                                                        <ul class="dot-list01">
-                                                            <li>2019 Urban Culture & Social Empathy (SSK연구센터) 국제회의 개최</li>
-                                                            <li>2019년 국제학술교류행사 진행(2019 UOS-KGU Shuttle Seminar on Urban Culture and Space: iews from Korea and Japan)</li>
-                                                            <li>2018 Cultural Dynamics of Social Empathy Conference (SSK연구센터) 개최</li>
-                                                            <li>2018 도시 씬 국제컨퍼런스 개최(International Conference on Scene Dynamics and Urban Regeneration)</li>
-                                                        </ul>
-                                                    </td>
+                                                    <td class="al lLine">수리통계연구실</td>
+                                                    <td class="al">Mathematical Statistics Lab</td>
+                                                    <td style="text-align: center;"><a href="http://stat.uos.ac.kr/" target="_blank" title="새창으로 열기" class="link-web"><span class="blind">website</span></a></td>
                                                 </tr>
                                                 <tr>
-                                                    <th>연구소</th>
-                                                    <td>
-                                                        <ul class="dot-list01">
-                                                            <li>글로컬 문화·공감사회 연구센터</li>
-                                                            <li>도시사회연구센터</li>
-                                                        </ul>
-                                                    </td>
+                                                    <td class="al lLine">확률론연구실</td>
+                                                    <td class="al">Probability theory Lab</td>
+                                                    <td style="text-align: center;"><a href="http://stat.uos.ac.kr/" target="_blank" title="새창으로 열기" class="link-web"><span class="blind">website</span></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="al lLine">데이터마이닝실험실</td>
+                                                    <td class="al">Dataming Lab</td>
+                                                    <td style="text-align: center;"><a href="http://stat.uos.ac.kr/" target="_blank" title="새창으로 열기" class="link-web"><span class="blind">website</span></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="al lLine">통계상담실</td>
+                                                    <td class="al">Statistical Consulting Lab</td>
+                                                    <td style="text-align: center;"><a href="http://stat.uos.ac.kr/" target="_blank" title="새창으로 열기" class="link-web"><span class="blind">website</span></a></td>
                                                 </tr>
                                             </tbody>
                                         </table>
                                     </div>
-                                    <h4 class="subTit04">장학금 지원</h4>
-                                    <ul class="dot-list02">
-                                        <li>교내 장학(강의조교, 수업지원/연구지원 조교) - 전일제학생 우선배정</li>
-                                        <li><a href="https://graduate.uos.ac.kr/graduateNew/html/support/scholarship.do?menuid=3000004001001000000" class="link-ty1">장학금 지급 및 학자금 대출 안내 바로가기</a></li>
-                                    </ul>
-                                    <h4 class="subTit04">졸업 후 진로</h4>
-                                    <ul class="dot-list02">
-                                        <li>사회정책 및 문화행정 전문가</li>
-                                        <li>문화산업, 이벤트 기획자</li>
-                                        <li>문화큐레이터, 문화비평분야 전문가</li>
-                                        <li>해외지역 등 도시 전문가, 지역사회 연구원</li>
-                                        <li>리서치통계조사 전문직, 연구소</li>
-                                    </ul>
                                 </div>
                             </div>
                             <!-- //tab contents -->
@@ -336,4 +339,5 @@
         <div id="footer"></div>
     </div>
 </body>
+
 </html>
