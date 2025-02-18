@@ -600,7 +600,7 @@ table.type02 tr.al >td{padding:10px 20px; text-align: left; vertical-align: base
     .organ_box .organ1 > li > p{margin:0 auto 60px;}
 
     .organ_box .organ2 > li > p{margin:0 auto 60px;}
-    .organ_box .organ2 > li > p:after{height: 30px; bottom: -30px;}
+    .organ_box .organ2 > li > p:after{height: 19px; bottom: -19px;}
     .organ_box .organ2::before{border-left:1px solid #999; width: 54%; transform: translateX(-50%); right: auto; left:50%;}
     .organ_box .organ3 > li:nth-child(1){width: 50%;}
     .organ_box .organ3 > li:nth-child(2){width: 50%;}
@@ -697,6 +697,7 @@ table.type02 tr.al >td{padding:10px 20px; text-align: left; vertical-align: base
     /* -- 인사말 */
 
     /* 조직도 */
+    .organ_box .organ2 > li > p:after{height: 30px; bottom: -30px;}
     .organ_box .organ3{flex-direction: column-reverse;}
     .organ_box .organ3 > li:nth-child(1){width: 100%;}
     .organ_box .organ3 > li:nth-child(2){width: 100%;}
