@@ -1,5 +1,5 @@
 
-.s-container{min-height: 700px; line-height: 1.1;}
+.s-container{min-height: 700px; line-height: 1.2;}
 .sub-banner{width: 100%; height: 250px; max-width: 1980px; margin:0 auto; background-repeat: no-repeat; background-position: left bottom; border-radius: 0 0 0 100px;}
 .sub-banner.sub1{ background-image: url("../images/sub-ban01.png");}
 .sub-banner.sub2{ background-image: url("../images/sub-ban02.png");}
@@ -54,12 +54,12 @@
 .dot-list01{padding-left: 11px; font-size: var(--fz-18);}
 .dot-list01 > li{position: relative; padding-left: 14px; overflow: hidden;}
 .dot-list01 > li + li{margin-top: 10px;}
-.dot-list01 > li::before{content:""; display: inline-block; width: 5px; height: 5px; background-color: #BEBEBE; border-radius: 50%; position: absolute; left:0; top:10px}
+.dot-list01 > li::before{content:""; display: inline-block; width: 5px; height: 5px; background-color: #BEBEBE; border-radius: 50%; position: absolute; left:0; top:8px}
 
 .dot-list02{margin:0px 10px 40px; font-size: var(--fz-18);}
 .dot-list02 > li{position: relative; padding-left: 10px; overflow: hidden; position: relative;}
-.dot-list02 > li + li{margin-top: 5px;}
-.dot-list02 > li::before{content:""; display: inline-block; width: 4px; height: 4px; background-color: #707070; border-radius: 50%; position: absolute; left:0; top:10px}
+.dot-list02 > li + li{margin-top: 8px;}
+.dot-list02 > li::before{content:""; display: inline-block; width: 4px; height: 4px; background-color: #707070; border-radius: 50%; position: absolute; left:0; top:8px}
 .dot-list02 > li > ul{margin-bottom: 10px;}
 .dot-list02 > li > ul >li{padding-left: 12px; margin-top: 5px; position: relative;}
 .dot-list02 > li > ul >li::before{
@@ -104,7 +104,7 @@
     border:1px solid #4366c1;
     position: absolute;
     left:0;
-    top:7px;
+    top:8px;
 }
 .dot-list04 > li > ul{padding-left: 0;}
 .dot-list04 > li > ul >li{padding-left: 12px; margin-top: 5px; position: relative;}
@@ -117,10 +117,10 @@
 }
 
 .dot-list05{padding-left: 10px; padding-bottom: 20px; padding-top: 10px;font-size: var(--fz-18);}
-.dot-list05 > li{position: relative; padding-left: 14px;    background: url(../images/blt_03.png) no-repeat 0 9px;}
+.dot-list05 > li{position: relative; padding-left: 14px;    background: url(../images/blt_03.png) no-repeat 0 8px;}
 .dot-list05 > li + li{margin-top: 10px;}
 .dot-list05 > li > ul{padding-left: 0;}
-.dot-list05 > li > ul >li{padding-left: 12px; margin-top: 5px; position: relative;}
+.dot-list05 > li > ul >li{padding-left: 12px; margin-top: 8px; position: relative;}
 .dot-list05 > li > ul >li::before{
     content:"-";
     display: inline-block;
@@ -353,7 +353,7 @@
 .btn{display: inline-block; text-align: center; border-radius: 6px; font-weight: 500; background-color: #fff; color:#0e2a67; padding: 10px 30px; border:1px solid #BCBECB;}
 .btn.smBtn{min-width: 80px; height: 42px;}
 .pdfBtn{ display: flex; align-items: stretch; gap: 5px; flex-wrap: wrap; margin-bottom: 20px;}
-.pdfBtn > .btn{width: calc(100% / 4 - 5px); display: flex; align-items: center; justify-content: center; height: 50px; line-height: 1.2; padding: 10px 20px;}
+.pdfBtn > .btn{width: calc(100% / 4 - 5px); display: flex; align-items: center; justify-content: center; min-height: 50px; line-height: 1.2; padding: 10px 20px;}
 .pdfBtn > .btn:hover,.pdfBtn > .btn:focus{box-shadow: 0 0 10px rgba(0, 59, 158,0.3); transition: box-shadow 0.3s;}
 /* -- 버튼 */
 
@@ -516,7 +516,7 @@
 .course_content > .imgs{margin-bottom: 10px;}
 .course_square.type2{min-height: 142px;}
 .course_square.type2 > .course_content{display: flex; justify-content: center; flex-direction: column;}
-
+.course_square.type2 > .course_content img{width: auto;}
 .calTop{position: relative; margin-bottom: 40px;}
 .calYaer{color: #3c497b; font-size: var(--fz-38); text-align: center;}
 .calYaer img{vertical-align: middle;}
@@ -565,6 +565,8 @@
 }
 
 @media (max-width: 760px) {
+    /* tab */
+    .s-container .tab-area .tab > ul{flex-direction: column;}
     /* 대학원 소개 */
     .welcomeBox{flex-direction: column;}
     .welcomeBox .intro_left{width: 100%;}
@@ -602,8 +604,6 @@
     .sub-tit-box{flex-direction: column-reverse; align-items: flex-start; margin-bottom: 40px;}
     .stp-bt{width: 100%; justify-content: flex-end}
     /* tab */
-    .s-container .tab-area .tab > ul{flex-wrap: wrap;}
-    .s-container .tab-area .tab > ul > li {flex:1 1 45%;}
 
     .subTit03{margin-top: 40px; margin-bottom: 25px;}
     /* dot */
@@ -627,6 +627,10 @@
     .txt-box2 > .tit{padding:20px; justify-content: space-between}
     .txt-box2 > .tit > h4{width: calc(100% - 44px);}
     .txt-box2 > .in{padding:20px;}
+
+    .course{row-gap: 60px;}
+    .course_square{width: 100%; margin-right: 0;}
+    .course_square:after{top:auto; bottom: -55px; left:50%;  transform: translate(-50%, 0) rotate(90deg);}
 }
 
 

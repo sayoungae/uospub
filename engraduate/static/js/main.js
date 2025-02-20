@@ -3,10 +3,10 @@ $(function(){
     const mVisual = new Swiper('.visual-slide', {
         speed: 800,
 		loop: true,
-        // autoplay: {
-        //     delay: 2500,
-        //     disableOnInteraction: false,
-        // },
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
         navigation: {
             prevEl: '.mvSlide_prev',
             nextEl: '.mvSlide_next',

@@ -111,7 +111,7 @@ body{font-weight: 400; min-width: 320px; line-height: 1.4; font-family: 'Pretend
 .fcBl2{color:#1b4fb4;}
 .fcR{color:#e60013;}
 .fcR2{color:#d23340;}
-.point{color:#0e3174; font-size: var(--fz-18);}
+.point{color:#0e3174; font-size: var(--fz-16);}
 /* var */
 :root{
     /* font-size */
@@ -130,6 +130,7 @@ body{font-weight: 400; min-width: 320px; line-height: 1.4; font-family: 'Pretend
 }
 @media (max-width: 760px) {
     :root{
+        --fz-18: 17px;
         --fz-28: 26px;
         --fz-30: 28px;
         --fz-36: 30px;
@@ -160,6 +161,7 @@ body{font-weight: 400; min-width: 320px; line-height: 1.4; font-family: 'Pretend
 a.linkNwin {
     background: url("../images/nWindow_ic.png") no-repeat 96% 6px; padding-right: 26px;
 }
+a.linkNwin:hover,a.linkNwin:focus{background: url("../images/nWindow_ic2.png") no-repeat 96% 6px; padding-right: 26px;}
 /* ***********************************
             common.css
         header / GNB / footer

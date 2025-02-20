@@ -1,5 +1,14 @@
 <div class="header-top">
     <div class="inner clearfix">
+        <div class="g-lang">
+            <select title="언어 선택" id="googleTranslate01" name="googleTranslate01">
+                <option value="" selected="selected">한국어</option>
+                <option value="">English</option>
+                <option value="">中国人</option>
+                <option value="">Tiếng Việt</option>
+                <option value="">Japanese</option>
+            </select>
+        </div>
         <ul class="util-wrp clearfix">
             <li><a href="">login</a></li>
             <li><a href="">english</a></li>
@@ -14,7 +23,7 @@
         <div class="gnb-wrp">
             <ul class="depth1">
                 <li>
-                    <a href="#none" class="nx">About UOS Graduate Scuool</a>
+                    <a href="#none" class="nx">About UOS</a>
                     <div class="dp2-bx">
                         <div>
                             <div class="dp2-itx">
@@ -56,12 +65,14 @@
                                         <li><a href="#none">Transfer Students</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#none">Special Admission For International Students</a></li>
+                                <li>
+                                    <a href="#none">Special Admission For International Students</a>
+                                </li>
                                 <li>
                                     <a href="#none">Admission For Combined Bachelor’s/Master’s Program</a>
                                     <ul class="depth3">
                                         <li><a href="#none">Recruitment Guidelines & Forms</a></li>
-                                        <li><a href="#none">자주묻는 질문</a></li>
+                                        <li><a href="#none">FAQ</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="#none">Special Admission For Combined Master’s/Doctorate’s Program</a></li>
@@ -146,6 +157,7 @@
                                 <li><a href="#none">On-Campus Research Institutions</a></li>
                                 <li><a href="#none" class="linkNwin">Faculty Research Support</a></li>
                                 <li><a href="#none">Research Ethics Regulations</a></li>
+                                <li><a href="#none" class="linkNwin">BK21</a></li>
                             </ul>
                         </div>
                     </div>
@@ -160,14 +172,11 @@
                             <ul class="depth2">
                                 <li><a href="#none">Graduate School Notices</a></li>
                                 <li><a href="#none" class="linkNwin">UOS Notices</a></li>
+                                <li><a href="http://">대학원 Student Council 소개 (신설)</a></li>
+                                <li><a href="#">대학원 Student Council 소식 (현재 Student Council 탭)</a></li>
+
                                 <li><a href="#none">Credit Exchange</a></li>
-                                <li>
-                                    <a href="#none">Student Council</a>
-                                    <ul class="depth3">
-                                        <li><a href="http://">대학원 Student Council 소개 (신설)</a></li>
-                                        <li><a href="#">대학원 Student Council 소식 (현재 Student Council 탭)</a></li>
-                                    </ul>
-                                </li>
+                                
                                 <li>
                                     <a href="#none">FAQ</a>
                                     <ul class="depth3">
@@ -184,10 +193,28 @@
             </ul>
         </div>
         <div class="srch-wrp">
-            <a href="#none" class="srch-btn"><span class="blind">Search</span></a>
-            <a href="#none" class="all-menu">
+            <button type="button" class="srch-btn"><span class="blind">Search</span></button>
+            <!-- 검색창 -->
+            <div class="srch-box">
+                <div class="srch-box-in clearfix">
+                    <form role="search">
+                        <fieldset>
+                            <legend class="blind">통합검색</legend>
+                            <div class="srch-df">
+                                <div class="srch-line">
+                                    <input type="text" id="_word" name="_word" title="검색어 입력"  placeholder="Search">
+                                    <button type="button" class="serch-btn"><span class="blind">검색</span></button>
+                                </div>
+                                <button class="srch-close" type="button" title="닫기"><span class="blind">닫기</span></button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <!-- //검색창 -->
+            <button type="button" class="all-menu">
                 <p><span class="blind">all-menu</span></p>                            
-            </a>
+            </button>
         </div>
     </div>
 </div>
