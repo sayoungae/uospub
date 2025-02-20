@@ -70,12 +70,12 @@
 
 /* m-introduce */
 .introduce_zone{display: flex; gap: 8px; }
-.introduce_zone > li{width: 142px; height: 430px; border-radius: 16px; color:#fff; padding:48px 50px; background-repeat: no-repeat; background-position: center center; background-size: auto 100%; overflow: hidden; position: relative;transition: all 0.5s;}
+.introduce_zone > li{width: 142px; height: 655px; border-radius: 16px; color:#fff; padding:48px 50px; background-repeat: no-repeat; background-position: center center; background-size: auto 100%; overflow: hidden; position: relative;transition: all 0.5s;}
 
 .introduce_zone > li > .tit{max-width: 42px; font-size: 28px;font-weight: 600; text-align: center; line-height: 1.2; writing-mode: vertical-lr;} 
 .introduce_zone > li > .accBtn{width: 50px; height: 50px; background-color: rgba(0,0,0,0.3); border-radius: 50%; background-image: url("../images/more-icn02.png"); background-position: center center; background-repeat: no-repeat; position: absolute; left:50%; bottom:40px; transform: translateX(-50%) rotate(0); }
 .introduce_zone > li > .accBtn:hover,.introduce_zone > li > .accBtn:focus{transform: translateX(-50%) rotate(180deg); transition: 0.3s; background-color: rgba(0,0,0,0.6);}
-.introduce_zone > li > .link_box{display: none; padding:40px 0; font-size: 18px; }
+.introduce_zone > li > .link_box{display: none; padding-top:40px; font-size: 18px; }
 .introduce_zone .link_box > ul{display: flex; flex-wrap: wrap; gap: 10px;}
 .introduce_zone .link_box > ul > li{width: 100%; position: relative; padding-left: 10px;}
 .introduce_zone .link_box > ul > li::before{content:""; display: inline-block; width: 4px; height: 4px; background-color: #fff; border-radius: 50%; position: absolute; left:0; top:10px;}
@@ -107,7 +107,7 @@
 /* -- m-introduce */
 
 /* m-quick */
-.m-quick{background: url("../images/quick-bg.png") no-repeat; background-size: 100% 100%; position: relative; padding:70px 0;}
+.m-quick{background-image: url("../images/quick-bg.png"); background-repeat: no-repeat; background-size: 100% 100%; position: relative; padding:40px 0;}
 .m-quick .quick-slide{overflow: hidden;}
 .m-quick .swiper-slide{ text-align: center; margin-top: 20px; margin-bottom: 20px; }
 .m-quick .swiper-slide a{width: 100%; background-color: #fff; padding:10px;  font-weight: 600; font-size: 17px; border:1px solid #fff;}
