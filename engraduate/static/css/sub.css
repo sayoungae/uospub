@@ -32,23 +32,23 @@
 
 /* snb */
 
-.snb-box .snb-tit{height: 128px; font-size: var(--fz-36); font-weight: 700; color:#fff; background-color: #3662C0; display: flex; align-items: center; justify-content: center; border-radius: 16px 30px 0 0;}
+.snb-box .snb-tit{min-height: 128px; padding:10px 20px; line-height: 1.1; font-size: var(--fz-36); font-weight: 700; color:#fff; background-color: #3662C0; display: flex; align-items: center; justify-content: center; border-radius: 16px 30px 0 0;}
 .snb-depth1{background-color: #fff; }
 .snb-depth1 > ul > li >a{display: block; width: 100%; padding:20px; font-size: var(--fz-20); border-right: 1px solid #EFEFEF;border-left: 1px solid #EFEFEF;}
 .snb-depth1 > ul > li + li >a{border-top:1px solid #EFEFEF;}
 .snb-depth1 > ul > li:last-child > a{border-bottom:1px solid #efefef;}
 .snb-depth1 > ul > li.on > a{background-color: #353C47; color:#fff; border-color: #353C47;}
 
-.snb-depth1 > ul > li .snb-depth2{display: none;}
-.snb-depth2{font-size: var(--fz-18);}
-.snb-depth2 > ul{padding:20px; background-color: #F2F4F6;}
+.snb-depth1 > ul > li .snb-depth3{display: block;}
+.snb-depth3{font-size: var(--fz-18);}
+.snb-depth3 > ul{padding:20px; background-color: #F2F4F6;}
 
-.snb-depth2 > ul > li + li{margin-top: 14px; }
-.snb-depth2 > ul > li > a{ color:#767683; position: relative; padding-left: 10px;}
-.snb-depth2 > ul > li.on > a{color: #3662C0;}
-.snb-depth2 > ul > li > a::before{content: ""; display: inline-block; width: 4px; height: 4px; background-color: #BABABA; border-radius: 50%; position: absolute; left:0; top:11px;}
-.snb-depth2 > ul > li.on > a::before{background-color: #0071D9;}
-.snb-depth2 > ul > li > a:hover,.snb-box .depth2 > ul > li > a:focus{text-decoration: underline;}
+.snb-depth3 > ul > li + li{margin-top: 14px; }
+.snb-depth3 > ul > li > a{ color:#767683; position: relative; padding-left: 10px;}
+.snb-depth3 > ul > li.on > a{color: #3662C0;}
+.snb-depth3 > ul > li > a::before{content: ""; display: inline-block; width: 4px; height: 4px; background-color: #BABABA; border-radius: 50%; position: absolute; left:0; top:11px;}
+.snb-depth3 > ul > li.on > a::before{background-color: #0071D9;}
+.snb-depth3 > ul > li > a:hover,.snb-box .depth2 > ul > li > a:focus{text-decoration: underline;}
 /* -- snb */
 /* dot-list */
 .dot-list01{padding-left: 11px; font-size: var(--fz-18);}

@@ -113,21 +113,21 @@ $(function(){
                 },
             },
             481: {
-                slidesPerView: 3,
-                slidesPerGroup:3,
+                slidesPerView: 2,
+                slidesPerGroup:2,
                 spaceBetween: 10,
                 grid:{
                     fill:'row',
-                    rows:3,
+                    rows:2,
                 },
             },
             0: {
-                slidesPerView: 3,
-                slidesPerGroup:3,
+                slidesPerView: 2,
+                slidesPerGroup:2,
                 spaceBetween: 10,
                 grid:{
                     fill:'row',
-                    rows:3,
+                    rows:2,
                 },
             }
         }
