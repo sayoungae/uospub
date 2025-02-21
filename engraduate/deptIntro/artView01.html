@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일반대학원 영문</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/swiper.css">
+
+
+    <!-- JS -->
+    <script src="../static/js/jquery-3.7.1.js"></script>
+    <script src="../static/js/swiper-bundle.min.js"></script>
+    <script src="../static/js/common.js"></script>
+    <script src="../static/js/main.js"></script>
+    <script src="../static/js/sub.js"></script>
+
+
+    <script>
+        //header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <!-- sub-banner -->
+            <div class="sub-banner sub1">
+                <div class="inner">
+                    <div class="ban-tit">University of Seoul Global Top Brand</div>
+                    <ul class="line-map">
+                        <li><img src="../static/images/home_ic.png" alt="home"></li>
+                        <li>dept</li>
+                        <li>dept Centers and Laboratores</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content">
+                <div class="inner clearfix">
+                    <!-- // sub-banner -->
+                    <!-- snb -->
+                    <div id="snb-wrap">
+                    </div>
+                    <!-- // snb -->
+                    <!-- sub content -->
+                    <div class="sub-content" id="sub-content">
+                        <div class="sub-tit-box">
+                            <h3 class="subTit01">Department of Sculpture</h3>
+                            <ul class="stp-bt">
+                                <li><a href="" class="print-ic"><span class="blind">인쇄</span></a></li>
+                                <li><a href="" class="share-ic"><span class="blind">공유 </span></a></li>
+                            </ul>
+                        </div>
+                        <!-- 본문 -->
+                        <!-- tab -->
+                        <div class="tab-area layer">
+                            <!-- tab list -->
+                            <div class="tab">
+                                <ul role="tablist">
+                                    <li id="tab_dept_01" role="tab" aria-selected="true" aria-controls="panel_dept_01"
+                                        class="active">
+                                        <button type="button" class="btn-tab">Departments</button>
+                                    </li>
+                                    <li id="tab_dept_02" role="tab" aria-selected="false" aria-controls="panel_dept_02">
+                                        <button type="button" class="btn-tab">Admission</button>
+                                    </li>
+                                    <li id="tab_dept_03" role="tab" aria-selected="false" aria-controls="panel_dept_03">
+                                        <button type="button" class="btn-tab">Assistance, etc</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- //tab list -->
+                            <!-- tab contents -->
+                            <div class="tab-conts-wrap">
+                                <div id="panel_dept_01" role="tabpanel" aria-labelledby="tab_dept_01"
+                                    class="tab-conts active">
+                                    <div class="dept-link-list">
+                                        <a href="https://www.uos.ac.kr/artandsport/sculpture/main.do?identified=anonymous&" target="_blank" title="opens in a new tab"
+                                            class="icn1"><span>Homepage</span></a>
+                                        <a href="#none" target="_blank" title="opens in a new tab"
+                                            class="icn2"><span>Faculty</span></a>
+                                        <a href="https://www.uos.ac.kr/artandsport/sculpture/korCurriculum/list.do?identified=anonymous&" target="_blank" title="opens in a new tab"
+                                            class="icn3"><span>Curriculum</span></a>
+                                    </div>
+                                    <h4 class="subTit04">Educational objectives</h4>
+                                    <div class="table-wrap">
+                                        <table class="type3">
+                                            <colgroup>
+                                                <col width="20%">
+                                                <col width="80%">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th>Core objectives</th>
+                                                    <td>
+                                                        The core objective is to cultivate professional sculptors who can play a future-oriented leadership role in the field of visual arts based on a creative and challenging spirit
+                                                        Through this, we aim to create a new type of culture that can expand expertise and creativity in the field of fine arts, as well as communication with general society.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Detailed objectives</th>
+                                                    <td>
+                                                        <ul>
+                                                            <li>
+                                                                <p>1. Strengthening academic capabilities</p>
+                                                                <ul class="dot-list03">
+                                                                    <li>1-1 Further deepen and expand knowledge of contemporary art criticism and cultural context.</li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <p>2. Enhancing artistic self-expression</p>
+                                                                <ul class="dot-list03">
+                                                                    <li>2-1 Research contemporary sculpture trends and analyze artistic concepts based on various perspectives</li>
+                                                                    <li>2-2 Expand artistic creativity and build the ability to convey social messages through exploration of various cultural theories and social issues.</li>
+                                                                    <li>2-3 Analyze forms using various materials and create original expression techniques and sculptural works.</li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Research areas</th>
+                                                    <td>Fine art sculpture and applied fields (art criticism, curator, designer)</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <h4 class=" subTit04">Information</h4>
+                                    <div class="table-wrap">
+                                        <ul class="dept-info">
+                                            <li>
+                                                <div>Head professor</div>
+                                                <div>Kang Deok-bong</div>
+                                            </li>
+                                            <li>
+                                                <div>TEL</div>
+                                                <div>+82-2-6490-2926</div>
+                                            </li>
+                                            <li>
+                                                <div>E-mail</div>
+                                                <div>kdb@uos.ac.kr</div>
+                                            </li>
+                                            <li>
+                                                <div>Office</div>
+                                                <div>1F Room 114, Design and Sculpture Building</div>
+                                            </li>
+                                            <li>
+                                                <div>TEL</div>
+                                                <div>+82-2-6490-2916~7</div>
+                                            </li>
+                                            <li>
+                                                <div>FAX</div>
+                                                <div>+82-2-6490-2919</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div id="panel_dept_02" role="tabpanel" aria-labelledby="tab_dept_02"
+                                    class="tab-conts">
+                                    <div class="dept-link-list">
+                                        <a href="#none" target="_blank" title="opens in a new tab"
+                                            class="icn4"><span>Recruitment guidelines</span></a>
+                                        <a href="https://rule.uos.ac.kr/lmxsrv/main/main.srv" target="_blank" title="opens in a new tab"
+                                            class="icn5"><span>Operating regulations</span></a>
+                                    </div>
+                                    <h4 class="subTit04">General admission degree programs</h4>
+                                    <div class="table-wrap">
+                                        <table class="type3">
+                                            <colgroup>
+                                                <col width="20%">
+                                                <col width="80%">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th>Master</th>
+                                                    <td>
+                                                        <ul class="dot-list01">
+                                                            <li>Individuals who have obtained a bachelor's degree from domestic or foreign universities or those expected to obtain a degree upon completion of the current registered semester</li>
+                                                            <li>Individuals recognized as having equivalent or higher academic qualifications under relevant laws</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <th>Eligibility for master's/doctorate's<br/>Support for North Korean defectors</th>
+                                                    <td>
+                                                        <ul class="dot-list01">
+                                                            <li>Individuals qualified to apply for master's or doctorate's program</li>
+                                                            <li>Individuals registered as North Korean defectors pursuant to the North Korean Defectors Protection and Settlement Support Act</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <h4 class="subTit04">Additional eligibility requirements and submission documents</h4>
+                                    <ul class="dot-list02">
+                                        <li>Portfolio submission: A4 size, no limit on quantity</li>
+                                        <li>Representative works: Up to 3 pieces on A3 size board</li>
+                                    </ul>
+                                    <h4 class="subTit04">Program information (for students admitted after 2022)</h4>
+                                    <div class="table-wrap">
+                                        <table class="type1">
+                                            <thead>
+                                                <tr>
+                                                    <th>Category</th>
+                                                    <th>Length of study</th>
+                                                    <th>Basic semester operation</th>
+                                                    <th>Minimum credits required</th>
+                                                    <th>Graduation thesis</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Master</td>
+                                                    <td>2+ years</td>
+                                                    <td>4 semester system</td>
+                                                    <td>24 credits</td>
+                                                    <td>Master's thesis</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="mt10">
+                                            ※ For other academic information: Refer to relevant items on the Education/Academic Affairs tab of the Graduate School website
+                                        </div>
+                                    </div>
+                                    
+                                    <h4 class="subTit04">Department regulations</h4>
+                                    <ul class="dot-list02">
+                                        <li>Hold at least one group exhibition during graduate school enrollment</li>
+                                        <li>Submit a thesis (focusing on the connection with one's own work) after holding a solo exhibition</li>
+                                    </ul>
+                                </div>
+                                <div id="panel_dept_03" role="tabpanel" aria-labelledby="tab_dept_03" class="tab-conts">
+                                    <h4 class="subTit04">Student activities</h4>
+                                    <div class="table-wrap">
+                                        <table class="type3">
+                                            <colgroup>
+                                                <col width="20%">
+                                                <col width="80%">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th>Graduate School Regular Exhibition</th>
+                                                    <td>
+                                                        <ul class="dot-list01">
+                                                            <li>Annual group exhibition led by second-semester students</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <h4 class="subTit04">Scholarships</h4>
+                                    <ul class="dot-list02">
+                                        <li> <a href="https://graduate.uos.ac.kr/graduateNew/html/support/scholarship.do?menuid=3000004001001000000"
+                                            class="">Website</a></li>
+                                    </ul>
+                                    <h4 class="subTit04">Career paths after graduation</h4>
+                                    <ul class="dot-list02">
+                                        <li>Contemporary artist</li>
+                                        <li>Museum and gallery curator</li>
+                                        <li>Art department in broadcasting companies, producer, stage artist</li>
+                                        <li>Art journalist</li>
+                                        <li>Three-dimensional research activities such as interior designer, game graphic designer, etc.</li>
+                                    </ul>
+                                    <h4 class="subTit04">Department amenities and publicity</h4>
+                                    <ul class="dot-list02">
+                                        <li>Educational Environment: Possession of various experimental practice equipment and operation of excellent facilities</li>
+                                        <li>Metal Sculpture Studio: Plasma cutter, metal cutter, hydraulic shear, bench grinder, belt sander, TIG welder, MIG welder, oxygen-acetylene welder, spot welder, drill press, hoist crane</li>
+                                        <li>Wood Sculpture Studio: Table saw, band saw, automatic planer, belt sander, angle cutter, plunge saw, dust collection system</li>
+                                        <li>Computer Room: About 30 high-performance computers, beam projector, multimedia A/V system, plotter for actual printing</li>
+                                        <li>Audiovisual Room: Beam projector, multimedia A/V system</li>
+                                        <li>Sculpture Studio: Sculpture stands, clay kneader, model pedestals</li>
+                                        <li>Machine Workshop: Acrylic heat wire bender, tabletop rotary saw</li>
+                                        <li>Painting Room: Painting of various sculpture materials</li>
+                                        <li>Outdoor Machine Workshop: High-performance 3D printer, CNC machine</li>
+                                        <li>Other: Electric kiln</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- //tab contents -->
+                           
+                        </div>
+                        <!-- // tab -->
+                        <!-- 본문 -->
+                        <!-- sub content -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+
+</html>
