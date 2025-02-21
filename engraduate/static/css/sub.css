@@ -227,8 +227,9 @@
 .table-wrap .type3 th{text-align: center; vertical-align: middle; background-color: #F6F8FA; padding:10px;}
 .table-wrap .type3 td{padding:20px 25px; text-align: left;}
 
-.table-wrap .blt01{position: relative; padding-left: 10px; color:#555;}
-.table-wrap .blt01::before{content: ""; display: inline-block; width: 3px; height: 3px; background-color: #5A80C5; position: absolute; left:0; top:10px; border-radius: 50%;;}
+.table-wrap .blt01{position: relative; padding-left: 16px; color:#555;}
+.table-wrap .blt01::before{content: ""; display: inline-block; width: 3px; height: 3px; background-color: #5A80C5; position: absolute; left:6px; top:8px; border-radius: 50%;;}
+.table-wrap .blt01 + .blt01{margin-top: 5px;}
 /* --table */
 /* boards */
 /* search */
@@ -611,6 +612,7 @@
     .dot-list03 li.num > span {top: 2px;}
     /* table */
     .table-wrap .type3 td{padding:10px 15px;}
+    .table-wrap .blt01::before{top:7px}
 
     /* Departments -목록 */
     .dept-list-wrap > ul > li {padding:15px 0;}
