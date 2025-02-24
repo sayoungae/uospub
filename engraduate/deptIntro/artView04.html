@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일반대학원 영문</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/swiper.css">
+
+
+    <!-- JS -->
+    <script src="../static/js/jquery-3.7.1.js"></script>
+    <script src="../static/js/swiper-bundle.min.js"></script>
+    <script src="../static/js/common.js"></script>
+    <script src="../static/js/main.js"></script>
+    <script src="../static/js/sub.js"></script>
+
+
+    <script>
+        //header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <!-- sub-banner -->
+            <div class="sub-banner sub1">
+                <div class="inner">
+                    <div class="ban-tit">University of Seoul Global Top Brand</div>
+                    <ul class="line-map">
+                        <li><img src="../static/images/home_ic.png" alt="home"></li>
+                        <li>dept</li>
+                        <li>dept Centers and Laboratores</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content">
+                <div class="inner clearfix">
+                    <!-- // sub-banner -->
+                    <!-- snb -->
+                    <div id="snb-wrap">
+                    </div>
+                    <!-- // snb -->
+                    <!-- sub content -->
+                    <div class="sub-content" id="sub-content">
+                        <div class="sub-tit-box">
+                            <h3 class="subTit01">Department of Art Design</h3>
+                            <ul class="stp-bt">
+                                <li><a href="" class="print-ic"><span class="blind">인쇄</span></a></li>
+                                <li><a href="" class="share-ic"><span class="blind">공유 </span></a></li>
+                            </ul>
+                        </div>
+                        <!-- 본문 -->
+                        <!-- tab -->
+                        <div class="tab-area layer">
+                            <!-- tab list -->
+                            <div class="tab">
+                                <ul role="tablist">
+                                    <li id="tab_dept_01" role="tab" aria-selected="true" aria-controls="panel_dept_01"
+                                        class="active">
+                                        <button type="button" class="btn-tab">Departments</button>
+                                    </li>
+                                    <li id="tab_dept_02" role="tab" aria-selected="false" aria-controls="panel_dept_02">
+                                        <button type="button" class="btn-tab">Admission</button>
+                                    </li>
+                                    <li id="tab_dept_03" role="tab" aria-selected="false" aria-controls="panel_dept_03">
+                                        <button type="button" class="btn-tab">Assistance, etc</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- //tab list -->
+                            <!-- tab contents -->
+                            <div class="tab-conts-wrap">
+                                <div id="panel_dept_01" role="tabpanel" aria-labelledby="tab_dept_01"
+                                    class="tab-conts active">
+                                    <div class="dept-link-list">
+                                        <a href="https://www.uos.ac.kr/artandsport/sculpture/main.do?identified=anonymous&" target="_blank" title="opens in a new tab"
+                                            class="icn1"><span>Homepage</span></a>
+                                        <a href="" target="_blank" title="opens in a new tab"
+                                            class="icn2"><span>Faculty</span></a>
+                                        <a href="https://www.uos.ac.kr/kor/popup/html/auos/prospectus/2022/prospectus.do?identified=anonymous&" target="_blank" title="opens in a new tab"
+                                            class="icn3"><span>Curriculum</span></a>
+                                    </div>
+                                    <h4 class="subTit04">Educational objectives</h4>
+                                    <div class="table-wrap">
+                                        <table class="type3">
+                                            <colgroup>
+                                                <col width="20%">
+                                                <col width="80%">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th>Core objectives</th>
+                                                    <td>
+                                                        In the 21st century, not only fine arts but also practical design disciplines develop systematically.
+                                                        In short, it goes beyond simple function and sensory realms, with human imagination and creativity interacting complexly with intellectual elements.
+                                                        This becomes an important mutuality with interdisciplinary exchanges and connections with adjacent disciplines such as humanities, natural sciences, and engineering.
+                                                        Based on this, this department aims to activate the convergence of academic systems based on modern sculpture and design majors, and to improve the creative cultural prosperity of fine arts and design as its educational goal.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Detailed objectives</th>
+                                                    <td>
+                                                        <ul>
+                                                            <li>
+                                                                <b>1. Convergence</b>
+                                                                <ul class="dot-list03">
+                                                                    <li>
+                                                                        1-1 Completion of talent education program through fine arts (modern sculpture) and design
+                                                                    </li>
+                                                                    <li>
+                                                                        1-2 Creating a new convergence research foundation by linking design research institutes (trend research institutes) and technology research institutes (BT fields, etc.) in industrial sites (creativity-driven design tasks, etc.)
+                                                                    </li>
+                                                                    <li>
+                                                                        1-3 Specialization of research LAB by researching and converging the academic systems of modern sculpture and design
+                                                                    </li>
+                                                                    <li>
+                                                                        1-4 Operation of commissioned research and joint project LAB between universities and companies
+                                                                    </li>
+                                                                    <li>
+                                                                        1-5 Realization of research continuity and systematic structuring of personnel through activation of master's and doctoral linked programs
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="mt10">
+                                                                <b>2. Globalization</b>
+                                                                <ul class="dot-list03">
+                                                                    <li>
+                                                                        2-1 Academic and human exchanges with domestic and foreign universities related to formative design (Europe, Japan, USA, etc.)
+                                                                    </li>
+                                                                    <li>
+                                                                        2-2 Cooperate with overseas formative art organizations and design research institutes (companies, professional studios, forums, etc.) to activate human exchanges and study contemporary trends
+                                                                    </li>
+                                                                    <li>
+                                                                        2-3 Operation of expert lectures and global trend and culture research programs
+                                                                    </li>
+                                                                    <li>
+                                                                        2-4 Strengthening leadership capabilities by operating programs to foster domestic and international formative & design leaders
+                                                                    </li>
+                                                                    <li>
+                                                                        2-5 Attracting foreign students for educational status (training, short-term, regular course programs)
+                                                                    </li>
+                                                                    <li>
+                                                                        2-6 Establishing a global network for creation and exhibition of modern sculpture
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li  class="mt10">
+                                                                <b>3. Openness</b>
+                                                                <ul class="dot-list03">
+                                                                    <li>
+                                                                        3-1 Establishment of industry-academic research projects and programs related to sub-fields of formative arts and design disciplines
+                                                                    </li>
+                                                                    <li>
+                                                                        3-2 Establishment of formative education programs for public education linked to the region (seminars, design program development)
+                                                                    </li>
+                                                                    <li>
+                                                                        3-3 Establishing contemporary creative power related to fine arts by studying the history and characteristics of modern sculpture
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Research areas</th>
+                                                    <td>
+                                                        Modern sculpture, Industrial design, Visual design
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <h4 class=" subTit04">Majors (track)</h4>
+                                    <div class="table-wrap">
+                                        <table class="type3">
+                                            <colgroup>
+                                                <col width="20%">
+                                                <col width="80%">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th>Modern Sculpture</th>
+                                                    <td>
+                                                        Analysis of the characteristics and development of modern sculpture since the 20th century through aesthetics and art theory.
+                                                        Also, research in the understanding of contemporary art concepts and on-site practices to systematize them academically and improve individual artwork production skills.
+                                                        It has a core goal of nurturing sculptors who lead contemporary art in the 21st century.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Industrial Design</th>
+                                                    <td>
+                                                        <b class="mb5">1. Convergence</b>
+                                                        <div class="pl5">
+                                                            Industrial design focuses on research on future-oriented complex and convergent creation, leading creative, experimental, and challenging environmental design, and cultivating the ability to solve various design problems that can arise in cultural life and public spaces with creative perspectives and experimental methods
+                                                            In addition, it aims to nurture creative and specialized designers as active organizers leading the changes of the times, and to improve leadership qualities in the design field through re-education and continuing education of independent managers engaged in design-related work in industries, institutions, and organizations.
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Visual Design</th>
+                                                    <td>
+                                                        <b class="mb5">1. Convergence</b>
+                                                        <div class="pl5">
+                                                            The Visual Design major consists of the Communication Design field for effective information delivery and the Digital Contents Design field for utilizing new media in the information age. In response to the demands of the era where new media are continuously developed and the amount of information is explosively increasing, it aims to improve adaptability to various media to develop practical skills as designers and cultivate leadership as design educators and art directors who can adapt to and lead new trends.
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <h4 class=" subTit04">Information</h4>
+                                    <div class="table-wrap">
+                                        <ul class="dept-info">
+                                            <li>
+                                                <div>Head professor</div>
+                                                <div>Kim Seok</div>
+                                            </li>
+                                            <li>
+                                                <div>TEL</div>
+                                                <div>+82-2-6490-2924</div>
+                                            </li>
+                                            <li>
+                                                <div>E-mail</div>
+                                                <div></div>
+                                            </li>
+                                            <li>
+                                                <div>Office</div>
+                                                <div>1F Room 114 (Modern Sculpture) & 4F Room 406 (Industrial Design, Visual Design), Design and Sculpture Building</div>
+                                            </li>
+                                            <li>
+                                                <div>TEL</div>
+                                                <div>+82-2-6490-2917 (Modern Sculpture) / 2907 (Industrial Design) / 2906 (Visual Design)</div>
+                                            </li>
+                                            <li>
+                                                <div>FAX</div>
+                                                <div>+82-2-6490-2909 (Industrial Design, Visual Design)</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div id="panel_dept_02" role="tabpanel" aria-labelledby="tab_dept_02"
+                                    class="tab-conts">
+                                    <div class="dept-link-list">
+                                        <a href="#none" target="_blank" title="opens in a new tab"
+                                            class="icn4"><span>Recruitment guidelines</span></a>
+                                        <a href="https://rule.uos.ac.kr/lmxsrv/main/main.srv" target="_blank" title="opens in a new tab"
+                                            class="icn5"><span>Operating regulations</span></a>
+                                    </div>
+                                    <h4 class="subTit04">General admission degree programs</h4>
+                                    <div class="table-wrap">
+                                        <table class="type3">
+                                            <colgroup>
+                                                <col width="20%">
+                                                <col width="80%">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th>Master</th>
+                                                    <td>
+                                                        <ul class="dot-list01">
+                                                            <li>Individuals who have obtained a bachelor's degree from domestic or foreign universities or those expected to obtain a degree upon completion of the current registered semester</li>
+                                                            <li>Individuals recognized as having equivalent or higher academic qualifications under relevant laws</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Combined master's/doctorate's program</th>
+                                                    <td>
+                                                        <ul class="dot-list01">
+                                                            <li>
+                                                                Individuals who have obtained a bachelor's degree from domestic or foreign universities or those expected to obtain a degree upon completion of the current registered semester
+                                                            </li>
+                                                            <li>Individuals recognized as having equivalent or higher academic qualifications under relevant laws</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Doctorate</th>
+                                                    <td>
+                                                        <ul class="dot-list01">
+                                                            <li>
+                                                                Individuals who have obtained a master's degree from domestic or foreign universities or those expected to obtain a degree upon completion of the current registered semester
+                                                            </li>
+                                                            <li>Individuals recognized as having equivalent or higher academic qualifications under relevant laws</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Eligibility for master's/doctorate's<br/>Support for North Korean defectors</th>
+                                                    <td>
+                                                        <ul class="dot-list01">
+                                                            <li>Individuals qualified to apply for master's or doctorate's program</li>
+                                                            <li>Individuals registered as North Korean defectors pursuant to the North Korean Defectors Protection and Settlement Support Act</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <h4 class="subTit04">Additional eligibility requirements and submission documents</h4>
+                                    <ul class="dot-list02">
+                                        <li>Portfolio (10 works) - Submit A4 size, about 10 pages portfolio, bring original for interview.</li>
+                                        <li>Master's thesis - Submit A4 size, about 10 pages thesis summary (including table of contents), bring original for interview.</li>
+                                        <li>
+                                            <p>Self-introduction (free format)</p>
+                                            <span class="point">※ The above submitted documents will not be returned. However, the original portfolio and master's thesis will be returned if desired by the applicant.</span>
+                                        </li>
+                                    </ul>
+                                    
+                                    <h4 class="subTit04">Program information (for students admitted after 2022)</h4>
+                                    <div class="table-wrap">
+                                        <table class="type1">
+                                            <thead>
+                                                <tr>
+                                                    <th>Category</th>
+                                                    <th>Length of study</th>
+                                                    <th>Maximum period of enrollment</th>
+                                                    <th>Period for degree acquisition after completion</th>
+                                                    <th>Minimum credits required</th>
+                                                    <th>Graduation thesis</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Master</td>
+                                                    <td rowspan="2">Minimum 2 years</td>
+                                                    <td>3 years</td>
+                                                    <td>6 years</td>
+                                                    <td>24 credits</td>
+                                                    <td>Master's thesis</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Doctorate</td>
+                                                    <td>5 years</td>
+                                                    <td>8 years</td>
+                                                    <td>36 credits</td>
+                                                    <td>Doctoral dissertation</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Combined master's/doctorate's program</td>
+                                                    <td>Minimum 4 years</td>
+                                                    <td>8 years</td>
+                                                    <td>8 years</td>
+                                                    <td>60 credits</td>
+                                                    <td>Doctoral dissertation</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <p class="mt10">
+                                            ※ The minimum of 36 credits for doctoral program completion applies to new students from the 2022 academic year
+                                        </p>
+                                        <p class="mt10">※ For other academic information: Refer to relevant items on the Education/Academic Affairs tab of the Graduate School website</p>
+                                    </div>
+                                    
+                                    <h4 class="subTit04">Minimum publication requirements for doctoral dissertation</h4>
+                                    <ul class="dot-list02">
+                                        <li>Record relevant matters changed from Public Environmental Design to Industrial Design</li>
+                                    </ul>
+                                    <h4 class="subTit04">Graduate school operating principles</h4>
+                                    <li>Record operation matters, priority considerations for admission screening, etc. (e.g.,  priority selection of full-time students).</li>
+                                </div>
+                                <div id="panel_dept_03" role="tabpanel" aria-labelledby="tab_dept_03" class="tab-conts">
+                                    <h4 class="subTit04">Student activities</h4>
+                                    <div class="table-wrap">
+                                        <table class="type3">
+                                            <colgroup>
+                                                <col width="20%">
+                                                <col width="80%">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th>Participation in Research Projects</th>
+                                                    <td>
+                                                        <ul class="dot-list01">
+                                                            <li>
+                                                                <p>2020 Academic Year Basic Protective Sciences Convergence Field R&D Foundation Project</p>
+                                                                <p>[Research on Public Data Analysis Using Network Theory]</p>
+                                                                <p>[Research on the Desire for Architectural Images in Contemporary Sculpture]</p>
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Academic Society and Scholarly Activities</th>
+                                                    <td>
+                                                        <ul class="dot-list01">
+                                                            <li>
+                                                                Research on the Desire for Architectural Images in Contemporary Sculpture, 2020, Korean Basic Formative Society, Vol.21 No.6 (Issue 102), pp.259-272.
+                                                            </li>
+                                                            <li>
+                                                                Research on the Impact of Landmark Elements on Designation of Promised Places, Korean Space Design Society Journal Vol.14 No.1, 2019, pp.195-205.
+                                                            </li>
+                                                            <li>
+                                                                Research on the Characteristics of Public Bicycle Usage and Rental Stations in Seoul through Social Network Analysis:  Focusing on 32 rental stations in Jung-gu, Basic Formative Research Vol.20 No.6, 2019, pp.1-14.
+                                                            </li>
+                                                            <li>
+                                                                Investigation and Analysis of Outdoor Smoking Areas from a Public Design Perspective, 2018, Basic Formative Research Vol.19 No.6, 2018, pp.241-254. 
+                                                            </li>
+                                                            <li>
+                                                                Analysis of Formative Elements by Type of Protective Cover, 2017, Korean Space Design Society, sessions 3-6, pp.118-119
+                                                            </li>
+                                                            <li>
+                                                                Research Methodology for Quantitative Color Matching Based on Aesthetic Coefficients (Mido), 2018, Korean Basic Formative Society, pp.65-68
+                                                            </li>
+                                                            <li>
+                                                                Experimental Study on Quantitative Color Matching Using Mido, 2018, Korean Basic Formative Society Vol.19 No.6 (Issue 90), pp.329-344 
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Research institute</th>
+                                                    <td>
+                                                        <ul class="dot-list01">
+                                                            <li>Urban Science Research Institute / Design Research Center</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <h4 class="subTit04">Scholarships</h4>
+                                    <ul class="dot-list02">
+                                        <li>
+                                            <a href="https://graduate.uos.ac.kr/graduateNew/html/support/scholarship.do?menuid=3000004001001000000" class="">Website</a>
+                                        </li>
+                                    </ul>
+                                    <h4 class="subTit04">Career paths after graduation</h4>
+                                    <ul class="dot-list02">
+                                        <li>Faculty members, senior research personnel at public institutions and design research institutes related to formative arts</li>
+                                        <li>Administrative personnel at government agencies and government-funded institutions</li>
+                                    </ul>
+                                    <h4 class="subTit04">Department amenities and publicity</h4>
+                                    <ul class="dot-list02">
+                                        <li>Various award records</li>
+                                        <li>Content related to project selection, excellent facilities, etc.</li>
+                                        <li>Special operational features</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- //tab contents -->
+                           
+                        </div>
+                        <!-- // tab -->
+                        <!-- 본문 -->
+                        <!-- sub content -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+
+</html>

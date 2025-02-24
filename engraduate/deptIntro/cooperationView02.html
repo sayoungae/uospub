@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,13 +27,14 @@
         fetch('../include/footer.html')
             .then(response => response.text())
             .then(data => document.getElementById('footer').innerHTML = data);
-        
+
         fetch('../include/snb.html')
             .then(response => response.text())
             .then(data => document.getElementById('snb-wrap').innerHTML = data);
-       
+
     </script>
 </head>
+
 <body>
     <div id="wrap">
         <header class="header" id="header"></header>
@@ -58,7 +60,7 @@
                     <!-- sub content -->
                     <div class="sub-content" id="sub-content">
                         <div class="sub-tit-box">
-                            <h3 class="subTit01">Department of Law</h3>
+                            <h3 class="subTit01">Department of Smart City</h3>
                             <ul class="stp-bt">
                                 <li><a href="" class="print-ic"><span class="blind">인쇄</span></a></li>
                                 <li><a href="" class="share-ic"><span class="blind">공유 </span></a></li>
@@ -70,7 +72,8 @@
                             <!-- tab list -->
                             <div class="tab">
                                 <ul role="tablist">
-                                    <li id="tab_dept_01" role="tab" aria-selected="true" aria-controls="panel_dept_01" class="active">
+                                    <li id="tab_dept_01" role="tab" aria-selected="true" aria-controls="panel_dept_01"
+                                        class="active">
                                         <button type="button" class="btn-tab">Departments</button>
                                     </li>
                                     <li id="tab_dept_02" role="tab" aria-selected="false" aria-controls="panel_dept_02">
@@ -79,18 +82,22 @@
                                     <li id="tab_dept_03" role="tab" aria-selected="false" aria-controls="panel_dept_03">
                                         <button type="button" class="btn-tab">Assistance, etc</button>
                                     </li>
-                                    <li id="tab_dept_04" role="tab" aria-selected="false" aria-controls="panel_dept_04">
-                                        <button type="button" class="btn-tab">대학원 공지사항</button>
+                                    <li>
+                                        <a href="https://graduate.uos.ac.kr/graduateNew/deptIntro/cooperation/korNotice/list.do?list_id=30001FA1&code=30005&cate_id2=000010883&tab_id=6&menuid=3000001003006000000" class="btn-tab">대학원 공지사항</button>
                                     </li>
                                 </ul>
                             </div>
                             <!-- //tab list -->
                             <!-- tab contents -->
                             <div class="tab-conts-wrap">
+                                <!-- 학 과 소 개 -->
                                 <div id="panel_dept_01" role="tabpanel" aria-labelledby="tab_dept_01" class="tab-conts active">
                                     <div class="dept-link-list">
-                                        <a href="https://liberalarts.uos.ac.kr/liberalarts/main.do?cate_id2=000010068&identified=anonymous&" target="_blank" title="opens in a new tab" class="icn1"><span>Homepage</span></a>
-                                        <a href="profList.html" target="_blank" title="opens in a new tab" class="icn2"><span>Faculty</span></a>
+                                        <!-- 홈페이지 -->
+                                        <a href="https://disaster.uos.ac.kr/disaster/main.do?identified=anonymous&" target="_blank" title="opens in a new tab"class="icn1"><span>Homepage</span></a>
+                                        <!-- 교수소개 -->
+                                        <a href="#" target="_blank" title="opens in a new tab" class="icn2"><span>Faculty</span></a>
+                                        <!-- 교과과정 및 교과목 -->
                                         <a href="https://www.uos.ac.kr/kor/popup/html/auos/prospectus/2022/prospectus.do?identified=anonymous&" target="_blank" title="opens in a new tab" class="icn3"><span>Curriculum</span></a>
                                     </div>
                                     <h4 class="subTit04">Educational objectives</h4>
@@ -101,32 +108,34 @@
                                                 <col width="80%">
                                             </colgroup>
                                             <tbody>
-                                            <tr>
-                                                <th>Core objectives</th>
-                                                <td>
-                                                    The educational goal is to guide students not only to acquire legal theories but also to cultivate independent academic abilities to set their own research areas and study them in depth, while contributing to the academic development of law through critical and creative research in each major field.
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th>Detailed objectives</th>
-                                                <td>
-                                                    <ul>
-                                                        <li>1. Strengthen advanced research capabilities based on knowledge of basic laws (Constitutional/Civil/Criminal Law): Analyze existing legal theories and grasp the latest academic trends to pursue the development of new legal theories</li>
-                                                        <li>2. Strengthen research capabilities in individual law fields (Administrative/Commercial/Procedural Law/Intellectual Property/Tax Law, etc.): Introduce and critically approach foreign legal systems' research results and latest trends through comparative legal analysis to explore ways to apply them to domestic law</li>
-                                                        <li>3. Strengthen normative understanding of international society (International Law, International Transaction Law, etc.): Analyze new phenomena emerging in complex societies and explore the role that law can practically play and solutions it can offer for these new social phenomena</li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th>Research areas</th>
-                                                <td>
-                                                    <ul>
-                                                        <li>1. Basic law and in-depth fields</li>
-                                                        <li>2. Individual laws and specialized fields</li>
-                                                        <li>3. International law research</li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
+                                                <tr>
+                                                    <th>Core objectives</th>
+                                                    <td>
+                                                        The main core objective is to cultivate innovative talents who can provide safety, mobility, convenience, and eco-friendly services in smart future cities, thereby spreading into job creation and entrepreneurship.
+                                                        In particular, it aims to cultivate smart city innovative talents capable of promoting mobility, safety and disaster prevention, energy and environment, and urban regeneration more intelligently.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Detailed objectives</th>
+                                                    <td>
+                                                        <div>
+                                                            Cultivation of innovative talents for practical implementation of safety, mobility, convenience, and eco-friendly services in smart future cities.<br/>
+                                                            (Training of Smart City ‘Smart-CORE Talents’)
+                                                        </div>
+                                                        <ul class="dot-list03">
+                                                            <li>- Interdisciplinary smart city talents for solving future urban problems through science and technology</li>
+                                                            <li>- Talents capable of creating future-oriented urban value</li>
+                                                            <li>- Innovative smart city talents with both research and practical skills</li>
+                                                            <li>- Global smart city talents responding to the overseas export of smart city technologies and job demands</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Research areas</th>
+                                                    <td>
+                                                        Smart mobility, Smart urban regeneration, Smart safety and disaster prevention, Smart energy and environment, Smart spatial information
+                                                    </td>
+                                                </tr>
                                             </tbody>
                                         </table>
                                     </div>
@@ -139,32 +148,44 @@
                                             </colgroup>
                                             <tbody>
                                                 <tr>
-                                                    <th>Constitutional Law</th>
+                                                    <th>
+                                                        Smart Mobility
+                                                    </th>
                                                     <td>
-                                                        Research on the overall content of constitutional law from constitutional theory to practical application in constitutional trials
+                                                        Education on knowledge and case studies to solve traffic problems arising in smart cities through various advanced mobility technologies such as autonomous vehicles, future public transport systems, and big data-based intelligent transportation systems. 
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <th>Administrative Law</th>
+                                                    <th>
+                                                        Smart Urban Regeneration
+                                                    </th>
                                                     <td>
-                                                        Research on important theories and practices across administrative law
+                                                        Education on the development of urban planning systems utilizing data, artificial intelligence, and simulation, support for urban regeneration and development, forecasting housing and real estate markets, and scientific analysis and systematic management methods of urban spaces. 
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <th>Criminal Law</th>
-                                                    <td>Comprehensive research on general theories and practices related to crime and punishment</td>
+                                                    <th>
+                                                        Smart Energy and Environment
+                                                    </th>
+                                                    <td>
+                                                        Education on various methods to examine issues related to energy, environment, and urban infrastructure for the creation of sustainable smart cities, as well as planning and managing actual sustainable cities.
+                                                    </td>
                                                 </tr>
                                                 <tr>
-                                                    <th>Civil Law</th>
-                                                    <td>Research on overall theories of civil law such as law of obligations and property law, their practical application, and case studies</td>
+                                                    <th>
+                                                        Smart Safety and Disaster Prevention 
+                                                    </th>
+                                                    <td>
+                                                        Education on smart city disaster prevention design and related content necessary to minimize the impact of safety accidents and disaster damages while creating a resilient smart city against large-scale disaster risks
+                                                    </td>
                                                 </tr>
                                                 <tr>
-                                                    <th>Commercial Law</th>
-                                                    <td>Research on domestic and international theories and practical application methods and case studies in overall commercial matters such as company law, international transaction law, and securities law</td>
-                                                </tr>
-                                                <tr>
-                                                    <th>Labor Law</th>
-                                                    <td>Research on theories of labor relations and case studies of their practical application</td>
+                                                    <th>
+                                                        Smart Spatial Information
+                                                    </th>
+                                                    <td>
+                                                        Education on various methodologies regarding the establishment and utilization of spatial information big data for the creation of sustainable smart cities.
+                                                    </td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -174,11 +195,11 @@
                                         <ul class="dept-info">
                                             <li>
                                                 <div>Head professor</div>
-                                                <div>Park Ji-won</div>
+                                                <div>Hong Jin-hyun</div>
                                             </li>
                                             <li>
                                                 <div>TEL</div>
-                                                <div>+82-2-6490-5083</div>
+                                                <div>+82-2-6490-5010</div>
                                             </li>
                                             <li>
                                                 <div>E-mail</div>
@@ -186,20 +207,23 @@
                                             </li>
                                             <li>
                                                 <div>Office</div>
-                                                <div>5F Room 532, Law School Building</div>
+                                                <div>3F Room 338, Architecture and Civil Engineering Building</div>
                                             </li>
                                             <li>
                                                 <div>TEL</div>
-                                                <div>+82-2-6490-2110</div>
+                                                <div>+82-2-6490-5005</div>
                                             </li>
                                             <li>
                                                 <div>FAX</div>
-                                                <div>+82-2-6490-2113</div>
+                                                <div>+82-2-6490-5019</div>
                                             </li>
 
                                         </ul>
                                     </div>
                                 </div>
+                                <!-- //학 과 소 개 -->
+
+                                <!-- 입 학 정 보 -->
                                 <div id="panel_dept_02" role="tabpanel" aria-labelledby="tab_dept_02" class="tab-conts">
                                     <div class="dept-link-list">
                                         <a href="../admission/regular.html" target="_blank" title="opens in a new tab" class="icn4"><span>Recruitment guidelines</span></a>
@@ -214,8 +238,8 @@
                                             </colgroup>
                                             <tbody>
                                                 <tr>
-                                                    <th>Master's degree</th>
-                                                    <td >
+                                                    <th>Master</th>
+                                                    <td>
                                                         <ul class="dot-list01">
                                                             <li>Individuals who have obtained a bachelor's degree from domestic or foreign universities or those expected to obtain a degree upon completion of the current registered semester</li>
                                                             <li>Individuals recognized as having equivalent or higher academic qualifications under relevant laws</li>
@@ -223,8 +247,8 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <th>Doctorate's degree</th>
-                                                    <td >
+                                                    <th>Combined master's/doctorate's program</th>
+                                                    <td>
                                                         <ul class="dot-list01">
                                                             <li>Individuals who have obtained a bachelor's degree from domestic or foreign universities or those expected to obtain a degree upon completion of the current registered semester</li>
                                                             <li>Individuals recognized as having equivalent or higher academic qualifications under relevant laws</li>
@@ -232,8 +256,17 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <th>Eligibility for master's/doctorate's<br/>Support for North Korean defectors</th>
-                                                    <td >
+                                                    <th>Doctorate</th>
+                                                    <td>
+                                                        <ul class="dot-list01">
+                                                            <li>Individuals who have obtained a bachelor's degree from domestic or foreign universities or those expected to obtain a degree upon completion of the current registered semester</li>
+                                                            <li>Individuals recognized as having equivalent or higher academic qualifications under relevant laws</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Eligibility for master's/doctorate's<br/>support for North Korean defectors</th>
+                                                    <td>
                                                         <ul class="dot-list01">
                                                             <li>Individuals qualified to apply for master's or doctorate's program</li>
                                                             <li>Individuals registered as North Korean defectors pursuant to the North Korean Defectors Protection and Settlement Support Act</li>
@@ -245,8 +278,7 @@
                                     </div>
                                     <h4 class="subTit04">Additional eligibility requirements and submission documents</h4>
                                     <ul class="dot-list02">
-                                        <li>Specify desired major in study plan (Note: desired major is not final and can be changed during enrollment)</li>
-                                        <li>Submit additional self-introduction (free format): Include details related to academic performance history, etc.</li>
+                                        <li>Not applicable</li>
                                     </ul>
                                     <h4 class="subTit04">Program information (for students admitted after 2022)</h4>
                                     <div class="table-wrap">
@@ -255,7 +287,8 @@
                                                 <tr>
                                                     <th>Category</th>
                                                     <th>Length of study</th>
-                                                    <th>Basic semester operation</th>
+                                                    <th>Maximum period of enrollment</th>
+                                                    <th>Period for degree acquisition after completion</th>
                                                     <th>Minimum credits required</th>
                                                     <th>Graduation thesis</th>
                                                 </tr>
@@ -263,40 +296,70 @@
                                             <tbody>
                                                 <tr>
                                                     <td>Master</td>
-                                                    <td rowspan="2">2+ years</td>
-                                                    <td rowspan="2">4 semester system</td>
+                                                    <td rowspan="2">Minimum 2 years</td>
+                                                    <td>3 years</td>
+                                                    <td>6 years</td>
                                                     <td>24 credits</td>
                                                     <td>Master's thesis</td>
                                                 </tr>
                                                 <tr>
                                                     <td>Doctorate</td>
+                                                    <td>5 years</td>
+                                                    <td>8 years</td>
                                                     <td>36 credits</td>
+                                                    <td>Doctoral dissertation</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Combined master's/doctorate's program</td>
+                                                    <td>Minimum 4 years</td>
+                                                    <td>8 years</td>
+                                                    <td>8 years</td>
+                                                    <td>60 credits</td>
                                                     <td>Doctoral dissertation</td>
                                                 </tr>
                                             </tbody>
                                         </table>
+                                        <p class="point mt10">※ The minimum of 36 credits for doctoral program completion applies to new students from the 2022 academic year</p>
                                         <p class="point mt10">※ For other academic information: Refer to relevant items on the Education/Academic Affairs tab of the Graduate School website</p>
                                     </div>
                                     <h4 class="subTit04">Minimum publication requirements for doctoral dissertation</h4>
                                     <ul class="dot-list02">
                                         <li>At least one paper published as first author in a journal listed (or candidate) by the National Research Foundation of Korea</li>
                                     </ul>
+                                   
+                                    <h4 class="subTit04">Graduate school operating principles</h4>
+                                    <ul class="dot-list02">
+                                        <li>Full-time priority selection</li>
+                                    </ul>
                                 </div>
+                                <!-- // 입 학 정 보 -->
+                                <!-- 학 생 활 동 및 진 로 -->
                                 <div id="panel_dept_03" role="tabpanel" aria-labelledby="tab_dept_03" class="tab-conts">
                                     <h4 class="subTit04">Scholarships</h4>
                                     <ul class="dot-list02">
-                                        <li><a href="https://graduate.uos.ac.kr/graduateNew/html/support/scholarship.do?menuid=3000004001001000000" class="link-ty1">Website</a></li>
+                                        <li>4th Stage BK21 Project Graduate Student Research Scholarship Support</li>
+                                        <li>
+                                            <a href="https://graduate.uos.ac.kr/graduateNew/html/support/scholarship.do?menuid=3000004001001000000" class="link-ty1">Website</a>
+                                        </li>
                                     </ul>
                                     <h4 class="subTit04">Career paths after graduation</h4>
                                     <ul class="dot-list02">
-                                        <li>Government and public institution research institutes</li>
-                                        <li>Public corporations</li>
-                                        <li>Educational institutions</li>
+                                        <li>Fields related to Smart Cities</li>
+                                    </ul>
+                                    <h4 class="subTit04">Department amenities and publicity</h4>
+                                    <ul class="dot-list02">
+                                        <li>
+                                            Opportunities for collaborative activities with overseas universities related to smart cities
+                                        </li>
+                                        <li>
+                                            Establishment and activities of an international smart city network centered on the University of Seoul
+                                        </li>
+                                        <li>
+                                            Providing opportunities for education, research, and employment/entrepreneurship using cooperative systems with domestic and international smart city-related industries
+                                        </li>
                                     </ul>
                                 </div>
-                                <div id="panel_dept_04" role="tabpanel" aria-labelledby="tab_dept_04" class="tab-conts">
-                                    
-                                </div>
+                                <!-- //학 생 활 동 및 진 로 -->
                             </div>
                             <!-- //tab contents -->
                         </div>
@@ -310,4 +373,5 @@
         <div id="footer"></div>
     </div>
 </body>
+
 </html>

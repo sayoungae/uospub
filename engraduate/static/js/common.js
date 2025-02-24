@@ -2,58 +2,80 @@
 window.addEventListener("DOMContentLoaded", () => {
 	/* layer tab */
 	function layerTab() {
-		const layerTabArea = document.querySelectorAll('.tab-area.layer');
-
-		/* 탭 접근성 텍스트 세팅 */
-		const tabAccText = document.createTextNode(' 선택됨');
-		const tabAccTag = document.createElement('i');
-		tabAccTag.setAttribute('class', 'blind');
-		tabAccTag.appendChild(tabAccText);
-
-		layerTabArea.forEach(e => {
-			const layerTabEle = e.querySelectorAll('.tab > ul > li');
-			const tabPanel = e.querySelectorAll('.tab-conts');
-
-			function tab() {
-				layerTabEle.forEach(ele => {
-					const control = ele.getAttribute('aria-controls');
-					const selectedTabPanel = document.getElementById(control);
-
-					if (ele.classList.contains('active')) {
-						//선택됨 텍스트 추가
-						ele.querySelector('button').append(tabAccTag);
-					}
-
-					ele.addEventListener('click', () => {
-						layerTabInitial(); //레이어탭 초기화
-
-						ele.classList.add('active');
-						ele.querySelector('button').append(tabAccTag); //선택됨 텍스트 추가
-						ele.setAttribute('aria-selected', 'true');
-						selectedTabPanel.classList.add('active');
+		const layerTabAreas = document.querySelectorAll('.tab-area.layer');
+		layerTabAreas.forEach(area => {
+			const tabs = area.querySelectorAll('.tab > ul > li');
+			const panels = area.querySelectorAll('.tab-conts');
+	  
+			tabs.forEach(tab => {
+				const controlId = tab.getAttribute('aria-controls');
+				const panel = document.getElementById(controlId);
+		
+				// 초기 활성 상태 체크
+				if(tab.classList.contains('active')) {
+				tab.querySelector('button').insertAdjacentHTML('beforeend', '<i class="blind"> 선택됨</i>');
+				}
+		
+				tab.addEventListener('click', () => {
+				// 모든 외부 탭과 패널 초기화
+				tabs.forEach(t => {
+					t.classList.remove('active');
+					t.setAttribute('aria-selected', 'false');
+					const btn = t.querySelector('button');
+					const acc = btn.querySelector('.blind');
+					if(acc) btn.removeChild(acc);
+				});
+				panels.forEach(p => p.classList.remove('active'));
+		
+				// 클릭한 탭 활성화
+				tab.classList.add('active');
+				tab.setAttribute('aria-selected', 'true');
+				tab.querySelector('button').insertAdjacentHTML('beforeend', '<i class="blind"> 선택됨</i>');
+				panel.classList.add('active');
+			});
+		  });
+		});
+	  }
+	  
+	  // 내부 탭 초기화 함수
+	  function innerTab() {
+			const innerTabAreas = document.querySelectorAll('.tab-area.layer-in');
+			innerTabAreas.forEach(area => {
+				const tabs = area.querySelectorAll('.innTab > ul > li');
+				const panels = area.querySelectorAll('.innTab-conts');
+		
+				tabs.forEach(tab => {
+						const controlId = tab.getAttribute('aria-controls');
+						const panel = document.getElementById(controlId);
+				
+						if(tab.classList.contains('active')) {
+						tab.querySelector('button').insertAdjacentHTML('beforeend', '<i class="blind"> 선택됨</i>');
+						}
+				
+						tab.addEventListener('click', () => {
+						// 내부 탭 초기화
+						tabs.forEach(t => {
+							t.classList.remove('active');
+							t.setAttribute('aria-selected', 'false');
+							const btn = t.querySelector('button');
+							const acc = btn.querySelector('.blind');
+							if(acc) btn.removeChild(acc);
+						});
+						panels.forEach(p => p.classList.remove('active'));
+				
+						// 선택된 내부 탭 활성화
+						tab.classList.add('active');
+						tab.setAttribute('aria-selected', 'true');
+						tab.querySelector('button').insertAdjacentHTML('beforeend', '<i class="blind"> 선택됨</i>');
+						panel.classList.add('active');
 					});
 				});
-			}
-
-			//레이어탭 초기화
-			function layerTabInitial() {
-				layerTabEle.forEach(ele => {
-					ele.classList.remove('active');
-					ele.setAttribute('aria-selected', 'false');
-					if (ele.classList.contains('active')) {
-						const text = ele.querySelector('.sr-only.created');
-						ele.querySelector('button').removeChild(text);
-					}
-				});
-				tabPanel.forEach(ele => {
-					ele.classList.remove('active');
-					
-				})
-			}
-			tab();
 		});
 	}
+
+	// 초기화 호출 (외부, 내부 각각 필요에 따라 호출)
 	layerTab();
+	innerTab();
 
 	/*  menu  */
 	$(".depth1 > li > a").bind('focus mouseover',function(){

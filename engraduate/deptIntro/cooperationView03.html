@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일반대학원 영문</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/swiper.css">
+
+
+    <!-- JS -->
+    <script src="../static/js/jquery-3.7.1.js"></script>
+    <script src="../static/js/swiper-bundle.min.js"></script>
+    <script src="../static/js/common.js"></script>
+    <script src="../static/js/main.js"></script>
+    <script src="../static/js/sub.js"></script>
+
+
+    <script>
+        //header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <!-- sub-banner -->
+            <div class="sub-banner sub1">
+                <div class="inner">
+                    <div class="ban-tit">University of Seoul Global Top Brand</div>
+                    <ul class="line-map">
+                        <li><img src="../static/images/home_ic.png" alt="home"></li>
+                        <li>dept</li>
+                        <li>dept Centers and Laboratores</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content">
+                <div class="inner clearfix">
+                    <!-- // sub-banner -->
+                    <!-- snb -->
+                    <div id="snb-wrap">
+                    </div>
+                    <!-- // snb -->
+                    <!-- sub content -->
+                    <div class="sub-content" id="sub-content">
+                        <div class="sub-tit-box">
+                            <h3 class="subTit01">Department of Urban Big Data Convergence</h3>
+                            <ul class="stp-bt">
+                                <li><a href="" class="print-ic"><span class="blind">인쇄</span></a></li>
+                                <li><a href="" class="share-ic"><span class="blind">공유 </span></a></li>
+                            </ul>
+                        </div>
+                        <!-- 본문 -->
+                        <!-- tab -->
+                        <div class="tab-area layer">
+                            <!-- tab list -->
+                            <div class="tab">
+                                <ul role="tablist">
+                                    <li id="tab_dept_01" role="tab" aria-selected="true" aria-controls="panel_dept_01"
+                                        class="active">
+                                        <button type="button" class="btn-tab">Departments</button>
+                                    </li>
+                                    <li id="tab_dept_02" role="tab" aria-selected="false" aria-controls="panel_dept_02">
+                                        <button type="button" class="btn-tab">Admission</button>
+                                    </li>
+                                    <li id="tab_dept_03" role="tab" aria-selected="false" aria-controls="panel_dept_03">
+                                        <button type="button" class="btn-tab">Assistance, etc</button>
+                                    </li>
+                                    <li>
+                                        <a href="https://graduate.uos.ac.kr/graduateNew/deptIntro/cooperation/korNotice/list.do?list_id=10884FA1&code=30341&cate_id2=000010884&tab_id=6&menuid=3000001003006000000" class="btn-tab">대학원 공지사항</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- //tab list -->
+                            <!-- tab contents -->
+                            <div class="tab-conts-wrap">
+                                <!-- 학 과 소 개 -->
+                                <div id="panel_dept_01" role="tabpanel" aria-labelledby="tab_dept_01" class="tab-conts active">
+                                    <div class="dept-link-list">
+                                        <!-- 홈페이지 -->
+                                        <a href="https://disaster.uos.ac.kr/disaster/main.do?identified=anonymous&" target="_blank" title="opens in a new tab"class="icn1"><span>Homepage</span></a>
+                                        <!-- 교수소개 -->
+                                        <a href="#" target="_blank" title="opens in a new tab" class="icn2"><span>Faculty</span></a>
+                                        <!-- 교과과정 및 교과목 -->
+                                        <a href="https://www.uos.ac.kr/kor/popup/html/auos/prospectus/2022/prospectus.do?identified=anonymous&" target="_blank" title="opens in a new tab" class="icn3"><span>Curriculum</span></a>
+                                    </div>
+                                    <h4 class="subTit04">Educational objectives</h4>
+                                    <div class="table-wrap">
+                                        <table class="type3">
+                                            <colgroup>
+                                                <col width="20%">
+                                                <col width="80%">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th>Core objectives</th>
+                                                    <td>
+                                                        The Department of Urban Big Data Convergence Studies aims to cultivate innovative talents in urban big data that will lead the big data era, based on computer science, electronic electrical computer engineering, statistics, mechanical information engineering, spatial information engineering, transportation engineering, civil engineering, sports science, and health sciences. It leads education and research related to urban big data.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Detailed objectives</th>
+                                                    <td>
+                                                        The Department of Urban Big Data Convergence Studies aims to cultivate talents who can understand and conduct research on the analysis and processing of ultra-large urban big data produced and collected in urban environments in light of the growing importance of big data in the era of the 4th Industrial Revolution. It provides interdisciplinary courses in urban and IT fields based on big data subjects grounded in statistics and computer engineering, covering the entire series of steps from acquisition, analysis, processing, to application.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Research areas</th>
+                                                    <td>
+                                                        Theory of big data, Applications of urban big data
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <h4 class="subTit04">Information</h4>
+                                    <div class="table-wrap">
+                                        <ul class="dept-info">
+                                            <li>
+                                                <div>Head professor</div>
+                                                <div>Jang Seo-il</div>
+                                            </li>
+                                            <li>
+                                                <div>TEL</div>
+                                                <div>+82-2-6490-2865</div>
+                                            </li>
+                                            <li>
+                                                <div>E-mail</div>
+                                                <div></div>
+                                            </li>
+                                            <li>
+                                                <div>Office</div>
+                                                <div>3F Room 338, Architecture and Civil Engineering Building</div>
+                                            </li>
+                                            <li>
+                                                <div>TEL</div>
+                                                <div>+82-2-6490-5005</div>
+                                            </li>
+                                            <li>
+                                                <div>FAX</div>
+                                                <div>+82-2-6490-5019</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <h4 class="subTit04">Professor List</h4>
+                                    <div class="table-wrap">
+                                        <ul class="dept-info">
+                                            <li>
+                                                <div>Department</div>
+                                                <div>Department of Transportation Engineering</div>
+                                            </li>
+                                            <li>
+                                                <div>Name</div>
+                                                <div>Kim Do-kyung</div>
+                                            </li>
+                                            <li>
+                                                <div>Contact</div>
+                                                <div>+82-2-6490-2826</div>
+                                            </li>
+                                            <li>
+                                                <div>website</div>
+                                                <div>
+                                                    <a href="https://transport.uos.ac.kr/prof/view.do?proseq=150&amp;cateval=20050%C2%A4tPage=&amp;pageIndex=1&amp;w=1&amp;x=3&amp;y=1&amp;code=20050&amp;cate=1&amp;gubun=&amp;" target="_blank" title="open new tab" class="link-ty1">website</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="dept-info mt10">
+                                            <li>
+                                                <div>Department</div>
+                                                <div>Department of Computer Science</div>
+                                            </li>
+                                            <li>
+                                                <div>Name</div>
+                                                <div>Kim Min-ho</div>
+                                            </li>
+                                            <li>
+                                                <div>Contact</div>
+                                                <div>+82-2-6490-2453</div>
+                                            </li>
+                                            <li>
+                                                <div>website</div>
+                                                <div>
+                                                    <a href="http://www.minho-kim.com" target="_blank" title="open new tab" class="link-ty1">website</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="dept-info mt10">
+                                            <li>
+                                                <div>Department</div>
+                                                <div>School of Electrical and Computer Engineering</div>
+                                            </li>
+                                            <li>
+                                                <div>Name</div>
+                                                <div>Kim Han-jun</div>
+                                            </li>
+                                            <li>
+                                                <div>Contact</div>
+                                                <div>+82-2-6490-2339</div>
+                                            </li>
+                                            <li>
+                                                <div>website</div>
+                                                <div>
+                                                    <a href="http://dmlab.uos.ac.kr" target="_blank" title="open new tab" class="link-ty1">website</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="dept-info mt10">
+                                            <li>
+                                                <div>Department</div>
+                                                <div>Department of Transportation Engineering</div>
+                                            </li>
+                                            <li>
+                                                <div>Name</div>
+                                                <div>Park Dong-joo</div>
+                                            </li>
+                                            <li>
+                                                <div>Contact</div>
+                                                <div>+82-2-6490-2825</div>
+                                            </li>
+                                            <li>
+                                                <div>website</div>
+                                                <div>
+                                                    <a href="https://transport.uos.ac.kr/prof/view.do?proseq=10&cateval=20050¤tPage=&pageIndex=1&w=1&x=3&y=1&code=20050&cate=1&gubun=" target="_blank" title="open new tab" class="link-ty1">website</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="dept-info mt10">
+                                            <li>
+                                                <div>Department</div>
+                                                <div>Graduate School of Urban Public Health</div>
+                                            </li>
+                                            <li>
+                                                <div>Name</div>
+                                                <div>Park Sang-sin</div>
+                                            </li>
+                                            <li>
+                                                <div>Contact</div>
+                                                <div>+82-2-6490-6758</div>
+                                            </li>
+                                            <li>
+                                                <div>website</div>
+                                                <div>
+                                                    <a href="http://www.uos.ac.kr/gsuph/" target="_blank" title="open new tab" class="link-ty1">website</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        
+                                        <ul class="dept-info mt10">
+                                            <li>
+                                                <div>Department</div>
+                                                <div>Department of Statistics</div>
+                                            </li>
+                                            <li>
+                                                <div>Name</div>
+                                                <div>Park Jae-hwi</div>
+                                            </li>
+                                            <li>
+                                                <div>Contact</div>
+                                                <div>+82-2-6490-2630</div>
+                                            </li>
+                                            <li>
+                                                <div>website</div>
+                                                <div>
+                                                    <a href="https://science.uos.ac.kr/science/prof/view.do" target="_blank" title="open new tab" class="link-ty1">website</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="dept-info mt10">
+                                            <li>
+                                                <div>Department</div>
+                                                <div>Department of Computer Science</div>
+                                            </li>
+                                            <li>
+                                                <div>Name</div>
+                                                <div>Ahn Sang-hyun</div>
+                                            </li>
+                                            <li>
+                                                <div>Contact</div>
+                                                <div>+82-2-6490-2446</div>
+                                            </li>
+                                            <li>
+                                                <div>website</div>
+                                                <div>
+                                                    <a href="http://network.uos.ac.kr" target="_blank" title="open new tab" class="link-ty1">website</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        
+                                        <ul class="dept-info mt10">
+                                            <li>
+                                                <div>Department</div>
+                                                <div>Department of Computer Science</div>
+                                            </li>
+                                            <li>
+                                                <div>Name</div>
+                                                <div>Lee Byeong-jeong</div>
+                                            </li>
+                                            <li>
+                                                <div>Contact</div>
+                                                <div>+82-2-6490-2451</div>
+                                            </li>
+                                            <li>
+                                                <div>website</div>
+                                                <div>
+                                                    <a href="http://selab.uos.ac.kr" target="_blank" title="open new tab" class="link-ty1">website</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="dept-info mt10">
+                                            <li>
+                                                <div>Department</div>
+                                                <div>School of Electrical and Computer Engineering</div>
+                                            </li>
+                                            <li>
+                                                <div>Name</div>
+                                                <div>Lee Young-min</div>
+                                            </li>
+                                            <li>
+                                                <div>Contact</div>
+                                                <div>+82-2-6490-2346</div>
+                                            </li>
+                                            <li>
+                                                <div>website</div>
+                                                <div>
+                                                    <a href="http://parlab.uos.ac.kr" target="_blank" title="open new tab" class="link-ty1">website</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                       
+                                        <ul class="dept-info mt10">
+                                            <li>
+                                                <div>Department</div>
+                                                <div>Department of Geoinformatics</div>
+                                            </li>
+                                            <li>
+                                                <div>Name</div>
+                                                <div>Lee Im-pyeong</div>
+                                            </li>
+                                            <li>
+                                                <div>Contact</div>
+                                                <div>+82-2-6490-2888</div>
+                                            </li>
+                                            <li>
+                                                <div>website</div>
+                                                <div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="dept-info mt10">
+                                            <li>
+                                                <div>Department</div>
+                                                <div>School of Environmental Engineering</div>
+                                            </li>
+                                            <li>
+                                                <div>Name</div>
+                                                <div>Jang Seo-il</div>
+                                            </li>
+                                            <li>
+                                                <div>Contact</div>
+                                                <div>+82-2-6490-2865</div>
+                                            </li>
+                                            <li>
+                                                <div>website</div>
+                                                <div>
+                                                    <a href="https://sites.google.com/view/nnvlab" target="_blank" title="open new tab" class="link-ty1">website</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="dept-info mt10">
+                                            <li>
+                                                <div>Department</div>
+                                                <div>Department of Civil Engineering</div>
+                                            </li>
+                                            <li>
+                                                <div>Name</div>
+                                                <div>Cho Soo-jin</div>
+                                            </li>
+                                            <li>
+                                                <div>Contact</div>
+                                                <div>+82-2-6490-2434</div>
+                                            </li>
+                                            <li>
+                                                <div>website</div>
+                                                <div>
+                                                    <a href="http://shm.uos.ac.kr" target="_blank" title="open new tab" class="link-ty1">website</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="dept-info mt10">
+                                            <li>
+                                                <div>Department</div>
+                                                <div>http://shm.uos.ac.kr</div>
+                                            </li>
+                                            <li>
+                                                <div>Name</div>
+                                                <div>Jeon Jong-jun</div>
+                                            </li>
+                                            <li>
+                                                <div>Contact</div>
+                                                <div>+82-2-6490-2637</div>
+                                            </li>
+                                            <li>
+                                                <div>website</div>
+                                                <div>
+                                                    <a href="http://ranking.uos.ac.kr" target="_blank" title="open new tab" class="link-ty1">website</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="dept-info mt10">
+                                            <li>
+                                                <div>Department</div>
+                                                <div>Department of Sports Science</div>
+                                            </li>
+                                            <li>
+                                                <div>Name</div>
+                                                <div>Je Se-young</div>
+                                            </li>
+                                            <li>
+                                                <div>Contact</div>
+                                                <div>+82-2-6490-2637</div>
+                                            </li>
+                                            <li>
+                                                <div>website</div>
+                                                <div>
+                                                    <a href="http://campus.uos.ac.kr/hipi" target="_blank" title="open new tab" class="link-ty1">website</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="dept-info mt10">
+                                            <li>
+                                                <div>Department</div>
+                                                <div>Department of Urban Big Data Convergence</div>
+                                            </li>
+                                            <li>
+                                                <div>Name</div>
+                                                <div>Choi Ho-sik</div>
+                                            </li>
+                                            <li>
+                                                <div>Contact</div>
+                                                <div>+82-2-6490-5081</div>
+                                            </li>
+                                            <li>
+                                                <div>website</div>
+                                                <div>
+                                                    <a href="https://www.uos.ac.kr/kor/auos/guide/profsearch/profsearch_view.do?proseq=1276&code=1276&cateval=30341&pageIndex=1&searchCnd=1&searchProc=Y" target="_blank" title="open new tab" class="link-ty1">website</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                      
+                                    </div>
+                                </div>
+                                <!-- //학 과 소 개 -->
+
+                                <!-- 입 학 정 보 -->
+                                <div id="panel_dept_02" role="tabpanel" aria-labelledby="tab_dept_02" class="tab-conts">
+                                    <div class="dept-link-list">
+                                        <a href="../admission/regular.html" target="_blank" title="opens in a new tab" class="icn4"><span>Recruitment guidelines</span></a>
+                                        <a href="https://rule.uos.ac.kr/lmxsrv/main/main.srv" target="_blank" title="opens in a new tab" class="icn5"><span>Operating regulations</span></a>
+                                    </div>
+                                    <h4 class="subTit04">General admission degree programs</h4>
+                                    <div class="table-wrap">
+                                        <table class="type3">
+                                            <colgroup>
+                                                <col width="20%">
+                                                <col width="80%">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th>Master</th>
+                                                    <td>
+                                                        <ul class="dot-list01">
+                                                            <li>Individuals who have obtained a bachelor's degree from domestic or foreign universities or those expected to obtain a degree upon completion of the current registered semester</li>
+                                                            <li>Individuals recognized as having equivalent or higher academic qualifications under relevant laws</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Combined master's/doctorate's program</th>
+                                                    <td>
+                                                        <ul class="dot-list01">
+                                                            <li>Individuals who have obtained a bachelor's degree from domestic or foreign universities or those expected to obtain a degree upon completion of the current registered semester</li>
+                                                            <li>Individuals recognized as having equivalent or higher academic qualifications under relevant laws</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Doctorate</th>
+                                                    <td>
+                                                        <ul class="dot-list01">
+                                                            <li>Individuals who have obtained a bachelor's degree from domestic or foreign universities or those expected to obtain a degree upon completion of the current registered semester</li>
+                                                            <li>Individuals recognized as having equivalent or higher academic qualifications under relevant laws</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Eligibility for master's/doctorate's<br/>support for North Korean defectors</th>
+                                                    <td>
+                                                        <ul class="dot-list01">
+                                                            <li>Individuals qualified to apply for master's or doctorate's program</li>
+                                                            <li>Individuals registered as North Korean defectors pursuant to the North Korean Defectors Protection and Settlement Support Act</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <h4 class="subTit04">Additional eligibility requirements and submission documents</h4>
+                                    <ul class="dot-list02">
+                                        <li>Not applicable</li>
+                                    </ul>
+                                    <h4 class="subTit04">Program information (for students admitted after 2022)</h4>
+                                    <div class="table-wrap">
+                                        <table class="type1">
+                                            <thead>
+                                                <tr>
+                                                    <th>Category</th>
+                                                    <th>Length of study</th>
+                                                    <th>Maximum period of enrollment</th>
+                                                    <th>Period for degree acquisition after completion</th>
+                                                    <th>Minimum credits required</th>
+                                                    <th>Graduation thesis</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Master</td>
+                                                    <td rowspan="2">Minimum 2 years</td>
+                                                    <td>3 years</td>
+                                                    <td>6 years</td>
+                                                    <td>24 credits</td>
+                                                    <td>Master's thesis</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Doctorate</td>
+                                                    <td>5 years</td>
+                                                    <td>8 years</td>
+                                                    <td>36 credits</td>
+                                                    <td>Doctoral dissertation</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Combined master's/doctorate's program</td>
+                                                    <td>Minimum 4 years</td>
+                                                    <td>8 years</td>
+                                                    <td>8 years</td>
+                                                    <td>60 credits</td>
+                                                    <td>Doctoral dissertation</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <p class="point mt10">※ The minimum of 36 credits for doctoral program completion applies to new students from the 2022 academic year</p>
+                                        <p class="point mt10">※ For other academic information: Refer to relevant items on the Education/Academic Affairs tab of the Graduate School website</p>
+                                    </div>
+                                    <h4 class="subTit04">Minimum publication requirements for doctoral dissertation</h4>
+                                    <ul class="dot-list02">
+                                        <li>
+                                            At least 2 publications as the first author in journals listed (or candidates) by the National Research Foundation of Korea or at least 1 publication in SSCI, SCI(E) listed journals 
+                                        </li>
+                                    </ul>
+                                   
+                                    <h4 class="subTit04">Graduate school operating principles</h4>
+                                    <ul class="dot-list02">
+                                        <li>Master's: Full-time priority selection</li>
+                                        <li>Doctorate's: Full-time and part-time</li>
+                                    </ul>
+                                </div>
+                                <!-- // 입 학 정 보 -->
+                                <!-- 학 생 활 동 및 진 로 -->
+                                <div id="panel_dept_03" role="tabpanel" aria-labelledby="tab_dept_03" class="tab-conts">
+                                    <h4 class="subTit04">Scholarships</h4>
+                                    <ul class="dot-list02">
+                                        <li>4th Stage BK21 Project Graduate Student Research Scholarship Support</li>
+                                        <li>
+                                            <a href="https://graduate.uos.ac.kr/graduateNew/html/support/scholarship.do?menuid=3000004001001000000" class="link-ty1">Website</a>
+                                        </li>
+                                    </ul>
+                                    <h4 class="subTit04">Career paths after graduation</h4>
+                                    <ul class="dot-list02">
+                                        <li>Data science field, Big data/Machine learning field</li>
+                                        <li>Data-based urban public interest and urban industry field, Smart city field</li>
+                                    </ul>
+                                    <h4 class="subTit04">Department amenities and publicity</h4>
+                                    <ul class="dot-list02">
+                                        <li>
+                                            Networking and research opportunities provided with the University of Seoul Urban Science Big Data AI Research Institute 
+                                        </li>
+                                        <li>
+                                            Providing education, research, and employment/startup opportunities using cooperation systems with domestic and foreign big data-related industries
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- //학 생 활 동 및 진 로 -->
+                            </div>
+                            <!-- //tab contents -->
+                        </div>
+                        <!-- // tab -->
+                        <!-- 본문 -->
+                    </div>
+                    <!-- sub content -->
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+
+</html>

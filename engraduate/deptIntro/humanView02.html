@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,13 +27,14 @@
         fetch('../include/footer.html')
             .then(response => response.text())
             .then(data => document.getElementById('footer').innerHTML = data);
-        
+
         fetch('../include/snb.html')
             .then(response => response.text())
             .then(data => document.getElementById('snb-wrap').innerHTML = data);
-       
+
     </script>
 </head>
+
 <body>
     <div id="wrap">
         <header class="header" id="header"></header>
@@ -70,7 +72,8 @@
                             <!-- tab list -->
                             <div class="tab">
                                 <ul role="tablist">
-                                    <li id="tab_dept_01" role="tab" aria-selected="true" aria-controls="panel_dept_01" class="active">
+                                    <li id="tab_dept_01" role="tab" aria-selected="true" aria-controls="panel_dept_01"
+                                        class="active">
                                         <button type="button" class="btn-tab">Departments</button>
                                     </li>
                                     <li id="tab_dept_02" role="tab" aria-selected="false" aria-controls="panel_dept_02">
@@ -79,16 +82,25 @@
                                     <li id="tab_dept_03" role="tab" aria-selected="false" aria-controls="panel_dept_03">
                                         <button type="button" class="btn-tab">Assistance, etc</button>
                                     </li>
+                                    <li id="tab_dept_04" role="tab" aria-selected="false" aria-controls="panel_dept_04">
+                                        <button type="button" class="btn-tab">교수소개</button>
+                                    </li>
                                 </ul>
                             </div>
                             <!-- //tab list -->
                             <!-- tab contents -->
                             <div class="tab-conts-wrap">
-                                <div id="panel_dept_01" role="tabpanel" aria-labelledby="tab_dept_01" class="tab-conts active">
+                                <div id="panel_dept_01" role="tabpanel" aria-labelledby="tab_dept_01"
+                                    class="tab-conts active">
                                     <div class="dept-link-list">
-                                        <a href="https://liberalarts.uos.ac.kr/liberalarts/main.do?cate_id2=000010068&identified=anonymous&" target="_blank" title="opens in a new tab" class="icn1"><span>Homepage</span></a>
-                                        <a href="profList.html" target="_blank" title="opens in a new tab" class="icn2"><span>Faculty</span></a>
-                                        <a href="https://www.uos.ac.kr/kor/popup/html/auos/prospectus/2022/prospectus.do?identified=anonymous&" target="_blank" title="opens in a new tab" class="icn3"><span>Curriculum</span></a>
+                                        <a href="https://liberalarts.uos.ac.kr/liberalarts/main.do?cate_id2=000010068&identified=anonymous&"
+                                            target="_blank" title="opens in a new tab"
+                                            class="icn1"><span>Homepage</span></a>
+                                        <a href="profList.html" target="_blank" title="opens in a new tab"
+                                            class="icn2"><span>Faculty</span></a>
+                                        <a href="https://www.uos.ac.kr/kor/popup/html/auos/prospectus/2022/prospectus.do?identified=anonymous&"
+                                            target="_blank" title="opens in a new tab"
+                                            class="icn3"><span>Curriculum</span></a>
                                     </div>
                                     <h4 class="subTit04">Educational objectives</h4>
                                     <div class="table-wrap">
@@ -98,24 +110,26 @@
                                                 <col width="80%">
                                             </colgroup>
                                             <tbody>
-                                            <tr>
-                                                <th>Core objectives</th>
-                                                <td>
-                                                    The English language and literature graduate program aims to cultivate concrete and specialized knowledge of English literature and linguistics developed in the undergraduate
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th>Detailed objectives</th>
-                                                <td>
-                                                    
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th>Research areas</th>
-                                                <td>
-                                                    
-                                                </td>
-                                            </tr>
+                                                <tr>
+                                                    <th>Core objectives</th>
+                                                    <td>
+                                                        The English language and literature graduate program aims to
+                                                        cultivate concrete and specialized knowledge of English
+                                                        literature and linguistics developed in the undergraduate
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Detailed objectives</th>
+                                                    <td>
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Research areas</th>
+                                                    <td>
+
+                                                    </td>
+                                                </tr>
                                             </tbody>
                                         </table>
                                     </div>
@@ -152,8 +166,11 @@
                                 </div>
                                 <div id="panel_dept_02" role="tabpanel" aria-labelledby="tab_dept_02" class="tab-conts">
                                     <div class="dept-link-list">
-                                        <a href="../admission/regular.html" target="_blank" title="opens in a new tab" class="icn4"><span>Recruitment guidelines</span></a>
-                                        <a href="https://rule.uos.ac.kr/lmxsrv/main/main.srv" target="_blank" title="opens in a new tab" class="icn5"><span>Operating regulations</span></a>
+                                        <a href="../admission/regular.html" target="_blank" title="opens in a new tab"
+                                            class="icn4"><span>Recruitment guidelines</span></a>
+                                        <a href="https://rule.uos.ac.kr/lmxsrv/main/main.srv" target="_blank"
+                                            title="opens in a new tab" class="icn5"><span>Operating
+                                                regulations</span></a>
                                     </div>
                                     <h4 class="subTit04">General admission degree programs</h4>
                                     <div class="table-wrap">
@@ -163,39 +180,53 @@
                                                 <col width="80%">
                                             </colgroup>
                                             <tbody>
-                                            <tr>
-                                                <th>Master's degree</th>
-                                                <td style="text-align: left; word-break: keep-all;">
-                                                    <ul class="dot-list01">
-                                                        <li>Individuals who have obtained a bachelor's degree from domestic or foreign universities or those expected to obtain a degree upon completion of the current registered semester</li>
-                                                        <li>Individuals recognized as having equivalent or higher academic qualifications under relevant laws</li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th>Doctorate's degree</th>
-                                                <td>
-                                                    <ul class="dot-list01">
-                                                        <li>Individuals who have obtained a bachelor's degree from domestic or foreign universities or those expected to obtain a degree upon completion of the current registered semester</li>
-                                                        <li>Individuals recognized as having equivalent or higher academic qualifications under relevant laws</li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th>Eligibility for master's/doctorate's<br/>support for North Korean defectors</th>
-                                                <td style="text-align: left; word-break: keep-all;">
-                                                    <ul class="dot-list01">
-                                                        <li>Individuals qualified to apply for master's or doctorate's program</li>
-                                                        <li>Individuals registered as North Korean defectors pursuant to the North Korean Defectors Protection and Settlement Support Act</li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
+                                                <tr>
+                                                    <th>Master's degree</th>
+                                                    <td style="text-align: left; word-break: keep-all;">
+                                                        <ul class="dot-list01">
+                                                            <li>Individuals who have obtained a bachelor's degree from
+                                                                domestic or foreign universities or those expected to
+                                                                obtain a degree upon completion of the current
+                                                                registered semester</li>
+                                                            <li>Individuals recognized as having equivalent or higher
+                                                                academic qualifications under relevant laws</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Doctorate's degree</th>
+                                                    <td>
+                                                        <ul class="dot-list01">
+                                                            <li>Individuals who have obtained a bachelor's degree from
+                                                                domestic or foreign universities or those expected to
+                                                                obtain a degree upon completion of the current
+                                                                registered semester</li>
+                                                            <li>Individuals recognized as having equivalent or higher
+                                                                academic qualifications under relevant laws</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Eligibility for master's/doctorate's<br />support for North
+                                                        Korean defectors</th>
+                                                    <td style="text-align: left; word-break: keep-all;">
+                                                        <ul class="dot-list01">
+                                                            <li>Individuals qualified to apply for master's or
+                                                                doctorate's program</li>
+                                                            <li>Individuals registered as North Korean defectors
+                                                                pursuant to the North Korean Defectors Protection and
+                                                                Settlement Support Act</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
                                             </tbody>
                                         </table>
                                     </div>
-                                    <h4 class="subTit04">Additional eligibility requirements and submission documents</h4>
+                                    <h4 class="subTit04">Additional eligibility requirements and submission documents
+                                    </h4>
                                     <ul class="dot-list02">
-                                        <li>Official English proficiency test score (TOEIC, TOEFL, TEPS, IELTS) must be submitted</li>
+                                        <li>Official English proficiency test score (TOEIC, TOEFL, TEPS, IELTS) must be
+                                            submitted</li>
                                     </ul>
                                     <h4 class="subTit04">Program information (for students admitted after 2022)</h4>
                                     <div class="table-wrap">
@@ -224,11 +255,13 @@
                                                 </tr>
                                             </tbody>
                                         </table>
-                                        <p class="point mt10">※ For other academic information: Refer to relevant items on the Education/Academic Affairs tab of the Graduate School website</p>
+                                        <p class="point mt10">※ For other academic information: Refer to relevant items
+                                            on the Education/Academic Affairs tab of the Graduate School website</p>
                                     </div>
                                     <h4 class="subTit04">Minimum publication requirements for doctoral dissertation</h4>
                                     <ul class="dot-list02">
-                                        <li>At least one paper published as first author in a journal listed (or candidate) by the National Research Foundation of Korea</li>
+                                        <li>At least one paper published as first author in a journal listed (or
+                                            candidate) by the National Research Foundation of Korea</li>
                                     </ul>
                                     <h4 class="subTit04">Graduate school operating principles</h4>
                                     <ul class="dot-list02">
@@ -238,15 +271,232 @@
                                 <div id="panel_dept_03" role="tabpanel" aria-labelledby="tab_dept_03" class="tab-conts">
                                     <h4 class="subTit04">Scholarships</h4>
                                     <ul class="dot-list02">
-                                        <li><a href="https://graduate.uos.ac.kr/graduateNew/html/support/scholarship.do?menuid=3000004001001000000" class="link-ty1">Website</a></li>
+                                        <li><a href="https://graduate.uos.ac.kr/graduateNew/html/support/scholarship.do?menuid=3000004001001000000"
+                                                class="link-ty1">Website</a></li>
                                     </ul>
                                     <h4 class="subTit04">Career paths after graduation</h4>
                                     <ul class="dot-list02">
-                                        <li>Professionals in English linguistics and literature research institutions</li>
+                                        <li>Professionals in English linguistics and literature research institutions
+                                        </li>
                                         <li>Researchers and faculty at various universities</li>
                                         <li>Professionals in English education institutions</li>
                                         <li>Interpreters, translators, businesspeople, journalists</li>
                                     </ul>
+                                </div>
+                                <div id="panel_dept_04" role="tabpanel" aria-labelledby="tab_dept_04" class="tab-conts">
+                                    <div class="tab-area layer-in">
+                                        <div class="innTab">
+                                            <ul role="tablist">
+                                                <li id="tab_fcl_01" role="tab" aria-selected="true" aria-controls="panel_fcl_01" class="active">
+                                                    <button type="button" class="btn-tab">전임교수</button>
+                                                </li>
+                                                <li id="tab_fcl_02" role="tab" aria-selected="false" aria-controls="panel_fcl_02">
+                                                    <button type="button" class="btn-tab">명예교수</button>
+                                                </li>
+                                                <li id="tab_fcl_03" role="tab" aria-selected="false" aria-controls="panel_fcl_03">
+                                                    <button type="button" class="btn-tab">초빙교수</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="tab-conts-wrap">
+                                            <div id="panel_fcl_01" role="tabpanel" aria-labelledby="tab_fcl_01" class="innTab-conts active">
+                                                <div class="teacher-list">
+                                                    <ul>
+                                                        <li>
+                                                            <div class="tc-img">
+                                                                <img src="//file.uos.ac.kr/upload/hakbuUnit/prof//2020/11//202011231049451.jpg" alt="전인한 사진">
+                                                            </div>
+                                                            <div class="tc-info">
+                                                                <p class="tc-name">
+                                                                    <span>전인한</span>
+                                                                    <a href="#none" onclick="window.open('https://www.uos.ac.kr/prof/' + encodeURIComponent('282'),'window_name','width=500,height=600,location=no,status=no,scrollbars=yes')" class="tc-info-more"><span class="blind">자세히보기</span></a>
+                                                                </p>
+                                                                <p class="sub_tit">연구분야 : 왕정복고기와 18세기 영문학</p>
+                                                                <ul id="prof282" class="other-info">
+                                                                    <li>인문학관 5313호</li>
+                                                                    <li>02-6490-2517</li>
+                                                                    <li>-</li>
+                                                                    <li><a href="mailto:inhan@uos.ac.kr">inhan@uos.ac.kr</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="tc-img">
+                                                                <img src="//file.uos.ac.kr/upload/hakbuUnit/prof//2015/03//201503031321231.JPG" alt="문영인 사진">
+                                                            </div>
+                                                            <div class="tc-info">
+                                                                <p class="tc-name">
+                                                                    <span>문영인</span>
+                                                                    <a href="#none" onclick="window.open('https://www.uos.ac.kr/prof/' + encodeURIComponent('407'),'window_name','width=500,height=600,location=no,status=no,scrollbars=yes')" class="tc-info-more"><span class="blind">자세히보기</span></a>
+                                                                </p>
+                                                                <p class="sub_tit">연구분야 : 제2언어습득론, 영어교수법, 문화간 의사소통</p>
+                                                                <ul id="prof282" class="other-info">
+                                                                    <li>인문학관 5316호</li>
+                                                                    <li>02-6490-2518</li>
+                                                                    <li>-</li>
+                                                                    <li><a href="yimoon@uos.ac.kr">yimoon@uos.ac.kr</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="tc-img">
+                                                                <img src="//file.uos.ac.kr/upload/hakbu/board/professor/2008/05/20080517201128625041_1.jpg" alt="이주경">
+                                                            </div>
+                                                            <div class="tc-info">
+                                                                <p class="tc-name">
+                                                                    <span>이주경</span>
+                                                                    <a href="#none" onclick="window.open('https://www.uos.ac.kr/prof/' + encodeURIComponent('281'),'window_name','width=500,height=600,location=no,status=no,scrollbars=yes')" class="tc-info-more"><span class="blind">자세히보기</span></a>
+                                                                </p>
+                                                                <p class="sub_tit">연구분야 : 음운론/음성학</p>
+                                                                <ul id="prof282" class="other-info">
+                                                                    <li>인문학관 5312호</li>
+                                                                    <li>02-6490-2519</li>
+                                                                    <li>-</li>
+                                                                    <li><a href="jookyeong@uos.ac.kr">jookyeong@uos.ac.kr</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="tc-img">
+                                                                <img src="//file.uos.ac.kr/upload/hakbu/board/professor/2012/03/20120309133834200231284.JPG" alt="권석우">
+                                                            </div>
+                                                            <div class="tc-info">
+                                                                <p class="tc-name">
+                                                                    <span>권석우</span>
+                                                                    <a href="#none" onclick="window.open('https://www.uos.ac.kr/prof/' + encodeURIComponent('284'),'window_name','width=500,height=600,location=no,status=no,scrollbars=yes')" class="tc-info-more"><span class="blind">자세히보기</span></a>
+                                                                </p>
+                                                                <p class="sub_tit">연구분야 : 미국소설, 미국문화, 신화와 종교, 폭력과 전쟁</p>
+                                                                <ul id="prof282" class="other-info">
+                                                                    <li>인문학관 5314호</li>
+                                                                    <li>02-6490-2520</li>
+                                                                    <li>-</li>
+                                                                    <li><a href="seokwook@uos.ac.kr">seokwook@uos.ac.kr</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="tc-img">
+                                                                <img src="//file.uos.ac.kr/upload/hakbuUnit/prof//2019/10//201910040942401.jpg" alt="임자연 ">
+                                                            </div>
+                                                            <div class="tc-info">
+                                                                <p class="tc-name">
+                                                                    <span>임자연</span>
+                                                                    <a href="#none" onclick="window.open('https://www.uos.ac.kr/prof/' + encodeURIComponent('286'),'window_name','width=500,height=600,location=no,status=no,scrollbars=yes')" class="tc-info-more"><span class="blind">자세히보기</span></a>
+                                                                </p>
+                                                                <p class="sub_tit">연구분야 : 응용언어학 및 제2언어습득</p>
+                                                                <ul id="prof282" class="other-info">
+                                                                    <li>인문학관 5315호</li>
+                                                                    <li>02-6490-2521</li>
+                                                                    <li>-</li>
+                                                                    <li><a href="limjy@uos.ac.kr">limjy@uos.ac.kr</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="tc-img">
+                                                                <img src="//file.uos.ac.kr/upload/hakbuUnit/prof//2019/10//201910040943081.jpg" alt="홍수민">
+                                                            </div>
+                                                            <div class="tc-info">
+                                                                <p class="tc-name">
+                                                                    <span>홍수민</span>
+                                                                    <a href="#none" onclick="window.open('https://www.uos.ac.kr/prof/' + encodeURIComponent('544'),'window_name','width=500,height=600,location=no,status=no,scrollbars=yes')" class="tc-info-more"><span class="blind">자세히보기</span></a>
+                                                                </p>
+                                                                <p class="sub_tit">연구분야 : 영어통사론</p>
+                                                                <ul id="prof282" class="other-info">
+                                                                    <li>인문학관 5317호</li>
+                                                                    <li>02-6490-2522</li>
+                                                                    <li>-</li>
+                                                                    <li><a href="soomhong@uos.ac.kr">soomhong@uos.ac.kr</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="tc-img">
+                                                                <img src="//file.uos.ac.kr/upload/hakbuUnit/prof//2015/03//201503031321531.JPG" alt="권영희">
+                                                            </div>
+                                                            <div class="tc-info">
+                                                                <p class="tc-name">
+                                                                    <span>권영희</span>
+                                                                    <a href="#none" onclick="window.open('https://www.uos.ac.kr/prof/' + encodeURIComponent('842'),'window_name','width=500,height=600,location=no,status=no,scrollbars=yes')" class="tc-info-more"><span class="blind">자세히보기</span></a>
+                                                                </p>
+                                                                <p class="sub_tit">연구분야 : 현대영국소설</p>
+                                                                <ul id="prof282" class="other-info">
+                                                                    <li>인문학관 5311호</li>
+                                                                    <li>02-6490-2523</li>
+                                                                    <li>-</li>
+                                                                    <li><a href="yhkwon@uos.ac.kr">yhkwon@uos.ac.kr</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="tc-img">
+                                                                <img src="//file.uos.ac.kr/upload/hakbuUnit/prof//2018/09//201809131141431.png" alt="최석훈">
+                                                            </div>
+                                                            <div class="tc-info">
+                                                                <p class="tc-name">
+                                                                    <span>최석훈</span>
+                                                                    <a href="#none" onclick="window.open('https://www.uos.ac.kr/prof/' + encodeURIComponent('1185'),'window_name','width=500,height=600,location=no,status=no,scrollbars=yes')" class="tc-info-more"><span class="blind">자세히보기</span></a>
+                                                                </p>
+                                                                <p class="sub_tit">연구분야 : 현대미국희곡</p>
+                                                                <ul id="prof282" class="other-info">
+                                                                    <li>인문학관 5210호</li>
+                                                                    <li>02-6490-2524</li>
+                                                                    <li><a href="http://www.uos.ac.kr/">http://www.uos.ac.kr/</a></li>
+                                                                    <li><a href="shchoi2524@uos.ac.kr">shchoi2524@uos.ac.kr</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="tc-img">
+                                                                <img src="//file.uos.ac.kr/upload/hakbuUnit/prof//2022/08//202208251615001.jpg" alt="윤수원">
+                                                            </div>
+                                                            <div class="tc-info">
+                                                                <p class="tc-name">
+                                                                    <span>윤수원</span>
+                                                                    <a href="#none" onclick="window.open('https://www.uos.ac.kr/prof/' + encodeURIComponent('1552'),'window_name','width=500,height=600,location=no,status=no,scrollbars=yes')" class="tc-info-more"><span class="blind">자세히보기</span></a>
+                                                                </p>
+                                                                <p class="sub_tit">연구분야 : 의미론, 화용론, 빅데이터 감성분석</p>
+                                                                <ul id="prof282" class="other-info">
+                                                                    <li>인문학관 5416-2호</li>
+                                                                    <li>02-6490-2516</li>
+                                                                    <li>-</li>
+                                                                    <li><a href="suwon@uos.ac.kr">suwon@uos.ac.kr</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!-- 명예교수 -->
+                                            <div id="panel_fcl_02" role="tabpanel" aria-labelledby="tab_fcl_02" class="innTab-conts">
+                                                <div class="teacher-list">
+                                                    <ul>
+                                                        <li>
+                                                            <div class="tc-img">
+                                                                <img src="//file.uos.ac.kr/upload/hakbu/board/professor/2008/09/20080902143227772129_1.jpg" alt="김용성">
+                                                            </div>
+                                                            <div class="tc-info">
+                                                                <p class="tc-name">
+                                                                    <span>전인한</span>
+                                                                    <a href="#none" onclick="window.open('https://www.uos.ac.kr/prof/' + encodeURIComponent('490'),'window_name','width=500,height=600,location=no,status=no,scrollbars=yes')" class="tc-info-more"><span class="blind">자세히보기</span></a>
+                                                                </p>
+                                                                <p class="sub_tit">연구분야 :  영문법, 영어사</p>
+                                                                <ul id="prof282" class="other-info">
+                                                                    <li>-</li>
+                                                                    <li>-</li>
+                                                                    <li>-</li>
+                                                                    <li><a href="kysung@uos.ac.kr">kysung@uos.ac.kr</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div id="panel_fcl_03" role="tabpanel" aria-labelledby="tab_fcl_03" class="innTab-conts">
+                                                <div></div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <!-- //tab contents -->
@@ -261,4 +511,5 @@
         <div id="footer"></div>
     </div>
 </body>
+
 </html>

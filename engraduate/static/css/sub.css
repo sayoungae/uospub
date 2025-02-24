@@ -177,16 +177,23 @@
 /* tab layer */
 .s-container .tab-area .tab > ul{display: flex; align-items: stretch;  font-weight: 600; font-size: var(--fz-20); gap: 4px;}
 .s-container .tab-area .tab > ul > li{flex: 1 1 0; position: relative; height: auto;}
-.s-container .tab-area .tab > ul > li > button{width: 100%; height: 100%; padding:14px; position: relative; border:2px solid #F0F0F0; background-color: #F0F0F0;word-break: keep-all;}
+.s-container .tab-area .tab > ul > li > .btn-tab{width: 100%; height: 100%; padding:14px; position: relative; border:2px solid #F0F0F0; background-color: #F0F0F0;word-break: keep-all; text-align: center;}
 
-.s-container .tab-area .tab > ul > li.active > button{border-color: #0C2E86; color:#0C2E86 ; background-color: #fff;}
-.s-container .tab-area .tab > ul > li.active > button::before{
-    width: 100%;
-}
+.s-container .tab-area .tab > ul > li.active > .btn-tab{border-color: #0C2E86; color:#0C2E86 ; background-color: #fff;}
+.s-container .tab-area .tab > ul > li.active > .btn-tab::before{ width: 100%;}
 .s-container .tab-conts-wrap{margin-top: 60px;}
 .s-container .tab-conts-wrap .tab-conts{display: none;}
 .s-container .tab-conts-wrap .tab-conts.active{display: block;}
 /* -- tab layer */
+/* tab inner */
+.s-container .innTab > ul{width: 100%; display: flex; align-items: center; gap: 10px; background-color: #F0F5FB; border-radius: 10px; padding:20px;}
+.s-container .innTab > ul >li{max-width: 210px; width: 100%;}
+.s-container .innTab > ul > li >.btn-tab{background-color: #fff; text-align: center; width: 100%; padding:10px; border-radius: 6px;    border: 1px solid #c5d5e4; font-weight: 500;}
+.s-container .innTab > ul >li.active > .btn-tab{background-image: url("../images/icon_check.png"); background-repeat: no-repeat; background-position: 95% center; border-color: #4366C2;}
+.s-container .tab-conts-wrap .innTab-conts {display: none;}
+.s-container .tab-conts-wrap .innTab-conts.active{display: block;}
+/* -- tab inner */
+
 /* table */
 .table-wrap {margin-top: 20px; margin-bottom: 60px;}
 .table-wrap .type1{width: 100%; border-top:2px solid #5076B8; text-align: center;}
@@ -372,8 +379,8 @@
 
 .org-chart{margin-bottom: 60px;}
 .org-chart .cir{
-    width: 140px;
-    height: 140px;
+    width: 160px;
+    height: 160px;
     background-color: #4472c4;
     border-radius: 50%;
     display: flex;
@@ -384,13 +391,14 @@
     font-size: var(--fz-24);
     color:#fff;
     margin:0 auto 30px;
+    padding:10px;
 }
 .org-chart .cir.line2{background-color: #818BBA;}
 
 .org-chart .cir:after{display: inline-block; width: 2px; height: 30px; border-left: 2px dotted #ccc; position: absolute; left:50%; transform: translateX(-50%); bottom:-30px; content:"";}
 .org-chart .squa-line{display: flex; justify-content: space-between; position: relative;}
 .org-chart .squa-line > li{
-    width: 120px;
+    width: 140px;
     height: 70px;
     background-color: #f7f7f7;
     border: 1px solid #ccc;
@@ -403,8 +411,8 @@
     text-align: center;
     color:#666;    
     margin-top: 40px;
-    position: relative;
     font-size: var(--fz-18);
+    padding:10px;
 }
 .org-chart .squa-line::before{display: inline-block; width:calc(100% - 120px); height: 42px; border-top: 2px dotted #ccc; border-left: 2px dotted #ccc;  border-right: 2px dotted #ccc;position: absolute; left:50%; transform: translateX(-50%); top:0; content:""; border-radius: 6px;}
 .org-chart .squa-line > li::before{display: inline-block; width: 2px; height: 40px; border-left: 2px dotted #ccc; position: absolute; left:50%; transform: translateX(-50%); top:-40px; content:"";}
@@ -414,10 +422,11 @@
 /* Departments -목록 */
 .dept-list-wrap > ul{border-top:2px solid #5077B9;}
 .dept-list-wrap > ul > li{padding:20px 15px;display: flex; justify-content: space-between;align-items: center; border-bottom:1px solid #DDDDDD;}
-.dept-list-wrap .tit-box{display: flex; align-items: center; margin-bottom: 25px;}
+.dept-list-wrap > ul > li > div{width: calc(100% - 170px);}
+.dept-list-wrap .tit-box{display: flex; align-items: center; margin-bottom: 25px; flex-wrap: wrap; column-gap: 30px; row-gap: 20px;}
 .dept-list-wrap .tit-box > h4{font-size: var(--fz-22); font-weight: 600;}
-.dept-list-wrap .tag-list{display: flex; gap: 8px; margin-left: 30px;}
-.dept-list-wrap .tag-list > li{font-size: 15px; font-weight: 600; color:#0e2a67; padding:5px 15px; border-radius: 20px;}
+.dept-list-wrap .tag-list{display: flex; gap: 8px;}
+.dept-list-wrap .tag-list > li{font-size: 15px; font-weight: 600; color:#0e2a67; padding:5px 15px; border-radius: 20px; display: flex; align-items: center; justify-content: center;}
 .dept-list-wrap .tag-list > li.li1{ background-color: #DDE0FA;}
 .dept-list-wrap .tag-list > li.li2{background-color: #F8DBFB;}
 .dept-list-wrap .tag-list > li.li3{background-color: #EDF0F5; color:#293A56;}
@@ -438,10 +447,11 @@
 .dept-link-list > a.icn5 > span{background-image: url("../images/dept_icn5.png");}
 
 .dept-info{display: flex; flex-wrap: wrap;     border-top: 2px solid #667CB3;}
-.dept-info > li{flex: 1 1 30%; font-size: var(--fz-16); overflow: hidden;  display: flex;     border-bottom: 1px solid #DBDBDB;} 
+.dept-info > li{flex: 1 1 45%; font-size: var(--fz-16); overflow: hidden;  display: flex;     border-bottom: 1px solid #DBDBDB;}
 .dept-info > li > div{ padding:20px 10px; word-break: keep-all;display: flex; align-items: center; justify-content: center; text-align: center;}
-.dept-info > li > div:nth-child(1){width: 40%; background-color: #F6F8FA; font-weight: 600; }
-.dept-info > li > div:nth-child(2){width: 60%;}
+.dept-info > li > div:nth-child(1){width: 30%;cap; background-color: #F6F8FA; font-weight: 600; }
+.dept-info > li > div:nth-child(2){width: 70%;}
+
 
 .link-fie{display: inline-block; width: 34px; height: 34px; border-radius: 50%; background: #EDF0F5 url("../images/icon_file.png") center center no-repeat;}
 .link-web{display: inline-block; width: 34px; height: 34px; border-radius: 50%; background: #0C2E86 url("../images/icon_home.png") center center no-repeat}
@@ -552,6 +562,22 @@
 /* -- center */
 
 
+/* 학과소개-교수소개 */
+.teacher-list > ul > li{width: 100%; padding:30px 30px; display: flex; align-items: center; gap: 40px;border-top: 2px dotted #d2d2d2;}
+.teacher-list > ul > li .tc-img{width: 114px; height: 148px; border-radius: 10px; overflow: hidden;}
+.teacher-list > ul > li .tc-img > img{width: 100%; height: 100%;}
+.teacher-list > ul > li .tc-info{width: calc(100% - 154px);}
+.teacher-list > ul > li .tc-name{font-size: var(--fz-20); font-weight: 700; margin-bottom: 10px;}
+.teacher-list > ul > li .tc-name .tc-info-more{display: inline-block; width: 20px; height: 19px; background:url("../images/icon_more.png"); transform: rotate(0); transition: transform 0.3s;}
+.teacher-list > ul > li .tc-name .tc-info-more:hover{ transform: rotate(45deg); }
+.teacher-list > ul > li .sub_tit{color:#555; font-weight: 500;}
+.teacher-list > ul > li .other-info{margin:20px 0; display: flex; flex-wrap: wrap; gap: 20px;}
+.teacher-list > ul > li .other-info > li{ flex: 1 1 45%; background-position: left center; background-repeat: no-repeat; padding-left: 30px;}
+.teacher-list > ul > li .other-info > li:nth-child(1){background-image: url("../images/icon_location.png");}
+.teacher-list > ul > li .other-info > li:nth-child(2){background-image: url("../images/icon_phone.png");}
+.teacher-list > ul > li .other-info > li:nth-child(3){background-image: url("../images/icon_home2.png");}
+.teacher-list > ul > li .other-info > li:nth-child(4){background-image: url("../images/icon_mail.png");}
+/* -- 학과소개-교수소개 */
 
 @media (max-width: 1200px) {
     /* snb */
@@ -586,9 +612,11 @@
 
     /* Departments -목록 */
     .dept-list-wrap > ul > li{flex-direction: column; align-items: flex-start; gap: 20px;}
-
+    .dept-list-wrap > ul > li > div{width: 100%;}
     /* Departments -상세 */
-    .dept-info > li{flex:1 1 45%}
+    .dept-info > li{flex:1 1 100%}
+    .dept-info > li > div{padding:10px;}
+
     /* Credit Exchange */
     .course{margin:40px 0;}
     .course_square{width: calc(50% - 45px);}
@@ -611,20 +639,19 @@
     .dot-list02 > li::before{top: 8px;}
     .dot-list03 li.num > span {top: 2px;}
     /* table */
+    .table-wrap{ overflow: hidden; overflow-x: auto;}
     .table-wrap .type3 td{padding:10px 15px;}
     .table-wrap .blt01::before{top:7px}
 
     /* Departments -목록 */
     .dept-list-wrap > ul > li {padding:15px 0;}
     .dept-list-wrap .tit-box{flex-direction: column;align-items: flex-start;gap: 10px; }
-    .dept-list-wrap .tag-list{margin-left: 0;}
+    .dept-list-wrap .tag-list{flex-wrap: wrap;}
     .dept-list-wrap .link{padding:5px 10px;}
     /* Departments -상세 */
     .dept-link-list{gap: 5px;}
     .dept-link-list > a > span{background-image: none !important; padding-left: 0;}
     .dept-link-list > a.icn1 > span{padding-left: 0;}
-    .dept-info > li{flex:1 1 100%}
-    .dept-info > li > div{padding:10px;}
     /* 교내연구기관 */
     .txt-box2 > .tit{padding:20px; justify-content: space-between}
     .txt-box2 > .tit > h4{width: calc(100% - 44px);}
@@ -633,6 +660,14 @@
     .course{row-gap: 60px;}
     .course_square{width: 100%; margin-right: 0;}
     .course_square:after{top:auto; bottom: -55px; left:50%;  transform: translate(-50%, 0) rotate(90deg);}
+
+    /* 학과소개-교수소개 */
+    .s-container .innTab > ul{flex-direction: column}
+    .s-container .innTab > ul >li{max-width: 100%; }
+    .teacher-list > ul > li{padding:20px 0; gap: 20px;align-items: flex-start}
+    .teacher-list > ul > li .other-info{gap: 10px;}
+    .teacher-list > ul > li .other-info > li{flex:1 1 100%;}
+    /* -- 학과소개-교수소개 */
 }
 
 
