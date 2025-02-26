@@ -72,8 +72,7 @@
 .dot-list02 a:not(.link-ty1){font-weight: 500; color: #557cc3; padding: 0 5px; background-color: #f0f5fb;    border-radius: 10px;}
 
 .dot-list03{padding-left: 7px; padding-bottom: 10px; font-size: var(--fz-16);}
-.dot-list03 li:nth-child(1){margin-top: 10px;}
-.dot-list03 li + li{margin-top: 10px;}
+.dot-list03 li{margin-top: 6px;}
 .dot-list03 li.num { position: relative; padding-left: 24px;}
 .dot-list03 li.num > span{
     display: block;
@@ -185,14 +184,6 @@
 .s-container .tab-conts-wrap .tab-conts{display: none;}
 .s-container .tab-conts-wrap .tab-conts.active{display: block;}
 /* -- tab layer */
-/* tab inner */
-.s-container .innTab > ul{width: 100%; display: flex; align-items: center; gap: 10px; background-color: #F0F5FB; border-radius: 10px; padding:20px;}
-.s-container .innTab > ul >li{max-width: 210px; width: 100%;}
-.s-container .innTab > ul > li >.btn-tab{background-color: #fff; text-align: center; width: 100%; padding:10px; border-radius: 6px;    border: 1px solid #c5d5e4; font-weight: 500;}
-.s-container .innTab > ul >li.active > .btn-tab{background-image: url("../images/icon_check.png"); background-repeat: no-repeat; background-position: 95% center; border-color: #4366C2;}
-.s-container .tab-conts-wrap .innTab-conts {display: none;}
-.s-container .tab-conts-wrap .innTab-conts.active{display: block;}
-/* -- tab inner */
 
 /* table */
 .table-wrap {margin-top: 20px; margin-bottom: 60px;}
@@ -563,31 +554,45 @@
 
 
 /* 학과소개-교수소개 */
-.teacher-list > ul > li{width: 100%; padding:30px 30px; display: flex; align-items: center; gap: 40px;border-top: 2px dotted #d2d2d2;}
-.teacher-list > ul > li .tc-img{width: 114px; height: 148px; border-radius: 10px; overflow: hidden;}
+.teacher-list > ul{display: flex; flex-wrap: wrap;border-top: 1px solid #F4F4F4;}
+.teacher-list > ul > li{flex: 1 1 50%; padding:40px 40px; display: flex; align-items: flex-start; gap: 40px;border-bottom: 1px solid #F4F4F4; min-width: 320px;}
+.teacher-list > ul > li .tc-img{width: 150px; height: 178px;  overflow: hidden; border: 1px solid #E5E5E5;}
 .teacher-list > ul > li .tc-img > img{width: 100%; height: 100%;}
 .teacher-list > ul > li .tc-info{width: calc(100% - 154px);}
-.teacher-list > ul > li .tc-name{font-size: var(--fz-20); font-weight: 700; margin-bottom: 10px;}
-.teacher-list > ul > li .tc-name .tc-info-more{display: inline-block; width: 20px; height: 19px; background:url("../images/icon_more.png"); transform: rotate(0); transition: transform 0.3s;}
-.teacher-list > ul > li .tc-name .tc-info-more:hover{ transform: rotate(45deg); }
-.teacher-list > ul > li .sub_tit{color:#555; font-weight: 500;}
-.teacher-list > ul > li .other-info{margin:20px 0; display: flex; flex-wrap: wrap; gap: 20px;}
-.teacher-list > ul > li .other-info > li{ flex: 1 1 45%; background-position: left center; background-repeat: no-repeat; padding-left: 30px;}
-.teacher-list > ul > li .other-info > li:nth-child(1){background-image: url("../images/icon_location.png");}
-.teacher-list > ul > li .other-info > li:nth-child(2){background-image: url("../images/icon_phone.png");}
-.teacher-list > ul > li .other-info > li:nth-child(3){background-image: url("../images/icon_home2.png");}
-.teacher-list > ul > li .other-info > li:nth-child(4){background-image: url("../images/icon_mail.png");}
+.teacher-list > ul > li .tc-name{font-size: var(--fz-18); font-weight: 600; margin-bottom: 10px;}
+.teacher-list > ul > li .tc-name >p{font-size: var(--fz-22); font-weight: 700; margin-bottom: 5px; color: #044497;}
+.teacher-list > ul > li .sub_tit{color:#676767; font-weight: 500; margin-bottom: 10px;}
+.teacher-list > ul > li .other-info{margin-top:20px; }
+.teacher-list > ul > li .other-info > li{color:#676767; padding-left: 14px; position: relative;}
+.teacher-list > ul > li .other-info > li+li{margin-top: 4px;}
+.teacher-list > ul > li .other-info > li::before{
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    background-color: #6A6A6A;
+    border-radius: 50%;
+    position: absolute;
+    left:0;
+    top:7px;
+}
+
 /* -- 학과소개-교수소개 */
 
 @media (max-width: 1200px) {
     /* snb */
-    /* -- snb */
     #snb-wrap{top:-50px}
     /* -- snb */
+    /* 학과소개-교수소개 */
+    .teacher-list > ul > li{flex: 1 1 100%;}
+    /* -- 학과소개-교수소개 */
 }
 @media (max-width: 1024px) {
     #snb-wrap{display: none;}
     #sub-content{width:100%; float:left; padding: 40px 0 40px 0;}
+    /* 학과소개-교수소개 */
+    .teacher-list > ul > li{flex: 1 1 50%;}
+    /* -- 학과소개-교수소개 */
 
 }
 
@@ -625,6 +630,13 @@
 
     /* 일반학사일정 */
     .calTop > .btn-wrap{position: relative; justify-content: flex-end;}
+
+    /* 학과소개-교수소개 */
+    .teacher-list > ul > li{padding:20px 0; gap: 20px;align-items: flex-start; flex: 1 1 100%;}
+    .teacher-list > ul > li .tc-img{width: 114px; height: 148px;}
+    .teacher-list > ul > li .other-info{gap: 10px;}
+    .teacher-list > ul > li .other-info > li{flex:1 1 100%;}
+    /* -- 학과소개-교수소개 */
 }
 
 
@@ -661,13 +673,7 @@
     .course_square{width: 100%; margin-right: 0;}
     .course_square:after{top:auto; bottom: -55px; left:50%;  transform: translate(-50%, 0) rotate(90deg);}
 
-    /* 학과소개-교수소개 */
-    .s-container .innTab > ul{flex-direction: column}
-    .s-container .innTab > ul >li{max-width: 100%; }
-    .teacher-list > ul > li{padding:20px 0; gap: 20px;align-items: flex-start}
-    .teacher-list > ul > li .other-info{gap: 10px;}
-    .teacher-list > ul > li .other-info > li{flex:1 1 100%;}
-    /* -- 학과소개-교수소개 */
+ 
 }
 
 

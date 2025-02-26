@@ -36,46 +36,9 @@ window.addEventListener("DOMContentLoaded", () => {
 		  });
 		});
 	  }
-	  
-	  // 내부 탭 초기화 함수
-	  function innerTab() {
-			const innerTabAreas = document.querySelectorAll('.tab-area.layer-in');
-			innerTabAreas.forEach(area => {
-				const tabs = area.querySelectorAll('.innTab > ul > li');
-				const panels = area.querySelectorAll('.innTab-conts');
-		
-				tabs.forEach(tab => {
-						const controlId = tab.getAttribute('aria-controls');
-						const panel = document.getElementById(controlId);
-				
-						if(tab.classList.contains('active')) {
-						tab.querySelector('button').insertAdjacentHTML('beforeend', '<i class="blind"> 선택됨</i>');
-						}
-				
-						tab.addEventListener('click', () => {
-						// 내부 탭 초기화
-						tabs.forEach(t => {
-							t.classList.remove('active');
-							t.setAttribute('aria-selected', 'false');
-							const btn = t.querySelector('button');
-							const acc = btn.querySelector('.blind');
-							if(acc) btn.removeChild(acc);
-						});
-						panels.forEach(p => p.classList.remove('active'));
-				
-						// 선택된 내부 탭 활성화
-						tab.classList.add('active');
-						tab.setAttribute('aria-selected', 'true');
-						tab.querySelector('button').insertAdjacentHTML('beforeend', '<i class="blind"> 선택됨</i>');
-						panel.classList.add('active');
-					});
-				});
-		});
-	}
 
-	// 초기화 호출 (외부, 내부 각각 필요에 따라 호출)
 	layerTab();
-	innerTab();
+
 
 	/*  menu  */
 	$(".depth1 > li > a").bind('focus mouseover',function(){

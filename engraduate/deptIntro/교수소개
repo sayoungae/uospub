@@ -1,0 +1,22 @@
+<div class="teacher-list">
+    <ul>
+        <li id="prof">
+            <div class="tc-img">
+                <img src="" alt="">
+            </div>
+            <div class="tc-info">
+                <div class="tc-name">
+                    <p></p>
+                    <span>Professor</span>
+                </div>
+                <p class="sub_tit">연구분야 : </p>
+                <ul class="other-info">
+                    <li></li>
+                    <li>+82-2-6490-</li>
+                    <li><a href="@uos.ac.kr">@uos.ac.kr</a></li>
+                </ul>
+            </div>
+        </li>
+     
+    </ul>
+</div>
