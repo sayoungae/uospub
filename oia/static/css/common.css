@@ -189,8 +189,10 @@ body{font-weight: 400; min-width: 320px; line-height: 1.4; font-family: 'S-Core'
         top:50%;
         transform: translateY(-50%);
 }
-.header .header-top .g-lang{height: 35px; border:1px solid #E8E8E8; border-radius: 40px; overflow: hidden; padding-left: 36px; padding-right: 16px; background:#ffffff url("../images/h-google.png") left 13px center no-repeat;}
-.header .header-top .g-lang > select{height: 100%;padding-right: 10px;}
+#google_translate_element{ border:1px solid #E8E8E8; border-radius: 40px; overflow: hidden; padding-left: 36px; padding-right: 16px; background:#ffffff url("../images/h-google.png") left 13px center no-repeat; font-size: 0;}
+#google_translate_element select{height: 35px;padding-right: 10px; font-size: 16px;}
+#google_translate_element .skiptranslate > span{display: none;}
+
 
 .header-top .top-menu{display: flex; gap: 10px; align-items: center;}
 .util-list > li{float:left;}
