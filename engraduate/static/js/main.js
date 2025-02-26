@@ -25,9 +25,8 @@ $(function(){
             realIndexChange: function () {
                 // 메인 슬라이드
                 $('.visual-slide .swiper-slide.on').removeClass('on');
-                var target = this.realIndex + 1;
                 setTimeout(function(){
-                    $('.visual-slide .swiper-slide.bg0' + target).addClass('on');
+                    $('.visual-slide .swiper-slide').addClass('on');
                 }, 300);
             },
             beforeChange: function(){

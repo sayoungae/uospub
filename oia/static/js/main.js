@@ -27,7 +27,7 @@ $(function(){
                 $('.m-slide .swiper-slide.on').removeClass('on');
                 var target = this.realIndex + 1;
                 setTimeout(function(){
-                    $('.m-slide .swiper-slide.bg0' + target).addClass('on');
+                    $('.m-slide .swiper-slide').addClass('on');
                 }, 300);
             }
         }
