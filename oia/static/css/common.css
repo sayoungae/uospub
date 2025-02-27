@@ -189,8 +189,9 @@ body{font-weight: 400; min-width: 320px; line-height: 1.4; font-family: 'S-Core'
         top:50%;
         transform: translateY(-50%);
 }
-#google_translate_element{ border:1px solid #E8E8E8; border-radius: 40px; overflow: hidden; padding-left: 36px; padding-right: 16px; background:#ffffff url("../images/h-google.png") left 13px center no-repeat; font-size: 0;}
+#google_translate_element{ border:1px solid #E8E8E8; border-radius: 40px; overflow: hidden; padding-left: 36px; padding-right: 16px; background:#ffffff url("../images/h-google.png") left 13px center no-repeat;}
 #google_translate_element select{height: 35px;padding-right: 10px; font-size: 16px;}
+#google_translate_element .skiptranslate{font-size: 0;}
 #google_translate_element .skiptranslate > span{display: none;}
 
 

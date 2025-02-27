@@ -168,8 +168,9 @@ a.linkNwin:hover,a.linkNwin:focus{background: url("../images/nWindow_ic2.png") n
 * ***********************************/
 .header-top{background-color: #003B9E; color:#fff; font-size: 14px; padding:10px 0;}
 .header-top > .inner{display: flex; justify-content: flex-end; align-items: center; gap: 20px; flex-wrap: wrap;}
-#google_translate_element{ border:1px solid #E8E8E8; border-radius: 40px; overflow: hidden; padding-left: 36px; padding-right: 16px; background:#ffffff url("../images/h-google.png") left 13px center no-repeat; font-size: 0;}
+#google_translate_element{ border:1px solid #E8E8E8; border-radius: 40px; overflow: hidden; padding-left: 36px; padding-right: 16px; background:#ffffff url("../images/h-google.png") left 13px center no-repeat;}
 #google_translate_element select{height: 35px;padding-right: 10px; font-size: 16px; color: #000;}
+#google_translate_element .skiptranslate{font-size: 0;}
 #google_translate_element .skiptranslate > span{display: none;}
 .util-wrp > li{padding:0 8px; position: relative; float: left; text-transform: uppercase;}
 .util-wrp > li:after{
