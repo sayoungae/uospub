@@ -75,7 +75,9 @@ body{font-weight: 400; min-width: 320px; line-height: 1.4; font-family: 'S-Core'
 
 /* 구글번역 옵션 가리기 */
 body{top:0 !important;}
-.skiptranslate{display: none;}
+.VIpgJd-ZVi9od-ORHb-OEVmcd{border:0; box-shadow: none; height: 0; z-index: -1;}
+.VIpgJd-ZVi9od-ORHb{display: none;}
+
 /* margin */
 .mt5 {margin-top:5px;}
 .mt10 {margin-top:10px;}
