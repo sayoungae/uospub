@@ -1,4 +1,0 @@
-﻿# uos
-# uos
-# uos
-# uos
