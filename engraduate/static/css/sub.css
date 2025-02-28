@@ -134,7 +134,7 @@
 .subTit02::before{content:""; display: inline-block;width: 6px; height: 18px; background: url("../images/tit-bg1.png") no-repeat; position: absolute; left:0; top:50%; transform: translateY(-50%);}
 .subTit03{ color: #0c2e86; font-size: var(--fz-28);padding-top: 10px;  font-weight: 700; word-break: keep-all; margin-bottom: 24px; margin-top: 60px; position: relative;}
 .subTit03::before{width: 34px; background-color: #0c2e86;height: 2px; position: absolute; left:0; top:0;display: inline-block; content:""; }
-.subTit04{ color: #444343; font-size: var(--fz-24); word-break: keep-all; margin-bottom: 10px; margin-top: 40px;}
+.subTit04{ color: #444343; font-size: var(--fz-24); word-break: keep-all; margin-bottom: 20px; margin-top: 0px;}
 
 .desc{padding-left: 6px;}
 .imgs > img{width: 100%;}
@@ -186,7 +186,7 @@
 /* -- tab layer */
 
 /* table */
-.table-wrap {margin-top: 20px; margin-bottom: 60px;}
+.table-wrap {margin-top: 20px; margin-bottom: 40px;}
 .table-wrap .type1{width: 100%; border-top:2px solid #5076B8; text-align: center;}
 .table-wrap .type1 tr{border-bottom: 1px solid #DEDEDE;}
 .table-wrap .type1 th{font-size: var(--fz-16); font-weight: 600;padding:10px; border-right: 1px solid #DEDEDE; vertical-align: middle; background-color: #FAFBFF;}
@@ -352,7 +352,7 @@
 .btn{display: inline-block; text-align: center; border-radius: 6px; font-weight: 500; background-color: #fff; color:#0e2a67; padding: 10px 30px; border:1px solid #BCBECB;}
 .btn.smBtn{min-width: 80px; height: 42px;}
 .pdfBtn{ display: flex; align-items: stretch; gap: 5px; flex-wrap: wrap; margin-bottom: 20px;}
-.pdfBtn > .btn{width: calc(100% / 4 - 5px); display: flex; align-items: center; justify-content: center; min-height: 50px; line-height: 1.2; padding: 10px 20px;}
+.pdfBtn > .btn{width: calc(100% / 4 - 5px); display: flex; align-items: center; justify-content: center; min-height: 50px; line-height: 1.2; padding: 10px 20px; min-width: 200px;}
 .pdfBtn > .btn:hover,.pdfBtn > .btn:focus{box-shadow: 0 0 10px rgba(0, 59, 158,0.3); transition: box-shadow 0.3s;}
 /* -- 버튼 */
 
@@ -644,6 +644,7 @@
 @media (max-width: 480px){
     .sub-tit-box{flex-direction: column-reverse; align-items: flex-start; margin-bottom: 40px;}
     .stp-bt{width: 100%; justify-content: flex-end}
+    .pdfBtn > .btn{width: calc(100% / 2 - 3px); min-width: auto; padding:10px;}
     /* tab */
 
     .subTit03{margin-top: 40px; margin-bottom: 25px;}
