@@ -13,7 +13,7 @@
 .line-map > li > a{ height: 58px; position: relative; display: flex; align-items: center;white-space: nowrap; overflow: hidden;  text-overflow: ellipsis; line-height: 1.5; }
 .line-map > li.home >a{justify-content: center;width: 58px; background-color:#2241b6; padding:0 15px;}
 .line-map > li > strong{display: table-cell;vertical-align: middle;padding: 0 20px;color: #000;line-height: 1;}
-.line-map > li:not(.home) > a{width: 200px; padding: 0 50px 0 20px;background: url('../../static/images/sub_nav_bg1.png') no-repeat right 20px  center; border-right:1px solid #F0F0F0;}
+.line-map > li:not(.home) > a{padding: 0 50px 0 20px;background: url('../../static/images/sub_nav_bg1.png') no-repeat right 20px  center; border-right:1px solid #F0F0F0; overflow: hidden;}
 .line-map > li > a.on{background: url('../../static/images/sub_nav_bg2.png') no-repeat right 20px  center;}
 .line-map > li > a.nl{padding: 0 20px; background: none;}
 .line-map > li > ul{display: none; width: 100%; position: absolute; top: 100%; left: 0px; right: 0; z-index: 9;background: #fff; border: 1px solid #f5f5f5; box-shadow: 2px 6px 6px rgba(95, 95, 95, 0.2);}
@@ -35,8 +35,9 @@
     .sub-tit-wrap{height: 150px; background-size: auto 100%;}
     .line-map > li{font-size: 15px;}
     .line-map > li > ul{font-size: 13px;}
-    .line-map > li > ul > li > a{padding:10px 20px;}
-
+    .line-map > li > ul > li > a{padding:10px 20px; }
+    .line-map > li:not(.home) > a{padding:10px 20px;white-space: wrap;}
+    
 }
 @media (max-width: 380px) {
     .line-map > li{font-size: 14px;}
@@ -421,7 +422,7 @@ table.type02 tr.al >td{padding:10px 20px; text-align: left; vertical-align: base
 /* -- 인사말 */
 /* 조직도 */
 .organ_box{max-width: 1026px; margin:0 auto;}
-.organ_box li p{max-width: 235px; height: 62px; display: flex; align-items: center; justify-content: center; font-weight: 500; font-size: 20px; background-color: #1F4675; color: #fff; border-radius: 6px; position: relative; z-index: 9; text-align: center;}
+.organ_box li p{max-width: 235px; height: 70px; display: flex; align-items: center; justify-content: center; font-weight: 500; font-size: 20px; background-color: #1F4675; color: #fff; border-radius: 6px; position: relative; z-index: 9; text-align: center;}
 
 .organ_box .organ1 > li > p{margin-left: 240px; margin-bottom: 35px;}
 .organ_box .organ2 {position: relative; z-index: 9;}
@@ -437,7 +438,7 @@ table.type02 tr.al >td{padding:10px 20px; text-align: left; vertical-align: base
 .organ_box .organ5 > li{width: calc(100% / 3);}
 .organ_box .organ6 > li > p{margin-top: 60px; margin-bottom: 80px; background-color: #975CD3;}
 
-.organ_box .organ-list{border:1px solid #D4D4D4; border-radius: 6px; padding:10px 0px 0 10px; background-color: #fff; position: relative; z-index: 9;}
+.organ_box .organ-list{border:1px solid #D4D4D4; border-radius: 6px; padding:10px 0px 0 10px; background-color: #fff; position: relative; z-index: 9; min-height: 380px;}
 .organ_box .organ2::before{
     content:"";
     display: inline-block;
@@ -563,7 +564,11 @@ table.type02 tr.al >td{padding:10px 20px; text-align: left; vertical-align: base
 .elig-step-wrap > li .step-desc > div > b{font-weight: 500;}
 .elig-step-wrap > li::before{content:""; display: inline-block; width: 100%; height: 64px;  background-image: url("../images/eliq-shadow.png"); background-repeat: no-repeat; position: absolute; left:0%; top:-64px; z-index: -1;}
 
+
+
 /* -- Study at UOS 자격및신청 */
+
+
 /* -- Study at UOS 지불 */
 .qr-box{display: flex; gap: 20px; }
 .qr-box a{color:#1b4fb4}
@@ -597,7 +602,7 @@ table.type02 tr.al >td{padding:10px 20px; text-align: left; vertical-align: base
 
 @media (max-width: 1080px) {
     /* 조직도 */
-    .organ_box .organ-list{width: 100%;}
+    .organ_box .organ-list{width: 100%; min-height: auto;}
     .organ_box .organ1 > li > p{margin:0 auto 60px;}
 
     .organ_box .organ2 > li > p{margin:0 auto 60px;}

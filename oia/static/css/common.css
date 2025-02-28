@@ -69,9 +69,13 @@
 input::placeholder{color:#757575; font-size: 14px;}
 a, span, b, strong{display: inline-block;}
 
-body{font-weight: 400; min-width: 320px; line-height: 1.4; font-family: 'S-Core'; letter-spacing: -0.02em;}
+body{font-weight: 400; min-width: 320px; line-height: 1.4; font-family: 'S-Core'; letter-spacing: -0.02em;  }
 .blind {position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); margin: -1px;}
 .clearfix:after{content: "";display: block;height: 0;clear: both;visibility: hidden;}
+
+/* 구글번역 옵션 가리기 */
+body{top:0 !important;}
+.skiptranslate{display: none;}
 /* margin */
 .mt5 {margin-top:5px;}
 .mt10 {margin-top:10px;}
@@ -319,7 +323,7 @@ body{font-weight: 400; min-width: 320px; line-height: 1.4; font-family: 'S-Core'
 }
 @media (max-width: 1024px){
         .header .header-top > .inner{flex-direction: row; align-items: center; flex-wrap: wrap;}
-        .header .header-top .top-logo{flex-wrap: wrap;}
+        .header .header-top .top-logo{flex-wrap: wrap; gap: 10px;}
         .header .header-top .g-lang{display: none;}
         .header-top .top-menu{width: auto;}
         .header-top .top-menu .util-list{display: none;}

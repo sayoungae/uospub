@@ -24,22 +24,7 @@
             .then(data => document.getElementById('snb-wrap').innerHTML = data);
        
     </script>
-    <script>
-        function fnDownload(file_upNm, file_path, file_orgNm) {
-            jQuery("#file_path").val(file_path);
-            jQuery("#file_upNm").val(file_upNm);
-            jQuery("#file_orgNm").val(file_orgNm);
-
-            jQuery("#downForm").attr("action", "/common/dir/FileDown.do").submit();
-        }
-
-        let time = 3000;
-        let isComplete2=true;
-        function fnDownloadUrl(atchmnflId) {
-            $('#atchmnflId').val(atchmnflId);
-            $('#atchmnflDownload').submit();
-        }
-    </script>
+    
 </head>
 <body>
     <div id="wrap">
@@ -50,35 +35,34 @@
             <div class="wid">
                 <div class="content-area">
                     <div id="contents">
-                        <h4 class="conts-tit2">Admission Guideline</h4>
-                        <h5 class="sub-tit">Admission</h5>
+                        <h4 class="conts-tit2">International Admissions</h4>
+                        <h5 class="sub-tit">Admission Guideline</h5>
                         <iframe width="100%" class="if-utube" src="https://www.youtube.com/embed/Nbewp0f3bcg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-                        <h5 class="sub-tit">2025학년도 서울시립대학교 학부 외국인 특별전형 모집요강</h5>
+                        <h5 class="sub-tit">2025 University of Seoul Undergraduate International Student Admission Guide</h5>
                         <div class="line-box">
                             <p class="sub-tit2">Admission Guideline 학부(Undergraduate)</p>
                             <div class="btn-wrap">
-                                <button type="" onclick="fnDownloadUrl('530');" class="btn arrwType"><span>Korean</span></button>
-                                <button type="" onclick="fnDownloadUrl('531');" class="btn arrwType"><span>English</span></button>
-                                <button type="" onclick="fnDownloadUrl('532');" class="btn arrwType"><span>Chinese</span></button>
-                                <button type="" onclick="fnDownloadUrl('533');" class="btn arrwType"><span>Japanese</span></button>
+                                <a href="" class="btn arrwType"><span>Korean</span></a>
+                                <a href="" class="btn arrwType"><span>English</span></a>
+                                <a href="" class="btn arrwType"><span>Chinese</span></a>
+                                <a href="" class="btn arrwType"><span>Japanese</span></a>
                             </div>
                         </div>
-                        <h5 class="sub-tit">2025학년도 일반대학원 외국인전형 신입생 모집요강</h5>
+                        <h5 class="sub-tit">2025 Academic Year UOS Graduate School International Student Admission Guide</h5>
                         <div class="line-box">
                             <p class="sub-tit2">Admission Guideline 일반대학원(Graduate)</p>
                             <div class="btn-wrap">
-                                <button type="" onclick="fnDownloadUrl('534');" class="btn arrwType"><span>Korean</span></button>
-                                <button type="" onclick="fnDownloadUrl('535');" class="btn arrwType"><span>English</span></button>
-                                <button type="" onclick="fnDownloadUrl('536');" class="btn arrwType"><span>Chinese</span></button>
-                                <button type="" onclick="fnDownloadUrl('537');" class="btn arrwType"><span>Japanese</span></button>
+                                <a href="" class="btn arrwType"><span>Korean</span></a>
+                                <a href="" class="btn arrwType"><span>English</span></a>
+                                <a href="" class="btn arrwType"><span>Chinese</span></a>
+                                <a href="" class="btn arrwType"><span>Japanese</span></a>
                             </div>
                         </div>
-                        <h5 class="sub-tit">Admission 기본계획</h5>
+                        <h5 class="sub-tit">UOS Admission Plan</h5>
                         <div class="line-box">
-                            <p class="sub-tit2">서울시립대학교 학부 외국인 특별전형 기본계획   l   Admission Guideline 학부(Undergraduate)</p>
+                            <p class="sub-tit2">UOS Special Undergraduate International Student Admission Plan   l   Admission Guideline 학부(Undergraduate)</p>
                             <div class="btn-wrap">
-                                <div class="wtxt"><span>2021학년도</span><button type="" onclick="fnDownloadUrl('112');" class="btn arrwType"><span>Korean</span></button></div>
-                                <div class="wtxt"><span>2026학년도</span><button type="" onclick="fnDownloadUrl('405');" class="btn arrwType"><span>Korean</span></button></div>
+                                <div class="wtxt"><span>2026 Academic Year</span><a href="" class="btn arrwType"><span>Korean</span></a></div>
                             </div>
                         </div>
                         <h5 class="sub-tit">지원</h5>
