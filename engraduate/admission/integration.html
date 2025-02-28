@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일반대학원 영문</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/swiper.css">
+
+
+    <!-- JS -->
+    <script src="../static/js/jquery-3.7.1.js"></script>
+    <script src="../static/js/swiper-bundle.min.js"></script>
+    <script src="../static/js/common.js"></script>
+    <!-- <script src="../static/js/main.js"></script> -->
+    <script src="../static/js/sub.js"></script>
+
+
+    <script>
+        //header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+       
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <!-- sub-banner -->
+            <div class="sub-banner sub2">
+                <div class="inner">
+                    <div class="ban-tit">University of Seoul Global Top Brand</div>
+                    <ul class="line-map">
+                        <li><img src="../static/images/home_ic.png" alt="home"></li>
+                        <li>Research</li>
+                        <li>Research Centers and Laboratores</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content">
+                <div class="inner clearfix">
+                    <!-- // sub-banner -->
+                    <!-- snb -->
+                    <div id="snb-wrap">
+                    </div>
+                    <!-- // snb -->
+                    <!-- sub content -->
+                    <div class="sub-content" id="sub-content">
+                        <div class="sub-tit-box">
+                            <h3 class="subTit01">석박사통합과정(특별전형) 안내</h3>
+                            <ul class="stp-bt">
+                                <li><a href="" class="print-ic"><span class="blind">인쇄</span></a></li>
+                                <li><a href="" class="share-ic"><span class="blind">공유 </span></a></li>
+                            </ul>
+                        </div>
+                        <!-- 본문 -->
+                        <h4 class="subTit03">석박사통합과정 소개</h4>
+                        <ul class="dot-list02">
+                            <li>
+                                석사과정과 박사과정을 통합‧운영함으로써 석사학위논문 작성 및 박사과정 Admission시험 준비 등의 부담을 줄이고,<br/>학업 및 연구에 몰입할 수 있는 기회를 제공하는 제도
+                                <div class="table-wrap mt20">
+                                    <table class="type1">
+                                        <caption>석박사통합과정을 소개하는 표입니다.</caption>                                        
+                                        <thead>
+                                            <tr>
+                                                <th class="titleLine">Maximum period of enrollment</th>
+                                                <th class="titleLine">수료최저이수학점</th>
+                                                <th class="titleLine">수업연한</th>
+                                                <th>수업연한의 단축</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>8 years</td>
+                                            <td>60 credits</td>
+                                            <td>Minimum 4 years</td>
+                                            <td>수료최저이수학점을 조기에 충족한 자에 대하여는<br> 수업연한을 1년의 범위 내에서 단축할 수 있다.</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="info-box">
+                                    박사과정 인정: 석·박사통합과정에서 3개 학기 이상(석사과정 포함) 이수하고 24학점 이상 취득한 경우에는 박사과정으로 인정한다.
+                                    <br>
+                                    (이 경우 재학증명서에는 ‘박사과정 재학 중’이 병기됨)
+                                </div>
+                            </li>
+                        </ul>
+                        <h4 class="subTit03">석박사통합과정(특별전형) 모집</h4>
+                        <ul class="dot-list02">
+                            <li>모집인원: 박사과정 Admission정원(181명)의 100분의 30 이내(최대 54명)</li>
+                            <li>
+                                지원자격
+                                <ul class="">
+                                    <li>본교 일반대학원 석사과정 동일전공 재학생(재외국민, 외국인 및 북한이탈주민 포함)으로서 2개 학기 이상 이수하여 18학점 이상 취득한 자<br/>(모집당시 이수학기 포함)</li>
+                                    <li>재학 중 성적이 3.5 이상인 자</li>
+                                    <li>지도교수 및 주임교수의 추천을 받은 자</li>
+                                    <li>
+                                        대학원 규정과 학과 내규에 저촉되지 않는 자
+                                    </li>
+                                </ul>
+                                <span class="point mt5">※ 위 조건을 모두 충족하여야 하며 수료자는 제외함 (수료예정자 지원 가능)</span>
+                            </li>
+                            <li>특전사항: 석사학위논문 작성 및 박사과정의 Admission시험 면제</li>
+                            <li>전형방법: 서류심사 성적(100점)과 구술심사 성적(100점)을 더하여 총점 성적순으로 선발</li>
+                            <li>
+                                가. 서류심사 평가항목(100점)
+                                <ul class="dot-list03">
+                                    <li class="num">
+                                        <span>1</span>연구계획서
+                                    </li>
+                                    <li class="num">
+                                        <span>2</span>석사과정 성적 및 학과 고려사항
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                나. 구술심사 평가항목(100점)
+                                <ul class="dot-list03">
+                                    <li class="num">
+                                        <span>1</span>전공이수 능력
+                                    </li>
+                                    <li class="num">
+                                        <span>2</span>학과 고려사항
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>모집시기: 4월, 10월 (연 2회) 예정</li>
+                            <li>모집학과는 매 모집 마다 변동되므로 공지사항의 모집공고에서 확인하시기 바랍니다.</li>
+                        </ul>
+                        <!-- 본문 -->
+                    </div>
+                    <!-- sub content -->
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

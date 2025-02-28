@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일반대학원 영문</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/swiper.css">
+
+
+    <!-- JS -->
+    <script src="../static/js/jquery-3.7.1.js"></script>
+    <script src="../static/js/swiper-bundle.min.js"></script>
+    <script src="../static/js/common.js"></script>
+    <script src="../static/js/main.js"></script>
+    <script src="../static/js/sub.js"></script>
+
+
+    <script>
+        //header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <!-- sub-banner -->
+            <div class="sub-banner sub1">
+                <div class="inner">
+                    <div class="ban-tit">University of Seoul Global Top Brand</div>
+                    <ul class="line-map">
+                        <li><img src="../static/images/home_ic.png" alt="home"></li>
+                        <li>dept</li>
+                        <li>dept Centers and Laboratores</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content">
+                <div class="inner clearfix">
+                    <!-- // sub-banner -->
+                    <!-- snb -->
+                    <div id="snb-wrap">
+                    </div>
+                    <!-- // snb -->
+                    <!-- sub content -->
+                    <div class="sub-content" id="sub-content">
+                        <div class="sub-tit-box">
+                            <h3 class="subTit01">Department of Chinese Language and Culture</h3>
+                            <ul class="stp-bt">
+                                <li><a href="" class="print-ic"><span class="blind">인쇄</span></a></li>
+                                <li><a href="" class="share-ic"><span class="blind">공유 </span></a></li>
+                            </ul>
+                        </div>
+                        <!-- 본문 -->
+                        <!-- tab -->
+                        <div class="tab-area layer">
+                            <!-- tab list -->
+                            <div class="tab">
+                                <ul role="tablist">
+                                    <li id="tab_dept_01" role="tab" aria-selected="true" aria-controls="panel_dept_01"
+                                        class="active">
+                                        <button type="button" class="btn-tab">Departments</button>
+                                    </li>
+                                    <li id="tab_dept_02" role="tab" aria-selected="false" aria-controls="panel_dept_02">
+                                        <button type="button" class="btn-tab">Admission</button>
+                                    </li>
+                                    <li id="tab_dept_03" role="tab" aria-selected="false" aria-controls="panel_dept_03">
+                                        <button type="button" class="btn-tab">Assistance, etc</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- //tab list -->
+                            <!-- tab contents -->
+                            <div class="tab-conts-wrap">
+                                <!-- 학 과 소 개 -->
+                                <div id="panel_dept_01" role="tabpanel" aria-labelledby="tab_dept_01"
+                                    class="tab-conts active">
+                                    <div class="dept-link-list">
+                                        <a href="https://liberalarts.uos.ac.kr/liberalarts/main.do?cate_id2=000010068&identified=anonymous&"
+                                            target="_blank" title="opens in a new tab"
+                                            class="icn1"><span>Homepage</span></a>
+                                        <a href="profList.html" target="_blank" title="opens in a new tab"
+                                            class="icn2"><span>Faculty</span></a>
+                                        <a href="https://www.uos.ac.kr/kor/popup/html/auos/prospectus/2022/prospectus.do?identified=anonymous&"
+                                            target="_blank" title="opens in a new tab"
+                                            class="icn3"><span>Curriculum</span></a>
+                                    </div>
+                                    <h4 class="subTit04">Educational objectives</h4>
+                                    <div class="table-wrap">
+                                        <table class="type3">
+                                            <colgroup>
+                                                <col width="20%">
+                                                <col width="80%">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th>Core objectives</th>
+                                                    <td>
+                                                        The Chinese language and culture master's program aims to cultivate excellent talents who will contribute to deepening our society's knowledge and perspective on China by professionally researching topics related to Chinese language and culture.<br/>
+                                                        Graduates who have grown into professional researchers through systematic and intensive training will be able to immediately advance to higher educational institutions to continue in-depth academic research, or enter media companies, corporations, etc. to demonstrate their capabilities as experts.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Detailed objectives</th>
+                                                    <td>
+                                                        <ul>
+                                                            <li>1. Cultivate basic research skills as a researcher of Chinese language and culture.</li>
+                                                            <li>2. Understand the system of knowledge related to Chinese language and culture, existing research achievements, and research methodologies.</li>
+                                                            <li>3. Develop research capabilities to conduct original research on Chinese language and culture and produce new knowledge.</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Research areas</th>
+                                                    <td>
+                                                        Fields related to Chinese language, fields related to traditional Chinese culture, fields related to modern and contemporary Chinese culture
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <h4 class="subTit04">Information</h4>
+                                    <div class="table-wrap">
+                                        <ul class="dept-info">
+                                            <li>
+                                                <div>Head professor</div>
+                                                <div>Seong Geun-je</div>
+                                            </li>
+                                            <li>
+                                                <div>TEL</div>
+                                                <div>+82-2-6490-2593</div>
+                                            </li>
+                                            <li>
+                                                <div>E-mail</div>
+                                                <div>shinhk@uos.ac.kr</div>
+                                            </li>
+                                            <li>
+                                                <div>Office</div>
+                                                <div>2F Room 216, Liberal Arts Building</div>
+                                            </li>
+                                            <li>
+                                                <div>TEL</div>
+                                                <div>+82-2-6490-2586~7</div>
+                                            </li>
+                                            <li>
+                                                <div>FAX</div>
+                                                <div>+82-2-6490-2589</div>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- //학 과 소 개 -->
+
+                                <!-- 입 학 정 보 -->
+                                <div id="panel_dept_02" role="tabpanel" aria-labelledby="tab_dept_02" class="tab-conts">
+                                    <div class="dept-link-list">
+                                        <a href="../admission/regular.html" target="_blank" title="opens in a new tab"
+                                            class="icn4"><span>Recruitment guidelines</span></a>
+                                        <a href="https://rule.uos.ac.kr/lmxsrv/main/main.srv" target="_blank"
+                                            title="opens in a new tab" class="icn5"><span>Operating regulations</span></a>
+                                    </div>
+                                    <h4 class="subTit04">General admission degree programs</h4>
+                                    <div class="table-wrap">
+                                        <table class="type3">
+                                            <colgroup>
+                                                <col width="20%">
+                                                <col width="80%">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th>Master's degree</th>
+                                                    <td style="text-align: left; word-break: keep-all;">
+                                                        <ul class="dot-list01">
+                                                            <li>Individuals who have obtained a bachelor's degree from domestic or foreign universities or those expected to obtain a degree upon completion of the current registered semester</li>
+                                                            <li>Individuals recognized as having equivalent or higher academic qualifications under relevant laws</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Doctorate's degree</th>
+                                                    <td>
+                                                        <ul class="dot-list01">
+                                                            <li>Individuals who have obtained a bachelor's degree from domestic or foreign universities or those expected to obtain a degree upon completion of the current registered semester</li>
+                                                            <li>Individuals recognized as having equivalent or higher academic qualifications under relevant laws</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Eligibility for master's/doctorate's<br/>support for North Korean defectors</th>
+                                                    <td style="text-align: left; word-break: keep-all;">
+                                                        <ul class="dot-list01">
+                                                            <li>Individuals qualified to apply for master's or doctorate's program</li>
+                                                            <li>Individuals registered as North Korean defectors pursuant to the North Korean Defectors Protection and Settlement Support Act</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <h4 class="subTit04">Additional eligibility requirements and submission documents</h4>
+                                    <ul class="dot-list02">
+                                        <li>A question sheet including Chinese will be presented during the oral examination</li>
+                                    </ul>
+                                    <h4 class="subTit04">Program information (for students admitted after 2022)</h4>
+                                    <div class="table-wrap">
+                                        <table class="type1">
+                                            <thead>
+                                                <tr>
+                                                    <th>Category</th>
+                                                    <th>Length of study</th>
+                                                    <th>Basic semester operation</th>
+                                                    <th>Minimum credits required</th>
+                                                    <th>Graduation thesis</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Master</td>
+                                                    <td>2+ years</td>
+                                                    <td>4 semester system</td>
+                                                    <td>24 credits</td>
+                                                    <td>Master's thesis</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <p class="point mt10">※ For other academic information: Refer to relevant items on the Education/Academic Affairs tab of the Graduate School website</p>
+                                    </div>
+                                </div>
+                                <!-- // 입 학 정 보 -->
+                                <!-- 학 생 활 동 및 진 로 -->
+                                <div id="panel_dept_03" role="tabpanel" aria-labelledby="tab_dept_03" class="tab-conts">
+                                    <h4 class="subTit04">Scholarships</h4>
+                                    <ul class="dot-list02">
+                                        <li>National Agency Scholarship Project Research Assistant Scholarship, Seoul Humanities Scholarship, etc.</li>
+                                        <li><a href="https://graduate.uos.ac.kr/graduateNew/html/support/scholarship.do?menuid=3000004001001000000"
+                                            class="link-ty1">Website</a></li>
+                                    </ul>
+                                    
+                                    <h4 class="subTit04">Career paths after graduation</h4>
+                                    <ul class="dot-list02">
+                                        <li>Academic researchers at universities and research institutions</li>
+                                        <li>Experts in related fields at media companies and corporations</li>
+                                    </ul>
+                                    <h4 class="subTit04">Department amenities and publicity</h4>
+                                    <ul class="dot-list02">
+                                        <li>
+                                            Provision of dedicated research space for graduate students
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- //학 생 활 동 및 진 로 -->
+                            </div>
+                            <!-- //tab contents -->
+                        </div>
+                        <!-- // tab -->
+                        <!-- 본문 -->
+                    </div>
+                    <!-- sub content -->
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+
+</html>

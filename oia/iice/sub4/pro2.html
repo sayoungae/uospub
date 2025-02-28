@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+     <!-- CSS -->
+    <link rel="stylesheet" href="../../static/css/common.css">
+    <link rel="stylesheet" href="../../static/css/swiper.css">
+    <!-- JS -->
+    <script src="../../static/js/jquery-3.7.1.js"></script>
+    <script src="../../static/js/common.js"></script>
+    <script src="../../static/js/swiper-bundle.min.js"></script>
+    <script src="../../static/js/main.js"></script>
+    <script>
+        // header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+       
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <div class="sub-tit-wrap"><h3 class="pg-tit">Credit Transfer Process</h3></div>
+            <div id="snb-wrap"></div>
+            <div class="wid">
+                <div class="content-area">
+                    <div id="contents">
+                        <h4 class="conts-tit2">Credit Transfer Process</h4>
+                        <h5 class="sub-tit">Criteria</h5>
+                        <div class="ind-box">
+                            <p class="sub-tit2">Eligible candidates</p>
+                            <div class="desc">
+                                <ul class="dotList01">
+                                    <li>Undergraduate students who have completed at least two semesters at UOS before studying abroad</li>
+                                </ul>
+                            </div>
+                            <p class="sub-tit2">Ineligible candidates</p>
+                            <div class="desc">
+                                <ul class="dotList01">
+                                    <li>Those who have a record of disciplinary action (excluding academic disciplinary warnings)</li>
+                                    <li>Students who have exceeded the maximum study period (undergraduate students registered for 9 semesters or more; 11 semesters or more for architecture majors)</li>
+                                    <li>Graduate students, students on leave of absence, foreign exchange students at UOS, and students expected to graduate in February 2025</li>
+                                    <li>UOS Office of International Affairs-sponsored short-term study abroad, and previous participants in overseas language study programs</li>
+                                    <li>Students planning to participate in other internal or external programs that overlap with the period of participation in this program</li>
+                                    <li>Students taking winter semester courses at UOS</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h5 class="sub-tit">Scholarships</h5>
+                        <div class="ind-box">
+                            <div class="desc">
+                                <ul class="dotList01">
+                                    <li>Differential scholarships provided by region for students who complete prerequisites</li>
+                                </ul>
+                                <div class="table-wrap">
+                                    <table class="type02">
+                                        <caption>Scholarships -Category, Region, Scholarship</caption>
+                                        <thead>
+                                            <tr>
+                                                <th>Category</th>
+                                                <th>Region</th>
+                                                <th>Scholarship</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Asia</td>
+                                                <td>₩1.3 million</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Europe, etc.</td>
+                                                <td>₩2.0 million</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일반대학원 영문</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/swiper.css">
+
+
+    <!-- JS -->
+    <script src="../static/js/jquery-3.7.1.js"></script>
+    <script src="../static/js/swiper-bundle.min.js"></script>
+    <script src="../static/js/common.js"></script>
+    <!-- <script src="../static/js/main.js"></script> -->
+    <script src="../static/js/sub.js"></script>
+
+
+    <script>
+        //header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+       
+    </script>
+    <script>
+		function prevYear() {
+			$("#year_code").val(Number($("#year_code").val()) - 1);
+			jQuery("#listForm").attr("action", "/graduateNew/korCalendarYear2/list.do").submit();
+		}
+
+		function nextYear() {
+			$("#year_code").val(Number($("#year_code").val()) + 1);
+			jQuery("#listForm").attr("action", "/graduateNew/korCalendarYear2/list.do").submit();
+		}
+	</script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <!-- sub-banner -->
+            <div class="sub-banner sub3">
+                <div class="inner">
+                    <div class="ban-tit">University of Seoul Global Top Brand</div>
+                    <ul class="line-map">
+                        <li><img src="../static/images/home_ic.png" alt="home"></li>
+                        <li>Research</li>
+                        <li>Research Centers and Laboratores</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content">
+                <div class="inner clearfix">
+                    <!-- // sub-banner -->
+                    <!-- snb -->
+                    <div id="snb-wrap">
+                    </div>
+                    <!-- // snb -->
+                    <!-- sub content -->
+                    <div class="sub-content" id="sub-content">
+                        <div class="sub-tit-box">
+                            <h3 class="subTit01">Academic Calendar</h3>
+                            <ul class="stp-bt">
+                                <li><a href="" class="print-ic"><span class="blind">인쇄</span></a></li>
+                                <li><a href="" class="share-ic"><span class="blind">공유 </span></a></li>
+                            </ul>
+                        </div>
+                        <!-- 본문 -->
+                        <form name="frm" method="post">
+                            <div class="calTop">
+                                <div class="calYaer">
+                                    <a href="javascript:prevYear();"><img src="../static/images/btn_prev2.png" alt="View the academic calendar of the previous year"></a>
+                                    &nbsp;
+                                    2025 &nbsp;
+                                    <a href="javascript:nextYear();"><img src="../static/images/btn_next2.png" alt="View the academic calendar of the next year"></a>
+                                </div>
+                                <div class="btn-wrap">
+                                    <div class="flex-container">
+                                        <select title="월 선택" class="w150px" id="monthSelect">
+                                            <option value="">전체</option>
+                                            <option value="202501">Jan</option>
+                                            <option value="202502">Feb</option>
+                                            <option value="202503">Mar</option>
+                                            <option value="202504">Apr</option>
+                                            <option value="202505">May</option>
+                                            <option value="202506">Jun</option>
+                                            <option value="202507">Jul</option>
+                                            <option value="202508">Aug</option>
+                                            <option value="202509">Sep</option>
+                                            <option value="202510">Oct</option>
+                                            <option value="202511">Nov</option>
+                                            <option value="202512">Dec</option>
+                                            <option value="202601">Jan 2026</option>
+                                            <option value="202602">Feb 2026</option>
+                                        </select>
+                                        <a href="javascript:monthSelect('2025');" class="btn smBtn">GO</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table-wrap">
+                                <table class="type2">
+                                    <caption>이 표는 월별 대학의 학사 일정을 나타내는 표입니다.</caption>
+                                    <colgroup>
+                                        <col style="width: 10%;">
+                                        <col style="width: 20%;">
+                                        <col style="width: auto;">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr id="">
+                                            <th class="th" rowspan="2">Jan<br/>2025<input type="hidden" id="in202501" value="3"></th>
+                                        </tr>
+                                        <tr id="">
+                                            <td class="th">[01-16 ~ 01-16]
+                                            </td>
+                                            <td>
+                                                <span style="cursor:pointer">학위논문 인쇄본제출 마감<br/>Deadline for Submission of Printed Master’s Thesis</span>
+                                            </td>
+                                        </tr>
+
+                                        <tr id="">
+                                            <th class="th" rowspan="2">Feb<br/>2025</th>
+                                        </tr>
+                                        <tr id="">
+                                            <td class="th">[02-21 ~ 02-21]</td>
+                                            <td><span>2024학년도 전기(25 years 2월 졸업) 학위수여식<br/>
+                                                2024 Academic Year Winter (February 2025 Graduation) Degree Conferral Ceremony</span></td>
+                                        </tr>
+
+                                        <tr id="">
+                                            <th class="th" rowspan="5">Mar<br/>2025</th>
+                                        </tr>
+                                        <tr id="">
+                                            <td class="th">[03-05 ~ 03-07]</td>
+                                            <td>1학기 대학원 종합시험 신청<br/>
+                                                Application for First Semester Graduate Comprehensive Examination</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="th">[03-05 ~ 03-14]</td>
+                                            <td>
+                                                1학기 대학원 외국어시험 신청<br/>
+                                                Application for First Semester Graduate Foreign Language Examination
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="th">[03-20 ~ 03-21]</td>
+                                            <td>
+                                                1학기 석·박사과정 종합시험실시<br/>First Semester Master's/Doctoral Comprehensive Examination
+                                            </td>
+                                        </tr>
+                                        <tr>                                       
+                                            <td class="th">[03-26 ~ 03-26]</td>
+                                            <td>지도교수 신청 및 논문 연구계획서 제출 마감<br/>
+                                                Deadline for Advisor Application and Thesis Research Proposal Submission</td>
+                                        </tr>
+
+                                        <tr id="">
+                                            <th class="th" rowspan="2">Apr<br/>2025</th>
+                                        </tr>
+                                        <tr id="">
+                                            <td class="th">[04-02 ~ 04-04]</td>
+                                            <td>석·박사 학위논문 중간(예비)심사 신청<br/>
+                                                Application for Master’s/Doctoral Thesis Preliminary Review</td>
+                                        </tr>
+
+                                        <tr id="">
+                                            <th class="th" rowspan="4">May<br/>2025</th>
+                                        </tr>
+                                        <tr id="">
+                                            <td class="th">[05-09 ~ 05-09]</td>
+                                            <td>논문중간(예비)발표 결과보고(석·박사)<br/>
+                                                Submission of Thesis Preliminary Presentation Results (Master’s/Doctoral)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="th">[05-14 ~ 05-16]</td>
+                                            <td>석·박사 학위논문 본심사 신청<br/>
+                                                Application for Master’s/Doctoral Thesis Final Review</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="th">[05-23 ~ 05-23]</td>
+                                            <td>박사과정 논문지도위원회 구성 마감<br/>
+                                                Deadline for Composition of Doctoral Dissertation Advisory Committee</td>
+                                        </tr>
+
+                                        <tr id="">
+                                            <th class="th" rowspan="2">Jun<br/>2025</th>
+                                        </tr>
+                                        <tr id="">
+                                            <td class="th">[06-20 ~ 06-20]</td>
+                                            <td>석·박사 학위논문 본심사 결과보고 마감<br/>Deadline for Submission of Master’s/Doctoral Thesis Final Review Results</td>
+                                        </tr>
+
+                                        <tr id="">
+                                            <th class="th" rowspan="2">Jul<br/>2025</th>
+                                        </tr>
+                                        <tr id="">
+                                            <td class="th">[07-17 ~ 07-17]</td>
+                                            <td>학위논문 인쇄본제출 마감<br/>
+                                                Deadline for Submission of Printed Thesis</td>
+                                        </tr>
+
+                                        <tr id="">
+                                            <th class="th" rowspan="2">Aug<br/>2025</th>
+                                        </tr>
+                                        <tr id="">
+                                            <td class="th">[08-22 ~ 08-22]</td>
+                                            <td>2024학년도 후기(25 years 8월 졸업) 학위수여식<br/>
+                                                2024 Academic Year Summer (August 2025 Graduation) Degree Conferral Ceremony</td>
+                                        </tr>
+
+                                        <tr id="">
+                                            <th class="th" rowspan="5">Sep<br/>2025</th>
+                                        </tr>
+                                        <tr id="">
+                                            <td class="th">[09-02 ~ 09-04]</td>
+                                            <td>2학기 대학원 종합시험 신청<br/>
+                                                Application for Second Semester Graduate Comprehensive Examination</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="th">[09-02 ~ 09-11]</td>
+                                            <td>2학기 대학원 외국어시험 신청<br/>
+                                                Application for Second Semester Graduate Foreign Language Examination</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="th">[09-18 ~ 09-19]</td>
+                                            <td>2학기 석·박사과정 종합시험실시<br/>
+                                                Second Semester Master's/Doctoral Comprehensive Examination</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="th">[09-24 ~ 09-24]</td>
+                                            <td>지도교수 신청 및 논문 연구계획서 제출 마감<br/>
+                                                Deadline for Advisor Application and Thesis Research Proposal Submission</td>
+                                        </tr>
+
+                                        <tr id="">
+                                            <th class="th" rowspan="2">Oct<br/>2025</th>
+                                        </tr>
+                                        <tr id="">
+                                            <td class="th">[10-14 ~ 10-16]</td>
+                                            <td>석·박사 학위논문 중간(예비)심사 신청<br/>
+                                                Application for Master’s/Doctoral Thesis Preliminary Review</td>
+                                        </tr>
+
+                                        <tr id="">
+                                            <th class="th" rowspan="4">Nov<br/>2025</th>
+                                        </tr>
+                                        <tr id="">
+                                            <td class="th">[11-14 ~ 11-14]</td>
+                                            <td>논문중간(예비)발표 결과보고(석·박사)<br/>
+                                                Submission of Thesis Preliminary Presentation Results (Master’s/Doctoral)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="th">[11-18 ~ 11-20]</td>
+                                            <td>석·박사 학위논문 본심사 신청<br/>
+                                                Application for Master’s/Doctoral Thesis Final Review</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="th">[11-21 ~ 11-21]</td>
+                                            <td>박사과정 논문지도위원회 구성 마감<br/>
+                                                Deadline for Composition of Doctoral Dissertation Advisory Committee</td>
+                                        </tr>
+
+                                        <tr id="">
+                                            <th class="th" rowspan="2">Dec<br/>2025</th>
+                                        </tr>
+                                        <tr id="">
+                                            <td class="th">[12-19 ~ 12-19]</td>
+                                            <td>석·박사 학위논문 본심사 결과보고 마감<br/>
+                                                Deadline for Submission of Master’s/Doctoral Thesis Final Review Results</td>
+                                        </tr>
+
+                                        <tr id="">
+                                            <th class="th" rowspan="2">Jan<br/>2026</th>
+                                        </tr>
+                                        <tr id="">
+                                            <td class="th">[01-15]</td>
+                                            <td>학위논문 인쇄본 제출 마감<br/>
+                                                Deadline for Submission of Printed Thesis</td>
+                                        </tr>
+
+                                        <tr id="">
+                                            <th class="th" rowspan="2">Feb<br/>2026</th>
+                                        </tr>
+                                        <tr id="m202602">
+                                            <td class="th"></td>
+                                            <td>자료가 없습니다<br/>
+                                                No Data Available</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </form>
+                        <!-- 본문 -->
+                    </div>
+                    <!-- sub content -->
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

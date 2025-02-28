@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일반대학원 영문</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/swiper.css">
+
+
+    <!-- JS -->
+    <script src="../static/js/jquery-3.7.1.js"></script>
+    <script src="../static/js/swiper-bundle.min.js"></script>
+    <script src="../static/js/common.js"></script>
+    <!-- <script src="../static/js/main.js"></script> -->
+    <script src="../static/js/sub.js"></script>
+
+
+    <script>
+        //header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+       
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <!-- sub-banner -->
+            <div class="sub-banner sub6">
+                <div class="inner">
+                    <div class="ban-tit">University of Seoul Global Top Brand</div>
+                    <ul class="line-map">
+                        <li><img src="../static/images/home_ic.png" alt="home"></li>
+                        <li>Research</li>
+                        <li>Research Centers and Laboratores</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content">
+                <div class="inner clearfix">
+                    <!-- // sub-banner -->
+                    <!-- snb -->
+                    <div id="snb-wrap">
+                    </div>
+                    <!-- // snb -->
+                    <!-- sub content -->
+                    <div class="sub-content" id="sub-content">
+                        <div class="sub-tit-box">
+                            <h3 class="subTit01">FAQ: Admission</h3>
+                            <ul class="stp-bt">
+                                <li><a href="" class="print-ic"><span class="blind">인쇄</span></a></li>
+                                <li><a href="" class="share-ic"><span class="blind">공유 </span></a></li>
+                            </ul>
+                        </div>
+                        <!-- 본문 -->
+                        <div class="brd-search">
+                            <select title="검색조건 카테고리 선택" id="board_cate_id" name="board_cate_id">
+                                <option value="">All</option>
+                                <option value="90">Schedule</option>
+                                <option value="91">Departments</option>
+                                <option value="92">Eligibility</option>
+                                <option value="93">Process</option>
+                                <option value="94">Submission</option>
+                                <option value="95">Full-Time</option>
+                                <option value="96">Oral Exam</option>
+                                <option value="97">Scholarships</option>
+                                <option value="98">Overseas Graduates</option>
+                            </select>
+							<select title="검색 조건 선택" id="searchCnd">
+								<option value="1">Title</option>
+								<option value="4">Content</option>
+							</select>
+							<div class="sr-ib">
+								<input type="text" size="30" id="searchWrd" name="searchWrd" value="" onkeydown="if(event.keyCode==13){fnSearch();}" placeholder="Enter keyword(s) to search">
+								<a href="#n" onclick="fnSearch();" class="srbt"><img src="../static/images/brd_sric.jpg" alt="search"></a>
+							</div>
+						</div>
+                        <div class="faq-list-box">
+                            <dl>
+                                <dt class="faq-question">
+                                    <a href="#none" class="faq-btn">
+                                        <span class="tag">Q</span>
+                                        <p>장학금이 궁금합니다.</p>
+                                    </a>
+                                </dt>
+                                <dd class="faq-answer">
+                                    <span class="tag">A</span>
+                                    <div class="view_txt">
+                                        안녕하세요, 서울시립대학교 일반대학원입니다.<br/><br/>
+                                        전일제 대학원생은 아래와 같은 장학금 혜택을 받을 수 있습니다.<br/><br/>
+                                        <b>1. 교내 장학금</b><br/> 수업지원장학, 연구지원장학, 학석사연계장학, 강의조교장학, 원장장학 등<br/><br/>
+                                        <b>2. 교외 장학금</b><br/> 발전기금장학 등<br/><br/> 자세한 사항은 일반대학원 홈페이지 → 학생지원 →<br/>장학금지급 및 학자금대출 메뉴를 참고해주시기 바랍니다. <br/><br/>
+                                        일반대학원은 실제 연구를 중점으로 하는 교육기관으로 전일제<br/> 학생에게 장학금을 지급하고 있으며 '서울시가족장학금' 혜택은 별도로 없습니다. 감사합니다. 
+                                    </div>
+                                </dd>
+                                <dt class="faq-question">
+                                    <a href="#none" class="faq-btn">
+                                        <span class="tag">Q</span>
+                                        <p>해외대학명은 한국어로 작성해도 되나요?</p>
+                                    </a>
+                                </dt>
+                                <dd class="faq-answer">
+                                    <span class="tag">A</span>
+                                    <div class="view_txt">
+                                        안녕하세요, 서울시립대학교 일반대학원입니다.
+                                        <br/>
+                                        <br/>
+                                        해외대학 출신자의 경우, <b class="fcR">학교명을 반드시 영문 Full name</b>으로 작성 바랍니다.
+                                        <br/>
+                                        (단, 한국어 번역공증 시, 한국어로 작성)
+                                        <br/>
+                                        <br/>                                        
+                                        예시1) 퀸즐랜드대학교 → University of Queensland
+                                        <br/>
+                                        예시2) 중국런민대학교 → Renmin University of China
+                                        <br/>
+                                        예시3) 早稻田大學 → Waseda University
+                                        <br/>
+                                        <br/>                                        
+                                        졸업증명서 혹은 성적증명서에 기재된 학교 영문명으로 작성해주세요.
+                                        <br/>
+                                        <br/>    
+                                        서울시립대학교 일반대학원
+                                    </div>
+                                </dd>
+                            </dl>
+                        </div>
+                        <!-- paging -->
+                        <div class="paging">
+                            <a href="?pageIndex=1" class="first" onclick="fnPaging(1);return false;"><img src="../static/images/paging_ic1.png" alt="처음 페이지"></a><a href="?pageIndex=0" onclick="fnPaging(0);return false;"><img src="../static/images/paging_ic2.png" alt="이전 페이지 보기"></a><span><a class="on" href="#" onclick="return false;" title="현재페이지">1</a></span><a href="?pageIndex=1" onclick="fnPaging(1);return false;"><img src="../static/images/paging_ic3.png" alt="다음 페이지"></a><a href="?pageIndex=1" class="last" onclick="fnPaging(1);return false;"><img src="../static/images/paging_ic4.png" alt="마지막 페이지"></a>
+                        </div>
+                        <!-- // paging -->
+
+                        <!-- 본문 -->
+                    </div>
+                    <!-- sub content -->
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

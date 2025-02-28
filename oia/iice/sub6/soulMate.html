@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+     <!-- CSS -->
+    <link rel="stylesheet" href="../../static/css/common.css">
+    <link rel="stylesheet" href="../../static/css/swiper.css">
+    <!-- JS -->
+    <script src="../../static/js/jquery-3.7.1.js"></script>
+    <script src="../../static/js/common.js"></script>
+    <script src="../../static/js/swiper-bundle.min.js"></script>
+    <script src="../../static/js/main.js"></script>
+    <script>
+        // header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+       
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <div class="sub-tit-wrap"><h3 class="pg-tit">Buddy Program</h3></div>
+            <!-- snb -->
+            <div id="snb-wrap"></div>
+            <!-- // snb -->
+            <div class="wid">
+                <div class="content-area">
+                    <div id="contents">
+                        <h4 class="conts-tit2">SeoulMate</h4>
+                        <div class="program-imgs">
+                            <img src="../../static/images/seoulmate_01.jpg" alt="">
+                        </div>
+                        <h5 class="sub-tit">Information</h5>
+                        <div class="ind-box">
+                            <p class="sub-tit2">Eligibility</p>
+                            <div class="desc">
+                                <ul class="dotList01">
+                                    <li>Undergraduate students of UOS (leave of absence students can also apply)</li>
+                                    <li>Those with a strong spirit of volunteer service</li>
+                                    <li>Those with a high sense of responsibility and participation, and who have an active and sociable personality</li>
+                                    <li>Those who can speak foreign languages</li>
+                                    <li>Those who can participate in and devote themselves to education and preparation activities during vacation</li>
+                                </ul>
+                            </div>
+                            <p class="sub-tit2">Activities</p>
+                            <div class="desc">
+                                <ul class="dotList01">
+                                    <li>Matching with international students</li>
+                                    <li>Planning and conducting welcome events and monthly exchange events</li>
+                                    <li>Helping and guiding overall adaptation to school life</li>
+                                </ul>
+                            </div>
+                            <p class="sub-tit2">Application</p>
+                            <div class="desc">
+                                <ul class="dotList01">
+                                    <li>Document screening</li>
+                                    <li>Interview</li>
+                                </ul>
+                            </div>
+                            <p class="sub-tit2">Selection</p>
+                            <div class="desc">
+                                <ul class="dotList01">
+                                    <li>Every June or December</li>
+                                </ul>
+                            </div>
+                            <p class="sub-tit2">Completion</p>
+                            <div class="desc">
+                                <ul class="dotList01">
+                                    <li>
+                                        <p>Student career activity certificate issued to students who successfully complete buddy activities</p>
+                                        <p class="point02">※ SeoulMate activities are expected to become quite active, so students must participate in all education and preparation activities during vacation, and especially students who can devote time to activities will be selected.</p>
+                                        <p class="point02">※ When applying for international programs that support scholarships (self-funded exchange students, global internships, double degrees, language training, overseas prestigious universities, international development expert training programs), only students with experience or plans to be active as a UOS buddy or tutor can apply, and general exchange student qualifications are the same as before, but additional points are given to students with buddy/tutor activity experience.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

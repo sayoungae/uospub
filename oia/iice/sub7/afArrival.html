@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+     <!-- CSS -->
+    <link rel="stylesheet" href="../../static/css/common.css">
+    <link rel="stylesheet" href="../../static/css/swiper.css">
+    <!-- JS -->
+    <script src="../../static/js/jquery-3.7.1.js"></script>
+    <script src="../../static/js/common.js"></script>
+    <script src="../../static/js/swiper-bundle.min.js"></script>
+    <script src="../../static/js/main.js"></script>
+    <script>
+        // header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+       
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <div class="sub-tit-wrap"><h3 class="pg-tit">Student Resources</h3></div>
+            <!-- snb -->
+            <div id="snb-wrap"></div>
+            <!-- // snb -->
+            <div class="wid">
+                <div class="content-area">
+                    <div id="contents">
+                        <h4 class="conts-tit2">After Arrival Information</h4>
+                       
+                        <h5 class="sub-tit">Orientation for New Comers</h5>
+                        <div class="ind-box">
+                            <p class="mb30 point01">
+                                Right before each semester starts, there is an orientation session for all the new comers for spring or fall semester. The orientation covers the following topics
+                            </p>
+                            <div class="desc">
+                                <ul class="dotList01">
+                                    <li>About University of Seoul</li>
+                                    <li>Academic Calendar</li>
+                                    <li>Academic Regulations</li>
+                                    <li>Class Schedules & Classrooms</li>
+                                    <li>UOS PORTAL System</li>
+                                    <li>UOS Tutor</li>
+                                    <li>Korean Language Classes by KLCP</li>
+                                    <li>Global Internship Program with Lotte Hotel Seoul</li>
+                                    <li>Opening an account at on-campus bank</li>
+                                    <li>General information; Campus Life & Living in Korea</li>
+                                    <li>Alien Registration Application</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h5 class="sub-tit">On-campus Housing</h5>
+                        <div class="ind-box">
+                            <div class="btn-wrap">
+                                <a href="/oia/kiice/sub3/housing.html" target="_blank" title="새창열림" class="btn arrwType"><span>Go to Housing</span></a>
+                            </div>
+                        </div>
+                        <h5 class="sub-tit">Alien Registration after Arrival in Korea</h5>
+                        <div class="ind-box">
+                            <p class="point01">
+                                All foreigners planning to stay in Korea for more than 90 days must report to the Seoul Immigration Office (89-4, Kyoungun-dong, Jongno-gu, Tel : 732-6214, 6215) and register for the Alien Registration Card (외국인등록증) within 90 days from the date of arrival. To apply for the Alien Registration Card, you need a long term visa.<br/>
+                                Within the orientation session for new exchange students, you will submit all the documents which are required to complete the Alien Registration. The documents are listed below;
+                            </p>
+                            <ul class="point01 mt20 mb20">
+                                <li class="mb5">1. Alien Registration Form (form will be given at the OT)</li>
+                                <li class="mb5">2. Passport</li>
+                                <li class="mb5">3. Certificate of Attendance: issuable from the Student Service Center</li>
+                                <li class="mb5">4. Two Recent Passport-size Color Photos: 3cm x 4cm</li>
+                                <li class="mb5">5. Application Fee: 30,000 won</li>
+                            </ul>
+                            <div class="point01">
+                                In takes approximately 7 business days for the Immigration Office to process the application. Applicants must leave their passport with the Immigration Office during this period and the office will return it when the applications is completed. If the Alien Registration Card is lost, stolen, damaged, or destroyed; or if the applicant needs to change any information on the card or if the card runs out of spaces for additional information or changes, the applicant must visit Seoul Immigration office and apply for re-issuance or change the card within 14 days. Foreigners must always carry their Alien Registration Card or their passport with them.
+                            </div>
+                            <p class="point01 mt10">※ For mor datails, please visit the Immigration office website at(<a href="http://www.immigration.go.kr/HP/IMM80/index.do" target="_blank" title="새창열림" class="link-txt">http://www.immigration.go.kr/HP/IMM80/index.do</a>)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../static/css/common.css">
+    <link rel="stylesheet" href="../../static/css/swiper.css">
+
+
+    <!-- JS -->
+    <script src="../../static/js/jquery-3.7.1.js"></script>
+    <script src="../../static/js/common.js"></script>
+    <script src="../../static/js/swiper-bundle.min.js"></script>
+    <script src="../../static/js/main.js"></script>
+
+    <script>
+        // header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+       
+    </script>
+    <script>
+        $(function(){
+            const houseSlide = new Swiper('.housing-slide', {
+                loop: true,
+                speed: 800,
+                navigation: {
+                    prevEl: '.house_prev',
+                    nextEl: '.house_next',
+                },
+            });
+        })
+        
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <div class="sub-tit-wrap"><h3 class="pg-tit">1depth</h3></div>
+            <div id="snb-wrap"></div>
+            <div class="wid">
+                <div class="content-area">
+                    <div id="contents">
+                        <h4 class="conts-tit2">Housing</h4>
+                        <!-- tab -->
+                        <div class="tab-area layer">
+                            <!-- tab list -->
+                            <div class="tab">
+                                <ul role="tablist">
+                                    <li id="tab_house_01" role="tab" aria-selected="true" aria-controls="panel_house_01" class="active">
+                                        <button type="button" class="btn-tab">Information</button>
+                                    </li>
+                                    <li id="tab_house_02" role="tab" aria-selected="false" aria-controls="panel_house_02">
+                                        <button type="button" class="btn-tab">Facility Details</button>
+                                    </li>
+                                    <li id="tab_house_03" role="tab" aria-selected="false" aria-controls="panel_house_03">
+                                        <button type="button" class="btn-tab">Facilities Photo</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- //tab list -->
+                            <!-- tab contents -->
+                            <div class="tab-conts-wrap">
+                                <div id="panel_house_01" role="tabpanel" aria-labelledby="tab_house_01" class="tab-conts active">
+                                    <h5 class="sub-tit">IMPORTANT NOTES</h5>
+                                    <div class="ind-box">
+                                        <p class="sub-tit2">Housing Guarantee</p>
+                                        <div class="desc">
+                                            <ul class="dotList01">
+                                                <li>UOS guarantees on-campus housing only for exchange students whose universities guarantee on-campus housing for UOS students.</li>
+                                            </ul>
+                                        </div>
+                                        <p class="sub-tit2">Housing Availability</p>
+                                        <div class="desc">
+                                            <ul class="dotList01">
+                                                <li>Due to a shortage of dormitory rooms, UOS cannot guarantee on-campus housing for all partner universities. Please confirm your housing options with your home university coordinator before completing the UOS online application.</li>
+                                            </ul>
+                                        </div>
+                                        <p class="sub-tit2">Dormitory Allocation Announcement</p>
+                                        <div class="desc">
+                                            <ul class="dotList01">
+                                                <li>The dormitory allocation results will be announced one to two months before the semester begins, after confirmation from the dormitory office.</li>
+                                            </ul>
+                                        </div>
+                                        <p class="sub-tit2">Required Documents to submit</p>
+                                        <div class="desc">
+                                            <ul class="dotList01">
+                                                <li>A Certificate of Health (either Chest X-ray result or TB test result)</li>
+                                                <li>Certificate of MMR (Measles, Mumps & Rubella) <span class="point">* full two-dose series of the MMR vaccine</li>
+                                            </ul>
+                                            <div class="btn-wrap">
+                                                <a href="#none" class="btn dwType"><span>Form Dwonload</span></a>
+                                            </div>
+                                        </div>
+                                        <p class="sub-tit2">Extension During Vacations</p>
+                                        <div class="desc">
+                                            <ul class="dotList01">
+                                                <li>Extensions are possible during vacations. Detailed information will be announced by UOS OIA right before the semester ends.</li>
+                                            </ul>
+                                        </div>
+                                        <p class="sub-tit2">Dormitory Fees (as of 2024)</p>
+                                        <div class="desc">
+                                            <ul class="dotList01">
+                                                <li>
+                                                    <p>Fees for Regular Semester (about 4 months)</p>
+                                                    <ul class="dotList03 mt10">
+                                                        <li>International House (single occupancy):1,048,000 KRW</li>
+                                                        <li>Residence Hall (double occupancy): 728,000 KRW</li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <p>Fees for Vacation (about 2 months)</p>
+                                                    <ul class="dotList03 mt10">
+                                                        <li>International House (single occupancy): 524,000 KRW</li>
+                                                        <li>Residence Hall (double occupancy): 364,000 KRW</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="panel_house_02" role="tabpanel" aria-labelledby="tab_house_02" class="tab-conts">
+                                    <h5 class="sub-tit">Room Type</h5>
+                                    <div class="ind-box">
+                                        <p class="sub-tit2">Room Type of Residence Hall</p>
+                                        <div class="desc">
+                                            <ul class="dotList01">
+                                                <li>Each room of double occupancy, 15 rooms on each of the 7 floors</li>
+                                                <li>
+                                                    1 room for 2 people, using public toilets/shower rooms in corridors.
+                                                    <p class="mt20"><img src="../../static/images/roomtype.png" alt=""></p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <p class="sub-tit2">Room Type of International House</p>
+                                        <div class="desc">
+                                            <ul class="dotList01">
+                                                <li>Each unit with 2 rooms / 3 rooms / 4 rooms / 5 rooms of single occupancy</li>
+                                                <li>
+                                                    There is a toilet/shower inside the house and it is shared with the housemates
+                                                    <p class="mt20"><img src="../../static/images/afArrival2_02.jpg" alt=""></p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <p class="sub-tit2">Remarks</p>
+                                        <div class="desc">
+                                            <ul class="dotList01">
+                                                <li>In both housings, male and female sections are segregated</li>
+                                                <li>Allocation will be done on random basis.</li>
+                                                <li>Fees are payable on arrival at UOS. The dormitory office will give the bill to students when checking in, so you need to make a payment   later by due date.</li>
+                                            </ul>
+                                        </div>
+                                        <p class="sub-tit2">How to apply</p>
+                                        <div class="desc">
+                                            <ul class="dotList01">
+                                                <li>For regular semester, students are required to apply it through the UOS online application system.</li>
+                                            </ul>
+                                        </div>
+                                        <p class="sub-tit2">UOS dormitory guidebook</p>
+                                        <div class="desc">
+                                            <div class="line-box">
+                                                <div class="btn-wrap">
+                                                    <a href="#none" target="_blank" title="새창열림" class="btn dwType"><span>영어 | English</span></a>
+                                                    <a href="#none" target="_blank" title="새창열림" class="btn dwType"><span>한국어 | Korean</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="panel_house_03" role="tabpanel" aria-labelledby="tab_house_03" class="tab-conts">
+                                    <h5 class="sub-tit">dormitory Facilities Photo</h5>
+                                    <span class="fz14 point">※ Information above is as of October 11, 2023</span>
+                                    <div class="swiper housing-slide">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <p class="imgs"><img src="../../static/images/dorm01.jpg" alt=""></p>
+                                                <p>Residence Hall - Room</p>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p class="imgs"><img src="../../static/images/dorm02.jpg" alt=""></p>
+                                                <p>Residence Hall - Hallway</p>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p class="imgs"><img src="../../static/images/dorm03.jpg" alt=""></p>
+                                                <p>International House Room</p>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p class="imgs"><img src="../../static/images/dorm04.jpg" alt=""></p>
+                                                <p>Activity Room</p>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p class="imgs"><img src="../../static/images/dorm05.jpg" alt=""></p>
+                                                <p>GYM</p>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p class="imgs"><img src="../../static/images/dorm06.jpg" alt=""></p>
+                                                <p>Convenience Store</p>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p class="imgs"><img src="../../static/images/dorm07.jpg" alt=""></p>
+                                                <p>Health Room</p>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p class="imgs"><img src="../../static/images/dorm08.jpg" alt=""></p>
+                                                <p>Delivery Booth</p>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p class="imgs"><img src="../../static/images/dorm09.jpg" alt=""></p>
+                                                <p>Laundry Room</p>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p class="imgs"><img src="../../static/images/dorm10.jpg" alt=""></p>
+                                                <p>Shared Kitchen</p>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p class="imgs"><img src="../../static/images/dorm11.jpg" alt=""></p>
+                                                <p>Lounge</p>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p class="imgs"><img src="../../static/images/dorm12.jpg" alt=""></p>
+                                                <p>Smoking Room</p>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p class="imgs"><img src="../../static/images/dorm13.jpg" alt=""></p>
+                                                <p>Dormitory Garden</p>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="house_prev"><span class="blind">prev</span></button>
+                                        <button type="button" class="house_next"><span class="blind">next</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //tab contents -->
+                        </div>
+                        <!-- tab -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

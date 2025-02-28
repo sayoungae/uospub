@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>국제처 소개</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../static/css/common.css">
+    <link rel="stylesheet" href="../../static/css/swiper.css">
+
+
+    <!-- JS -->
+    <script src="../../static/js/jquery-3.7.1.js"></script>
+    <script src="../../static/js/common.js"></script>
+    <script src="../../static/js/swiper-bundle.min.js"></script>
+    <script src="../../static/js/main.js"></script>
+
+    <script>
+        // header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+       
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <div class="sub-tit-wrap"><h3 class="pg-tit">Study at UOS</h3></div>
+            <div id="snb-wrap"></div>
+            <div class="wid">
+                <div class="content-area">
+                    <div id="contents">
+                        <h4 class="conts-tit2">자격 및 신청</h4>
+                        <h5 class="sub-tit">자격 및 요구사항</h5>
+                        <div class="ind-box">
+                            <ul class="dotList01">
+                                <li>프로그램 참여 시 모국 대학에서 최소 2학기를 이수했어야 함</li>
+                                <li>4.0 척도에서 최소 2.5의 GPA(미국 기준 GPA) 또는 B 평균에 상응하는 성적(100% 중 80% 이상)</li>
+                                <li>현재 UOS 파트너 대학 중 하나에 재학 중인 학생이어야 합니다 (먼저 UOS 파트너 대학 목록을 확인하세요)</li>
+                                <li>서울시립대학교에 등록금을 납부해야 합니다.</li>
+                                <li>언어 요구 사항은 없습니다. 그러나 지원자는 한국어 또는 영어에 대한 좋은 구사력을 가져야 합니다.</li>
+                            </ul>
+                        </div>
+                        <h5 class="sub-tit">신청 절차</h5>
+                        <div class="ind-box">
+                            <p class="sub-tit2"><b>1단계</b> :  온라인 신청서 제출</p>
+                            <div class="btn-wrap mb30">
+                                <a href="https://forms.gle/b6vBN4LyDTiNUGvu6" target="_blank" title="새창열림" class="btn arrwType"><span>신청 | Application</span></a>
+                            </div>
+                            <p class="sub-tit2"><b>2단계</b> :  필요서류를 exchangein@uos.ac.kr로 기한 내 제출</p>
+                            <ul>
+                                <li class="mb5">(1) 여권사본</li>
+                                <li class="mb5">(2) 사진</li>
+                                <li class="mb5">(3) 성적증명서</li>
+                                <li class="mb5">(4) 고등학교 졸업장</li>
+                                <li class="mb5">(5) 지원자의 모대학에서 발급한 공식 재학증명서</li>
+                                <li class="mb5">(6) 본인 또는 부모님 명의의 최근 30일 이내 은행 잔고 증명서(PDF)<br/>(1학기는 6,000,000원 ​​이상, 2학기는 14,000,000원 ​​이상)</li>
+                                <li class="mb5">
+                                    (7) 가족관계증명서 (부모님의 명의로 된 은행거래내역서가 있는 경우에만 해당)                                        
+                                </li>
+                                <li class="mb5">
+                                    <p class="point03 mb5">※ 4, 5번 서류는 대한민국 대사관에서 아포스티유 또는 공증을 받아야 합니다. OECD 국가가 아닌 경우 필수입니다.</p>
+                                    <p class="mb5">* OECD 국가: 호주, 오스트리아, 벨기에, 캐나다, 칠레, 체코, 덴마크, 에스토니아, 핀란드, 프랑스, ​​그리스, 헝가리, 아이슬란드, 아일랜드, 이스라엘, 이탈리아, 독일, 일본, 라트비아, 리투아니아, 룩셈부르크, 멕시코, 네덜란드, 뉴질랜드, 노르웨이, 폴란드, 포르투갈, 슬로바키아, 슬로베니아, 스페인, 스웨덴, 스위스, 터키, 영국, 미국.</p>
+                                    <p class="point03">※ 중국 유학생은 중국학위(CHSI)로 서류확인 필수</p>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <h5 class="sub-tit">신청 마감일</h5>
+                        <div class="ind-box">
+                            <ul class="dotList01">
+                                <li><b>가을 Admission</b> :  5월 31일</li>
+                                <li><b>봄학기 Admission</b> :  11월 30일</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

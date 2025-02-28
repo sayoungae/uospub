@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일반대학원 영문</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/swiper.css">
+
+
+    <!-- JS -->
+    <script src="../static/js/jquery-3.7.1.js"></script>
+    <script src="../static/js/swiper-bundle.min.js"></script>
+    <script src="../static/js/common.js"></script>
+    <script src="../static/js/main.js"></script>
+    <script src="../static/js/sub.js"></script>
+
+
+    <script>
+        //header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+       
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <!-- sub-banner -->
+            <div class="sub-banner sub1">
+                <div class="inner">
+                    <div class="ban-tit">University of Seoul Global Top Brand</div>
+                    <ul class="line-map">
+                        <li><img src="../static/images/home_ic.png" alt="home"></li>
+                        <li>dept</li>
+                        <li>dept Centers and Laboratores</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content">
+                <div class="inner clearfix">
+                    <!-- // sub-banner -->
+                    <!-- snb -->
+                    <div id="snb-wrap">
+                    </div>
+                    <!-- // snb -->
+                    <!-- sub content -->
+                    <div class="sub-content" id="sub-content">
+                        <div class="sub-tit-box">
+                            <h3 class="subTit01">Department of Business Administration</h3>
+                            <ul class="stp-bt">
+                                <li><a href="" class="print-ic"><span class="blind">인쇄</span></a></li>
+                                <li><a href="" class="share-ic"><span class="blind">공유 </span></a></li>
+                            </ul>
+                        </div>
+                        <!-- 본문 -->
+                        <!-- tab -->
+                        <div class="tab-area layer">
+                            <!-- tab list -->
+                            <div class="tab">
+                                <ul role="tablist">
+                                    <li id="tab_dept_01" role="tab" aria-selected="true" aria-controls="panel_dept_01" class="active">
+                                        <button type="button" class="btn-tab">Departments</button>
+                                    </li>
+                                    <li id="tab_dept_02" role="tab" aria-selected="false" aria-controls="panel_dept_02">
+                                        <button type="button" class="btn-tab">Admission</button>
+                                    </li>
+                                    <li id="tab_dept_03" role="tab" aria-selected="false" aria-controls="panel_dept_03">
+                                        <button type="button" class="btn-tab">Assistance, etc</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- //tab list -->
+                            <!-- tab contents -->
+                            <div class="tab-conts-wrap">
+                                <div id="panel_dept_01" role="tabpanel" aria-labelledby="tab_dept_01" class="tab-conts active">
+                                    <div class="dept-link-list">
+                                        <a href="https://liberalarts.uos.ac.kr/liberalarts/main.do?cate_id2=000010068&identified=anonymous&" target="_blank" title="opens in a new tab" class="icn1"><span>Homepage</span></a>
+                                        <a href="profList.html" target="_blank" title="opens in a new tab" class="icn2"><span>Faculty</span></a>
+                                        <a href="https://www.uos.ac.kr/kor/popup/html/auos/prospectus/2022/prospectus.do?identified=anonymous&" target="_blank" title="opens in a new tab" class="icn3"><span>Curriculum</span></a>
+                                    </div>
+                                    <h4 class="subTit04">Educational objectives</h4>
+                                    <div class="table-wrap">
+                                        <table class="type3">
+                                            <colgroup>
+                                                <col width="20%">
+                                                <col width="80%">
+                                            </colgroup>
+                                            <tbody>
+                                            <tr>
+                                                <th>Core objectives</th>
+                                                <td>
+                                                    The master's and doctorate's programs in the UOS Graduate School aim to produce and cultivate experts with theoretical and methodological capabilities in their major fields with the goal of academic research and development. Based on the basic knowledge learned in the undergraduate program, in-depth specialized education is provided in subdivided majors such as production, human resources organization, marketing and financial management, international business, and management information, to acquire specialized knowledge that can establish theoretical systems and models in each research field. Furthermore, it aims to cultivate professional academics who can suggest the direction of development in business administration research.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>Research areas</th>
+                                                <td>
+                                                    Marketing, Human Resources/Organization/Management, Production/Service, Accounting, 
+                                                    Financial Management, Management Information Systems (MIS), International Business
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <h4 class="subTit04">Majors (track)</h4>
+                                    <div class="table-wrap">
+                                        <table class="type3">
+                                            <colgroup>
+                                                <col width="20%">
+                                                <col width="80%">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th>Management Information Systems</th>
+                                                    <td>
+                                                        Acquisition of various knowledge necessary to solve management problems through the basic concepts of information systems, development and strategies of information technology that implement them, and the use of information systems built on these technologies
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Marketing</th>
+                                                    <td>
+                                                        Marketing is one of the important management functions that harmonizes available resources and market needs to achieve the company's mission and goals in response to changing environments. To this end, based on insights into markets and customers, collect and analyze market information to acquire theories and abilities to effectively establish and implement strategies for solving marketing problems
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Human Resources and Organization</th>
+                                                    <td>
+                                                        Study case studies and core concepts and theories related to personnel management within organizations through courses such as organizational behavior, organizational structure, human resource management, human resource development, labor relations, organizational culture, organizational development, and strategic management
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Production and Service Management</th>
+                                                    <td>
+                                                        Research on various topics related to the operation and management of production and service systems that produce products or services, production and service strategies to enhance corporate competitiveness, and efficient design, control, and operation of production and service delivery systems
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>International Business</th>
+                                                    <td>
+                                                        Understand the globalizing business environment, recognize business management issues that occur across borders, and research effective global strategy formulation and efficient management methods for multinational corporations
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Financial Management</th>
+                                                    <td>
+                                                        Research methods from corporate finance (real investment, financing, etc. from the company's perspective with the goal of maximizing corporate value) and investment theory (asset management, risk management, etc. from the investor's perspective with the goal of maximizing expected utility) perspectives
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Accounting</th>
+                                                    <td>
+                                                        Education and research on methods of recognizing and measuring economic transactions or events that affect a company's financial position, business performance, and cash flows, and delivering them to internal and external information users of the company
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <h4 class="subTit04">Information</h4>
+                                    <div class="table-wrap">
+                                        <ul class="dept-info">
+                                            <li>
+                                                <div>Head professor</div>
+                                                <div>Choi Bo-reum</div>
+                                            </li>
+                                            <li>
+                                                <div>TEL</div>
+                                                <div>+82-2-6490-2263</div>
+                                            </li>
+                                            <li>
+                                                <div>E-mail</div>
+                                                <div></div>
+                                            </li>
+                                            <li>
+                                                <div>Office</div>
+                                                <div>5F Room 506, Mirae Hall</div>
+                                            </li>
+                                            <li>
+                                                <div>TEL</div>
+                                                <div>+82-2-6490-2210~5</div>
+                                            </li>
+                                            <li>
+                                                <div>FAX</div>
+                                                <div>+82-2-6490-2219</div>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div id="panel_dept_02" role="tabpanel" aria-labelledby="tab_dept_02" class="tab-conts">
+                                    <div class="dept-link-list">
+                                        <a href="../admission/regular.html" target="_blank" title="opens in a new tab" class="icn4"><span>Recruitment guidelines</span></a>
+                                        <a href="https://rule.uos.ac.kr/lmxsrv/main/main.srv" target="_blank" title="opens in a new tab" class="icn5"><span>Operating regulations</span></a>
+                                    </div>
+                                    <h4 class="subTit04">General admission degree programs</h4>
+                                    <div class="table-wrap">
+                                        <table class="type3">
+                                            <colgroup>
+                                                <col width="20%">
+                                                <col width="80%">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th>Master's degree</th>
+                                                    <td >
+                                                        <ul class="dot-list01">
+                                                            <li>Individuals who have obtained a bachelor's degree from domestic or foreign universities or those expected to obtain a degree upon completion of the current registered semester</li>
+                                                            <li>Individuals recognized as having equivalent or higher academic qualifications under relevant laws</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Doctorate's degree</th>
+                                                    <td >
+                                                        <ul class="dot-list01">
+                                                            <li>Individuals who have obtained a bachelor's degree from domestic or foreign universities or those expected to obtain a degree upon completion of the current registered semester</li>
+                                                            <li>Individuals recognized as having equivalent or higher academic qualifications under relevant laws</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Eligibility for master's/doctorate's<br/>Support for North Korean defectors</th>
+                                                    <td >
+                                                        <ul class="dot-list01">
+                                                            <li>Individuals qualified to apply for master's or doctorate's program</li>
+                                                            <li>Individuals registered as North Korean defectors pursuant to the North Korean Defectors Protection and Settlement Support Act</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <h4 class="subTit04">Additional eligibility requirements and submission documents</h4>
+                                    <ul class="dot-list02">
+                                        <li>Submission of additional documents that can support the contents of the application form is recommended</li>
+                                        <li>Essential to check the program guide in the Graduate School notices on the Business School website (biz.uos.ac.kr)</li>
+                                    </ul>
+                                    <h4 class="subTit04">Program information (for students admitted after 2022)</h4>
+                                    <div class="table-wrap">
+                                        <table class="type1">
+                                            <thead>
+                                                <tr>
+                                                    <th>Category</th>
+                                                    <th>Length of study</th>
+                                                    <th>Basic semester operation</th>
+                                                    <th>Minimum credits required</th>
+                                                    <th>Graduation thesis</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Master</td>
+                                                    <td rowspan="2">2+ years</td>
+                                                    <td rowspan="2">4 semester system</td>
+                                                    <td>24 credits</td>
+                                                    <td>Master's thesis</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Doctorate</td>
+                                                    <td>36 credits</td>
+                                                    <td>Doctoral dissertation</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <p class="point mt10">※ For other academic information: Refer to relevant items on the Education/Academic Affairs tab of the Graduate School website</p>
+                                    </div>
+                                    <h4 class="subTit04">Minimum publication requirements for doctoral dissertation</h4>
+                                    <ul class="dot-list02">
+                                        <li>At least one paper published as first author in a journal listed (or candidate) by the National Research Foundation of Korea</li>
+                                        <li>Or at least one paper published in SCI(E), SSCI listed journals regardless of author rank</li>
+                                    </ul>
+                                    <h4 class="subTit04">Graduate school operating principles</h4>
+                                    <ul class="dot-list02">
+                                        <li>Based on the completion of undergraduate courses in statistics and analysis, in-depth learning of research methodologies and knowledge in respective specialized majors</li>
+                                        <li>Program conducted with weekday daytime classes (for full-time students)</li>
+                                    </ul>
+                                </div>
+                                <div id="panel_dept_03" role="tabpanel" aria-labelledby="tab_dept_03" class="tab-conts">
+                                    <h4 class="subTit04">Scholarships</h4>
+                                    <ul class="dot-list02">
+                                        <li><a href="https://graduate.uos.ac.kr/graduateNew/html/support/scholarship.do?menuid=3000004001001000000" class="link-ty1">Website</a></li>
+                                    </ul>
+                                    <h4 class="subTit04">Career paths after graduation</h4>
+                                    <ul class="dot-list02">
+                                        <li>Various financial institutions (banks, securities, investment trusts, investment banks, insurance, etc.)</li>
+                                        <li>Large corporations and medium-sized companies (manufacturing, service industries)</li>
+                                        <li>Public institutions and state-owned enterprises, government departments</li>
+                                        <li>Various knowledge-providing professional companies (consulting, accounting firms, SI or data companies)</li>
+                                        <li>Ventures and start-ups, etc.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- //tab contents -->
+                        </div>
+                        <!-- // tab -->
+                        <!-- 본문 -->
+                    </div>
+                    <!-- sub content -->
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

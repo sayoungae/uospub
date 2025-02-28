@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일반대학원 영문</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/swiper.css">
+
+
+    <!-- JS -->
+    <script src="../static/js/jquery-3.7.1.js"></script>
+    <script src="../static/js/swiper-bundle.min.js"></script>
+    <script src="../static/js/common.js"></script>
+    <!-- <script src="../static/js/main.js"></script> -->
+    <script src="../static/js/sub.js"></script>
+
+
+    <script>
+        //header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+       
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <!-- sub-banner -->
+            <div class="sub-banner sub3">
+                <div class="inner">
+                    <div class="ban-tit">University of Seoul Global Top Brand</div>
+                    <ul class="line-map">
+                        <li><img src="../static/images/home_ic.png" alt="home"></li>
+                        <li>inter</li>
+                        <li>inter Centers and Laboratores</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content">
+                <div class="inner clearfix">
+                    <!-- // sub-banner -->
+                    <!-- snb -->
+                    <div id="snb-wrap">
+                    </div>
+                    <!-- // snb -->
+                    <!-- sub content -->
+                    <div class="sub-content" id="sub-content">
+                        <div class="sub-tit-box">
+                            <h3 class="subTit01">Credit Exchange</h3>
+                            <ul class="stp-bt">
+                                <li><a href="" class="print-ic"><span class="blind">인쇄</span></a></li>
+                                <li><a href="" class="share-ic"><span class="blind">공유 </span></a></li>
+                            </ul>
+                        </div>
+                        <!-- 본문 -->
+                        <!-- tab -->
+                        <div class="tab-area layer">
+                            <!-- tab list -->
+                            <div class="tab">
+                                <ul role="tablist">
+                                    <li id="tab_inter_01" role="tab" aria-selected="true" aria-controls="panel_inter_01" class="active">
+                                        <button type="button" class="btn-tab">Credit exchange between<br/>UOS graduate school departments</button>
+                                    </li>
+                                    <li id="tab_inter_02" role="tab" aria-selected="false" aria-controls="panel_inter_02">
+                                        <button type="button" class="btn-tab">Credit exchange between<br/>UOS graduate schools</button>
+                                    </li>
+                                    <li id="tab_inter_03" role="tab" aria-selected="false" aria-controls="panel_inter_03">
+                                        <button type="button" class="btn-tab">Credit exchange between<br/>non-UOS graduate schools</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- //tab list -->
+                            <!-- tab contents -->
+                            <div class="tab-conts-wrap">
+                                <div id="panel_inter_01" role="tabpanel" aria-labelledby="tab_inter_01" class="tab-conts active">
+                                    <h4 class="subTit03">UOS graduate school departments</h4>
+                                    <div class="desc">
+                                        <h5 class="subTit04">Related regulations</h5>
+                                        <ul class="dot-list02">
+                                            <li>Article 31 of the UOS Graduate School Implementation Regulations</li>
+                                        </ul>
+                                        <h5 class="subTit04">Cooperating departments</h5>
+                                        <ul class="dot-list02">
+                                            <li>Other UOS graduate school departments</li>
+                                        </ul>
+                                        <h5 class="subTit04">Qualifications for completion</h5>
+                                        <ul class="dot-list02">
+                                            <li>Currently enrolled graduate students (including those planning to re-enroll in the current semester)</li>
+                                        </ul>
+                                        <h5 class="subTit04">Range of transferable credits</h5>
+                                        <ul class="dot-list02">
+                                            <li>A. Master's program - Up to 12 credits during the entire enrollment period</li>
+                                            <li>
+                                                B. Doctorate's program - Up to 18 credits during the entire enrollment period
+                                                <div class="point mt10">
+                                                    ※ Students belonging to a participating department in the interdepartmental cooperative program may take courses established in the cooperative program with the approval of their department and the head professor of the cooperative program. Similarly, students from participating departments can take courses established in the cooperative program with the approval of the supervising professor of that program. In addition, students from departments participating in interdisciplinary majors may take courses established in the interdisciplinary major with the approval of their department and the head professor of the interdisciplinary operating department. In such cases, they can earn credits for courses offered in other graduate departments without restriction.
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <h5 class="subTit04">Application procedure</h5>
+                                        <div class="course">
+                                            <div class="course_square type2">
+                                                <div class="course_content">
+                                                    <p class="imgs"><img src="../static/images/square_img01.png" alt=""></p>
+                                                    <span>Course enrollment for requested subjects</span>
+                                                </div>
+                                            </div>
+                                            <div class="course_square type2">
+                                                <div class="course_content">
+                                                    <p class="imgs"><img src="../static/images/square_img02.png" alt=""></p>
+                                                    <span>Approval from affiliated department and head professor</span>
+                                                </div>
+                                            </div>
+                                            <div class="course_square type2">
+                                                <div class="course_content">
+                                                    <p class="imgs"><img src="../static/images/square_img03.png" alt=""></p>
+                                                    <span>Approval from the responsible professor of the other department</span>
+                                                </div>
+                                            </div>
+                                            <div class="course_square type2">
+                                                <div class="course_content">
+                                                    <p class="imgs"><img src="../static/images/square_img04.png" alt=""></p>
+                                                    <span>Course enrollment for requested subjects<br/>(UOS portal)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="panel_inter_02" role="tabpanel" aria-labelledby="tab_inter_02" class="tab-conts">
+                                    <h4 class="subTit03">UOS graduate schools</h4>
+                                    <div class="desc">
+                                        <h5 class="subTit04">Related regulations</h5>
+                                        <ul class="dot-list02">
+                                            <li>Article 32 of the UOS Graduate School Implementation Regulations</li>
+                                        </ul>
+                                        <h5 class="subTit04">Cooperating departments</h5>
+                                        <ul class="dot-list02">
+                                            <li>Graduate School ⇔ Special Graduate School, Professional Graduate School</li>
+                                        </ul>
+                                        <h5 class="subTit04">Qualifications for completion</h5>
+                                        <ul class="dot-list02">
+                                            <li>Currently enrolled graduate students (including those planning to re-enroll in the current semester)</li>
+                                        </ul>
+                                        <h5 class="subTit04">Range of transferable credits</h5>
+                                        <ul class="dot-list02">
+                                            <li>A total of no more than 6 credits may be transferred during the enrollment period, and a grade of B0 or higher must be achieved for the transferred courses to be recognized.</li>
+                                        </ul>
+                                        <h5 class="subTit04">Scope of transfer course selection</h5>
+                                        <ul class="dot-list02">
+                                            <li>Courses taught by full-time faculty</li>
+                                            <li>Courses not offered in the affiliated graduate school</li>
+                                            <li>Doctorate's program students are only allowed to take doctorate's courses from the affiliated graduate schools and cannot take master's courses from professional or special graduate schools.</li>
+                                        </ul>
+                                        <h5 class="subTit04">Application documents</h5>
+                                        <ul class="dot-list02">
+                                            <li>
+                                                Credit exchange course enrollment application form
+                                                <ul>
+                                                    <li>Download and complete one copy for record-keeping and one for notification from the “Graduate School Website > Student Support > Academic-related Forms.”</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <h5 class="subTit04">Application procedure(regular semester)</h5>
+                                        <div class="course">
+                                            <div class="course_square type2">
+                                                <div class="course_content">
+                                                    <span>Selection of courses to enrol</span>
+                                                    <p>Consultation with the advisor of the affiliated graduate school<br/>(student, advisor)</p>
+                                                </div>
+                                            </div>
+                                            <div class="course_square type2">
+                                                <div class="course_content">
+                                                    <span>Fill out credit exchange course enrollment application form</span>
+                                                    <p>(student)</p>
+                                                </div>
+                                            </div>
+                                            <div class="course_square type2">
+                                                <div class="course_content">
+                                                    <span>Approval from advisor and head professor of affiliated graduate school</span>
+                                                    <p>(student)</p>
+                                                </div>
+                                            </div>
+                                            <div class="course_square type2">
+                                                <div class="course_content">
+                                                    <span>Approval from responsible professor of the other graduate school</span>
+                                                    <p>In-person visit with the credit exchange course enrollment application form, and obtain approval<br/>(student)</p>
+                                                </div>
+                                            </div>
+                                            <div class="course_square type2">
+                                                <div class="course_content">
+                                                    <span>Submit to the Academic Affairs Office of the affiliated graduate school</span>
+                                                    <p>(student)</p>
+                                                </div>
+                                            </div>
+                                            <div class="course_square type2">
+                                                <div class="course_content">
+                                                    <span>Approval from the Dean of the Graduate School</span>
+                                                    <p>(Academic Affairs Office of the affiliated Graduate School)</p>
+                                                </div>
+                                            </div>
+                                            <div class="course_square type2">
+                                                <div class="course_content">
+                                                    <span>Notify the other university</span>
+                                                    <p>(Graduate School)</p>
+                                                </div>
+                                            </div>
+                                            <div class="course_square type2">
+                                                <div class="course_content">
+                                                    <span>Enrollment in requested courses</span>
+                                                    <p>(student)</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="panel_inter_03" role="tabpanel" aria-labelledby="tab_inter_03" class="tab-conts">
+                                    <h4 class="subTit03">non-UOS graduate schools (domestic)</h4>
+                                    <div class="desc">
+                                        <h5 class="subTit04">Related regulations</h5>
+                                        <ul class="dot-list02">
+                                            <li>Article 33 of the UOS Graduate School Implementation Regulations</li>
+                                        </ul>
+                                        <h5 class="subTit04">Cooperating universities</h5>
+                                        <ul class="dot-list02">
+                                            <li>Kangwon National University, Konkuk University, Kyung Hee University, Korea University, Kookmin University, University of Science and Technology, Dankook University, Dongguk University, Pusan National University, Sogang University, Seokyung University, Sungkyunkwan University, Seoul National University of Science and Technology, Seoul National University, Seoul Women's University, Sookmyung Women's University, Suncheon National University, Soongsil University, Ulsan National Institute of Science and Technology (UNIST), Eulji University, Ewha Womans University, Incheon National University, Chonnam National University, Chonbuk National University, Jeju National University, Chung-ang University, Chungnam National University, Hansung University, Hanyang University, Hoseo University, Hongik University</li>
+                                        </ul>
+                                        <h5 class="subTit04">Qualifications for completion</h5>
+                                        <ul class="dot-list02">
+                                            <li>urrently enrolled graduate students (including those planning to re-enroll in the current semester)</li>
+                                        </ul>
+                                        <h5 class="subTit04">Range of transferable credits</h5>
+                                        <ul class="dot-list02">
+                                            <li>A maximum of 3 credits per semester is allowed, and a total of no more than 9 credits may be transferred, with grades for the exchange courses needing to be at least 3.0(B0) or higher for recognition.</li>
+                                        </ul>
+                                        <h5 class="subTit04">Scope of transfer course selection</h5>
+                                        <ul class="dot-list02">
+                                            <li>Courses taught by full-time faculty</li>
+                                            <li>Courses not offered in the affiliated graduate school</li>
+                                            <li>Doctorate's program students are only allowed to take doctorate's courses from the affiliated graduate schools and cannot take master's courses from professional or special graduate schools.</li>
+                                        </ul>
+                                        <h5 class="subTit04">Fill out course enrollment form</h5>
+                                        <ul class="dot-list02">
+                                            <li>Include the English name of the course when filling out the course enrollment form.</li>
+                                        </ul>
+                                        <h5 class="subTit04">Application documents</h5>
+                                        <ul class="dot-list02">
+                                            <li>
+                                                Credit exchange course enrollment application form
+                                                <ul>
+                                                    <li>Download and complete one copy for record-keeping and one for notification from the “Graduate School Website > Student Support > Academic-related Forms.”</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <h5 class="subTit04">Application procedure(regular semester)</h5>
+                                        <div class="course">
+                                            <div class="course_square type2">
+                                                <div class="course_content">
+                                                    <span>Selection of courses to enroll</span>
+                                                    <p>Consultation with the advisor of the affiliated graduate school <br/>(student, advisor)</p>
+                                                </div>
+                                            </div>
+                                            <div class="course_square type2">
+                                                <div class="course_content">
+                                                    <span>Fill out credit exchange course enrollment application form</span>
+                                                    <p>(student)</p>
+                                                </div>
+                                            </div>
+                                            <div class="course_square type2">
+                                                <div class="course_content">
+                                                    <span>Approval from advisor and head professor of affiliated graduate school</span>
+                                                    <p>(student)</p>
+                                                </div>
+                                            </div>
+                                            <div class="course_square type2">
+                                                <div class="course_content">
+                                                    <span>Approval from responsible professor of the other graduate school</span>
+                                                    <p>In-person visit with the credit exchange course enrollment application form, and obtain approval(student)</p>
+                                                </div>
+                                            </div>
+                                            <div class="course_square type2">
+                                                <div class="course_content">
+                                                    <span>Submit to the Administrative Office of the Affiliated Graduate School</span>
+                                                    <p>(student)</p>
+                                                </div>
+                                            </div>
+                                            <div class="course_square type2">
+                                                <div class="course_content">
+                                                    <span>Approval from the Dean of the Graduate School</span>
+                                                    <p>(Administrative Office of the affiliated Graduate School)</p>
+                                                </div>
+                                            </div>
+                                            <div class="course_square type2">
+                                                <div class="course_content">
+                                                    <span>Notify the other university</span>
+                                                    <p>(Graduate School)</p>
+                                                </div>
+                                            </div>
+                                            <div class="course_square type2">
+                                                <div class="course_content">
+                                                    <span>Enrollment in requested courses</span>
+                                                    <p>(student)</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //tab contents -->
+                        </div>
+                        <!-- // tab -->
+                        
+                        <!-- 본문 -->
+                    </div>
+                    <!-- sub content -->
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

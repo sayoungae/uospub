@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일반대학원 영문</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/swiper.css">
+
+
+    <!-- JS -->
+    <script src="../static/js/jquery-3.7.1.js"></script>
+    <script src="../static/js/swiper-bundle.min.js"></script>
+    <script src="../static/js/common.js"></script>
+    <script src="../static/js/main.js"></script>
+    <script src="../static/js/sub.js"></script>
+
+
+    <script>
+        //header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <!-- sub-banner -->
+            <div class="sub-banner sub1">
+                <div class="inner">
+                    <div class="ban-tit">University of Seoul Global Top Brand</div>
+                    <ul class="line-map">
+                        <li><img src="../static/images/home_ic.png" alt="home"></li>
+                        <li>dept</li>
+                        <li>dept Centers and Laboratores</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content">
+                <div class="inner clearfix">
+                    <!-- // sub-banner -->
+                    <!-- snb -->
+                    <div id="snb-wrap">
+                    </div>
+                    <!-- // snb -->
+                    <!-- sub content -->
+                    <div class="sub-content" id="sub-content">
+                        <div class="sub-tit-box">
+                            <h3 class="subTit01">Department of Philosophy</h3>
+                            <ul class="stp-bt">
+                                <li><a href="" class="print-ic"><span class="blind">인쇄</span></a></li>
+                                <li><a href="" class="share-ic"><span class="blind">공유 </span></a></li>
+                            </ul>
+                        </div>
+                        <!-- 본문 -->
+                        <!-- tab -->
+                        <div class="tab-area layer">
+                            <!-- tab list -->
+                            <div class="tab">
+                                <ul role="tablist">
+                                    <li id="tab_dept_01" role="tab" aria-selected="true" aria-controls="panel_dept_01"
+                                        class="active">
+                                        <button type="button" class="btn-tab">Departments</button>
+                                    </li>
+                                    <li id="tab_dept_02" role="tab" aria-selected="false" aria-controls="panel_dept_02">
+                                        <button type="button" class="btn-tab">Admission</button>
+                                    </li>
+                                    <li id="tab_dept_03" role="tab" aria-selected="false" aria-controls="panel_dept_03">
+                                        <button type="button" class="btn-tab">Assistance, etc</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- //tab list -->
+                            <!-- tab contents -->
+                            <div class="tab-conts-wrap">
+                                <!-- 학 과 소 개 -->
+                                <div id="panel_dept_01" role="tabpanel" aria-labelledby="tab_dept_01"
+                                    class="tab-conts active">
+                                    <div class="dept-link-list">
+                                        <a href="https://liberalarts.uos.ac.kr/liberalarts/main.do?cate_id2=000010068&identified=anonymous&"
+                                            target="_blank" title="opens in a new tab"
+                                            class="icn1"><span>Homepage</span></a>
+                                        <a href="profList.html" target="_blank" title="opens in a new tab"
+                                            class="icn2"><span>Faculty</span></a>
+                                        <a href="https://www.uos.ac.kr/kor/popup/html/auos/prospectus/2022/prospectus.do?identified=anonymous&"
+                                            target="_blank" title="opens in a new tab"
+                                            class="icn3"><span>Curriculum</span></a>
+                                    </div>
+                                    <h4 class="subTit04">Educational objectives</h4>
+                                    <div class="table-wrap">
+                                        <table class="type3">
+                                            <colgroup>
+                                                <col width="20%">
+                                                <col width="80%">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th>Core objectives</th>
+                                                    <td>
+                                                        The core objective of graduate education (master's/doctorate's programs) is to cultivate excellent researchers with competitiveness in this field by not only studying the central themes of philosophy in general more deeply and professionally, but also by focusing on the core problems of modern philosophy as much as possible and dealing in-depth with philosophical reflections on modern society.<br/>
+                                                        The philosophy graduate program aims to nurture talents to become high-level experts in social fields directly or indirectly related to philosophy, such as universities, research institutions, and related professional organizations in the future.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Detailed objectives</th>
+                                                    <td>
+                                                        <ul>
+                                                            <li>1. Strengthen research capabilities that should be possessed as a prospective philosopher</li>
+                                                            <li>2. Expand and strengthen research on philosophical topics related to modern society</li>
+                                                            <li>3. Strengthen interdisciplinary research</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Research areas</th>
+                                                    <td>
+                                                        <div class="mb10">
+                                                            1. Research on traditional and fundamental core topics of philosophy.<br/>Metaphysics, ontology, epistemology, logic, analytic philosophy of language, Eastern philosophy, history of Western philosophy, etc.
+                                                        </div>
+                                                        <div>
+                                                            2. Research on core issues of contemporary philosophy that are deeply related to important problems in modern society.
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <h4 class="subTit04">Information</h4>
+                                    <div class="table-wrap">
+                                        <ul class="dept-info">
+                                            <li>
+                                                <div>Head professor</div>
+                                                <div>Lee Jong-hwan</div>
+                                            </li>
+                                            <li>
+                                                <div>TEL</div>
+                                                <div>+82-2-6490-2582</div>
+                                            </li>
+                                            <li>
+                                                <div>E-mail</div>
+                                                <div>shinhk@uos.ac.kr</div>
+                                            </li>
+                                            <li>
+                                                <div>Office</div>
+                                                <div>4F Room 419, Liberal Arts Building</div>
+                                            </li>
+                                            <li>
+                                                <div>TEL</div>
+                                                <div>+82-2-6490-2570</div>
+                                            </li>
+                                            <li>
+                                                <div>FAX</div>
+                                                <div>+82-2-6490-2574</div>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- //학 과 소 개 -->
+
+                                <!-- 입 학 정 보 -->
+                                <div id="panel_dept_02" role="tabpanel" aria-labelledby="tab_dept_02" class="tab-conts">
+                                    <div class="dept-link-list">
+                                        <a href="../admission/regular.html" target="_blank" title="opens in a new tab"
+                                            class="icn4"><span>Recruitment guidelines</span></a>
+                                        <a href="https://rule.uos.ac.kr/lmxsrv/main/main.srv" target="_blank"
+                                            title="opens in a new tab" class="icn5"><span>Operating regulations</span></a>
+                                    </div>
+                                    <h4 class="subTit04">General admission degree programs</h4>
+                                    <div class="table-wrap">
+                                        <table class="type3">
+                                            <colgroup>
+                                                <col width="20%">
+                                                <col width="80%">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th>Master's degree</th>
+                                                    <td style="text-align: left; word-break: keep-all;">
+                                                        <ul class="dot-list01">
+                                                            <li>Individuals who have obtained a bachelor's degree from domestic or foreign universities or those expected to obtain a degree upon completion of the current registered semester</li>
+                                                            <li>Individuals recognized as having equivalent or higher academic qualifications under relevant laws</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Doctorate's degree</th>
+                                                    <td>
+                                                        <ul class="dot-list01">
+                                                            <li>Individuals who have obtained a bachelor's degree from domestic or foreign universities or those expected to obtain a degree upon completion of the current registered semester</li>
+                                                            <li>Individuals recognized as having equivalent or higher academic qualifications under relevant laws</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Eligibility for master's/doctorate's<br/>support for North Korean defectors</th>
+                                                    <td style="text-align: left; word-break: keep-all;">
+                                                        <ul class="dot-list01">
+                                                            <li>Individuals qualified to apply for master's or doctorate's program</li>
+                                                            <li>Individuals registered as North Korean defectors pursuant to the North Korean Defectors Protection and Settlement Support Act</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <h4 class="subTit04">Additional eligibility requirements and submission documents</h4>
+                                    <ul class="dot-list02">
+                                        <li>Written examination in major-specific English</li>
+                                    </ul>
+                                    <h4 class="subTit04">Program information (for students admitted after 2022)</h4>
+                                    <div class="table-wrap">
+                                        <table class="type1">
+                                            <thead>
+                                                <tr>
+                                                    <th>Category</th>
+                                                    <th>Length of study</th>
+                                                    <th>Basic semester operation</th>
+                                                    <th>Minimum credits required</th>
+                                                    <th>Graduation thesis</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Master</td>
+                                                    <td rowspan="2">2+ years</td>
+                                                    <td rowspan="2">4 semester system</td>
+                                                    <td>24 credits</td>
+                                                    <td>Master's thesis</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Doctorate</td>
+                                                    <td>36 credits</td>
+                                                    <td>Doctoral dissertation</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <p class="point mt10">※ For other academic information: Refer to relevant items on the Education/Academic Affairs tab of the Graduate School website</p>
+                                    </div>
+                                    
+                                    <h4 class="subTit04">Minimum publication requirements for doctoral dissertation</h4>
+                                    <ul class="dot-list02">
+                                        <li>At least 2 papers published as sole author in journals listed (or candidate) by the National Research Foundation of Korea</li>
+                                    </ul>
+                                </div>
+                                <!-- // 입 학 정 보 -->
+                                <!-- 학 생 활 동 및 진 로 -->
+                                <div id="panel_dept_03" role="tabpanel" aria-labelledby="tab_dept_03" class="tab-conts">
+                                    <h4 class="subTit04">Student activities</h4>
+                                    <div class="table-wrap">
+                                        <table class="type3">
+                                            <thead>
+                                                <colgroup>
+                                                    <col width="20%">
+                                                    <col width="80%">
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>Research institute</th>
+                                                        <td>
+                                                            <ul class="dot-list01">
+                                                                <li>Center for Future Philosophy Research</li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </thead>
+                                        </table>
+                                    </div>
+                                    <h4 class="subTit04">Scholarships</h4>
+                                    <ul class="dot-list02">
+                                        <li>
+                                            <p>Internal Professor Support Scholarship, Humanities Korea (HK) Project Research Assistant Scholarship, Seoul Humanities Scholarship, etc.</p>
+                                        </li>
+                                        <li>
+                                            <a href="https://graduate.uos.ac.kr/graduateNew/html/support/scholarship.do?menuid=3000004001001000000"
+                                                class="link-ty1">Website</a>
+                                        </li>
+                                    </ul>
+                                    <h4 class="subTit04">Career paths after graduation</h4>
+                                    <ul class="dot-list02">
+                                        <li>Researchers at universities and research institutions</li>
+                                        <li>
+                                            High-level experts in social fields directly or indirectly related to philosophy, such as publishing and media
+                                        </li>
+                                    </ul>
+                                    <h4 class="subTit04">Department amenities and publicity</h4>
+                                    <ul class="dot-list02">
+                                        <li>
+                                            Conducting specialized research and education centered on 3 major specialized areas
+                                            <div class="table-wrap">
+                                                <table class="type3">
+                                                    <thead>
+                                                        <colgroup>
+                                                            <col width="20%">
+                                                            <col width="80%">
+                                                        </colgroup>
+                                                        <tbody>
+                                                            <tr>
+                                                                <th>Urban Society / Culture / Art Philosophy</th>
+                                                                <td style="text-align: left; word-break: keep-all;">
+                                                                    Research and education on the philosophical basis of urban science
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Science / Technology Philosophy and Ethics</th>
+                                                                <td style="text-align: left; word-break: keep-all;">
+                                                                    Research and education on philosophical and ethical issues of cutting-edge science and technology in the 21st century
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Language Logic Philosophy</th>
+                                                                <td style="text-align: left; word-break: keep-all;">
+                                                                    Research and education on logic and critical thinking based on LEET, MEET, DEET, PSAT, Writing & Presentation
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </thead>
+                                                </table>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    
+                                </div>
+                                <!-- //학 생 활 동 및 진 로 -->
+                            </div>
+                            <!-- //tab contents -->
+                        </div>
+                        <!-- // tab -->
+                        <!-- 본문 -->
+                    </div>
+                    <!-- sub content -->
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+
+</html>

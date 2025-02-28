@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일반대학원 영문</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/swiper.css">
+
+
+    <!-- JS -->
+    <script src="../static/js/jquery-3.7.1.js"></script>
+    <script src="../static/js/swiper-bundle.min.js"></script>
+    <script src="../static/js/common.js"></script>
+    <script src="../static/js/main.js"></script>
+    <script src="../static/js/sub.js"></script>
+
+
+    <script>
+        //header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+       
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <!-- sub-banner -->
+            <div class="sub-banner sub1">
+                <div class="inner">
+                    <div class="ban-tit">University of Seoul Global Top Brand</div>
+                    <ul class="line-map">
+                        <li><img src="../static/images/home_ic.png" alt="home"></li>
+                        <li>Research</li>
+                        <li>Research Centers and Laboratores</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content">
+                <div class="inner clearfix">
+                    <!-- // sub-banner -->
+                    <!-- snb -->
+                    <div id="snb-wrap">
+                    </div>
+                    <!-- // snb -->
+                    <!-- sub content -->
+                    <div class="sub-content" id="sub-content">
+                        <div class="sub-tit-box">
+                            <h3 class="subTit01">Departments</h3>
+                            <ul class="stp-bt">
+                                <li><a href="" class="print-ic"><span class="blind">인쇄</span></a></li>
+                                <li><a href="" class="share-ic"><span class="blind">공유 </span></a></li>
+                            </ul>
+                        </div>
+                        <!-- 본문 -->
+                        <div class="dept-list-wrap">
+                            <ul>
+                                <li>
+                                    <div>
+                                        <div class="tit-box">
+                                            <h4>Department of Urban Administration</h4>
+                                            <ul class="tag-list">
+                                                <li class="li1">Master</li>
+                                                <li class="li2">Doctorate</li>
+                                                <!-- <li class="li3">Combined master's/doctorate's program</li> -->
+                                            </ul>
+                                        </div>
+                                        <ul class="dot-list02">
+                                            <li><b>Head professor :</b> Song Young-hyun</li>
+                                            <li><b>Contact :</b>  +82-2-6490-2710~1</li>
+                                        </ul>
+                                    </div>
+                                    <a href="#none" class="link"><span>Detail View</span></a>
+                                </li>
+                                <li>
+                                    <div>
+                                        <div class="tit-box">
+                                            <h4>Department of Public Administration</h4>
+                                            <ul class="tag-list">
+                                                <li class="li1">Master</li>
+                                                <li class="li2">Doctorate</li>
+                                                <!-- <li class="li3">Combined master's/doctorate's program</li> -->
+                                            </ul>
+                                        </div>
+                                        <ul class="dot-list02">
+                                            <li><b>Head professor :</b> Lee In-won</li>
+                                            <li><b>Contact :</b> +82-2-6490-2010</li>
+                                        </ul>
+                                    </div>
+                                    <a href="#none" class="link"><span>Detail View</span></a>
+                                </li>
+                                <li>
+                                    <div>
+                                        <div class="tit-box">
+                                            <h4>Department of Social Welfare</h4>
+                                            <ul class="tag-list">
+                                                <li class="li1">Master</li>
+                                                <li class="li2">Doctorate</li>
+                                                <li class="li3">Combined master's/doctorate's program</li>
+                                            </ul>
+                                        </div>
+                                        <ul class="dot-list02">
+                                            <li><b>Head professor :</b> Lee Sang-il</li>
+                                            <li><b>Contact :</b> +82-2-6490-2075~6</li>
+                                        </ul>
+                                    </div>
+                                    <a href="#none" class="link"><span>Detail View</span></a>
+                                </li>
+                                <li>
+                                    <div>
+                                        <div class="tit-box">
+                                            <h4>Department of Urban Sociology</h4>
+                                            <ul class="tag-list">
+                                                <li class="li1">Master</li>
+                                                <li class="li2">Doctorate</li>
+                                                <!-- <li class="li3">Combined master's/doctorate's program</li> -->
+                                            </ul>
+                                        </div>
+                                        <ul class="dot-list02">
+                                            <li><b>Head professor :</b> Park Hyo-min</li>
+                                            <li><b>Contact :</b> +82-2-6490-2730~1</li>
+                                        </ul>
+                                    </div>
+                                    <a href="#none" class="link"><span>Detail View</span></a>
+                                </li>
+                                <li>
+                                    <div>
+                                        <div class="tit-box">
+                                            <h4>Department of Law</h4>
+                                            <ul class="tag-list">
+                                                <li class="li1">Master</li>
+                                                <li class="li2">Doctorate</li>
+                                                <!-- <li class="li3">Combined master's/doctorate's program</li> -->
+                                            </ul>
+                                        </div>
+                                        <ul class="dot-list02">
+                                            <li><b>Head professor :</b> Park Ji-won</li>
+                                            <li><b>Contact :</b> +82-2-6490-2110</li>
+                                        </ul>
+                                    </div>
+                                    <a href="#none" class="link"><span>Detail View</span></a>
+                                </li>
+                                <li>
+                                    <div>
+                                        <div class="tit-box">
+                                            <h4>Department of International Relations</h4>
+                                            <ul class="tag-list">
+                                                <li class="li1">Master</li>
+                                                <li class="li2">Doctorate</li>
+                                                <!-- <li class="li3">Combined master's/doctorate's program</li> -->
+                                            </ul>
+                                        </div>
+                                        <ul class="dot-list02">
+                                            <li><b>Head professor :</b> Moon Yong-il</li>
+                                            <li><b>Contact :</b> +82-2-6490-2035~6</li>
+                                        </ul>
+                                    </div>
+                                    <a href="#none" class="link"><span>Detail View</span></a>
+                                </li>
+                                <li>
+                                    <div>
+                                        <div class="tit-box">
+                                            <h4>Department of Economics</h4>
+                                            <ul class="tag-list">
+                                                <li class="li1">Master</li>
+                                                <li class="li2">Doctorate</li>
+                                                <li class="li3">Combined master's/doctorate's program</li>
+                                            </ul>
+                                        </div>
+                                        <ul class="dot-list02">
+                                            <li><b>Head professor :</b> Choi Seung-moon</li>
+                                            <li><b>Contact :</b> +82-2-6490-2051</li>
+                                        </ul>
+                                    </div>
+                                    <a href="#none" class="link"><span>Detail View</span></a>
+                                </li>
+                                <li>
+                                    <div>
+                                        <div class="tit-box">
+                                            <h4>Department of Business Administration</h4>
+                                            <ul class="tag-list">
+                                                <li class="li1">Master</li>
+                                                <li class="li2">Doctorate</li>
+                                                <li class="li3">Combined master's/doctorate's program</li>
+                                            </ul>
+                                        </div>
+                                        <ul class="dot-list02">
+                                            <li><b>Head professor :</b> Choi Bo-reum</li>
+                                            <li><b>Contact :</b> +82-2-6490-2210~5</li>
+                                        </ul>
+                                    </div>
+                                    <a href="#none" class="link"><span>Detail View</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 본문 -->
+                    </div>
+                    <!-- sub content -->
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

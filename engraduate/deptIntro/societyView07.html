@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일반대학원 영문</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/swiper.css">
+
+
+    <!-- JS -->
+    <script src="../static/js/jquery-3.7.1.js"></script>
+    <script src="../static/js/swiper-bundle.min.js"></script>
+    <script src="../static/js/common.js"></script>
+    <script src="../static/js/main.js"></script>
+    <script src="../static/js/sub.js"></script>
+
+
+    <script>
+        //header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+       
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <!-- sub-banner -->
+            <div class="sub-banner sub1">
+                <div class="inner">
+                    <div class="ban-tit">University of Seoul Global Top Brand</div>
+                    <ul class="line-map">
+                        <li><img src="../static/images/home_ic.png" alt="home"></li>
+                        <li>dept</li>
+                        <li>dept Centers and Laboratores</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content">
+                <div class="inner clearfix">
+                    <!-- // sub-banner -->
+                    <!-- snb -->
+                    <div id="snb-wrap">
+                    </div>
+                    <!-- // snb -->
+                    <!-- sub content -->
+                    <div class="sub-content" id="sub-content">
+                        <div class="sub-tit-box">
+                            <h3 class="subTit01">Department of Economics</h3>
+                            <ul class="stp-bt">
+                                <li><a href="" class="print-ic"><span class="blind">인쇄</span></a></li>
+                                <li><a href="" class="share-ic"><span class="blind">공유 </span></a></li>
+                            </ul>
+                        </div>
+                        <!-- 본문 -->
+                        <!-- tab -->
+                        <div class="tab-area layer">
+                            <!-- tab list -->
+                            <div class="tab">
+                                <ul role="tablist">
+                                    <li id="tab_dept_01" role="tab" aria-selected="true" aria-controls="panel_dept_01" class="active">
+                                        <button type="button" class="btn-tab">Departments</button>
+                                    </li>
+                                    <li id="tab_dept_02" role="tab" aria-selected="false" aria-controls="panel_dept_02">
+                                        <button type="button" class="btn-tab">Admission</button>
+                                    </li>
+                                    <li id="tab_dept_03" role="tab" aria-selected="false" aria-controls="panel_dept_03">
+                                        <button type="button" class="btn-tab">Assistance, etc</button>
+                                    </li>
+                                    <li id="tab_dept_04" role="tab" aria-selected="false" aria-controls="panel_dept_04">
+                                        <button type="button" class="btn-tab">교수소개</button>
+                                    </li>
+                                    <li id="tab_dept_05" role="tab" aria-selected="false" aria-controls="panel_dept_05">
+                                        <button type="button" class="btn-tab">대학원 공지사항</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- //tab list -->
+                            <!-- tab contents -->
+                            <div class="tab-conts-wrap">
+                                <div id="panel_dept_01" role="tabpanel" aria-labelledby="tab_dept_01" class="tab-conts active">
+                                    <div class="dept-link-list">
+                                        <a href="https://liberalarts.uos.ac.kr/liberalarts/main.do?cate_id2=000010068&identified=anonymous&" target="_blank" title="opens in a new tab" class="icn1"><span>Homepage</span></a>
+                                        <a href="profList.html" target="_blank" title="opens in a new tab" class="icn2"><span>Faculty</span></a>
+                                        <a href="https://www.uos.ac.kr/kor/popup/html/auos/prospectus/2022/prospectus.do?identified=anonymous&" target="_blank" title="opens in a new tab" class="icn3"><span>Curriculum</span></a>
+                                    </div>
+                                    <h4 class="subTit04">Educational objectives</h4>
+                                    <div class="table-wrap">
+                                        <table class="type3">
+                                            <colgroup>
+                                                <col width="20%">
+                                                <col width="80%">
+                                            </colgroup>
+                                            <tbody>
+                                            <tr>
+                                                <th>Core objectives</th>
+                                                <td>
+                                                    As it is necessary to cultivate practical talents who will lead sustainable development through multifaceted analysis and creative-innovative solutions to complex economic and social problems, we cultivate advanced future talents equipped with 'practical problem-solving competency', 'convergence and creativity competency', 'academic basic competency' and 'specialization competency'
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>Detailed objectives</th>
+                                                <td>
+                                                    <ul>
+                                                        <li>1. 'Practical problem-solving competency' that can lead the resolution of various economic problems</li>
+                                                        <li>2. 'Convergence creativity competency' to accommodate and apply complex and multifaceted changes in the era of the 4th industrial revolution</li>
+                                                        <li>3. Qualitative growth of 'academic basic competency' and 'specialization competency' as competitive future talents</li>
+                                                        <li>4. Cultivation of thesis writing ability: Acquisition of specialized knowledge in specific professional fields, activation of seminars, acquisition of thesis writing methods</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>Research areas</th>
+                                                <td>
+                                                    Microeconomics, Macroeconomics, Econometrics, Machine Learning, Artificial Intelligence, Money and Banking, International Economics, Industrial Organization, Mathematical Economics, Urban Economics, Public Finance, Labor Economics, Financial Economics, Monetary Economics, Experimental Economics, Public Economics, International Trade, Information and Communication and Broadcasting, Development Economics, Political Economy, Game Theory, Environmental Economics, Energy Economics, Resource Economics, Population Economics, Health Economics
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <h4 class="subTit04">Majors (track)</h4>
+                                    <div class="table-wrap">
+                                        <table class="type3">
+                                            <colgroup>
+                                                <col width="20%">
+                                                <col width="80%">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th>Microeconomics</th>
+                                                    <td>
+                                                        Microeconomic theory, Game theory, Mathematical economics, Industrial organization, Labor economics, Public finance, Public economics, Political economy
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Macroeconomics</th>
+                                                    <td>
+                                                        Macroeconomic theory, Money and banking, Development economics, Financial economics, Monetary economics
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Econometrics</th>
+                                                    <td>Time series econometric theory and application, Microeconometric theory and application, Machine learning, Artificial intelligence</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>International Economics</th>
+                                                    <td>International economics, International trade, Development economics</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Others</th>
+                                                    <td>Urban economics, Experimental economics, Environmental economics, Energy economics, Resource economics, Population economics, Health economics, Information and communication and broadcasting</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <h4 class="subTit04">Information</h4>
+                                    <div class="table-wrap">
+                                        <ul class="dept-info">
+                                            <li>
+                                                <div>Head professor</div>
+                                                <div>Choi Seung-moon</div>
+                                            </li>
+                                            <li>
+                                                <div>TEL</div>
+                                                <div>+82-2-6490-2071</div>
+                                            </li>
+                                            <li>
+                                                <div>E-mail</div>
+                                                <div>schoi22@uos.ac.kr</div>
+                                            </li>
+                                            <li>
+                                                <div>Office</div>
+                                                <div>5F Room 504, Mirae Hall</div>
+                                            </li>
+                                            <li>
+                                                <div>TEL</div>
+                                                <div>+82-2-6490-2051</div>
+                                            </li>
+                                            <li>
+                                                <div>FAX</div>
+                                                <div>+82-2-6490-2054</div>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div id="panel_dept_02" role="tabpanel" aria-labelledby="tab_dept_02" class="tab-conts">
+                                    <div class="dept-link-list">
+                                        <a href="../admission/regular.html" target="_blank" title="opens in a new tab" class="icn4"><span>Recruitment guidelines</span></a>
+                                        <a href="https://rule.uos.ac.kr/lmxsrv/main/main.srv" target="_blank" title="opens in a new tab" class="icn5"><span>Operating regulations</span></a>
+                                    </div>
+                                    <h4 class="subTit04">General admission degree programs</h4>
+                                    <div class="table-wrap">
+                                        <table class="type3">
+                                            <colgroup>
+                                                <col width="20%">
+                                                <col width="80%">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th>Master</th>
+                                                    <td>
+                                                        <ul class="dot-list01">
+                                                            <li>Individuals who have obtained a bachelor's degree from domestic or foreign universities or those expected to obtain a degree upon completion of the current registered semester</li>
+                                                            <li>Individuals recognized as having equivalent or higher academic qualifications under relevant laws</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Combined master's/doctorate's program</th>
+                                                    <td>
+                                                        <ul class="dot-list01">
+                                                            <li>Individuals who have obtained a bachelor's degree from domestic or foreign universities or those expected to obtain a degree upon completion of the current registered semester</li>
+                                                            <li>Individuals recognized as having equivalent or higher academic qualifications under relevant laws</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Doctorate</th>
+                                                    <td>
+                                                        <ul class="dot-list01">
+                                                            <li>Individuals who have obtained a bachelor's degree from domestic or foreign universities or those expected to obtain a degree upon completion of the current registered semester</li>
+                                                            <li>Individuals recognized as having equivalent or higher academic qualifications under relevant laws</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Eligibility for master's/doctorate's<br/>Support for North Korean defectors</th>
+                                                    <td >
+                                                        <ul class="dot-list01">
+                                                            <li>Individuals qualified to apply for master's or doctorate's program</li>
+                                                            <li>Individuals registered as North Korean defectors pursuant to the North Korean Defectors Protection and Settlement Support Act</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <h4 class="subTit04">Additional eligibility requirements and submission documents</h4>
+                                    <ul class="dot-list02">
+                                        <li>Submission of official English proficiency test scores (TOEIC, TOEFL, TEPS, IELTS) recommended</li>
+                                    </ul>
+                                    <h4 class="subTit04">Program information (for students admitted after 2022)</h4>
+                                    <div class="table-wrap">
+                                        <table class="type1">
+                                            <thead>
+                                                <tr>
+                                                    <th>Category</th>
+                                                    <th>Length of study</th>
+                                                    <th>Maximum period of enrollment</th>
+                                                    <th>Period for degree acquisition after completion</th>
+                                                    <th>Minimum credits required</th>
+                                                    <th>Graduation thesis</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Master</td>
+                                                    <td rowspan="2">Minimum 2 years</td>
+                                                    <td>3 years</td>
+                                                    <td>6 years</td>
+                                                    <td>24 credits</td>
+                                                    <td>Master's thesis</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Doctorate</td>
+                                                    <td>5 years</td>
+                                                    <td>8 years</td>
+                                                    <td>36 credits</td>
+                                                    <td>Doctoral dissertation</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Combined master's/doctorate's program</td>
+                                                    <td>Minimum 4 years</td>
+                                                    <td>8 years</td>
+                                                    <td>8 years</td>
+                                                    <td>60 credits</td>
+                                                    <td>Doctoral dissertation</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <p class="point mt10">※  The minimum of 36 credits for doctoral program completion applies to new students from the 2022 academic year</p>
+                                        <p class="point mt10">※ For other academic information: Refer to relevant items on the Education/Academic Affairs tab of the Graduate School website</p>
+                                    </div>
+                                    <h4 class="subTit04">Minimum publication requirements for doctoral dissertation</h4>
+                                    <ul class="dot-list02">
+                                        <li>At least one paper published as first author in a journal listed (or candidate) by the National Research Foundation of Korea</li>
+                                    </ul>
+                                    <h4 class="subTit04">Department regulations</h4>
+                                    <ul class="dot-list02">
+                                        <li>Enter relevant information or request creation of upload button for regulations (include regulations to be uploaded in reply)</li>
+                                    </ul>
+                                    <h4 class="subTit04">Graduate school operating principles</h4>
+                                    <ul class="dot-list02">
+                                        <li>Enter relevant information</li>
+                                    </ul>
+                                </div>
+                                <div id="panel_dept_03" role="tabpanel" aria-labelledby="tab_dept_03" class="tab-conts">
+                                    <h4 class="subTit04">Student activities</h4>
+                                    <div class="table-wrap">
+                                        <table class="type3">
+                                            <colgroup>
+                                                <col width="20%">
+                                                <col width="80%">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th>Research institute</th>
+                                                    <td>
+                                                        <ul class="dot-list01">
+                                                            <li>서울경제연구센터</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <h4 class="subTit04">Scholarships</h4>
+                                    <ul class="dot-list02">
+                                        <li>Professor Support Scholarship (full, half, fixed amount)</li>
+                                        <li>Department Development Fund Scholarship</li>
+                                        <li>Research Assistant, Teaching Assistant</li>
+                                        <li><a href="https://graduate.uos.ac.kr/graduateNew/html/support/scholarship.do?menuid=3000004001001000000" class="link-ty1">Website</a></li>
+                                    </ul>
+                                    <h4 class="subTit04">Career paths after graduation</h4>
+                                    <ul class="dot-list02">
+                                        <li>University professor</li>
+                                        <li>Research fellow, researcher at government and public institution research institutes</li>
+                                        <li>Employee at banks and financial public corporations or general companies</li>
+                                        <li>Admission to doctoral programs at prestigious American universities</li>
+                                    </ul>
+                                </div>
+                                <div id="panel_dept_04" role="tabpanel" aria-labelledby="tab_dept_04" class="tab-conts">
+                                    <div class="teacher-list">
+                                        <ul>
+                                            <li id="prof315">
+                                                <div class="tc-img">
+                                                    <img src="https://file.uos.ac.kr/upload/hakbu/board/professor/2008/05/20080520154437450071_1.jpg" alt="신성휘">
+                                                </div>
+                                                <div class="tc-info">
+                                                    <div class="tc-name">
+                                                        <p>Sungwhee	Shin</p>
+                                                        <span>Professor</span>
+                                                    </div>
+                                                    <p class="sub_tit">연구분야 : 미시경제학</p>
+                                                    <ul class="other-info">
+                                                        <li>Mirae Hall #910</li>
+                                                        <li>+82-2-6490-2059</li>
+                                                        <li><a href="sungshin@uos.ac.kr">sungshin@uos.ac.kr</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li id="prof112">
+                                                <div class="tc-img">
+                                                    <img src="https://file.uos.ac.kr/upload/hakbuUnit/prof//2021/02//202102231408361.jpg" alt="Nakil Sung">
+                                                </div>
+                                                <div class="tc-info">
+                                                    <div class="tc-name">
+                                                        <p>Nakil Sung</p>
+                                                        <span>Professor</span>
+                                                    </div>
+                                                    <p class="sub_tit">연구분야 : 정보통신 및 방송경제학, 규제 및 공정경쟁 경제학, 산업조직론, 응용미시경제학</p>
+                                                    <ul class="other-info">
+                                                        <li>Mirae Hall #907</li>
+                                                        <li>+82-2-6490-2060</li>
+                                                        <li><a href="nisung@uos.ac.kr">nisung@uos.ac.kr</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li id="prof119">
+                                                <div class="tc-img">
+                                                    <img src="https://file.uos.ac.kr/upload/hakbuUnit/prof//2023/03//202303231711591.jpg" alt="Yongkul Won">
+                                                </div>
+                                                <div class="tc-info">
+                                                    <div class="tc-name">
+                                                        <p>Yongkul Won</p>
+                                                        <span>Professor</span>
+                                                    </div>
+                                                    <p class="sub_tit">연구분야 : 국제경제학</p>
+                                                    <ul class="other-info">
+                                                        <li>Mirae Hall #913</li>
+                                                        <li>+82-2-6490-2061</li>
+                                                        <li><a href="http://club.uos.ac.kr/home/wyg" target="_blank">http://club.uos.ac.kr/home/wyg</a></li>
+                                                        <li><a href="ywon@uos.ac.kr">ywon@uos.ac.kr</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li id="prof123">
+                                                <div class="tc-img">
+                                                    <img src="https://file.uos.ac.kr/upload/hakbu/board/professor/2008/05/20080517162951234056_1.jpg" alt="Namwon Hyung">
+                                                </div>
+                                                <div class="tc-info">
+                                                    <div class="tc-name">
+                                                        <p>Namwon Hyung</p>
+                                                        <span>Professor</span>
+                                                    </div>
+                                                    <p class="sub_tit">연구분야 : Econometrics</p>
+                                                    <ul class="other-info">
+                                                        <li>Mirae Hall #904</li>
+                                                        <li>+82-2-6490-2062</li>
+                                                        <li><a href="nhyung@uos.ac.kr">nhyung@uos.ac.kr</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li id="prof122">
+                                                <div class="tc-img">
+                                                    <img src="https://file.uos.ac.kr/upload/hakbuUnit/prof//2024/11//202411131401041.jpg" alt="Kyongwook Choi">
+                                                </div>
+                                                <div class="tc-info">
+                                                    <div class="tc-name">
+                                                        <p>Kyongwook Choi</p>
+                                                        <span>Professor</span>
+                                                    </div>
+                                                    <p class="sub_tit">연구분야 : 거시경제, (국제)금융, 금융시계열분석</p>
+                                                    <ul class="other-info">
+                                                        <li>Mirae Hall #917호</li>
+                                                        <li>+82-2-6490-2064</li>
+                                                        <li><a href="kwchoi@uos.ac.kr">kwchoi;@uos.ac.kr</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li id="prof121">
+                                                <div class="tc-img">
+                                                    <img src="https://file.uos.ac.kr/upload/hakbuUnit/prof//2021/02//202102191726271.jpg" alt="">
+                                                </div>
+                                                <div class="tc-info">
+                                                    <div class="tc-name">
+                                                        <p>Bong Geul Chun</p>
+                                                        <span>Professor</span>
+                                                    </div>
+                                                    <p class="sub_tit">연구분야 : 국제무역, 산업조직, 응용미시</p>
+                                                    <ul class="other-info">
+                                                        <li>Mirae Hall #901</li>
+                                                        <li>+82-2-6490-2065</li>
+                                                        <li><a href="bgchun@uos.ac.kr">bgchun@uos.ac.kr</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li id="prof563">
+                                                <div class="tc-img">
+                                                    <img src="https://file.uos.ac.kr/upload/hakbu/board/professor/2009/09/20090901165208200091563.jpg" alt="Youngsoo Bae">
+                                                </div>
+                                                <div class="tc-info">
+                                                    <div class="tc-name">
+                                                        <p>Youngsoo Bae</p>
+                                                        <span>Professor</span>
+                                                    </div>
+                                                    <p class="sub_tit">연구분야 : 응용거시, 시계열분석</p>
+                                                    <ul class="other-info">
+                                                        <li>Mirae Hall #914</li>
+                                                        <li>+82-2-6490-2066</li>
+                                                        <li><a href="ysbae@uos.ac.kr">ysbae@uos.ac.kr</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li id="prof857">
+                                                <div class="tc-img">
+                                                    <img src="https://file.uos.ac.kr/upload/hakbuUnit/prof//2021/08//202108021615451.jpg" alt="Heonjae Song">
+                                                </div>
+                                                <div class="tc-info">
+                                                    <div class="tc-name">
+                                                        <p>Heonjae Song</p>
+                                                        <span>Professor</span>
+                                                    </div>
+                                                    <p class="sub_tit">연구분야 : 노동경제학, 개발경제학, 공공경제학, 응용미시계량경제학</p>
+                                                    <ul class="other-info">
+                                                        <li>Mirae Hall #909</li>
+                                                        <li>+82-2-6490-2068</li>
+                                                        <li><a href="heonjaes@uos.ac.kr">heonjaes@uos.ac.kr</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li id="prof901">
+                                                <div class="tc-img">
+                                                    <img src="https://file.uos.ac.kr/upload/hakbu/board/professor/2013/02/20130220145927200091901.jpg" alt="">
+                                                </div>
+                                                <div class="tc-info">
+                                                    <div class="tc-name">
+                                                        <p>Yunmi Kim</p>
+                                                        <span>Professor</span>
+                                                    </div>
+                                                    <p class="sub_tit">연구분야 : 거시경제, 응용계량경제학</p>
+                                                    <ul class="other-info">
+                                                        <li>Mirae Hall #916</li>
+                                                        <li>+82-2-6490-2069</li>
+                                                        <li><a href="kimy@uos.ac.kr">kimy@uos.ac.kr</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li id="prof931">
+                                                <div class="tc-img">
+                                                    <img src="https://file.uos.ac.kr/upload/hakbu/board/professor/2013/08/20130827094052200091931.jpg" alt="">
+                                                </div>
+                                                <div class="tc-info">
+                                                    <div class="tc-name">
+                                                        <p>Hankyoung Sung</p>
+                                                        <span>Professor</span>
+                                                    </div>
+                                                    <p class="sub_tit">연구분야 : 실험경제학, 정치경제학, 국제무역</p>
+                                                    <ul class="other-info">
+                                                        <li>Mirae Hall #905</li>
+                                                        <li>+82-2-6490-2070</li>
+                                                        <li><a href="http://www.uos.ac.kr/" target="_blank">http://www.uos.ac.kr/</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li id="prof944">
+                                                <div class="tc-img">
+                                                    <img src="https://file.uos.ac.kr/upload/hakbuUnit/prof//2014/02//201402271746451.jpg" alt="Seungmoon Choi">
+                                                </div>
+                                                <div class="tc-info">
+                                                    <div class="tc-name">
+                                                        <p>Seungmoon Choi</p>
+                                                        <span>Professor</span>
+                                                    </div>
+                                                    <p class="sub_tit">연구분야 : 계량경제학, 재무</p>
+                                                    <ul class="other-info">
+                                                        <li>Mirae Hall #1005</li>
+                                                        <li>+82-2-6490-2071</li>
+                                                        <li><a href=" schoi22@uos.ac.kr">schoi22@uos.ac.kr</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li id="prof1022">
+                                                <div class="tc-img">
+                                                    <img src="https://file.uos.ac.kr/upload/hakbuUnit/prof//2021/02//202102231535261.jpg" alt="Yong-Gook JUNG">
+                                                </div>
+                                                <div class="tc-info">
+                                                    <div class="tc-name">
+                                                        <p>Yong-Gook JUNG</p>
+                                                        <span>Professor</span>
+                                                    </div>
+                                                    <p class="sub_tit">연구분야 : 거시경제학</p>
+                                                    <ul class="other-info">
+                                                        <li>Mirae Hall #902</li>
+                                                        <li>+82-2-6490-2072</li>
+                                                        <li><a href="yonggook12@uos.ac.kr">yonggook12@uos.ac.kr</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li id="prof1062">
+                                                <div class="tc-img">
+                                                    <img src="https://file.uos.ac.kr/upload/hakbuUnit/prof//2016/03//201603021653551.jpg" alt="">
+                                                </div>
+                                                <div class="tc-info">
+                                                    <div class="tc-name">
+                                                        <p>MYEONGHWAN CHO</p>
+                                                        <span>Professor</span>
+                                                    </div>
+                                                    <p class="sub_tit">연구분야 : 미시경제이론, 게임이론, 공공경제학</p>
+                                                    <ul class="other-info">
+                                                        <li>Mirae Hall #904</li>
+                                                        <li>+82-2-6490-2067</li>
+                                                        <li><a href="chomhmh@uos.ac.kr">chomhmh@uos.ac.kr</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li id="prof1063">
+                                                <div class="tc-img">
+                                                    <img src="https://file.uos.ac.kr/upload/hakbuUnit/prof//2016/03//201603021711281.jpg" alt="Hyelim Son">
+                                                </div>
+                                                <div class="tc-info">
+                                                    <div class="tc-name">
+                                                        <p>Hyelim Son</p>
+                                                        <span>Professor</span>
+                                                    </div>
+                                                    <p class="sub_tit">연구분야 : 노동경제학/개발경제학</p>
+                                                    <ul class="other-info">
+                                                        <li>Mirae Hall #915</li>
+                                                        <li>+82-2-6490-2073</li>
+                                                        <li><a href="hlson@uos.ac.kr">hlson@uos.ac.kr</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li id="prof1184">
+                                                <div class="tc-img">
+                                                    <img src="https://file.uos.ac.kr/upload/hakbuUnit/prof//2018/09//201809041223501.jpg" alt="Jinyong Kim">
+                                                </div>
+                                                <div class="tc-info">
+                                                    <div class="tc-name">
+                                                        <p>Jinyong Kim</p>
+                                                        <span>Professor</span>
+                                                    </div>
+                                                    <p class="sub_tit">연구분야 : 재무/금융경제학</p>
+                                                    <ul class="other-info">
+                                                        <li>Mirae Hall #903</li>
+                                                        <li>+82-2-6490-2074</li>
+                                                        <li><a href="jinyongkim0409@uos.ac.kr">jinyongkim0409@uos.ac.kr</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li id="prof1204">
+                                                <div class="tc-img">
+                                                    <img src="https://file.uos.ac.kr/upload/hakbuUnit/prof//2019/03//201903061011141.jpg" alt="">
+                                                </div>
+                                                <div class="tc-info">
+                                                    <div class="tc-name">
+                                                        <p>Donggyu Yi</p>
+                                                        <span>Professor</span>
+                                                    </div>
+                                                    <p class="sub_tit">연구분야 : 도시경제, 환경/에너지경제, 재정학</p>
+                                                    <ul class="other-info">
+                                                        <li>Mirae Hall #1008</li>
+                                                        <li>+82-2-6490-2056</li>
+                                                        <li><a href="dgyi77@uos.ac.kr">dgyi77@uos.ac.kr</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li id="prof1350">
+                                                <div class="tc-img">
+                                                    <img src="https://file.uos.ac.kr/upload/hakbuUnit/prof//2022/03//202203071509391.png" alt="Yumi Koh">
+                                                </div>
+                                                <div class="tc-info">
+                                                    <div class="tc-name">
+                                                        <p>Yumi Koh</p>
+                                                        <span>Professor</span>
+                                                    </div>
+                                                    <p class="sub_tit">연구분야 : 응용미시경제, 공공경제학, 정치경제학</p>
+                                                    <ul class="other-info">
+                                                        <li>Mirae Hall #913</li>
+                                                        <li>+82-2-6490-2057</li>
+                                                        <li><a href="ymkoh@uos.ac.kr">ymkoh@uos.ac.kr</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li id="prof1484">
+                                                <div class="tc-img">
+                                                    <img src="https://file.uos.ac.kr/upload/hakbuUnit/prof//2021/08//202108300932021.jpg" alt="">
+                                                </div>
+                                                <div class="tc-info">
+                                                    <div class="tc-name">
+                                                        <p>Eun Jeong Heo</p>
+                                                        <span>Professor</span>
+                                                    </div>
+                                                    <p class="sub_tit">연구분야 : 미시경제이론</p>
+                                                    <ul class="other-info">
+                                                        <li>Mirae Hall #502-2</li>
+                                                        <li>+82-2-6490-2058</li>
+                                                        <li><a href="eunjheo@uos.ac.kr">eunjheo@uos.ac.kr</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                           
+                                        </ul>
+                                    </div>
+                                    <div class="paging">
+                                        <a href="?pageIndex=1" class="first" onclick="fnPaging(1);return false;"><img src="../static/images/paging_ic1.png" alt="처음 페이지"></a><a href="?pageIndex=0" onclick="fnPaging(0);return false;"><img src="../static/images/paging_ic2.png" alt="이전 페이지 보기"></a><span><a class="on" href="#" onclick="return false;" title="현재페이지">1</a></span><a href="?pageIndex=1" onclick="fnPaging(1);return false;"><img src="../static/images/paging_ic3.png" alt="다음 페이지"></a><a href="?pageIndex=1" class="last" onclick="fnPaging(1);return false;"><img src="../static/images/paging_ic4.png" alt="마지막 페이지"></a>
+                                    </div>
+                                </div>
+                                <div id="panel_dept_05" role="tabpanel" aria-labelledby="tab_dept_05" class="tab-conts">
+
+                                </div>
+                            </div>
+                            <!-- //tab contents -->
+                        </div>
+                        <!-- // tab -->
+                        <!-- 본문 -->
+                    </div>
+                    <!-- sub content -->
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

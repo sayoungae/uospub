@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일반대학원 영문</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/swiper.css">
+
+
+    <!-- JS -->
+    <script src="../static/js/jquery-3.7.1.js"></script>
+    <script src="../static/js/swiper-bundle.min.js"></script>
+    <script src="../static/js/common.js"></script>
+    <!-- <script src="../static/js/main.js"></script> -->
+    <script src="../static/js/sub.js"></script>
+
+
+    <script>
+        //header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+       
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <!-- sub-banner -->
+            <div class="sub-banner sub3">
+                <div class="inner">
+                    <div class="ban-tit">University of Seoul Global Top Brand</div>
+                    <ul class="line-map">
+                        <li><img src="../static/images/home_ic.png" alt="home"></li>
+                        <li>Research</li>
+                        <li>Research Centers and Laboratores</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content">
+                <div class="inner clearfix">
+                    <!-- // sub-banner -->
+                    <!-- snb -->
+                    <div id="snb-wrap">
+                    </div>
+                    <!-- // snb -->
+                    <!-- sub content -->
+                    <div class="sub-content" id="sub-content">
+                        <div class="sub-tit-box">
+                            <h3 class="subTit01">Grade processing</h3>
+                            <ul class="stp-bt">
+                                <li><a href="" class="print-ic"><span class="blind">인쇄</span></a></li>
+                                <li><a href="" class="share-ic"><span class="blind">공유 </span></a></li>
+                            </ul>
+                        </div>
+                        <!-- 본문 -->
+                        <h4 class="subTit03">Grade evaluation</h4>
+                        <ul class="dot-list02">
+                            <li>The grades and grade points for academic performance are classified and indicated as follows.</li>
+                        </ul>
+                        <h5 class="subTit04">Grades and grade points</h5>
+                        <div class="table-wrap pl10">
+                            <table class="type1">
+                                <caption>Grades and grade points- Grade, Grade point, Description</caption>
+                                <thead>
+                                    <tr>
+                                        <th>Grade</th>
+                                        <th>Grade point</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Ａ<sup>+</sup></td>
+                                        <td>4.5</td>
+                                        <td rowspan="2" class="brd-left">Excellent</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ａ</td>
+                                        <td>4.0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ｂ<sup>+</sup></td>
+                                        <td>3.5</td>
+                                        <td rowspan="2" class="brd-left">Above average</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ｂ</td>
+                                        <td>3.0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ｃ<sup>+</sup></td>
+                                        <td>2.5</td>
+                                        <td rowspan="2" class="brd-left">Fair</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ｃ</td>
+                                        <td>2.0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>F</td>
+                                        <td>0</td>
+                                        <td>Unsatisfactory</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <ul class="dot-list02">
+                            <li>Prerequisite courses are evaluated as Satisfactory (S) or Unsatisfactory (U).</li>
+                            <li>Courses for which grade adjustments are incomplete due to additional exams will receive a grade of “In Progress” until the grade is finalized.</li>
+                        </ul>
+                        <h5 class="subTit04">Grades and grade point conversion table</h5>
+                        <ul class="dot-list02">
+                            <li>
+                                Use the following grade and grade point conversion table to convert grades or grade points to a 100-point scale.
+                                <div class="table-wrap">
+                                    <table class="type1">
+                                        <caption>Grades and grade point conversion table-Grade, Grade point, Converted score</caption>
+                                        <thead>
+                                            <tr>
+                                                <th>Grade</th>
+                                                <th>Grade point</th>
+                                                <th>Converted score</th>
+                                                <th>Grade</th>
+                                                <th>Grade point</th>
+                                                <th>Converted score</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td rowspan="5">Ａ+</td>
+                                            <td>4.5</td>
+                                            <td>100</td>
+                                            <td rowspan="5">C+</td>
+                                            <td>2.5</td>
+                                            <td>80</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lLine">4.4</td>
+                                            <td>99</td>
+                                            <td>2.4</td>
+                                            <td>79</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lLine">4.3</td>
+                                            <td>98</td>
+                                            <td>2.3</td>
+                                            <td>78</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lLine">4.2</td>
+                                            <td>97</td>
+                                            <td>2.2</td>
+                                            <td>77</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lLine">4.1</td>
+                                            <td>96</td>
+                                            <td>2.1</td>
+                                            <td>76</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="5">Ａ</td>
+                                            <td>4.0</td>
+                                            <td>95</td>
+                                            <td rowspan="5">Ｃ</td>
+                                            <td>2.0</td>
+                                            <td>75</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lLine">3.9</td>
+                                            <td>94</td>
+                                            <td>1.9</td>
+                                            <td>74</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lLine">3.8</td>
+                                            <td>93</td>
+                                            <td>1.8</td>
+                                            <td>73</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lLine">3.7</td>
+                                            <td>92</td>
+                                            <td>1.7</td>
+                                            <td>72</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lLine">3.6</td>
+                                            <td>91</td>
+                                            <td>1.6</td>
+                                            <td>71</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="5">Ｂ+</td>
+                                            <td>3.5</td>
+                                            <td>90</td>
+                                            <td rowspan="16">F</td>
+                                            <td>1.5</td>
+                                            <td>70</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lLine">3.4</td>
+                                            <td>89</td>
+                                            <td>1.4</td>
+                                            <td>69</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lLine">3.3</td>
+                                            <td>88</td>
+                                            <td>1.3</td>
+                                            <td>68</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lLine">3.2</td>
+                                            <td>87</td>
+                                            <td>1.2</td>
+                                            <td>67</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lLine">3.1</td>
+                                            <td>86</td>
+                                            <td>1.1</td>
+                                            <td>66</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="5">Ｂ</td>
+                                            <td>3.0</td>
+                                            <td>85</td>
+                                            <td class="lLine">1.0</td>
+                                            <td>65</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lLine">2.9</td>
+                                            <td>84</td>
+                                            <td>0.9</td>
+                                            <td>64</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lLine">2.8</td>
+                                            <td>83</td>
+                                            <td>0.8</td>
+                                            <td>63</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lLine">2.7</td>
+                                            <td>82</td>
+                                            <td>0.7</td>
+                                            <td>62</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lLine">2.6</td>
+                                            <td>81</td>
+                                            <td>0.6</td>
+                                            <td>61</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="6">&nbsp;</td>
+                                            <td class="lLine">&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>0.5</td>
+                                            <td>60</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lLine">&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>0.4</td>
+                                            <td>59</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lLine">&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>0.3</td>
+                                            <td>58</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lLine">&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>0.2</td>
+                                            <td>57</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lLine">&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>0.1</td>
+                                            <td>56</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="lLine">&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>Less than 0.1</td>
+                                            <td>0</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+                        </ul>
+                        <h5 class="subTit04">100-point grade conversion table</h5>
+                        <ul class="dot-list02">
+                            <li>
+                                Use the following 100-point scale conversion table to convert numeric grades to an alphabetical grade.
+                                <div class="table-wrap">
+                                    <table class="type1">
+                                        <caption>100-point grade conversion table- Score, Converted grade</caption>
+                                        <thead>
+                                            <tr>
+                                                <th>Score</th>
+                                                <th>Converted grade</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>96 ~ 100</td>
+                                                <td>Ａ<sup>+</sup></td>
+                                            </tr>
+                                            <tr>
+                                                <td>91 ~ 95</td>
+                                                <td>Ａ</td>
+                                            </tr>
+                                            <tr>
+                                                <td>86 ~ 90</td>
+                                                <td>Ｂ<sup>+</sup></td>
+                                            </tr>
+                                            <tr>
+                                                <td>81 ~ 85</td>
+                                                <td>Ｂ</td>
+                                            </tr>
+                                            <tr>
+                                                <td>76 ~ 80</td>
+                                                <td>Ｃ<sup>+</sup></td>
+                                            </tr>
+                                            <tr>
+                                                <td>71 ~ 75</td>
+                                                <td>Ｃ</td>
+                                            </tr>
+                                            <tr>
+                                                <td>70 or below</td>
+                                                <td>F</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+                            <li>Credits are recognized as earned if the academic performance grade point is 2.0 (C) or higher, but the average grade point for the total credits required for completion must be 3.0 (B) or higher.</li>
+                        </ul>
+                        <h4 class="subTit03">Grade correction</h4>
+                        <ul class="dot-list02">
+                            <li>Once submitted, grades cannot be corrected.</li>
+                            <li>In cases of errors or omissions in grades, a grade correction request must be submitted to the Graduate School within the grade correction period, along with a statement from the responsible professor and specific documentation to support the claim.</li>
+                        </ul>
+                        <h4 class="subTit03">Cancellation (non-recognition) of grades</h4>
+                        <ul class="dot-list02">
+                            <li>Grades obtained from duplicate course registration</li>
+                            <li>Grades obtained from courses registered in excess of the maximum allowable credits (higher grades will be erased)</li>
+                            <li>Grades of non-registered students</li>
+                            <li>Grades of courses not registered for</li>
+                            <li>Grades of students disqualified due to academic misconduct</li>
+                            <li>Grades of students who fall below three-quarters attendance due to leave of absence or disciplinary action</li>
+                            <li>Grades of students who took a leave of absence without submitting a grade acquisition form after three-quarters of the class days and before the final exam period</li>
+                            <li>Grades of students whose attendance was improperly recorded and entered without course registration confirmation</li>
+                            <li>Grades assigned by mistake</li>
+                            <li>Grades obtained through other unethical means</li>
+                        </ul>
+                        <!-- 본문 -->
+                    </div>
+                    <!-- sub content -->
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

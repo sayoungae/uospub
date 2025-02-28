@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../static/css/common.css">
+    <link rel="stylesheet" href="../../static/css/swiper.css">
+
+
+    <!-- JS -->
+    <script src="../../static/js/jquery-3.7.1.js"></script>
+    <script src="../../static/js/common.js"></script>
+    <script src="../../static/js/swiper-bundle.min.js"></script>
+    <script src="../../static/js/main.js"></script>
+
+    <script>
+        // header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+       
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <div class="sub-tit-wrap"><h3 class="pg-tit">Study at UOS</h3></div>
+            <div id="snb-wrap"></div>
+            <div class="wid">
+                <div class="content-area">
+                    <div id="contents">
+                        <h4 class="conts-tit2">About the Program</h4>
+                        <div class="program-intro">
+                            <div class="tit">Why University of Seoul?</div>
+                            <ul class="intro-list">
+                                <li>
+                                    <span>“Study at the heart of Seoul”</span>
+                                    <div>
+                                        Established in 1918, the University of Seoul is widely regarded as one of the top public universities in Korea.<br/>
+                                        The university has been a think tank for the Seoul Metropolitan Government, contributing to the development of Korean society through education, training of students, and academic research. With 8 colleges and 10 graduate schools, the University of Seoul offers a variety of courses in a thriving academic atmosphere.
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>About Seoul International Winter School Ⅱ</span>
+                                    <div>
+                                        In February 2025, the Seoul International Winter School program launches at the University of Seoul (UOS). It provides international students from UOS partner universities all over the world with a unique opportunity to learn about Korean Studies including Korean Language. Join us this winter to experience Korea at the heart of Seoul.
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="tit2">Program Information</div>
+                            <ul class="intro-list">
+                                <li>
+                                    <span>Program Dates</span>
+                                    <div>
+                                        - February 5th (WED) - February 20th (THU), 2025<br/>
+                                        *  Program Orientation (Zoom) : February 3rd (MON), 2025
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>Class Hours</span>
+                                    <div>
+                                        - 6 hours every week day except 2 days for Field Trips;<br/>3 hours in the morning (9-12) & 3 hours in the afternoon (13-16)<br/>
+                                        * Detailed daily schedule can be found at Program Calendar menu.
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>Language of Instruction</span>
+                                    <div>
+                                        - English
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>Certificate of Completion</span>
+                                    <div>
+                                        - Upon successful completion of the program, a Certificate of Completion will be issued and distributed to each of the sutdents at Farewell.
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="tit2">Culture Activities</div>
+                            <ul class="intro-list">
+                                <li>
+                                    <span>One-day Field Trips</span>
+                                    <div>
+                                        Explore the vibrant city of Seoul with us! Immerse yourself in the rich history and culture of South Korea while experiencing the best of what the city has to offer. Our theme is “Seoul”, after all, because who knows it better than us? We are the University of Seoul! You will have chance to visit iconic landmarks such as the historic Gyeongbok Palace. How about delving into the world of K-pop with a dance class? You can even learn to cook delicious K-Food! Our package includes 2 field trips to ensure you make the most of your stay. You'll also receive a 24-hour Seoul Travel ticket, allowing you to explore the city with ease over the weekend during the program.
+                                    </div>
+                                    <p class="point03">※All cultural activities do not include food.</p>
+                                    <p class="point03">※Field Trip Destinations and classes we offer are subject to change.</p>
+
+                                </li>
+                                <li>
+                                    <span>Peer Advocate Program</span>
+                                    <div>
+                                        Welcome to SIWS! We offer a buddy program called "Peer Advocate" for international students. Our Peer Advocates, who are UOS Korean students, help international students adjust to life in Korea. They can even show you around Seoul and help you explore all the city has to offer! Join us today and make the most of your study abroad experience in Korea!
+                                    </div>
+                                    <div class="btn-wrap">
+                                        <a href="#none" target="_blank" title="새창열림" class="btn arrwType"><span>2025 SIWS Program Brochure</span></a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>Contact Information</span>
+                                    <div>
+                                        <p>- Seoul International Winter School Team</p>
+                                        <p>- Tel: +82-2-6490-6662</p>
+                                        <p>- Email: uossummer@uos.ac.kr</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

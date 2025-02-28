@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graduate School 영문</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/swiper.css">
+
+
+    <!-- JS -->
+    <script src="../static/js/jquery-3.7.1.js"></script>
+    <script src="../static/js/swiper-bundle.min.js"></script>
+    <script src="../static/js/common.js"></script>
+    <!-- <script src="../static/js/main.js"></script> -->
+    <script src="../static/js/sub.js"></script>
+
+
+    <script>
+        //header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+       
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <!-- sub-banner -->
+            <div class="sub-banner sub1">
+                <div class="inner">
+                    <div class="ban-tit">University of Seoul Global Top Brand</div>
+                    <ul class="line-map">
+                        <li><img src="../static/images/home_ic.png" alt="home"></li>
+                        <li>Research</li>
+                        <li>Research Centers and Laboratores</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content">
+                <div class="inner clearfix">
+                    <!-- // sub-banner -->
+                    <!-- snb -->
+                    <div id="snb-wrap">
+                    </div>
+                    <!-- // snb -->
+                    <!-- sub content -->
+                    <div class="sub-content" id="sub-content">
+                        <div class="sub-tit-box">
+                            <h3 class="subTit01">Organizations</h3>
+                            <ul class="stp-bt">
+                                <li><a href="" class="print-ic"><span class="blind">인쇄</span></a></li>
+                                <li><a href="" class="share-ic"><span class="blind">공유 </span></a></li>
+                            </ul>
+                        </div>
+                        <!-- 본문 -->
+                        <h4 class="blind">Organizations</h4>
+                        <ul class="org-chart">
+                            <li>
+                                <p class="cir">Dean</p>
+                                <ul>
+                                    <li>
+                                        <p class="cir line2">Organizations</p>
+                                        <ul class="squa-line">
+                                            <li><span>Admissions Officer</span></li>
+                                            <li><span>Academic Affairs Officer</span></li>
+                                            <li><span>Scholarships Officer</span></li>
+                                            <li><span>Research Ethics Officer</span></li>
+                                            <li><span>Registrar</span></li>
+                                            <li><span>Certifications Officer</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <h4 class="subTit03">Contact information</h4>
+                        <div class="table-wrap">
+                            <table class="type1">
+                                <caption>Contact information-Category, Responsibility, Team, Contact</caption>
+                                <colgroup>
+                                    <col style="width: 10%;">
+                                    <col>
+                                    <col>
+                                    <col style="width: 10%;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>Category</th>
+                                        <th>Responsibility</th>
+                                        <th>Team</th>
+                                        <th>Contact</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="4">Admission</td>
+                                        <td class="">General Admission</td>
+                                        <td>Graduate School</td>
+                                        <td>6490-5012</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="lLine">International Student Special Admission</td>
+                                        <td>International Exchange Office</td>
+                                        <td>6490-6662</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="lLine">Combined bachelor's/master's program</td>
+                                        <td>Graduate School</td>
+                                        <td>6490-5017</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="lLine">Combined master's/doctorate's program</td>
+                                        <td>Graduate School</td>
+                                        <td>6490-5016</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="6">Academic Affairs</td>
+                                        <td>Comprehensive and Foreign Language Exams, Completion and Graduation Assessment, Thesis, Graduate Research Students, Disciplinary Actions, Graduate School Committee</td>
+                                        <td>Graduate School</td>
+                                        <td>6490-5014</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="lLine">Graduate School Committee</td>
+                                        <td>Graduate School</td>
+                                        <td>6490-5013</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="lLine">Course registration</td>
+                                        <td>Graduate School</td>
+                                        <td>6490-5017</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="lLine">Credit Exchange</td>
+                                        <td>Graduate School</td>
+                                        <td>6490-5016</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="lLine">Academic status such as leave of absence, reinstatement, and withdrawal</td>
+                                        <td>Graduate School</td>
+                                        <td>6490-5016</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="lLine">Expulsion, readmission, graduation ceremony</td>
+                                        <td>Graduate School</td>
+                                        <td>6490-5014</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Scholarships</td>
+                                        <td>Scholarships for class support, research support, external scholarships, etc.</td>
+                                        <td>Student Affairs Office</td>
+                                        <td>6490-6221~3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Research Ethics</td>
+                                        <td>Research Ethics</td>
+                                        <td>Research Support Office</td>
+                                        <td>6490-6356</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Registration</td>
+                                        <td>Tuition payment</td>
+                                        <td>General Affairs Office</td>
+                                        <td>6490-6432</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Certificates</td>
+                                        <td>Issue Certificate</td>
+                                        <td>Student Service Center</td>
+                                        <td>6490-6260~2</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <h4 class="subTit03">대학원위원회</h4>
+                        <div class="table-wrap">
+                            <table class="type1">
+                                <caption>대학원 위원회에 관한 표</caption>
+                                <colgroup>
+                                    <col class="w140px">
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>직위</th>
+                                        <th>소속</th>
+                                        <th>성명</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>위 원 장</td>
+                                        <td>대학원장</td>
+                                        <td>송오성</td>
+                                    </tr>
+                                    <tr>
+                                        <td>부위원장</td>
+                                        <td>교무처장</td>
+                                        <td>박훈</td>
+                                    </tr>
+                                    <tr>
+                                        <td>위 원</td>
+                                        <td>입학처장</td>
+                                        <td>장금주</td>
+                                    </tr>
+                                    <tr>
+                                        <td>위 원</td>
+                                        <td>학생처장</td>
+                                        <td>황선환</td>
+                                    </tr>
+                                    <tr>
+                                        <td>위 원</td>
+                                        <td>기획처장</td>
+                                        <td>임정하</td>
+                                    </tr>
+                                    <tr>
+                                        <td>위 원</td>
+                                        <td>연구처장</td>
+                                        <td>정연두</td>
+                                    </tr>
+                                    <tr>
+                                        <td>위 원</td>
+                                        <td>미래혁신원장</td>
+                                        <td>김철한</td>
+                                    </tr>
+                                    <tr>
+                                        <td>위 원</td>
+                                        <td>법학전문대학원장</td>
+                                        <td>이상경</td>
+                                    </tr>
+                                    <tr>
+                                        <td>위 원</td>
+                                        <td>국제교육원장</td>
+                                        <td>송지희</td>
+                                    </tr>
+                                    <tr>
+                                        <td>위 원</td>
+                                        <td>정경대학장</td>
+                                        <td>형남원</td>
+                                    </tr>
+                                    <tr>
+                                        <td>위 원</td>
+                                        <td>경영대학장</td>
+                                        <td>최영준</td>
+                                    </tr>
+                                    <tr>
+                                        <td>위 원</td>
+                                        <td>공과대학장</td>
+                                        <td>김정현</td>
+                                    </tr>
+                                    <tr>
+                                        <td>위 원</td>
+                                        <td>인문대학장</td>
+                                        <td>김미영</td>
+                                    </tr>
+                                    <tr>
+                                        <td>위 원</td>
+                                        <td>자연과학대학장</td>
+                                        <td>조윤희</td>
+                                    </tr>
+                                    <tr>
+                                        <td>위 원</td>
+                                        <td>도시과학대학장</td>
+                                        <td>김강수</td>
+                                    </tr>
+                                    <tr>
+                                        <td>위 원</td>
+                                        <td>예술체육대학장</td>
+                                        <td>신재휴</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p class="point mt10"> 다만, 입학관련 위원회의 간사는 입학부처장이 맡는다.</p>
+                        </div>
+                        <!-- 본문 -->
+                    </div>
+                    <!-- sub content -->
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

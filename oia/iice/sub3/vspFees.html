@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../static/css/common.css">
+    <link rel="stylesheet" href="../../static/css/swiper.css">
+
+
+    <!-- JS -->
+    <script src="../../static/js/jquery-3.7.1.js"></script>
+    <script src="../../static/js/common.js"></script>
+    <script src="../../static/js/swiper-bundle.min.js"></script>
+    <script src="../../static/js/main.js"></script>
+
+    <script>
+        // header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+       
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <div class="sub-tit-wrap"><h3 class="pg-tit">Study at UOS</h3></div>
+            <div id="snb-wrap"></div>
+            <div class="wid">
+                <div class="content-area">
+                    <div id="contents">
+                        <h4 class="conts-tit2">Tuition Fees</h4>
+                        <h5 class="sub-tit">Tuition Fees</h5>
+                        <div class="ind-box">
+                            <div class="table-wrap">
+                                <table class="type02">
+                                    <caption>Tuition Fees - Department, KRW</caption>
+                                    <colgroup>
+                                        <col width="70%">
+                                        <col width="30%">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Department</th>
+                                            <th scope="col">KRW</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>School of Business Administration, School of Economics, Department of Korean History, Department of English Language and Literature, Department of International Relations, Department of Urban Sociology, Department of Urban Administration, Department of Social Welfare, Department of Science in Taxation, Department of English Language and Literature, Department of English Language and Culture, Department of Philosophy, Department of Public Administration</td>
+                                            <td>2,044,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Department of Mathematics</td>
+                                            <td>2,253,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Department of Physics, Department of Life Science, Department of Convergence and Applied Chemistry, Department of Statistics, Department of Environmental Horticulture</td>
+                                            <td>2,457,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Department of Architectural Engineering, Department of Architecture, Department of Geoinformatics, Department of Transportation Engineering, Department of Mechanical and Information Engineering, Department of Civil Engineering, Department of Materials Science and Engineering, Department of Artificial Intelligence, Department of Electrical and Computer Engineering, Department of Landscape Architecture, Department of Computer Science and Engineering, Department of Urban Planning and Design, Department of Chemical Engineering, School of Environmental Engineering</td>
+                                            <td>2,701,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Department of Sport Science</td>
+                                            <td>2,742,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Department of Design, Department of Environmental Sculpture</td>
+                                            <td>2,888,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Department of Music</td>
+                                            <td>3,221,000</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            
+                            </div>
+                        </div>
+                        <h5 class="sub-tit">Tuition Refund Policy</h5>
+                        <div class="ind-box">
+                            <p class="sub-tit2">In any of the following cases, tuition fees paid shall be refunded.</p>
+                            <div class="desc">
+                                <ul class="dotList01">
+                                    <li>Where admission (including re-admission and transferring studies) or study cannot be continued pursuant to laws or school regulations</li>
+                                    <li>Where a person who has been granted admission has expressed his/her intention to give up admission</li>
+                                    <li>Where a student has indicated his/her intention to drop out</li>
+                                    <li>Where he/she has been prevented from entering the school due to his/her disease, death, natural disaster, or other unavoidable reasons, or has been prevented from continuing his/her studies</li>
+                                </ul>
+                            </div>
+                            <p class="sub-tit2">The amount to be refunded pursuant to the provisions of the preceding paragraph shall be classified as follows.</p>
+                            <div class="desc">
+                                <div class="table-wrap">
+                                    <table class="type02">
+                                        <thead>
+                                            <tr>
+                                                <th>Date of occurrence of reason for return</th>
+                                                <th>Return amount</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Until the day before the entrance date or the day before the start date of the relevant semester</td>
+                                                <td>The full amount of tuition</td>
+                                            </tr>
+                                            <tr>
+                                                <td>From the start of the semester to the 30th day</td>
+                                                <td>5/6 of tuition</td>
+                                            </tr>
+                                            <tr>
+                                                <td>From 31st day after the start of the semester to the 60th day</td>
+                                                <td>2/3 of the tuition</td>
+                                            </tr>
+                                            <tr>
+                                                <td>From the 61st day after the start of the semester to the 90th day</td>
+                                                <td>Half of the tuition</td>
+                                            </tr>
+                                            <tr>
+                                                <td>90 days after the start of the semester</td>
+                                                <td>No return</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="point01">
+                                        <b>※ Notice Regarding Refunds to Overseas Accounts</b>
+                                        <p>
+                                            For tuition fee refunds processed to overseas accounts, all bank fees incurred will be borne by the recipient. Please note that the refund amount will be disbursed after deducting the applicable fees.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="sub-tit2"> The start date of each semester</p>
+                            <div class="desc">1st semester : March 1st , 2nd semester : September 1st</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

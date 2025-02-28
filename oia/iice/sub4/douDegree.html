@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+     <!-- CSS -->
+    <link rel="stylesheet" href="../../static/css/common.css">
+    <link rel="stylesheet" href="../../static/css/swiper.css">
+    <!-- JS -->
+    <script src="../../static/js/jquery-3.7.1.js"></script>
+    <script src="../../static/js/common.js"></script>
+    <script src="../../static/js/swiper-bundle.min.js"></script>
+    <script src="../../static/js/main.js"></script>
+    <script>
+        // header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+       
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <div class="sub-tit-wrap"><h3 class="pg-tit">Double Degree Program</h3></div>
+            <div id="snb-wrap"></div>
+            <div class="wid">
+                <div class="content-area">
+                    <div id="contents">
+                        <h4 class="conts-tit2">Double Degree Program</h4>
+                        <h5 class="sub-tit">Information</h5>
+                        <div class="ind-box">
+                            <ul class="dotList01">
+                               <li>Based on agreements between UOS and overseas universities to operate double degree programs, students complete at least two years of undergraduate study at UOS, then study for at least two years at the overseas university, earning degrees from both institutions simultaneously.</li>
+                            </ul>
+                        </div>
+                        <h5 class="sub-tit">Partner universities</h5>
+                        <div class="ind-box">
+                            <ul class="dotList01">
+                                <li>State University of New York (SUNY) Stony Brook</li>
+                                <li>San Francisco State University (SFSU)</li>
+                            </ul>
+                        </div>
+                        <h5 class="sub-tit">Important notes</h5>
+                        <div class="ind-box">
+                            <ul class="dotList01">
+                                <li>Applicants must confirm whether the overseas university offers the same (or similar) major as their current major and review the curriculum of the host institution.</li>
+                                <li>Before applying for the program, applicants must consult sufficiently with their academic advisor and obtain approval from their department, faculty, and department head to submit the program application.</li>
+                                <li>At least half of the graduation credits must be earned at UOS.</li>
+                                <li>Graduation requirements (credits) designated by both UOS and overseas university must be met.</li>
+                            </ul>
+                        </div>
+                        <h5 class="sub-tit">Credit transfer from UOS to overseas university</h5>
+                        <div class="ind-box">
+                            <ul class="dotList01">
+                                <li>Since UOS and overseas university curricula do not match 100%, the courses (credits) earned at UOS are recognized according to the credit recognition evaluation standards of the overseas university.</li>
+                                <li>The process of transferring credits to an overseas university is determined according to the academic policies and evaluation procedures of the overseas university, so credit transfer may be <li>
+                                    limited compared to the credits earned at UOS.</li>
+                                    Based on the credits and courses recognized by the overseas university, the assigned academic year at the overseas university will be determined, so admission to the third-year program is not guaranteed.
+                                </li>
+                                <li>If the courses and credits earned at UOS are insufficient, outcomes such as admission denial, inability to be assigned to a regular department, or assignment to a lower academic year program may occur and must be accepted.</li>
+                                <li>The final admission decision is based on the admission evaluation results of the overseas university.</li>
+                            </ul>
+                        </div>
+                        <h5 class="sub-tit">Credit transfer from overseas university to UOS</h5>
+                        <div class="ind-box">
+                            <ul class="dotList01">
+                                <li>Students are advised to earn the required general education and major courses designated by their department at UOS.</li>
+                                <li>The procedure follows the credit transfer process of UOS.</li>
+                                <li>Credits earned at the overseas university will be recognized as UOS credits within the range of half the graduation credits.</li>
+                            </ul>
+                        </div>
+                        <h5 class="sub-tit">Study period</h5>
+                        <div class="ind-box">
+                            <ul class="dotList01">
+                                <li>
+                                    In principle, the study period at an overseas university is two years (four semesters).
+                                    (However, if the student wishes to extend the study period due to personal academic schedules, they must submit an extension application to the UOS Office of International Affairs one semester before the end of the study period and obtain prior approval from the president.)
+                                </li>
+                            </ul>
+                        </div>
+                        <h5 class="sub-tit">Registration and graduation</h5>
+                        <div class="ind-box">
+                            <ul class="dotList01">
+                                <li>
+                                    Tuition fees at UOS are waived, but students must pay tuition fees to the overseas university during their study period.
+                                    (Payment of tuition fees to the overseas university is recognized as equivalent to minimal registration at UOS.)
+                                </li>
+                                <li>To graduate from UOS after earning a degree from the overseas university, students must meet the graduation requirements of UOS.</li>
+                                <li>Graduation requirements designated by both UOS and overseas university must be met.</li>
+                                <li>Graduation must occur within UOS's graduation timeline (12 semesters).</li>
+                            </ul>
+                        </div>
+                        <h5 class="sub-tit">Leave of absence</h5>
+                        <div class="ind-box">
+                            <ul class="dotList01">
+                                <li>Participants may take a leave of absence during their studies at the overseas university. However, they must also process a leave of absence at UOS during the same period.</li>
+                            </ul>
+                        </div>
+                        <h5 class="sub-tit">Study abroad precautions</h5>
+                        <div class="ind-box">
+                            <ul class="dotList01">
+                                <li>Participants must comply with all academic policies and regulations of both UOS and partner university.</li>
+                                <li>After studying abroad at the partner university, students cannot arbitrarily change their major at UOS.</li>
+                                <li>If a participant changes their major at the overseas university to a major other than their major at UOS, the double degree program will be automatically canceled, and the full amount of any scholarship funds must be repaid.</li>
+                            </ul>
+                        </div>
+                        <h5 class="sub-tit">Scholarships</h5>
+                        <div class="ind-box">
+                            <ul class="dotList01">
+                                <li>Each participant receives ₩2,000,000 per semester.</li>
+                                <li>Scholarships are limited to a total of two years (i.e., four semesters) for double degree participants, and students who take additional semesters will not receive scholarships.</li>
+                            </ul>
+                        </div>
+                        <h5 class="sub-tit">Note</h5>
+                        <div class="ind-box">
+                            <ul class="dotList01">
+                                <li>Participants in the double degree program cannot simultaneously participate in short-term study abroad or general exchange student programs.</li>
+                            </ul>
+                        </div>
+                        <h5 class="sub-tit">My experience at UOS</h5>
+                        <div class="ind-box">
+                            <ul class="dotList01">
+                                <li>
+                                    Participants can view testimonials written by previous participants (Study Abroad > My experience at UOS > Double Degree).<br/>
+                                    Contact: UOS Office of International Affairs Study Abroad Team (exchangeout@uos.ac.kr)
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

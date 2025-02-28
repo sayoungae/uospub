@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+     <!-- CSS -->
+    <link rel="stylesheet" href="../../static/css/common.css">
+    <link rel="stylesheet" href="../../static/css/swiper.css">
+    <!-- JS -->
+    <script src="../../static/js/jquery-3.7.1.js"></script>
+    <script src="../../static/js/common.js"></script>
+    <script src="../../static/js/swiper-bundle.min.js"></script>
+    <script src="../../static/js/main.js"></script>
+    <script>
+        // header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+       
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <div class="sub-tit-wrap"><h3 class="pg-tit">Exchange Student Program</h3></div>
+            <div id="snb-wrap"></div>
+            <div class="wid">
+                <div class="content-area">
+                    <div id="contents">
+                        <h4 class="conts-tit2">Exchange Student Program</h4>
+                        <h5 class="sub-tit">Overview</h5>
+                        <div class="ind-box">
+                            <p class="sub-tit2">Information</p>
+                            <div class="desc">
+                                <ul class="dotList01">
+                                    <li>Register as an exchange student at an overseas partner university that has signed an exchange agreement with UOS, take lectures at the local university, participate in on-campus and off-campus activities to enhance international competence, and experience the society and culture of foreign cities.</li>
+                                    <li>A program based on the principle of mutual benefit, where students are sent on a one-to-one exchange to overseas universities with which UOS has signed a student exchange agreement.</li>
+                                    <li>Duration: 1 semester or 1 year</li>
+                                    <li>Tuition: Pay tuition to UOS for enrollment at the partner university</li>
+                                    <li>Selection: Every January and July</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h5 class="sub-tit">Criteria</h5>
+                        <div class="ind-box">
+                            <p class="sub-tit2">Eligibility</p>
+                            <div class="desc">
+                                <ul class="dotList01">
+                                    <li>Must be currently enrolled or on leave of absence and have completed at least one semester (must complete at least two semesters before the study abroad date)</li>
+                                    <li>For students on leave of absence, they must be registered at UOS before the study abroad date</li>
+                                    <li>Must have a cumulative GPA of 3.0 or higher</li>
+                                    <li>Must possess foreign language proficiency sufficient to study in the relevant country</li>
+                                    <li>Must not have been subject to disciplinary action according to school regulations (excl. academic warnings)</li>
+                                </ul>
+                            </div>
+                            <p class="sub-tit2">Rubric</p>
+                            <div class="desc">
+                                <ul class="dotList01">
+                                    <li>Comprehensive evaluation of academic performance, language proficiency, and study plan</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h5 class="sub-tit">Scholarships</h5>
+                        <div class="ind-box">
+                            <p class="sub-tit2">Exchange student scholarship (UOS Office of International Affairs)</p>
+                            <div class="desc">
+                                <ul class="dotList01">
+                                    <li>Initial settlement funds for exchange students who meet the scholarship conditions</li>
+                                    <li>Refer to the detailed selection criteria and scholarship amounts in the exchange student selection notice and orientation each semester</li>
+                                </ul>
+                            </div>
+                            <p class="sub-tit2">External scholarship</p>
+                            <div class="desc">
+                                <ul class="dotList01">
+                                    <li>Scholarships from companies such as Mirae Asset for exchange students (requires separate application to the respective company)</li>
+                                </ul>
+                            </div>
+                            <p class="sub-tit2">ASEM-DUO Scholarship <a href="https://www.asemduo.org" title="asem-duo">(www.asemduo.org)</a></p> 
+                            <div class="desc">
+                                <ul class="dotList01">
+                                    <li>Available for mutual one-to-one exchanges with universities in 27 ASEM member countries in Europe</li>
+                                    <li>Scholarship: €4,000 per person</li>
+                                    <li>Selection: UOS Office of International Affairs matches students and submits an application to the ASEM-DUO secretariat</li>
+                                </ul>
+                            </div>
+                            <p class="sub-tit2">JASSO Scholarship <a href="https://www.jasso.go.jp/" title="Japan Student Services Organization">(www.jasso.go.jp)</a></p> 
+                            <div class="desc">
+                                <ul class="dotList01">
+                                    <li>Scholarship provided by Japan's Ministry of Education</li>
+                                    <li>Japanese partner universities recommend study abroad students directly to JASSO</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

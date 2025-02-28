@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일반대학원 영문</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/swiper.css">
+
+
+    <!-- JS -->
+    <script src="../static/js/jquery-3.7.1.js"></script>
+    <script src="../static/js/swiper-bundle.min.js"></script>
+    <script src="../static/js/common.js"></script>
+    <!-- <script src="../static/js/main.js"></script> -->
+    <script src="../static/js/sub.js"></script>
+
+
+    <script>
+        //header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+       
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <!-- sub-banner -->
+            <div class="sub-banner sub3">
+                <div class="inner">
+                    <div class="ban-tit">University of Seoul Global Top Brand</div>
+                    <ul class="line-map">
+                        <li><img src="../static/images/home_ic.png" alt="home"></li>
+                        <li>Research</li>
+                        <li>Research Centers and Laboratores</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content">
+                <div class="inner clearfix">
+                    <!-- // sub-banner -->
+                    <!-- snb -->
+                    <div id="snb-wrap">
+                    </div>
+                    <!-- // snb -->
+                    <!-- sub content -->
+                    <div class="sub-content" id="sub-content">
+                        <div class="sub-tit-box">
+                            <h3 class="subTit01">Disciplinary Action / Expulsion / Withdrawal</h3>
+                            <ul class="stp-bt">
+                                <li><a href="" class="print-ic"><span class="blind">인쇄</span></a></li>
+                                <li><a href="" class="share-ic"><span class="blind">공유 </span></a></li>
+                            </ul>
+                        </div>
+                        <!-- 본문 -->
+                        <h4 class="subTit03">Disciplinary action</h4>
+                        <h5 class="subTit04">Eligibility</h5>
+                        <ul class="dot-list02">
+                            <li>Currently enrolled students, students on leave of absence, or graduate research students who have violated academic regulations or engaged in behavior that deviates from their responsibilities as students.</li>
+                        </ul>
+                        <h5 class="subTit04">Types of disciplinary action</h5>
+                        <ul class="dot-list02">
+                            <li>On-campus volunteer service: Volunteer activities conducted for a specified duration of up to 30 hours at designated locations outside of class time</li>
+                            <li>Probation: Participation in activities such as classes is prohibited, and volunteer service is required at designated locations for a period of up to 7 days (limited to 8 hours per day)</li>
+                            <li>Temporary suspension: Suspension of student rights for a fixed period within 28 days</li>
+                            <li>Indefinite suspension: Suspension of student rights until lifted after at least 29 days</li>
+                            <li>Dismissal: Loss of student status</li>
+                        </ul>
+                        <h4 class="subTit03">Expulsion</h4>
+                        <h5 class="subTit04">Eligibility</h5>
+                            <ul class="dot-list02">
+                                <li>Students who have not resumed their studies after the leave of absence period has expired or the reason for the leave has ceased to exist</li>
+                                <li>Students who did not complete their registration during the registration period</li>
+                                <li>Students whose grade point average for the previous two semesters is below 3.0(B&#8304;)</li>
+                                <li>Students who have exceeded the maximum enrollment period without earning the minimum required credits for graduation</li>
+                            </ul>
+                        <h4 class="subTit03">Withdrawal</h4>
+                        <ul class="dot-list02">
+                            <li>Application can be made at any time the student desires.</li>
+                            <li>
+                                Procedure: Request for withdrawal processing to the department office (student) ⇒ Withdrawal processing (department office) ⇒ Completion and signing of withdrawal application form (student) ⇒ Submit to the Graduate School Administrative Office (department office) ⇒ Approval of withdrawal (Graduate School Administrative Office)
+                                <ul>
+                                    <li>Tuition refund (only for students who have paid the tuition for the relevant semester) Complete the refund application form (department office) ⇒
+                                        Eligibility for refund and the amount determined based on the number of class days (Administrative Affairs Office)</li>
+                                    <li>Required documents and preparations for withdrawal: Personal and guardian seal (or signature), copy of personal bank book</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- 본문 -->
+                    </div>
+                    <!-- sub content -->
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일반대학원 영문</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/swiper.css">
+
+
+    <!-- JS -->
+    <script src="../static/js/jquery-3.7.1.js"></script>
+    <script src="../static/js/swiper-bundle.min.js"></script>
+    <script src="../static/js/common.js"></script>
+    <script src="../static/js/main.js"></script>
+    <script src="../static/js/sub.js"></script>
+
+
+    <script>
+        //header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <!-- sub-banner -->
+            <div class="sub-banner sub1">
+                <div class="inner">
+                    <div class="ban-tit">University of Seoul Global Top Brand</div>
+                    <ul class="line-map">
+                        <li><img src="../static/images/home_ic.png" alt="home"></li>
+                        <li>dept</li>
+                        <li>dept Centers and Laboratores</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content">
+                <div class="inner clearfix">
+                    <!-- // sub-banner -->
+                    <!-- snb -->
+                    <div id="snb-wrap">
+                    </div>
+                    <!-- // snb -->
+                    <!-- sub content -->
+                    <div class="sub-content" id="sub-content">
+                        <div class="sub-tit-box">
+                            <h3 class="subTit01">통계데이터사이언스학과</h3>
+                            <ul class="stp-bt">
+                                <li><a href="" class="print-ic"><span class="blind">인쇄</span></a></li>
+                                <li><a href="" class="share-ic"><span class="blind">공유 </span></a></li>
+                            </ul>
+                        </div>
+                        <!-- 본문 -->
+                        <!-- tab -->
+                        <div class="tab-area layer">
+                            <!-- tab list -->
+                            <div class="tab">
+                                <ul role="tablist">
+                                    <li id="tab_dept_01" role="tab" aria-selected="true" aria-controls="panel_dept_01"
+                                        class="active">
+                                        <button type="button" class="btn-tab">Departments</button>
+                                    </li>
+                                    <li id="tab_dept_02" role="tab" aria-selected="false" aria-controls="panel_dept_02">
+                                        <button type="button" class="btn-tab">Admission</button>
+                                    </li>
+                                    <li id="tab_dept_03" role="tab" aria-selected="false" aria-controls="panel_dept_03">
+                                        <button type="button" class="btn-tab">Assistance, etc</button>
+                                    </li>
+                                    <li id="tab_dept_04" role="tab" aria-selected="false" aria-controls="panel_dept_04">
+                                        <button type="button" class="btn-tab">연구실 소개</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- //tab list -->
+                            <!-- tab contents -->
+                            <div class="tab-conts-wrap">
+                                <div id="panel_dept_01" role="tabpanel" aria-labelledby="tab_dept_01"
+                                    class="tab-conts active">
+                                    <div class="dept-link-list">
+                                        <a href="https://liberalarts.uos.ac.kr/liberalarts/main.do?cate_id2=000010068&identified=anonymous&"
+                                            target="_blank" title="opens in a new tab"
+                                            class="icn1"><span>Homepage</span></a>
+                                        <a href="profList.html" target="_blank" title="opens in a new tab"
+                                            class="icn2"><span>Faculty</span></a>
+                                        <a href="https://www.uos.ac.kr/kor/popup/html/auos/prospectus/2022/prospectus.do?identified=anonymous&"
+                                            target="_blank" title="opens in a new tab"
+                                            class="icn3"><span>Curriculum</span></a>
+                                    </div>
+                                    <h4 class="subTit04">Educational objectives</h4>
+                                    <div class="table-wrap">
+                                        <table class="type3">
+                                            <colgroup>
+                                                <col width="20%">
+                                                <col width="80%">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th>Core objectives</th>
+                                                    <td>
+                                                        통계학은 자연현상, 사회현상, 경제현상 등을 대상으로 여러 가지 자료와 정보를 과학적 으로 분석 추론하는 학문이다. 대학원에서는 통계학 이론과 응용분야와 관련한 고도의 전문지식을 갖추도록 하여 사회에서 필요로 하는 통계전문가를 양성하는데 그 목표를 둔다.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Detailed objectives</th>
+                                                    <td>
+                                                        <p>표본조사 이론, 기계학습 및 인공지능, 대기체계이론과 보험 관련 전공 중심으로 타 대 학과의 차별성을 추구</p>
+                                                        <ul>
+                                                            <li>1. 통계학 전문지식의 습득 : 고급 통계학, 확률론 이론 습득</li>
+                                                            <li>2. 고급 통계의 응용능력 배양 : 실전 문제 해결을 위한 통계적 응용능력 배양, 빅데이터 및 데이터마이닝 기법의 습득을 통한 거대자료의 분석 능력의 배양, 기계학습 및 인공지능 이론 습득을 통한 복잡한 현상에 대한 추론 능력 배양</li>
+                                                            <li>3. 컴퓨터 관련 능력을 갖춘 통계전문가 양성 : 데이터베이스를 통한 대용량 자료 처리 능력 습득, 다양한 컴퓨터 언어의 습득을 통한 통계적 방법의 구현</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Research areas</th>
+                                                    <td>
+                                                        표본조사이론, 이산자료분석, 베이지안 자료 분석, 응용확률과정, 위험관리, 데이터마이닝, 기계학습, 인공지능
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <h4 class="subTit04">Information</h4>
+                                    <div class="table-wrap">
+                                        <ul class="dept-info">
+                                            <li>
+                                                <div>Head professor</div>
+                                                <div>안수한 교수</div>
+                                            </li>
+                                            <li>
+                                                <div>TEL</div>
+                                                <div>+82-2-6490-2632</div>
+                                            </li>
+                                            <li>
+                                                <div>E-mail</div>
+                                                <div></div>
+                                            </li>
+                                            <li>
+                                                <div>Office</div>
+                                                <div>미래관 7층 708호</div>
+                                            </li>
+                                            <li>
+                                                <div>TEL</div>
+                                                <div>+82-2-6490-2625~6</div>
+                                            </li>
+                                            <li>
+                                                <div>FAX</div>
+                                                <div>+82-2-6490-2629</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div id="panel_dept_02" role="tabpanel" aria-labelledby="tab_dept_02" class="tab-conts">
+                                    <div class="dept-link-list">
+                                        <a href="../admission/regular.html" target="_blank" title="opens in a new tab"
+                                            class="icn4"><span>Recruitment guidelines</span></a>
+                                        <a href="https://rule.uos.ac.kr/lmxsrv/main/main.srv" target="_blank"
+                                            title="opens in a new tab" class="icn5"><span>Operating regulations</span></a>
+                                    </div>
+                                    <h4 class="subTit04">General admission degree programs</h4>
+                                    <div class="table-wrap">
+                                        <table class="type3">
+                                            <colgroup>
+                                                <col width="20%">
+                                                <col width="80%">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th>Master's degree</th>
+                                                    <td>
+                                                        <ul class="dot-list01">
+                                                            <li>Individuals who have obtained a bachelor's degree from domestic or foreign universities or those expected to obtain a degree upon completion of the current registered semester</li>
+                                                            <li>Individuals recognized as having equivalent or higher academic qualifications under relevant laws</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Doctorate's degree</th>
+                                                    <td>
+                                                        <ul class="dot-list01">
+                                                            <li>Individuals who have obtained a bachelor's degree from domestic or foreign universities or those expected to obtain a degree upon completion of the current registered semester</li>
+                                                            <li>Individuals recognized as having equivalent or higher academic qualifications under relevant laws</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Eligibility for master's/doctorate's<br/>Support for North Korean defectors</th>
+                                                    <td>
+                                                        <ul class="dot-list01">
+                                                            <li>Individuals qualified to apply for master's or doctorate's program</li>
+                                                            <li>Individuals registered as North Korean defectors pursuant to the North Korean Defectors Protection and Settlement Support Act</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <h4 class="subTit04">Additional eligibility requirements and submission documents</h4>
+                                    <ul class="dot-list02">
+                                        <li>Not applicable</li>
+                                    </ul>
+                                    <h4 class="subTit04">Program information (for students admitted after 2022)</h4>
+                                    <div class="table-wrap">
+                                        <table class="type1">
+                                            <thead>
+                                                <tr>
+                                                    <th>Category</th>
+                                                    <th>Length of study</th>
+                                                    <th>Basic semester operation</th>
+                                                    <th>Minimum credits required</th>
+                                                    <th>Graduation thesis</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Master</td>
+                                                    <td rowspan="2">2+ years</td>
+                                                    <td rowspan="2">4 semester system</td>
+                                                    <td>24 credits</td>
+                                                    <td>Master's thesis</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Doctorate</td>
+                                                    <td>36 credits</td>
+                                                    <td>Doctoral dissertation</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <p class="point mt10">※ For other academic information: Refer to relevant items on the Education/Academic Affairs tab of the Graduate School website</p>
+                                    </div>
+                                    <h4 class="subTit04">Minimum publication requirements for doctoral dissertation</h4>
+                                    <ul class="dot-list02">
+                                        <li>제1저자로서 SCI(E) 등재지 이상에 1편 이상 논문 게재 실적</li>
+                                    </ul>
+                                    <h4 class="subTit04">학과 내규</h4>
+                                    <ul class="dot-list02">
+                                        <li><a href="#a" class="link-ty1" onclick="fnDirFileDown('/files/graduate/graduate/admission/department/nature/', '통계데이터사이언스Department regulations업데이트_0309.pdf', '통계데이터사이언스Department regulations업데이트_0309.pdf');return false;">Department regulations
+                                            다운로드</a></li>
+                                    </ul>
+                                    <h4 class="subTit04">Graduate school operating principles</h4>
+                                    <ul class="dot-list02">
+                                        <li>전일제 우선 : 장학금 수혜 학생 선정 ? 변경 시, 학과로 필히 연락</li>
+                                    </ul>
+                                </div>
+                                <div id="panel_dept_03" role="tabpanel" aria-labelledby="tab_dept_03" class="tab-conts">
+                                    <h4 class="subTit04">Scholarships</h4>
+                                    <ul class="dot-list02">
+                                        <li>Doctorate's degree과정 : 신입생으로 전일제의 학생인 경우 등록금 전액 지급</li>
+                                        <li><a href="https://graduate.uos.ac.kr/graduateNew/html/support/scholarship.do?menuid=3000004001001000000"
+                                                class="link-ty1">Website</a></li>
+                                    </ul>
+                                    <h4 class="subTit04">Career paths after graduation</h4>
+                                    <ul class="dot-list02">
+                                        <li>교보생명 등 보험사 빅데이터활용팀</li>
+                                        <li>한국의약품안전관리원 약물역학빅데이터분석팀</li>
+                                        <li>산업연구원 산업통계분석본부 등</li>
+                                    </ul>
+                                </div>
+                                <div id="panel_dept_04" role="tabpanel" aria-labelledby="tab_dept_04" class="tab-conts">
+                                    <div class="table-wrap">
+                                        <table class="type1">
+                                            <caption>통계데이터사이언스학과 연구실 · 실험실</caption>
+                                            <colgroup>
+                                                <col class="w120px">
+                                                <col>
+                                                <col>
+                                                <col>
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th rowspan="2">학과</th>
+                                                    <th colspan="3">연구실 · 실험실 </th>
+                                                </tr>
+                                                <tr>
+                                                    <th>국문 명칭</th>
+                                                    <th>영문 명칭</th>
+                                                    <th>홈페이지/소개글</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td rowspan="5" style="text-align:center;">통계데이터<br>사이언스학과</td>
+                                                    <td class="al">표본이론연구실</td>
+                                                    <td class="al">Sampling Theory Lab</td>
+                                                    <td style="text-align: center;"><a href="http://stat.uos.ac.kr/" target="_blank" title="새창으로 열기" class="link-web"><span class="blind">website</span></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="al lLine">수리통계연구실</td>
+                                                    <td class="al">Mathematical Statistics Lab</td>
+                                                    <td style="text-align: center;"><a href="http://stat.uos.ac.kr/" target="_blank" title="새창으로 열기" class="link-web"><span class="blind">website</span></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="al lLine">확률론연구실</td>
+                                                    <td class="al">Probability theory Lab</td>
+                                                    <td style="text-align: center;"><a href="http://stat.uos.ac.kr/" target="_blank" title="새창으로 열기" class="link-web"><span class="blind">website</span></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="al lLine">데이터마이닝실험실</td>
+                                                    <td class="al">Dataming Lab</td>
+                                                    <td style="text-align: center;"><a href="http://stat.uos.ac.kr/" target="_blank" title="새창으로 열기" class="link-web"><span class="blind">website</span></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="al lLine">통계상담실</td>
+                                                    <td class="al">Statistical Consulting Lab</td>
+                                                    <td style="text-align: center;"><a href="http://stat.uos.ac.kr/" target="_blank" title="새창으로 열기" class="link-web"><span class="blind">website</span></a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //tab contents -->
+                        </div>
+                        <!-- // tab -->
+                        <!-- 본문 -->
+                    </div>
+                    <!-- sub content -->
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+
+</html>

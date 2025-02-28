@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일반대학원 영문</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/swiper.css">
+
+
+    <!-- JS -->
+    <script src="../static/js/jquery-3.7.1.js"></script>
+    <script src="../static/js/swiper-bundle.min.js"></script>
+    <script src="../static/js/common.js"></script>
+    <script src="../static/js/main.js"></script>
+    <script src="../static/js/sub.js"></script>
+
+
+    <script>
+        //header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+       
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <!-- sub-banner -->
+            <div class="sub-banner sub1">
+                <div class="inner">
+                    <div class="ban-tit">University of Seoul Global Top Brand</div>
+                    <ul class="line-map">
+                        <li><img src="../static/images/home_ic.png" alt="home"></li>
+                        <li>Research</li>
+                        <li>Research Centers and Laboratores</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content">
+                <div class="inner clearfix">
+                    <!-- // sub-banner -->
+                    <!-- snb -->
+                    <div id="snb-wrap">
+                    </div>
+                    <!-- // snb -->
+                    <!-- sub content -->
+                    <div class="sub-content" id="sub-content">
+                        <div class="sub-tit-box">
+                            <h3 class="subTit01">Departments</h3>
+                            <ul class="stp-bt">
+                                <li><a href="" class="print-ic"><span class="blind">인쇄</span></a></li>
+                                <li><a href="" class="share-ic"><span class="blind">공유 </span></a></li>
+                            </ul>
+                        </div>
+                        <!-- 본문 -->
+                        <div class="dept-list-wrap">
+                            <ul>
+                                <li>
+                                    <div>
+                                        <div class="tit-box">
+                                            <h4>토목공학과</h4>
+                                            <ul class="tag-list">
+                                                <li class="li1">Master</li>
+                                                <li class="li2">Doctorate</li>
+                                                <!-- <li class="li3">Combined master's/doctorate's program</li> -->
+                                            </ul>
+                                        </div>
+                                        <ul class="dot-list02">
+                                            <li><b>Head professor :</b> 김선중 교수</li>
+                                            <li><b>Contact :</b>  +82-2-6490-2420</li>
+                                        </ul>
+                                    </div>
+                                    <a href="#none" class="link"><span>Detail View</span></a>
+                                </li>
+                                <li>
+                                    <div>
+                                        <div class="tit-box">
+                                            <h4>화학공학과</h4>
+                                            <ul class="tag-list">
+                                                <li class="li1">Master</li>
+                                                <li class="li2">Doctorate</li>
+                                                <!-- <li class="li3">Combined master's/doctorate's program</li> -->
+                                            </ul>
+                                        </div>
+                                        <ul class="dot-list02">
+                                            <li><b>Head professor :</b> 유종석 교수</li>
+                                            <li><b>Contact :</b> +82-2-6490-2360~2</li>
+                                        </ul>
+                                    </div>
+                                    <a href="#none" class="link"><span>Detail View</span></a>
+                                </li>
+                                <li>
+                                    <div>
+                                        <div class="tit-box">
+                                            <h4>수학과</h4>
+                                            <ul class="tag-list">
+                                                <li class="li1">Master</li>
+                                                <!-- <li class="li2">Doctorate</li> -->
+                                                <!-- <li class="li3">Combined master's/doctorate's program</li> -->
+                                            </ul>
+                                        </div>
+                                        <ul class="dot-list02">
+                                            <li><b>Head professor :</b> Lee Sang-il</li>
+                                            <li><b>Contact :</b> +82-2-6490-2606~7</li>
+                                        </ul>
+                                    </div>
+                                    <a href="#none" class="link"><span>Detail View</span></a>
+                                </li>
+                                <li>
+                                    <div>
+                                        <div class="tit-box">
+                                            <h4>건축공학과</h4>
+                                            <ul class="tag-list">
+                                                <li class="li1">Master</li>
+                                                <li class="li2">Doctorate</li>
+                                                <li class="li3">Combined master's/doctorate's program</li>
+                                            </ul>
+                                        </div>
+                                        <ul class="dot-list02">
+                                            <li><b>Head professor :</b> 강동화 교수</li>
+                                            <li><b>Contact :</b> +82-2-6490-2753</li>
+                                        </ul>
+                                    </div>
+                                    <a href="#none" class="link"><span>Detail View</span></a>
+                                </li>
+                                <li>
+                                    <div>
+                                        <div class="tit-box">
+                                            <h4>환경공학과</h4>
+                                            <ul class="tag-list">
+                                                <li class="li1">Master</li>
+                                                <li class="li2">Doctorate</li>
+                                                <li class="li3">Combined master's/doctorate's program</li>
+                                            </ul>
+                                        </div>
+                                        <ul class="dot-list02">
+                                            <li><b>Head professor :</b> 오희경 교수</li>
+                                            <li><b>Contact :</b> +82-2-6490-2853~7</li>
+                                        </ul>
+                                    </div>
+                                    <a href="#none" class="link"><span>Detail View</span></a>
+                                </li>
+                                <li>
+                                    <div>
+                                        <div class="tit-box">
+                                            <h4>전자전기컴퓨터공학과</h4>
+                                            <ul class="tag-list">
+                                                <li class="li1">Master</li>
+                                                <li class="li2">Doctorate</li>
+                                                <li class="li3">Combined master's/doctorate's program</li>
+                                            </ul>
+                                        </div>
+                                        <ul class="dot-list02">
+                                            <li><b>Head professor :</b> 김윤 교수</li>
+                                            <li><b>Contact :</b> +82-2-6490-2316</li>
+                                        </ul>
+                                    </div>
+                                    <a href="#none" class="link"><span>Detail View</span></a>
+                                </li>
+                                <li>
+                                    <div>
+                                        <div class="tit-box">
+                                            <h4>도시공학과</h4>
+                                            <ul class="tag-list">
+                                                <li class="li1">Master</li>
+                                                <li class="li2">Doctorate</li>
+                                                <li class="li3">Combined master's/doctorate's program</li>
+                                            </ul>
+                                        </div>
+                                        <ul class="dot-list02">
+                                            <li><b>Head professor :</b> 강명구 교수</li>
+                                            <li><b>Contact :</b> +82-2-6490-2790</li>
+                                        </ul>
+                                    </div>
+                                    <a href="#none" class="link"><span>Detail View</span></a>
+                                </li>
+                                <li>
+                                    <div>
+                                        <div class="tit-box">
+                                            <h4>교통공학과</h4>
+                                            <ul class="tag-list">
+                                                <li class="li1">Master</li>
+                                                <li class="li2">Doctorate</li>
+                                                <li class="li3">Combined master's/doctorate's program</li>
+                                            </ul>
+                                        </div>
+                                        <ul class="dot-list02">
+                                            <li><b>Head professor :</b> 이동민 교수</li>
+                                            <li><b>Contact :</b> +82-2-6490-2815</li>
+                                        </ul>
+                                    </div>
+                                    <a href="#none" class="link"><span>Detail View</span></a>
+                                </li>
+                                <li>
+                                    <div>
+                                        <div class="tit-box">
+                                            <h4>신소재공학과</h4>
+                                            <ul class="tag-list">
+                                                <li class="li1">Master</li>
+                                                <li class="li2">Doctorate</li>
+                                                <!-- <li class="li3">Combined master's/doctorate's program</li> -->
+                                            </ul>
+                                        </div>
+                                        <ul class="dot-list02">
+                                            <li><b>Head professor :</b> 김현식 교수</li>
+                                            <li><b>Contact :</b> +82-2-6490-2400</li>
+                                        </ul>
+                                    </div>
+                                    <a href="#none" class="link"><span>Detail View</span></a>
+                                </li>
+                                <li>
+                                    <div>
+                                        <div class="tit-box">
+                                            <h4>기계정보공학과</h4>
+                                            <ul class="tag-list">
+                                                <li class="li1">Master</li>
+                                                <li class="li2">Doctorate</li>
+                                                <!-- <li class="li3">Combined master's/doctorate's program</li> -->
+                                            </ul>
+                                        </div>
+                                        <ul class="dot-list02">
+                                            <li><b>Head professor :</b> 황면중 교수</li>
+                                            <li><b>Contact :</b> +82-2-6490-2380</li>
+                                        </ul>
+                                    </div>
+                                    <a href="#none" class="link"><span>Detail View</span></a>
+                                </li>
+                                <li>
+                                    <div>
+                                        <div class="tit-box">
+                                            <h4>건축학과</h4>
+                                            <ul class="tag-list">
+                                                <li class="li1">Master</li>
+                                                <li class="li2">Doctorate</li>
+                                                <!-- <li class="li3">Combined master's/doctorate's program</li> -->
+                                            </ul>
+                                        </div>
+                                        <ul class="dot-list02">
+                                            <li><b>Head professor :</b> 황경주 교수</li>
+                                            <li><b>Contact :</b> +82-2-6490-2751</li>
+                                        </ul>
+                                    </div>
+                                    <a href="#none" class="link"><span>Detail View</span></a>
+                                </li>
+                                <li>
+                                    <div>
+                                        <div class="tit-box">
+                                            <h4>공간정보공학과</h4>
+                                            <ul class="tag-list">
+                                                <li class="li1">Master</li>
+                                                <li class="li2">Doctorate</li>
+                                                <li class="li3">Combined master's/doctorate's program</li>
+                                            </ul>
+                                        </div>
+                                        <ul class="dot-list02">
+                                            <li><b>Head professor :</b> 구형모 교수</li>
+                                            <li><b>Contact :</b> +82-2-6490-2880</li>
+                                        </ul>
+                                    </div>
+                                    <a href="#none" class="link"><span>Detail View</span></a>
+                                </li>
+                                <li>
+                                    <div>
+                                        <div class="tit-box">
+                                            <h4>컴퓨터과학과</h4>
+                                            <ul class="tag-list">
+                                                <li class="li1">Master</li>
+                                                <li class="li2">Doctorate</li>
+                                                <!-- <li class="li3">Combined master's/doctorate's program</li> -->
+                                            </ul>
+                                        </div>
+                                        <ul class="dot-list02">
+                                            <li><b>Head professor :</b> 이동희 교수</li>
+                                            <li><b>Contact :</b> +82-2-6490-2440~2</li>
+                                        </ul>
+                                    </div>
+                                    <a href="#none" class="link"><span>Detail View</span></a>
+                                </li>
+                                <li>
+                                    <div>
+                                        <div class="tit-box">
+                                            <h4>인공지능학과</h4>
+                                            <ul class="tag-list">
+                                                <li class="li1">Master</li>
+                                                <li class="li2">Doctorate</li>
+                                                <li class="li3">Combined master's/doctorate's program</li>
+                                            </ul>
+                                        </div>
+                                        <ul class="dot-list02">
+                                            <li><b>Head professor :</b> 정지영 교수</li>
+                                            <li><b>Contact :</b> +82-2-6490-2470</li>
+                                        </ul>
+                                    </div>
+                                    <a href="#none" class="link"><span>Detail View</span></a>
+                                </li>
+                                <li>
+                                    <div>
+                                        <div class="tit-box">
+                                            <h4>지능형반도체학과</h4>
+                                            <ul class="tag-list">
+                                                <li class="li1">Master</li>
+                                                <li class="li2">Doctorate</li>
+                                                <li class="li3">Combined master's/doctorate's program</li>
+                                            </ul>
+                                        </div>
+                                        <ul class="dot-list02">
+                                            <li><b>Head professor :</b> 강명곤 교수</li>
+                                            <li><b>Contact :</b> +82-2-6490-5007</li>
+                                        </ul>
+                                    </div>
+                                    <a href="#none" class="link"><span>Detail View</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 본문 -->
+                    </div>
+                    <!-- sub content -->
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

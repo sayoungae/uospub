@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>국제처 소개</title>
+     <!-- CSS -->
+    <link rel="stylesheet" href="../../static/css/common.css">
+    <link rel="stylesheet" href="../../static/css/swiper.css">
+    <!-- JS -->
+    <script src="../../static/js/jquery-3.7.1.js"></script>
+    <script src="../../static/js/common.js"></script>
+    <script src="../../static/js/swiper-bundle.min.js"></script>
+    <script src="../../static/js/main.js"></script>
+    <script>
+        // header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+       
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <div class="sub-tit-wrap"><h3 class="pg-tit">학생지원</h3></div>
+            <!-- snb -->
+            <div id="snb-wrap"></div>
+            <!-- // snb -->
+            <div class="wid">
+                <div class="content-area">
+                    <div id="contents">
+                        <h4 class="conts-tit2">도착 후 정보</h4>
+                       
+                        <h5 class="sub-tit">신입생 오리엔테이션 안내</h5>
+                        <div class="ind-box">
+                            <p class="mb30 point01">
+                                각 학기가 시작되기 직전에 봄 또는 가을 학기에 새로 온 모든 신입생을 위한 오리엔테이션 세션이 있습니다. 오리엔테이션은 다음 주제를 다룹니다.
+                            </p>
+                            <div class="desc">
+                                <ul class="dotList01">
+                                    <li>서울시립대학교 소개</li>
+                                    <li>학사 일정</li>
+                                    <li>학업 규정</li>
+                                    <li>수업 일정 및 교실</li>
+                                    <li>UOS 포털 시스템</li>
+                                    <li>UOS 교사</li>
+                                    <li>KLCP의 한국어 수업</li>
+                                    <li>롯데호텔서울 글로벌 인턴십 프로그램</li>
+                                    <li>캠퍼스 내 은행 계좌 개설</li>
+                                    <li>일반 정보; 캠퍼스 라이프 & 한국 생활</li>
+                                    <li>외국인 등록 신청</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h5 class="sub-tit">캠퍼스 내 숙소</h5>
+                        <div class="ind-box">
+                            <div class="btn-wrap">
+                                <a href="web/koia/contents/OIAKR_Studyat_01_04" target="_blank" title="새창열림" class="btn arrwType"><span>기숙사</span></a>
+                            </div>
+                        </div>
+                        <h5 class="sub-tit">한국 도착 후 외국인 등록</h5>
+                        <div class="ind-box">
+                            <p class="point01">
+                                한국에 90일 이상 체류할 계획이 있는 모든 외국인은 서울 출입국관리사무소(종로구 경운동 89-4, 전화: 732-6214, 6215)에 신고하고 도착일로부터 90일 이내에 외국인등록증(외국인등록증)을 등록해야 합니다. 외국인등록증을 신청하려면 장기 비자가 필요합니다.<br/>
+                                신규 교환학생 오리엔테이션에서 외국인 등록을 완료하는 데 필요한 모든 서류를 제출하게 됩니다. 서류는 아래와 같습니다.
+                            </p>
+                            <ul class="point01 mt20 mb20">
+                                <li class="mb5">1. 외국인 등록 신청서 (양식은 OT에서 제공)</li>
+                                <li class="mb5">2. 여권</li>
+                                <li class="mb5">3. 출석 증명서: 학생 서비스 센터에서 발급 가능</li>
+                                <li class="mb5">4. 최근 여권 크기 컬러 사진 2장: 3cm x 4cm</li>
+                                <li class="mb5">5. 신청 수수료: 30,000원</li>
+                            </ul>
+                            <div class="point01">
+                                이민국에서 신청을 처리하는 데 약 7영업일이 걸립니다. 신청자는 이 기간 동안 이민국에 여권을 맡겨야 하며, 신청이 완료되면 이민국에서 반환해 드립니다. 외국인 등록증이 분실, 도난, 손상 또는 파기된 경우, 또는 신청자가 카드의 정보를 변경해야 하거나 카드에 추가 정보나 변경을 위한 공간이 부족한 경우, 신청자는 서울 이민국을 방문하여 14일 이내에 재발급 또는 카드 변경을 신청해야 합니다. 외국인은 항상 외국인 등록증이나 여권을 휴대해야 합니다.
+
+                            </div>
+                            <p class="point01 mt10">※ 자세한 내용은 출입국관리사무소 홈페이지(<a href="http://www.immigration.go.kr/HP/IMM80/index.do" target="_blank" title="새창열림" class="link-txt">http://www.immigration.go.kr/HP/IMM80/index.do</a>)에서 확인하시기 바랍니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

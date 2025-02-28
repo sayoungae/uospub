@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>국제처 소개</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../static/css/common.css">
+    <link rel="stylesheet" href="../../static/css/swiper.css">
+
+
+    <!-- JS -->
+    <script src="../../static/js/jquery-3.7.1.js"></script>
+    <script src="../../static/js/common.js"></script>
+    <script src="../../static/js/swiper-bundle.min.js"></script>
+    <script src="../../static/js/main.js"></script>
+
+    <script>
+        // header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+       
+    </script>
+    <script>
+        $(function(){
+            const houseSlide = new Swiper('.housing-slide', {
+                loop: true,
+                speed: 800,
+                navigation: {
+                    prevEl: '.house_prev',
+                    nextEl: '.house_next',
+                },
+            });
+        })
+        
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <div class="sub-tit-wrap"><h3 class="pg-tit">1depth</h3></div>
+            <div id="snb-wrap"></div>
+            <div class="wid">
+                <div class="content-area">
+                    <div id="contents">
+                        <h4 class="conts-tit2">기숙사</h4>
+                        <!-- tab -->
+                        <div class="tab-area layer">
+                            <!-- tab list -->
+                            <div class="tab">
+                                <ul role="tablist">
+                                    <li id="tab_house_01" role="tab" aria-selected="true" aria-controls="panel_house_01" class="active">
+                                        <button type="button" class="btn-tab">주요사항</button>
+                                    </li>
+                                    <li id="tab_house_02" role="tab" aria-selected="false" aria-controls="panel_house_02">
+                                        <button type="button" class="btn-tab">시설현황</button>
+                                    </li>
+                                    <li id="tab_house_03" role="tab" aria-selected="false" aria-controls="panel_house_03">
+                                        <button type="button" class="btn-tab">시설사진</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- //tab list -->
+                            <!-- tab contents -->
+                            <div class="tab-conts-wrap">
+                                <div id="panel_house_01" role="tabpanel" aria-labelledby="tab_house_01" class="tab-conts active">
+                                    <h5 class="sub-tit">중요 참고사항</h5>
+                                    <div class="ind-box">
+                                        <p class="sub-tit2">기숙사보장</p>
+                                        <div class="desc">
+                                            <ul class="dotList01">
+                                                <li>UOS는 UOS 학생들에게 캠퍼스 내 기숙사을 보장하는 대학의 교환 학생에게만 캠퍼스 내 기숙사을 보장합니다.</li>
+                                            </ul>
+                                        </div>
+                                        <p class="sub-tit2">숙소 이용 가능성</p>
+                                        <div class="desc">
+                                            <ul class="dotList01">
+                                                <li>기숙사 방이 부족하기 때문에 UOS는 모든 파트너 대학에 캠퍼스 내 숙소를 보장할 수 없습니다. UOS 온라인 신청서를 작성하기 전에 홈 대학 코디네이터에게 숙소 옵션을 확인하세요.</li>
+                                            </ul>
+                                        </div>
+                                        <p class="sub-tit2">기숙사 배정 공지</p>
+                                        <div class="desc">
+                                            <ul class="dotList01">
+                                                <li>기숙사 배정 결과는 학기 시작 1~2개월 전 기숙사 사무실에서 확인 후 공지됩니다.</li>
+                                            </ul>
+                                        </div>
+                                        <p class="sub-tit2">제출 필수 서류</p>
+                                        <div class="desc">
+                                            <ul class="dotList01">
+                                                <li>건강 증명서 (흉부 X-선 검사 결과 또는 결핵 검사 결과)</li>
+                                                <li>MMR(홍역, 이하선염, 풍진) 증명서 <span class="point">* MMR 백신 2회 전체 시리즈</li>
+                                            </ul>
+                                            <div class="btn-wrap">
+                                                <a href="#none" class="btn dwType"><span>건강증명서양식다운로드</span></a>
+                                            </div>
+                                        </div>
+                                        <p class="sub-tit2">방학 중 연장</p>
+                                        <div class="desc">
+                                            <ul class="dotList01">
+                                                <li>방학 중 연장이 가능합니다. 자세한 내용은 학기가 끝나기 직전에 UOS OIA에서 발표합니다.</li>
+                                            </ul>
+                                        </div>
+                                        <p class="sub-tit2">기숙사비 (2024년 기준)</p>
+                                        <div class="desc">
+                                            <ul class="dotList01">
+                                                <li>
+                                                    <p>정규학기 (약 4개월) 학비</p>
+                                                    <ul class="dotList03 mt10">
+                                                        <li>International House(1인실) : 1,100,000원(학비 1,000,000원 ​​+ 보증금 100,000원)</li>
+                                                        <li>Residence Hall(2인실) : 796,000원(학비 696,000원 ​​+ 보증금 100,000원)</li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <p>방학 기간 (약 2개월) 비용</p>
+                                                    <ul class="dotList03 mt10">
+                                                        <li>International House(1인실) : 500,000원</li>
+                                                        <li>Residence Hall(2인실) : 348,000원</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="panel_house_02" role="tabpanel" aria-labelledby="tab_house_02" class="tab-conts">
+                                    <h5 class="sub-tit">기숙사객실유형</h5>
+                                    <div class="ind-box">
+                                        <p class="sub-tit2">생활관 학생숙소</p>
+                                        <div class="desc">
+                                            <ul class="dotList01">
+                                                <li>
+                                                    각 2인실, 7개 총 15개 객실 : 2인실 1실, 복도에 잇는 공공화장실 / 샤워실 이용
+                                                    <p class="mt20"><img src="../../static/images/roomtype.png" alt=""></p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <p class="sub-tit2">인터내셔널 하우스의 객실 유형</p>
+                                        <div class="desc">
+                                            <ul class="dotList01">
+                                                <li>각 유닛은 2개의 객실 / 3개의 객실 / 4개의 객실 / 5개의 객실로 구성되어 있으며, 1인이 거주 가능합니다.</li>
+                                                <li>
+                                                    집 안에 화장실 / 샤워실이 있으며, 하우스메이트들과 공유합니다.
+                                                    <p class="mt20"><img src="../../static/images/afArrival2_02.jpg" alt=""></p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <p class="sub-tit2">비고</p>
+                                        <div class="desc">
+                                            <ul class="dotList01">
+                                                <li>두 건물 모두 남녀 구분되어 있습니다.</li>
+                                                <li>배정은 무자위로 진행됩니다.</li>
+                                                <li>수수료는 UOS에 도착 시 지불해야 합니다. 기숙사 사무실에서 체크인 시 학생들에게 청구서를 주므로 나중에 납부 기한까지 지불해야 합니다.</li>
+                                                <li>보증금은 시설 사용료를 공제한 후 환불됩니다.</li>
+                                            </ul>
+                                        </div>
+                                        <p class="sub-tit2">신청방법</p>
+                                        <div class="desc">
+                                            <ul class="dotList01">
+                                                <li>정규 학기의 경우, 학생은 UOS 온라인 신청 시스템을 통해 신청해야 합니다.</li>
+                                            </ul>
+                                        </div>
+                                        <p class="sub-tit2">UOS기숙사 가이드북</p>
+                                        <div class="desc">
+                                            <div class="line-box">
+                                                <div class="btn-wrap">
+                                                    <a href="#none" target="_blank" title="새창열림" class="btn dwType"><span>영어 | English</span></a>
+                                                    <a href="#none" target="_blank" title="새창열림" class="btn dwType"><span>한국어 | Korean</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="panel_house_03" role="tabpanel" aria-labelledby="tab_house_03" class="tab-conts">
+                                    <h5 class="sub-tit">UOS 기숙사시설사진</h5>
+                                    <span class="fz14 point">※ 아래 정보는 2023 years 10월 11일 기준입니다.</span>
+                                    <div class="swiper housing-slide">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <p class="imgs"><img src="../../static/images/dorm01.jpg" alt=""></p>
+                                                <p>기숙사 방</p>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p class="imgs"><img src="../../static/images/dorm02.jpg" alt=""></p>
+                                                <p>복도</p>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p class="imgs"><img src="../../static/images/dorm03.jpg" alt=""></p>
+                                                <p>인터내셔널 하우스 룸</p>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p class="imgs"><img src="../../static/images/dorm04.jpg" alt=""></p>
+                                                <p>활동실</p>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p class="imgs"><img src="../../static/images/dorm05.jpg" alt=""></p>
+                                                <p>체육관</p>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p class="imgs"><img src="../../static/images/dorm06.jpg" alt=""></p>
+                                                <p>편의점</p>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p class="imgs"><img src="../../static/images/dorm07.jpg" alt=""></p>
+                                                <p>건강실</p>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p class="imgs"><img src="../../static/images/dorm08.jpg" alt=""></p>
+                                                <p>배달 부스</p>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p class="imgs"><img src="../../static/images/dorm09.jpg" alt=""></p>
+                                                <p>세탁실</p>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p class="imgs"><img src="../../static/images/dorm10.jpg" alt=""></p>
+                                                <p>공용 주방</p>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p class="imgs"><img src="../../static/images/dorm11.jpg" alt=""></p>
+                                                <p>라운지</p>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p class="imgs"><img src="../../static/images/dorm12.jpg" alt=""></p>
+                                                <p>흡연실</p>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p class="imgs"><img src="../../static/images/dorm13.jpg" alt=""></p>
+                                                <p>기숙사 정원</p>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="house_prev"><span class="blind">이전 슬라이드</span></button>
+                                        <button type="button" class="house_next"><span class="blind">다음 슬라이드</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //tab contents -->
+                        </div>
+                        <!-- tab -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

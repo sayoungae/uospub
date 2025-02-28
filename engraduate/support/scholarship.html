@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일반대학원 영문</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/swiper.css">
+
+
+    <!-- JS -->
+    <script src="../static/js/jquery-3.7.1.js"></script>
+    <script src="../static/js/swiper-bundle.min.js"></script>
+    <script src="../static/js/common.js"></script>
+    <!-- <script src="../static/js/main.js"></script> -->
+    <script src="../static/js/sub.js"></script>
+
+
+    <script>
+        //header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+       
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <!-- sub-banner -->
+            <div class="sub-banner sub4">
+                <div class="inner">
+                    <div class="ban-tit">University of Seoul Global Top Brand</div>
+                    <ul class="line-map">
+                        <li><img src="../static/images/home_ic.png" alt="home"></li>
+                        <li>Research</li>
+                        <li>Research Centers and Laboratores</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content">
+                <div class="inner clearfix">
+                    <!-- // sub-banner -->
+                    <!-- snb -->
+                    <div id="snb-wrap">
+                    </div>
+                    <!-- // snb -->
+                    <!-- sub content -->
+                    <div class="sub-content" id="sub-content">
+                        <div class="sub-tit-box">
+                            <h3 class="subTit01">Scholarships & Student Loans</h3>
+                            <ul class="stp-bt">
+                                <li><a href="" class="print-ic"><span class="blind">인쇄</span></a></li>
+                                <li><a href="" class="share-ic"><span class="blind">공유 </span></a></li>
+                            </ul>
+                        </div>
+                        <!-- 본문 -->
+                        <div class="txt-box">
+                            <div class="in">
+                                <p>
+                                    Graduate students can receive internal scholarships, such as for exemplary students and research studies, external scholarships provided by external scholarship foundations, and student loans through the Korea Student Aid Foundation.
+                                </p>
+                            </div>
+                        </div>
+                        <h4 class="subTit03">Internal Scholarships</h4>
+                        <div class="pl5">
+                            <h5 class="subTit04">President’s scholarship</h5>
+                            <ul class="dot-list02">
+                                <li>Eligibility : Students recommended by the Dean of Student Affairs and the Dean of Graduate School for special reasons</li>
+                                <li>Benefits : Full tuition (including admission fee for new students)</li>
+                                <li>Application : No separate application; recommended by the Dean of Student Affairs and the Dean of Graduate School</li>
+                            </ul>
+                            <h5 class="subTit04">Class support scholarship</h5>
+                            <ul class="dot-list02">
+                                <li>Eligibility : Students recommended by the head professor to support professors’ classes and related tasks, meeting the criteria set by the scholarship committee</li>
+                                <li>Benefits : Full tuition (type A); half tuition (type B); fixed amount (type G)</li>
+                                <li>Application : Submit scholarship application to department office during application period</li>
+                                <li>Required documents : Scholarship application form and proof of full-time student</li>
+                                <li>Eligibility : New students or current students who completed 6 or more credits in the previous semester (must be full-time students)</li>
+                            </ul>
+                            <h5 class="subTit04">Research studies scholarship</h5>
+                            <ul class="dot-list02">
+                                <li>Eligibility : Students recommended by the head professor to support professors’ research and related tasks, meeting the criteria set by the scholarship committee</li>
+                                <li>Benefits : Full tuition (type A); half tuition (type B); fixed amount (type G)</li>
+                                <li>Application : Submit scholarship application to department office during application period</li>
+                                <li>Required documents : Scholarship application form and proof of full-time student</li>
+                                <li>Eligibility : New students or current students who completed 6 or more credits in the previous semester (must be full-time students)</li>
+                            </ul>
+                            <h5 class="subTit04">Combined Bachelor’s/Master’s scholarship</h5>
+                            <ul class="dot-list02">
+                                <li>Eligibility : Students admitted to the graduate school through the combined program, recommended by the head professor based on grades and other factors</li>
+                                <li>Benefits : Fixed amount for 3 semesters</li>
+                                <li>Application : No separate application; recommended by the head professor</li>
+                                <li>Required documents : None</li>
+                                <li>Eligibility : New students or current students admitted through the combined Bachelor’s/Master’s program (must be full-time students)</li>
+                            </ul>
+                            <h5 class="subTit04">Dean’s scholarship</h5>
+                            <ul class="dot-list02">
+                                <li>Eligibility : Students recommended by the Dean of Graduate School for special reasons within the quota set by the scholarship committee</li>
+                                <li>
+                                    Benefits : Full tuition (including admission fee for new students) or half tuition
+                                    <ul>
+                                        <li>Recommendations accepted for 1 full scholarship or 2 half scholarships (within the allocated quota)</li>
+                                    </ul>
+                                </li>
+                                <li>Eligibility : New students or current students (must be full-time students)</li>
+                                <li>Application : No separate application; recommended by the Dean of Graduate School</li>
+                            </ul>
+                            <h5 class="subTit04">Teaching assistant scholarship</h5>
+                            <ul class="dot-list02">
+                                <li>Eligibility : Students supporting professors’ teaching activities (* certain number of doctoral students)</li>
+                                <li>Benefits : Full tuition (including admission fee for new students)</li>
+                                <li>Application : Submit scholarship application and proof of full-time student to department office during application period (no online application)</li>
+                                <li>Required documents : Scholarship application form, activity plan, and proof of full-time student</li>
+                                <li>Eligibility : New students or doctoral students who completed 6 or more credits in the previous semester (must be full-time students)</li>
+                            </ul>
+                            <h5 class="subTit04">International student scholarship</h5>
+                            <ul class="dot-list02">
+                                <li>Eligibility : A certain number of students admitted through international student admission</li>
+                                <li>Benefits : Full tuition (including admission fee for new students) or half tuition</li>
+                            </ul>
+                            <h5 class="subTit04">Exchange student scholarship</h5>
+                            <ul class="dot-list02">
+                                <li>Eligibility : Exchange students studying under agreements with foreign universities</li>
+                                <li>Benefits : Fixed amount</li>
+                            </ul>
+                            <h5 class="subTit04">International summer school scholarship</h5>
+                            <ul class="dot-list02">
+                                <li>Eligibility : Students enrolled in the international summer school program (international and UOS students)</li>
+                                <li>Benefits : Fixed amount</li>
+                            </ul>
+                            <h5 class="subTit04">Study abroad scholarship</h5>
+                            <ul class="dot-list02">
+                                <li>Eligibility : Students selected by the university for overseas study</li>
+                                <li>Benefits : Fixed amount</li>
+                            </ul>
+                            <h5 class="subTit04">Research fund scholarship</h5>
+                            <ul class="dot-list02">
+                                <li>Eligibility : Students selected by the university for overseas study</li>
+                                <li>Benefits : Fixed amount</li>
+                            </ul>
+                            <p class="point pl10">※ Graduate School’s general principles for scholarship payment</p>
+                            <ul class="dot-list02">
+                                <li>Scholarship applications for graduate students are limited to full-time new students or full-time students who have taken 6 or more credits in the previous semester. However, the President’s Scholarship and the Dean’s Scholarship are possible even for those who have not completed 6 credits in the previous semester.</li>
+                                <li>Students whose research funding amount for the previous half-year exceeds the maximum allowable amount of external personnel expenses for 6 months for master’s and doctorate’s students as stipulated in Article 12, Paragraph 5 of the National R&D Project Management Regulations are excluded from scholarship selection.</li>
+                            </ul>
+                        </div>
+                        <!-- 본문 -->
+                    </div>
+                    <!-- sub content -->
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

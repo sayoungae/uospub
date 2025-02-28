@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일반대학원 영문</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/swiper.css">
+
+
+    <!-- JS -->
+    <script src="../static/js/jquery-3.7.1.js"></script>
+    <script src="../static/js/swiper-bundle.min.js"></script>
+    <script src="../static/js/common.js"></script>
+    <script src="../static/js/main.js"></script>
+    <script src="../static/js/sub.js"></script>
+
+
+    <script>
+        //header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <!-- sub-banner -->
+            <div class="sub-banner sub1">
+                <div class="inner">
+                    <div class="ban-tit">University of Seoul Global Top Brand</div>
+                    <ul class="line-map">
+                        <li><img src="../static/images/home_ic.png" alt="home"></li>
+                        <li>dept</li>
+                        <li>dept Centers and Laboratores</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content">
+                <div class="inner clearfix">
+                    <!-- // sub-banner -->
+                    <!-- snb -->
+                    <div id="snb-wrap">
+                    </div>
+                    <!-- // snb -->
+                    <!-- sub content -->
+                    <div class="sub-content" id="sub-content">
+                        <div class="sub-tit-box">
+                            <h3 class="subTit01">건축공학과</h3>
+                            <ul class="stp-bt">
+                                <li><a href="" class="print-ic"><span class="blind">인쇄</span></a></li>
+                                <li><a href="" class="share-ic"><span class="blind">공유 </span></a></li>
+                            </ul>
+                        </div>
+                        <!-- 본문 -->
+                        <!-- tab -->
+                        <div class="tab-area layer">
+                            <!-- tab list -->
+                            <div class="tab">
+                                <ul role="tablist">
+                                    <li id="tab_dept_01" role="tab" aria-selected="true" aria-controls="panel_dept_01"
+                                        class="active">
+                                        <button type="button" class="btn-tab">Departments</button>
+                                    </li>
+                                    <li id="tab_dept_02" role="tab" aria-selected="false" aria-controls="panel_dept_02">
+                                        <button type="button" class="btn-tab">Admission</button>
+                                    </li>
+                                    <li id="tab_dept_03" role="tab" aria-selected="false" aria-controls="panel_dept_03">
+                                        <button type="button" class="btn-tab">Assistance, etc</button>
+                                    </li>
+                                    <li id="tab_dept_04" role="tab" aria-selected="false" aria-controls="panel_dept_04">
+                                        <button type="button" class="btn-tab">교수 소개</button>
+                                    </li>
+                                    <li id="tab_dept_05" role="tab" aria-selected="false" aria-controls="panel_dept_05">
+                                        <button type="button" class="btn-tab">연구실 소개</button>
+                                    </li>
+                                    <li id="tab_dept_06" role="tab" aria-selected="false" aria-controls="panel_dept_06">
+                                        <button type="button" class="btn-tab">대학원 공지사항</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- //tab list -->
+                            <!-- tab contents -->
+                            <div class="tab-conts-wrap">
+                                <div id="panel_dept_01" role="tabpanel" aria-labelledby="tab_dept_01"
+                                    class="tab-conts active">
+                                    <div class="dept-link-list">
+                                        <a href="https://engineering.uos.ac.kr/engineering/index.do?cate_id2=000010382&identified=anonymous&" target="_blank" title="opens in a new tab"
+                                            class="icn1"><span>Homepage</span></a>
+                                        <a href="#none" target="_blank" title="opens in a new tab"
+                                            class="icn2"><span>Faculty</span></a>
+                                        <a href="https://www.uos.ac.kr/kor/popup/html/auos/prospectus/2022/prospectus.do?identified=anonymous&" target="_blank" title="opens in a new tab"
+                                            class="icn3"><span>Curriculum</span></a>
+                                    </div>
+                                    <h4 class="subTit04">Educational objectives</h4>
+                                    <div class="table-wrap">
+                                        <table class="type3">
+                                            <colgroup>
+                                                <col width="20%">
+                                                <col width="80%">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th>Core objectives</th>
+                                                    <td>
+                                                        <ul>
+                                                            <li>1. 구조, 건설관리 및 시공/재료, 환경 및 설비 등의 전공분야에서 교수와 학생의 깊이 있는 연구를 통하여 질적으로 건축 본질에 대한 문제해결에 접근하고 이를 체계적으로 습득함으로써, 건축분야의 학문적 발전에 노력한다. </li>
+                                                            <li> 2. 건축의 전문적이며 세분화된 분야를 연구함에 있어, 이론적 깊이를 추구함과 동시에 습득한 지식을 건축실무에 응용할 수 있는 능력과 현실적 상황에 적응 할 수 있는 사고력 배양에 집중하여 연구하며, 궁극적으로 우리나라 건축학계와 실무분야, 더 나아가 건전한 사회 환경을 조성할 수 있는 인력 양성을 목적으로 둔다.</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Detailed objectives</th>
+                                                    <td>
+                                                        <ul>
+                                                            <li>
+                                                                <p>1. 연구의 질적 향상 및 체계적 습득을 통해 전문 기술자로서의 능력 함양</p>
+                                                                <ul class="dot-list03">
+                                                                    <li>1-1 ERC, BK21, NRL 등 국가지원 사업 참여를 통한 연구의 활성화</li>
+                                                                    <li>1-2 자신의 세부 전문 분야에서 독자적인 연구 활동을 수행할 수 있는 역량 있는 기술자 양성</li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <p>2. 전문적이고 세분화된 분야의 연구 및 건설사업 전반에 대한 통합적인 연구를 통해 습득한 지식을 건축실무에 응용할 수 있는 능력 및 현실적 상황에 적응 할 수 있는 사고력 배양</p>
+                                                                <ul class="dot-list03">
+                                                                    <li>2-1 실무에 필요한 교과과정의 운용을 통한 실무 적응능력 함양</li>
+                                                                    <li>2-2 공학적인 사고와 문제를 해결할 수 있는 공학도의 사회에서의 인정도 함양 3. 실무분야 및 건전한 사회 환경 조성에 힘쓸 수 있는 인력 양성</li>
+                                                                    <li>2-3 건설부문의 현실을 인식하고 해결 방안을 모색할 수 있는 전문적인 건설 기술자 양성</li>
+                                                                    <li>2-4 건설관련 요소기술 및 대형 복합 과제를 발굴, 수행할 수 있는 연구자로서의 역량 함양</li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <p>3. 세계적 대학으로의 비상을 위한 학술교류 확대</p>
+                                                                <ul class="dot-list03">
+                                                                    <li>3-1 국제 학술 교류 및 외국대학과의 공동연구 활성화</li>
+                                                                    <li>3-2 교환교수 초빙 및 교환학생의 교류를 통한 국제적 수준의 기술자 양성</li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Research areas</th>
+                                                    <td>
+                                                        구조해석, 철골·합성구조, 철근콘크리트구조, 건축설비, 건축환경, 건설사업관리, 건축시공
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <h4 class=" subTit04">Information</h4>
+                                    <div class="table-wrap">
+                                        <ul class="dept-info">
+                                            <li>
+                                                <div>Head professor</div>
+                                                <div>강동화</div>
+                                            </li>
+                                            <li>
+                                                <div>TEL</div>
+                                                <div>+82-2-6490-2766</div>
+                                            </li>
+                                            <li>
+                                                <div>E-mail</div>
+                                                <div></div>
+                                            </li>
+                                            <li>
+                                                <div>Office</div>
+                                                <div>건설공학관 4층 401호</div>
+                                            </li>
+                                            <li>
+                                                <div>TEL</div>
+                                                <div>+82-2-6490-2753</div>
+                                            </li>
+                                            <li>
+                                                <div>FAX</div>
+                                                <div>+82-2-6490-2749</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div id="panel_dept_02" role="tabpanel" aria-labelledby="tab_dept_02"
+                                    class="tab-conts">
+                                    <div class="dept-link-list">
+                                        <a href="https://graduate.uos.ac.kr/graduateNew/html/admission/general/regular.do?menuid=3000002001001000000&identified=anonymous&" target="_blank" title="opens in a new tab"
+                                            class="icn4"><span>Recruitment guidelines</span></a>
+                                        <a href="https://rule.uos.ac.kr/lmxsrv/main/main.srv" target="_blank" title="opens in a new tab"
+                                            class="icn5"><span>Operating regulations</span></a>
+                                    </div>
+                                    <h4 class="subTit04">General admission degree programs</h4>
+                                    <div class="table-wrap">
+                                        <table class="type3">
+                                            <colgroup>
+                                                <col width="20%">
+                                                <col width="80%">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th>Master</th>
+                                                    <td>
+                                                        <ul class="dot-list01">
+                                                            <li>
+                                                                국내·외 대학에서 학사학위 취득한 자 또는 현재 등록 학기 종료에 따른 학위취득예정자
+                                                            </li>
+                                                            <li>
+                                                                Individuals recognized as having equivalent or higher academic qualifications under relevant laws
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>석박사통합과정</th>
+                                                    <td>
+                                                        <ul class="dot-list01">
+                                                            <li>
+                                                                국내·외 대학에서 학사학위 취득한 자 또는 현재 등록 학기 종료에 따른 학위취득예정자
+                                                            </li>
+                                                            <li>
+                                                                Individuals recognized as having equivalent or higher academic qualifications under relevant laws
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Doctorate</th>
+                                                    <td>
+                                                        <ul class="dot-list01">
+                                                            <li>
+                                                                국내·외 대학에서 학사학위 취득한 자 또는 현재 등록 학기 종료에 따른 학위취득예정자
+                                                            </li>
+                                                            <li>
+                                                                Individuals recognized as having equivalent or higher academic qualifications under relevant laws
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Eligibility for master's/doctorate's<br/>Support for North Korean defectors</th>
+                                                    <td>
+                                                        <ul class="dot-list01">
+                                                            <li>Individuals qualified to apply for master's or doctorate's program</li>
+                                                            <li>[북한이탈주민의 보호 및 정착지원에 관한 법률]에 의한
+                                                                북한이탈주민으로 등록된 자</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <h4 class="subTit04">Additional eligibility requirements and submission documents</h4>
+                                    <ul class="dot-list02">
+                                        <li>해당 사항 없음</li>
+                                    </ul>
+                                    <h4 class="subTit04">과정별 기본 사항 (2022학년도 입학생 기준)</h4>
+                                    <div class="table-wrap">
+                                        <table class="type1">
+                                            <thead>
+                                                <tr>
+                                                    <th>구분</th>
+                                                    <th>수업연한</th>
+                                                    <th>재학연한</th>
+                                                    <th>수료 후 학위취득연한</th>
+                                                    <th>최저 이수 학점</th>
+                                                    <th>졸업논문</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>석사과정</td>
+                                                    <td rowspan="2">최소 2년</td>
+                                                    <td>3년</td>
+                                                    <td>6년</td>
+                                                    <td>24학점</td>
+                                                    <td>석사학위논문</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>박사과정</td>
+                                                    <td>5년</td>
+                                                    <td>8년</td>
+                                                    <td>36학점</td>
+                                                    <td>박사학위논문</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>석박사통합과정</td>
+                                                    <td>최소 4년</td>
+                                                    <td>8년</td>
+                                                    <td>8년</td>
+                                                    <td>60학점</td>
+                                                    <td>박사학위논문</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <p class="mt10">
+                                            ※ 박사과정 수료 최저이수학점 36학점은 2022학년도 신입생부터 적용
+                                        </p>
+                                        <p class="mt10">
+                                            ※ For other academic information: Refer to relevant items on the Education/Academic Affairs tab of the Graduate School website
+                                        </p>
+                                    </div>
+                                    <h4 class="subTit04">Minimum publication requirements for doctoral dissertation</h4>
+                                    <ul class="dot-list02">
+                                        <li>제1저자 또는 교신저자로서 한국연구재단 등재(후보)지 이상에 논문 2편 이상 게재 실적</li>
+                                        <li>SCI(E) 등재지 이상에 1편 이상 논문 개재 실적</li>
+                                    </ul>
+                                    <h4 class="subTit04">일반대학원 운영 원칙</h4>
+                                    <ul class="dot-list02">
+                                        <li>석사과정 : 직장을 갖고 대학원에 다닐 수 없음(전일제 학생을 원칙으로 함)</li>
+                                    </ul>
+                                </div>
+                                <div id="panel_dept_03" role="tabpanel" aria-labelledby="tab_dept_03" class="tab-conts">
+                                    <h4 class="subTit04">Student activities</h4>
+                                    <div class="table-wrap">
+                                        <table class="type3">
+                                            <colgroup>
+                                                <col width="20%">
+                                                <col width="80%">
+                                            </colgroup>
+                                            <tbody>
+                                            <tr>
+                                                <th>연구사업참여</th>
+                                                <td>
+                                                    <ul class="dot-list01">
+                                                        <li>한국연구재단, 국토교통과학기술진흥원</li>
+                                                    </ul>
+                                                </td>
+                                            </tr><tr>
+                                                <th>학회 및 학술활동</th>
+                                                <td>
+                                                    <ul class="dot-list01">
+                                                        <li>
+                                                            건축구조 : 대한건축학회, 한국지진공학회, 한국콘크리트학회, 한국강구조학회,<br>
+                                                                &nbsp;한국구조물진단유지관리공학회, 한국복합신소재구조학회,<br>    
+                                                            한국전산구조공학회
+                                                        </li>
+                                                        <li>
+                                                            건축환경 : 대한건축학회, 대한설비공학회, 한국건축친환경설비학회,<br>
+                                                                &nbsp;한국소음진동공학회, 한국태양에너지학회
+                                                        </li>
+                                                        <li>
+                                                            건설관리 : 대한건축학회, 한국건설관리학회, 한국건축시공학회
+
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>Research institute</th>
+                                                <td>
+                                                    <ul class="dot-list01">
+                                                        <li>건축구조 : 초고층강합성구조연구실, RC & PSC 연구실, 구조물진동제어연구실</li>
+                                                        <li>건축환경 :,건축음향연구실 , 지속가능 건축환경시스템 연구실, 건물에너지환경연구실</li>
+                                                        <li>건설관리 : 건설경영·정보연구실, 건설경영 및 경제연구실, 스마트건설관리 연구실, 건설관리고도화연구실</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <h4 class="subTit04">Scholarships</h4>
+                                    <ul class="dot-list02">
+                                        <li>박사과정 신입생의 경우 전일제 학생에게는 등록금 전액 지급</li>
+                                        <li> <a href="https://graduate.uos.ac.kr/graduateNew/html/support/scholarship.do?menuid=3000004001001000000"
+                                            class="">Website</a></li>
+                                    </ul>
+                                    <h4 class="subTit04">Career paths after graduation</h4>
+                                    <ul class="dot-list02">
+                                        <li>건설회사, 건축구조설계사무소, 건축설비설계사무소, 건축공학 관련 연구소</li>
+                                        <li>감리회사, CM회사, 부동산 개발회사, 공무원 대한주택공사등 정부투자기관, SH공사 등 지방공사</li>
+                                        <li>전공관련 연구소, 건축공학 관련 엔지니어링 전문회사 등</li>
+                                    </ul>
+                                    <h4 class="subTit04">학과 홍보 사항</h4>
+                                    <ul class="dot-list02">
+                                        <li>대한건축학회 “제6회 우수졸업논문전” 우수논문상 및 장려상 다수 수상</li>
+                                    </ul>
+                                </div>
+                                <div id="panel_dept_04" role="tabpanel" aria-labelledby="tab_dept_04" class="tab-conts">
+                                    <div class="teacher-list">
+                                        <ul>
+                                            <li id="prof47">
+                                                <div class="tc-img">
+                                                    <img src="https://file.uos.ac.kr/upload/hakbu/board/professor/2013/06/2013061209331790048147.jpg" alt="">
+                                                </div>
+                                                <div class="tc-info">
+                                                    <div class="tc-name">
+                                                        <p>Kwon Ki Hyuk</p>
+                                                        <span>Professor</span>
+                                                    </div>
+                                                    <p class="sub_tit">연구분야 : 구조물의 안전성 평가 및 구조해석</p>
+                                                    <ul class="other-info">
+                                                        <li>Construction Engineering Building # 3419</li>
+                                                        <li>+82-2-6490-2758</li>
+                                                        <li><a href="khkwan@uos.ac.kr">khkwan@uos.ac.kr</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li id="prof54">
+                                                <div class="tc-img">
+                                                    <img src="https://file.uos.ac.kr/upload/hakbuUnit/prof//2024/03//202403191258081.jpg" alt="">
+                                                </div>
+                                                <div class="tc-info">
+                                                    <div class="tc-name">
+                                                        <p>Choi Sung-Mo</p>
+                                                        <span>Professor</span>
+                                                    </div>
+                                                    <p class="sub_tit">연구분야 : 건축구조, 강구조 및 합성구조</p>
+                                                    <ul class="other-info">
+                                                        <li>Construction Engineering Building # 3425 </li>
+                                                        <li>+82-2-6490-2759</li>
+                                                        <li><a href="smc@uos.ac.kr">smc@uos.ac.kr</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li id="prof56">
+                                                <div class="tc-img">
+                                                    <img src="https://file.uos.ac.kr/upload/hakbuUnit/prof//2023/06//202306291433571.jpg" alt="">
+                                                </div>
+                                                <div class="tc-info">
+                                                    <div class="tc-name">
+                                                        <p>Koo Kyo-Jin</p>
+                                                        <span>Professor</span>
+                                                    </div>
+                                                    <p class="sub_tit">연구분야 : 건설관리 및 전산</p>
+                                                    <ul class="other-info">
+                                                        <li>Construction Engineering Building # 3513</li>
+                                                        <li>+82-2-6490-2760</li>
+                                                        <li><a href="kook@uos.ac.kr">kook@uos.ac.kr</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li id="prof58">
+                                                <div class="tc-img">
+                                                    <img src="https://file.uos.ac.kr/upload/hakbu/board/professor/2012/02/2012022814085290048158.jpg" alt="">
+                                                </div>
+                                                <div class="tc-info">
+                                                    <div class="tc-name">
+                                                        <p>Kim Myung-Jun</p>
+                                                        <span>Professor</span>
+                                                    </div>
+                                                    <p class="sub_tit">연구분야 : 건축환경(음환경)/건축물 소음진동제어/건축음향</p>
+                                                    <ul class="other-info">
+                                                        <li>Construction Engineering Building #3218</li>
+                                                        <li>+82-2-6490-2761</li>
+                                                        <li><a href="mjunkim@uos.ac.kr">mjunkim@uos.ac.kr</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li id="prof60">
+                                                <div class="tc-img">
+                                                    <img src="https://file.uos.ac.kr/upload/hakbuUnit/prof//2020/08//202008280917561.jpg" alt="">
+                                                </div>
+                                                <div class="tc-info">
+                                                    <div class="tc-name">
+                                                        <p>Kim Kang Su</p>
+                                                        <span>Professor</span>
+                                                    </div>
+                                                    <p class="sub_tit">연구분야 : 건축구조, 철근콘크리트 및 프리스트레스콘크리트 구조</p>
+                                                    <ul class="other-info">
+                                                        <li>Construction Engineering Building #3516</li>
+                                                        <li>+82-2-6490-2762</li>
+                                                        <li><a href="kangkim@uos.ac.kr">kangkim@uos.ac.kr</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li id="prof516">
+                                                <div class="tc-img">
+                                                    <img src="https://file.uos.ac.kr/upload/hakbu/board/professor/2009/03/20090304150823444357_1.jpg" alt="">
+                                                </div>
+                                                <div class="tc-info">
+                                                    <div class="tc-name">
+                                                        <p>Kim Hyung-Joon</p>
+                                                        <span>Professor</span>
+                                                    </div>
+                                                    <p class="sub_tit">연구분야 : 건축 구조 해석/ 면진·제진 구조물 설계</p>
+                                                    <ul class="other-info">
+                                                        <li>Construction Engineering Building #3421</li>
+                                                        <li>+82-2-6490-2763</li>
+                                                        <li><a href="hyungjoonkim@uos.ac.kr">hyungjoonkim@uos.ac.kr</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li id="prof874">
+                                                <div class="tc-img">
+                                                    <img src="https://file.uos.ac.kr/upload/hakbuUnit/prof//2022/10//202210131709291.jpg" alt="">
+                                                </div>
+                                                <div class="tc-info">
+                                                    <div class="tc-name">
+                                                        <p>Han Sangwon</p>
+                                                        <span>Professor</span>
+                                                    </div>
+                                                    <p class="sub_tit">연구분야 : 건설경제, 건설금융/재무, Project Finance, 사업성분석, 자산관리</p>
+                                                    <ul class="other-info">
+                                                        <li>Construction Engineering Building #3514</li>
+                                                        <li>+82-2-6490-2764</li>
+                                                        <li><a href="swhan@uos.ac.kr">swhan@uos.ac.kr</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li id="prof950">
+                                                <div class="tc-img">
+                                                    <img src="https://file.uos.ac.kr/upload/hakbuUnit/prof//2014/03//201403061406371.jpg" alt="">
+                                                </div>
+                                                <div class="tc-info">
+                                                    <div class="tc-name">
+                                                        <p>KANG DONG HWA</p>
+                                                        <span>Professor</span>
+                                                    </div>
+                                                    <p class="sub_tit">연구분야 : 건축환경설비(실내공기환경, 공기조화설비)</p>
+                                                    <ul class="other-info">
+                                                        <li>Construction Engineering Building #3221</li>
+                                                        <li>+82-2-6490-2766</li>
+                                                        <li><a href="@uos.ac.kr">@uos.ac.kr</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            
+                                            <li id="prof1294">
+                                                <div class="tc-img">
+                                                    <img src="https://file.uos.ac.kr/upload/hakbuUnit/prof//2020/09//202009141309141.JPG" alt="">
+                                                </div>
+                                                <div class="tc-info">
+                                                    <div class="tc-name">
+                                                        <p>LEE Sang Hoon</p>
+                                                        <span>Professor</span>
+                                                    </div>
+                                                    <p class="sub_tit">연구분야 : 지능형 빌딩 정보 모델링 및 유지관리 (BIM), 빌딩 정보 네트워크 및 표준화된 정보 교환, 증강현실/가상현실 (AR/VR), 디지털 트윈</p>
+                                                    <ul class="other-info">
+                                                        <li>Construction Engineering Building # 3422</li>
+                                                        <li>+82-2-6490-2767</li>
+                                                        <li><a href="sanghoon.lee@uos.ac.kr">sanghoon.lee@uos.ac.kr</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li id="prof1666">
+                                                <div class="tc-img">
+                                                    <img src="https://file.uos.ac.kr/upload/hakbuUnit/prof//2023/09//202309041736361.jpg" alt="">
+                                                </div>
+                                                <div class="tc-info">
+                                                    <div class="tc-name">
+                                                        <p>Seo Won-kyoung</p>
+                                                        <span>Professor</span>
+                                                    </div>
+                                                    <p class="sub_tit">연구분야 : 건설 계약관리, 건설 클레임 및 분쟁관리, 건설현장 안전관리</p>
+                                                    <ul class="other-info">
+                                                        <li>Construction Engineering Building # 3519</li>
+                                                        <li>+82-2-6490-2768</li>
+                                                        <li><a href="wkseo@uos.ac.kr">wkseo@uos.ac.kr</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li id="prof1756">
+                                                <div class="tc-img">
+                                                    <img src="https://file.uos.ac.kr/upload/hakbuUnit/prof//2024/03//202403071124191.jpg" alt="">
+                                                </div>
+                                                <div class="tc-info">
+                                                    <div class="tc-name">
+                                                        <p>Mun Sunhye</p>
+                                                        <span>Professor</span>
+                                                    </div>
+                                                    <p class="sub_tit">연구분야 : 건축환경(열환경)/건물 에너지/설비 제어/거주자 행태</p>
+                                                    <ul class="other-info">
+                                                        <li>Cheonnong Hall #216</li>
+                                                        <li>+82-2-6490-2769</li>
+                                                        <li><a href="msh@uos.ac.kr">msh@uos.ac.kr</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div id="panel_dept_05" role="tabpanel" aria-labelledby="tab_dept_05" class="tab-conts">
+                                    <div class="table-wrap">
+                                        <table class="type1">
+                                            <caption>건축공학과 연구실 · 실험실</caption>
+                                            <colgroup>
+                                                <col style="width: 15%;">
+                                                <col style="width: 35%;">
+                                                <col style="width: 35%;">
+                                                <col style="width: 15%;">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th rowspan="2">학과</th>
+                                                    <th colspan="3">연구실 · 실험실 </th>
+                                                </tr>
+                                                <tr>
+                                                    <th>국문 명칭</th>
+                                                    <th>영문 명칭</th>
+                                                    <th>홈페이지/소개글</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td rowspan="7" style="text-align:center;">건축공학과</td>
+                                                    <td class="al">구조물 안정성평가 연구실</td>
+                                                    <td class="al">Laboratory of Structural safety estimation</td>
+                                                    <td style="text-align: center;">
+                                                        &nbsp;
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="al lLine">초고층강합성구조 연구실</td>
+                                                    <td class="al">Laboratory of Steel & Composite Structures</td>
+                                                    <td style="text-align: center;">&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="al lLine">건설경영정보 연구실</td>
+                                                    <td class="al">Construction Management & Information Laboratory</td>
+                                                    <td style="text-align: center;">
+                                                        <a href="https://sites.google.com/view/uoscomain?pli=1" class="link-web">
+                                                            <span class="blind">website</span>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="al lLine">건축음향 연구실</td>
+                                                    <td class="al">Laboratory of Architectural Acoustics</td>
+                                                    <td style="text-align: center;">&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="al lLine">철근콘트리트구조 연구실</td>
+                                                    <td class="al">Laboratory of Reinforced Concrete Structures & Prestressed Concrete Structures</td>
+                                                    <td style="text-align: center;">
+                                                        <a href="https://sites.google.com/view/conlabuos/" class="link-web">
+                                                            <span class="blind">website</span>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="al lLine">구조물 진동제어 연구실</td>
+                                                    <td class="al">Laboratory of Building Vibration Control</td>
+                                                    <td style="text-align: center;">&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="al lLine">건설경영 및 경제연구실</td>
+                                                    <td class="al">Construction Management and Economics Laboratory</td>
+                                                    <td style="text-align: center;">&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="al lLine">지속가능 건축환경시스템 연구실</td>
+                                                    <td class="al">Sustainable Building Environment System Lab</td>
+                                                    <td style="text-align: center;">&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="al lLine">스마트건설관리 연구실</td>
+                                                    <td class="al">Smart Construction Engineering & Management Lab</td>
+                                                    <td style="text-align: center;">
+                                                        <a href="https://scem.uos.ac.kr/default/" class="link-web">
+                                                            <span class="blind">website</span>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="al lLine">건설관리고도화연구실</td>
+                                                    <td class="al">Advanced construction & project management Lab</td>
+                                                    <td style="text-align: center;">&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="al lLine">건물에너지환경 연구실</td>
+                                                    <td class="al">Building Energy Environment Laboratory</td>
+                                                    <td style="text-align: center;">&nbsp;</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div id="panel_dept_06" role="tabpanel" aria-labelledby="tab_dept_06" class="tab-conts">
+                                    https://graduate.uos.ac.kr/graduateNew/deptIntro/engineering/korNotice/list.do?list_id=urbansciences07&code=90048&cate_id2=000010385&tab_id=6&identified=anonymous&
+                                </div>
+                            </div>
+                            <!-- //tab contents -->
+                           
+                        </div>
+                        <!-- // tab -->
+                        <!-- 본문 -->
+                        <!-- sub content -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+
+</html>

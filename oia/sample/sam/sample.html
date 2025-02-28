@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>국제처 소개</title>
+     <!-- CSS -->
+    <link rel="stylesheet" href="../../static/css/common.css">
+    <link rel="stylesheet" href="../../static/css/swiper.css">
+    <!-- JS -->
+    <script src="../../static/js/jquery-3.7.1.js"></script>
+    <script src="../../static/js/common.js"></script>
+    <script src="../../static/js/swiper-bundle.min.js"></script>
+    <script src="../../static/js/main.js"></script>
+    <script>
+        // header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+       
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <div class="sub-tit-wrap"><h3 class="pg-tit">서브페이지 타이틀</h3></div>
+            <!-- snb -->
+            <div id="snb-wrap"></div>
+            <!-- // snb -->
+            <div class="wid">
+                <div class="content-area">
+                    <div id="contents">
+                        <!-- tab -->
+                        <div class="tab-area layer">
+                            <!-- tab list -->
+                            <div class="tab">
+                                <ul role="tablist">
+                                    <li id="tab_sample_01" role="tab" aria-selected="true" aria-controls="panel_sample_01" class="active">
+                                        <button type="button" class="btn-tab">회계</button>
+                                    </li>
+                                    <li id="tab_sample_02" role="tab" aria-selected="false" aria-controls="panel_sample_02">
+                                        <button type="button" class="btn-tab">재무</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- //tab list -->
+                            <!-- tab contents -->
+                            <div class="tab-conts-wrap">
+                                <div id="panel_sample_01" role="tabpanel" aria-labelledby="tab_sample_01" class="tab-conts active">
+                                    회계
+                                </div>
+                                <div id="panel_sample_02" role="tabpanel" aria-labelledby="tab_sample_02" class="tab-conts">
+                                    재무
+                                </div>
+                            </div>
+                            <!-- //tab contents -->
+                        </div>
+                        <!-- tab -->
+                        <!-- select tab -->
+                        <div class="select-tabList">
+                            <select id="tab-select" aria-label="Tablist" title="">
+                                <option data-tab="selPan_sample_01" id="sel_sample_01">Tab 1</option>
+                                <option data-tab="selPan_sample_02" id="sel_sample_02">Tab 2</option>
+                                <option data-tab="selPan_sample_03" id="sel_sample_03">Tab 3</option>
+                            </select>
+                        </div>
+                      
+                        <div class="select-tab-conts">
+                            <div id="selPan_sample_01" aria-labelledby="sel_sample_01" class="sel-tab-conts active">
+                                <h2>Tab 1 Content</h2>
+                                <p>This is the content for Tab 1.</p>
+                            </div>
+                            <div id="selPan_sample_02" aria-labelledby="sel_sample_02" class="sel-tab-conts">
+                                <h2>Tab 2 Content</h2>
+                                <p>This is the content for Tab 2.</p>
+                            </div>
+                            <div id="selPan_sample_03" aria-labelledby="sel_sample_03" class="sel-tab-conts">
+                                <h2>Tab 3 Content</h2>
+                                <p>This is the content for Tab 3.</p>
+                            </div>
+                        </div>
+                        <!-- //select tab -->
+                        <h4>제목, 텍스트 형태</h4>
+                        <h4 class="sub-tit">적임</h4>
+                        <div class="desc">지원자는 외국 국적을 가져야 합니다.  (국가명은 NIIED에서 발표)</div>
+                        <h4>테이블</h4>
+                        <div class="table-wrap">
+                            <table class="type01">
+                                <caption>학생교환프로그램 학기날짜- 2025학년도, 2025 years 봄학기, 2015 years 가을학기</caption>
+                                <thead>
+                                    <tr>
+                                        <th>2025학년도</th>
+                                        <th>2025 years 봄학기</th>
+                                        <th>2015 years 가을학기</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>오리엔테이션</td>
+                                        <td>2025 years 2월 28일</td>
+                                        <td>2025 years 8월 29일</td>
+                                    </tr>
+                                    <tr>
+                                        <td>수업 시작</td>
+                                        <td>2025 years 3월 4일</td>
+                                        <td>2025 years 9월 1일</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p class="ar pointTxt mt10">- 위 정보는 변경될 수 있으며, 모든 변경 사항은 이에 따라 공지됩니다.</p>
+                            <p class="ar pointTxt">- 모든 학년 일정은 2024년 11월 4일 기준입니다</p>
+                        </div>
+                        <!-- paging -->
+                        <div class="paging">
+                            <a href="?pageIndex=1" class="first" onclick="fnPaging(1);return false;"><img src="../../static/images/paging_ic1.png" alt="처음 페이지"></a><a href="?pageIndex=0" onclick="fnPaging(0);return false;"><img src="../../static/images/paging_ic2.png" alt="이전 페이지 보기"></a><span><a class="on" href="#" onclick="return false;" title="현재페이지">1</a><a href="?pageIndex=2" onclick="fnPaging(2);return false;">2</a><a href="?pageIndex=3" onclick="fnPaging(3);return false;">3</a><a href="?pageIndex=4" onclick="fnPaging(4);return false;">4</a><a href="?pageIndex=5" onclick="fnPaging(5);return false;">5</a></span><a href="?pageIndex=2" onclick="fnPaging(2);return false;"><img src="../../static/images/paging_ic3.png" alt="다음 페이지"></a><a href="?pageIndex=86" class="last" onclick="fnPaging(86);return false;"><img src="../../static/images/paging_ic4.png" alt="마지막 페이지"></a>
+                        </div>
+                        <!-- //paging -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

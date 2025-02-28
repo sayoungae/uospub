@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일반대학원 영문</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/swiper.css">
+
+
+    <!-- JS -->
+    <script src="../static/js/jquery-3.7.1.js"></script>
+    <script src="../static/js/swiper-bundle.min.js"></script>
+    <script src="../static/js/common.js"></script>
+    <script src="../static/js/main.js"></script>
+    <script src="../static/js/sub.js"></script>
+
+
+    <script>
+        //header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+       
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <!-- sub-banner -->
+            <div class="sub-banner sub1">
+                <div class="inner">
+                    <div class="ban-tit">University of Seoul Global Top Brand</div>
+                    <ul class="line-map">
+                        <li><img src="../static/images/home_ic.png" alt="home"></li>
+                        <li>dept</li>
+                        <li>dept Centers and Laboratores</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content">
+                <div class="inner clearfix">
+                    <!-- // sub-banner -->
+                    <!-- snb -->
+                    <div id="snb-wrap">
+                    </div>
+                    <!-- // snb -->
+                    <!-- sub content -->
+                    <div class="sub-content" id="sub-content">
+                        <div class="sub-tit-box">
+                            <h3 class="subTit01">Department of Urban Sociology</h3>
+                            <ul class="stp-bt">
+                                <li><a href="" class="print-ic"><span class="blind">인쇄</span></a></li>
+                                <li><a href="" class="share-ic"><span class="blind">공유 </span></a></li>
+                            </ul>
+                        </div>
+                        <!-- 본문 -->
+                        <!-- tab -->
+                        <div class="tab-area layer">
+                            <!-- tab list -->
+                            <div class="tab">
+                                <ul role="tablist">
+                                    <li id="tab_dept_01" role="tab" aria-selected="true" aria-controls="panel_dept_01" class="active">
+                                        <button type="button" class="btn-tab">Departments</button>
+                                    </li>
+                                    <li id="tab_dept_02" role="tab" aria-selected="false" aria-controls="panel_dept_02">
+                                        <button type="button" class="btn-tab">Admission</button>
+                                    </li>
+                                    <li id="tab_dept_03" role="tab" aria-selected="false" aria-controls="panel_dept_03">
+                                        <button type="button" class="btn-tab">Assistance, etc</button>
+                                    </li>
+                                    <li id="tab_dept_04" role="tab" aria-selected="false" aria-controls="panel_dept_04">
+                                        <button type="button" class="btn-tab">교수소개</button>
+                                    </li>
+                                    <li id="tab_dept_05" role="tab" aria-selected="false" aria-controls="panel_dept_05">
+                                        <button type="button" class="btn-tab">대학원 공지사항</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- //tab list -->
+                            <!-- tab contents -->
+                            <div class="tab-conts-wrap">
+                                <div id="panel_dept_01" role="tabpanel" aria-labelledby="tab_dept_01" class="tab-conts active">
+                                    <div class="dept-link-list">
+                                        <a href="https://liberalarts.uos.ac.kr/liberalarts/main.do?cate_id2=000010068&identified=anonymous&" target="_blank" title="opens in a new tab" class="icn1"><span>Homepage</span></a>
+                                        <a href="profList.html" target="_blank" title="opens in a new tab" class="icn2"><span>Faculty</span></a>
+                                        <a href="https://www.uos.ac.kr/kor/popup/html/auos/prospectus/2022/prospectus.do?identified=anonymous&" target="_blank" title="opens in a new tab" class="icn3"><span>Curriculum</span></a>
+                                    </div>
+                                    <h4 class="subTit04">Educational objectives</h4>
+                                    <div class="table-wrap">
+                                        <table class="type3">
+                                            <colgroup>
+                                                <col width="20%">
+                                                <col width="80%">
+                                            </colgroup>
+                                            <tbody>
+                                            <tr>
+                                                <th>Core objectives</th>
+                                                <td>
+                                                    The urban sociology graduate program aims to cultivate experts in urban cultural services, cultural industries, cultural criticism, cultural planning, and local communities.
+                                                    Based on an interdisciplinary approach to urban society, it constructs a curriculum that integrates theory and practice through social and cultural theory education, field-applied specializations, and cooperation and internship programs with experts and organizations.
+                                                    In particular, it responds to the demand for high-level professionals in the field of urban society by strengthening the ability to independently research and analyze complex urban phenomena based on education in theory and methodology.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>Detailed objectives</th>
+                                                <td>
+                                                    <ul>
+                                                        <li>1. Specialization and concentration of urban society expertise</li>
+                                                        <li>2. Strengthening research and analysis capabilities</li>
+                                                        <li>3. Cultivating practical research skills through field-oriented education</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>Research areas</th>
+                                                <td>
+                                                    Cultural industry field and local community research field
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <h4 class="subTit04">Majors (track)</h4>
+                                    <div class="table-wrap">
+                                        <table class="type3">
+                                            <colgroup>
+                                                <col width="20%">
+                                                <col width="80%">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th>Cultural Industry Specialization</th>
+                                                    <td>
+                                                        Research in the cultural industry field aims to reveal the relationship between the development of cultural industries emerging as future industries and urban change
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Local Community Research</th>
+                                                    <td>
+                                                        Research in the local community research field aims at social scientific analysis of newly emerging urban phenomena due to industrialization and informatization.
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <h4 class="subTit04">Information</h4>
+                                    <div class="table-wrap">
+                                        <ul class="dept-info">
+                                            <li>
+                                                <div>Head professor</div>
+                                                <div>Park Hyo-min</div>
+                                            </li>
+                                            <li>
+                                                <div>TEL</div>
+                                                <div>+82-2-6490-2747</div>
+                                            </li>
+                                            <li>
+                                                <div>E-mail</div>
+                                                <div>hyominp@uos.ac.kr</div>
+                                            </li>
+                                            <li>
+                                                <div>Office</div>
+                                                <div>4F Room 409, 21st Century Building</div>
+                                            </li>
+                                            <li>
+                                                <div>TEL</div>
+                                                <div>+82-2-6490-2730~1</div>
+                                            </li>
+                                            <li>
+                                                <div>FAX</div>
+                                                <div>+82-2-6490-2734</div>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div id="panel_dept_02" role="tabpanel" aria-labelledby="tab_dept_02" class="tab-conts">
+                                    <div class="dept-link-list">
+                                        <a href="../admission/regular.html" target="_blank" title="opens in a new tab" class="icn4"><span>Recruitment guidelines</span></a>
+                                        <a href="https://rule.uos.ac.kr/lmxsrv/main/main.srv" target="_blank" title="opens in a new tab" class="icn5"><span>Operating regulations</span></a>
+                                    </div>
+                                    <h4 class="subTit04">General admission degree programs</h4>
+                                    <div class="table-wrap">
+                                        <table class="type3">
+                                            <colgroup>
+                                                <col width="20%">
+                                                <col width="80%">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th>Master's degree</th>
+                                                    <td >
+                                                        <ul class="dot-list01">
+                                                            <li>Individuals who have obtained a bachelor's degree from domestic or foreign universities or those expected to obtain a degree upon completion of the current registered semester</li>
+                                                            <li>Individuals recognized as having equivalent or higher academic qualifications under relevant laws</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Doctorate's degree</th>
+                                                    <td >
+                                                        <ul class="dot-list01">
+                                                            <li>Individuals who have obtained a bachelor's degree from domestic or foreign universities or those expected to obtain a degree upon completion of the current registered semester</li>
+                                                            <li>Individuals recognized as having equivalent or higher academic qualifications under relevant laws</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Eligibility for master's/doctorate's<br/>Support for North Korean defectors</th>
+                                                    <td >
+                                                        <ul class="dot-list01">
+                                                            <li>Individuals qualified to apply for master's or doctorate's program</li>
+                                                            <li>Individuals registered as North Korean defectors pursuant to the North Korean Defectors Protection and Settlement Support Act</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <h4 class="subTit04">Additional eligibility requirements and submission documents</h4>
+                                    <ul class="dot-list02">
+                                        <li>Not applicable</li>
+                                    </ul>
+                                    <h4 class="subTit04">Program information (for students admitted after 2022)</h4>
+                                    <div class="table-wrap">
+                                        <table class="type1">
+                                            <thead>
+                                                <tr>
+                                                    <th>Category</th>
+                                                    <th>Length of study</th>
+                                                    <th>Basic semester operation</th>
+                                                    <th>Minimum credits required</th>
+                                                    <th>Graduation thesis</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Master</td>
+                                                    <td rowspan="2">2+ years</td>
+                                                    <td rowspan="2">4 semester system</td>
+                                                    <td>24 credits</td>
+                                                    <td>Master's thesis</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Doctorate</td>
+                                                    <td>36 credits</td>
+                                                    <td>Doctoral dissertation</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <p class="point mt10">※ For other academic information: Refer to relevant items on the Education/Academic Affairs tab of the Graduate School website</p>
+                                    </div>
+                                    <h4 class="subTit04">Minimum publication requirements for doctoral dissertation</h4>
+                                    <ul class="dot-list02">
+                                        <li>At least one paper published as first author in a journal listed by the National Research Foundation of Korea</li>
+                                    </ul>
+                                    <h4 class="subTit04">Department regulations - comprehensive examination subjects</h4>
+                                    <ul class="dot-list02">
+                                        <li>3 common courses for master's/doctorate's: 1 course from Theory (Classical Sociological Theory, Modern Sociological Theory), 1 course from Methodology (Social Statistics, Qualitative Methodology), 1 free elective course</li>
+                                        <li>2 additional courses for doctorate's: Literature review format in consultation with advisor</li>
+                                    </ul>
+                                    <h4 class="subTit04">Graduate school operating principles</h4>
+                                    <ul class="dot-list02">
+                                        <li>Full-time priority: Selection of scholarship recipients - Contact the department if there are changes</li>
+                                    </ul>
+                                </div>
+                                <div id="panel_dept_03" role="tabpanel" aria-labelledby="tab_dept_03" class="tab-conts">
+                                    <h4 class="subTit04">Student activities</h4>
+                                    <div class="table-wrap">
+                                        <table class="type3">
+                                            <colgroup>
+                                                <col style="width: 20%">
+                                                <col style="width: 80%">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th>Participation in Research Projects</th>
+                                                    <td>
+                                                        <ul class="dot-list01">
+                                                            <li>Selected as SSK Large-scale Research Center (Glocal Culture and Empathic Society Research Center)</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Academic Society and Scholarly Activities</th>
+                                                    <td>
+                                                        <ul class="dot-list01">
+                                                            <li>2019 Urban Culture & Social Empathy (SSK Research Center) International Conference held</li>
+                                                            <li>2019 International Academic Exchange Event held (2019 UOS-KGU Shuttle Seminar on Urban Culture and Space:  Views from Korea and Japan)</li>
+                                                            <li>2018 Cultural Dynamics of Social Empathy Conference (SSK Research Center) held</li>
+                                                            <li>2018 International Conference on Scene Dynamics and Urban Regeneration held</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Research institute</th>
+                                                    <td>
+                                                        <ul class="dot-list01">
+                                                            <li>Glocal Culture and Empathic Society Research Center</li>
+                                                            <li>Urban Society Research Center</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <h4 class="subTit04">Scholarships</h4>
+                                    <ul class="dot-list02">
+                                        <li>Internal scholarships (Teaching Assistant, Class Support/Research Support Assistant) - Priority given to full-time students</li>
+                                        <li><a href="https://graduate.uos.ac.kr/graduateNew/html/support/scholarship.do?menuid=3000004001001000000" class="link-ty1">Website</a></li>
+                                    </ul>
+                                    <h4 class="subTit04">Career paths after graduation</h4>
+                                    <ul class="dot-list02">
+                                        <li>Social policy and cultural administration experts</li>
+                                        <li>Cultural industry, event planners</li>
+                                        <li>Cultural curators, cultural criticism experts</li>
+                                        <li>Urban experts in overseas regions, local community researchers</li>
+                                        <li>Research statistics survey professionals, research institutes</li>
+                                    </ul>
+                                </div>
+                                <div id="panel_dept_04" role="tabpanel" aria-labelledby="tab_dept_04" class="tab-conts">
+                                    <div class="teacher-list">
+                                        <ul>
+                                            <li id="prof37">
+                                                <div class="tc-img">
+                                                    <img src="//file.uos.ac.kr/upload/hakbuUnit/prof//2022/01//202201061338221.jpg" alt="JANG Won-ho">
+                                                </div>
+                                                <div class="tc-info">
+                                                    <div class="tc-name">
+                                                        <p>JANG Won-Ho</p>
+                                                        <span>Professor</span>
+                                                    </div>
+                                                    <p class="sub_tit">연구분야 : 도시사회학, 정치사회학</p>
+                                                    <ul class="other-info">
+                                                        <li>21 Century Building #624</li>
+                                                        <li>+82-2-6490-2737</li>
+                                                        <li><a href="wjang@uos.ac.kr">wjang@uos.ac.kr</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li id="prof34">
+                                                <div class="tc-img">
+                                                    <img src="//file.uos.ac.kr/upload/hakbu/board/professor/2008/05/20080516202908776031_1.jpg" alt="NAHM Kee-Bom">
+                                                </div>
+                                                <div class="tc-info">
+                                                    <div class="tc-name">
+                                                        <p>NAHM Kee-bom</p>
+                                                        <span>Professor</span>
+                                                    </div>
+                                                    <p class="sub_tit">연구분야 : 도시지리학, 경제지리학, 문화산업론</p>
+                                                    <ul class="other-info">
+                                                        <li> 21 Century Building #625</li>
+                                                        <li>+82-2-6490-2738</li>
+                                                        <li><a href="http://campus.uos.ac.kr/nahm" target="_blank">http://campus.uos.ac.kr/nahm</a></li>
+                                                        <li><a href="nahm@uos.ac.kr">nahm@uos.ac.kr</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li id="prof487">
+                                                <div class="tc-img">
+                                                    <img src="//file.uos.ac.kr/upload/hakbu/board/professor/2009/02/20090210173513927023_1.jpg" alt="서우석">
+                                                </div>
+                                                <div class="tc-info">
+                                                    <div class="tc-name">
+                                                        <p>SEO U-seok</p>
+                                                        <span>Professor</span>
+                                                    </div>
+                                                    <p class="sub_tit">연구분야 : 문화사회학, 종교사회학</p>
+                                                    <ul class="other-info">
+                                                        <li>21 Century Building #614</li>
+                                                        <li>+82-2-6490-2740</li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li id="prof36">
+                                                <div class="tc-img">
+                                                    <img src="//file.uos.ac.kr/upload/hakbuUnit/prof//2021/02//202102221537581.jpg" alt="LEE Yun-Suk">
+                                                </div>
+                                                <div class="tc-info">
+                                                    <div class="tc-name">
+                                                        <p>LEE Yun-suk</p>
+                                                        <span>Professor</span>
+                                                    </div>
+                                                    <p class="sub_tit">연구분야 : 가족사회학, 조사방법론</p>
+                                                    <ul class="other-info">
+                                                        <li>21 Century Building #613</li>
+                                                        <li>+82-2-6490-2739</li>
+                                                        <li><a href="yslee@uos.ac.kr">yslee@uos.ac.kr</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li id="prof35">
+                                                <div class="tc-img">
+                                                    <img src="//file.uos.ac.kr/upload/hakbuUnit/prof//2021/02//202102221522421.jpg" alt="AHN Junehui">
+                                                </div>
+                                                <div class="tc-info">
+                                                    <div class="tc-name">
+                                                        <p>Ahn Junehui</p>
+                                                        <span>Professor</span>
+                                                    </div>
+                                                    <p class="sub_tit">연구분야 : 문화/언어인류학, 아동, 교육</p>
+                                                    <ul class="other-info">
+                                                        <li>21 Century Building #622</li>
+                                                        <li>+82-2-6490-2741</li>
+                                                        <li><a href="https://sites.google.com/view/junehui-ahn" target="_blank">https://sites.google.com/view/junehui-ahn</a></li>
+                                                        <li><a href="jhahn@uos.ac.kr">jhahn@uos.ac.kr</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li id="prof1039">
+                                                <div class="tc-img">
+                                                    <img src="//file.uos.ac.kr/upload/hakbuUnit/prof//2015/08//201508271043351.jpg" alt="Kim Ju yeon">
+                                                </div>
+                                                <div class="tc-info">
+                                                    <div class="tc-name">
+                                                        <p>KIM Ju yeon</p>
+                                                        <span>Professor</span>
+                                                    </div>
+                                                    <p class="sub_tit">연구분야 : 건강, 연결망과 사회적 자본, 노인, 가족, 인구</p>
+                                                    <ul class="other-info">
+                                                        <li> 21 Century Building #623</li>
+                                                        <li>+82-2-6490-2745</li>
+                                                        <li><a href="juykim@uos.ac.kr">juykim@uos.ac.kr</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li id="prof1140">
+                                                <div class="tc-img">
+                                                    <img src="//file.uos.ac.kr/upload/hakbuUnit/prof//2018/03//201803051403371.jpg" alt="KIM, JiYoung">
+                                                </div>
+                                                <div class="tc-info">
+                                                    <div class="tc-name">
+                                                        <p>KIM JiYoung</p>
+                                                        <span>Professor</span>
+                                                    </div>
+                                                    <p class="sub_tit">연구분야 : 종족정체성, 이주/이동, 일본지역연구</p>
+                                                    <ul class="other-info">
+                                                        <li>21 Century Building #627</li>
+                                                        <li>+82-2-6490-2746</li>
+                                                        <li><a href="paul823@uos.ac.kr">paul823@uos.ac.kr</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li id="prof1221">
+                                                <div class="tc-img">
+                                                    <img src="//file.uos.ac.kr/upload/hakbuUnit/prof//2019/08//201908221346151.jpg" alt="Park Hyomin">
+                                                </div>
+                                                <div class="tc-info">
+                                                    <div class="tc-name">
+                                                        <p>Park Hyomin</p>
+                                                        <span>Professor</span>
+                                                    </div>
+                                                    <p class="sub_tit">연구분야 : 사회심리학, 공정성이론, 협력이론</p>
+                                                    <ul class="other-info">
+                                                        <li>21 Century Building #715</li>
+                                                        <li>+82-2-6490-2747</li>
+                                                        <li><a href="hyominp@uos.ac.kr">hyominp@uos.ac.kr</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li id="prof1586">
+                                                <div class="tc-img">
+                                                    <img src="//file.uos.ac.kr/upload/hakbuUnit/prof//2022/09//202209201400271.jpg" alt="SHIN In Cho">
+                                                </div>
+                                                <div class="tc-info">
+                                                    <div class="tc-name">
+                                                        <p>SHIN In Cho</p>
+                                                        <span>Professor</span>
+                                                    </div>
+                                                    <p class="sub_tit">연구분야 : 사회계층론, 교육사회학, 사회통계학</p>
+                                                    <ul class="other-info">
+                                                        <li>21 Century Building #612</li>
+                                                        <li>+82-2-6490-2748</li>
+                                                        <li><a href="incshin@uos.ac.kr">incshin@uos.ac.kr</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div id="panel_dept_05" role="tabpanel" aria-labelledby="tab_dept_05" class="tab-conts">
+
+                                </div>
+                            </div>
+                            <!-- //tab contents -->
+                        </div>
+                        <!-- // tab -->
+                        <!-- 본문 -->
+                    </div>
+                    <!-- sub content -->
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

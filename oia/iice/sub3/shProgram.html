@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../static/css/common.css">
+    <link rel="stylesheet" href="../../static/css/swiper.css">
+
+
+    <!-- JS -->
+    <script src="../../static/js/jquery-3.7.1.js"></script>
+    <script src="../../static/js/common.js"></script>
+    <script src="../../static/js/swiper-bundle.min.js"></script>
+    <script src="../../static/js/main.js"></script>
+
+    <script>
+        // header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+       
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <div class="sub-tit-wrap"><h3 class="pg-tit">Study at UOS</h3></div>
+            <div id="snb-wrap"></div>
+            <div class="wid">
+                <div class="content-area">
+                    <div id="contents">
+                        <h4 class="conts-tit2">About the Program</h4>
+                        <div class="program-intro">
+                            <div class="tit">Why University of Seoul?</div>
+                            <ul class="intro-list">
+                                <li>
+                                    <span>“Study at the heart of Seoul"</span>
+                                    <div>
+                                        Established in 1918, the University of Seoul is widely regarded as one of the top public universities in Korea.
+                                        The university has been a think tank for the Seoul Metropolitan Government, contributing to the development of Korean society through education, training of students, and academic research. With 8 colleges and 9 graduate schools, the University of Seoul offers a variety of courses in a thriving academic atmosphere.
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>About Seoul International Summer School Ⅰ</span>
+                                    <div>
+                                        The Seoul International Summer School Ⅰ (SISS Ⅰ) program at the University of Seoul (UOS) has been providing international students with a unique opportunity to learn about Korean culture and tradition since its establishment in 2000. SISS Ⅰ has been reorganized in 2024, offering customized programs to participants from UOS partner universities and other prestigious universities worldwide.<br/>
+                                        Join us in summer 2025 to experience Korean culture and education at the heart of Seoul.
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="tit2">Program Information</div>
+                            <ul class="intro-list">
+                                <li>
+                                    <span>Program Dates</span>
+                                    <div>
+                                        - July 2nd- July 30th, 2025<br/>
+                                        <p class="point01">* Program Orientation (Zoom) : June 23th, 2025</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>Study Hours / Teaching hours</span>
+                                    <div>
+                                        - Approx,150 study hours in total(2 courses), Actual Teaching hours 45h for a course
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>Language of Instruction</span>
+                                    <div>
+                                        - English
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>Transcript / Credit Transfer</span>
+                                    <div>
+                                        - Upon successful completion of the program, official transcripts will be issued and distributed by late August. The University of Seoul utilizes a credit system that is equivalent to that of the United States.
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="tit2">Culture Activities</div>
+                            <ul class="intro-list">
+                                <li>
+                                    <span>One-day Field Trips</span>
+                                    <div>
+                                        Explore the vibrant city of Seoul with us! Immerse yourself in the rich history and culture of South Korea while experiencing the best of what the city has to offer. Our theme is “Seoul”, after all, because who knows it better than us? We are the University of Seoul!<br/>
+                                        Discover Korea's rich traditions with our engaging cultural experience program! You can choose to learn Taekwondo, where you'll practice basic techniques of this dynamic martial art, or try your hand at mother-of-pearl crafting to create a beautiful mirror. This program offers a unique opportunity to immerse yourself in Korean culture through hands-on activities.<br/>
+                                        Our package includes 1day field trips to ensure you make the most of your stay. Over the weekend, you will also explore Seoul with Korean friends, Peer Advocates, with your team’s own theme.
+                                    </div>
+                                    <p class="point03">※Field Trip Destinations and classes we offer are subject to change.</p>
+                                </li>
+                                <li>
+                                    <span>Peer Advocate Program</span>
+                                    <div>
+                                        Welcome to SISS! We offer a buddy program called "Peer Advocate" for international students. Our Peer Advocates, who are Korean students, help international students adjust to life in Korea. They can even show you around Seoul and help you explore all the city has to offer! Join us today and make the most of your study abroad experience in Korea!
+                                    </div>
+                                    <div class="btn-wrap">
+                                        <a href="/web/koia/file/download/uu/5160425da2164d7c8a28de6bb4a00bef" target="_blank" title="새창열림" class="btn arrwType"><span>2025 SISS I Program Brochure</span></a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>Contact Information</span>
+                                    <div>
+                                        <p>- Seoul International Summer School Team</p>
+                                        <p>- Tel: +82-2-6490-6662</p>
+                                        <p>- E-mail: uossummer@uos.ac.kr</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

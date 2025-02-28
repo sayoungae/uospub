@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../static/css/common.css">
+    <!-- JS -->
+    <script src="../../static/js/jquery-3.7.1.js"></script>
+    <script src="../../static/js/common.js"></script>
+    <script>
+        // header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+       
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <div class="sub-tit-wrap"><h3 class="pg-tit">미션 & 핵심가치</h3></div>
+            <div id="snb-wrap"></div>
+            <div class="wid">
+                <div class="content-area">
+                    <div id="contents">
+                        <!-- tab -->
+                        <div class="tab-area layer">
+                            <!-- tab list -->
+                            <div class="tab">
+                                <ul role="tablist">
+                                    <li id="tab_mission_01" role="tab" aria-selected="true" aria-controls="panel_mission_01" class="active">
+                                        <button type="button" class="btn-tab">미션</button>
+                                    </li>
+                                    <li id="tab_mission_02" role="tab" aria-selected="false" aria-controls="panel_mission_02">
+                                        <button type="button" class="btn-tab">핵심가치</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- //tab list -->
+                            <!-- tab contents -->
+                            <div class="tab-conts-wrap">
+                                <div id="panel_mission_01" role="tabpanel" aria-labelledby="tab_mission_01" class="tab-conts active">
+                                    <h4 class="conts-tit">Mission</h4>
+                                    <div class="conts-tit-desc">Developing and executing a global strategy to advance as a world-class higher education institution, in partnership with Seoul</div>
+                                    <div class="mis-imgs"><img src="../../static/images/mission_img01.png" alt=""></div>
+                                </div>
+                                <div id="panel_mission_02" role="tabpanel" aria-labelledby="tab_mission_02" class="tab-conts">
+                                    <h4 class="conts-tit">Global <span>3C</span></h4>
+                                    <div class="mis-conts">
+                                        <ul class="clearfix">
+                                            <li class="li1">
+                                                <div class="box">
+                                                    <div class="tit"><span>Global<br/>Cooperation</span></div>
+                                                    <div class="desc">
+                                                        <div class="d-tit">국제협력</div>
+                                                        <div class="d-sub">Global Cooperation</div>
+                                                        <div class="d-txt">Strengthening global networks with world-class institutions, expanding joint research initiatives, and amplifying international influence.</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="li2">
+                                                <div class="box">
+                                                    <div class="tit"><span>Global<br/>Citizen</span></div>
+                                                    <div class="desc">
+                                                        <div class="d-tit">국제인재</div>
+                                                        <div class="d-sub">Global Citizen</div>
+                                                        <div class="d-txt"> Cultivating future global citizens through active participation in exchange programs and international initiatives.</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="li3">
+                                                <div class="box">
+                                                    <div class="tit"><span>Global<br/>Capability</span></div>
+                                                    <div class="desc">
+                                                        <div class="d-tit">국제역량</div>
+                                                        <div class="d-sub">Global Capability</div>
+                                                        <div class="d-txt">Enhancing the university’s global competitiveness by elevating its international rankings and expanding its global presence.</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //tab contents -->
+                        </div>
+                        <!-- tab -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>
