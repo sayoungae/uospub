@@ -79,7 +79,7 @@
     color: #4366c1;
     border: 1px solid #4366c1;
     left: 0;
-    top: 4px;
+    top: 1px;
     width: 16px;
     height: 16px;
     line-height: 16px;
@@ -169,7 +169,7 @@
 .stp-bt > li > a.share-ic{background-image: url("../images/share_ic.png");}
 .stp-bt > li > a:hover,.stp-bt > li > a:focus{border-color: #353C47;}
 
-.info-box{padding: 5px 20px 5px 40px;border-radius: 10px; border: 1px solid #dbdef1;font-size: 14px;margin-top: 20px; font-weight: 500;    background: #f6f6f6 url("../images/icon_info.png") no-repeat 10px center; color:#555;}
+.info-box{padding: 10px 20px 10px 40px;border-radius: 10px; border: 1px solid #dbdef1;font-size: 14px;margin-top: 20px; font-weight: 500;    background: #f6f6f6 url("../images/icon_info.png") no-repeat 10px center; color:#555;}
 /* -- sub-content */
 
 /* tab layer */
@@ -351,7 +351,7 @@
 .btn{display: inline-block; text-align: center; border-radius: 6px; font-weight: 500; background-color: #fff; color:#0e2a67; padding: 10px 30px; border:1px solid #BCBECB;}
 .btn.smBtn{min-width: 80px; height: 42px;}
 .pdfBtn{ display: flex; align-items: stretch; gap: 5px; flex-wrap: wrap; margin-bottom: 20px;}
-.pdfBtn > .btn{width: calc(100% / 4 - 5px); display: flex; align-items: center; justify-content: center; min-height: 50px; line-height: 1.2; padding: 10px 20px; min-width: 200px;}
+.pdfBtn > .btn{width: calc(100% / 4 - 5px); display: flex; align-items: center; justify-content: center; min-height: 50px; line-height: 1.2; padding: 10px 20px; min-width: 210px;}
 .pdfBtn > .btn:hover,.pdfBtn > .btn:focus{box-shadow: 0 0 10px rgba(0, 59, 158,0.3); transition: box-shadow 0.3s;}
 /* -- 버튼 */
 
@@ -640,13 +640,17 @@
 @media (max-width: 480px){
     .sub-tit-box{flex-direction: column-reverse; align-items: flex-start; margin-bottom: 40px;}
     .stp-bt{width: 100%; justify-content: flex-end}
-    .pdfBtn > .btn{width: calc(100% / 2 - 3px); min-width: auto; padding:10px;}
+    .pdfBtn > .btn{width: calc(100% / 2 - 3px); padding:10px;}
     /* tab */
 
     .subTit03{margin-top: 40px; margin-bottom: 25px;}
     /* dot */
-    .dot-list02 > li::before{top: 8px;}
-    .dot-list03 li.num > span {top: 2px;}
+    .dot-list01 > li::before{top: 6px;}
+    .dot-list02{margin:0 0 20px;}
+    .dot-list02 > li::before{top: 6px;}
+    .dot-list04 > li::before{top: 6px;}
+    .dot-list05 > li{background: url(../images/blt_03.png) no-repeat 0 5px;}
+
     /* table */
     .table-wrap{ overflow: hidden; overflow-x: auto;}
     .table-wrap .type3 td{padding:10px 15px;}
