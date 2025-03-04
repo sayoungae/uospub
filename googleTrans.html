@@ -6,7 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+/* google API hide */
+body {top: 0 !important;}
+.skiptranslate {display: none;}
+#goog-gt-tt {display: none !important;}
 
+#google_translate_element > div > div {
+	position: relative;
+	min-width: 200px;
+	height: 60px;
+}
+#google_translate_element > div > div > select::-ms-expand {
+    display: none;
+}
+
+#google_translate_element > div > div:after {
+    content: '<>'; /* 목록 펼침 아이콘 */
+    font: 17px "Consolas", monospace;
+    color: #333;
+    transform: rotate(90deg);
+    right: 11px;
+    top: 18px;
+    padding: 0 0 2px;
+    border-bottom: 1px solid #999;
+    position: absolute;
+    pointer-events: none;
+}
+
+#google_translate_element > div > div > select {
+   /* -webkit-appearance: none;
+    -moz-appearance: none;*/
+    appearance: none;
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    height: 50px;
+    float: right;
+    margin: 5px 0px;
+    padding: 0px 24px;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #333;
+    border: 1px solid #cccccc;
+   /* -ms-word-break: normal;*/
+    word-break: normal;
+    border-radius: 10px;
+}
+/* google custom css */
+.openLanguageG{margin:0 10px 0 20px;}
+.openLanguageG{display:flex;align-items:center;}
+.openLanguageG span{font-size:14px;color:#FFF;font-family:'Dream Bold';}
+.openLanguageG::before { margin: 0 5px 0 0; content: ''; display: block; width: 17px; height: 18px; background: url(../../images/common/ic-lang.png) no-repeat center;}
+.openLanguageG::after{content:"";display:block;width:7px;height:5px;margin-left:10px;background:url("./") no-repeat center;}
+
+.translation-links{width: 110px;display:none;position:absolute;top:60px;left: calc(230px + 2%);}
+.translation-links.active{display:block;}
+.translation-links a{font-size:13px;color:#000;font-family:'Dream Medium';background:#FFF;display:block;padding:3px 15px;margin-top:1px;}
+</style>
 <body>
     <div class="google-translate" id="googleTranslate01">
         <div id="google_translate_element">
@@ -27,36 +84,28 @@
         <div class="drop-box">
             <button type="button" class="openLanguageG" title="Close Language">
                 <span>
-                    <font style="vertical-align: inherit;">
-                        <font style="vertical-align: inherit;">LANGUAGE</font>
-                    </font>
+                    LANGUAGE
                 </span>
             </button>
             <ul class="translation-links">
-                <li><a href="javascript:void(0)" data-lang="ko">
-                        <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;">korean</font>
-                        </font>
-                    </a></li>
-                <li><a href="javascript:void(0)" data-lang="en">
-                        <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;">English</font>
-                        </font>
-                    </a></li>
+                <li>
+                    <a href="javascript:void(0)" data-lang="ko">
+                        <span>korean</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" data-lang="en">
+                        <span>English</span>
+                    </a>
+                </li>
                 <li><a href="javascript:void(0)" data-lang="zh-CN">
-                        <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;">Chinese</font>
-                        </font>
+                        <span>Chinese</span>
                     </a></li>
                 <li><a href="javascript:void(0)" data-lang="vi">
-                        <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;">Vietnamese</font>
-                        </font>
+                        <span>Vietnamese</span>
                     </a></li>
                 <li><a href="javascript:void(0)" data-lang="ja">
-                        <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;">Japanese</font>
-                        </font>
+                        <span>Japanese</span>
                     </a></li>
             </ul>
         </div>

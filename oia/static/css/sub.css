@@ -13,7 +13,7 @@
 .line-map > li > a{ height: 58px; position: relative; display: flex; align-items: center;white-space: nowrap; overflow: hidden;  text-overflow: ellipsis; line-height: 1.5; }
 .line-map > li.home >a{justify-content: center;width: 58px; background-color:#2241b6; padding:0 15px;}
 .line-map > li > strong{display: table-cell;vertical-align: middle;padding: 0 20px;color: #000;line-height: 1;}
-.line-map > li:not(.home) > a{padding: 0 50px 0 20px;background: url('../../static/images/sub_nav_bg1.png') no-repeat right 20px  center; border-right:1px solid #F0F0F0; overflow: hidden;}
+.line-map > li:not(.home) > a{min-width: 160px; padding: 0 50px 0 20px;background: url('../../static/images/sub_nav_bg1.png') no-repeat right 20px  center; border-right:1px solid #F0F0F0; overflow: hidden;}
 .line-map > li > a.on{background: url('../../static/images/sub_nav_bg2.png') no-repeat right 20px  center;}
 .line-map > li > a.nl{padding: 0 20px; background: none;}
 .line-map > li > ul{display: none; width: 100%; position: absolute; top: 100%; left: 0px; right: 0; z-index: 9;background: #fff; border: 1px solid #f5f5f5; box-shadow: 2px 6px 6px rgba(95, 95, 95, 0.2);}
