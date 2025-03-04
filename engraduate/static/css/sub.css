@@ -579,16 +579,13 @@
 /* -- 학과소개-교수소개 */
 
 @media (max-width: 1200px) {
-    /* snb */
-    #snb-wrap{top:-50px}
-    /* -- snb */
     /* 학과소개-교수소개 */
     .teacher-list > ul > li{flex: 1 1 100%;}
     /* -- 학과소개-교수소개 */
 }
 @media (max-width: 1024px) {
     #snb-wrap{display: none;}
-    #sub-content{width:100%; float:left; padding: 40px 0 40px 0;}
+    #sub-content{width:100%; padding: 40px 0 40px 0; float: none;}
     /* 학과소개-교수소개 */
     .teacher-list > ul > li{flex: 1 1 50%;}
     /* -- 학과소개-교수소개 */
