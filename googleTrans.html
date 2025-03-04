@@ -7,62 +7,59 @@
     <title>Document</title>
 </head>
 <style>
-/* google API hide */
-body {top: 0 !important;}
-.skiptranslate {display: none;}
-#goog-gt-tt {display: none !important;}
+    /* 구글번역 css */
+    body {top: 0 !important;}
+    .skiptranslate {display: none;}
+    #goog-gt-tt {display: none !important;}
 
-#google_translate_element > div > div {
-	position: relative;
-	min-width: 200px;
-	height: 60px;
-}
-#google_translate_element > div > div > select::-ms-expand {
-    display: none;
-}
+    #google_translate_element > div > div > select::-ms-expand {
+        display: none;
+    }
 
-#google_translate_element > div > div:after {
-    content: '<>'; /* 목록 펼침 아이콘 */
-    font: 17px "Consolas", monospace;
-    color: #333;
-    transform: rotate(90deg);
-    right: 11px;
-    top: 18px;
-    padding: 0 0 2px;
-    border-bottom: 1px solid #999;
-    position: absolute;
-    pointer-events: none;
-}
+    #google_translate_element > div > div:after {
+        content: '<>'; /* 목록 펼침 아이콘 */
+        font: 17px "Consolas", monospace;
+        color: #333;
+        transform: rotate(90deg);
+        right: 11px;
+        top: 18px;
+        padding: 0 0 2px;
+        border-bottom: 1px solid #999;
+        position: absolute;
+        pointer-events: none;
+    }
 
-#google_translate_element > div > div > select {
-   /* -webkit-appearance: none;
-    -moz-appearance: none;*/
-    appearance: none;
-    display: block;
-    width: 100%;
-    max-width: 320px;
-    height: 50px;
-    float: right;
-    margin: 5px 0px;
-    padding: 0px 24px;
-    font-size: 16px;
-    line-height: 1.75;
-    color: #333;
-    border: 1px solid #cccccc;
-   /* -ms-word-break: normal;*/
-    word-break: normal;
-    border-radius: 10px;
-}
-/* google custom css */
-.openLanguageG{margin:0 10px 0 20px;}
-.openLanguageG{display:flex;align-items:center;}
-.openLanguageG span{font-size:14px;color:#FFF;font-family:'Dream Bold';}
-.openLanguageG::before { margin: 0 5px 0 0; content: ''; display: block; width: 17px; height: 18px; background: url(../../images/common/ic-lang.png) no-repeat center;}
-.openLanguageG::after{content:"";display:block;width:7px;height:5px;margin-left:10px;background:url("./") no-repeat center;}
+    #google_translate_element > div > div > select {
+    /* -webkit-appearance: none;
+        -moz-appearance: none;*/
+        appearance: none;
+        display: block;
+        width: 100%;
+        max-width: 320px;
+        height: 50px;
+        float: right;
+        margin: 5px 0px;
+        padding: 0px 24px;
+        font-size: 16px;
+        line-height: 1.75;
+        color: #333;
+        border: 1px solid #cccccc;
+    /* -ms-word-break: normal;*/
+        word-break: normal;
+        border-radius: 10px;
+    }
 
-.translation-links{width: 110px;display:none;position:absolute;top:60px;left: calc(230px + 2%);}
-.translation-links.active{display:block;}
-.translation-links a{font-size:13px;color:#000;font-family:'Dream Medium';background:#FFF;display:block;padding:3px 15px;margin-top:1px;}
+    .google-translate .drop-box{position: relative;}
+    .openLanguageG{display:flex;align-items:center; border: 1px solid #eee; border-radius: 20px; padding:5px 10px;}
+    .openLanguageG span{font-size:14px;}
+    .openLanguageG::before { margin: 0 8px 0 0; content: ''; display: block; width: 16px; height: 16px; background: url("../images/h-google.png") no-repeat center;}
+    .google-translate .drop-box .openLanguageG::after{content:"";display:block;width:11px;height:8px;margin-left:10px;background:url("../images/g-arrw.png") no-repeat center;}
+    .google-translate .drop-box.expanded .openLanguageG::after{transform: rotate(180deg); }
+    .google-translate .drop-box .translation-links{width: 110px;display:none;position:absolute;left:calc(100% - 120px);top:32px; z-index: 99999; background-color: #fff;}
+    .google-translate .drop-box.expanded .translation-links{display:block;}
+    .translation-links a{font-size:13px;color:#000;background:#FFF;display:block;padding:5px 15px;margin-top:1px;}
+    .translation-links a:hover{background-color: rgba(156, 156, 156, 0.3);}
+    /* --- 구글번역 css  */
 </style>
 <body>
     <div class="google-translate" id="googleTranslate01">
