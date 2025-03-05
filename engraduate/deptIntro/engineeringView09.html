@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일반대학원 영문</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/swiper.css">
+
+
+    <!-- JS -->
+    <script src="../static/js/jquery-3.7.1.js"></script>
+    <script src="../static/js/swiper-bundle.min.js"></script>
+    <script src="../static/js/common.js"></script>
+    <script src="../static/js/main.js"></script>
+    <script src="../static/js/sub.js"></script>
+
+
+    <script>
+        //header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <!-- sub-banner -->
+            <div class="sub-banner sub1">
+                <div class="inner">
+                    <div class="ban-tit">University of Seoul Global Top Brand</div>
+                    <ul class="line-map">
+                        <li><img src="../static/images/home_ic.png" alt="home"></li>
+                        <li>dept</li>
+                        <li>dept Centers and Laboratores</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content">
+                <div class="inner clearfix">
+                    <!-- // sub-banner -->
+                    <!-- snb -->
+                    <div id="snb-wrap">
+                    </div>
+                    <!-- // snb -->
+                    <!-- sub content -->
+                    <div class="sub-content" id="sub-content">
+                        <div class="sub-tit-box">
+                            <h3 class="subTit01">기계정보공학과</h3>
+                            <ul class="stp-bt">
+                                <li><a href="" class="print-ic"><span class="blind">인쇄</span></a></li>
+                                <li><a href="" class="share-ic"><span class="blind">공유 </span></a></li>
+                            </ul>
+                        </div>
+                        <!-- 본문 -->
+                        <!-- tab -->
+                        <div class="tab-area layer">
+                            <!-- tab list -->
+                            <div class="tab">
+                                <ul role="tablist">
+                                    <li id="tab_dept_01" role="tab" aria-selected="true" aria-controls="panel_dept_01"
+                                        class="active">
+                                        <button type="button" class="btn-tab">Departments</button>
+                                    </li>
+                                    <li id="tab_dept_02" role="tab" aria-selected="false" aria-controls="panel_dept_02">
+                                        <button type="button" class="btn-tab">Admission</button>
+                                    </li>
+                                    <li id="tab_dept_03" role="tab" aria-selected="false" aria-controls="panel_dept_03">
+                                        <button type="button" class="btn-tab">Assistance, etc</button>
+                                    </li>
+                                    <li id="tab_dept_04" role="tab" aria-selected="false" aria-controls="panel_dept_04">
+                                        <button type="button" class="btn-tab">연구실 소개</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- //tab list -->
+                            <!-- tab contents -->
+                            <div class="tab-conts-wrap">
+                                <div id="panel_dept_01" role="tabpanel" aria-labelledby="tab_dept_01"
+                                    class="tab-conts active">
+                                    <div class="dept-link-list">
+                                        <a href="https://engineering.uos.ac.kr/engineering/index.do?cate_id2=000010382&identified=anonymous&" target="_blank" title="opens in a new tab"
+                                            class="icn1"><span>Homepage</span></a>
+                                        <a href="#none" target="_blank" title="opens in a new tab"
+                                            class="icn2"><span>Faculty</span></a>
+                                        <a href="https://www.uos.ac.kr/kor/popup/html/auos/prospectus/2022/prospectus.do?identified=anonymous&" target="_blank" title="opens in a new tab"
+                                            class="icn3"><span>Curriculum</span></a>
+                                    </div>
+                                    <h4 class="subTit04">Educational objectives</h4>
+                                    <div class="table-wrap">
+                                        <table class="type3">
+                                            <colgroup>
+                                                <col width="20%">
+                                                <col width="80%">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th>Core objectives</th>
+                                                    <td>
+                                                        정밀기계 및 기계시스템에 대한 전문적 지식 외에 컴퓨터 및 정보공학에 대한 지식을 겸비하여 고부가가치를 지닌 첨단융합기술을 창출하고 산업현장에 적용할 수 있는 전문가를 양성하는 것을 교육목표로 한다.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Detailed objectives</th>
+                                                    <td>
+                                                        <ul class="dot-list03">
+                                                            <li>1. 응용역학 및 시스템공학관련 이론 및 실험/설계 능력을 갖추도록 한다.</li>
+                                                            <li>2. 첨단설계 및 생산공학 관련 이론 및 실험/설계 능력을 갖추도록 한다.</li>
+                                                            <li>3. 열환경공학 및 유체공학 관련 이론 및 실험/설계 능력을 갖추도록 한다.</li>
+                                                            <li>4. 정보기술 관련 이론 및 응용 능력을 갖추도록 한다.</li>
+                                                            <li>5. 기계정보공학관련 연구과제 수행 및 전문가 세미나 수강을 통한 연구능력을 갖추도록 한다.</li>
+                                                            <li>6. 전공논문 작성 능력을 갖추도록 한다.</li>
+                                                            <li>7. 전공논문 발표력 및 글로벌 시대의 외국어 구사 능력을 갖추도록 한다</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Research areas</th>
+                                                    <td>
+                                                        <p>도시공학, 첨단기계기술, 정보공학</p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <h4 class="subTit04">Majors (track)</h4>
+                                    <div class="table-wrap">
+                                        <table class="type3">
+                                            <colgroup>
+                                                <col width="20%">
+                                                <col width="80%">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th>도시공학</th>
+                                                    <td>지하, 지상, 공중에서의 운반체에 대하여 연구하는 도시운송전공과 도시 열병합 발전소, 건물 냉난방 설비, 지하시설 공조 등에 대하여 연구하는 도시열공학전공으로 나뉜다.</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>첨단기계 기술</th>
+                                                    <td>
+                                                        로봇 청소차, 자동 페인트 기계 등 도시 사용 첨단 기계에 대하여 연구하는 로봇공학 및 메카트로닉스전공, 그리고 정밀기계 및 첨단 가공물을 생산하기 위해 필요한 연구를 진행하는 Intelligent Design, CAD/CAE, 생산자동화 및 정밀가공, 초청정 생산설비, 열공정, 첨단구조/재료 및 첨단유체전공 등으로 이루어져 있다.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>정보공학</th>
+                                                    <td>
+                                                        기계기술에 접합되어 전통 기계산업을 고부가가치화 할 수 있는 연구 수행을 목적으로 데이터베이스, 데이터통신, 각종 컴퓨터언어에 대한 연구를 수행한다. 기계정보공학과 대학원을 졸업하는 학생들은 도시에서 사용되는 각종 설비 및 기계장비, 그리고 그것들을 생산하기 위한 시스템의 설계, 제작, 정밀가공 등의 전통적 기계분야와 컴퓨터, 전기/전자/통신 등의 정보공학 관련 분야에서 전문가 및 관리자로서 성공적인 역할을 수행할 수 있다.
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <h4 class=" subTit04">Information</h4>
+                                    <div class="table-wrap">
+                                        <ul class="dept-info">
+                                            <li>
+                                                <div>Head professor</div>
+                                                <div>황면중</div>
+                                            </li>
+                                            <li>
+                                                <div>TEL</div>
+                                                <div>+82-2-6490-2389</div>
+                                            </li>
+                                            <li>
+                                                <div>E-mail</div>
+                                                <div></div>
+                                            </li>
+                                            <li>
+                                                <div>Office</div>
+                                                <div>과학기술관 4층 428</div>
+                                            </li>
+                                            <li>
+                                                <div>TEL</div>
+                                                <div>+82-2-6490-2380</div>
+                                            </li>
+                                            <li>
+                                                <div>FAX</div>
+                                                <div>+82-2-6490-2384</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div id="panel_dept_02" role="tabpanel" aria-labelledby="tab_dept_02"
+                                    class="tab-conts">
+                                    <div class="dept-link-list">
+                                        <a href="https://graduate.uos.ac.kr/graduateNew/html/admission/general/regular.do?menuid=3000002001001000000&identified=anonymous&" target="_blank" title="opens in a new tab"
+                                            class="icn4"><span>Recruitment guidelines</span></a>
+                                        <a href="https://rule.uos.ac.kr/lmxsrv/main/main.srv" target="_blank" title="opens in a new tab"
+                                            class="icn5"><span>Operating regulations</span></a>
+                                    </div>
+                                    <h4 class="subTit04">General admission degree programs</h4>
+                                    <div class="table-wrap">
+                                        <table class="type3">
+                                            <colgroup>
+                                                <col width="20%">
+                                                <col width="80%">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th>Master</th>
+                                                    <td>
+                                                        <ul class="dot-list01">
+                                                            <li>국내·외 대학에서 학사학위 취득한 자 또는 현재 등록 학기 종료에
+                                                                따른 학위취득예정자</li>
+                                                            <li>Individuals recognized as having equivalent or higher academic qualifications under relevant laws
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <th>Doctorate</th>
+                                                    <td>
+                                                        <ul class="dot-list01">
+                                                            <li>국내·외 대학에서 Master's degree 취득한 자 또는 현재 등록 학기 종료에
+                                                                따른 학위취득예정자</li>
+                                                            <li>Individuals recognized as having equivalent or higher academic qualifications under relevant laws
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Eligibility for master's/doctorate's<br/>Support for North Korean defectors</th>
+                                                    <td>
+                                                        <ul class="dot-list01">
+                                                            <li>Individuals qualified to apply for master's or doctorate's program</li>
+                                                            <li>[북한이탈주민의 보호 및 정착지원에 관한 법률]에 의한
+                                                                북한이탈주민으로 등록된 자</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <h4 class="subTit04">Additional eligibility requirements and submission documents</h4>
+                                    <ul class="dot-list02">
+                                        <li>해당 사항 없음</li>
+                                    </ul>
+                                    <h4 class="subTit04">과정별 기본 사항 (2022학년도 입학생 기준)</h4>
+                                    <div class="table-wrap">
+                                        <table class="type1">
+                                            <thead>
+                                                <tr>
+                                                    <th>구분</th>
+                                                    <th>수업연한</th>
+                                                    <th>기본 학기 운영</th>
+                                                    <th>최저 이수 학점</th>
+                                                    <th>졸업논문</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>석사과정</td>
+                                                    <td rowspan="2">2년 이상</td>
+                                                    <td rowspan="2">4학기제</td>
+                                                    <td>24학기</td>
+                                                    <td>석사학위논문</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>박사과정</td>
+                                                    <td>36학점</td>
+                                                    <td>박사학위논문</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="mt10">
+                                            ※ For other academic information: Refer to relevant items on the Education/Academic Affairs tab of the Graduate School website
+                                        </div>
+                                    </div>
+                                    <h4 class="subTit04">Minimum publication requirements for doctoral dissertation</h4>
+                                    <ul class="dot-list02">
+                                        <li>제1저자로서 SCI(E) 등재지 이상에 1편 이상 논문 게재 실적</li>
+                                    </ul>
+                                    <h4 class="subTit04">일반대학원 운영 원칙</h4>
+                                    <ul class="dot-list02">
+                                        <li>전일제 우선 : 장학금 수혜 학생 선정 – 변경 시, 학과로 필히 연락</li>
+                                    </ul>
+                                </div>
+                                <div id="panel_dept_03" role="tabpanel" aria-labelledby="tab_dept_03" class="tab-conts">
+                                   
+                                    <h4 class="subTit04">Scholarships</h4>
+                                    <ul class="dot-list02">
+                                        <li>박사과정 : 신입생으로 전일제 학생의 경우 등록금 전액 지급</li>
+                                        <li> <a href="https://graduate.uos.ac.kr/graduateNew/html/support/scholarship.do?menuid=3000004001001000000"
+                                            class="">Website</a></li>
+                                    </ul>
+                                    <h4 class="subTit04">Career paths after graduation</h4>
+                                    <ul class="dot-list02">
+                                        <li>국내 유수의 자동차, 전자, 엔지니어링, 건설, 조선업체 취업</li>
+                                    </ul>
+                                </div>
+                                <div id="panel_dept_04" role="tabpanel" aria-labelledby="tab_dept_04" class="tab-conts">
+                                    <div class="table-wrap">
+                                        <table class="type1">
+                                            <caption>신소재공학과 연구실 · 실험실</caption>
+                                            <thead>
+                                                <tr>
+                                                    <th rowspan="2">학과</th>
+                                                    <th colspan="3">연구실 · 실험실 </th>
+                                                </tr>
+                                                <tr>
+                                                    <th>국문 명칭</th>
+                                                    <th>영문 명칭</th>
+                                                    <th>홈페이지/소개글</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td rowspan="9">기계정보공학과</td>
+                                                    <td class="al lLine">로보틱스 연구실</td>
+                                                    <td class="al">Robotics Lab</td>
+                                                    <td><a href="https://sites.google.com/view/uos-robotics" target="_blank" title="새창으로 열기" class="link-web"><span class="blind">website</span></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="al lLine">멀티스케일역학연구실</td>
+                                                    <td class="al">Multi-scale Dynamics Lab</td>
+                                                    <td><a href="#" class="link-fie"><span class="blind">file</span></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="al lLine">소프트웨어공학 연구실</td>
+                                                    <td class="al">Secure Software Systems   Lab</td>
+                                                    <td><a href="https://engineering.uos.ac.kr/engineering/depart/mie/introduct.do" target="_blank" title="새창으로 열기" class="link-web"><span class="blind">website</span></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="al lLine">응용역학 연구실</td>
+                                                    <td class="al">Applied Mechanics Lab</td>
+                                                    <td><a href="https://engineering.uos.ac.kr/engineering/depart/mie/introduct.do" target="_blank" title="새창으로 열기" class="link-web"><span class="blind">website</span></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="al lLine">실시간임베디드시스템 연구실</td>
+                                                    <td class="al">Real-time embedded system Lab</td>
+                                                    <td><a href="https://sites.google.com/view/rtes-lab" target="_blank" title="새창으로 열기" class="link-web"><span class="blind">website</span></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="al lLine">정밀가공 및 자동화 연구실</td>
+                                                    <td class="al">Precision Machining &amp; Automation Lab</td>
+                                                    <td><a href="https://engineering.uos.ac.kr/engineering/depart/mie/introduct.do" target="_blank" title="새창으로 열기" class="link-web"><span class="blind">website</span></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="al lLine">최적설계연구실</td>
+                                                    <td class="al">Computational Design Optimization Lab</td>
+                                                    <td><a href="https://sites.google.com/view/mhyoon-cdol" target="_blank" title="새창으로 열기" class="link-web"><span class="blind">website</span></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="al lLine">시스템소프트웨어연구실</td>
+                                                    <td class="al">System Software Lab</td>
+                                                    <td><a href="http://ssl.uos.ac.kr/" target="_blank" title="새창으로 열기" class="link-web"><span class="blind">website</span></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="al lLine">에너지 연구실</td>
+                                                    <td class="al">Energy Lab</td>
+                                                    <td><a href="http://energy.uos.ac.kr" target="_blank" title="새창으로 열기" class="link-web"><span class="blind">website</span></a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //tab contents -->
+                           
+                        </div>
+                        <!-- // tab -->
+                        <!-- 본문 -->
+                        <!-- sub content -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+
+</html>
