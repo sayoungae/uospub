@@ -251,7 +251,6 @@ a.linkNwin {
 .gnb-wrp .depth2{width: 78%; padding:40px;display: flex; gap: 30px; align-items: stretch; flex-wrap: wrap;}
 .gnb-wrp .depth2 > li{width: calc(100% / 4 - 23px);}
 .gnb-wrp .depth2 > li > a{width: 100%; height: 72px; padding:10px 10px; border:1px solid #CFCFCF; display: flex; align-items: center;}
-.gnb-wrp .depth2 > li > a.linkNwin:hover, .gnb-wrp .depth2 > li > a.linkNwin:focus{background:#003B9E url("../images/nWindow_ic2.png") no-repeat 96% 6px; padding-right: 26px;}
 .gnb-wrp .depth2 > li > .depth3{padding:20px 10px; font-size: 16px; }
 .depth3 > li{position: relative;padding-left: 10px;}
 .depth3 > li + li{margin-top: 6px;}
@@ -260,6 +259,9 @@ a.linkNwin {
 
 /* hover */
 .gnb-wrp  .depth2 > li.on > a{background-color: #003B9E; color:#fff; border-color: #003B9E;}
+.gnb-wrp .depth2 > li > a.linkNwin:hover, .gnb-wrp .depth2 > li > a.linkNwin:focus,
+.gnb-wrp .depth2 > li.on > a.linkNwin,.gnb-wrp .depth2 > li.on > a.linkNwin{background:#003B9E url("../images/nWindow_ic2.png") no-repeat 96% 6px; padding-right: 26px;}
+
 .depth3 > li > a:hover,.depth3 > li > a:focus{color:#2665d0; text-decoration: underline;}
 .header-bot .srch-wrp{display: flex; align-items: center;}
 .header-bot .srch-wrp > .srch-btn{width: 26px; height: 26px; background: url("../images/search-icn.png") no-repeat; margin-right: 27px;}
