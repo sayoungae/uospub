@@ -65,28 +65,7 @@
                             </ul>
                         </div>
                         <!-- 본문 -->
-                        <div class="brd-search">
-                            <select title="검색조건 카테고리 선택" id="board_cate_id" name="board_cate_id">
-                                <option value="">All</option>
-                                <option value="90">Schedule</option>
-                                <option value="91">Departments</option>
-                                <option value="92">Eligibility</option>
-                                <option value="93">Process</option>
-                                <option value="94">Submission</option>
-                                <option value="95">Full-Time</option>
-                                <option value="96">Oral Exam</option>
-                                <option value="97">Scholarships</option>
-                                <option value="98">Overseas Graduates</option>
-                            </select>
-							<select title="검색 조건 선택" id="searchCnd">
-								<option value="1">Title</option>
-								<option value="4">Content</option>
-							</select>
-							<div class="sr-ib">
-								<input type="text" size="30" id="searchWrd" name="searchWrd" value="" onkeydown="if(event.keyCode==13){fnSearch();}" placeholder="Enter keyword(s) to search">
-								<a href="#n" onclick="fnSearch();" class="srbt"><img src="../static/images/brd_sric.jpg" alt="search"></a>
-							</div>
-						</div>
+                        
                         <div class="faq-list-box">
                             <dl>
                                 <dt class="faq-question">
@@ -275,11 +254,7 @@
                                 </dd>
                             </dl>
                         </div>
-                        <!-- paging -->
-                        <div class="paging">
-                            <a href="?pageIndex=1" class="first" onclick="fnPaging(1);return false;"><img src="../static/images/paging_ic1.png" alt="처음 페이지"></a><a href="?pageIndex=0" onclick="fnPaging(0);return false;"><img src="../static/images/paging_ic2.png" alt="이전 페이지 보기"></a><span><a class="on" href="#" onclick="return false;" title="현재페이지">1</a></span><a href="?pageIndex=1" onclick="fnPaging(1);return false;"><img src="../static/images/paging_ic3.png" alt="다음 페이지"></a><a href="?pageIndex=1" class="last" onclick="fnPaging(1);return false;"><img src="../static/images/paging_ic4.png" alt="마지막 페이지"></a>
-                        </div>
-                        <!-- // paging -->
+                        
 
                         <!-- 본문 -->
                     </div>
