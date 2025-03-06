@@ -45,7 +45,7 @@
 .snb-depth3 > ul > li + li{margin-top: 14px; }
 .snb-depth3 > ul > li > a{ color:#767683; position: relative; padding-left: 10px;}
 .snb-depth3 > ul > li.on > a{color: #3662C0;}
-.snb-depth3 > ul > li > a::before{content: ""; display: inline-block; width: 4px; height: 4px; background-color: #BABABA; border-radius: 50%; position: absolute; left:0; top:11px;}
+.snb-depth3 > ul > li > a::before{content: ""; display: inline-block; width: 4px; height: 4px; background-color: #BABABA; border-radius: 50%; position: absolute; left:0; top:8px;}
 .snb-depth3 > ul > li.on > a::before{background-color: #0071D9;}
 .snb-depth3 > ul > li > a:hover,.snb-box .depth2 > ul > li > a:focus{text-decoration: underline;}
 /* -- snb */

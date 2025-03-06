@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일반대학원 영문</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/swiper.css">
+
+
+    <!-- JS -->
+    <script src="../static/js/jquery-3.7.1.js"></script>
+    <script src="../static/js/swiper-bundle.min.js"></script>
+    <script src="../static/js/common.js"></script>
+    <script src="../static/js/main.js"></script>
+    <script src="../static/js/sub.js"></script>
+
+
+    <script>
+        //header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <!-- sub-banner -->
+            <div class="sub-banner sub1">
+                <div class="inner">
+                    <div class="ban-tit">University of Seoul Global Top Brand</div>
+                    <ul class="line-map">
+                        <li><img src="../static/images/home_ic.png" alt="home"></li>
+                        <li>dept</li>
+                        <li>dept Centers and Laboratores</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content">
+                <div class="inner clearfix">
+                    <!-- // sub-banner -->
+                    <!-- snb -->
+                    <div id="snb-wrap">
+                    </div>
+                    <!-- // snb -->
+                    <!-- sub content -->
+                    <div class="sub-content" id="sub-content">
+                        <div class="sub-tit-box">
+                            <h3 class="subTit01">인공지능학과</h3>
+                            <ul class="stp-bt">
+                                <li><a href="" class="print-ic"><span class="blind">인쇄</span></a></li>
+                                <li><a href="" class="share-ic"><span class="blind">공유 </span></a></li>
+                            </ul>
+                        </div>
+                        <!-- 본문 -->
+                        <!-- tab -->
+                        <div class="tab-area layer">
+                            <!-- tab list -->
+                            <div class="tab">
+                                <ul role="tablist">
+                                    <li id="tab_dept_01" role="tab" aria-selected="true" aria-controls="panel_dept_01"
+                                        class="active">
+                                        <button type="button" class="btn-tab">Departments</button>
+                                    </li>
+                                    <li id="tab_dept_02" role="tab" aria-selected="false" aria-controls="panel_dept_02">
+                                        <button type="button" class="btn-tab">Admission</button>
+                                    </li>
+                                    <li id="tab_dept_03" role="tab" aria-selected="false" aria-controls="panel_dept_03">
+                                        <button type="button" class="btn-tab">Assistance, etc</button>
+                                    </li>
+                                    <li id="tab_dept_04" role="tab" aria-selected="false" aria-controls="panel_dept_04">
+                                        <button type="button" class="btn-tab">Faculty</button>
+                                    </li>
+                                    <li id="tab_dept_05" role="tab" aria-selected="false" aria-controls="panel_dept_05">
+                                        <button type="button" class="btn-tab">Laboratory</button>
+                                    </li>
+                                    <li id="tab_dept_06" role="tab" aria-selected="false" aria-controls="panel_dept_06">
+                                        <button type="button" class="btn-tab">Graduate School Notices</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- //tab list -->
+                            <!-- tab contents -->
+                            <div class="tab-conts-wrap">
+                                <div id="panel_dept_01" role="tabpanel" aria-labelledby="tab_dept_01"
+                                    class="tab-conts active">
+                                    <div class="dept-link-list">
+                                        <a href="https://engineering.uos.ac.kr/engineering/index.do?cate_id2=000010085&epTicket=LOG&identified=anonymous&" target="_blank" title="opens in a new tab"
+                                            class="icn1"><span>Homepage</span></a>
+                                        <a href="https://engineering.uos.ac.kr/engineering/prof/list.do?code=000010085&cate=1&cate_id2=000010085&epTicket=LOG&identified=anonymous&" target="_blank" title="opens in a new tab"
+                                            class="icn2"><span>Faculty</span></a>
+                                        <a href="https://www.uos.ac.kr/kor/popup/html/auos/prospectus/2022/prospectus.do?identified=anonymous&" target="_blank" title="opens in a new tab"
+                                            class="icn3"><span>Curriculum</span></a>
+                                    </div>
+                                    <h4 class="subTit04">Educational objectives</h4>
+                                    <div class="table-wrap">
+                                        <table class="type3">
+                                            <colgroup>
+                                                <col width="20%">
+                                                <col width="80%">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th>Core objectives</th>
+                                                    <td>
+                                                        급격히 발전하는 첨단 기술 및 산업분야에서 인공지능 기술의 중추적 역할에 비추어 볼 때, 컴퓨터 소프트웨어 기술뿐만 아니라 다양한 인공지능 핵심 기술을 체계적이며 종합적으로 이해하고 활용할 수 있는 전문 인재의 양성
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Detailed objectives</th>
+                                                    <td>
+                                                        <ul class="dot-list01">
+                                                            <li>개인맞춤형 전공트랙으로, 순수 AI/ML 연구 및 여러 도메인의 응용, 그리고 알고리즘 및 SW/HW 관련 다양한 교육 제공</li>
+                                                            <li>AI/ML 트랙: AI/ML 코어 알고리즘에 대한 이론 강의 및 실습</li>
+                                                            <li>Applied AI/ML 트랙: AI/ML 알고리즘을 실제 현실에 효과적으로 적용하기 위한 지식 습득</li>
+                                                            <li>X+AI/ML 트랙: 다양한 도메인에서의 AI/ML 적용 연구</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Research areas</th>
+                                                    <td>
+                                                        인공지능, 컴퓨터비전, 기계학습, 패턴인식, 통계적 기계학습, 자연어처리, 로보틱스, 추천시스템, 그래프, 인공지능 신뢰성, 음성인식, Medical AI, 의료빅데이터 등
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <h4 class="subTit04">Majors (track)</h4>
+                                    <ul class="dot-list02">
+                                        <li>
+                                            인공지능은 첨단 기술 산업과 변화하는 미래 사회의 중추적인 역할을 하고 있다. 다양하고 복합적인 인공지능 핵심 기술을 체계적이며 종합적으로 이해하고 활용할 수 있는 전문성을 갖춘 윤리적 인재 양성을 목표로 한다. 인공지능 분야의 창의적이며 실용적 역량을 갖춘 인재 양성을 통해 전문 인력 양성과 인공지능 산업을 육성•발전시킬 수 있는 전문가 양성에 목표를 둔다.
+                                        </li>
+                                    </ul>
+                                    <h4 class="subTit04">Information</h4>
+                                    <div class="table-wrap">
+                                        <ul class="dept-info">
+                                            <li>
+                                                <div>Head professor</div>
+                                                <div>정지영</div>
+                                            </li>
+                                            <li>
+                                                <div>TEL</div>
+                                                <div>+82-2-6490-2475</div>
+                                            </li>
+                                            <li>
+                                                <div>E-mail</div>
+                                                <div>jyjung@uos.ac.kr</div>
+                                            </li>
+                                            <li>
+                                                <div>Office</div>
+                                                <div>창공관 4층 415</div>
+                                            </li>
+                                            <li>
+                                                <div>TEL</div>
+                                                <div>+82-2-6490-2470</div>
+                                            </li>
+                                            <li>
+                                                <div>FAX</div>
+                                                <div>+82-2-6490-2473</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div id="panel_dept_02" role="tabpanel" aria-labelledby="tab_dept_02"
+                                    class="tab-conts">
+                                    <div class="dept-link-list">
+                                        <a href="https://graduate.uos.ac.kr/graduateNew/html/admission/general/regular.do?menuid=3000002001001000000&identified=anonymous&" target="_blank" title="opens in a new tab"
+                                            class="icn4"><span>Recruitment guidelines</span></a>
+                                        <a href="https://rule.uos.ac.kr/lmxsrv/main/main.srv" target="_blank" title="opens in a new tab"
+                                            class="icn5"><span>Operating regulations</span></a>
+                                    </div>
+                                    <h4 class="subTit04">General admission degree programs</h4>
+                                    <div class="table-wrap">
+                                        <table class="type3">
+                                            <colgroup>
+                                                <col width="20%">
+                                                <col width="80%">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th>Master</th>
+                                                    <td>
+                                                        <ul class="dot-list01">
+                                                            <li>
+                                                                Individuals who have obtained a bachelor's degree from domestic or foreign universities or those expected to obtain a degree upon completion of the current registered semester
+                                                            </li>
+                                                            <li>
+                                                                Individuals recognized as having equivalent or higher academic qualifications under relevant laws
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Combined master's/doctorate's program</th>
+                                                    <td>
+                                                        <ul class="dot-list01">
+                                                            <li>
+                                                                Individuals who have obtained a bachelor's degree from domestic or foreign universities or those expected to obtain a degree upon completion of the current registered semester
+                                                            </li>
+                                                            <li>
+                                                                Individuals recognized as having equivalent or higher academic qualifications under relevant laws
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Doctorate</th>
+                                                    <td>
+                                                        <ul class="dot-list01">
+                                                            <li>
+                                                                Individuals who have obtained a bachelor's degree from domestic or foreign universities or those expected to obtain a degree upon completion of the current registered semester
+                                                            </li>
+                                                            <li>
+                                                                Individuals recognized as having equivalent or higher academic qualifications under relevant laws
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Eligibility for master's/doctorate's<br/>Support for North Korean defectors</th>
+                                                    <td>
+                                                        <ul class="dot-list01">
+                                                            <li>Individuals qualified to apply for master's or doctorate's program</li>
+                                                            <li>Individuals registered as North Korean defectors pursuant to the North Korean Defectors Protection and Settlement Support Act</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <h4 class="subTit04">Additional eligibility requirements and submission documents</h4>
+                                    <ul class="dot-list02">
+                                        <li>Not applicable</li>
+                                    </ul>
+                                    <h4 class="subTit04">Program information (for students admitted after 2022)</h4>
+                                    <div class="table-wrap">
+                                        <table class="type1">
+                                            <thead>
+                                                <tr>
+                                                    <th>구분</th>
+                                                    <th>수업연한</th>
+                                                    <th>재학연한</th>
+                                                    <th>수료 후 학위취득연한</th>
+                                                    <th>최저 이수 학점</th>
+                                                    <th>졸업논문</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>석사과정</td>
+                                                    <td rowspan="2">최소 2년</td>
+                                                    <td>3년</td>
+                                                    <td>6년</td>
+                                                    <td>24학점</td>
+                                                    <td>석사학위논문</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>박사과정</td>
+                                                    <td>5년</td>
+                                                    <td>8년</td>
+                                                    <td>36학점</td>
+                                                    <td>박사학위논문</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Combined master's/doctorate's program</td>
+                                                    <td>최소 4년</td>
+                                                    <td>8년</td>
+                                                    <td>8년</td>
+                                                    <td>60학점</td>
+                                                    <td>박사학위논문</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <p class="mt10">
+                                            ※ For other academic information: Refer to relevant items on the Education/Academic Affairs tab of the Graduate School website
+                                        </p>
+                                    </div>
+                                    <h4 class="subTit04">Minimum publication requirements for doctoral dissertation</h4>
+                                    <ul class="dot-list02">
+                                        <li>제1저자로서 SCI(E), SSCI 등재지 이상, 또는 한국연구재단 BK21 사업에서 SCI(E)와 동일하게 인정하는 Proceedings에 1편 이상 게재실적</li>
+                                    </ul>
+                                    <h4 class="subTit04">Department regulations</h4>
+                                    <ul class="dot-list02">
+                                        <li>관련 사항 기재 또는 내규 업로드 버튼 생성 요청(업로드 할 내규 포함하여 회신)</li>
+                                    </ul>
+                                    <h4 class="subTit04">Graduate school operating principles</h4>
+                                    <ul class="dot-list02">
+                                        <li>관련 사항 기재</li>
+                                    </ul>
+                                </div>
+                                <div id="panel_dept_03" role="tabpanel" aria-labelledby="tab_dept_03" class="tab-conts">
+                                    <h4 class="subTit04">Student activities</h4>
+                                    <div class="table-wrap">
+                                        <table class="type3">
+                                            <colgroup>
+                                                <col width="20%">
+                                                <col width="80%">
+                                            </colgroup>
+                                            <tbody>
+                                            <tr>
+                                                <th>Participation in Research Projects</th>
+                                                <td>
+                                                    <ul class="dot-list01">
+                                                        <li>인공지능혁신융합대학사업단 사업 수행</li>
+                                                        <li>데이터사이언스융합혁신인재양성사업단 참여 학과</li>
+                                                        <li>화학물질안전관리특성화사업단 참여 학과</li>
+                                                    </ul>
+                                                </td>
+                                            </tr><tr>
+                                                <th>Academic Society and Scholarly Activities</th>
+                                                <td>
+                                                    <ul class="dot-list01">
+                                                        <li>국내/외 주요 학회 참여 적극 장려</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>Research institute</th>
+                                                <td>
+                                                    <ul class="dot-list01">
+                                                        <li>도시과학빅데이터·AI연구원 AI연구센터</li>
+                                                        <li>공학연구원 인공지능연구센터</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <h4 class="subTit04">Scholarships</h4>
+                                    <ul class="dot-list02">
+                                        <li>교수지원장학(수업지원,연구지원),학석사연계 장학,강의조교 장학 등</li>
+                                        <li>그 외 장학금 및 인건비 정보는 지도희망 교수에게 문의</li>
+                                        <li> <a href="https://graduate.uos.ac.kr/graduateNew/html/support/scholarship.do?menuid=3000004001001000000"
+                                            class="">Website</a></li>
+                                    </ul>
+                                    <h4 class="subTit04">Career paths after graduation</h4>
+                                    <ul class="dot-list02">
+                                        <li>연구기관: 정부출연연구소 및 민간기업 연구소</li>
+                                        <li>기업체: 대기업, IT기업, AI관련스타트업 등 IT, SW, 게임, 반도체, 의료, 자동차 산업 전분야</li>
+                                        <li>공기업: 한국전력공사, 한국도로공사, 한국수자원공사 등 AI기술을 활용한 직무가 있는 주요 공기업</li>
+                                        <li>공무원: 과학기술정보통신부, 문화체육관광부, 산업통상자원부, 보건복지부, 환경부, 국토교통부, 중소벤처기업부 등 정부부처, 지방자치단체 등</li>
+                                        <li>학계 교육계: 대학교수, 중·고등부 교사 및 AI관련 교육프로그램 운영기관 강사</li>
+                                    </ul>
+                                    <h4 class="subTit04">Department amenities and publicity</h4>
+                                    <ul class="dot-list02">
+                                        <li>인공지능학과에서는 대학원생들이 연구에 집중할 수 있는 최적의 환경 및 지도 프로그램을 제공합니다. 각종 대규모 사업 유치를 통하여 확보한 예산으로 인공지능 연구에 필요한 다수의 서버를 구비하였으며, 전문화된 깊이 있는 수업 제공 및 연구 지도를 통하여 학생들의 실력을 향상시키는 것을 가장 우선적으로 생각합니다.</li>
+                                    </ul>
+                                </div>
+                                <div id="panel_dept_04" role="tabpanel" aria-labelledby="tab_dept_04" class="tab-conts">
+                                    <div class="teacher-list">
+                                        <ul>
+                                            <li id="prof1483">
+                                                <div class="tc-img">
+                                                    <img src="https://file.uos.ac.kr/upload/hakbuUnit/prof//2021/08//202108271508571.jpg" alt="">
+                                                </div>
+                                                <div class="tc-info">
+                                                    <div class="tc-name">
+                                                        <p>Jiyoung JUNG</p>
+                                                        <span>Professor</span>
+                                                    </div>
+                                                    <p class="sub_tit">Field of Study : Computer Vision</p>
+                                                    <ul class="other-info">
+                                                        <li>Changgong Building, #424</li>
+                                                        <li>+82-2-6490-2475</li>
+                                                        <li><a href="jyjung@uos.ac.kr">jyjung@uos.ac.kr</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li id="prof1504">
+                                                <div class="tc-img">
+                                                    <img src="https://file.uos.ac.kr/upload/hakbuUnit/prof//2022/02//202202080747201.jpg" alt="">
+                                                </div>
+                                                <div class="tc-info">
+                                                    <div class="tc-name">
+                                                        <p>Youngmin RO</p>
+                                                        <span>Professor</span>
+                                                    </div>
+                                                    <p class="sub_tit">Field of Study : Computer Vision, Deep Learning</p>
+                                                    <ul class="other-info">
+                                                        <li>Changgong Building, #423</li>
+                                                        <li>+82-2-6490-2476</li>
+                                                        <li><a href="youngmin.ro@uos.ac.kr">youngmin.ro@uos.ac.kr</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li id="prof1551">
+                                                <div class="tc-img">
+                                                    <img src="https://file.uos.ac.kr/upload/hakbuUnit/prof//2022/08//202208181702081.jpg" alt="">
+                                                </div>
+                                                <div class="tc-info">
+                                                    <div class="tc-name">
+                                                        <p>Joungyoun KIM</p>
+                                                        <span>Professor</span>
+                                                    </div>
+                                                    <p class="sub_tit">Field of Study : Healthcare Big Data, Computational & Bayesian Statistics</p>
+                                                    <ul class="other-info">
+                                                        <li>Changgong Building #422</li>
+                                                        <li>+82-2-6490-2477</li>
+                                                        <li><a href="joungyoun@uos.ac.kr">joungyoun@uos.ac.kr</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li id="prof1661">
+                                                <div class="tc-img">
+                                                    <img src="https://file.uos.ac.kr/upload/hakbuUnit/prof//2023/07//202307131318051.png" alt="">
+                                                </div>
+                                                <div class="tc-info">
+                                                    <div class="tc-name">
+                                                        <p>Wonseok HWANG</p>
+                                                        <span>Professor</span>
+                                                    </div>
+                                                    <p class="sub_tit">Field of Study : Natural Language Processing, Legal AI</p>
+                                                    <ul class="other-info">
+                                                        <li>Changgong Building, #421</li>
+                                                        <li>+82-2-6490-2478</li>
+                                                        <li><a href="wonseok.hwang@uos.ac.kr">wonseok.hwang@uos.ac.kr</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li id="prof1665">
+                                                <div class="tc-img">
+                                                    <img src="https://file.uos.ac.kr/upload/hakbuUnit/prof//2023/08//202308311727241.png" alt="">
+                                                </div>
+                                                <div class="tc-info">
+                                                    <div class="tc-name">
+                                                        <p>Sang Ki KO</p>
+                                                        <span>Professor</span>
+                                                    </div>
+                                                    <p class="sub_tit">Field of Study : Theory of Computation, Algorithms, AI for Program Analysis, Sports Data Analytics</p>
+                                                    <ul class="other-info">
+                                                        <li>Changgong Building, #217</li>
+                                                        <li>+82-2-6490-2479</li>
+                                                        <li><a href="sangkiko@uos.ac.kr">sangkiko@uos.ac.kr</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li id="prof1738">
+                                                <div class="tc-img">
+                                                    <img src="https://file.uos.ac.kr/upload/hakbuUnit/prof//2024/02//202402130749111.jpg" alt="">
+                                                </div>
+                                                <div class="tc-info">
+                                                    <div class="tc-name">
+                                                        <p>Hyeong Boo BAEK</p>
+                                                        <span>Professor</span>
+                                                    </div>
+                                                    <p class="sub_tit">Field of Study : Real-time Systems, Computer Vision</p>
+                                                    <ul class="other-info">
+                                                        <li>Changgong Building, #326</li>
+                                                        <li>+82-2-6490-2474</li>
+                                                        <li><a href="hbbaek@uos.ac.kr">hbbaek@uos.ac.kr</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li id="prof1309">
+                                                <div class="tc-img">
+                                                    <img src="https://file.uos.ac.kr/upload/hakbuUnit/prof//2019/10//201910151522501.jpg" alt="">
+                                                </div>
+                                                <div class="tc-info">
+                                                    <div class="tc-name">
+                                                        <p>Jaeho LEE</p>
+                                                        <span>Professor</span>
+                                                    </div>
+                                                    <p class="sub_tit">Field of Study : Intelligent Robotic Systems, Agent-Based Systems, Artificial Intelligence</p>
+                                                    <ul class="other-info">
+                                                        <li>Information and Technology Building, #505</li>
+                                                        <li>+82-2-6490-2334</li>
+                                                        <li><a href="jaeho@uos.ac.kr">jaeho@uos.ac.kr</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li id="prof1308">
+                                                <div class="tc-img">
+                                                    <img src="https://file.uos.ac.kr/upload/hakbu/board/professor/2008/05/20080517200406724047_1.jpg" alt="">
+                                                </div>
+                                                <div class="tc-info">
+                                                    <div class="tc-name">
+                                                        <p>Byung Jeong LEE</p>
+                                                        <span>Professor</span>
+                                                    </div>
+                                                    <p class="sub_tit">Field of Study : Software Engineering, Web Service Technology, Software Evolution</p>
+                                                    <ul class="other-info">
+                                                        <li>Information and Technology Building, #307</li>
+                                                        <li>+82-2-6490-2451</li>
+                                                        <li><a href="bjlee@uos.ac.kr">bjlee@uos.ac.kr</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li id="prof1307">
+                                                <div class="tc-img">
+                                                    <img src="https://file.uos.ac.kr/upload/hakbu/board/professor/2008/05/20080517200125974045_1.jpg" alt="">
+                                                </div>
+                                                <div class="tc-info">
+                                                    <div class="tc-name">
+                                                        <p>Ha Jin YU</p>
+                                                        <span>Professor</span>
+                                                    </div>
+                                                    <p class="sub_tit">Field of Study : Speech Recognition, Speaker Recognition, Machine Learning</p>
+                                                    <ul class="other-info">
+                                                        <li>Information and Technology Building, #306</li>
+                                                        <li>+82-2-6490-2448</li>
+                                                        <li><a href="hjyu@uos.ac.kr">hjyu@uos.ac.kr</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li id="prof1305">
+                                                <div class="tc-img">
+                                                    <img src="https://file.uos.ac.kr/upload/hakbu/board/professor/2008/06/20080612052231421038_1.jpg" alt="">
+                                                </div>
+                                                <div class="tc-info">
+                                                    <div class="tc-name">
+                                                        <p>Han Joon KIM</p>
+                                                        <span>Professor</span>
+                                                    </div>
+                                                    <p class="sub_tit">Field of Study : Text Mining, Information Retrieval, Web Intelligence, Machine Learning, Intelligent Database Systems</p>
+                                                    <ul class="other-info">
+                                                        <li>Information and Technology Building, #408</li>
+                                                        <li>+82-2-6490-2339</li>
+                                                        <li><a href="khj@uos.ac.kr">khj@uos.ac.kr</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li id="prof1312">
+                                                <div class="tc-img">
+                                                    <img src="https://file.uos.ac.kr/upload/hakbuUnit/prof//2021/06//202106041756041.jpg" alt="">
+                                                </div>
+                                                <div class="tc-info">
+                                                    <div class="tc-name">
+                                                        <p>Heasoo HWANG</p>
+                                                        <span>Professor</span>
+                                                    </div>
+                                                    <p class="sub_tit">Field of Study : Information Search, Time-series Analysis, Graph Deep Learning</p>
+                                                    <ul class="other-info">
+                                                        <li>Information and Technology Building, #308</li>
+                                                        <li>+82-2-6490-2454</li>
+                                                        <li><a href="hwang@uos.ac.kr">hwang@uos.ac.kr</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li id="prof1311">
+                                                <div class="tc-img">
+                                                    <img src="https://file.uos.ac.kr/upload/hakbuUnit/prof//2020/06//202006231344201.jpg" alt="">
+                                                </div>
+                                                <div class="tc-info">
+                                                    <div class="tc-name">
+                                                        <p>Hosik Choi</p>
+                                                        <span>Professor</span>
+                                                    </div>
+                                                    <p class="sub_tit">Field of Study : Machine Learning</p>
+                                                    <ul class="other-info">
+                                                        <li>Law School, #606</li>
+                                                        <li>+82-2-6490-5081</li>
+                                                        <li><a href="choi.hosik@uos.ac.kr">choi.hosik@uos.ac.kr</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div id="panel_dept_05" role="tabpanel" aria-labelledby="tab_dept_05" class="tab-conts">
+                                    <div class="table-wrap">
+                                        <table class="type1">
+                                            <caption>인공지능학과 연구실 · 실험실</caption>
+                                            <colgroup>
+                                                <col style="width: 30%;">
+                                                <col style="width: 30%;">
+                                                <col style="width: auto;">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th colspan="3">연구실 · 실험실 </th>
+                                                </tr>
+                                                <tr>
+                                                    <th>국문 명칭</th>
+                                                    <th>영문 명칭</th>
+                                                    <th>홈페이지/소개글</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td rowspan="2">
+                                                        로보틱스 및 컴퓨터비전 연구실 <br>
+                                                        (정지영 교수)
+                                                        </td>
+                                                    <td class="al" rowspan="2">Robotics and Computer Vision Lab</td>
+                                                    <td>
+                                                        <a href="https://rcv.uos.ac.kr" target="_blank" title="새창으로 열기" class="link-web"><span class="blind">website</span></a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="al">
+                                                        <div>
+                                                            모바일 로봇과 자율주행 자동차와 같은 인공지능 시스템의 시각 지능과 관련된 다양한 컴퓨터비전 알고리즘과 센서시스템을 연구
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td rowspan="2">
+                                                        기계지능 연구실 <br>
+                                                        (노영민 교수)
+                                                    </td>
+                                                    <td rowspan="2">Machine Intelligence Lab</td>
+                                                    <td>
+                                                        <a href="https://sites.google.com/view/uos-milab" target="_blank" title="새창으로 열기" class="link-web"><span class="blind">website</span></a>
+                                                        
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="al">
+                                                        <div>
+                                                            <p class="mb10">딥러닝 기반의 영상 및 이미지 처리에 대한 다음의 연구주제들을 수행</p>
+                                                            <ul class="dot-list03">
+                                                                <li>- Deep Metric Learning</li>
+                                                                <li>- Continual Learning</li>
+                                                                <li>- Image Classification Super Resolution Semantic Segmentation</li>
+                                                                <li>- Person Re-identification</li>
+                                                                <li>- Anomaly Detection Deepfake Detection Generative Model</li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td rowspan="2">
+                                                        의료빅데이터 연구실 <br>
+                                                        (김정연 교수)
+                                                    </td>
+                                                    <td  rowspan="2">MEDICAL BIG DATA LAB</td>
+                                                    <td><a href="https://sites.google.com/view/joungyoun" target="_blank" title="새창으로 열기" class="link-web"><span class="blind">website</span></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="al">
+					                                    잠재마코프 랜덤필드 모형에서의 효과적인 다중검정 수행을 위한 알고리즘 개발, 건강보험공단 데이터나 대학병원 전자의무 기록(EMR)과 같은 의료 빅데이터를 활용한 연구, MCMC 알고리즘 개발 연구
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td rowspan="2">
+                                                        자연어 처리 및 법률인공지능 연구실 <br>
+                                                        (황원석 교수)
+                                                    </td>
+                                                    <td rowspan="2">NLP &amp; Legal Intelligence &amp; AI4Science Lab</td>
+                                                    <td><a href="https://uos-nlp.notion.site/" target="_blank" title="새창으로 열기" class="link-web"><span class="blind">website</span></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="al">
+                                                        <div>
+                                                            <p class="mb10">딥러닝 기반 자연어 처리 및 자연어 처리 응용 연구, 구체적으로 다음과 같은 연구주제들을 수행 </p>
+                                                            <ul class="dot-list03">
+                                                                <li>- 대규모 법률 언어모델 연구(Large legal language model)</li>
+                                                                <li>- 법률 텍스트 의미구문분석(Semantic parsing)</li>
+                                                                <li>- 반정형 문서로부터 생성모델을 활용한 정보 추출 연구(End-to-end information extraction from semi-structured documents)</li>
+                                                                <li>- 산업체 문서 이해 연구(Document Intelligence)</li>
+                                                                <li>- 법률 추론 인공지능 연구(Legal abductive reasoning)</li>
+                                                                <li>- 제어 가능 생성 모델 연구(Controllable generation model)</li>
+                                                                <li>- 비 자기 회기 생성 모델 연구(non-autoregressive decoding)</li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td rowspan="2">
+                                                        계산 지능 및 데이터 분석 연구실 <br>
+                                                        (고상기 교수)
+                                                    </td>
+                                                    <td rowspan="2">Computational Intelligence &amp; Data Analytics (CIDA) Laboratory</td>
+                                                    <td><a href="http://cida.uos.ac.kr" target="_blank" title="새창으로 열기" class="link-web"><span class="blind">website</span></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="al">
+                                                        <div>
+                                                            <p class="mb10">본 연구실에서는 다음과 같은 연구 주제들을 수행 중</p>
+                                                            <ul class="dot-list03">
+                                                                <li>- 계산 이론 기반의 설명 가능한 인공지능(Explainable AI) 및 딥러닝 모델 검증 연구</li>
+                                                                <li>- 강화 학습 기반의 효율적인 계산 알고리즘 탐색 및 프로그램 생성 연구</li>
+                                                                <li>- 논리적 추론 및 계산을 위한 뉴로-심볼릭 인공지능(neuro-symbolic AI)연구</li>
+                                                                <li>- 스포츠(축구) 데이터 분석 고도화를 위한 최신 인공지능 모델 적용 연구</li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td rowspan="2">
+                                                        온디바이스 인공지능 연구실 <br>
+                                                        (백형부교수)
+                                                    </td>
+                                                    <td rowspan="2">On-Device Artificial Intelligence Lab</td>
+                                                    <td>
+                                                        <a href="https://sites.google.com/view/uos-rtcv" target="_blank" title="새창으로 열기" class="link-web"><span class="blind">website</span></a>
+                                                        
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="al">
+                                                        <div>온디바이스 인공지능 연구실은 기기 내에서 실행되는 인공지능 기술을 연구하고 개발. 클라우드 기반의 인공지능과 달리 데이터 처리와 분석을 기기 자체에서 수행함으로써 모델 경량화, 데이터 프라이버시, 그리고 실시간 응답성과 같은 장점을 추구</div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td rowspan="2">
+                                                        인공지능 연구실 <br>
+                                                        (이재호 교수)
+                                                    </td>
+                                                    <td rowspan="2">Intelligent Robotic Systems Lab</td>
+                                                    <td><a href="http://ai.uos.ac.kr" target="_blank" title="새창으로 열기" class="link-web"><span class="blind">website</span></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="al">
+                                                        에이전트 기반 지능 통합 프레임워크를 중심으로 이를 활용한 지능형 서비스 로봇, 자율 드론 등의 응용서비스 개발과 인공지능 시스템 신뢰성 관련 연구 수행
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td rowspan="2">
+                                                        지능형 소프트웨어 공학 연구실 <br>
+                                                        (이병정 교수)
+                                                    </td>
+                                                    <td rowspan="2">Intelligent Software Engineering Lab</td>
+                                                    <td><a href="http://selab.uos.ac.kr" target="_blank" title="새창으로 열기" class="link-web"><span class="blind">website</span></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="al">
+                                                        지능형 소프트웨어 공학은 공학 원리를 활용하여 계획한대로(예산과 기간) 품질이 우수한 지능형 소프트웨어 제작하는 것을 목적으로 한다. 본 연구실에서는 지능형 소프트웨어 테스팅, 소프트웨어 버그 자동 정정 등의 기법을 연구하고, 나아가 프로그램 자동 생성 등의 관련 연구 수행
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td rowspan="2">
+                                                        음성정보처리 연구실 <br>
+                                                        (유하진 교수)
+                                                        </td>
+                                                    <td rowspan="2">Speech information processing lab</td>
+                                                    <td><a href="http://speech.uos.ac.kr" target="_blank" title="새창으로 열기" class="link-web"><span class="blind">website</span></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="al">
+                                                        음성관련 연구로 사람의 말을 텍스트로 바꾸는 음성인식, 누구의 목소리인지를 분별하는 화자인식, 사람의 목소리를 만들어 내는 음성합성, 그 밖에 입력된 음성이 사람의 목소리인지 또는 녹음기나 합성기에 의하여 조작된 음성인지 판별하는 기술, 소리로 주변 상황을 인식하는 연구, 자연어처리 등 수행
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td rowspan="2">
+                                                        데이터 마이닝 연구실 <br>
+                                                        (김한준 교수)
+                                                        </td>
+                                                    <td rowspan="2">Data Mining Lab</td>
+                                                    <td><a href="http://datamining.uos.ac.kr" target="_blank" title="새창으로 열기" class="link-web"><span class="blind">website</span></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="al">
+                                                        인공지능 및 머신러닝(딥러닝) 기술을 활용하여 빅데이터의 품질 개선 및 내재된 유의미한 패턴 및 모델을 추출, 이를 지능형 예측/인식/분류/추천 서비스에 활용하는 연구 수행
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td rowspan="2">
+                                                        지능정보시스템 연구실 <br>
+                                                        (황혜수 교수)
+                                                    </td>
+                                                    <td rowspan="2">Intelligent Information System Lab</td>
+                                                    <td><a href="http://www.uos.ac.kr/" target="_blank" title="새창으로 열기" class="link-web"><span class="blind">website</span></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="al">
+                                                        대용량 데이터 분석분야(그래프 데이터 딥러닝, 추천 엔진 등)를 중심으로 다양한 형태의 데이터로부터 지식 추출이나 성향 및 미래 예측의 정확도와 속도 향상 관련 알고리즘에 대한 연구 수행
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td rowspan="2">
+                                                        지능형빅데이터 연구실 <br>
+                                                        (최호식 교수)
+                                                    </td>
+                                                    <td rowspan="2">Intelligent Big Data LAB</td>
+                                                    <td><a href="https://intelligent-big-data-lab.notion.site" target="_blank" title="새창으로 열기" class="link-web"><span class="blind">website</span></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="al">
+                                                        텍스트, 이미지, 음성 등의 빅데이터 분석에 필요한 통계, 머신러닝, 딥러닝 학습방법에 대한 연구를 수행
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div id="panel_dept_06" role="tabpanel" aria-labelledby="tab_dept_06" class="tab-conts">
+                                    https://graduate.uos.ac.kr/graduateNew/deptIntro/engineering/korNotice/list.do?list_id=20016D8&code=000010085&cate_id2=000010085&tab_id=6&menuid=3000001003004000000&identified=anonymous&
+                                </div>
+                            </div>
+                            <!-- //tab contents -->
+                           
+                        </div>
+                        <!-- // tab -->
+                        <!-- 본문 -->
+                        <!-- sub content -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+
+</html>
