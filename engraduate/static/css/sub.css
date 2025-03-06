@@ -560,7 +560,7 @@
 .teacher-list > ul > li .tc-info{width: calc(100% - 154px);}
 .teacher-list > ul > li .tc-name{font-size: var(--fz-18); font-weight: 600; margin-bottom: 10px;}
 .teacher-list > ul > li .tc-name >p{font-size: var(--fz-22); font-weight: 700; margin-bottom: 5px; color: #044497;}
-.teacher-list > ul > li .sub_tit{color:#676767; font-weight: 500; margin-bottom: 10px;}
+.teacher-list > ul > li .sub_tit{color:#676767; font-weight: 500; margin-bottom: 10px; word-break: auto-phrase;}
 .teacher-list > ul > li .other-info{margin-top:20px; }
 .teacher-list > ul > li .other-info > li{color:#676767; padding-left: 14px; position: relative;}
 .teacher-list > ul > li .other-info > li+li{margin-top: 4px;}
