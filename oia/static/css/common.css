@@ -451,8 +451,17 @@ body.setAni #all-menu-pop {
         
         .all-menu-depth .depth2_list {width: calc(80% - 20px); display: flex; flex-wrap: wrap; column-gap: 20px; row-gap: 40px;}
         .all-menu-depth .depth2_list > li{width: calc(100% / 3 - 30px) ; min-width: 280px;}
-        .all-menu-depth .depth2_list > li >a{height: 60px; background-color: #000; color:#fff; border-radius: 10px; font-size: var(--fz-18); font-weight: 500;display: flex; align-items: center; justify-content: center; padding:0 30px; cursor:unset;}
-  
+        .all-menu-depth .depth2_list > li >a{height: 53px; background-color: #EEF0FC; color:#313131;  font-weight: 500;display: flex; align-items: center; padding:0 30px; cursor:unset; position: relative;}
+        .all-menu-depth .depth2_list > li > a:before{
+                content:"";
+                display: inline-block;
+                width: 28px;
+                height: 5px;
+                background-color: #316FC1;
+                position: absolute;
+                left:0;
+                top:-2px
+        }
         .all-menu-depth .depth3{display: block;}
 
         .all-menu-box .menu-close{width: 50px; height: 50px; border-radius: 50%; border:1px solid #fff; position: absolute; right: 25px; top:30px; background:url("../images/all-menu-close2.png") center center no-repeat; transform: rotate(0deg); transition: transform 0.8s ease-out;}
@@ -476,7 +485,7 @@ body.setAni #all-menu-pop {
 
         .all-menu-depth .depth2_list > li .depth3{display: none; padding:15px 5px;}
         .all-menu-depth .depth3 .depth3_list > li > a{color:#fff; font-size: 14px;}
-        .all-menu-depth .depth3 .depth3_list > li > a > span::before{background-color: #fff;}
+        .all-menu-depth .depth3 .depth3_list > li > a > span::before{background-color: #fff; top: 7px;}
         /* active */
         .all-menu-depth > li.active .menu-depth1{position: relative; z-index: 9; color: #fff; background-color: #004298;}
         .all-menu-depth > li.active .menu-depth1::before{content:""; display: inline-block; width: 100%; height: 100%; background-color: #004298; border-radius: 10px 0 0 10px; position: absolute; left:-10px; top:0; z-index: -1;}
