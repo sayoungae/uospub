@@ -24,25 +24,7 @@
             .then(data => document.getElementById('snb-wrap').innerHTML = data);
        
     </script>
-    <script>
-        function popOpen(nam) {
-            jQuery('#' + nam).css("display", "block");
-        }
-
-        function popClose(nam) {
-            jQuery('#' + nam).css("display", "none");
-        }
-
-        function tabButtonEvent(showIdentity) {
-            jQuery(".btn").removeClass("btnP");
-            jQuery(".btn").addClass("btnY");
-            jQuery(event.target).addClass("btnP");
-            jQuery(event.target).removeClass("btnY");
-
-            jQuery(".innerCont").hide();
-            jQuery("#" + showIdentity).show();
-        }
-    </script>
+   
 </head>
 <body>
     <div id="wrap">
@@ -54,17 +36,7 @@
                 <div class="content-area">
                     <div id="contents">
                         <h4 class="conts-tit2">영어로 제공되는 코스</h4>
-                        <div>
-                            교환학생은 정규학기(봄 또는 가을)에 최대 20학점, 서울국제여름학교에 최대 8학점을 이수할 수 있습니다. 정규학기에 제공되는 대부분의 과목은 한국어로 강의되며,<br/>한국어는 http://www.uos.ac.kr/en → Academics → Each department -> Courses에서 확인할 수 있습니다.
-                        </div>
-                        <h4 class="sub-tit">코스목록</h4>
-                        <p class="sub-tit2">영어로 제공되는 과정 목록</p>
-                        <div class="desc">
-                            → Please click each course title and you can find its course description
-                        </div>
-                        <div class="btn-wrap btnR mb20">
-                            <a href="#none" class="btn dwType"><span>한국어 수업 레벨가이드</span></a>
-                        </div>
+                        
                         <!-- tab -->
                         <div class="tab-area layer">
                             <!-- tab list -->
@@ -82,6 +54,17 @@
                             <!-- tab contents -->
                             <div class="tab-conts-wrap">
                                 <div id="panel_prEng_01" role="tabpanel" aria-labelledby="tab_prEng_01" class="tab-conts active">
+                                    <div>
+                                        교환학생은 정규학기(봄 또는 가을)에 최대 20학점, 서울국제여름학교에 최대 8학점을 이수할 수 있습니다. 정규학기에 제공되는 대부분의 과목은 한국어로 강의되며,<br/>한국어는 http://www.uos.ac.kr/en → Academics → Each department -> Courses에서 확인할 수 있습니다.
+                                    </div>
+                                    <h4 class="sub-tit">코스목록</h4>
+                                    <p class="sub-tit2">영어로 제공되는 과정 목록</p>
+                                    <div class="desc">
+                                        → Please click each course title and you can find its course description
+                                    </div>
+                                    <div class="btn-wrap btnR mb20">
+                                        <a href="#none" class="btn dwType"><span>한국어 수업 레벨가이드</span></a>
+                                    </div>
                                     <div class="table-wrap">
                                         <table class="type01" summary="The Courses Lectured in English for Regular Semesters">
                                             <caption>List of Courses offered in English for 2024 Spring</caption>
@@ -722,8 +705,28 @@
                                             </tbody>
                                         </table>
                                     </div>
+                                    <script type="text/javascript">
+                                        function popOpen(nam) {
+                                            $('#' + nam).css("display", "block");
+                                        }
+                                
+                                        function popClose(nam) {
+                                            $('#' + nam).css("display", "none");
+                                        }
+                                    </script>
                                 </div>
                                 <div id="panel_prEng_02" role="tabpanel" aria-labelledby="tab_prEng_02" class="tab-conts">
+                                    <div>
+                                        교환학생은 정규학기(봄 또는 가을)에 최대 20학점, 서울국제여름학교에 최대 8학점을 이수할 수 있습니다. 정규학기에 제공되는 대부분의 과목은 한국어로 강의되며,<br/>한국어는 http://www.uos.ac.kr/en → Academics → Each department -> Courses에서 확인할 수 있습니다.
+                                    </div>
+                                    <h4 class="sub-tit">코스목록</h4>
+                                    <p class="sub-tit2">영어로 제공되는 과정 목록</p>
+                                    <div class="desc">
+                                        → Please click each course title and you can find its course description
+                                    </div>
+                                    <div class="btn-wrap btnR mb20">
+                                        <a href="#none" class="btn dwType"><span>한국어 수업 레벨가이드</span></a>
+                                    </div>
                                     <div class="table-wrap">
                                         <table class="type01" summary="The Courses Lectured in English for Regular Semesters">
                                             <caption>The Courses Lectured in English for Regular Semesters</caption>
@@ -1293,6 +1296,15 @@
                                             </tbody>
                                         </table>
                                     </div>
+                                    <script type="text/javascript">
+                                        function popOpen(nam) {
+                                            $('#' + nam).css("display", "block");
+                                        }
+                                
+                                        function popClose(nam) {
+                                            $('#' + nam).css("display", "none");
+                                        }
+                                    </script>
                                 </div>
                             </div>
                             <!-- //tab contents -->

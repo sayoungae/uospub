@@ -24,13 +24,13 @@
         <header id="header" class="header">
             <div class="header-top">
                 <div class="inner clearfix">
-                     <!-- google translate API S-->
-                     <div class="google-translate" id="googleTranslate01">
+                    <div class="google-translate" id="googleTranslate01">
                         <div id="google_translate_element">
                             <div class="skiptranslate goog-te-gadget" dir="ltr" >
                                 <div id=":0.targetLanguage"><select class="goog-te-combo" aria-label="언어 번역 위젯">
-                                        <option value="en">영어</option>
+                                        <option value="ko">한국어</option>
                                         <option value="vi">베트남어</option>
+                                        <option value="en">영어</option>
                                         <option value="ja">일본어</option>
                                         <option value="zh-CN">중국어(간체)</option>
                                         <option value="zh-TW">중국어(번체)</option>
@@ -48,29 +48,33 @@
                             </button>
                             <ul class="translation-links">
                                 <li>
+                                    <a href="javascript:void(0)" data-lang="ko">
+                                        <span>korean</span>
+                                    </a>
+                                </li>
+                                <li>
                                     <a href="javascript:void(0)" data-lang="en">
                                         <span>English</span>
                                     </a>
                                 </li>
-                                <li><a href="javascript:void(0)" data-lang="vi">
-                                    <span>Vietnamese</span>
-                                </a></li>
-                                <li><a href="javascript:void(0)" data-lang="ja">
-                                    <span>Japanese</span>
-                                </a></li>
                                 <li><a href="javascript:void(0)" data-lang="zh-CN">
                                         <span>Chinese</span>
-                                    </a></li>                                    
+                                    </a></li>
+                                <li><a href="javascript:void(0)" data-lang="vi">
+                                        <span>Vietnamese</span>
+                                    </a></li>
+                                <li><a href="javascript:void(0)" data-lang="ja">
+                                        <span>Japanese</span>
+                                    </a></li>
                             </ul>
                         </div>
                     </div>
-                    
-                    <script type="text/javascript">
+                    <script>
                         /* 구글 번역 초기화 */
                         function googleTranslateElementInit() {
                             new google.translate.TranslateElement({
-                                pageLanguage: "en",
-                                includedLanguages: 'en,ja,zh-CN,zh-TW,vi',
+                                pageLanguage: "ko",
+                                includedLanguages: 'ko,en,ja,zh-CN,zh-TW,vi',
                                 autoDisplay: false
                             },
                                 "google_translate_element"
@@ -78,7 +82,7 @@
                         }
                         document.addEventListener('DOMContentLoaded', function () {
                             const googleTranslate = document.getElementById('googleTranslate01');
-
+                
                             googleTranslate.querySelector('.translation-links').addEventListener('click', function (event) {
                                 let el = event.target;
                                 if (el != null) {
@@ -87,15 +91,16 @@
                                     }
                                     const tolang = el.dataset.lang;
                                     const gtcombo = document.querySelector('.goog-te-combo');
-
+                
                                     console.log(tolang + "/" + gtcombo);
-
+                
                                     if (gtcombo == null) {
                                         alert('Error: Could not find Google translate Combolist.');
                                         return false;
                                     }
                                     gtcombo.value = tolang;
                                     gtcombo.dispatchEvent(new Event('change'));
+                                    // 2024.08.29. 한글은 리로딩
                                     if (tolang == "ko") {
                                         location.reload();
                                         return false;
@@ -103,22 +108,21 @@
                                 }
                                 return false;
                             });
-
+                
                             const dropBox = googleTranslate.querySelector('.drop-box');
-
+                
                             dropBox.addEventListener('click', function (event) {
                                 event.preventDefault();
                                 event.stopPropagation();
-
+                
                                 this.classList.toggle('expanded');
-
+                
                                 document.addEventListener('click', function () {
                                     dropBox.classList.remove('expanded');
                                 });
                             });
                         }); 
                     </script>
-                    <!-- google translate API E-->
                     <ul class="util-wrp clearfix">
                         <li><a href="">login</a></li>
                         <li><a href="">english</a></li>
@@ -129,7 +133,11 @@
             </div>
             <div class="header-bot">
                 <div class="inner">
-                    <h1 class="h-logo"><a href="#none"><img src="../static/images/logo01.png" alt="UNIVERSITY OF SEOUL Graduate School"></a></h1>
+                    <h1 class="h-logo">
+                        <a href="/web/eng/main"><img src="../static/images/logo01_1.png" alt="UNIVERSITY OF SEOUL "></a>
+                        <a href="/web/engraduate/main" class="h-logo-txt"><img src="../static/images/logo01_2.png" alt="Graduate School"></a>
+                    </h1>
+                    
                     <div class="gnb-wrp">
                         <ul class="depth1">
                             <li>

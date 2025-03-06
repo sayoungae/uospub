@@ -593,6 +593,7 @@
 }
 
 @media (max-width: 760px) {
+    .sub-banner .line-map{display: none;}
     /* tab */
     .s-container .tab-area .tab > ul{flex-direction: column;}
     /* 대학원 소개 */

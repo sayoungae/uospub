@@ -309,5 +309,15 @@ window.addEventListener("DOMContentLoaded", () => {
 	selectTab();
 	accordion();
 
+	// 영어로제공되는코스
+	function popOpen(nam) {
+		$('#' + nam).css("display", "block");
+	}
+
+	function popClose(nam) {
+		$('#' + nam).css("display", "none");
+	}
+	popOpen();
+	popClose();
 })
 
