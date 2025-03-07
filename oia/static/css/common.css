@@ -72,7 +72,12 @@ a, span, b, strong{display: inline-block;}
 body{font-weight: 400; min-width: 320px; line-height: 1.4; font-family: 'S-Core'; letter-spacing: -0.02em;  }
 .blind {position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); margin: -1px;}
 .clearfix:after{content: "";display: block;height: 0;clear: both;visibility: hidden;}
+a.linkNwin {
+        background-image: url("../images/nWindow_ic.png");
+        background-repeat: no-repeat;
+        background-position:  96% center;
 
+}
 /* 구글번역 css */
 body {top: 0 !important;}
 .skiptranslate {display: none;}
@@ -484,7 +489,8 @@ body.setAni #all-menu-pop {
         .all-menu-depth .depth2_list > li .menu-depth2{background-image: url("../images/arrw08.png"); background-repeat: no-repeat; background-position: 95% center; padding-right: 20px;}
 
         .all-menu-depth .depth2_list > li .depth3{display: none; padding:15px 5px;}
-        .all-menu-depth .depth3 .depth3_list > li > a{color:#fff; font-size: 14px;}
+        .all-menu-depth .depth3 .depth3_list > li > a{color:#fff; font-size: 14px; }
+        .all-menu-depth .depth3 .depth3_list > li > a.linkNwin{background-image: url("../images/nWindow_ic2.png");}
         .all-menu-depth .depth3 .depth3_list > li > a > span::before{background-color: #fff; top: 7px;}
         /* active */
         .all-menu-depth > li.active .menu-depth1{position: relative; z-index: 9; color: #fff; background-color: #004298;}

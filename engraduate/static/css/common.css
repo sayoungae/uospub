@@ -261,7 +261,7 @@ a.linkNwin {
 /* hover */
 .gnb-wrp  .depth2 > li.on > a{background-color: #003B9E; color:#fff; border-color: #003B9E;}
 .gnb-wrp .depth2 > li > a.linkNwin:hover, .gnb-wrp .depth2 > li > a.linkNwin:focus,
-.gnb-wrp .depth2 > li.on > a.linkNwin,.gnb-wrp .depth2 > li.on > a.linkNwin{background:#003B9E url("../images/nWindow_ic2.png") no-repeat 96% 6px; padding-right: 26px;}
+.gnb-wrp .depth2 > li.on > a.linkNwin,.gnb-wrp .depth2 > li.on > a.linkNwin{background:#003B9E url("../images/nWindow_ic2.png") no-repeat 96% 6px;}
 
 .depth3 > li > a:hover,.depth3 > li > a:focus{color:#2665d0; text-decoration: underline;}
 .header-bot .srch-wrp{display: flex; align-items: center;}
@@ -414,7 +414,7 @@ body.setAni #all-menu-pop {
     .all-menu-depth > li >a{width: 30%; padding:20px; border-bottom: 1px solid #3663B3;}
     .all-menu-depth > li > .depth2{width: 70%; position: absolute; right:0; top:0; padding:0 20px; display: none; height: 600px; overflow-y: scroll;}
     .all-menu-depth > li > .depth2 > li >a{display: block; width: 100%; padding:20px 0; border-bottom: 1px solid #3663B3;}
-    .all-menu-depth > li > .depth2 > li >a.linkNwin{background-image: url("../images/icon_golink2.png");}
+    .all-menu-depth > li > .depth2 > li >a.linkNwin{background-image: url("../images/nWindow_ic2.png");}
    
 
     .all-menu-depth > li > .depth2 > li > .menu-depth2{background-image: url("../images/arrw05.png"); background-position: 95% center; background-repeat: no-repeat;}

@@ -60,7 +60,7 @@
 /* -- m-news */
 
 /* m-service */
-.m-service{background: url("../images/service-bg.png") right top no-repeat;}
+.m-service{background: url("../images/service-bg.png") right top no-repeat; background-size: 100% 100%;}
 .m-service .service-menu{display: flex; column-gap: 60px; row-gap: 30px; flex-wrap: wrap;}
 .m-service .service-menu > li > a{width: 170px; text-align: center; color:#fff;font-size: 16px; line-height: 1.2; }
 .m-service .service-menu  a >p{height: 100px; display: flex; align-items: center; justify-content: center; background-color: rgba(255, 255, 255,0.3);border-radius: 20px; transition: 0.3s;}
