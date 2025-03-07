@@ -34,6 +34,7 @@
 .snb-box .snb-tit{min-height: 128px; padding:10px 20px; line-height: 1.1; font-size: var(--fz-36); font-weight: 700; color:#fff; background-color: #3662C0; display: flex; align-items: center; justify-content: center; border-radius: 16px 30px 0 0;}
 .snb-depth1{background-color: #fff; }
 .snb-depth1 > ul > li >a{display: block; width: 100%; padding:20px; font-size: var(--fz-20); border-right: 1px solid #EFEFEF;border-left: 1px solid #EFEFEF;}
+.snb-depth1 > ul > li >a.linkNwin{background: url(../images/nWindow_ic.png) no-repeat 94% center;}
 .snb-depth1 > ul > li + li >a{border-top:1px solid #EFEFEF;}
 .snb-depth1 > ul > li:last-child > a{border-bottom:1px solid #efefef;}
 .snb-depth1 > ul > li.on > a{background-color: #353C47; color:#fff; border-color: #353C47;}
