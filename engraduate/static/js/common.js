@@ -10,32 +10,39 @@ window.addEventListener("DOMContentLoaded", () => {
 			tabs.forEach(tab => {
 				const controlId = tab.getAttribute('aria-controls');
 				const panel = document.getElementById(controlId);
+				const tabElement = tab.querySelector('button, a'); // 버튼 또는 a 태그 찾기
 		
 				// 초기 활성 상태 체크
 				if(tab.classList.contains('active')) {
-				tab.querySelector('button').insertAdjacentHTML('beforeend', '<i class="blind"> 선택됨</i>');
+					tabElement.insertAdjacentHTML('beforeend', '<i class="blind"> 선택됨</i>');
 				}
 		
-				tab.addEventListener('click', () => {
-				// 모든 외부 탭과 패널 초기화
-				tabs.forEach(t => {
-					t.classList.remove('active');
-					t.setAttribute('aria-selected', 'false');
-					const btn = t.querySelector('button');
-					const acc = btn.querySelector('.blind');
-					if(acc) btn.removeChild(acc);
-				});
-				panels.forEach(p => p.classList.remove('active'));
+				tabElement.addEventListener('click', (event) => {
+					// 링크 이동을 원하면 실행 후 종료
+					if (tabElement.tagName === "A") return;
 		
-				// 클릭한 탭 활성화
-				tab.classList.add('active');
-				tab.setAttribute('aria-selected', 'true');
-				tab.querySelector('button').insertAdjacentHTML('beforeend', '<i class="blind"> 선택됨</i>');
-				panel.classList.add('active');
+					event.preventDefault(); // 기본 동작 방지 (버튼일 경우)
+		
+					// 모든 외부 탭과 패널 초기화
+					tabs.forEach(t => {
+						t.classList.remove('active');
+						t.setAttribute('aria-selected', 'false');
+						const btn = t.querySelector('button, a');
+						const acc = btn.querySelector('.blind');
+						if(acc) btn.removeChild(acc);
+					});
+					panels.forEach(p => p.classList.remove('active'));
+		
+					// 클릭한 탭 활성화
+					tab.classList.add('active');
+					tab.setAttribute('aria-selected', 'true');
+					tabElement.insertAdjacentHTML('beforeend', '<i class="blind"> 선택됨</i>');
+					panel.classList.add('active');
+				});
 			});
-		  });
 		});
-	  }
+	}
+
 
 	layerTab();
 
