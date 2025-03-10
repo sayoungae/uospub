@@ -431,13 +431,12 @@ body.setAni #all-menu-pop {
 
 }
 
-
 /* error */
 .error-wrap{max-width: 1000px; margin:0 auto;}
 .error-head{margin-top: 30px; border-bottom: 5px solid #487ab5; padding-bottom: 20px;}
 .error-cont{text-align: center; padding: 55px 40px 40px 40px;    border-bottom: 1px solid #2e75b5;}
 .error-cont h2{font-size: 1.5em;}
-.error-cont .desc{color:#a0a0a0; margin-top: 30px;}
+.error-cont .desc{color:#a0a0a0; margin-top: 30px; margin-bottom: 50px;}
 .error-cont .btn-box{display: flex; align-items: stretch; justify-content: center; gap: 20px; margin-top: 60px;}
 .error-cont .btn-box >a{padding: 15px 20px; font-size: 12px; color: #ffffff;background-color: #487ab5; text-decoration: none; text-align: center;}
 .error-foot{font-size: 13px; color: #a0a0a0; text-align: center; padding:30px 0;}
