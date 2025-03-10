@@ -592,7 +592,15 @@
     /* -- 학과소개-교수소개 */
 
 }
-
+@media (max-width: 960px) {
+    /* 학과소개-교수소개 */
+    .teacher-list > ul > li{padding:20px 0; gap: 20px;align-items: flex-start; flex: 1 1 100%;}
+    .teacher-list > ul > li .tc-img{width: 114px; height: 148px;}
+    .teacher-list > ul > li .other-info{gap: 10px;}
+    .teacher-list > ul > li .other-info > li{flex:1 1 100%;}
+    .teacher-list > ul > li .other-info a{word-break: break-all;}
+    /* -- 학과소개-교수소개 */
+}
 @media (max-width: 760px) {
     .sub-banner .line-map{display: none;}
     /* tab */
@@ -629,12 +637,7 @@
     /* 일반학사일정 */
     .calTop > .btn-wrap{position: relative; justify-content: flex-end;}
 
-    /* 학과소개-교수소개 */
-    .teacher-list > ul > li{padding:20px 0; gap: 20px;align-items: flex-start; flex: 1 1 100%;}
-    .teacher-list > ul > li .tc-img{width: 114px; height: 148px;}
-    .teacher-list > ul > li .other-info{gap: 10px;}
-    .teacher-list > ul > li .other-info > li{flex:1 1 100%;}
-    /* -- 학과소개-교수소개 */
+    
 }
 
 
