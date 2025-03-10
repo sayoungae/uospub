@@ -30,19 +30,7 @@
             .then(data => document.getElementById('snb-wrap').innerHTML = data);
        
     </script>
-    <script>
-        $(function(){
-            const houseSlide = new Swiper('.housing-slide', {
-                loop: true,
-                speed: 800,
-                navigation: {
-                    prevEl: '.house_prev',
-                    nextEl: '.house_next',
-                },
-            });
-        })
-        
-    </script>
+    
 </head>
 <body>
     <div id="wrap">
@@ -240,6 +228,19 @@
                                         <button type="button" class="house_prev"><span class="blind">이전 슬라이드</span></button>
                                         <button type="button" class="house_next"><span class="blind">다음 슬라이드</span></button>
                                     </div>
+                                    <script>
+                                        $(function(){
+                                            const houseSlide = new Swiper('.housing-slide', {
+                                                loop: true,
+                                                speed: 800,
+                                                navigation: {
+                                                    prevEl: '.house_prev',
+                                                    nextEl: '.house_next',
+                                                },
+                                            });
+                                        })
+                                        
+                                    </script>
                                 </div>
                             </div>
                             <!-- //tab contents -->

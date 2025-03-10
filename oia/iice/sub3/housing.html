@@ -240,6 +240,19 @@
                                         <button type="button" class="house_prev"><span class="blind">prev</span></button>
                                         <button type="button" class="house_next"><span class="blind">next</span></button>
                                     </div>
+                                    <script>
+                                        $(function(){
+                                            const houseSlide = new Swiper('.housing-slide', {
+                                                loop: true,
+                                                speed: 800,
+                                                navigation: {
+                                                    prevEl: '.house_prev',
+                                                    nextEl: '.house_next',
+                                                },
+                                            });
+                                        })
+                                        
+                                    </script>
                                 </div>
                             </div>
                             <!-- //tab contents -->
