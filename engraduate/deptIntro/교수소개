@@ -19,4 +19,70 @@
         </li>
      
     </ul>
+    <div class="table-wrap">
+        <table class="type1">
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Length of study</th>
+                    <th>Maximum period of enrollment</th>
+                    <th>Period for degree acquisition after completion</th>
+                    <th>Minimum credits required</th>
+                    <th>Graduation thesis</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Master</td>
+                    <td rowspan="2">Minimum 2 years</td>
+                    <td>3 years</td>
+                    <td>6 years</td>
+                    <td>24 credits</td>
+                    <td>Master's thesis</td>
+                </tr>
+                <tr>
+                    <td>Doctorate</td>
+                    <td>5 years</td>
+                    <td>8 years</td>
+                    <td>36 credits</td>
+                    <td>Doctoral dissertation</td>
+                </tr>
+                <tr>
+                    <td>Combined master's/doctorate's program</td>
+                    <td>Minimum 4 years</td>
+                    <td>8 years</td>
+                    <td>8 years</td>
+                    <td>60 credits</td>
+                    <td>Doctoral dissertation</td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="type1">
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Length of study</th>
+                    <th>Basic semester operation</th>
+                    <th>Minimum credits required</th>
+                    <th>Graduation thesis</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Master</td>
+                    <td rowspan="2">2+ years</td>
+                    <td rowspan="2">4 semester system</td>
+                    <td>24 credits</td>
+                    <td>Master's thesis</td>
+                </tr>
+                <tr>
+                    <td>Doctorate</td>
+                    <td>36 credits</td>
+                    <td>Doctoral dissertation</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="point mt10">※ The minimum of 36 credits for doctoral program completion applies to new students from the 2022 academic year</p>
+        <p class="point mt10">※ For other academic information: Refer to relevant items on the Education/Academic Affairs tab of the Graduate School website</p>
+    </div>
 </div>
