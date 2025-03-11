@@ -232,7 +232,7 @@ table.type02 tr.al >td{padding:10px 20px; text-align: left; vertical-align: base
 .pageSearch-wrap > ul > li{display: flex;}
 .pageSearch-wrap > ul > li + li{margin-top: 10px;}
 .pageSearch-wrap > ul > li > div{ display: flex; align-items: center;}
-.pageSearch-wrap > ul > li  input,.pageSearch-wrap > ul > li  select{height: 46px; background-color: #fff; border:0;padding:0 10px; min-width: 120px; border-radius: 10px; border:1px solid #ccc;}
+.pageSearch-wrap > ul > li  input,.pageSearch-wrap > ul > li  select{height: 46px; background-color: #fff; border:0;padding:0 40px 0 10px; min-width: 120px; border-radius: 10px; border:1px solid #ccc;}
 
 .pageSearch-wrap .date-box{display: flex; gap: 10px; flex-wrap: wrap;}
 .pageSearch-wrap .date-box input{  background-image: url("../images/picker_ico.png"); background-position:right 10px center; background-repeat:no-repeat;}
@@ -244,8 +244,9 @@ table.type02 tr.al >td{padding:10px 20px; text-align: left; vertical-align: base
 
 /* 공지사항 */
 .brd-lstp1{border-top: 1px solid #333; border-bottom: 1px solid #333;}
+.brd-lstp1 > li{padding: 20px 2%;}
 .brd-lstp1 > li + li{border-top: 1px solid #e0dfdf;}
-.brd-lstp1 > li > div{display: flex; box-sizing: border-box; width: 100%; padding: 20px 2%; table-layout: fixed; word-break: break-all;}
+.brd-lstp1 > li > div{display: flex; box-sizing: border-box; width: 100%;  table-layout: fixed; word-break: break-all;}
 .brd-lstp1 > li > div:has(.imgs){align-items: center;}
 .brd-lstp1 > li > div > p{width: 80px; text-align: center; font-size: 18px; color: #888; line-height: 24px;}/*20220118 웹접근성 color:#999*/
 .brd-lstp1 > li > div > p .cl{display: inline-block; vertical-align: top; width: 62px; text-align: center; background: #718be9; color: #fff; font-size: 15px; line-height: 20px; padding: 3px 0;}
