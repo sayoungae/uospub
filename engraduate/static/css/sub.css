@@ -34,7 +34,8 @@
 .snb-box .snb-tit{min-height: 128px; padding:10px 20px; line-height: 1.1; font-size: var(--fz-36); font-weight: 700; color:#fff; background-color: #3662C0; display: flex; align-items: center; justify-content: center; border-radius: 16px 30px 0 0;}
 .snb-depth1{background-color: #fff; }
 .snb-depth1 > ul > li >a{display: block; width: 100%; padding:20px; font-size: var(--fz-20); border-right: 1px solid #EFEFEF;border-left: 1px solid #EFEFEF;}
-.snb-depth1 > ul > li >a.linkNwin{background: url(../images/nWindow_ic.png) no-repeat 94% center;}
+.snb-depth1 > ul > li >a.linkNwin{background: url(../images/nWindow_ic.png) no-repeat 94% center; padding-right: 35px;}
+.snb-depth1 > ul > li.on >a.linkNwin{background: url(../images/nWindow_ic2.png) no-repeat 94% center; padding-right: 35px;}
 .snb-depth1 > ul > li + li >a{border-top:1px solid #EFEFEF;}
 .snb-depth1 > ul > li:last-child > a{border-bottom:1px solid #efefef;}
 .snb-depth1 > ul > li.on > a{background-color: #353C47; color:#fff; border-color: #353C47;}
@@ -239,7 +240,9 @@
 .brd-search .sr-ib input[type="text"]:focus-visible{border:0; outline:0;}
 /* -- search */
 .brd-lstp1{border-top: 2px dotted #d2d2d2; border-bottom: 1px solid #ddd;}
-.brd-lstp1 > li > div{padding:20px 10px; display: flex; gap: 10px; font-size: var(--fz-18); }
+.brd-lstp1 > li{padding: 20px 10px;}
+.brd-lstp1 > li + li{border-top:1px solid #ddd;}
+.brd-lstp1 > li > div{ display: flex; gap: 10px; font-size: var(--fz-18); }
 .brd-lstp1 > li .num{width: 80px; text-align: center; color:#666}
 .brd-lstp1 > li .da{margin-top: 10px; font-size: var(--fz-16);color: #666; display: flex;align-items: center; flex-wrap: wrap;}
 .brd-lstp1 > li .da > p{margin-right: 6px;}
@@ -646,7 +649,7 @@
     .sub-tit-box{flex-direction: column-reverse; align-items: flex-start; margin-bottom: 40px;}
     .stp-bt{width: 100%; justify-content: flex-end}
     .pdfBtn > .btn{width: calc(100% / 2 - 3px); padding:10px;}
-    /* tab */
+    .brd-lstp1 > li{padding: 15px 5px;}
 
     .subTit03{margin-top: 40px; margin-bottom: 25px;}
     /* dot */
