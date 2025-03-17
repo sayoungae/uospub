@@ -1,7 +1,7 @@
 @import 'reset.css';
 @import 'main.css';
 @import 'sub.css';
-
+/* 20250317 */
 /* fonts */
 @font-face {
     font-family: 'Pretendard';
@@ -276,7 +276,7 @@ a.linkNwin {
 
 /* 검색창 */
 .srch-box{position: absolute; left:0; top:100%; background-color:rgba(9, 72, 151,0.9); width: 100%; height: 0; z-index: 999;  overflow: hidden; transition: height 0.5s;}
-.srch-box .srch-box-in{max-width: 1496px; margin:56px auto; display: block;}
+.srch-box .srch-box-in{max-width: 1496px; margin:56px auto; display: none;}
 .srch-box .srch-box-in .srch-df{display: flex; align-items: center; justify-content: center; position: relative; margin:0 30px;}
 .srch-box .srch-box-in .srch-line{max-width: 800px; width: 100%; border:2px solid #33CCCC; border-radius: 0 0 30px 0; display: flex; align-items: center;}
 .srch-box .srch-box-in .srch-line input[type="text"]{border:0; background-color: transparent; color:#fff; width: calc(100% - 60px); padding:16px 0 16px; text-indent: 16px; font-size: var(--fz-22);}
