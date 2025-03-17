@@ -19,7 +19,7 @@ $(function(){
     $('.snb-depth1 > li > a').on('keydown', function() {
         if (e.key === 'Enter') {
             $(this).trigger('click');
-            alert('Enter 키를 눌렀습니다.');
+            // alert('Enter 키를 눌렀습니다.');
         }
     });
     
