@@ -403,7 +403,7 @@
     border-radius: 15px;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
-    color:#666;    
+    color:#666;
     margin-top: 40px;
     font-size: var(--fz-18);
     padding:10px;
@@ -613,7 +613,7 @@
     .welcomeBox .intro_left{width: 100%;}
     .welcomeBox .intro_left > img{width: 100%;border-radius: 20px;}
     .welcomeBox .intro_right{width: 100%;}
-    
+
     .org-chart .squa-line{flex-wrap: wrap; column-gap: 20px; overflow: hidden;}
     .org-chart .squa-line > li{ flex: 1 1 30%;}
     .org-chart .squa-line::before{border-left:0; border-right:0; border-radius: 0;}
@@ -639,10 +639,7 @@
 
     /* 일반학사일정 */
     .calTop > .btn-wrap{position: relative; justify-content: flex-end;}
-
-    
 }
-
 
 
 @media (max-width: 480px){
@@ -681,8 +678,6 @@
     .course{row-gap: 60px;}
     .course_square{width: 100%; margin-right: 0;}
     .course_square:after{top:auto; bottom: -55px; left:50%;  transform: translate(-50%, 0) rotate(90deg);}
-
- 
 }
 
 
