@@ -1,7 +1,8 @@
-
+/* 2020319 */
 @import 'reset.css';
 @import 'main.css';
 @import 'sub.css';
+
 /* fonts */
 @font-face {
         font-family: 'S-Core';
@@ -101,7 +102,7 @@ body {top: 0 !important;}
 }
 
 #google_translate_element > div > div > select {
-   /* -webkit-appearance: none;
+    /* -webkit-appearance: none;
     -moz-appearance: none;*/
     appearance: none;
     display: block;
@@ -215,7 +216,6 @@ body {top: 0 !important;}
                 --fz-30: 24px;
                 --fz-38: 26px;
                 --fz-45: 34px;
-        
         }
 }
 /* --var */
@@ -300,7 +300,7 @@ body {top: 0 !important;}
         bottom:-4px;
         z-index: -1;
 }
-.depth1_list > li > .depth2{display: none; width: 100%; position: absolute; left:0; top:100%; z-index: 999;  border-top:1px solid #EBECEF;}
+.depth1_list > li > .depth2{display: none; width: 100%; position: absolute; left:0; top:100%; z-index: 99999;  border-top:1px solid #EBECEF;}
 
 .depth2 .dp2-bx{display: flex; min-height: 326px;}
 .depth2 .dp2-itx{background-color: #004298; color:#fff;font-weight: 700; font-size: 37px; max-width: 425px;width: 22%; padding-top: 48px; display: flex;justify-content: flex-end}
@@ -385,7 +385,6 @@ body {top: 0 !important;}
 }
 
 @media (max-width: 760px) {
-        
         .header .header-top .h-logo img{width: 214px; margin-right: 10px;}
         .header .header-top .h-logo-txt {font-size: 15px;    padding: 0 0 0 10px;}
         .header .header-top .h-logo-txt::before {height: 12px;}
@@ -420,7 +419,7 @@ body::after {
         display: block;
         transform: rotate(45deg);
 }
-    
+
 body.setAni::after {
         opacity: 1;
         left: -50%;

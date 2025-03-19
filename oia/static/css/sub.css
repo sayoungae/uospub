@@ -1,7 +1,7 @@
+/* 20250319 */
 /* ***********************************
-        sub-tit-wrap /SNB 
+        sub-tit-wrap /SNB
 * ***********************************/
-/* 2020319 */
 .wid {width: 96%;max-width: 1280px; margin: 0 auto;}
 .sub-tit-wrap{width: 100%; height: 228px; background-image: url("../images/sub_ban01.png"); display: flex; align-items: center; justify-content: center; background-position: center center;background-size: 100% 100%; background-repeat: no-repeat; }
 .pg-tit{ font-size:var(--fz-45); color: #fff; font-weight: 700; text-align: center;}
@@ -30,8 +30,6 @@
     .line-map > li{font-size: 16px; width: 50%;;}
     .line-map > li > a{height: 48px;}
     .line-map > li:not(.home) > a{width: 100%;}
-    
-
 }
 @media (max-width: 480px) {
     .sub-tit-wrap{height: 150px; background-size: auto 100%;}
@@ -39,12 +37,10 @@
     .line-map > li > ul{font-size: 13px;}
     .line-map > li > ul > li > a{padding:10px 20px; }
     .line-map > li:not(.home) > a{padding:10px 20px;white-space: wrap;}
-    
 }
 @media (max-width: 380px) {
     .line-map > li{font-size: 14px;}
 }
-
 
 /* 공통 */
 /* ver-bar */
@@ -461,7 +457,6 @@ table.type02 tr.al >td{padding:10px 20px; text-align: left; vertical-align: base
     width: 80%;
     max-width: 484px;
     height: 60px;
-    
     z-index: -1;
     position: absolute;
     left:50%;
@@ -506,7 +501,6 @@ table.type02 tr.al >td{padding:10px 20px; text-align: left; vertical-align: base
 .mis-conts > ul >li.li2 .tit{background-image: url("../images/mission_img02.png");}
 .mis-conts > ul >li.li2 .d-tit{border-color: #86CE2E;}
 .mis-conts > ul >li.li2 .d-sub{color: #86CE2E;}
-
 
 .mis-conts > ul >li.li3 > .box{transform: translateX(-78%); top:-85px}
 .mis-conts > ul >li.li3 .desc{margin-top: 150px;}
@@ -567,11 +561,7 @@ table.type02 tr.al >td{padding:10px 20px; text-align: left; vertical-align: base
 .elig-step-wrap > li .step-desc > div > b{font-weight: 500;}
 .elig-step-wrap > li::before{content:""; display: inline-block; width: 100%; height: 64px;  background-image: url("../images/eliq-shadow.png"); background-repeat: no-repeat; position: absolute; left:0%; top:-64px; z-index: -1;}
 
-
-
 /* -- Study at UOS 자격및신청 */
-
-
 /* -- Study at UOS 지불 */
 .qr-box{display: flex; gap: 20px; }
 .qr-box a{color:#1b4fb4}
@@ -620,7 +610,6 @@ table.type02 tr.al >td{padding:10px 20px; text-align: left; vertical-align: base
 
     .organ_box .organ5::before{display: none;}
     /* -- 조직도 */
-    
 }
 @media (max-width: 1024px) {
     /* 미션 핵심가치 */
@@ -671,11 +660,11 @@ table.type02 tr.al >td{padding:10px 20px; text-align: left; vertical-align: base
     .brd-lstp1 > li > div > div{width: calc(100% - 60px);}
     .brd-lstp1 > li > div > .imgs {width: 100px; aspect-ratio:1.3; margin:0 5px;}
     .brd-lstp1 > li > div:has(.imgs) > div {width: calc(100% - 150px);}
-    
+
     .brd-lstp1 .ti > a{ -webkit-line-clamp:2;  -webkit-box-orient:vertical; display:-webkit-box; white-space: wrap;}
     .brd-lstp1 .da > p{font-size: 14px;}
     /* -- 공지사항 */
-    
+
     /* 해외체험수기 등록 */
     .respon-form > li{flex-direction: column;}
     .respon-form .form-label{width: 100%;text-align: left;}
@@ -725,8 +714,8 @@ table.type02 tr.al >td{padding:10px 20px; text-align: left; vertical-align: base
     .qr-box{flex-direction: column;}
     /* -- Study at UOS 지불 */
 
-     /* 학점이전 관련 FAQ */
-     .faqList01 > li > .q{padding:16px 10px;}
-     .faqList01 > li > .a{padding:20px 10px;}
-     /* -- 학점이전 관련 FAQ */
+    /* 학점이전 관련 FAQ */
+    .faqList01 > li > .q{padding:16px 10px;}
+    .faqList01 > li > .a{padding:20px 10px;}
+    /* -- 학점이전 관련 FAQ */
 }
