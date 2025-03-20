@@ -1,7 +1,7 @@
 @import 'reset.css';
 @import 'main.css';
 @import 'sub.css';
-/* 20250317 */
+/* 20250320 */
 /* fonts */
 @font-face {
     font-family: 'Pretendard';
@@ -266,13 +266,12 @@ a.linkNwin {
 .depth3 > li > a:hover,.depth3 > li > a:focus{color:#2665d0; text-decoration: underline;}
 .header-bot .srch-wrp{display: flex; align-items: center;}
 .header-bot .srch-wrp > .srch-btn{width: 26px; height: 26px; background: url("../images/search-icn.png") no-repeat; margin-right: 27px;}
-.header-bot .srch-wrp > .all-menu{padding:9px 0; position: relative;}
-.header-bot .srch-wrp > .all-menu > p{width: 24px; height: 3px; background-color: #333; }
-.header-bot .srch-wrp > .all-menu >p::before,
-.header-bot .srch-wrp > .all-menu >p::after{content:""; display: inline-block; height: 3px; background-color: #333; position: absolute; right:0;}
-.header-bot .srch-wrp > .all-menu >p::before{width: 100%; top:0;}
-.header-bot .srch-wrp > .all-menu >p::after{width: 60%; bottom:0; transition: 0.2s;}
-.header-bot .srch-wrp > .all-menu:hover >p::after{width: 100%}
+.header-bot .srch-wrp > .all-menu{width: 24px; height: 24px; position: relative;}
+.header-bot .srch-wrp > .all-menu > .bar{width: 100%; height: 3px; background-color: #333; position: absolute; right: 0;}
+.header-bot .srch-wrp > .all-menu > .bar.top{width: 100%; top: 2px;}
+.header-bot .srch-wrp > .all-menu > .bar.mid{width: 100%; top: 10px;}
+.header-bot .srch-wrp > .all-menu > .bar.bot{width: 60%; transition: 0.2s; bottom: 2px;}
+.header-bot .srch-wrp > .all-menu:hover > .bar.bot{width: 100%}
 
 /* 검색창 */
 .srch-box{position: absolute; left:0; top:100%; background-color:rgba(9, 72, 151,0.9); width: 100%; height: 0; z-index: 999;  overflow: hidden; transition: height 0.5s;}
