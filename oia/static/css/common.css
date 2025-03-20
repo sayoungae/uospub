@@ -231,6 +231,7 @@ body {top: 0 !important;}
 /* header */
 #wrap{position: relative;}
 
+.header {position: fixed; left:0; top:0; width: 100%; background-color: #fff; z-index: 99999;}
 .header .header-top{padding:20px 0; border-bottom: 1px solid #D8D8D8; font-size: 15px; position: relative;}
 .header .header-top > .inner{max-width: 1800px; padding:0 15px; margin:0 auto; display: flex; justify-content: space-between; align-items: center;}
 .header .header-top .top-logo{display: flex; align-items: center;}
@@ -336,6 +337,8 @@ body {top: 0 !important;}
 
 .top-gbn-mo{display: none;}
 .menu-out{display: none;}
+
+
 /* -- header */
 /* footer */
 #footer{background-color: #fff; border-top: 1px solid #F0F0F0;}

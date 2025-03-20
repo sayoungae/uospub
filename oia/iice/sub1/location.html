@@ -19,18 +19,21 @@
             .then(response => response.text())
             .then(data => document.getElementById('footer').innerHTML = data);
         
-        fetch('../include/snb.html')
-            .then(response => response.text())
-            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+        // fetch('../include/snb.html')
+        //     .then(response => response.text())
+        //     .then(data => document.getElementById('snb-wrap').innerHTML = data);
        
     </script>
 </head>
 <body>
-    <div id="wrap">
+    <div id="wrap" class="subWrap">
         <header class="header" id="header"></header>
         <div class="s-container">
             <div class="sub-tit-wrap"><h3 class="pg-tit">Location</h3></div>
-            <div id="snb-wrap"></div>
+            <div id="snb-wrap">
+                
+                <div class="wid"><ul class="line-map clearfix"><li class="home"><a href="/oia/web/main"><img src="../../static/images/home_ic.png" alt="홈"></a></li><li><a href="#n">Study at UOS</a><ul><li><a href="/oia/web/contents/OIA_About_01">About OIA</a></li><li><a href="/oia/web/contents/OIA_Admission_01">International Admission</a></li><li><a href="/oia/web/contents/OIA_Studyat_01_01">Study at UOS</a></li><li><a href="/oia/web/contents/OIA_StudyAb_01_01">Study Abroad</a></li><li><a href="/oia/web/contents/OIA_Partnership_01">Partnership</a></li><li><a href="/oia/web/contents/OIA_Buddy_01">Buddy Program</a></li><li><a href="/oia/web/bbs/oia_not01/list">Student Resources</a></li><li><a href="/oia/web/contents/OIA_Faculty_00">Faculty Mobility</a></li></ul></li><li><a href="#n">Seoul International Summer School Ⅰ</a><ul><li><a href="/oia/web/contents/OIA_Studyat_01_01" class="">Student Exchange Program</a></li><li><a href="/oia/web/contents/OIA_Studyat_02_01" class="">Visiting Student Program</a></li><li><a href="/oia/web/contents/OIA_Studyat_03" class="">International Research Internship</a></li><li><a href="/oia/web/contents/OIA_Studyat_04_01" class="on">Seoul International Summer School Ⅰ</a></li><li><a href="/oia/web/contents/OIA_Studyat_05_01" class="">Seoul International Summer School Ⅱ</a></li><li><a href="/oia/web/contents/OIA_Studyat_06_01" class="">Seoul International Winter School</a></li></ul></li><li><a href="#n">About the Program</a><ul><li><a href="/oia/web/contents/OIA_Studyat_04_01" class="on">About the Program</a></li><li><a href="/oia/web/bbs/oia_sau01/list" class="">Notice</a></li><li><a href="/oia/web/contents/OIA_Studyat_04_03" class="">Program Calendar</a></li><li><a href="/oia/web/contents/OIA_Studyat_04_04" class="">Eligibility &amp; Application</a></li><li><a href="/oia/web/contents/OIA_Studyat_04_05" class="">courses</a></li><li><a href="/oia/web/contents/OIA_Studyat_04_06" class="">Fees</a></li><li><a href="/oia/web/contents/OIA_Studyat_04_07" class="">Payment</a></li><li><a href="/oia/web/contents/OIA_Studyat_04_08" class="">Housing</a></li><li><a href="https://wise.uos.ac.kr/nomination" class="" title="새창" target="_blank">Nomination</a></li></ul></li></ul></div>
+            </div>
             <div class="wid">
                 <div class="content-area">
                     <div id="contents">

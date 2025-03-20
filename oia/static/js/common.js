@@ -1,6 +1,7 @@
 
 
 $(document).ready(function(){
+	
 	/*  menu  */
 	$(".depth1_list > li > a").bind('focus mouseover',function(){
 		if (window.innerWidth > 1024  ){
@@ -160,6 +161,23 @@ $(document).ready(function(){
 	handleMenuClick();
 	$(window).on('resize', handleResize);
 	
+	// 250320 추가
+	$(window).on("scroll", function() {
+		console.log($(window).scrollTop())
+		// 메인 HEDER
+		if ($(window).scrollTop() > 50) {
+			$('.mainWrap').addClass('headerFix');
+		}else{
+			$('.mainWrap').removeClass('headerFix');
+		}
+
+		// 서브 SNB
+		if ($(window).scrollTop() > 385) {
+			$('.subWrap').addClass('snbFix');
+		} else {
+			$('.subWrap').removeClass('snbFix');
+		}
+	});
 
 
 
@@ -319,5 +337,5 @@ window.addEventListener("DOMContentLoaded", () => {
 	}
 	popOpen();
 	popClose();
-})
+});
 
