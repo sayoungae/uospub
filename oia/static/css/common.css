@@ -231,8 +231,8 @@ body {top: 0 !important;}
 /* header */
 #wrap{position: relative;}
 
-.header {position: fixed; left:0; top:0; width: 100%; background-color: #fff; z-index: 99999;}
-.header .header-top{padding:20px 0; border-bottom: 1px solid #D8D8D8; font-size: 15px; position: relative;}
+
+.header .header-top{padding:20px 0; border-bottom: 1px solid #D8D8D8; font-size: 15px; position: relative; }
 .header .header-top > .inner{max-width: 1800px; padding:0 15px; margin:0 auto; display: flex; justify-content: space-between; align-items: center;}
 .header .header-top .top-logo{display: flex; align-items: center;}
 .header .header-top .h-logo{display: flex; align-items: center;}
@@ -286,8 +286,8 @@ body {top: 0 !important;}
 
 .header-bot{position: relative; background-color: #fff;}
 /* GNB */
-.depth1_list{display: flex; text-align: center;  justify-content: center; gap: 60px;  font-size: 19px; padding:40px 0; position: relative;}
-.depth1_list > li > a{display: inline-block; text-align: center; padding:0 5px; position: relative; z-index: 9;}
+.depth1_list{display: flex; text-align: center;  justify-content: center; gap: 60px;  font-size: 19px; padding:40px 0; position: relative; z-index: 99999;}
+.depth1_list > li > a{display: inline-block; text-align: center; padding:0 5px; position: relative; }
 .depth1_list > li > a:hover::before,.depth1_list > li > a:focus::before{
         content: "";
         display: inline-block;
@@ -301,7 +301,7 @@ body {top: 0 !important;}
         bottom:-4px;
         z-index: -1;
 }
-.depth1_list > li > .depth2{display: none; width: 100%; position: absolute; left:0; top:100%; z-index: 99999;  border-top:1px solid #EBECEF;}
+.depth1_list > li > .depth2{display: none; width: 100%; position: absolute; left:0; top:100%;   border-top:1px solid #EBECEF;}
 
 .depth2 .dp2-bx{display: flex; min-height: 326px;}
 .depth2 .dp2-itx{background-color: #004298; color:#fff;font-weight: 700; font-size: 37px; max-width: 425px;width: 22%; padding-top: 48px; display: flex;justify-content: flex-end}
@@ -337,8 +337,7 @@ body {top: 0 !important;}
 
 .top-gbn-mo{display: none;}
 .menu-out{display: none;}
-
-
+.mainWrap .header {position: fixed; left:0; top:0; width: 100%; background-color: #fff; z-index: 99999;}
 /* -- header */
 /* footer */
 #footer{background-color: #fff; border-top: 1px solid #F0F0F0;}

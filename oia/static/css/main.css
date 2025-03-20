@@ -156,6 +156,7 @@
     .guide-slide li a .txt{padding-top: 54px;}
 }
 @media (max-width: 1024px) {
+    .m-container{padding-top: 123px;}
     /* m-guide */
     .m-guide .m-cont {flex-direction: column;}
     .m-guide .left-box {width: 100%;}
@@ -188,6 +189,9 @@
     .m-notice .m-cont li .noti-desc{display: none;}
     /* -- m-notice */
 
+}
+@media (max-width: 760px) {
+    .m-container{padding-top: 109px;}
 }
 @media (max-width: 670px) {
     .m-inner{padding:0 20px}
