@@ -353,7 +353,7 @@
 .btn-wrap.Cside{justify-content: center;}
 .btn-wrap select{    border: 1px solid #bbbbbb; height: 42px; border-radius: 5px;    vertical-align: bottom;}
 
-.btn{display: inline-block; text-align: center; border-radius: 6px; font-weight: 500; background-color: #fff; color:#0e2a67; padding: 10px 30px; border:1px solid #BCBECB;}
+.btn{display: inline-block; text-align: center; border-radius: 6px; font-weight: 500; background-color: #fff; color:#0e2a67; padding: 10px 30px; border:1px solid #BCBECB; font-size: var(--fz-16);}
 .btn.smBtn{min-width: 80px; height: 42px;}
 .btn.blueBc{background-color: #014195; color:#fff; border-color:#014195}
 .pdfBtn{ display: flex; align-items: stretch; gap: 5px; flex-wrap: wrap; margin-bottom: 20px;}
@@ -663,7 +663,7 @@
     .stp-bt{width: 100%; justify-content: flex-end}
     .pdfBtn > .btn{width: calc(100% / 2 - 3px); padding:10px;}
     .brd-lstp1 > li{padding: 15px 5px;}
-
+    .brd-lstp1 > li .num{width: 50px;}
     .subTit03{margin-top: 40px; margin-bottom: 25px;}
     /* dot */
     .dot-list01 > li::before{top: 6px;}
