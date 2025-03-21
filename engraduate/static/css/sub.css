@@ -1,6 +1,6 @@
 /* 20250317 */
 .s-container{min-height: 700px; line-height: 1.2;padding-top: 156px;}
-.sub-banner{width: 100%; height: 250px; max-width: 1980px; margin:0 auto; background-repeat: no-repeat; background-position: left bottom; border-radius: 0 0 0 100px;}
+.sub-banner{width: 100%; height: 250px; max-width: 1980px; margin:0 auto; background-repeat: no-repeat; background-position: center center; border-radius: 0 0 0 100px; background-size: cover;}
 .sub-banner.sub1{ background-image: url("../images/sub-ban01.png");}
 .sub-banner.sub2{ background-image: url("../images/sub-ban02.png");}
 .sub-banner.sub3{ background-image: url("../images/sub-ban03.png");}
@@ -9,7 +9,7 @@
 .sub-banner.sub6{ background-image: url("../images/sub-ban06.png");}
 
 .sub-banner > .inner{height: 100%; display: flex; align-items: center; justify-content: center; flex-direction: column;}
-.sub-banner .ban-tit{font-size: var(--fz-38);font-weight: 700; color:#fff; margin-bottom: 10px;}
+.sub-banner .ban-tit{font-size: var(--fz-38);font-weight: 700; color:#fff; margin-bottom: 10px; text-align: center;}
 
 .sub-banner .line-map{color:#fff; font-size: var(--fz-20); display: flex; justify-content: center;}
 .sub-banner .line-map > li{position: relative; padding-right:14px;}
@@ -258,7 +258,7 @@
     margin-left: 6px;
 }
 .brd-lstp1 > li .da > p:last-child:after{display: none;}
-.brd-lstp1 > li .da .a-file{width: 30px; height: 30px; border-radius: 50%; background: #EDF0F5 url("../images/icon_file.png") center center no-repeat;}
+.brd-lstp1 > li .da .a-file{width: 20px; height: 30px; border-radius: 50%; background:  url("../images/icon_file2.png") center center / auto auto no-repeat;}
 /* view */
 .view-bx{border-bottom:1px solid #d2d2d2;}
 .view-bx .view-tit{font-size: var(--fz-22); font-weight: 500; background-color: #F7F7F7; padding:20px; border-top:1px solid #B1B1B1;}
@@ -286,7 +286,7 @@
 .faq-list-box{border-top: #3c497b solid 2px;}
 .faq-list-box dt >a{display: flex; justify-content: flex-start; align-items: center; padding: 50px 30px; border-bottom: 1px solid #dcdcdc; cursor: pointer; background-image: url("../images/icon_faq_down.png"); background-position: right center; background-repeat: no-repeat; font-size: var(--fz-18);}
 .faq-list-box dt >a.opened{background-image: url("../images/icon_faq_up.png");}
-
+.faq-list-box dt >a >p{width: calc(100% - 40px);}
 .faq-list-box dd{display: none; font-size: var(--fz-16);padding: 50px 70px; background: #fcfcfc; border-bottom: 1px solid #dcdcdc; overflow: hidden;}
 .faq-list-box dd .view_txt{width: calc(100% - 70px); padding-top: 10px; float: left;}
 
@@ -606,7 +606,6 @@
 }
 @media (max-width: 960px) {
     /* 학과소개-교수소개 */
-    
     .teacher-list > ul > li{padding:20px 0; gap: 20px;align-items: flex-start; flex: 1 1 100%;}
     .teacher-list > ul > li .tc-img{width: 114px; height: 148px;}
     .teacher-list > ul > li .tc-info{max-width: 100%;}
@@ -617,6 +616,7 @@
 }
 @media (max-width: 760px) {
     .s-content{padding:40px 0;}
+    .sub-banner{height: 180px;}
     .sub-banner .line-map{display: none;}
     /* tab */
     .s-container .tab-area .tab > ul>li{width: calc(100% / 2 - 2px);}
@@ -693,18 +693,9 @@
     .course{row-gap: 60px;}
     .course_square{width: 100%; margin-right: 0;}
     .course_square:after{top:auto; bottom: -55px; left:50%;  transform: translate(-50%, 0) rotate(90deg);}
+
+    /* faq */
+    .faq-list-box dt >a{padding:30px 30px 30px 10px}
+    .faq-list-box dd{padding:30px 10px}
+    .faq-list-box .tag{width: 30px; height: 30px;font-size: 14px;}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
