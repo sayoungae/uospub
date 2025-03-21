@@ -1,4 +1,5 @@
 
+.m-container{padding-top: 156px;}
 .m-content{padding:70px 0;}
 .m-tit{font-size: 36px; font-weight: 600; padding-left: 20px; position: relative; margin-bottom: 40px;}
 .m-tit.whc{color:#fff}
@@ -169,7 +170,10 @@
     /* m-quick */
     /* -- m-quick */
 }
+@media (max-width: 1024px) {
+    .m-container{padding-top: 119px;}
 
+}
 @media (max-width: 960px) {
     /* m-visual */
     .m-visual .visual-slide{height: 400px;}
@@ -193,9 +197,6 @@
     .m-visual .swiper-slide .txt-wrap >span{display: inline-block; font-size: 22px;}
     .m-visual .controler {left: 30px;}
     /* -- m-visual */
-
-    
-
     /* m-service */
     .m-service{background-size: 100% 100%;}
     .m-service .service-menu{flex-wrap: wrap; justify-content: flex-start;}
@@ -215,10 +216,11 @@
     /* -- m-quick */
 }
 @media (max-width: 480px) {
+    .m-container{padding-top: 159px;}
     .m-content{padding:40px 0;}
     .m-tit{font-size: 28px; margin-bottom: 20px;}
     
-     /* m-visual */
+    /* m-visual */
     .m-visual .visual-slide{height: 230px; border-radius: 0;}
     .m-visual .swiper-slide .txt-wrap{padding-top: 40px;}
     .m-visual .swiper-slide .txt-wrap >p{font-size: 30px; }
@@ -228,7 +230,6 @@
     /* m-news */
     .m-news .tab-area .tab > ul > li > button {font-size: 16px;padding:10px 0;}
     .m-news .tab-conts{font-size: 14px;}
-    
     /* -- m-news */
 
     /* m-service */
@@ -245,7 +246,6 @@
     .introduce_zone > li.active{background-size: 100% 100%;}
     .introduce_zone > li.active > .tit{font-size: 22px;}
     .introduce_zone > li.active > .tit:after {left:140px}
-    
     /* -- m-introduce */
 
     /* m-quick */
