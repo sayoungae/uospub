@@ -22,13 +22,11 @@
 .line-map > li > ul > li > a:hover,.line-map > li > ul > li > a:focus{color: #1969b2;  background-color: #ECF8FE;}
 
 
-
+.subWrap.snbFix #snb-wrap {width: 100%; position: fixed; left:0; top:0; z-index: 9999;}
 .content-area {padding:45px 0 90px; min-height: 600px;}
 .con-prepar{padding: 60px 0; text-align: center;}
 
-@media (max-width: 1024px) {
-    .subWrap.snbFix #snb-wrap {width: 100%; position: fixed; left:0; top:0; z-index: 9999;}
-}
+
 @media (max-width: 760px) {
     .line-map > li{font-size: 16px;}
     .line-map > li.home >a{width: 40px; padding:17px 0;}

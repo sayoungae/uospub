@@ -337,7 +337,7 @@ body {top: 0 !important;}
 
 .top-gbn-mo{display: none;}
 .menu-out{display: none;}
-.mainWrap .header {position: fixed; left:0; top:0; width: 100%; background-color: #fff; z-index: 99999;}
+.mainWrap .header {position: fixed; left:0; top:0; width: 100%; background-color: #fff; z-index: 99999;box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);}
 /* -- header */
 /* footer */
 #footer{background-color: #fff; border-top: 1px solid #F0F0F0;}
