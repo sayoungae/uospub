@@ -243,6 +243,7 @@
 .brd-lstp1 > li{padding: 20px 10px;}
 .brd-lstp1 > li + li{border-top:1px solid #ddd;}
 .brd-lstp1 > li > div{ display: flex; gap: 10px; font-size: var(--fz-18); }
+.brd-lstp1 > li .ti{display: flex; align-items: center; gap: 5px;}
 .brd-lstp1 > li .num{width: 80px; text-align: center; color:#666}
 .brd-lstp1 > li .da{margin-top: 10px; font-size: var(--fz-16);color: #666; display: flex;align-items: center; flex-wrap: wrap;}
 .brd-lstp1 > li .da > p{margin-right: 6px;}
@@ -354,9 +355,13 @@
 
 .btn{display: inline-block; text-align: center; border-radius: 6px; font-weight: 500; background-color: #fff; color:#0e2a67; padding: 10px 30px; border:1px solid #BCBECB;}
 .btn.smBtn{min-width: 80px; height: 42px;}
+.btn.blueBc{background-color: #014195; color:#fff; border-color:#014195}
 .pdfBtn{ display: flex; align-items: stretch; gap: 5px; flex-wrap: wrap; margin-bottom: 20px;}
 .pdfBtn > .btn{width: calc(100% / 4 - 5px); display: flex; align-items: center; justify-content: center; min-height: 50px; line-height: 1.2; padding: 10px 20px; min-width: 210px;}
 .pdfBtn > .btn:hover,.pdfBtn > .btn:focus{box-shadow: 0 0 10px rgba(0, 59, 158,0.3); transition: box-shadow 0.3s;}
+/* h */
+.btn:hover,.btn:focus{border-color: #0e2a67; transition: all 0.3s;}
+.btn.blueBc:hover,.btn.blueBc:focus{background-color:#003477; border-color: #003477;}
 /* -- 버튼 */
 
 /* 대학원 소개 */
