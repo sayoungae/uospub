@@ -209,16 +209,19 @@
     padding:15px 0 13px;
     border-bottom:1px solid #bbb;
     border-right: 1px solid #bbb;
+    font-size:var(--fz-16);
 }
 .table-wrap .type2 td{
     border-bottom:1px solid #bbb;
     padding:15px 0 13px;
-    text-align:center;
+    text-align:left;
     vertical-align: middle;
+    font-size:var(--fz-16);
+
 }
 .table-wrap .type2 td:first-child, .table-wrap .type2 th:first-child{border-left:none}
 .table-wrap .type2 td.al {padding:15px 15px 13px; text-align: left; background-color: #F0F5FB;}
-.table-wrap .type2 th.th {vertical-align:top; font-size:17px; font-weight: 500;}
+.table-wrap .type2 th.th {vertical-align:top; font-weight: 500;}
 .table-wrap .type2 td.th {color:#2a2a2a; font-weight:500; text-align:center; vertical-align: middle;}
 
 .table-wrap .type3{width: 100%; border-top:2px solid #667CB3;}
@@ -353,7 +356,7 @@
 .btn-wrap.Cside{justify-content: center;}
 .btn-wrap select{    border: 1px solid #bbbbbb; height: 42px; border-radius: 5px;    vertical-align: bottom;}
 
-.btn{display: inline-block; text-align: center; border-radius: 6px; font-weight: 500; background-color: #fff; color:#0e2a67; padding: 10px 30px; border:1px solid #BCBECB; font-size: var(--fz-16);}
+.btn{display: inline-block; text-align: center; border-radius: 6px; font-weight: 500; background-color: #fff; color:#0e2a67; padding: 10px 30px; border:1px solid #BCBECB; font-size: 16px;}
 .btn.smBtn{min-width: 80px; height: 42px;}
 .btn.blueBc{background-color: #014195; color:#fff; border-color:#014195}
 .pdfBtn{ display: flex; align-items: stretch; gap: 5px; flex-wrap: wrap; margin-bottom: 20px;}
@@ -528,7 +531,7 @@
 .course_square.type2 > .course_content{display: flex; justify-content: center; flex-direction: column;}
 .course_square.type2 > .course_content img{width: auto;}
 .calTop{position: relative; margin-bottom: 40px;}
-.calYaer{color: #3c497b; font-size: var(--fz-38); text-align: center;}
+.calYaer{color: #3c497b; font-size: var(--fz-38); text-align: center; font-weight: 700;}
 .calYaer img{vertical-align: middle;}
 .calTop > .btn-wrap{position: absolute; top:10px; right: 0; margin-top: 0;}
 
@@ -628,7 +631,7 @@
     /* 대학원 소개 */
     .welcomeBox{flex-direction: column;}
     .welcomeBox .intro_left{width: 100%;}
-    .welcomeBox .intro_left > img{width: 100%;border-radius: 20px;}
+    .welcomeBox .intro_left > img{width: 100%;border-radius: 20px; max-width: 240px; margin:0 auto;}
     .welcomeBox .intro_right{width: 100%;}
 
     .org-chart .squa-line{flex-wrap: wrap; column-gap: 20px; overflow: hidden;}
@@ -661,9 +664,9 @@
 
 
 @media (max-width: 480px){
-    .s-container{padding-top: 159px;}
+    .s-container{padding-top: 135px;}
     .sub-tit-box{flex-direction: column-reverse; align-items: flex-start; margin-bottom: 40px;}
-    .stp-bt{width: 100%; justify-content: flex-end}
+    .stp-bt{display: none;}
     .pdfBtn > .btn{width: calc(100% / 2 - 3px); padding:10px; min-width: 100px;}
     .brd-lstp1 > li{padding: 15px 5px;}
     .brd-lstp1 > li .num{width: 50px;}
