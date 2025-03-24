@@ -1,4 +1,4 @@
-/* 20250317 */
+/* 20250324 */
 .s-container{min-height: 700px; line-height: 1.2;padding-top: 156px;}
 .sub-banner{width: 100%; height: 250px; max-width: 1980px; margin:0 auto; background-repeat: no-repeat; background-position: center center; border-radius: 0 0 0 100px; background-size: cover;}
 .sub-banner.sub1{ background-image: url("../images/sub-ban01.png");}
@@ -34,8 +34,8 @@
 .snb-box .snb-tit{min-height: 128px; padding:10px 20px; line-height: 1.1; font-size: var(--fz-36); font-weight: 700; color:#fff; background-color: #3662C0; display: flex; align-items: center; justify-content: center; border-radius: 16px 30px 0 0;}
 .snb-depth1{background-color: #fff; }
 .snb-depth1 > ul > li >a{display: block; width: 100%; padding:20px; font-size: var(--fz-20); border-right: 1px solid #EFEFEF;border-left: 1px solid #EFEFEF;}
-.snb-depth1 > ul > li >a.linkNwin{background: url(../images/nWindow_ic.png) no-repeat 94% center; padding-right: 35px;}
-.snb-depth1 > ul > li.on >a.linkNwin{background: url(../images/nWindow_ic2.png) no-repeat 94% center; padding-right: 35px;}
+.snb-depth1 > ul > li >a.linkNwin{background: #ffffff url(../images/nWindow_ic.png) no-repeat 94% center; padding-right: 35px;}
+.snb-depth1 > ul > li.on >a.linkNwin{background: #353C47 url(../images/nWindow_ic2.png) no-repeat 94% center; padding-right: 35px;}
 .snb-depth1 > ul > li + li >a{border-top:1px solid #EFEFEF;}
 .snb-depth1 > ul > li:last-child > a{border-bottom:1px solid #efefef;}
 .snb-depth1 > ul > li.on > a{background-color: #353C47; color:#fff; border-color: #353C47;}
@@ -357,7 +357,7 @@
 .btn.smBtn{min-width: 80px; height: 42px;}
 .btn.blueBc{background-color: #014195; color:#fff; border-color:#014195}
 .pdfBtn{ display: flex; align-items: stretch; gap: 5px; flex-wrap: wrap; margin-bottom: 20px;}
-.pdfBtn > .btn{width: calc(100% / 4 - 5px); display: flex; align-items: center; justify-content: center; min-height: 50px; line-height: 1.2; padding: 10px 20px; min-width: 210px;}
+.pdfBtn > .btn{width: calc(100% / 4 - 5px); display: flex; align-items: center; justify-content: center; min-height: 50px; line-height: 1.2; padding: 10px 20px;}
 .pdfBtn > .btn:hover,.pdfBtn > .btn:focus{box-shadow: 0 0 10px rgba(0, 59, 158,0.3); transition: box-shadow 0.3s;}
 /* h */
 .btn:hover,.btn:focus{border-color: #0e2a67; transition: all 0.3s;}
@@ -618,6 +618,8 @@
     .s-content{padding:40px 0;}
     .sub-banner{height: 180px;}
     .sub-banner .line-map{display: none;}
+
+    .pdfBtn > .btn{width: calc(100% / 3 - 4px);}
     /* tab */
     .s-container .tab-area .tab > ul>li{width: calc(100% / 2 - 2px);}
     /* table */
@@ -654,6 +656,7 @@
 
     /* 일반학사일정 */
     .calTop > .btn-wrap{position: relative; justify-content: flex-end;}
+
 }
 
 
@@ -661,7 +664,7 @@
     .s-container{padding-top: 159px;}
     .sub-tit-box{flex-direction: column-reverse; align-items: flex-start; margin-bottom: 40px;}
     .stp-bt{width: 100%; justify-content: flex-end}
-    .pdfBtn > .btn{width: calc(100% / 2 - 3px); padding:10px;}
+    .pdfBtn > .btn{width: calc(100% / 2 - 3px); padding:10px; min-width: 100px;}
     .brd-lstp1 > li{padding: 15px 5px;}
     .brd-lstp1 > li .num{width: 50px;}
     .subTit03{margin-top: 40px; margin-bottom: 25px;}
@@ -698,4 +701,7 @@
     .faq-list-box dt >a{padding:30px 30px 30px 10px}
     .faq-list-box dd{padding:30px 10px}
     .faq-list-box .tag{width: 30px; height: 30px;font-size: 14px;}
+}
+@media (max-width: 380px){
+    .pdfBtn > .btn{width: 100%;}
 }

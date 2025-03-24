@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>국제처 소개</title>
+     <!-- CSS -->
+    <link rel="stylesheet" href="../../static/css/common.css">
+    <link rel="stylesheet" href="../../static/css/swiper.css">
+    <!-- JS -->
+    <script src="../../static/js/jquery-3.7.1.js"></script>
+    <script src="../../static/js/common.js"></script>
+    <script src="../../static/js/swiper-bundle.min.js"></script>
+    <script src="../../static/js/main.js"></script>
+    <script>
+        // header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+       
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <div class="sub-tit-wrap"><h3 class="pg-tit">Faculty Mobility</h3></div>
+            <!-- snb -->
+            <div id="snb-wrap"></div>
+            <!-- // snb -->
+            <div class="wid">
+                <div class="content-area">
+                    <div id="contents">
+                        <h4 class="conts-tit2">Exchange Scholar Program</h4>
+                        <h5 class="sub-tit">Purpose</h5>
+                        <div class="ind-box">
+                            The Exchange Professor Program is designed to promote academic and cultural exchanges and strengthen partnerships between the University of Seoul (UOS) and domestic and international universities. Under this program, professors are dispatched for a certain period to conduct lectures and research at UOS.
+                        </div>
+                        <h5 class="sub-tit">Eligibility</h5>
+                        <div class="ind-box">
+                            <ul class="dotList01">
+                                <li>Full-time faculty members (Assistant Professor or higher) at domestic or international universities, which have Exchange Scholar Agreement with UOS</li>
+                                <li>Must not have any disqualifying factors for appointment</li>
+                                <li>Under the age of 65</li>
+                            </ul>
+                        </div>
+                        <h5 class="sub-tit">Appointment Period</h5>
+                        <div class="ind-box">
+                            <ul class="dotList01">
+                                <li>Minimum of 1 month to a maximum of 1 year</li>
+                                <li>Up to 3 years if stipulated in an inter-university agreement</li>
+                            </ul>
+                        </div>
+                        <h5 class="sub-tit">Duties</h5>
+                        <div class="ind-box">
+                            <ul class="dotList01">
+                                <li>Conduct lectures or research at UOS</li>
+                                <li>Participate in joint research with UOS faculty members</li>
+                                <li>Engage in educational activities such as laboratory experiments and practical training</li>
+                            </ul>
+                        </div>
+                        <h5 class="sub-tit">Lecture Hours</h5>
+                        <div class="ind-box">
+                            <ul class="dotList01">
+                                <li>Up to 6 hours per week</li>
+                            </ul>
+                        </div>
+                        <h5 class="sub-tit">Remuneration</h5>
+                        <div class="ind-box">
+                            <ul class="dotList01">
+                                <li>Salaries are paid by the home institution</li>
+                                <li>Lecture fees of KRW 40,000 per hour if lectures are conducted at UOS</li>
+                            </ul>
+                        </div>
+                        <h5 class="sub-tit">Reappointment</h5>
+                        <div class="ind-box">
+                            <ul class="dotList01">
+                                <li>Eligible for reappointment up to twice (maximum cumulative period of 3 years)</li>
+                                <li>Evaluations based on teaching/research performance, contributions to the university, sincerity, and cooperation</li>
+                            </ul>
+                        </div>
+                        <h5 class="sub-tit">Visa and Insurance</h5>
+                        <div class="ind-box">
+                            <ul class="dotList01">
+                                <li>Visa documents support provided through the UOS Office of International Affairs</li>
+                                <li>Enrollment in four major social insurances (industrial accident insurance mandatory; others subject to work hours and visa type)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>
