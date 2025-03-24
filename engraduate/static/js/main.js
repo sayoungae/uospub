@@ -112,6 +112,7 @@ $(function(){
                 },
             },
             481: {
+                enabled: true,
                 slidesPerView: 2,
                 slidesPerGroup:2,
                 spaceBetween: 10,
@@ -121,13 +122,7 @@ $(function(){
                 },
             },
             0: {
-                slidesPerView: 2,
-                slidesPerGroup:2,
-                spaceBetween: 10,
-                grid:{
-                    fill:'row',
-                    rows:2,
-                },
+                enabled: false,
             }
         }
         

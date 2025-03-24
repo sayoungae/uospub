@@ -226,6 +226,9 @@ a.linkNwin {
 .header-top{background-color: #003B9E; color:#fff; font-size: 14px; padding:10px 0;}
 .header-top > .inner{display: flex; justify-content: flex-end; align-items: center; gap: 20px; flex-wrap: wrap;}
 
+.h-logo .logo-pc{display: block;}
+.h-logo .logo-mob{display: none;}
+
 .util-wrp > li{padding:0 8px; position: relative; float: left; text-transform: uppercase;}
 .util-wrp > li:after{
     content: "";
@@ -327,8 +330,9 @@ a.linkNwin {
     .srch-box .srch-box-in .srch-close{position: static;}
 }
 @media (max-width: 480px) {
-    .header-bot > .inner{display: block;}
-    .h-logo{margin-bottom: 20px;}
+    .h-logo .logo-pc{display: none;}
+    .h-logo .logo-mob{display: block;}
+
     .header-bot .srch-wrp{justify-content: flex-end;}
     .util-wrp > li{font-size: 13px;}
     .header-bot .srch-wrp > .srch-btn{background-size: 100% 100%; width: 20px; height: 20px;vertical-align: middle;}
@@ -346,12 +350,7 @@ a.linkNwin {
     #footer{font-size: 13px;}
     #footer .foot-link{font-size: 14px;}
 }
-@media (max-width: 400px) {
-    .h-logo > a > img{width: 100%;}
-    .h-logo > a:nth-child(1){width: 180px;}
-    .h-logo > a:nth-child(2){width: 120px;}
 
-}
 
 
 /* all menu pop */

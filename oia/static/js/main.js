@@ -52,10 +52,14 @@ $(function(){
                 slidesPerGroup : 2,
             },
             481: {
+                enabled: true,
                 spaceBetween: 20,
                 slidesPerView: 2,
                 slidesPerGroup : 2,
-            }
+            },
+            0: {
+                enabled: false,
+            },
         }
     });
     const guideSlide = new Swiper('.guide-slide', {
@@ -63,12 +67,20 @@ $(function(){
         init:true,
         intialSlide:0,
         speed: 800,
-        slidesPerView: 1,
-        slidesPerGroup : 1,
+        // autoHeight : true,
         navigation: {
             prevEl: '.guideSlide_prev',
             nextEl: '.guideSlide_next',
         },
-        
+        breakpoints: {
+            0: {
+                enabled: false,
+            },
+            481: {
+                enabled: true,
+                slidesPerView: 1,
+                slidesPerGroup : 1,
+            },
+        }
     });
 });
