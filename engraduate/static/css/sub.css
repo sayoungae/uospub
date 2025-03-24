@@ -630,8 +630,8 @@
 
     /* 대학원 소개 */
     .welcomeBox{flex-direction: column;}
-    .welcomeBox .intro_left{width: 100%;}
-    .welcomeBox .intro_left > img{width: 100%;border-radius: 20px; max-width: 240px; margin:0 auto;}
+    .welcomeBox .intro_left{width: 100%;max-width: 240px; margin:0 auto;}
+    .welcomeBox .intro_left > img{width: 100%;border-radius: 20px; }
     .welcomeBox .intro_right{width: 100%;}
 
     .org-chart .squa-line{flex-wrap: wrap; column-gap: 20px; overflow: hidden;}
