@@ -5,10 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
     <!-- CSS -->
-    <link rel="stylesheet" href="/design/theme/oia/css/css/common.css">
+    <link rel="stylesheet" href="../../static/css/common.css">
+    <link rel="stylesheet" href="../../static/css/swiper.css">
+
+
     <!-- JS -->
-    <script src="/design/theme/oia/css/js/jquery-3.7.1.js"></script>
-    <script src="/design/theme/oia/css/js/common.js"></script>
+    <script src="../../static/js/jquery-3.7.1.js"></script>
+    <script src="../../static/js/common.js"></script>
+    <script src="../../static/js/swiper-bundle.min.js"></script>
+    <script src="../../static/js/main.js"></script>
+    
     <script>
         // header.html을 불러오기
         fetch('../include/header.html')
@@ -24,6 +30,7 @@
             .then(data => document.getElementById('snb-wrap').innerHTML = data);
        
     </script>
+    
 </head>
 <body>
     <div id="wrap">
@@ -84,43 +91,42 @@
                                 <div id="panel_gks_02" role="tabpanel" aria-labelledby="tab_gks_02" class="tab-conts">
                                     <h5 class="sub-tit">Embassy Track</h5>
                                     <div class="ind-box">
-                                        <a href="https://www.studyinkorea.go.kr/ko/main.do" target="_blank" title="새창열림"><p><img src="/design/theme/oia/images/study in Korea_20141103.png" alt="studyin korea run by korean govemment"></p></a>
+                                        <a href="https://www.studyinkorea.go.kr/ko/main.do" target="_blank" title="open new tab"><p><img src="/design/theme/oia/images/study in Korea_20141103.png" alt="studyin korea run by korean govemment"></p></a>
                                         <div class="btn-wrap">
-                                            <a href="https://www.studyinkorea.go.kr/ko/scholarship/Gks1NoticeDetail.do?nttId=4233" class="btn arrwType"><span>KGSP Undergraduate Guideline for NIIED</span></a>
+                                            <a href="https://www.studyinkorea.go.kr/ko/scholarship/Gks1NoticeDetail.do?nttId=4233" class="btn arrwType" target="_blank" title="open new tab"><span>KGSP Undergraduate Guideline for NIIED</span></a>
                                         </div>
                                     </div>
-                                    <h5 class="sub-tit">GKS 학부 프로그램 장학금 </h5>
+                                    <h5 class="sub-tit">GKS Undergraduate Program Scholarship</h5>
                                     <div class="ind-box">
-                                        <p class="sub-tit2">장학기간</p>
-                                        <div class="desc">초대기간과 동일함</div>
-                                        <p class="sub-tit2">비용</p>
+                                        <p class="sub-tit2">Scholarship period</p>
+                                        <div class="desc">Same as the invitation period.</div>
+                                        <p class="sub-tit2">Cost</p>
                                         <div class="desc">
                                             <ul class="dotList01">
                                                 <li>
-                                                    <p>항공료: 왕복 이코노미 클래스 티켓.</p>
-                                                    <p class="point03">* 현재 학업 또는 취업을 위해 한국에 거주하는 학자에게는 입국 항공료가 제공되지 않습니다.</p>
-                                                    <p class="point03">* 학자의 모국 내 국내 여행 비용과 한국 왕복 여행 보험 비용은 제공되지 않습니다.</p>
-                                                    <p class="point03">* 중국 및 체코 공화국의 학자는 NIIED가 항공료를 제공하지 않고 상호 합의에 따라 출신 국가에서 항공료를 제공합니다.</p>
+                                                    <p>Airfare: Round-trip economy class ticket.</p>
+                                                    <p class="point03">* Scholars currently residing in Korea for study or employment are not eligible for an entry airfare.</p>
+                                                    <p class="point03">* Domestic travel expenses within the scholar's home country and round-trip travel insurance costs are not covered.</p>
+                                                    <p class="point03">* For scholars from China and the Czech Republic, airfare will be provided by their respective countries under a mutual agreement, not by NIIED.</p>
                                                 </li>
-                                                <li>월수당 : 월 80만원(KRW)</li>
-                                                <li>이주(정착)수당 : 도착 시 20만원 지급 (본국 출신 장학생에 한함, 현재 한국에 거주 중인 장학생은 불가)</li>
-                                                <li>최종 귀국수당: 귀국 시 10만원(KRW) 지급.</li>
-                                                <li>언어교육비: 전액 지원</li>
-                                                <li>Tuition: 모든 Admission금은 호스트 기관(대학)에서 면제됩니다. Tuition는 NIIED에서 지불합니다.</li>
-                                                <li>의료보험 : 월 20,000원이 제공됩니다(제한된 보장).</li>
-                                                <li>한국어에 능통한 학자(TOPIK 5급 또는 6급)를 위한 특별 지원금: 월 10만원(학위과정 시작)</li>
+                                                <li>Monthly Allowance: KRW 800,000 per month.</li>
+                                                <li>Settlement Allowance: KRW 200,000 upon arrival (only for scholars arriving from their home countries; not applicable to those already residing in Korea).</li>
+                                                <li>Return Allowance: KRW 100,000 upon returning to the home country.</li>
+                                                <li>Language Training Fee: Fully covered.</li>
+                                                <li>Tuition Fees: All admission fees are waived by the host institution (university), and tuition fees are covered by NIIED.</li>
+                                                <li>Health Insurance: KRW 20,000 per month (with limited coverage).</li>
+                                                <li>Special Award for Proficient Korean Speakers: KRW 100,000 per month for scholars with TOPIK Level 5 or 6, applicable from the start of the degree program.</li>
                                             </ul>
                                         </div>
-                                        <p class="sub-tit2">메모</p>
+                                        <p class="sub-tit2">Notes</p>
                                         <div class="desc">
                                             <ul class="dotList01">
-                                                <li>NIIED에서는 수혜자의 국가와 한국에서의 국내 여비, 이사 비용, 보증금 등에 대한 비용을 보상하지 않습니다.</li>
-                                                <li>합격자 발표일 현재 학업, 업무 등의 이유로 한국에 체류 및 거주하고 있는 장학생에게는 한국 입국을 위한 항공료가 제공되지 않습니다.</li>
-                                                <li>NIIED에서는 한국으로의 여행에 대한 보험료를 보상하지 않습니다.</li>
-                                                <li>의료비는 학생이 먼저 지불한 후 보험회사를 통해 학생에게 환불됩니다. 그러나 치과 진료나 만성 질환에 대한 비용은 보장되지 않습니다.</li>
-                                                <li>장학기간 중 학업을 포기한 장학생에게는 항공료 및 귀국수당이 지급되지 않습니다.</li>
-                                                <li>한국 입국 후 3개월 이내에 프로그램을 중단하는 학자는 모든 장학금을 환불해야 합니다. (한국 도착 항공료, 정착 수당, 월 수당, 한국어 교육 비용 등).</li>
-
+                                                <li>NIIED does not cover domestic travel expenses within the scholar's home country, relocation costs, or deposits.</li>
+                                                <li>Scholars who are residing or staying in Korea for academic or professional reasons at the time of the announcement of successful candidates will not receive airfare for entry to Korea.</li>
+                                                <li>NIIED does not cover travel insurance costs for the scholar's trip to Korea.</li>
+                                                <li>Medical expenses must be paid by the scholar first and will be reimbursed by the insurance company. However, dental treatment and expenses for chronic diseases are not covered.</li>
+                                                <li>Scholars who withdraw from the program during the scholarship period will not receive return airfare or the return allowance.</li>
+                                                <li>Scholars who discontinue the program within three months of arriving in Korea must refund all received scholarship funds, including the airfare to Korea, settlement allowance, monthly allowance, and Korean language training fees.</li>
                                             </ul>
                                         </div>
                                     </div>
