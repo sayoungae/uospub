@@ -127,7 +127,7 @@ body {top: 0 !important;}
 .openLanguageG::before { margin: 0 8px 0 0; content: ''; display: block; width: 16px; height: 16px; background: url("../images/h-google.png") no-repeat center;}
 .openLanguageG::after{content:"";display:block;width:10px;height:6px;margin-left:10px;background:url("../images/sub_nav_bg1.png") no-repeat center;}
 
-.google-translate .drop-box .translation-links{width: 110px;display:none;position:absolute;left:calc(100% - 120px);top:32px; z-index: 99999; background-color: #fff;}
+.google-translate .drop-box .translation-links{width: 110px;display:none;position:absolute;left:calc(100% - 120px);top:32px; z-index: 1000000; background-color: #fff;}
 .google-translate .drop-box.expanded .translation-links{display:block;}
 .translation-links a{font-size:13px;color:#000;background:#FFF;display:block;padding:5px 15px;margin-top:1px;}
 .translation-links a:hover{background-color: rgba(156, 156, 156, 0.3);}
