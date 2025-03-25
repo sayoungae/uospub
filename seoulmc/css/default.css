@@ -1,0 +1,1450 @@
+@charset "utf-8";
+/* webfont 설정 */
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/font/NanumGothic-Regular.eot);
+  src: url(/font/NanumGothic-Regular.eot?#iefix) format('embedded-opentype'),
+       url(/font/NanumGothic-Regular.woff2) format('woff2'),
+       url(/font/NanumGothic-Regular.woff) format('woff'),
+       url(/font/NanumGothic-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 700;
+  src: url(/font/NanumGothic-Bold.eot);
+  src: url(/font/NanumGothic-Bold.eot?#iefix) format('embedded-opentype'),
+       url(/font/NanumGothic-Bold.woff2) format('woff2'),
+       url(/font/NanumGothic-Bold.woff) format('woff'),
+       url(/font/NanumGothic-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 800;
+  src: url(/font/NanumGothic-ExtraBold.eot);
+  src: url(/font/NanumGothic-ExtraBold.eot?#iefix) format('embedded-opentype'),
+       url(/font/NanumGothic-ExtraBold.woff2) format('woff2'),
+       url(/font/NanumGothic-ExtraBold.woff) format('woff'),
+       url(/font/NanumGothic-ExtraBold.ttf) format('truetype');
+}
+ 
+/* All */
+html,body{ min-height:100%; margin:0}
+body,table,input,textarea,select,button{ font-family:'Nanum Gothic','맑은 고딕','Malgun Gothic','돋움','Dotum','애플고딕','AppleGothic','Arial','sans-serif'; font-size:14px; color:#454545}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td
+{ margin:0; padding:0; border:0; border-collapse:separate; border-spacing:0; font-weight:inherit; font-style:inherit; text-decoration:none; list-style:none; letter-spacing:-0.03em}
+img,
+object,
+embed						{ border:0}
+
+/* Forms */
+form,fieldset				{ margin:0; padding:0; border:0}
+legend						{ display:none}
+input,textarea				{ font-size:14px; font-weight:normal; line-height:1em; color:#bbb; letter-spacing:0}
+body.ie7 input,textarea		{ margin:3px 0}
+input[type="file"]			{ font-size:14px; font-weight:normal; line-height:14px}
+textarea					{ height:auto}
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="url"],
+input[type="file"],
+input[type="number"],
+input[type="tel"]{
+	vertical-align:middle;
+	padding:5px;
+	background-color:#fff;
+	border:1px solid #d5d5d5;
+	-webkit-transition:border linear 0.2s;
+	   -moz-transition:border linear 0.2s;
+		 -o-transition:border linear 0.2s;
+			transition:border linear 0.2s}
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+iinput[type="email"]:focus,
+input[type="url"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus{
+	color:#000;
+	border-color:rgba(82, 168, 236, 0.8);
+	outline:0;
+}
+input[type="radio"],
+input[type="checkbox"]{
+	margin:0 5px 0 0;
+	line-height:normal;
+	vertical-align:middle;
+	cursor:pointer}
+input[type="file"],
+input[type="image"],
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input[type="radio"],
+input[type="number"],
+input[type="checkbox"]{ width:auto}
+
+.skip				{ position:relative; display:block}
+.skip>a				{ position:absolute; display:block; width:100%; height:1px; overflow:hidden}
+.skip>a:focus		{ height:auto; position:static}
+*{ -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box}
+
+#content					{ outline:0}
+.container					{ }
+.body						{ }
+.body:after,
+.content:after				{ content:""; display:block; clear:both}
+/* 250325 s */
+/* .content					{ margin:0 auto !important; width:1000px} 20250325 */
+.main-inner{margin:0 auto !important; max-width:1400px;}
+.sub-inner{margin:0 auto !important; max-width:1000px;}
+
+/* 250325 e */
+.header-wrap				{ position:relative; z-index:10; height:130px; border-top:2px solid #008bd0}
+.header						{ position:relative; z-index:100; margin:0 auto !important; width:1000px; height:67px}
+.footer						{ height:120px; font-size:12px; color:#424242; border-top:1px solid #ddd; background:#f8f8f8}
+.footer-content				{ position:relative; margin:0 auto !important; width:1000px; padding:30px 0}
+.footer-content img			{ float:left; margin-right:60px}
+.footer-content ul			{ margin-bottom:14px}
+.footer-content li			{ display:inline; line-height:12px; padding:0 15px; background:url(/images/common/dv-footermenu.gif) 100% 3px no-repeat}
+.footer-content li:first-child{ padding-left:0}
+.footer-content li.last		{ background:none}
+.footer-content li a		{ font-size:13px; color:#737373}
+.footer-content a			{ color:#424242}
+.footer-content address		{ font-style:normal; line-height:18px}
+.footer-content address span{ margin:0 5px}
+.footer-content address span.first{ margin:0}
+.footer-content address span.email{ }
+.footer-content p.copyright	{ margin-top:5px; text-transform:capitalize; letter-spacing:0}
+.footer-content p.copyright strong{ font-weight:700; letter-spacing:0}
+.footer-content .pp-clinic	{ position:absolute; top:25px; right:0}
+.footer-content .pp-clinic select{ padding:5px 7px; height:30px}
+.footer-content .pp-clinic input[type=button],
+.footer-content .pp-clinic button[type=button]{ display:inline-block; margin-left:-4px; padding:0 8px; font-size:12px; color:#454545; font-weight:700; height:30px; border:1px solid #d9d9d9; background:#fff; vertical-align:top; cursor:pointer; letter-spacing:-0.05em}
+h1.logo						{ position:absolute; z-index:9999; top:20px; left:0}
+.top-link					{ position:absolute; z-index:9999; top:15px; right:0}
+.top-link dt,
+.top-link dd				{ float:left; margin:10px 0 0 23px; font-size:13px; text-transform:uppercase}
+.top-link dd a				{ color:#555}
+.top-link .total-search		{ position:relative; margin-left:20px; padding-left:15px; height:34px; background:url(/images/common/t-search-back.png) top left no-repeat}
+.top-link .total-search	label{ position:absolute; top:-9999px}
+.top-link .total-search select,
+.top-link .total-search input{ float:left; border:0; box-shadow:none; vertical-align:top; height:34px; line-height:34px}
+body.ie7 .top-link .total-search select,
+body.ie7 .top-link .total-search input{ line-height:26px; margin:0}
+.top-link .total-search input[type=text]{ width:150px; background:url(/images/common/t-search-back.png) top right no-repeat}
+.top-link .total-search input[type=button]{ width:30px; cursor:pointer; background:url(/images/common/btn-tsearch.png) no-repeat; text-indent:-9999px}
+.top-link .total-search select{ background:transparent; border-right:1px solid #ddd}
+body.ie7 .top-link .total-search select{ margin-top:5px}
+body.ie8 .top-link .total-search select{ height:auto; padding:7px 7px 7px 0}
+.top-link .menu-all			{ float:left; margin:2px 0 0 5px; width:34px; height:34px; background:url(/images/common/btn-allview.png) no-repeat}
+.top-link .menu-all a		{ display:block; width:100%; height:100%; text-indent:-9999px}
+.menu-all>div.sitemap		{ display:none; position:fixed; top:0; left:0; padding:36px 0; width:100%; background:#008bd0}
+.menu-all>div.sitemap a.all-close{ position:absolute; display:block; bottom:20px; right:20px; width:34px; height:34px; border:0; cursor:pointer; background:url(/images/btn/btn-close2.png) no-repeat; text-indent:-9999px}
+.menu-all>div.sitemap ul	{ margin:0 auto !important; width:1000px}
+body.ie7 .menu-all>div.sitemap ul{ display:inline-block}
+.menu-all>div.sitemap ul:after{ content:""; display:block; clear:both}
+.menu-all>div.sitemap li	{ float:left; margin-left:5px; width:138px}
+.menu-all>div.sitemap li:first-child{ margin-left:0}
+.menu-all>div.sitemap li a	{ padding-bottom:10px; margin-bottom:12px; font-size:16px; color:#7ef7ff; font-weight:700; border-bottom:1px solid #7cccf3; text-indent:0}
+.menu-all>div.sitemap li ul	{ width:auto}
+.menu-all>div.sitemap li li	{ float:none; margin-left:0; width:auto}
+.menu-all>div.sitemap li li a{ display:inline-block; width:auto; margin:0; padding:0; border:0; font-size:14px; color:#fff; line-height:26px}
+.menu-all>div.sitemap li li a span{ font-size:13px; color:#c0eaff; font-weight:400}
+/* Global Navigation Bar */
+#gnb						{ position:relative; z-index:99; margin:0; padding:0; height:60px; background:url(/images/common/gnb-line.gif) left top repeat-x; overflow:hidden}
+#gnb .gnb					{ margin:0 auto !important; width:1000px; border-top:1px solid #eee}
+#gnb .gnb:after				{ content:""; clear:both; display:block}
+#gnb .gnb > li				{ position:relative; float:left}
+#gnb .gnb > li > a			{ display:block; height:59px; border-bottom:5px solid transparent; padding:0 25px; font-size:16px; color:#222; font-weight:700; line-height:59px; text-align:center}
+body.ie7 #gnb .gnb > li > a	{ height:54px}
+body.ie7 #gnb .gnb > li:first-child > a{ padding:0 22px}
+#gnb .gnbSub				{ position:absolute; margin:20px 0 0 0; padding-left:10px; height:210px}
+body.ie7 #gnb .gnbSub		{ height:230px}
+#gnb .gnbSub li				{ margin:12px 0 0 0}
+#gnb .gnbSub li:first-child	{ margin-top:0}
+#gnb .gnbSub li a			{ font-size:13px; padding:2px 0; color:#454545; font-weight:700; white-space:nowrap}
+#gnb .gnb > li.healthConsult.active > a,
+#gnb .gnb > li.healthConsult > a:hover{ color:#6e73de; border-color:#6e73de}
+#gnb .gnb > li.diseaseInfo.active > a,
+#gnb .gnb > li.diseaseInfo > a:hover{ color:#2485d7; border-color:#2485d7}
+#gnb .gnb > li.healthCareInfo.active > a,
+#gnb .gnb > li.healthCareInfo > a:hover{ color:#0aaf6b; border-color:#0aaf6b}
+#gnb .gnb > li.healthSeoul.active > a,
+#gnb .gnb > li.healthSeoul > a:hover{ color:#f65683; border-color:#f65683}
+#gnb .gnb > li.healthRight.active > a,
+#gnb .gnb > li.healthRight > a:hover{ color:#faa51f; border-color:#faa51f}
+#gnb .gnb > li.hospitalClinicInfo.active > a,
+#gnb .gnb > li.hospitalClinicInfo > a:hover{ color:#29c0c5; border-color:#29c0c5}
+#gnb .gnb > li.customerCenter.active > a,
+#gnb .gnb > li.customerCenter > a:hover{ color:#78bd27; border-color:#78bd27}
+#gnb .gnb li.healthConsult li a:hover{ color:#6e73de}
+#gnb .gnb li.diseaseInfo li a:hover{ color:#2485d7}
+#gnb .gnb li.healthCareInfo li a:hover{ color:#0aaf6b}
+#gnb .gnb li.healthSeoul li a:hover{ color:#f65683}
+#gnb .gnb li.healthRight li a:hover{ color:#faa51f}
+#gnb .gnb li.hospitalClinicInfo li a:hover{ color:#29c0c5}
+#gnb .gnb li.customerCenter li a:hover{ color:#78bd27}
+/* Local Navigation Bar */
+.lnb						{ margin:50px 0 100px 0; float:left; width:200px}
+.lnb h2						{ position:relative; padding-bottom:20px; font-size:22px; font-weight:700; color:#222; border-bottom:2px solid #222}
+.lnb h2 span				{ position:absolute; bottom:-2px; right:0; display:block; width:40px; height:2px; background:#2485d7}
+/* Vertical Navigation */
+.vNav						{ position:relative; line-height:normal}
+.vNav ul					{ margin:0; padding:0; list-style:none; border:0}
+.vNav li					{ position:relative; margin:0 0 -1px 0; vertical-align:top; border-bottom:1px solid #ddd}
+body.ie7 .vNav li,
+body.ie7 .vNav li a			{ display:inline-block; width:100%}
+.vNav li a					{ display:block; position:relative; padding:13px 0; text-decoration:none; font-size:15px; color:#222; font-weight:700; border-top:1px solid #ddd}
+.vNav li:first-child a		{ border-top:0}
+.vNav li a .i				{ position:absolute; top:54%; left:97%; margin:-4px 0 0 -16px; width:9px; height:9px; color:#ccc; background:url(/images/common/icon-sub.gif) no-repeat left top}
+.vNav li ul					{ padding:0; margin:8px 0; border:0; background:#fff}
+.vNav li li					{ position:relative; margin:0}
+.vNav li li a				{ font-size:13px; font-weight:normal; background:#fff; padding:6px 10px; border:0}
+.vNav li li a span			{ color:#555}
+.vNav li li					{ border:0}
+.vNav li.active				{ border:0; z-index:2}
+.vNav li li.active			{ border:0; border-bottom:0}
+.vNav li.active a			{ color:#2485d7; border-bottom:1px solid #ddd}
+.vNav li.active .i			{ background-position:0 -47px}
+.vNav li.active li a		{ border:0; background:#fff}
+.vNav li.active ul			{ display:block; border:0}
+.vNav li.active li.active a { background:#2485d7}
+body.ie7 .vNav li.active li a,
+body.ie7 .vNav li.active li.active a{ width:180px}
+.vNav li.active li.active a span{ color:#fff; font-weight:700; text-decoration:none}
+.vNav li li li a			{ padding:3px 0 3px 15px; border:0; background:none}
+.vNav li li li li a			{ padding:3px 0 3px 30px; border:0; background:none}
+.vNav li.active li.active ul li	{ border:0}
+.vNav li.active li.active ul li a{ background:none}
+.vNav li.active li.active ul li a.last{ padding-bottom:3px}
+.vNav li.active li.active ul li a span{ color:#666; font-weight:normal; text-decoration:none}
+.vNav li.active li.active ul li a span.active{ color:#2485d7; font-weight:700}
+/* Color */
+.lnb.purple > .vNav li.active .i,
+.lnb.blue > .vNav li.active .i,
+.lnb.green > .vNav li.active .i,
+.lnb.pink > .vNav li.active .i,
+.lnb.orange > .vNav li.active .i,
+.lnb.cyan > .vNav li.active .i,
+.lnb.yellow-green > .vNav li.active .i{ background-position:0 -47px}
+.lnb.purple h2 span			{ background:#6e73de}
+.lnb.purple > .vNav li a .i	{ background:url(/images/common/icon-sub-purple.gif) no-repeat left top}
+.lnb.purple > .vNav li.active a{ color:#6e73de}
+.lnb.purple > .vNav li.active li.active a{ background:#6e73de}
+.lnb.blue h2 span			{ background:#2485d7}
+.lnb.blue > .vNav li a .i	{ background:url(/images/common/icon-sub.gif) no-repeat left top}
+.lnb.blue > .vNav li.active a{ color:#2485d7}
+.lnb.blue > .vNav li.active li.active a{ background:#2485d7}
+.lnb.green h2 span			{ background:#0aaf6b}
+.lnb.green > .vNav li a .i	{ background:url(/images/common/icon-sub-green.gif) no-repeat left top}
+.lnb.green > .vNav li.active a{ color:#0aaf6b}
+.lnb.green > .vNav li.active li.active a{ background:#0aaf6b}
+.lnb.pink h2 span			{ background:#f65683}
+.lnb.pink > .vNav li a .i	{ background:url(/images/common/icon-sub-pink.gif) no-repeat left top}
+.lnb.pink > .vNav li.active a{ color:#f65683}
+.lnb.pink > .vNav li.active li.active a{ background:#f65683}
+.lnb.orange h2 span			{ background:#faa51f}
+.lnb.orange > .vNav li a .i	{ background:url(/images/common/icon-sub-orange.gif) no-repeat left top}
+.lnb.orange > .vNav li.active a{ color:#faa51f}
+.lnb.orange > .vNav li.active li.active a{ background:#faa51f}
+.lnb.cyan h2 span			{ background:#29c0c5}
+.lnb.cyan > .vNav li a .i	{ background:url(/images/common/icon-sub-cyan.gif) no-repeat left top}
+.lnb.cyan > .vNav li.active a{ color:#29c0c5}
+.lnb.cyan > .vNav li.active li.active a{ background:#29c0c5}
+.lnb.yellow-green h2 span	{ background:#78bd27}
+.lnb.yellow-green > .vNav li a .i{ background:url(/images/common/icon-sub-yellow-green.gif) no-repeat left top}
+.lnb.yellow-green > .vNav li.active a{ color:#78bd27}
+.lnb.yellow-green > .vNav li.active li.active a{ background:#78bd27}
+
+/* Align */
+.text-align-right			{ text-align:right}
+.text-align-left			{ text-align:left}
+.text-align-center			{ text-align:center}
+.fl-left					{ float:left !important}
+.fl-right					{ float:right !important}
+.clearfix:before,.clearfix:after{ content:""; display:table}
+.clearfix:after				{ clear:both}
+body.ie7 .clearfix			{ display:inline-block}
+.mar-t25					{ margin-top:25px !important}
+.mar-t40					{ margin-top:40px !important}
+.mar-r45					{ margin-right:45px !important}
+.hidden						{ position:absolute; top:-9999px}
+.dv-dotline					{ height:1px !important; margin:20px 0; background:url(/images/common/dotline.gif) repeat-x}
+.small-text-point			{ margin-top:10px; font-size:13px; color:#f76e31}
+.large-point				{ font-size:16px; color:#222; font-weight:700}
+.warning					{ margin-top:10px; padding-left:30px; background:url(/images/common/icon-warning.png) 0 3px no-repeat}
+/* Common */
+.sub-wrap h3				{ margin-bottom:15px; padding-left:23px; font-size:18px; color:#222; font-weight:700; background:url(/images/common/bullet-h3.png) 0 50% no-repeat}
+.sub-wrap h4				{ font-size:16px; color:#222; font-weight:700; padding:10px 0 10px 0}
+/* Button */
+.buttonWrap{ position:relative; margin:15px 0 0 0}
+.button-centered{ text-align:center}
+.button-right	{ text-align:right}
+/* Button Reset */
+.button,
+.button a,
+.button button,
+.button input { position:relative; margin:0 2px 0 0; display:-moz-inline-stack; display:inline-block; text-decoration:none !important; border:0; font-size:15px; white-space:nowrap; background:transparent url(/images/btn/btn-set.png) no-repeat; overflow:visible; color:#fff}
+.button { height:40px; padding:0; vertical-align:middle; background-position:left top}
+.button a,
+.button button,
+.button input{ left:4px; vertical-align:top; cursor:pointer}
+.button a,
+.button button,
+.button input { height:40px; padding:0 10px 0 8px; line-height:40px; background-position:right top}
+/* Button Size */
+.button.small.prev { height:30px; background-position:left -119px}
+.button.small.prev a,
+.button.small.prev button,
+.button.small.prev input { font-size:12px; font-weight:700; color:#333; padding:0 20px 0 6px; height:30px; line-height:29px; background-position:right -119px}
+.button.small.next { height:30px; background-position:left -158px}
+.button.small.next a,
+.button.small.next button,
+.button.small.next input { font-size:12px; font-weight:700; color:#333; padding:0 20px 0 6px; height:30px; line-height:29px; background-position:right -158px}
+.button.small.index { height:30px; background-position:left -197px}
+.button.small.index a,
+.button.small.index button,
+.button.small.index input { font-size:12px; font-weight:700; padding:0 10px 0 6px; height:30px; line-height:29px; background-position:right -197px}
+.button.small.scrap { height:30px; background-position:left -80px}
+.button.small.scrap a,
+.button.small.scrap button,
+.button.small.scrap input { font-size:12px; font-weight:700; color:#333; padding:0 10px 0 6px; height:30px; line-height:29px; background-position:right -80px}
+.button.small.go { height:30px; background-position:left -80px}
+.button.small.go a,
+.button.small.go button,
+.button.small.go input { font-size:12px; font-weight:400; color:#333; padding:0 10px 0 6px; height:30px; line-height:29px; background-position:right -80px}
+/* Button Color */
+.button.purple,
+.button.blue,
+.button.green,
+.button.red,
+.button.orange,
+.button.cyan,
+.button.yellow-green,
+.button.grey		{ height:40px; text-align:center}
+.button.purple a,
+.button.purple button,
+.button.purple input{ font-weight:700; padding:0 20px; background-color:#6e73de}
+.button.blue a,
+.button.blue button,
+.button.blue input	{ font-weight:700; padding:0 20px; background-color:#2485d7}
+.button.green a,
+.button.green button,
+.button.green input { font-weight:700; padding:0 20px; background-color:#0aaf6b}
+.button.pink a,
+.button.pink button,
+.button.pink input	{ font-weight:700; padding:0 20px; background-color:#f65683}
+.button.orange a,
+.button.orange button,
+.button.orange input{ font-weight:700; padding:0 20px; background-color:#faa51f}
+.button.cyan a,
+.button.cyan button,
+.button.cyan input	{ font-weight:700; padding:0 20px; background-color:#29c0c5}
+.button.yellow-green a,
+.button.yellow-green button,
+.button.yellow-green input{ font-weight:700; padding:0 20px; background-color:#78bd27}
+.button.grey a,
+.button.grey button,
+.button.grey input	{ font-weight:700; padding:0 20px; background-color:#747578}
+.button.write-type	{ height:40px}
+.button.write-type a,
+.button.write-type button,
+.button.write-type input{ font-weight:700; padding:0 20px 0 40px; background-position:left 0}
+.button.list-type	{ height:40px}
+.button.list-type a,
+.button.list-type button,
+.button.list-type input{ font-weight:700; padding:0 20px 0 47px; background-position:left -40px}
+/* Tab + List */
+.index-list				{ margin:20px 0; padding:0 20px}
+.index-list p			{ font-size:13px; color:#888; margin-bottom:20px}
+.index-list p span		{ display:inline-block; margin-right:10px; width:94px; height:30px; background:url(/images/common/index-pointer.png) 0 0 no-repeat}
+.index-list p span		{ font-size:15px; color:#fff; font-weight:700; line-height:30px; text-align:center}
+.index-list.green p span{ background-position:0 -30px}
+.index-list ul			{ }
+.index-list li			{ float:left; width:49%; height:30px; line-height:30px}
+.index-list li a		{ text-decoration:none; color:#454545}
+.index-list li a span	{ display:inline-block; padding:0; cursor:pointer}
+.index-list li a strong	{ font-size:12px; padding-left:5px; font-weight:700}
+.index-list li.active a	{ color:#2485d7}
+.index-list li.active a span{ font-weight:700}
+.index-list.green li.active a{ color:#0aaf6b}
+.tab.list				{ }
+body.ie7 .tab.list ul,
+body.ie7 .tab.list li ul{ display:inline-block}
+.tab.list ul			{ position:relative; margin:0; padding:0; list-style:none; font-size:15px; height:185px}
+.tab.list ul:after		{ content:""; display:block; clear:both}
+.tab.list li			{ height:30px; line-height:30px}
+.tab.list li a			{ text-decoration:none; color:#454545}
+.tab.list li a span		{ display:inline-block; padding:0; cursor:pointer}
+.tab.list li a strong	{ font-size:12px; padding-left:5px; font-weight:700}
+.tab.list li ul			{ width:60%; position:absolute; top:0; right:0; list-style:none; border-left:1px solid #e8e8e8; margin:0; padding:0}
+.tab.list li ul:after	{ content:""; display:block; clear:both}
+.tab.list li li			{ color:#999; padding-left:15px}
+.tab.list li li a		{ padding:0; margin:0; border:0 !important; color:#454545 !important; font-weight:400}
+.tab.list li li a:hover,
+.tab.list li li a:active,
+.tab.list li li a:focus	{ color:#2485d7 !important; font-weight:700}
+.tab.list li.active a	{ color:#2485d7}
+.tab.list li.active a span{ font-weight:700}
+.tab.list.green li li a:hover,
+.tab.list.green li li a:active,
+.tab.list.green li li a:focus{ color:#0aaf6b !important}
+.tab.list.green li.active a{ color:#0aaf6b}
+/* 신체부위별 */
+.tab.list.part				{ margin-bottom:30px; height:589px !important}
+.tab.list.part ul			{ font-size:14px}
+.tab.list.part li			{ float:left; margin:0; width:152px; height:172px; text-align:center; line-height:18px}
+.tab.list.part li.row1		{ margin-bottom:245px; background-position:50% 0; background-repeat:no-repeat}
+.tab.list.part li.row2		{ background-position:top center; background-repeat:no-repeat}
+.tab.list.part li.row1.part1{ background-image:url(/images/icon/part-nervous.gif)}
+.tab.list.part li.row1.part2{ background-image:url(/images/icon/part-facial.gif)}
+.tab.list.part li.row1.part3{ background-image:url(/images/icon/part-respiratory.gif)}
+.tab.list.part li.row1.part4{ background-image:url(/images/icon/part-digestive.gif)}
+.tab.list.part li.row1.part5{ background-image:url(/images/icon/part-endocrine.gif)}
+.tab.list.part li.row2.part6{ background-image:url(/images/icon/part-circulatory.gif)}
+.tab.list.part li.row2.part7{ background-image:url(/images/icon/part-musculoskeletal.gif)}
+.tab.list.part li.row2.part8{ background-image:url(/images/icon/part-urogenital.gif)}
+.tab.list.part li.row2.part9{ background-image:url(/images/icon/part-dermatology.gif)}
+.tab.list.part li.row2.part10{ background-image:url(/images/icon/part-whole.gif)}
+.tab.list.part li a			{ display:block; width:100%; height:100%; text-decoration:none; font-weight:700}
+.tab.list.part li a span	{ display:block; font-size:11px; color:#2485d7; text-transform:uppercase}
+.tab.list.part li.row1 a	{ padding-top:113px}
+.tab.list.part li.row2 a	{ padding-top:123px}
+.tab.list.part li ul		{ width:100%; height:245px; text-align:center; top:172px; left:0; border:0; margin:0; padding-top:30px}
+.tab.list.part li li		{ float:none; display:inline; padding:0; height:auto; border:0; overflow:hidden}
+.tab.list.part li li:first-child{ border:0}
+.tab.list.part li li a		{ display:inline; margin:0 5px}
+.tab.list.part li li a span	{ display:inline-block; height:190px; overflow:hidden}
+.tab.list.part li li a span.active img{ margin-top:-190px}
+.tab.list.part li.active a	{ color:#fff}
+.tab.list.part li.active a span{ color:#9decf8}
+.tab.list.part li.active.row1,
+.tab.list.part li.active.row2{ background-position:50% -172px}
+/* 주요관심정보 */
+.tab.list.normal			{ height:410px !important}
+.tab.list.normal li			{ float:left; margin:0; width:190px; height:40px; text-align:center; line-height:40px; border:1px solid #ddd; border-bottom:1px solid #2485d7; border-left:0}
+.tab.list.normal li:first-child{ border-left:1px solid #ddd}
+body.ie7 .tab.list.normal li:first-child{ width:185px !important}
+.tab.list.normal li a		{ display:block; width:100%; height:100%; color:#222; font-weight:700}
+.tab.list.normal li ul		{ width:100%; height:365px !important; text-align:center; top:40px; left:0; border-bottom:1px solid #2485d7; border-left:0; padding-top:40px}
+body.ie7 .tab.list.normal li ul{ height:325px !important}
+.tab.list.normal li.active a{ background:#2485d7}
+.tab.list.normal li.active a span{ color:#fff}
+.tab.list.normal li li		{ margin-bottom:40px; padding:0; width:20%; height:auto; border:0}
+.tab.list.normal li li:first-child{ width:20% !important; border-left:0}
+.tab.list.normal li li a	{ display:inline-block; font-size:16px; background:none !important}
+.tab.list.normal li li a span{ display:inline-block; height:86px; overflow:hidden}
+.tab.list.normal li li a:hover span img{ margin-top:-86px}
+.tab.list.normal li li.active a,
+.tab.list.normal li li.active a:hover,
+.tab.list.normal li li.active a:active,
+.tab.list.normal li li.active a:focus{ color:#2485d7 !important}
+/* 한국인을 위한 식생활 지침 */
+.tab.list.food-life			{ height:350px !important}
+.tab.list.food-life ul		{ font-size:16px}
+.tab.list.food-life li		{ float:left; margin-left:5px; width:250px; height:170px; line-height:18px; border:1px solid #e3e3e3; background-color:#f5f5f5; background-repeat:no-repeat}
+body.ie7 .tab.list.food-life li{ width:248px; height:168px}
+.tab.list.food-life li:first-child{ margin-left:0}
+.tab.list.food-life li.row1	{ margin-bottom:5px; background-position:50% 0}
+.tab.list.food-life li.row2	{ background-position:top center}
+.tab.list.food-life li.row1.pregnant{ background-image:url(/images/icon/pregnant-woman.png)}
+.tab.list.food-life li.row1.infants{ background-image:url(/images/icon/infants.png)}
+.tab.list.food-life li.row1.child{ background-image:url(/images/icon/child.png)}
+.tab.list.food-life li.row2.youth{ margin-left:0; background-image:url(/images/icon/youth.png)}
+.tab.list.food-life li.row2.adult{ background-image:url(/images/icon/adult.png)}
+.tab.list.food-life li.row2.old{ background-image:url(/images/icon/old-man.png)}
+.tab.list.food-life li a	{ display:block; width:100%; height:100%; text-align:center; line-height:280px; font-weight:700}
+.tab.list.food-life li ul	{ width:100%; height:5px !important; top:345px; left:0; border:0}
+.tab.list.food-life li.active{ border:0; background-color:#0aaf6b; background-position:50% -170px}
+body.ie7 .tab.list.food-life li.active{ width:250px; height:170px}
+.tab.list.food-life li.active a{ color:#fff}
+.tab.list.food-life li li	{ padding:0; height:5px; font-size:0; border:0; line-height:0; background:none}
+.tab.list.jx			{ height:auto}
+.tab.list.jx ul			{ border:0}
+.tab.list.jx li			{ float:none; position:relative}
+.tab.list.jx li a		{ float:none; display:block; font-weight:700; color:#333; border:1px solid #eee !important; background:#fafafa !important}
+.tab.list.jx li ul		{ position:static; display:block; left:0; top:0; padding:5px 0}
+.tab.list.jx li li a	{ float:none; display:inline; border:0 !important; background:none !important; font-weight:normal}
+/* 암종류별 */
+ul.tab-cancer				{ margin-bottom:25px}
+ul.tab-cancer li			{ float:left; margin:0 0 5px 2px; width:125px; height:150px; border:1px solid #e3e3e3}
+body.ie7 ul.tab-cancer li	{ width:123px}
+ul.tab-cancer li.first		{ margin-left:0}
+ul.tab-cancer li a			{ display:block; width:100%; height:100%; line-height:250px; color:#454545; font-weight:700; text-align:center; background-repeat:no-repeat; background-position:center top}
+ul.tab-cancer li a span		{ display:block; padding-top:105px; line-height:18px}
+ul.tab-cancer li.active		{ border:0}
+ul.tab-cancer li.active a,
+ul.tab-cancer li.active a:hover,
+ul.tab-cancer li.active a:active,
+ul.tab-cancer li.active a:focus{ color:#fff; background-position:center -150px}
+ul.tab-cancer li.c-info1 a	{ background-image:url(/images/icon/cancer-info.gif)}
+ul.tab-cancer li.c-info2 a	{ background-image:url(/images/icon/cancer-thyroid.gif)}
+ul.tab-cancer li.c-info3 a	{ background-image:url(/images/icon/cancer-stomach.gif)}
+ul.tab-cancer li.c-info4 a	{ background-image:url(/images/icon/cancer-colorectal.gif)}
+ul.tab-cancer li.c-info5 a	{ background-image:url(/images/icon/cancer-lung.gif)}
+ul.tab-cancer li.c-info6 a	{ background-image:url(/images/icon/cancer-liver.gif)}
+ul.tab-cancer li.c-info7 a	{ background-image:url(/images/icon/cancer-breast.gif)}
+ul.tab-cancer li.c-info8 a	{ background-image:url(/images/icon/cancer-prostate.gif)}
+ul.tab-cancer li.c-info9 a	{ background-image:url(/images/icon/cancer-gallbladder.gif)}
+ul.tab-cancer li.c-info10 a	{ background-image:url(/images/icon/cancer-pancreatic.gif)}
+ul.tab-cancer li.c-info11 a	{ background-image:url(/images/icon/cancer-lymphoma.gif)}
+ul.tab-cancer li.c-info12 a	{ background-image:url(/images/icon/cancer-etc.gif)}
+ul.tab-cancer li.intractable1 a{ background-image:url(/images/icon/intractable1.gif)}
+ul.tab-cancer li.intractable2 a{ background-image:url(/images/icon/intractable2.gif)}
+ul.tab-cancer li.intractable3 a{ background-image:url(/images/icon/intractable3.gif)}
+ul.tab-cancer li.intractable4 a{ background-image:url(/images/icon/intractable4.gif)}
+ul.tab-cancer li.intractable5 a{ background-image:url(/images/icon/intractable5.gif)}
+ul.tab-cancer li.intractable6 a{ background-image:url(/images/icon/intractable6.gif)}
+ul.tab-cancer li.intractable7 a{ background-image:url(/images/icon/intractable7.gif)}
+ul.tab-cancer li.intractable8 a{ background-image:url(/images/icon/intractable8.gif)}
+ul.tab-cancer li.intractable9 a{ background-image:url(/images/icon/intractable9.gif)}
+ul.tab-cancer li.intractable10 a{ background-image:url(/images/icon/intractable10.gif)}
+ul.tab-cancer li.intractable11 a{ background-image:url(/images/icon/intractable11.gif)}
+ul.tab-cancer li.intractable12 a{ background-image:url(/images/icon/intractable12.gif)}
+ul.tab-cancer li.intractable13 a{ background-image:url(/images/icon/intractable13.gif)}
+ul.tab-cancer li.intractable14 a{ background-image:url(/images/icon/intractable14.gif)}
+ul.tab-cancer li.intractable15 a{ background-image:url(/images/icon/intractable15.gif)}
+ul.tab-cancer li.intractable16 a{ background-image:url(/images/icon/intractable16.gif)}
+ul.tab-cancer li.intractable17 a{ background-image:url(/images/icon/intractable17.gif)}
+ul.tab-cancer li.good-food1 a{ background-image:url(/images/icon/good-food1.gif)}
+ul.tab-cancer li.good-food2 a{ background-image:url(/images/icon/good-food2.gif)}
+ul.tab-cancer li.good-food3 a{ background-image:url(/images/icon/good-food3.gif)}
+ul.tab-cancer li.good-food4 a{ background-image:url(/images/icon/good-food4.gif)}
+ul.tab-cancer li.good-food5 a{ background-image:url(/images/icon/good-food5.gif)}
+ul.tab-cancer li.good-food6 a{ background-image:url(/images/icon/good-food6.gif)}
+/* 탭스타일(face) */
+ul.tab-face				{ margin-bottom:25px}
+ul.tab-face li			{ float:left; margin-left:1px; width:151px; height:40px; text-align:center; line-height:40px; background:#9b9b9b}
+ul.tab-face li:first-child{ margin-left:0; width:152px}
+ul.tab-face li a		{ display:block; width:100%; height:100%; color:#fff; font-weight:700}
+ul.tab-face li.active a	{ background:#2485d7}
+ul.tab-face li.w171		{ width:204px !important}
+ul.tab-face li.w350		{ width:350px !important}
+ul.tab-face.tab2 li		{ width:379px}
+ul.tab-face.tab2 li:first-child{ margin-left:0; width:380px}
+ul.tab-face.tab3 li		{ width:252px}
+ul.tab-face.tab3 li:first-child{ margin-left:0; width:254px}
+ul.tab-face.green li.active a{ background:#0aaf6b}
+ul.tab-face.col-6 li	{ width:126px}
+ul.tab-face.col-6 li.w160{ width:160px}
+ul.tab-face.col-6 li:first-child{ margin-left:0; width:91px}
+ul.tab-face.row-2 li	{ width:163px; margin-bottom:1px}
+ul.tab-face.row-2 li.w300{ width:300px}
+ul.tab-face.row-2 li:first-child{ margin-left:0; width:130px; height:81px; line-height:81px}
+/* 비만-만성질환 */
+body.ie7 ul.obesity		{ display:inline-block}
+ul.obesity				{ font-size:16px}
+ul.obesity:after		{ content:""; display:block; clear:both}
+ul.obesity li			{ position:relative; float:left; display:block; margin:0 0 0 4px; width:378px; height:60px; border:1px solid #e3e3e3; background:#f3f3f3 url(/images/common/up-down.png) 95% 0 no-repeat}
+ul.obesity li a			{ padding-left:25px; display:block; width:100%; height:100%; line-height:60px; color:#454545; font-weight:700}
+ul.obesity li:first-child{ margin-left:0}
+body.ie7 ul.obesity li,
+body.ie7 ul.obesity li:first-child{ width:376px !important; height:58px !important}
+ul.obesity li.row1-1,
+ul.obesity li.row1-2	{ margin-bottom:4px}
+ul.obesity li.row2-1	{ margin-left:0}
+ul.obesity li.row2-2	{ }
+ul.obesity li.active	{ background-color:#fff; background-position:95% -60px; border:2px solid #0aaf6b; border-bottom:2px solid #f3f3f3}
+body.ie7 ul.obesity li.active{ width:374px !important; height:56px !important}
+ul.obesity li.active { color:#0aaf6b}
+/* Search Form */
+.searchForm				{ position:relative; margin-bottom:25px; padding:15px; text-align:center; border:1px solid #e8e8e8}
+.searchForm label		{ font-size:15px; color:#454545; font-weight:700; cursor:pointer}
+.searchForm input		{ vertical-align:middle}
+.searchForm input[type=text]{ margin:0 7px 0 15px; padding:0; width:405px; height:27px; line-height:27px}
+.searchForm input[type=button]{ width:67px; height:27px; border:0; background:url(/images/btn/btn-search2.gif) no-repeat; cursor:pointer; text-indent:-9999px}
+.searchForm .selbox		{ vertical-align:middle; padding:2px; height:27px; border:1px solid #d5d5d5; margin-right:-20px}
+.searchForm.total		{ padding:30px}
+ul.search-item			{ margin-bottom:30px}
+ul.search-item li		{ display:inline; padding:0 15px}
+ul.search-item li label	{ font-size:14px; font-weight:400}
+/* Select */
+.select					{ position:relative; line-height:normal; display:inline-block; vertical-align:middle; background:#fff}
+body.ie7 .select		{ display:inline; margin:0; padding:0; cursor:pointer; font-size:13px}
+.select .myValue		{ position:relative; z-index:2; left:0; top:0; border:1px solid #d9d9d9; color:#454545; line-height:30px; text-align:left; overflow:visible; background:transparent}
+.select .myValue.selected{ font-weight:400}
+.select.open .myValue,
+.select .myValue.outLine{ border:1px solid #999}
+.select button.myValue	{ height:30px; width:100%; text-indent:5px}
+body.ie7 .select button.myValue{ text-indent:0; padding-left:5px}
+.select div.myValue		{ height:30px; text-indent:8px}
+.select .ctrl			{ position:absolute; top:0; right:0; width:24px; height:30px; border:1px solid #d9d9d9; border-left:0; background:#fff}
+.select .arrow			{ position:absolute; width:0; height:0; top:12px; right:8px; line-height:0; font-size:0; border-top:4px solid #999; border-left:4px solid #fff; border-right:4px solid #fff}
+.select ul				{ top:29px; left:0; width:100%; list-style:none; border:0; border-top:1px solid #d9d9d9; border-bottom:1px solid #d9d9d9; background:#fff; overflow:hidden}
+.select ul.aList		{ display:none}
+.select.open ul.aList	{ display:block}
+.select ul.iList		{ left:-2000%}
+.select.open ul.iList	{ left:0}
+.select li				{ position:relative; overflow:hidden; white-space:nowrap; height:30px; border-left:1px solid #d9d9d9; border-right:1px solid #d9d9d9}
+.select li input.option	{ position:absolute; width:100%; height:30px; line-height:30px}
+.select li label		{ position:absolute; left:0; top:0; width:100%; text-indent:8px; height:30px; line-height:30px; color:#767676; background:#fff}
+body.ie7 .select li label,
+body.ie7 .select li a	{ text-indent:6px}
+.select li a			{ display:block; text-indent:8px; height:30px; line-height:30px; color:#454545; background:#fff; text-decoration:none}
+body.ie7 .select li.hover{ background:#999; color:#fff}
+/* Table */
+.default					{ width:100%; border-collapse:collapse; margin:0}
+.default table				{ font-size:14px}
+.default caption			{ padding-bottom:8px; font-size:13px; color:#777; text-align:left}
+.default caption details	{ display:none; font-size:0; line-height:0; margin:0; padding:0}
+.default thead th			{ background:#f8f8f8; border-top:1px solid #4d4d4d; padding:15px 0}
+.default tbody th			{ background:#f4f4f4; border-bottom:1px solid #e2e2e2; padding:15px}
+.default th,.default td		{ border:0; padding:15px 5px; text-align:center; vertical-align:middle; border-bottom:1px solid #e2e2e2; line-height:20px}
+.default th					{ color:#454545; font-size:15px; font-weight:700}
+.default td a				{ display:block; text-align:left; color:#454545}
+.default th label,
+.default td label			{ cursor:pointer}
+.default td span.small-icon	{ margin-left:5px}
+.default td.sort,
+.default td.address			{ text-align:left}
+.default tr.notice			{ background:#fbfbfb}
+.default td.apply a span	{ margin-right:6px; font-size:13px; color:#f85877; font-weight:700}
+.default.kdris thead th		{ background:#0aaf6b; border-top:0; border-left:1px solid #e8e8e8; color:#fff; font-weight:700}
+.default.kdris thead th:first-child{ border-left:0}
+.default.kdris tbody th		{ background:#f8f8f8; border-bottom:1px solid #e8e8e8; border-right:1px solid #e8e8e8; padding:15px}
+.default.kdris tbody th:first-child{ border-left:1px solid #e8e8e8}
+.default.kdris th,.default.kdris td{ border:0; padding:15px 5px; text-align:center; vertical-align:middle; border-bottom:1px solid #e8e8e8; line-height:20px}
+.default.kdris th			{ font-size:14px}
+.default.kdris td			{ border-right:1px solid #e8e8e8}
+.default.poisoning thead th,.default.poisoning tbody th,.default.poisoning td{ padding:10px 0}
+.default.poisoning td:first-child{ border-left:1px solid #e8e8e8}
+.default.food-t				{ margin:10px 0}
+.default.food-t thead th,.default.food-t tbody th,.default.food-t td{ padding:10px 0; font-size:13px; border:1px solid #eee; background:#eee}
+.default.food-t tbody th,
+.default.food-t td{ background:#fff}
+.default.food-t th.grey{ background:#f3f3f3}
+.default.online thead th	{ color:#fff; background:#6e73de; border-top:0}
+.default.online tbody tr	{ border-top:1px solid #e2e2e2}
+.default.online th,
+.default.online td			{ text-align:left; padding:10px 15px}
+.default.online th			{ font-size:14px}
+.default.online th em		{ margin-left:3px; color:#dc4f49}
+.default.online td p		{ font-size:13px; margin-top:10px; color:#888}
+.default.online td input[type=file]{ width:450px; padding:0}
+.default.specialist thead th{ color:#fff; background:#6e73de; border-top:0}
+.default.specialist th,
+.default.specialist td		{ padding:10px 15px}
+.default.specialist th		{ font-size:14px}
+.title						{ width:100%}
+body.ie7 .title				{ width:98%}
+/* Board List-View */
+.viewWrap,
+.boardList,
+.boardView						{ position:relative}
+.boardView h4					{ font-size:15px; padding:20px; font-weight:700; border-top:1px solid #4d4d4d; background:#f8f8f8}
+.boardView p					{ position:relative}
+.boardView .date-writer,
+.boardView .file-download,
+.boardView .count				{ display:block; font-size:13px; color:#888; padding:15px 0}
+.boardView .count				{ position:absolute; top:0; right:20px}
+.boardView .date-writer			{ padding-left:20px}
+.boardView .date-writer img		{ margin:0 5px; vertical-align:middle}
+.boardView .file-download		{ padding-left:20px}
+.boardView .file-download img	{ margin:0 5px; vertical-align:middle}
+.boardView .file-download a		{ color:#888}
+.board-content					{ padding:25px 20px; line-height:24px; border-top:1px solid #e8e8e8}
+.board-content h2,
+.board-content h3,
+.board-content h4,
+.board-content h5				{ padding:0; color:#222; font-weight:700; border:0; background:none}
+.board-content h2				{ margin:0 0 10px 0; font-size:20px}
+.board-content h3				{ margin:10px 0; font-size:16px}
+.board-content h4,
+.board-content h5				{ font-size:14px; margin:0}
+.board-content table			{ width:100%; border-collapse:collapse; margin:15px 0; font-size:14px; border-top:1px solid #e2e2e2}
+.board-content caption			{ padding-bottom:8px; font-size:13px; color:#777; text-align:left}
+.board-content thead th			{ background:#f8f8f8; border-top:1px solid #4d4d4d; padding:15px 0}
+.board-content tbody th			{ background:#f4f4f4; border-bottom:1px solid #e2e2e2; padding:15px}
+.board-content th,.board-content td{ border:0; padding:15px 5px; text-align:center; vertical-align:middle; border-bottom:1px solid #e2e2e2; line-height:20px}
+.board-content th				{ color:#454545; font-size:15px; font-weight:700}
+.board-content dl.dlType04 		{}
+.board-content dl.dlType04 dt,
+.board-content ul.dlType04 li,
+.board-content p.dlType04		{ margin-top:15px; padding-left:8px; background:url(http://www.foodnara.go.kr/foodnara/images/common/bul_04.gif) no-repeat scroll 1px 9px}
+.board-content dl.dlType04 dt:first-child{ margin-top:0}
+.board-content dl.dlType04 dd	{ margin:10px 0 0 10px}
+.board-content dl.dlType04 dd ul li,
+.board-content ul.dlType04 li ul li{ margin-bottom:6px; padding-left:8px; background:url(http://www.foodnara.go.kr/foodnara/images/common/bul_03.gif) no-repeat scroll 1px 9px}
+.board-content dl.dlType04 dd ul li ul{ margin-top:10px}
+.board-content dl.dlType04 dd ul li ul li{ padding-left:10px; text-indent:-10px; background:none}
+.board-content ul.dlType04 li:first-child{ margin-top:0}
+.board-content ul.dlType04 li ul.dlType04_01 li{ margin:0; padding-left:10px; background:url(http://www.foodnara.go.kr/foodnara/images/s05/bullet_a.gif) no-repeat 1px 9px}
+.board-content ul.dlType04 li p.dlType04_01{ margin:0; padding-left:10px; background:url(http://www.foodnara.go.kr/foodnara/images/s05/bullet_a.gif) no-repeat 1px 9px}
+.board-content p.dlType04:first-child{ margin-top:0}
+.board-content .box_exWrap		{ margin:20px 0; padding:20px 20px 10px 20px; border:3px solid #eee}
+.board-content .box_exWrap p.ic{ font-weight:700; color:#9E4D00; background: url(http://www.foodnara.go.kr/foodnara/images/common/icon_b.gif) no-repeat scroll left 9px transparent; padding-left:10px}
+.board-content .box_exWrap p.com{ padding:5px 0 10px 0}
+.doctor-answer					{ padding:0 20px; line-height:24px}
+.endLine						{ border-bottom:1px solid #e8e8e8}
+.next-prev ul					{ margin-top:30px; padding:0; list-style:none}
+body.ie7 .next-prev li			{ display:inline-block}
+.next-prev li					{ position:relative; padding:0; line-height:52px; border-bottom:1px solid #e8e8e8; vertical-align:top}
+.next-prev li:after				{ display:block; clear:both; content:""}
+.next-prev li:first-child		{ border-top:1px solid #4d4d4d}
+.next-prev li a					{ display:inline-block; color:#454545}
+.next-prev li a.prev,
+.next-prev li a.next			{ margin:1px 15px 0 0; width:90px; height:51px; color:#454545; font-weight:700; text-align:center; background:#f8f8f8}
+/* Board Write-Edit */
+.write-tit						{ position:relative; margin:-1px 0; border:1px solid #e8e8e8; border-left:0; border-right:0}
+.write-tit .title				{ font-weight:700; color:#222; margin:0; padding:10px 0}
+.write-tit .title label			{ display:inline-block; width:90px; margin-left:2px}
+.write-tit .title span			{ font-weight:400}
+.write-tit input[type=checkbox]	{ margin:8px 0}
+.write-tit .tb					{ width:80%; padding:5px; border:1px solid #ddd}
+.write-con						{ position:relative}
+.write-con label				{ display:inline-block; width:55px; margin-left:2px}
+.write-con .tarea				{ padding:15px 0}
+.write-con .tarea textarea		{ width:760px; padding:5px; border:1px solid #ddd}
+.write-con .tb					{ width:80%; padding:5px; border:1px solid #ddd}
+.write-con .upload				{ padding:10px 0}
+.write-con .file-upload			{ padding:12px 20px; background:#f8f8f8; border:1px solid #ddd}
+.write-con .file-upload div		{ margin-top:10px}
+.write-con .file-upload label	{ width:100%; font-size:13px}
+.write-con .file-upload span	{ color:#2171cb; text-decoration:underline}
+.write-con .file-upload img		{ margin:0; vertical-align:middle}
+.write-con .file-upload p		{ }
+.write-con .file-upload input[type=checkbox]{ width:auto; padding:0; margin:0 2px 0 10px; vertical-align:middle; border:0; background:none}
+.write-con .file-upload input	{ width:95%; padding:5px; border:1px solid #ccc; border-radius:0; background:#fff}
+.write-con .file-upload input.falt{ width:95%; padding:5px; border:1px solid #ccc; border-radius:0}
+.write-con .file-upload .file	{ font-size:13px; color:#2171cb; margin-top:3px; padding-left:12px; background:url(/images/common/icon-attach.gif) 0 2px no-repeat}
+.write-con .file-upload .discrip-photo{ margin:2px 0 5px 0}
+.write-con .file-upload .discrip-attach{ margin:5px 0}
+/* 만족도 평가 */
+.satisfaction					{ margin-top:40px; padding:15px 30px; border:1px solid #ddd; background:url(/images/common/back-satisfaction.gif) bottom repeat-x}
+.satisfaction h5				{ font-size:14px; font-weight:700}
+.satisfaction ul				{ }
+.satisfaction li				{ float:left; margin-left:15px; font-size:13px}
+.satisfaction li label			{ cursor:pointer}
+.satisfaction input[type=text],
+.satisfaction input[type=button]{ vertical-align:top}
+.satisfaction input[type=text]	{ width:90%}
+.satisfaction input[type=button]{ width:9%; height:27px; font-size:14px; color:#fff; font-weight:700; background:#888; border:0; cursor:pointer}
+body.ie7 .satisfaction input[type=button]{ width:7%; height:29px}
+/* Pagenation */
+.pagenation{ position:relative; margin:30px 0 0 0}
+.basic{ margin:0}
+.pageButton{ position:absolute; top:0; right:0}
+.pagenation ul {
+	display:inline-block;
+	margin-bottom:0;
+	margin-left:0}
+body.ie7 .pagenation ul{ display:inline}
+.pagenation ul > li { display:inline; position:relative}
+.pagenation ul > li > a,
+.pagenation ul > li > span {
+	float:left;
+	margin:0 1px;
+	padding:6px 12px;
+	line-height:18px;
+	text-decoration:none;
+	background:#fff;
+	color:#777;
+	font-size:13px;
+	font-weight:400;
+	border:1px solid #ccc}
+.pagenation ul > li > a:hover,
+.pagenation ul > .active > a,
+.pagenation ul > .active > span { background:none}
+.pagenation ul > .active > a,
+.pagenation ul > .active > span { color:#fff; font-weight:700; cursor:default; background:#2485d7; border:1px solid #2485d7}
+.pagenation ul > .disabled > span,
+.pagenation ul > .disabled > a,
+.pagenation ul > .disabled > a:hover { cursor:default}
+.pagenation ul > .pg-arrow > span,
+.pagenation ul > .pg-arrow > a,
+.pagenation ul > .pg-arrow > a:hover{ font-size:14px; color:#c0c0c0; border:0; font-weight:700}
+.pagenation ul > .atfl > span,
+.pagenation ul > .atfl > a,
+.pagenation ul > .atfl > a:hover{ padding:6px 0}
+.pagenation-centered{ text-align:center}
+.pagenation-righted	{ text-align:right}
+.pagenation.green ul > .active > a,
+.pagenation.green ul > .active > span{ background:#0aaf6b; border:1px solid #0aaf6b}
+.pagenation.pink ul > .active > a,
+.pagenation.pink ul > .active > span{ background:#f65683; border:1px solid #f65683}
+.pagenation.yellow-green ul > .active > a,
+.pagenation.yellow-green ul > .active > span{ background:#78bd27; border:1px solid #78bd27}
+.pagenation.purple ul > .active > a,
+.pagenation.purple ul > .active > span{ background:#6e73de; border:1px solid #6e73de}
+/* 윈도우팝업 */
+#pop-wrap					{ width:650px}
+#pop-wrap .pop-header		{ position:relative; padding:15px 20px 15px 40px; border-bottom:3px solid #e5e5e5; background:url(/images/common/bullet-h1.png) 20px 50% no-repeat}
+#pop-wrap .pop-header h1	{ font-size:18px; color:#fff; font-weight:700}
+#pop-wrap .pop-header a		{ position:absolute; display:block; width:25px; height:25px; top:12px; right:15px; background:url(/images/btn/btn-close.png) 50% 50% no-repeat; text-indent:-9999px}
+#pop-wrap .pop-body			{ padding:20px; line-height:24px}
+#pop-wrap .pop-body h3		{ margin-bottom:15px; padding-left:23px; font-size:18px; color:#222; font-weight:700}
+#pop-wrap .pop-body h4		{ margin-bottom:5px; font-size:14px; font-weight:700}
+#pop-wrap .pop-body p		{ margin-bottom:15px; font-size:14px; line-height:18px}
+#pop-wrap .pop-body p.last	{ margin-bottom:0}
+#pop-wrap .form				{ position:relative; margin:-15px 0 30px 0; padding:25px; border:1px solid #e8e8e8}
+#pop-wrap .form label		{ font-size:15px; font-weight:700; margin-right:12px}
+#pop-wrap .form span		{ font-size:16px}
+#pop-wrap .form .dash		{ color:#b7b7b7; margin:0 15px}
+#pop-wrap .form .compute	{ position:absolute; right:25px}
+#pop-wrap .form input		{ height:27px; vertical-align:top}
+#pop-wrap .form input[type=text]{ margin-right:5px; padding:0 5px; width:60px; text-align:center; border:1px solid #ddd; vertical-align:middle}
+#pop-wrap .form input[type=button],
+#pop-wrap .form input[type=reset]{ width:70px; color:#fff; font-weight:700; background-color:#656565; border:0; cursor:pointer}
+#pop-wrap .form dl			{ margin:10px 0 18px 0}
+#pop-wrap .form dt,
+#pop-wrap .form dd			{ float:left; display:inline-block; font-size:14px}
+#pop-wrap .form dt			{ width:20%}
+#pop-wrap .form dd			{ width:80%; font-weight:700; color:#eb4f3a}
+#pop-wrap .form li,
+#pop-wrap .form li label	{ font-size:13px; font-weight:700}
+#pop-wrap .form li label	{ display:inline-block; width:21%}
+#pop-wrap .form li label.dv1{ width:18.5%}
+#pop-wrap .form li label.dv2{ width:14.5%}
+#pop-wrap .form li li		{ float:left; width:25%; height:35px; color:#fff; line-height:35px; text-align:center}
+#pop-wrap .form li li.low-weight{ width:25%; background-color:#329ae3}
+#pop-wrap .form li li.regular{ width:20%; background-color:#95c520}
+#pop-wrap .form li li.overweight{ width:18%; background-color:#ee942a}
+#pop-wrap .form li li.obesity{ width:36.9%; background-color:#f15232}
+#pop-wrap .identification	{ text-align:center}
+#pop-wrap .identification label{ font-size:15px; font-weight:700; margin-right:12px}
+#pop-wrap .identification input{ height:27px; vertical-align:top}
+body.ie7 #pop-wrap .identification input{ height:auto}
+#pop-wrap .identification input[type=button]{ padding:5px 0; width:70px; color:#fff; font-weight:700; background-color:#656565; border:0; cursor:pointer}
+#pop-wrap .identification .descrip{ margin-top:10px; color:#f76e31}
+#pop-wrap .ipin				{ }
+#pop-wrap .ipin div			{ width:48%; padding:4% 1%; text-align:center; border:1px solid #ddd}
+#pop-wrap .ipin div	img		{ margin-bottom:25px}
+#pop-wrap .ipin div span,
+#pop-wrap .ipin div strong	{ display:block}
+#pop-wrap .ipin div span a	{ display:inline-block; padding:5px 15px; color:#fff; font-weight:700}
+#pop-wrap .ipin div span a.ipin{ background:#6e73de}
+#pop-wrap .ipin div span a.join{ background:#656565}
+#pop-wrap .ipin div p		{ margin:30px 0 0 0; padding-left:45px; text-align:left}
+#pop-wrap .ipin div p strong{ display:inline-block; margin:0 10px 15px 0; font-weight:700; color:#222}
+#pop-wrap .ipin div p a		{ font-weight:700; color:#222}
+#pop-wrap .special-descrip	{ margin-top:30px; line-height:22px}
+#pop-wrap .special-descrip strong{ color:#f76e31; font-weight:400}
+#pop-wrap .pop-footer		{ padding:10px 20px; font-size:13px; color:#222; text-align:right; background:#f8f8f8}
+#pop-wrap.green .form input[type=button]{ background-color:#0aaf6b}
+#pop-wrap.green .pop-header	{ background-color:#0aaf6b}
+#pop-wrap.green .pop-body h3{ background:url(/images/common/bullet-h3g.png) 0 50% no-repeat}
+#pop-wrap.green .pop-body h4{ color:#0aaf6b}
+#pop-wrap.popup				{ width:564px}
+#pop-wrap.popup .pop-body	{ padding:0}
+#pop-wrap.pop-s				{ width:350px}
+#pop-wrap.purple .form input[type=button]{ background-color:#6e73de}
+#pop-wrap.purple .pop-header	{ background-color:#6e73de}
+#pop-wrap.purple .pop-body h3{ background:url(/images/common/bullet-h3g.png) 0 50% no-repeat}
+#pop-wrap.purple .pop-body h4{ color:#6e73de}
+/* 모달윈도우 */
+.mw							{ display:none; position:fixed; z-index:100; top:0; left:0; width:100%; height:100%}
+body.ie6 .mw				{ position:absolute}
+.mw .bg						{ position:absolute; top:0; left:0; width:100%; height:100%; background:#000; opacity:.5}
+body.ie7 .mw .bg,
+body.ie8 .mw .bg			{ background:url(/images/common/transparent-black2.png)}
+.mw .fg						{ position:absolute; top:50%; left:50%; width:350px; height:250px; margin:-100px 0 0 -200px; padding:0; background:#fff}
+/* 이용약관 */
+body.ie7 .ruleBookmark		{ display:inline-block}
+.ruleBookmark				{ margin-bottom:30px}
+.ruleBookmark:after			{ content:""; display:block; clear:both}
+.ruleBookmark li			{ float:left; margin:0 5px 5px 0; width:185px; height:48px; line-height:46px; border:1px solid #e0e0e0; background:url(/images/common/icon-book.png) 12px 50% no-repeat}
+.ruleBookmark li			{ font-weight:700; padding-left:35px}
+.ruleBookmark li a			{ font-size:13px; color:#363636}
+.ruleDescription			{ margin:30px 0; line-height:24px; text-align:justify}
+.ruleDescription h4			{ font-weight:700}
+.ruleDescription ul			{ margin-left:20px}
+.rule-table					{ width:100%; border:0; border-collapse:collapse; margin:1em 0}
+.rule-table table			{ font-size:13px}
+.rule-table thead th		{ text-align:center; color:#000; font-weight:700; border-bottom:1px solid #999; border-top:1px solid #999; padding:5px 10px; background:none}
+.rule-table th,.rule-table td{ border:0; padding:5px 10px; text-align:center; border:1px solid #e5e5e5}
+.rule-table th				{ text-align:center; font-weight:normal; background-color:#f8f8f8}
+.rule-table td strong		{ font-size:16px; font-weight:700; line-height:30px}
+.rule-table td.align-left	{ text-align:left; padding-left:20px; line-height:24px}
+
+/* Main */
+.main-wrap					{ position:relative; margin:10px 0 30px 0}
+.mainvisual-wrap			{ position:relative; z-index:1; overflow:hidden}
+.mainvisual					{ position:relative; margin:0; width:683px; height:338px}
+.mainvisual button			{ border:0; background:none; vertical-align:middle; cursor:pointer}
+.mainvisual .cell			{ position:absolute; width:683px; height:338px}
+.mainvisual .on-cell		{ z-index:5}
+.mainvisual .circle			{ display:block; position:absolute; bottom:15px; left:65px; margin:0; z-index:6; width:13px; height:13px; background:url(/images/main/circle.png) 0 0 no-repeat}
+.mainvisual.side-rolling,
+.mainvisual.side-rolling .cell{ width:314px; height:149px}
+.mainvisual.side-rolling .circle{ left:55px}
+.mainvisual .circle.no1		{ margin-left:0}
+.mainvisual .circle.no2		{ margin-left:18px}
+.mainvisual .circle.no3		{ margin-left:36px}
+.mainvisual .circle.no4		{ margin-left:54px}
+.mainvisual .circle.no5		{ margin-left:72px}
+.mainvisual .circle.no6		{ margin-left:90px}
+.mainvisual .circle.no7		{ margin-left:108px}
+.mainvisual .circle.no8		{ margin-left:126px}
+.mainvisual .circle.no9		{ margin-left:144px}
+.mainvisual .circle.no10	{ margin-left:162px}
+.mainvisual .circle.no11	{ margin-left:180px}
+.mainvisual .circle.no12	{ margin-left:198px}
+.mainvisual .circle.no13	{ margin-left:216px}
+.mainvisual .circle.no14	{ margin-left:234px}
+.mainvisual .circle.no15	{ margin-left:252px}
+.mainvisual .circle.no16	{ margin-left:270px}
+.mainvisual .circle.no17	{ margin-left:288px}
+.mainvisual .circle.no18	{ margin-left:306px}
+.mainvisual .circle.no19	{ margin-left:324px}
+.mainvisual .circle.no20	{ margin-left:342px}
+.mainvisual .on-circle		{ background-position:0 -13px}
+.mainvisual .play			{ display:block; position:absolute; bottom:15px; left:30px; z-index:60; clear:right; width:13px; height:13px; background:url(/images/main/play.png) 0 -13px no-repeat}
+.mainvisual .stop			{ display:block; position:absolute; bottom:15px; left:45px; z-index:60; clear:right; width:13px; height:13px; background:url(/images/main/pause.png) no-repeat}
+.mainvisual.side-rolling .play{ left:20px}
+.mainvisual.side-rolling .stop{ left:35px}
+*+html .mainvisual .circle	{ display:inline}
+.mainvisual .circle em,
+.mainvisual .play em,
+.mainvisual .stop em		{ visibility:hidden; overflow:hidden; width:0; height:0; font-size:0; line-height:0}
+.mainvisual.pause-banner .play{ background-position:0 0}
+.mainvisual.pause-banner .stop{ background-position:0 -13px}
+.side-link					{ position:absolute; z-index:6; top:0; right:0; width:314px}
+body.ie7 .side-link ul		{ display:inline-block}
+.side-link ul:after			{ content:""; display:block; clear:both}
+.side-link li				{ float:left; width:104px; height:112px; text-align:center; background:#5892dd url(/images/main/sprite-quick.png) no-repeat}
+.side-link li a				{ display:block; width:100%; height:100%; font-size:13px; color:#fff; line-height:185px}
+.side-link li.link1			{ background-position:0 0}
+.side-link li.link2			{ margin:0 1px; background-color:#73caec; background-position:-105px 0}
+.side-link li.link3			{ background-position:-209px 0}
+.side-link li.link4			{ margin:1px 0; background-color:#73caec; background-position:0 -113px}
+.side-link li.link5			{ margin:1px; background-position:-105px -113px}
+.side-link li.link6			{ margin:1px 0; background-color:#73caec; background-position:-209px -113px}
+.side-link li.link7			{ background-position:0 -226px}
+.side-link li.link8			{ margin:0 1px; background-color:#73caec; background-position:-105px -226px}
+.side-link li.link9			{ background-position:-209px -226px}
+.side-link li.link1:hover,
+.side-link li.link1:focus,
+.side-link li.link2:hover,
+.side-link li.link3:hover,
+.side-link li.link4:hover,
+.side-link li.link5:hover,
+.side-link li.link6:hover,
+.side-link li.link7:hover,
+.side-link li.link8:hover,
+.side-link li.link9:hover	{ background-color:#3378d0}
+.seoul-service				{ padding-top:15px}
+.seoul-service h4			{ position:relative; font-size:17px; color:#222; font-weight:700; height:24px; line-height:24px}
+.lw-670						{ width:670px}
+.rw-314						{ width:314px}
+.sub-hospital				{ }
+.h4group					{ position:relative}
+.h4group div				{ position:absolute; top:0; right:0}
+.h4group a,
+.h4group form,
+.h4group select,
+.h4group input,
+.h4group label				{ float:left; display:block; vertical-align:top}
+.h4group a					{ width:27px; height:24px; text-decoration:none; background:url(/images/main/icon-thumb-list.gif) no-repeat; text-indent:-9999px}
+.h4group a.thumb			{ background-position:0 0}
+.h4group a.list				{ background-position:-27px 0}
+.h4group a.thumb.active		{ background-position:0 -24px}
+.h4group a.list.active		{ background-position:-27px -24px}
+.h4group label				{ position:absolute; top:-9999px}
+.h4group select				{ margin-left:3px; font-size:13px; height:24px; border:1px solid #e8e8e8}
+.h4group input[type=button]	{ margin:0 0 0 -1px; font-size:11px; color:#454545; font-weight:700; text-transform:uppercase; width:31px; height:24px; border:1px solid #e8e8e8; background:#fff; cursor:pointer}
+/* Carousel */
+/* 서울시보건소정보 */
+#carousel1					{ margin-top:10px; width:314px; height:97px; overflow:hidden}
+body.ie7 #carousel1			{ display:inline-block; width:315px}
+#carousel1:after			{ content:""; display:block; clear:both}
+#carousel1 .carousel-box	{ float:left; width:79px; height:96px; text-align:center}
+#carousel1 .carousel-box a	{ display:block; width:100%; height:100%; font-size:13px; color:#454545}
+#carousel1 .carousel-box span,
+#carousel1 .carousel-box strong{ display:block; width:77px}
+body.ie7 #carousel1 .carousel-box span{ width:auto}
+body.ie7 #carousel1 .carousel-box strong{ width:75px; padding:9px 0 8px 0}
+#carousel1 .carousel-box span{ background:#f3f3f3; line-height:0}
+#carousel1 .carousel-box strong{ font-weight:400; padding:10px 0; border:1px solid #e8e8e8; border-top:0}
+/* 서울특별시산하병원 */
+body.ie7 #carousel2			{ display:inline-block}
+#carousel2					{ width:634px; height:131px; overflow:hidden}
+#carousel2:after			{ content:""; display:block; clear:both}
+#carousel2 .carousel-box	{ position:relative; float:left; width:162px; height:131px}
+#carousel2 .carousel-box span,
+#carousel2 .carousel-box strong{ display:block; text-align:center; width:148px}
+#carousel2 .carousel-box strong{ position:absolute; left:0; bottom:0; width:148px; height:34px; font-size:13px; color:#fff; font-weight:400; line-height:34px; background:url(/images/common/transparent-black.png)}
+#carousel2 .carousel-box strong{ color:#fff}
+body.ie7 #carousel2 .carousel-box span{ width:auto; text-align:left}
+/* 서울특별시건강사업 */
+body.ie7 .service_event		{ display:inline-block}
+.service_event				{ position:relative; margin-top:10px; width:670px; height:153px}
+.service_event:after		{ content:""; display:block; clear:both}
+.service_event .service_event_wrap{ overflow:hidden; height:153px; position:relative}
+.service_event .service_event_wrap li{ height:153px}
+.service_event .service_eventUL{ overflow:hidden; position:absolute; left:0px}
+.service_event .service_eventUL:after{ content:""; display:block; clear:both}
+.service_event .service_eventUL li{ float:left; margin-bottom:3px; height:49px}
+.service_event .service_eventUL li.col1{ width:343px}
+.service_event .service_eventUL li.col2{ width:327px}
+/* 2024.05.22 추가 s */
+.service_event .service_eventUL li.col3{ width:343px}
+.service_event .service_eventUL li.col4{ width:327px; height: 101px;}
+/* 2024.05.22 추가 e */
+.service_event .service_eventUL li a{ display:block}
+.service_event .service_eventUL li span{ display:block; width:327px; border:1px solid #e8e8e8; background:#eee}
+.service_event .service_eventUL li span span,
+.service_event .service_eventUL li span strong{ display:inline-block; vertical-align:middle; margin:0; width:auto; font-size:13px; color:#454545; font-weight:700; border:0; background:none; cursor:pointer}
+.service_event .service_eventUL li span span{ padding:7px; background:#fff; line-height:0; font-size:0; margin-right:15px; border-right:1px solid #e8e8e8}
+.service_event .service_eventUL li span strong span{ padding:0; margin:0; line-height:18px; font-size:13px; background:none; border:0}
+.go_btn span				{ float:left; display:block; font-size:12px; padding:2px 5px 0 0}
+.go_btn span span			{ float:none; display:inline-block}
+.go_btn strong				{ font-weight:700}
+.go_btn a					{ width:25px; height:24px; border:0; background:url(/images/main/icon-prev-next.gif) no-repeat; text-indent:-9999px}
+.go_btn a.event_prev		{ background-position:0 0}
+.go_btn a.event_next		{ background-position:-25px 0}
+body.ie7 #carousel3			{ display:inline-block}
+#carousel3					{ margin-top:10px; width:670px; height:153px; overflow:hidden}
+#carousel3:after			{ content:""; display:block; clear:both}
+#carousel3 .carousel-box	{ float:left; width:343px; height:153px}
+#carousel3 .carousel-box span{ display:block; margin-top:3px; width:327px; border:1px solid #e8e8e8; background:#eee}
+#carousel3 .carousel-box span:after{ content:""; display:block; clear:both}
+#carousel3 .carousel-box span:first-child{ margin-top:0}
+#carousel3 .carousel-box span span,
+#carousel3 .carousel-box span strong{ display:inline-block; vertical-align:middle; margin:0; width:auto; font-size:13px; color:#454545; font-weight:700; border:0; background:none; cursor:pointer}
+#carousel3 .carousel-box span span	{ padding:7px; background:#fff; line-height:0; font-size:0; margin-right:15px; border-right:1px solid #e8e8e8}
+#carousel3 .carousel-box span strong span{ padding:0; margin:0; line-height:18px; font-size:13px; background:none; border:0}
+body.ie7 #carousel4			{ display:inline-block}
+#carousel4					{ width:950px; height:146px; overflow:hidden}
+#carousel4:after			{ content:""; display:block; clear:both}
+#carousel4 .carousel-box	{ float:left; width:235px; height:146px; text-align:center}
+#carousel4 .carousel-box span,
+#carousel4 .carousel-box strong{ display:block}
+#carousel4 .carousel-box strong{ margin-top:18px; font-size:15px; color:#222; font-weight:700; line-height:14px}
+.carousel .btns				{ }
+.carousel .btns input[type=button]{ width:25px; height:24px; border:0; background:url(/images/main/icon-prev-next.gif) no-repeat; text-indent:-9999px}
+.carousel .btns #carousel1-prev,
+.carousel .btns #carousel3-prev{ background-position:0 0}
+.carousel .btns #carousel1-next,
+.carousel .btns #carousel3-next{ background-position:-24px 0}
+.carousel .btns.sub input[type=button]{ position:absolute; z-index:5; display:block; top:53px; width:37px; height:42px; background:url(/images/common/transparent-black2.png); text-indent:0}
+.carousel .btns.sub input[type=button]{ font-size:24px; color:#fff; font-weight:800; text-align:center; line-height:42px; cursor:pointer}
+.carousel .btns.sub #carousel2-prev{ left:0}
+.carousel .btns.sub #carousel2-next{ right:0}
+.carousel .btns.sub2 input[type=button]{ position:absolute; z-index:10; display:block; top:85px; width:18px; height:34px; background:url(/images/common/sprite.png); cursor:pointer}
+.carousel .btns.sub2 #carousel4-prev{ left:25px; background-position:0 -478px}
+.carousel .btns.sub2 #carousel4-next{ right:25px; background-position:0 -537px}
+.thumb-list					{ position:relative; margin-top:10px; padding:10px 18px; background:#f8f8f8}
+.thumb-list span a			{ position:absolute; top:15px; right:15px; display:block; width:16px; height:16px; background:url(/images/main/btn-more.gif) 50% 50% no-repeat; text-indent:-9999px}
+body.ie7 .thumb-list ul		{ display:inline-block}
+.thumb-list ul				{ margin-left:20px; height:131px}
+.thumb-list ul:after		{ content:""; display:block; clear:both}
+.thumb-list li				{ float:left; padding-left:1.5%; width:33%; line-height:26px; background:url(/images/common/dot-grey.gif) 0 50% no-repeat}
+body.ie7 .thumb-list li		{ width:31%}
+.thumb-list li a			{ color:#454545}
+.thumb-list li a:hover		{ color:#1686d5}
+.prev-next					{}
+.prev-next a				{ width:25px; height:24px; text-decoration:none; background:url(/images/main/icon-prev-next.gif) no-repeat; text-indent:-9999px}
+.prev-next a.btn-prev		{ background-position:0 0}
+.prev-next a.btn-next		{ background-position:-25px 0}
+.related-sites				{ position:relative; margin-top:15px}
+.main-board					{ margin-top:15px}
+.main-board div				{ position:relative; padding:10px 0 10px 20px; width:327px; height:150px; background:#f8f8f8; vertical-align:top}
+body.ie7 .main-board div	{ width:307px; height:135px}
+.main-board div h4 a		{ position:absolute; top:3px; right:15px; display:block; width:16px; height:16px; background:url(/images/main/btn-more.gif) 50% 50% no-repeat; text-indent:-9999px}
+.main-board div ul			{ margin-top:10px}
+.main-board div li			{ font-size:13px; height:24px; line-height:24px; padding-left:10px; background:url(/images/common/dot-grey.gif) 0 50% no-repeat}
+.main-board div li a		{ color:#454545}
+.emergency-clinic			{ margin-top:15px; padding:6px; background:#e8e8e8}
+.emergency-clinic h4		{ float:left; margin:0 0 0 7px; padding:7px 0 0 0; line-height:14px; font-size:14px}
+.emergency-clinic form		{ float:right}
+.emergency-clinic input		{ display:inline-block; margin:0; padding:0; height:29px; border:0; vertical-align:top}
+.emergency-clinic input[type=text]{ width:150px; line-height:29px}
+.emergency-clinic input[type=button]{ margin-right:1px; width:30px; cursor:pointer; background:#fff url(/images/btn/btn-search3.gif) 50% 50% no-repeat; text-indent:-9999px}
+body.ie7 .emergency-clinic ul{ display:inline-block}
+.emergency-clinic ul		{ margin-top:6px}
+.emergency-clinic ul:after	{ content:""; display:block; clear:both}
+.emergency-clinic li		{ float:left; margin:-1px -1px -1px 0; width:61px; height:30px; line-height:26px; text-align:center; background:#fff; border:1px solid #eee}
+body.ie7 .emergency-clinic li{ width:59px; height:28px; line-height:27px}
+.emergency-clinic li a		{ display:block; width:100%; height:100%; font-size:12px; color:#454545}
+.emergency-clinic li a:hover{ color:#fff; background:#1b8ce4}
+.btn-info					{ position:relative; width:100%; height:54px}
+.btn-info span				{ position:absolute; top:10px; display:block; height:44px; line-height:44px}
+.btn-info span.holiday-hospital{ width:130px; left:0; background:url(/images/main/icon-hospital-search.png) 2px 50% no-repeat}
+.btn-info span.duty-pharmacy{ width:180px; right:0; background:url(/images/main/icon-duty-pharmacy.png) 2px 50% no-repeat}
+.btn-info span a			{ display:block; padding-left:37px; width:100%; height:100%; font-size:16px; color:#454545; font-weight:700}
+.rt-banner					{ position:relative; margin-top:15px}
+.ft-banner					{ position:relative; margin-top:15px; padding:35px 25px; background:#f8f8f8}
+/* Hgroup-Navi */
+.hgroup						{ margin-bottom:25px; border-bottom:1px solid #ddd}
+.section-title				{ overflow:hidden}
+.section-title h2.title		{ padding-bottom:20px; font-size:28px; font-weight:700; color:#222}
+.section-title h2.title span{ font-size:14px; color:#555; font-weight:400; margin-left:15px}
+.page-navi					{ padding:5px 0 12px 0; text-align:right}
+body.ie7 .page-navi > div	{ display:inline}
+.page-navi > div			{ display:inline-block; vertical-align:middle}
+.page-navi div				{ font-size:10px; font-weight:700; color:#929292; text-transform:uppercase}
+.page-navi div img			{ vertical-align:middle}
+.page-navi div span			{ font-size:12px; color:#555; font-weight:400; padding:0 8px}
+.page-navi div strong		{ color:#454545; font-weight:700}
+.page-navi div.zoom-in-out	{ }
+.page-navi div.zoom-in-out img,
+.page-navi div.zoom-in-out span,
+.page-navi div.zoom-in-out a{ float:left; margin:0 0 0 2px; padding:0; vertical-align:top}
+.page-navi div.zoom-in-out a.print{ margin:0 5px 0 20px}
+/* Content */
+.sub-wrap					{ position:relative; margin:10px 0 100px 0; float:right; width:760px !important}
+.con-wrap					{ position:relative}
+.con-wrap.green h3			{ background-image:url(/images/common/bullet-h3g.png)}
+.con-wrap.pink h3			{ background-image:url(/images/common/bullet-h3p.png)}
+.con-wrap.purple h3			{ background-image:url(/images/common/bullet-h3pur.png)}
+.con-wrap.yellow-green h3	{ background-image:url(/images/common/bullet-h3yg.png)}
+.con-wrap.blue h4			{ color:#0077c3}
+.con-wrap.green h4			{ color:#0aaf6b}
+.con-wrap.orange h4			{ color:#f59600}
+.con-wrap.purple h4			{ color:#585dd7}
+.con-wrap.yellow-green h4	{ color:#78bd27}
+.message-box				{ margin-bottom:25px; padding:25px; background:#f8f8f8}
+.message-box span			{ display:block; color:#454545; line-height:24px}
+.message-box span strong	{ font-weight:700}
+.message-box .green			{ color:#0aaf6b}
+.message-box .yellow-green	{ color:#78bd27}
+.message-box .purple		{ color:#6e73de}
+.index-search				{ margin:30px 0 5px 0}
+.index-search a				{ display:block; float:left; margin-left:2px; width:43px; height:52px; background:url(/images/common/tab-pointer.png) 50% 0 no-repeat}
+.index-search a				{ line-height:43px; font-size:17px; color:#fff; font-weight:700; text-align:center}
+.index-search a:first-child	{ margin-left:0}
+.index-search a.all,
+.index-search a.eng			{ width:63px}
+.index-search a.eng			{ background-position:50% -52px; text-transform:uppercase}
+.index-search a.active		{ background-position:50% -104px}
+.index-search a.eng.active	{ background-position:50% -104px}
+.search-list				{ padding:30px; border:2px solid #2485d7}
+.search-list > div			{ margin-bottom:28px; padding:15px; text-align:center; border:1px solid #e8e8e8}
+.search-list > div label	{ font-size:15px; color:#454545; font-weight:700; cursor:pointer}
+.search-list > div input[type=text]{ margin:0 7px 0 15px; padding:0; width:405px; height:27px; line-height:27px}
+.search-list > div input[type=button]{ width:67px; height:27px; border:0; background:url(/images/btn/btn-search2.gif) no-repeat; cursor:pointer; vertical-align:middle; text-indent:-9999px}
+body.ie7 .search-list ul	{ display:inline-block}
+.search-list ul:after		{ content:""; display:block; clear:both}
+.search-list li				{ float:left; width:45%; padding-left:5%; line-height:30px; background:url(/images/common/dot.gif) 7% 50% no-repeat}
+.search-list li	a			{ color:#454545}
+.search-list.green			{ border-color:#0aaf6b}
+.top-index					{ margin-bottom:25px}
+.top-index ul				{ padding:20px 40px; background:#f8f8f8}
+.top-index li				{ float:left; width:48%; padding-left:2%; line-height:30px; background:url(/images/common/dot.gif) 0 50% no-repeat}
+.top-index li a				{ color:#454545}
+.top-index.green h3			{ background-image:url(/images/common/bullet-h3g.png)}
+.grey-box					{ padding:25px 40px; line-height:24px; background:#f8f8f8}
+.grey-box dd				{ padding-left:13px; background:url(/images/common/dot.gif) 0 50% no-repeat}
+.grey-box strong			{ font-weight:700}
+.grey-box .green			{ color:#0aaf6b}
+.grey-box .cyan				{ color:#13c6cd}
+.h4-descript				{ margin-bottom:10px; line-height:24px}
+.h4-descript strong			{ font-weight:700}
+.h4-descript em				{ display:block; font-style:normal}
+.h4-descript.top-line		{ margin-top:20px; padding-top:10px; border-top:1px solid #ddd}
+/* 건강상담 */
+.health-flowchart			{ height:299px; margin-top:50px; background:url(/images/health-consult/health-flowchart.jpg) center no-repeat}
+.health-flowchart p			{ display:none; text-indent:-9999px}
+.online-consult				{}
+.today-doctor				{ margin-bottom:25px; border:1px solid #6e73de}
+.today-doctor h4			{ padding:10px 0 10px 17px; font-size:18px; color:#fff; background:#6e73de; border:0}
+.today-doctor h5			{ font-size:20px; font-weight:700}
+.today-doctor h5 span		{ margin-left:10px; font-size:14px; color:#6e73de; font-weight:400}
+.today-doctor img			{ margin-right:30px}
+.today-doctor > div			{ margin:15px}
+body.ie7 .today-doctor > div{ padding-bottom:15px}
+.today-doctor > div ul		{ margin-top:15px; padding-top:10px; width:540px; border-top:1px solid #e8e8e8}
+.today-doctor > div ul li	{ padding-left:55px; margin-top:7px; font-weight:700; height:35px; line-height:35px; background:url(/images/health-consult/sprite-today.png) no-repeat}
+.today-doctor > div ul li:first-child{ margin-top:0}
+.today-doctor > div ul li.dept{ background-position:0 0}
+.today-doctor > div ul li.day-time{ background-position:0 -50px}
+.specialist td label		{ margin:0 10px 0 3px}
+.specialist input[type=button],
+.specialist input[type=reset]{ font-size:13px; font-weight:700; height:24px; padding:0 15px; color:#fff; border:0; cursor:pointer}
+.specialist input[type=button]{ background:#6e73de}
+.specialist input[type=reset]{ background:#454545}
+/* 건강관리정보 */
+ul.related-site				{}
+ul.related-site li			{ margin-top:5px; padding:20px 0; border:1px solid #e3e3e3; background:#f8f8f8}
+ul.related-site li:first-child{ margin-top:0}
+ul.related-site li label,
+ul.related-site li span		{ display:inline-block; font-size:13px; line-height:20px; vertical-align:top}
+ul.related-site li label	{ margin-right:20px; width:176px; text-align:center; border-right:1px solid #dbdbdb}
+ul.related-site li span		{ width:540px}
+ul.related-site li span a,
+ul.related-site li span span{ display:block}
+ul.related-site li span a	{ margin-bottom:8px; font-size:16px; color:#2485d7; font-weight:700; line-height:normal}
+ul.related-site li span a strong{ margin:5px 0 0 10px; font-size:12px; font-weight:800; line-height:18px; vertical-align:top}
+ul.related-site.road li		{ margin:0; padding:20px 0; border-left:0; border-right:0; border-top:0; background:none}
+ul.related-site.road li span{ font-size:14px; line-height:23px}
+ul.related-site.road li:first-child{ padding-top:0}
+ul.related-site.road li label{ text-align:left; border-right:0}
+ul.related-site.road li span strong{ display:block; margin-bottom:8px; font-size:16px; color:#0aaf6b; font-weight:700; line-height:normal}
+ul.related-site.guide li	{ margin:0; padding:20px 0; border-left:0; border-right:0; border-top:0; background:none}
+ul.related-site.guide li span{ font-size:14px; line-height:23px}
+ul.related-site.guide li:first-child{ border-top:1px solid #e3e3e3}
+ul.related-site.guide li label{ text-align:left; border-right:0; line-height:0}
+ul.related-site.guide li span a{ display:inline-block; color:#78bd27}
+ul.related-site.health li span a,
+ul.related-site.health li span span{ display:block}
+ul.related-site.health li span a{ color:#0aaf6b}
+/* 건강두바퀴서울 */
+.health-seoul				{ margin-bottom:35px; padding:30px 30px 30px 495px; line-height:24px; border:1px solid #ddd; background:url(/images/health-care/correct.jpg) 70px 50% no-repeat}
+.health-seoul dl			{ width:220px; padding:15px 0 15px 20px; border-left:1px solid #ddd}
+.health-seoul dt			{ font-size:16px; color:#0aaf6b; font-weight:700; padding-bottom:10px}
+.health-seoul dd.descrip	{ margin-top:10px; font-size:13px}
+.health-seoul dd.descrip em,
+.health-seoul dd.descrip span{ display:inline-block; vertical-align:top}
+.health-seoul dd.descrip em	{ margin-right:5px; font-style:normal}
+.health-seoul dd.descrip span{ width:185px}
+ul.h-seoul					{}
+ul.h-seoul li				{ margin-top:10px; line-height:24px}
+ul.h-seoul li:first-child	{ margin-top:0}
+ul.h-seoul li span			{ display:inline-block; vertical-align:middle}
+ul.h-seoul li strong		{ display:block; font-size:16px; color:#0aaf6b; font-weight:700; margin-bottom:5px}
+ul.h-seoul li span img		{ margin-right:20px}
+.cycle-lane					{ margin-top:35px; padding:30px; border:1px solid #ddd; background:url(/images/health-care/cycle-lane.png) 45px 30px no-repeat}
+.cycle-lane h5				{ margin:15px 0 0 125px; font-size:18px; font-weight:700}
+.cycle-lane h5 strong		{ color:#0aa565}
+body.ie7 .cycle-lane ul		{ display:inline-block}
+.cycle-lane ul				{ margin:40px 0 30px 0; padding-bottom:25px; background:url(/images/common/dotline.gif) left bottom repeat-x}
+.cycle-lane ul:after		{ content:""; display:block; clear:both}
+.cycle-lane li:first-child	{ width:16%}
+.cycle-lane li				{ float:left; width:28%; text-align:center}
+.cycle-lane li span			{ display:block; font-size:15px; font-weight:700}
+.cycle-lane li span img		{ margin-bottom:15px}
+body.ie7 .cycle-lane dl		{ display:inline-block}
+.cycle-lane dl:after		{ content:""; display:block; clear:both}
+.cycle-lane dt				{ float:left}
+.cycle-lane dd				{ float:right}
+.cycle-lane dt strong,
+.cycle-lane dt span			{ display:block}
+.cycle-lane dt strong		{ font-size:16px; color:#0aaf6b; font-weight:700; margin-bottom:12px}
+.seoul-map					{ margin-bottom:25px; height:353px; text-align:center; background:url(/images/health-care/map-seoul.png) 50% 0 no-repeat}
+.seoul-map.dobonggu			{ background-image:url(/images/health-care/map-dobonggu.png)}
+.seoul-map.dongdaemungu		{ background-image:url(/images/health-care/map-dongdaemungu.png)}
+.seoul-map.dongjakgu		{ background-image:url(/images/health-care/map-dongjakgu.png)}
+.seoul-map.eunpyeonggu		{ background-image:url(/images/health-care/map-eunpyeonggu.png)}
+.seoul-map.gangbukgu		{ background-image:url(/images/health-care/map-gangbukgu.png)}
+.seoul-map.gangdonggu		{ background-image:url(/images/health-care/map-gangdonggu.png)}
+.seoul-map.gangnamgu		{ background-image:url(/images/health-care/map-gangnamgu.png)}
+.seoul-map.gangseogu		{ background-image:url(/images/health-care/map-gangseogu.png)}
+.seoul-map.geumcheongu		{ background-image:url(/images/health-care/map-geumcheongu.png)}
+.seoul-map.gurogu			{ background-image:url(/images/health-care/map-gurogu.png)}
+.seoul-map.gwanakgu			{ background-image:url(/images/health-care/map-gwanakgu.png)}
+.seoul-map.gwangjingu		{ background-image:url(/images/health-care/map-gwangjingu.png)}
+.seoul-map.jongnogu			{ background-image:url(/images/health-care/map-jongnogu.png)}
+.seoul-map.junggu			{ background-image:url(/images/health-care/map-junggu.png)}
+.seoul-map.jungnanggu		{ background-image:url(/images/health-care/map-jungnanggu.png)}
+.seoul-map.mapogu			{ background-image:url(/images/health-care/map-mapogu.png)}
+.seoul-map.nowongu			{ background-image:url(/images/health-care/map-nowongu.png)}
+.seoul-map.seochogu			{ background-image:url(/images/health-care/map-seochogu.png)}
+.seoul-map.seodaemungu		{ background-image:url(/images/health-care/map-seodaemungu.png)}
+.seoul-map.seongdonggu		{ background-image:url(/images/health-care/map-seongdonggu.png)}
+.seoul-map.seongbukgu		{ background-image:url(/images/health-care/map-seongbukgu.png)}
+.seoul-map.songpagu			{ background-image:url(/images/health-care/map-songpagu.png)}
+.seoul-map.yangcheongu		{ background-image:url(/images/health-care/map-yangcheongu.png)}
+.seoul-map.yeongdeungpogu	{ background-image:url(/images/health-care/map-yeongdeungpogu.png)}
+.seoul-map.yongsangu		{ background-image:url(/images/health-care/map-yongsangu.png)}
+.food-cycle					{ position:relative; margin-bottom:45px; padding:30px 0; text-align:center; border:1px solid #e8e8e8; line-height:0}
+.food-cycle a				{ position:absolute; bottom:0; right:0}
+ul.basic-food				{ }
+ul.basic-food li			{ margin:-1px 0; padding:20px 0; line-height:24px; border:1px solid #e8e8e8; border-left:0; border-right:0}
+ul.basic-food li:first-child{ padding-top:0; border-top:0}
+ul.basic-food li span,
+ul.basic-food li label		{ display:inline-block; margin:0 -1px; vertical-align:middle}
+ul.basic-food li span		{ width:70%}
+ul.basic-food li label		{ width:29.5%; text-align:right}
+ul.basic-food li span span,
+ul.basic-food li span strong{ display:block}
+ul.basic-food li span span	{ width:auto}
+ul.basic-food li span strong{ margin-bottom:8px; font-size:16px; color:#0aaf6b; font-weight:700}
+.dri-koreans				{ padding:15px 0 20px 0; line-height:24px}
+.dri-koreans img			{ margin-right:45px}
+.dri-koreans span			{ display:inline-block; vertical-align:middle}
+.dri-koreans span.dri-descrip{ width:68%}
+.dri-koreans span.dri-descrip a{ display:inline-block; margin-top:25px; padding:0 20px; height:36px; color:#fff; font-weight:700; line-height:36px; background:#55c472}
+.dri-koreans span.dri-descrip a strong{ font-size:13px; font-weight:800; margin-left:10px}
+.my-bmi						{ margin-bottom:15px; text-align:right}
+.my-bmi a					{ display:inline-block; padding:0 20px; height:36px; color:#fff; font-weight:700; line-height:36px; background:#55c472}
+.my-bmi a strong			{ font-size:13px; font-weight:800; margin-left:10px}
+.food-poisoning				{ line-height:24px}
+body.ie7 .food-poisoning ul	{ display:inline-block}
+.food-poisoning ul			{ margin:30px 0 10px 0}
+.food-poisoning ul:after	{ content:""; display:block; clear:both}
+.food-poisoning li			{ float:left; width:25%; text-align:center}
+.food-poisoning li strong	{ display:block; margin:7px 0 13px 0; font-weight:700; line-height:18px}
+.no-smoking					{ position:relative; margin-bottom:45px; padding:30px; border:1px solid #e8e8e8}
+.no-smoking dl				{ }
+.no-smoking dt,
+.no-smoking dd				{ display:inline-block; vertical-align:middle}
+body.ie7 .no-smoking dt,
+body.ie7 .no-smoking dd		{ display:inline}
+.no-smoking dt				{ width:20%}
+.no-smoking dt img			{ margin-left:15px}
+.no-smoking dd				{ width:75%; font-size:18px; font-weight:700}
+.no-smoking dd span			{ font-size:14px; font-weight:400; line-height:24px}
+.no-smoking dd strong		{ color:#0aa565}
+.no-smoking a				{ display:inline-block; margin-top:12px; padding:0 20px; height:36px; font-size:14px; color:#fff; font-weight:700; line-height:36px; background:#55c472}
+.no-smoking a strong		{ font-size:13px; color:#fff; font-weight:800; margin-left:10px}
+.no-smoking ul				{ margin-left:140px}
+.no-smoking li				{ padding-left:45px; height:35px; line-height:35px; background:url(/images/common/sprite-info.png) no-repeat}
+.no-smoking li.who			{ background-position:0 4px}
+.no-smoking li.con			{ background-position:0 -37px}
+.no-smoking li.where		{ background-position:0 -77px}
+.no-smoking li.time			{ background-position:0 -117px}
+.no-smoking li.help			{ background-position:0 -156px}
+.no-smoking li.check		{ background-position:0 -196px}
+.no-smoking.nhis ul			{ margin-left:0}
+.no-smoking.nhis li			{ padding-left:0; height:auto; line-height:normal; background:none}
+body.ie7 .no-smoking.nhis li span{ display:inline}
+.no-smoking.nhis li span	{ display:inline-block; width:49%; vertical-align:top}
+.no-smoking.nhis li span span{ display:block; width:auto; margin-left:15px; line-height:24px; text-align:justify}
+.no-smoking.cyan dd strong	{ color:#13c6cd}
+.no-smoking.cyan a			{ background:#13c6cd}
+.no-smoking.cyan a strong	{ color:#fff}
+.no-smoking.cyan li.time 	{ height:40px; line-height:20px}
+.no-smoking.pharmacy dt,
+.no-smoking.pharmacy dd		{ vertical-align:top}
+.no-smoking.m-care li		{ padding-left:0; height:auto; line-height:normal; background:none}
+.no-smoking.m-care a.longterm{ margin-left:2px; background:#09a3c9}
+.no-smoking.right dd strong	{ color:#faac31}
+.no-smoking.obesity p,
+.no-smoking.right p,
+.no-smoking.medicine p		{ line-height:24px}
+.no-smoking.medicine a		{ background:#2c8ee0}
+.no-smoking.right a			{ background:#faac31}
+.no-smoking.medicine a strong,
+.no-smoking.right a strong	{ color:#fff}
+.no-smoking.consult dd strong{ color:#585dd7}
+.no-smoking.consult ul		{ margin-left:0}
+.no-smoking.consult li		{ padding-left:0; height:auto; line-height:26px; background:none}
+.no-smoking.consult li span	{ display:inline-block; vertical-align:top}
+.no-smoking.consult li span strong{ color:#585dd7; font-weight:400}
+.no-smoking.email-refuse dd strong{ color:#2485d7}
+/* 건강서울소식 */
+body.ie7 ul.health-related	{ display:inline-block}
+ul.health-related:after		{ content:""; display:block; clear:both}
+ul.health-related li		{ float:left; width:246px; margin-left:11px}
+ul.health-related li:first-child,
+ul.health-related li.row2{ margin-left:0}
+ul.health-related li.dvline{ font:none; margin:30px 0;width:100%; height:1px !important; background:#eee}
+ul.health-related li span,
+ul.health-related li strong	{ display:block; font-size:13px; line-height:18px}
+ul.health-related li strong	{ position:relative; margin:15px 0 10px 0; font-size:16px; color:#f54073; font-weight:700}
+ul.health-related li strong a{ position:absolute; display:block; top:0; right:5px; width:23px; height:23px; background:url(/images/btn/btn-go.png) 0 0 no-repeat; text-indent:-9999px}
+ul.health-related li .logo-holder{ border:1px solid #eee; line-height:0}
+/* 서울시나눔정보 */
+.nanum						{ margin-top:30px; line-height:24px}
+.nanum div					{ display:inline-block; width:362px; margin-top:40px; margin-left:20px}
+body.ie7 .nanum div			{ display:inline}
+.nanum div.first			{ margin-left:0 !important}
+.nanum div h4				{ padding-left:20px; font-size:18px; color:#fff; background:#f65683}
+.nanum div h4 span			{ display:inline-block; margin:0 0 0 5px; font-size:14px}
+.nanum div p				{ border:1px solid #eee; line-height:0}
+.nanum div span,
+.nanum div strong			{ position:relative; display:block}
+.nanum div span				{ margin:20px 0 0 0; font-size:13px}
+.nanum div strong			{ font-size:16px; color:#f65683; font-weight:700}
+.nanum div span a			{ position:absolute; display:block; top:5px; right:5px; width:34px; height:34px; background:url(/images/health-seoul/btn-nanum-go.png) 0 0 no-repeat; text-indent:-9999px}
+.nanum div span span,
+.nanum div span span strong	{ display:inline-block; margin:0}
+.nanum div span span strong	{ font-size:13px; color:#222}
+/* 병원 및 진료기관정보 */
+ul.sub-clinic				{ }
+ul.sub-clinic li			{ padding:20px 0; border-bottom:1px solid #e8e8e8}
+ul.sub-clinic li:first-child{ padding-top:0}
+body.ie7 ul.sub-clinic li span{ display:inline}
+ul.sub-clinic li span		{ display:inline-block; vertical-align:top}
+ul.sub-clinic li span.link-holder{ margin-right:15px; width:221px}
+ul.sub-clinic li span.link-holder img{ border:1px solid #e8e8e8}
+ul.sub-clinic li span.link-holder a{ display:block; position:relative; margin-top:6px; padding-left:20px; color:#fff; font-weight:700; height:38px; line-height:38px; background:#29c0c5}
+ul.sub-clinic li span.link-holder a strong{ position:absolute; display:block; top:0; right:15px}
+body.ie7 ul.sub-clinic li span.link-holder a{ margin-top:0}
+ul.sub-clinic li span.descrip-holder{ position:relative; width:515px; height:204px; font-size:13px; line-height:22px; letter-spacing:-0.04em}
+ul.sub-clinic li span.descrip-holder strong{ display:block; margin-bottom:15px; font-size:16px; font-weight:700; color:#18bdc2}
+ul.sub-clinic li span span{ position:absolute; bottom:0; left:0; display:block}
+ul.sub-clinic.introduce		{ padding:25px; border:1px solid #ddd}
+ul.sub-clinic.introduce li	{ padding:0; border-bottom:0}
+ul.sub-clinic.introduce li span.descrip-holder{ width:460px; height:auto; font-size:14px}
+/* 사이트소개 */
+.voice-form					{ }
+.agree-private				{ margin-top:10px; padding-bottom:15px; font-size:13px}
+.agree-private div			{ margin:7px 0; padding:15px; line-height:18px; background:#f8f8f8; border:1px solid #e2e2e2}
+.agree-private div h5		{ margin-bottom:10px; font-size:14px; font-weight:700}
+ul.form						{ margin:0; padding:20px 30px; list-style:none; background:#f8f8f8; border:1px solid #e2e2e2}
+ul.form li					{ position:relative}
+ul.form input,.form textarea{ position:relative; width:100%; margin-bottom:12px}
+ul.form input[type=radio]	{ width:auto; margin:0 2px 0 0; vertical-align:middle}
+ul.form textarea			{ width:100%; height:130px}
+ul.form select				{ width:50%; height:24px; margin-bottom:12px}
+ul.form span				{ display:block; margin-bottom:3px; font-size:13px}
+ul.form .radio-box			{ margin:8px 0 15px 0}
+ul.form label				{ font-size:14px; font-weight:700; cursor:pointer}
+ul.form li.all				{ margin-top:10px}
+/* FAQ */
+.faq-sort					{ position:relative; margin-bottom:20px}
+.faq-sort strong			{ position:absolute; bottom:3px; right:0; font-size:13px; color:#222; font-weight:700}
+.faq-sort select			{ height:24px}
+.faq						{ border-bottom:1px solid #373737; margin-bottom:0}
+body.ie7 .faq .faqHeader	{ display:inline-block}
+.faq .faqHeader				{ position:relative; margin-bottom:10px}
+.faq .faqHeader .showAll	{ position:absolute; bottom:0; right:0; border:0; padding:0; font-size:12px; overflow:visible; background:none; cursor:pointer}
+.faq .faqBody				{ margin:0 0 1px 0; padding:0}
+.faq .faqBody .article		{ list-style:none}
+.faq .q						{ margin:0; height:45px; line-height:45px; border-top:1px solid #e2e2e2}
+.faq .q label				{ display:block; float:left; font-size:14px; color:#78bd27; font-weight:700; width:140px; padding-left:10px; background:url(/images/common/dv-footermenu.gif) 80% 50% no-repeat}
+.faq .q a					{ display:block; padding:0; font-size:15px; text-align:left; background:#fff url(/images/icon/q.png) 123px 50% no-repeat; color:#222; font-weight:700; text-decoration:none !important}
+.faq .q a:hover, .faq .q a:active, .faq .q a:focus{ background-color:#f8f8f8}
+.faq .a						{ width:100%; margin:0; padding:15px 15px 15px 120px; line-height:22px; border-top:1px solid #ccc; background:#f8f8f8 url(/images/icon/a.png) 45px 50% no-repeat}
+.faq .a h2,.faq .a h3,.faq .a h4{ font-size:14px; font-weight:700; background:none; padding:0}
+.faq .a ul					{ margin:10px 0; padding:20px 0; border:1px solid #ccc; background:#fff}
+.faq .a li					{ padding:0 20px; font-weight:700}
+.faq .a img					{ margin:10px 0}
+span.origin					{ display:block; margin-top:10px; font-size:13px; text-align:right}
+body.ie7 .faq .a			{ width:625px; padding-left:133px; background-position:55px 50%}
+body.ie7 .faq .q a			{ background-position:133px 50%}
+.faq.food-disease			{ margin-top:30px; border-top:2px solid #0aaf6b}
+.faq.food-disease .q label	{ color:#0aaf6b; width:45px; text-align:center; padding-left:0; margin-right:15px; background-position:100% 50%}
+.faq.food-disease .q a		{ background:none}
+.faq.food-disease .a		{ font-size:13px; padding:15px 20px 15px 60px; text-align:justify; line-height:24px; background:#f8f8f8 url(/images/common/back-a.png) 17px 50% no-repeat}
+.faq.food-disease .a strong	{ font-size:13px; font-weight:700}
+body.ie7 .faq.food-disease .a{ width:680px; padding-left:60px; background-position:17px 50%}
+body.ie7 .faq.food-disease .q a{ background-position:0}
+/* 통합검색 결과 */
+.total-list					{ }
+.total-list h3				{ margin-bottom:15px; padding-left:23px; font-size:18px; font-weight:700; background:url(/images/common/bullet-h3search.png) 0 50% no-repeat}
+.total-list h4				{ margin-bottom:10px; padding-top:20px; font-size:16px; font-weight:700}
+.total-list h4 strong		{ color:#0e8ee4}
+.search-result				{ padding-bottom:60px}
+ul.search-result			{ padding-bottom:0}
+ul.search-result li			{ margin:-1px 0; padding:15px 23px; border:1px solid #e8e8e8; border-left:0; border-right:0}
+ul.search-result li:first-child{ border-top:1px solid #4d4d4d}
+ul.search-result li a		{ color:#454545}
+ul.search-result li strong,
+ul.search-result li span	{ display:block; line-height:24px}
+ul.search-result li strong	{ margin-bottom:15px; font-size:18px; font-weight:700}
+ul.search-result li span	{ padding:3px 0}
+ul.search-result li span strong,
+ul.search-result li span span{ display:inline-block; margin:0; padding:0}
+ul.search-result li span strong{ font-size:14px; color:#222}
+ul.search-result li span span{ margin:0 7px; font-size:13px; color:#888}
+.search-result p			{ position:relative; padding:30px 23px 0 23px}
+.search-result p a			{ position:absolute; right:23px; display:block; width:34px; height:34px; background:url(/images/common/btn-more.png) no-repeat; text-indent:-9999px}
+/* 인기검색어 */
+.popular-searchword			{ margin:50px 0 100px 0; float:left; width:200px}
+.popular-searchword h3		{ margin:0; padding:10px 0 15px 0; border-bottom:1px solid #ddd; font-size:18px; color:#222; font-weight:700}
+ol.popular-ol				{ margin-top:10px; padding:0}
+ol.popular-ol li			{ margin-top:7px}
+ol.popular-ol li:first-child{ margin-top:0}
+ol.popular-ol li .ranking	{ display:inline-block; margin-right:13px; width:28px; height:30px; border:1px solid #ddd; text-align:center; line-height:28px; font-weight:700}
+ol.popular-ol li.best .ranking{ color:#fff; border-color:#2485d7; background:#2485d7}
+ol.popular-ol li a			{ color:#454545}
+ol.popular-ol li.best a		{ color:#2485d7; font-weight:700}
+/* 에러페이지 */
+.error						{ margin:200px auto !important; padding:50px 40px; width:780px; border:3px solid #2485d7}
+.error-image				{ float:left; width:25%}
+.error-descrip				{ float:right; width:75%}
+.logo-image					{ margin-top:40px}
+.error h2,
+.error h3					{ color:#222; font-weight:700; line-height:28px}
+.error h2					{ margin-bottom:30px; font-size:22px}
+.error h3					{ margin-bottom:10px; font-size:16px}
+.error li					{ padding:2px 0 2px 10px; font-size:13px; background:url(/images/common/dot.gif) 0 50% no-repeat}
+.error li strong			{ font-weight:700}
