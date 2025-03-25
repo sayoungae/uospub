@@ -33,6 +33,7 @@
                             </a>
                         </h1>
                         <!-- 20250325 e -->
+                        <!-- 수정: 20240325 Google S -->
                         <!-- google translate API S-->
                         <div class="google-translate" id="googleTranslate01">
                             <div id="google_translate_element">
@@ -49,6 +50,7 @@
                                                 width="37px" height="14px" style="padding-right: 3px" alt="Google 번역">번역</a></span>에서 제공
                                 </div>
                             </div>
+                            
                             <div class="drop-box">
                                 <button type="button" class="openLanguageG" title="Close Language">
                                     <span>
@@ -71,9 +73,12 @@
                                             <span>Chinese</span>
                                         </a></li>                                    
                                 </ul>
+                                <div class="tip">
+                                    <p>This provides an unofficial translation by the Google translate.</p>
+                                    <button type="button" tabindex="0">Ok</button>
+                                </div>
                             </div>
                         </div>
-                        
                         <script type="text/javascript">
                             /* 구글 번역 초기화 */
                             function googleTranslateElementInit() {
@@ -113,21 +118,37 @@
                                     return false;
                                 });
 
-                                const dropBox = googleTranslate.querySelector('.drop-box');
-
+                                const dropBox = document.querySelector('.drop-box');
+                                const tipButton = document.querySelector('.tip button');
+                                
+                                //dropBox 클릭 시 on 클래스 추가
                                 dropBox.addEventListener('click', function (event) {
                                     event.preventDefault();
                                     event.stopPropagation();
 
-                                    this.classList.toggle('expanded');
+                                    this.classList.add('on');
 
-                                    document.addEventListener('click', function () {
-                                        dropBox.classList.remove('expanded');
-                                    });
+                                    if (dropBox.classList.contains('expanded')) {
+                                        dropBox.classList.remove('on', 'expanded');
+                                    } 
                                 });
-                            }); 
+
+                                // tip 안의 버튼 클릭 시 dropBox에 expanded 추가 + on 제거
+                                tipButton.addEventListener('click', function (event) {
+                                    event.preventDefault();
+                                    event.stopPropagation();
+
+                                    dropBox.classList.add('expanded');
+                                    dropBox.classList.remove('on');
+                                });
+                                // 외부 클릭시 클레스 제거
+                                document.addEventListener('click', function () {
+                                    dropBox.classList.remove('on', 'expanded');
+                                });
+                            });
                         </script>
                         <!-- google translate API E-->
+                        <!-- 수정: 20240325 Google E -->
                     </div>
                     <div class="top-menu">
                         <ul class="util-list clearfix">
