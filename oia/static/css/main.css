@@ -74,7 +74,7 @@
 .guide-slide li{width: calc(100% / 4 - 13px);  min-height: 160px;}
 .guide-slide li a{display: block; width: 100%; height: 100%; background-color: #F8F8F8; border:1px solid #E1E1E1; border-radius: 10px; overflow: hidden; text-align: center; padding:34px 0 10px; transition: 0.3s;}
 .guide-slide li a:hover,.guide-slide li a:focus{background-color: #fff; border-color: #014195; }
-.guide-slide li .txt{padding-top: 62px; background-position: center top; background-repeat: no-repeat; background-image: url("../images/m-icn01.png"); min-width: 48px;  overflow: hidden; text-overflow: ellipsis;display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; font-size: 15px;}
+.guide-slide li .txt{padding-top: 62px; background-position: center top; background-repeat: no-repeat; background-image: url("../images/m-icn01.png"); min-width: 48px; max-width: 90%; margin:0 auto; overflow: hidden; text-overflow: ellipsis;display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; font-size: 15px;}
 /* 한글 */
 .guide-slide li.li02 .txt{background-image: url("../images/m-icn02.png");}
 .guide-slide li.li03 .txt{background-image: url("../images/m-icn03.png");}
@@ -241,7 +241,7 @@
     .guide-slide ul{gap: 10px;}
     .guide-slide li {width: 100%; height: 64px;  min-height: 64px;}
     .guide-slide li a{padding:10px; width: 100%; height: 100%; }
-    .guide-slide li a .txt{width: 100%; height: 100%; display: flex; align-items: center;  background-position: left center; padding-top: 0; padding-left: 60px; background-size: auto 40px;}
+    .guide-slide li a .txt{width: 100%; height: 100%; display: flex; align-items: center;  background-position: left center; padding-top: 0; padding-left: 60px; background-size: auto 40px; max-width: 100%;}
     .guide-slide li a .txt > br{display: none;}
     /* -- m-guide */
     /* m-notice */

@@ -121,7 +121,7 @@ body {top: 0 !important;}
     border-radius: 10px;
 }
 
-.google-translate .drop-box{position: relative;}
+.google-translate .drop-box{position: relative; width: 140px;}
 .openLanguageG{display:flex;align-items:center; border: 1px solid #eee; border-radius: 20px; padding:5px 10px;}
 .openLanguageG span{font-size:14px;}
 .openLanguageG::before { margin: 0 8px 0 0; content: ''; display: block; width: 16px; height: 16px; background: url("../images/h-google.png") no-repeat center;}
