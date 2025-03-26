@@ -71,7 +71,8 @@
                                     </a></li>
                                     <li><a href="javascript:void(0)" data-lang="zh-CN">
                                             <span>Chinese</span>
-                                        </a></li>                                    
+                                        </a>
+                                    </li>                                    
                                 </ul>
                                 <div class="tip">
                                     <p>This provides an unofficial translation by the Google Trans.</p>
@@ -96,7 +97,8 @@
                                 googleTranslate.querySelector('.translation-links').addEventListener('click', function (event) {
                                     let el = event.target;
                                     if (el != null) {
-                                        while (el.nodeName == 'FONT') {
+                                        // a 안에 span 태그 클릭시, 부모로 올라가도록 처리
+                                        while (el.nodeName == 'SPAN') {
                                             el = el.parentElement;
                                         }
                                         const tolang = el.dataset.lang;
