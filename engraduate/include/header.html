@@ -1,5 +1,6 @@
 <div class="header-top">
     <div class="inner clearfix">
+        <!-- 수정: 250331 Google S -->
         <div class="google-translate" id="googleTranslate01">
             <div id="google_translate_element">
                 <div class="skiptranslate goog-te-gadget" dir="ltr" >
@@ -10,16 +11,19 @@
                             <option value="ja">일본어</option>
                             <option value="zh-CN">중국어(간체)</option>
                             <option value="zh-TW">중국어(번체)</option>
-                        </select></div><span style="white-space:nowrap"><a class="VIpgJd-ZVi9od-l4eHX-hSRGPd"
-                            href="https://translate.google.com" target="_blank"><img
-                                src="https://www.gstatic.com/images/branding/googlelogo/1x/googlelogo_color_42x16dp.png"
-                                width="37px" height="14px" style="padding-right: 3px" alt="Google 번역">번역</a></span>에서 제공
+                        </select>
+                    </div>
+                    <span style="white-space:nowrap">
+                        <a class="VIpgJd-ZVi9od-l4eHX-hSRGPd" href="https://translate.google.com" target="_blank">
+                            <img src="https://www.gstatic.com/images/branding/googlelogo/1x/googlelogo_color_42x16dp.png"  width="37px" height="14px" style="padding-right: 3px" alt="Google 번역">번역
+                        </a>
+                    </span>에서 제공
                 </div>
             </div>
             <div class="drop-box">
                 <button type="button" class="openLanguageG" title="Close Language">
                     <span>
-                        LANGUAGE
+                        Google Trans.
                     </span>
                 </button>
                 <ul class="translation-links">
@@ -43,14 +47,18 @@
                             <span>Japanese</span>
                         </a></li>
                 </ul>
+                <div class="tip">
+                    <p>This provides an unofficial translation by the Google Trans.</p>
+                    <div class="btn-box"><button type="button" tabindex="0">Ok</button></div>
+                </div>
             </div>
         </div>
-        <script>
+        <script type="text/javascript">
             /* 구글 번역 초기화 */
             function googleTranslateElementInit() {
                 new google.translate.TranslateElement({
-                    pageLanguage: "ko",
-                    includedLanguages: 'ko,en,ja,zh-CN,zh-TW,vi',
+                    pageLanguage: "en",
+                    includedLanguages: 'en,ja,zh-CN,zh-TW,vi',
                     autoDisplay: false
                 },
                     "google_translate_element"
@@ -58,25 +66,25 @@
             }
             document.addEventListener('DOMContentLoaded', function () {
                 const googleTranslate = document.getElementById('googleTranslate01');
-    
+
                 googleTranslate.querySelector('.translation-links').addEventListener('click', function (event) {
                     let el = event.target;
                     if (el != null) {
-                        while (el.nodeName == 'FONT') {
+                        // a 안에 span 태그 클릭시, 부모로 올라가도록 처리
+                        while (el.nodeName == 'SPAN') {
                             el = el.parentElement;
                         }
                         const tolang = el.dataset.lang;
                         const gtcombo = document.querySelector('.goog-te-combo');
-    
+
                         console.log(tolang + "/" + gtcombo);
-    
+
                         if (gtcombo == null) {
                             alert('Error: Could not find Google translate Combolist.');
                             return false;
                         }
                         gtcombo.value = tolang;
                         gtcombo.dispatchEvent(new Event('change'));
-                        // 2024.08.29. 한글은 리로딩
                         if (tolang == "ko") {
                             location.reload();
                             return false;
@@ -84,21 +92,37 @@
                     }
                     return false;
                 });
-    
-                const dropBox = googleTranslate.querySelector('.drop-box');
-    
+
+                const dropBox = document.querySelector('.drop-box');
+                const tipButton = document.querySelector('.tip button');
+                
+                //dropBox 클릭 시 on 클래스 추가
                 dropBox.addEventListener('click', function (event) {
                     event.preventDefault();
                     event.stopPropagation();
-    
-                    this.classList.toggle('expanded');
-    
-                    document.addEventListener('click', function () {
-                        dropBox.classList.remove('expanded');
-                    });
+
+                    this.classList.add('on');
+
+                    if (dropBox.classList.contains('expanded')) {
+                        dropBox.classList.remove('on', 'expanded');
+                    } 
                 });
-            }); 
+
+                // tip 안의 버튼 클릭 시 dropBox에 expanded 추가 + on 제거
+                tipButton.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    event.stopPropagation();
+
+                    dropBox.classList.add('expanded');
+                    dropBox.classList.remove('on');
+                });
+                // 외부 클릭시 클레스 제거
+                document.addEventListener('click', function () {
+                    dropBox.classList.remove('on', 'expanded');
+                });
+            });
         </script>
+        <!-- 수정: 250331 Google E -->
         <ul class="util-wrp clearfix">
             <li><a href="">login</a></li>
             <li><a href="">english</a></li>
@@ -109,11 +133,12 @@
 </div>
 <div class="header-bot">
     <div class="inner">
+        <!-- 20250325 s -->
         <h1 class="h-logo">
             <a href="/engraduate/web/main" class="logo-pc"><img src="../static/images/logo-e.png" alt="UNIVERSITY OF SEOUL Graduate School"></a>
             <a href="/engraduate/web/main" class="logo-mob"><img src="../static/images/logo-e-m.png" alt="UNIVERSITY OF SEOUL Graduate School"></a>
         </h1>
-        
+        <!-- 20250325 e -->
         <div class="gnb-wrp">
             <ul class="depth1">
                 <li>

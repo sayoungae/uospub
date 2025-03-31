@@ -115,10 +115,14 @@ body {top: 0 !important;}
 .openLanguageG::before { margin: 0 8px 0 0; content: ''; display: block; width: 16px; height: 16px; background: url("../images/h-google.png") no-repeat center;}
 .google-translate .drop-box .openLanguageG::after{content:"";display:block;width:11px;height:8px;margin-left:10px;background:url("../images/g-arrw.png") no-repeat center;}
 .google-translate .drop-box.expanded .openLanguageG::after{transform: rotate(180deg); }
-.google-translate .drop-box .translation-links{width: 110px;display:none;position:absolute;left:calc(100% - 120px);top:32px; z-index: 99999; background-color: #fff;}
+.google-translate .drop-box .translation-links{width: 110px;display:none;position:absolute;left:calc(100% - 120px);top:32px; z-index: 99999; background-color: #fff;  box-shadow: 4px 4px 4px rgba(0,0,0,0.2);}
 .google-translate .drop-box.expanded .translation-links{display:block;}
 .translation-links a{font-size:13px;color:#000;background:#FFF;display:block;padding:5px 15px;margin-top:1px;}
 .translation-links a:hover{background-color: rgba(156, 156, 156, 0.3);}
+.google-translate .drop-box .tip{position: absolute; background-color: #fff; width: 440px;  padding: 15px 20px;border-radius: 10px;font-size: 14px;  box-shadow: 2px 2px 10px rgba(0, 0, 0, .4); color: #666; opacity: 0;transition: opacity .75s; transition-delay: .2s; z-index: 1000000; right:-99999px; top: 150%;}
+.google-translate .drop-box .tip .btn-box{text-align: center; margin-top: 20px;}
+.google-translate .drop-box .tip button{background-color: #014195; color:#fff; border-radius: 4px; padding:3px 10px;}
+.google-translate .drop-box.on .tip{opacity: 1; right:0;}
 /* --- 구글번역 css  */
 
 /* margin */
@@ -327,6 +331,7 @@ a.linkNwin {
     .header-bot .srch-wrp > .srch-btn{margin-right: 10px;}
 }
 @media (max-width: 960px) {
+    .google-translate .drop-box .tip{width: 220px;}
     /* 검색창 */
     .srch-box .srch-box-in .srch-line{width: calc(100% - 100px);}
     .srch-box .srch-box-in .srch-close{position: static;}

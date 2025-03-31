@@ -1,6 +1,7 @@
 <div class="header-top">
     <div class="inner">
         <div class="top-logo">
+            <!-- 20250325 s -->
             <h1 class="h-logo">
                 <a href="#none" class="pc-logo">
                     <img src="../../static/images/logo-e.png" alt="UNIVERSITY OF SEOUL Office of International Affairs">
@@ -9,6 +10,20 @@
                     <img src="../../static/images/logo-e-m.png" alt="UNIVERSITY OF SEOUL Office of International Affairs">
                 </a>
             </h1>
+            <!-- 20250325 e -->
+            
+        </div>
+        <div class="top-menu">
+            <ul class="util-list clearfix">
+                <li><a href="#none" class="login-icn">LOGIN</a></li>
+                <li><a href="#none" target="_blank" title="새창열림" class="lang-icn">OIA-ENG</a></li>
+            </ul>
+            <ul class="top-gbn-pc clearfix">
+                <li><a href="#none">KLCP</a></li>
+                <li><a href="#none" target="_blank" title="새창열림">UOS-KOR</a></li>
+                <li><a href="#none" target="_blank" title="새창열림">UOS-ENG</a></li>
+            </ul>
+            <!-- 수정: 250331 Google S -->
             <!-- google translate API S-->
             <div class="google-translate" id="googleTranslate01">
                 <div id="google_translate_element">
@@ -25,10 +40,11 @@
                                     width="37px" height="14px" style="padding-right: 3px" alt="Google 번역">번역</a></span>에서 제공
                     </div>
                 </div>
+                
                 <div class="drop-box">
                     <button type="button" class="openLanguageG" title="Close Language">
                         <span>
-                            LANGUAGE
+                            Google Trans.
                         </span>
                     </button>
                     <ul class="translation-links">
@@ -45,11 +61,15 @@
                         </a></li>
                         <li><a href="javascript:void(0)" data-lang="zh-CN">
                                 <span>Chinese</span>
-                            </a></li>                                    
+                            </a>
+                        </li>                                    
                     </ul>
+                    <div class="tip">
+                        <p>This provides an unofficial translation by the Google Trans.</p>
+                        <div class="btn-box"><button type="button" tabindex="0">Ok</button></div>
+                    </div>
                 </div>
             </div>
-            
             <script type="text/javascript">
                 /* 구글 번역 초기화 */
                 function googleTranslateElementInit() {
@@ -67,7 +87,8 @@
                     googleTranslate.querySelector('.translation-links').addEventListener('click', function (event) {
                         let el = event.target;
                         if (el != null) {
-                            while (el.nodeName == 'FONT') {
+                            // a 안에 span 태그 클릭시, 부모로 올라가도록 처리
+                            while (el.nodeName == 'SPAN') {
                                 el = el.parentElement;
                             }
                             const tolang = el.dataset.lang;
@@ -89,32 +110,37 @@
                         return false;
                     });
 
-                    const dropBox = googleTranslate.querySelector('.drop-box');
-
+                    const dropBox = document.querySelector('.drop-box');
+                    const tipButton = document.querySelector('.tip button');
+                    
+                    //dropBox 클릭 시 on 클래스 추가
                     dropBox.addEventListener('click', function (event) {
                         event.preventDefault();
                         event.stopPropagation();
 
-                        this.classList.toggle('expanded');
+                        this.classList.add('on');
 
-                        document.addEventListener('click', function () {
-                            dropBox.classList.remove('expanded');
-                        });
+                        if (dropBox.classList.contains('expanded')) {
+                            dropBox.classList.remove('on', 'expanded');
+                        } 
                     });
-                }); 
+
+                    // tip 안의 버튼 클릭 시 dropBox에 expanded 추가 + on 제거
+                    tipButton.addEventListener('click', function (event) {
+                        event.preventDefault();
+                        event.stopPropagation();
+
+                        dropBox.classList.add('expanded');
+                        dropBox.classList.remove('on');
+                    });
+                    // 외부 클릭시 클레스 제거
+                    document.addEventListener('click', function () {
+                        dropBox.classList.remove('on', 'expanded');
+                    });
+                });
             </script>
             <!-- google translate API E-->
-        </div>
-        <div class="top-menu">
-            <ul class="util-list clearfix">
-                <li><a href="#none" class="login-icn">LOGIN</a></li>
-                <li><a href="#none" target="_blank" title="새창열림" class="lang-icn">OIA-ENG</a></li>
-            </ul>
-            <ul class="top-gbn-pc clearfix">
-                <li><a href="#none">KLCP</a></li>
-                <li><a href="#none" target="_blank" title="새창열림">UOS-KOR</a></li>
-                <li><a href="#none" target="_blank" title="새창열림">UOS-ENG</a></li>
-            </ul>
+            <!-- 수정: 250331 Google E -->
             <button type="button" class="srch-open" title="Open Search Bar"><span class="blind">Search</span></button>
             <!-- Search -->
             <div class="srch-box">

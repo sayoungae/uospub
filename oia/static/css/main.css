@@ -157,7 +157,7 @@
     .guide-slide li a .txt{padding-top: 54px;}
 }
 @media (max-width: 1080px){
-    .m-container{padding-top: 84px;}
+    .m-container{padding-top: 80px;}
 }
 @media (max-width: 1024px) {
     
@@ -196,6 +196,7 @@
 }
 
 @media (max-width: 670px) {
+    .m-container{padding-top: 76px;}
     .m-inner{padding:0 20px}
 
     /* m-visual */
