@@ -685,7 +685,9 @@
     .table-wrap .type3 td{padding:10px 15px;}
     .table-wrap .blt01::before{top:7px}
     /* tab */
+    .s-container .tab-area .tab > ul{margin-bottom: 40px;}
     .s-container .tab-area .tab > ul > li > .btn-tab{font-size: 16px;}
+    
     /* Departments -목록 */
     .dept-list-wrap > ul > li {padding:15px 0;}
     .dept-list-wrap .tit-box{flex-direction: column;align-items: flex-start;gap: 10px; }
