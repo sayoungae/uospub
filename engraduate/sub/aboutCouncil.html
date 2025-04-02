@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graduate School 영문</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/swiper.css">
+
+
+    <!-- JS -->
+    <script src="../static/js/jquery-3.7.1.js"></script>
+    <script src="../static/js/swiper-bundle.min.js"></script>
+    <script src="../static/js/common.js"></script>
+    <!-- <script src="../static/js/main.js"></script> -->
+    <script src="../static/js/sub.js"></script>
+
+
+    <script>
+        //header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <!-- sub-banner -->
+            <div class="sub-banner sub1">
+                <div class="inner">
+                    <div class="ban-tit">University of Seoul Global Top Brand</div>
+                    <ul class="line-map">
+                        <li><img src="../static/images/home_ic.png" alt="home"></li>
+                        <li>Research</li>
+                        <li>Research Centers and Laboratores</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content">
+                <div class="inner clearfix">
+                    <!-- // sub-banner -->
+                    <!-- snb -->
+                    <div id="snb-wrap">
+                    </div>
+                    <!-- // snb -->
+                    <!-- sub content -->
+                    <div class="sub-content" id="sub-content">
+                        <div class="sub-tit-box">
+                            <h3 class="subTit01">About </h3>
+                            <ul class="stp-bt">
+                                <li><a href="" class="print-ic"><span class="blind">인쇄</span></a></li>
+                                <li><a href="" class="share-ic"><span class="blind">공유 </span></a></li>
+                            </ul>
+                        </div>
+                        <!-- 본문 -->
+                        <h4 class="blind">Organization</h4>
+                        <ul class="org-chart type2">
+                            <li>
+                                <p class="squa">President of the Student Council</p>
+                                <ul>
+                                    <li>
+                                        <p class="squa line2">Vice President of the Student Council</p>
+                                        <ul class="squa-line">
+                                            <li><span>Director of Academic Affairs</span></li>
+                                            <li><span>Director of Planning and Organization</span></li>
+                                            <li><span>Director of Public Relations and Communication</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <h4 class="subTit03">History</h4>
+                        <div class="table-wrap">
+                            <table class="type1">
+                                <colgroup>
+                                    <col style="width: 30%;">
+                                    <col style="width: auto;">
+                                </colgroup>
+                                <caption>History - Date, Description</caption>
+                                <thead>
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>July 14, 2023</td>
+                                        <td>1st General Graduate School Student Council launched</td>
+                                    </tr>
+                                    <tr>
+                                        <td>September 21, 2023</td>
+                                        <td>1st General Graduate School Student Council General Assembly</td>
+                                    </tr>
+                                    <tr>
+                                        <td>December 18–20, 2023</td>
+                                        <td>2nd General Graduate School Student Council Election</td>
+                                    </tr>
+                                    <tr>
+                                        <td>January 31, 2024</td>
+                                        <td>End of 1st Student Council’s term</td>
+                                    </tr>
+                                    <tr>
+                                        <td>February 1, 2024</td>
+                                        <td>Start of 2nd Student Council’s term</td>
+                                    </tr>
+                                    <tr>
+                                        <td>November 8, 2024</td>
+                                        <td>2nd General Assembly (Cancelled due to lack of quorum)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>November 15–18, 2024</td>
+                                        <td>Temporary General Assembly of the 2nd Student Council</td>
+                                    </tr>
+                                    <tr>
+                                        <td>November 18 – December 27, 2024</td>
+                                        <td>3rd Student Council candidate registration period</td>
+                                    </tr>
+                                    <tr>
+                                        <td>December 28, 2024</td>
+                                        <td>Emergency Response Committee formed</td>
+                                    </tr>
+                                    <tr>
+                                        <td>January 31, 2025</td>
+                                        <td>End of 2nd Student Council’s term</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <h4 class="subTit03">Projects and Events</h4>
+                        <div class="table-wrap">
+                            <table class="type1">
+                                <caption>Projects and Events - Date, Event Name</caption>
+                                <colgroup>
+                                    <col style="width: 30%;">
+                                    <col style="width: auto;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>Event Name</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>December 20, 2023 (Wed)</td>
+                                        <td>2023 Graduate School Academic Night</td>
+                                    </tr>
+                                    <tr>
+                                        <td>December 27, 2023 (Wed)</td>
+                                        <td>1st Snack Event by the 1st Student Council</td>
+                                    </tr>
+                                    <tr>
+                                        <td>January 10, 2024 (Wed)</td>
+                                        <td>2nd Snack Event by the 1st Student Council</td>
+                                    </tr>
+                                    <tr>
+                                        <td>February 14, 2024 (Wed)</td>
+                                        <td>2024 Spring Semester New Student Orientation</td>
+                                    </tr>
+                                    <tr>
+                                        <td>February 22, 2024 (Thu)</td>
+                                        <td>February 2024 Graduation Ceremony</td>
+                                    </tr>
+                                    <tr>
+                                        <td>April 15–26, 2024</td>
+                                        <td>Midterm Snack Event by the 2nd Student Council: <br><em>“We support the
+                                                Student Council! The Student Council supports you!”</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td>April 19, 2024 (Fri)</td>
+                                        <td>1st Special Lecture on Thesis and Statistics</td>
+                                    </tr>
+                                    <tr>
+                                        <td>May 30, 2024 (Thu)</td>
+                                        <td>2024 National Graduate Student Council Launch & Guest Lecture</td>
+                                    </tr>
+                                    <tr>
+                                        <td>June 18–19, 2024</td>
+                                        <td>Final Exam Snack Event by the 2nd Student Council</td>
+                                    </tr>
+                                    <tr>
+                                        <td>July 4, 2024 (Thu)</td>
+                                        <td>2nd Special Lecture on Thesis and Statistics</td>
+                                    </tr>
+                                    <tr>
+                                        <td>July 11, 2024 (Thu)</td>
+                                        <td>3rd Special Lecture on Thesis and Statistics</td>
+                                    </tr>
+                                    <tr>
+                                        <td>August 22, 2024 (Thu)</td>
+                                        <td>August 2024 Graduation Ceremony</td>
+                                    </tr>
+                                    <tr>
+                                        <td>September 12, 2024 (Thu)</td>
+                                        <td>2024 Fall Semester New Student Orientation</td>
+                                    </tr>
+                                    <tr>
+                                        <td>October 18, 2024 (Fri)</td>
+                                        <td>2024 Fall Semester Midterm Snack Event</td>
+                                    </tr>
+                                    <tr>
+                                        <td>December 5, 2024 (Thu)</td>
+                                        <td>2024 Fall Semester Final Exam Snack Event</td>
+                                    </tr>
+                                    <tr>
+                                        <td>December 20, 2024 (Fri)</td>
+                                        <td>2024 Graduate School Academic Night</td>
+                                    </tr>
+                                    <tr>
+                                        <td>February 20, 2025 (Thu)</td>
+                                        <td>2025 Spring Semester New Student Orientation</td>
+                                    </tr>
+                                    <tr>
+                                        <td>February 21, 2025 (Fri)</td>
+                                        <td>February 2025 Graduation Ceremony</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- 본문 -->
+                    </div>
+                    <!-- sub content -->
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+
+</html>

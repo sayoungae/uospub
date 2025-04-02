@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일반대학원 영문</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/swiper.css">
+
+
+    <!-- JS -->
+    <script src="../static/js/jquery-3.7.1.js"></script>
+    <script src="../static/js/swiper-bundle.min.js"></script>
+    <script src="../static/js/common.js"></script>
+    <!-- <script src="../static/js/main.js"></script> -->
+    <script src="../static/js/sub.js"></script>
+
+
+    <script>
+        //header.html을 불러오기
+        fetch('../include/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        //footer 
+        fetch('../include/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+
+        fetch('../include/snb.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('snb-wrap').innerHTML = data);
+
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header class="header" id="header"></header>
+        <div class="s-container">
+            <!-- sub-banner -->
+            <div class="sub-banner  sub4">
+                <div class="inner">
+                    <div class="ban-tit">University of Seoul Global Top Brand</div>
+                    <ul class="line-map">
+                        <li><img src="../static/images/home_ic.png" alt="home"></li>
+                        <li>Research</li>
+                        <li>Research Centers and Laboratores</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content">
+                <div class="inner clearfix">
+                    <!-- // sub-banner -->
+                    <!-- snb -->
+                    <div id="snb-wrap">
+                    </div>
+                    <!-- // snb -->
+                    <!-- sub content -->
+                    <div class="sub-content" id="sub-content">
+                        <div class="sub-tit-box">
+                            <h3 class="subTit01">Q&A</h3>
+                            <ul class="stp-bt">
+                                <li><a href="" class="print-ic"><span class="blind">인쇄</span></a></li>
+                                <li><a href="" class="share-ic"><span class="blind">공유 </span></a></li>
+                            </ul>
+                        </div>
+                        <!-- 본문 -->
+                        <form id="boardArticleForm" action="/engraduate/web/bbs/egrad_qna03/new" method="post"
+                            enctype="multipart/form-data"><input type="hidden" name="_sToken"
+                                value="1743564807673_0f35225eff907dc8f376107d84cc617806c6d3de9d5a305d54b2130e73e7cb96"><input
+                                id="bcId" name="bcId" type="hidden" value="egrad_qna03">
+                            <div class="brd-lstp-form">
+                                <ul class="respon-form">
+                                    <li>
+                                        <div class="form-label">
+                                            <label for="baGuestName" class="label-txt"><i
+                                                    class="essen">*</i>이름</label>
+                                        </div>
+                                        <div class="form-field">
+                                            <div class="inp-box">
+                                                <span id="baGuestName">강**</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form-label">
+                                            <label for="cnsl_tit" class="label-txt"><i
+                                                    class="essen">*</i>제목</label>
+                                        </div>
+                                        <div class="form-field">
+                                            <div class="inp-box w100">
+                                                <input id="baTitle" name="baTitle" title="제목 입력"
+                                                    class="input-100p" type="text" value="">
+                                            </div>
+                                            <div class="secret-box">
+                                                <div class="check-box">
+                                                    <label for="baSecret">비밀글 </label><input id="baSecret1"
+                                                        name="baSecret" type="checkbox" value="true"><input
+                                                        type="hidden" name="_baSecret" value="on">
+                                                </div>
+                                                <div class="check-box">
+                                                    <label for="baSecretPassword">비밀번호</label>
+                                                    <input id="baSecretPassword" name="baSecretPassword"
+                                                        type="password" value="" maxlength="20">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form-label">
+                                            <label for="baContentHtml" class="label-txt"><i
+                                                    class="essen">*</i>상세내용</label>
+                                        </div>
+                                        <div class="form-field">
+                                            <div class="inp-box">
+                                                <textarea id="baContentHtml" name="baContentHtml"
+                                                    title="최대 1000자" maxlength="1000" placeholder="최대 1000자"
+                                                    class="textLength" rows="10" cols="30"></textarea>
+                                            </div>
+                                            <p class="txt">
+                                                (<span class="point textCount">0</span>/1,000자)
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form-label">첨부파일</div>
+                                        <div class="form-field" id="fileUploaderContainer">
+                                            <div class="upload-container">
+                                                <div class="upload-file">
+                                                    <label for="file-input" class="upload-btn">
+                                                        <span>파일 선택</span>
+                                                        <input type="file" id="file-input" multiple="" accept=".txt,.doc,.ppt,.xls,.hwp,.pdf,.jpg,.jpeg,.gif,.bmp">
+                                                    </label>
+                                                    <div class="upload-inst">
+                                                        파일은 <strong>최대 5개까지</strong>, 업로드 총 합계 용량은 10MB를 초과할 수 없습니다.<br>
+                                                        TXT, DOC, PPT, XLS, HWP, <strong>PDF</strong>, JPG, JPEG, GIF, BMP 파일만 가능
+                                                    </div>
+                                                </div>
+                                                <ul class="file-list" id="file-list">
+                                                </ul>
+                                            </div>
+                                            
+                                        </div>
+                                        <!-- 파일업로드 js -->
+                                        <script>
+                                            const fileInput = document.getElementById('file-input');
+                                            const fileList = document.getElementById('file-list');
+                                            const MAX_FILES = 5;
+                                            function createFileItem(fileName) {
+                                                const fileItem = document.createElement('li');
+                                                fileItem.classList.add('file-item');
+                                    
+                                                const fileNameSpan = document.createElement('span');
+                                                fileNameSpan.textContent = fileName;
+                                                
+                                                const removeButton = document.createElement('button');
+                                                removeButton.innerHTML = '<span class="blind">업로드파일 목록에서 지우기</span>';
+                                                removeButton.classList.add('remove-btn');
+                                                removeButton.addEventListener('click', () => {
+                                                    fileItem.remove();
+                                                });
+                                                fileItem.appendChild(fileNameSpan);
+                                                fileItem.appendChild(removeButton);
+                                    
+                                                return fileItem;
+                                            }
+                                    
+                                            fileInput.addEventListener('change', () => {
+                                                const files = Array.from(fileInput.files);
+                                                if (fileList.children.length + files.length > MAX_FILES) {
+                                                    alert(`파일은 최대 ${MAX_FILES}개까지만 업로드 가능합니다.`);
+                                                    return;
+                                                }
+                                    
+                                                files.forEach(file => {
+                                                    const fileItem = createFileItem(file.name);
+                                                    fileList.appendChild(fileItem);
+                                                });
+                                            });
+                                        </script>
+                                        <!-- // 파일업로드 js -->
+                                    </li>
+                                    <li>
+                                        <div class="form-label">
+                                            <label for="baThumbFile">대표이미지</label>
+                                        </div>
+                                        <div class="form-field">
+                                            <div class="inp-box">
+                                                <input type="file" name="baThumbFile">
+                                            </div>
+                                            <p><span class="text-info">- jpg, jpeg, gif, png 파일만 업로드할 수
+                                                있습니다.</span></p>
+                                            <div>
+                                                <span> 대체텍스트 : </span>
+                                                <input id="baThumbText" name="baThumbText" class="input-100p"
+                                                    type="text" value="">
+                                            </div>
+                                            <div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                
+                            </div>
+
+                            <div class="btn-wrap Rside">
+                                <a href="#" class="btn blueBc">Cancel</a>
+                                <a href="#" class="btn">Post</a>
+                            </div>
+                        </form>
+                        <!-- 본문 -->
+                    </div>
+                    <!-- sub content -->
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+
+</html>

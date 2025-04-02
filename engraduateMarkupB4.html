@@ -1,31 +1,80 @@
 <!-- header -->
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-	
-	<title>UOS graduate school departments | Credit Exchange | Academic Affairs | 일반대학원 영문</title>
+
+	<title>Department of Korean Language and Literature | Liberal Arts | Departments | About UOS | 일반대학원 영문</title>
 	<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="subject" content="">
 	<meta name="author" content="">
 
- 	<!-- SEO -->
+	<!-- SEO -->
 	<meta property="og:type" content="website">
-<meta property="og:site_name" content="일반대학원 영문">
-<meta property="og:title" content="UOS graduate school departments | Credit Exchange | Academic Affairs | 일반대학원 영문">
-<meta property="og:url" content="http://his.uos.ac.kr/engraduate/web/contents/GS_Academic_04_01">
-<meta property="og:description" content="일반대학원 영문,UOS graduate school departments  Related regulations  Article 31 of the UOS Graduate School Implementation Regulations  Cooperating departments  Other UOS graduate school departments  Qualification...">
-<meta property="og:image" content="http://his.uos.ac.kr/design/theme/engraduate/images/logo-200x200.jpg">
-<meta property="og:image:height" content="200">
-<meta property="og:image:width" content="200">
-<meta name="name" content="UOS graduate school departments | Credit Exchange | Academic Affairs | ">
-<meta name="keywords" content="일반대학원 영문,UOS graduate school departments" >
-<meta name="description" content="일반대학원 영문,UOS graduate school departments  Related regulations  Article 31 of the UOS Graduate School Implementation Regulations  Cooperating departments  Other UOS graduate school departments  Qualification..." >
-<meta name="robots" content="index,follow">
-<meta name="googlebot" content="index,follow,snippet,archive">
-<link rel="image_src" href="http://his.uos.ac.kr/design/theme/engraduate/images/logo-200x200.jpg" ><!-- //SEO -->
-	
+	<meta property="og:site_name" content="일반대학원 영문">
+	<meta property="og:title"
+		content="Department of Korean Language and Literature | Liberal Arts | Departments | About UOS | 일반대학원 영문">
+	<meta property="og:url"
+		content="http://his.uos.ac.kr/engraduate/web/contents/GS_About_03_01_01?identified=anonymous&amp;">
+	<meta property="og:description" content="일반대학원 영문,Department of Korean Language and Literature">
+	<meta property="og:image" content="http://his.uos.ac.kr/design/theme/engraduate/images/logo-200x200.jpg">
+	<meta property="og:image:height" content="200">
+	<meta property="og:image:width" content="200">
+	<meta name="name"
+		content="Department of Korean Language and Literature | Liberal Arts | Departments | About UOS | ">
+	<meta name="keywords" content="일반대학원 영문,Department of Korean Language and Literature">
+	<meta name="description" content="일반대학원 영문,Department of Korean Language and Literature">
+	<meta name="robots" content="index,follow">
+	<meta name="googlebot" content="index,follow,snippet,archive">
+	<link rel="image_src" href="http://his.uos.ac.kr/design/theme/engraduate/images/logo-200x200.jpg">
+	<script>
+		const openInNewTab = (url) => {
+			const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
+			if (newWindow) newWindow.opener = null
+		}
+
+		function callLogin() {
+			if (!confirm("통합로그인은 포털홈페이지에서 가능합니다. 포털홈페이지로 이동하시겠습니까?")) {
+				return;
+			} else {
+				openInNewTab("https://portal.uos.ac.kr");
+			}
+		}
+
+		function callLogout() {
+			if (!confirm("통합로그아웃은 포털홈페이지에서 가능합니다. 포털홈페이지로 이동하시겠습니까?")) {
+				return;
+			} else {
+				openInNewTab("https://portal.uos.ac.kr");
+			}
+		}
+
+		function openLoginPopup() {
+			if (confirm("서울시립대학교 구성원(교직원, 재학생, 졸업생)만 이용가능합니다. 팝업설정이 차단되어있는지확인하세요.")) {
+				const popupWindow = window.open("https://www.uos.ac.kr/exsignon/sso/login.do", "popupWindow", "width=430,height=670");
+
+				if (!popupWindow || popupWindow.closed || typeof popupWindow.closed === 'undefined') {
+					// 팝업 차단이 의심되면 사용자에게 대체 방법으로 confirm 창을 띄움
+					if (!confirm("팝업이 차단되었습니다. 통합로그인은 포털홈페이지에서 가능합니다. 포털홈페이지로 이동하시겠습니까?")) {
+						return;
+					} else {
+						openInNewTab("https://portal.uos.ac.kr");
+					}
+				}
+			}
+		}
+
+		window.addEventListener("message", function (event) {
+			if (event.origin !== "https://www.uos.ac.kr") {
+				return;
+			}
+			location.href = "https://his.uos.ac.kr/engraduate/web/contents/GS_About_03_01_01?identified=anonymous&amp;";
+		});
+	</script>
+	<!-- //SEO -->
+
 	<!-- 첨부파일 delete icon 관련 -->
 	<link rel="stylesheet" href="/assets/css/icons.css">
 	<!-- css  -->
@@ -33,11 +82,11 @@
 	<link rel="stylesheet" href="/design/common/js/jquery-ui-1.12.1/jquery-ui.min.css">
 	<!-- Sweet Alert -->
 	<link rel="stylesheet" href="/assets/plugins/sweet-alert2/sweetalert2.min.css">
-	
+
 	<!-- engraduate css  -->
 	<link rel="stylesheet" href="/design/theme/engraduate/css/common.css">
 	<link rel="stylesheet" href="/design/theme/engraduate/css/swiper.css">
-	
+
 	<script src="/design/common/js/jquery-3.6.0.min.js"></script>
 	<script src="/design/common/js/common.js"></script>
 	<script src="/design/common/js/jquery.cookie.js"></script>
@@ -46,86 +95,86 @@
 	<script src="/design/common/js/jquery-ui-1.12.1/jquery.ui.datepicker-ko.js"></script>
 	<script src="/design/common/js/clipboard/clipboard.min.js"></script>
 	<script src="/design/common/js/printThis.js"></script>
-		
+
 	<!-- engraduate js  -->
 	<script src="/design/theme/engraduate/js/swiper-bundle.min.js"></script>
-	<script src="/design/theme/engraduate/js/common.js" ></script>
-	<script src="/design/theme/engraduate/js/sub.js" ></script>
-	
+	<script src="/design/theme/engraduate/js/common.js"></script>
+	<script src="/design/theme/engraduate/js/sub.js"></script>
+
 	<!-- Global -->
 	<script>
-var GLOBAL = {
-		APP_PATH:'/engraduate/web',
-		CONTEXT_PATH:'',
-		
-		API_PATH:'/api',
-		siteId:'engraduate',
-		menuId:'GS_Academic_04_01',
-		SECURITY_TOKEN_NAME:'_sToken',
-		SECURITY_TOKEN:'1742886070564_ca43c21bc1d731ffa730b6b1df8cbb062757271b71bd042b8e6d011720dda431',
-		SECURITY_ASYNC_TOKEN_NAME:'',
-		SECURITY_ASYNC_COOKIE_NAME:'',
-		
-		SITE_LOCALE:'en_US',
-		MOBILE:false
+		var GLOBAL = {
+			APP_PATH: '/engraduate/web',
+			CONTEXT_PATH: '',
+
+			API_PATH: '/api',
+			siteId: 'engraduate',
+			menuId: 'GS_About_03_01_01',
+			SECURITY_TOKEN_NAME: '_sToken',
+			SECURITY_TOKEN: '1743564828348_77946c8fb3bc015e77aeb3dd163b7ffef144a09b72453fb8afc30a609b68e485',
+			SECURITY_ASYNC_TOKEN_NAME: '',
+			SECURITY_ASYNC_COOKIE_NAME: '',
+
+			SITE_LOCALE: 'en_US',
+			MOBILE: false
 		};
-</script>
-<script src="/design/common/js/recommend.js"></script>
+	</script>
+	<script src="/design/common/js/recommend.js"></script>
 	<!-- Sweet-Alert  -->
 	<script src="/assets/plugins/sweet-alert2/sweetalert2.min.js"></script>
-	
+
 	<!-- media player -->
 	<script src="/design/common/js/mediaelement/mediaelement-and-player.js"></script>
 	<link rel="stylesheet" href="/design/common/js/mediaelement/mediaelementplayer.css">
 	<script>
-	jQuery(function($){
-		/* media player */
-		$('video, audio').mediaelementplayer({
-			// Do not forget to put a final slash (/)
-			//pluginPath: 'https://cdnjs.com/libraries/mediaelement/',
-			// this will allow the CDN to use Flash without restrictions
-			// (by default, this is set as `sameDomain`)
-			//shimScriptAccess: 'always'
-			// more configuration
+		jQuery(function ($) {
+			/* media player */
+			$('video, audio').mediaelementplayer({
+				// Do not forget to put a final slash (/)
+				//pluginPath: 'https://cdnjs.com/libraries/mediaelement/',
+				// this will allow the CDN to use Flash without restrictions
+				// (by default, this is set as `sameDomain`)
+				//shimScriptAccess: 'always'
+				// more configuration
+			});
+
 		});
-		
-	});
-	
+
 	</script>
 	<script>
-	$(function(){
-		//로그인 상태 체크
-		var isLogin = false;
-		var loginId = '';
-		if(loginId != null && loginId != '' ){
-			isLogin = true;
-		}
-/* 
-		$('.new-btn').on('click', function(e){
-			//e.preventDefault();
-			if(!isLogin){
-				alert('로그인 후 작성해 주세요.');
-				return false;
+		$(function () {
+			//로그인 상태 체크
+			var isLogin = false;
+			var loginId = '';
+			if (loginId != null && loginId != '') {
+				isLogin = true;
 			}
+			/* 
+					$('.new-btn').on('click', function(e){
+						//e.preventDefault();
+						if(!isLogin){
+							alert('로그인 후 작성해 주세요.');
+							return false;
+						}
+					});
+					
+					
+					//쪽지쓰기 레이어
+					$('body').on('click', '.noteWrite', function(e){
+						e.preventDefault();
+						if(!isLogin){
+							alert('로그인 후 작성해 주세요.');
+							return false;
+						}
+						$(".popup-box").show(); 
+						$('.popup-box').load($(this).attr('href'));
+						
+					});
+			 */
+
 		});
-		
-		
-		//쪽지쓰기 레이어
-		$('body').on('click', '.noteWrite', function(e){
-			e.preventDefault();
-			if(!isLogin){
-				alert('로그인 후 작성해 주세요.');
-				return false;
-			}
-			$(".popup-box").show(); 
-			$('.popup-box').load($(this).attr('href'));
-			
-		});
- */		
-		
-	});
 	</script>
-	
+
 </head>
 
 <body>
@@ -133,1346 +182,1190 @@ var GLOBAL = {
 
 	<!-- wrap -->
 	<div id="wrap">
-		
+
 		<!-- 스킵 네비게이션 S-->
 		<!-- <div id="skip" class="skip-nav">
 		    <a href="#contents">본문 내용 바로가기</a>
 		    <a href="#gnb">주메뉴 바로가기</a>
 		</div> -->
 		<!-- 스킵 네비게이션 E-->
-	    
-		
+
+
 		<!--header S-->
-	    <header id="header" class="header">
-                
-        	<!-- tnb (로그인,회원가입, 마이페이지, sns바로가기)-->
+		<header id="header" class="header">
+
+			<!-- tnb (로그인,회원가입, 마이페이지, sns바로가기)-->
 			<div class="header-top">
-			    <div class="inner clearfix">
-			    	<!-- 구글 API 추가 s  -->
+				<div class="inner clearfix">
+					<!-- 구글 API 추가 s  -->
 					<div class="google-translate" id="googleTranslate01">
-        <div id="google_translate_element" style="display:none;"></div>
-        <div class="drop-box">
-            <button type="button" class="openLanguageG" title="Close Language">
-                <span>LANGUAGE</span>
-            </button>
-            <ul class="translation-links">
-                <li><a href="javascript:void(0)" data-lang="ko">
-                        <span>korean</span>
-                    </a></li>
-                <li><a href="javascript:void(0)" data-lang="en">
-                        <span>English</span>
-                    </a></li>
-                <li><a href="javascript:void(0)" data-lang="zh-CN">
-                        <span>Chinese</span>
-                    </a></li>
-                <li><a href="javascript:void(0)" data-lang="vi">
-                        <span>Vietnamese</span>
-                    </a></li>
-                <li><a href="javascript:void(0)" data-lang="ja">
-                        <span>Japanese</span>
-                    </a></li>
-            </ul>
-        </div>
-    </div>
-    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    <script type="text/javascript">
-	/* 구글 번역 초기화 */
-	window.onload = function googleTranslateElementInit() {
-	    new google.translate.TranslateElement({
-	        pageLanguage: "en",
-	        includedLanguages: 'ko,en,zh-CN,vi,ja',
-	        autoDisplay: false
-	    },
-	        "google_translate_element"
-	    );
-	}
-	document.addEventListener('DOMContentLoaded', function () {
-	    const googleTranslate = document.getElementById('googleTranslate01');
-	
-	    googleTranslate.querySelector('.translation-links').addEventListener('click', function (event) {
-	        let el = event.target;
-	        if (el != null) {
-	            while (el.nodeName == 'FONT' || el.nodeName == 'SPAN') {
-	                el = el.parentElement;
-	            }
-	            const tolang = el.dataset.lang;
-	            const gtcombo = document.querySelector('.goog-te-combo');
-	
-	
-	            if (gtcombo == null) {
-	                alert('Error: Could not find Google translate Combolist.');
-	                return false;
-	            }
-	            gtcombo.value = tolang;
-	            gtcombo.dispatchEvent(new Event('change'));
-	            if (tolang == "ko") {
-	                location.reload();
-	                return false;
-	            }
-	        }
-	        return false;
-	    });
-	
-	    const dropBox = googleTranslate.querySelector('.drop-box');
-	
-	    dropBox.addEventListener('click', function (event) {
-	        event.preventDefault();
-	        event.stopPropagation();
-	
-	        this.classList.toggle('expanded');
-	
-	        document.addEventListener('click', function () {
-	            dropBox.classList.remove('expanded');
-	        });
-	    });
-	}); 
-	
-	$(document).ready(function() {
-    	if (window.history.length == 1) {
-    	    document.cookie = "googtrans=; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
-    	}
-	});
-	</script>
-<!-- 구글 API 추가 E  -->
-					
-					<script>
-					//로그인 이동
-					function loginAlert(){
-						if (window.confirm('통합로그인은 포털홈페이지에서 가능합니다. 포털홈페이지로 이동하시겠습니까?'))
-						{
-							window.location = 'https://sso.uos.ac.kr/svc/tk/Auth.eps?ac=Y&ifa=N&id=portal&';
+						<div id="google_translate_element" style="display:none;"></div>
+						<div class="drop-box">
+							<button type="button" class="openLanguageG" title="Close Language">
+								<span>Google trans.</span>
+							</button>
+							<ul class="translation-links">
+								<li><a href="javascript:void(0)" data-lang="ko">
+										<span>korean</span>
+									</a></li>
+								<li><a href="javascript:void(0)" data-lang="en">
+										<span>English</span>
+									</a></li>
+								<li><a href="javascript:void(0)" data-lang="zh-CN">
+										<span>Chinese</span>
+									</a></li>
+								<li><a href="javascript:void(0)" data-lang="vi">
+										<span>Vietnamese</span>
+									</a></li>
+								<li><a href="javascript:void(0)" data-lang="ja">
+										<span>Japanese</span>
+									</a></li>
+							</ul>
+							<div class="tip">
+								<p>This provides an unofficial translation by the Google Trans.</p>
+								<div class="btn-box"><button type="button" tabindex="0">Ok</button></div>
+							</div>
+						</div>
+					</div>
+					<script
+						src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+					<script type="text/javascript">
+						/* 구글 번역 초기화 */
+						function googleTranslateElementInit() {
+							new google.translate.TranslateElement({
+								pageLanguage: "en",
+								includedLanguages: 'ko,en,ja,zh-CN,zh-TW,vi',
+								autoDisplay: false
+							},
+								"google_translate_element"
+							);
 						}
-						else
-						{
-						    return false;
-						}
-					}
+						document.addEventListener('DOMContentLoaded', function () {
+							const googleTranslate = document.getElementById('googleTranslate01');
+
+							googleTranslate.querySelector('.translation-links').addEventListener('click', function (event) {
+								let el = event.target;
+								if (el != null) {
+									// a 안에 span 태그 클릭시, 부모로 올라가도록 처리
+									while (el.nodeName == 'SPAN' || el.nodeName == 'FONT') {
+										el = el.parentElement;
+									}
+									const tolang = el.dataset.lang;
+									const gtcombo = document.querySelector('.goog-te-combo');
+
+									console.log(tolang + "/" + gtcombo);
+
+									if (gtcombo == null) {
+										alert('Error: Could not find Google translate Combolist.');
+										return false;
+									}
+									gtcombo.value = tolang;
+									gtcombo.dispatchEvent(new Event('change'));
+									if (tolang == "ko") {
+										location.reload();
+										return false;
+									}
+								}
+								return false;
+							});
+
+							const dropBox = document.querySelector('.drop-box');
+							const tipButton = document.querySelector('.tip button');
+
+							//dropBox 클릭 시 on 클래스 추가
+							dropBox.addEventListener('click', function (event) {
+								event.preventDefault();
+								event.stopPropagation();
+
+								this.classList.add('on');
+
+								if (dropBox.classList.contains('expanded')) {
+									dropBox.classList.remove('on', 'expanded');
+								}
+							});
+
+							// tip 안의 버튼 클릭 시 dropBox에 expanded 추가 + on 제거
+							tipButton.addEventListener('click', function (event) {
+								event.preventDefault();
+								event.stopPropagation();
+
+								dropBox.classList.add('expanded');
+								dropBox.classList.remove('on');
+							});
+							// 외부 클릭시 클레스 제거
+							document.addEventListener('click', function () {
+								dropBox.classList.remove('on', 'expanded');
+							});
+						});
+
+						$(document).ready(function () {
+							if (window.history.length == 1) {
+								document.cookie = "googtrans=; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
+							}
+						});
 					</script>
-					
-		            <ul class="util-wrp clearfix">
-			            <li>
-								<a onclick="loginAlert();">login</a>
-							</li>
-							<li><a href="https://graduate.uos.ac.kr/graduateNew/main.do?identified=anonymous&">korean</a></li>
-                        <li><a href="https://www.uos.ac.kr/main.do" title="새창 열림" target="_blank">uos-kor</a></li>
-                        <li><a href="/eng/web/main" title="새창 열림" target="_blank">uos-eng</a></li>
-		            </ul>
-			    </div>
+					<!-- 구글 API 추가 E  -->
+
+					<script>
+						//로그인 이동
+						function loginAlert() {
+							if (window.confirm('통합로그인은 포털홈페이지에서 가능합니다. 포털홈페이지로 이동하시겠습니까?')) {
+								window.location = 'https://sso.uos.ac.kr/svc/tk/Auth.eps?ac=Y&ifa=N&id=portal&';
+							}
+							else {
+								return false;
+							}
+						}
+					</script>
+
+					<ul class="util-wrp clearfix">
+						<li>
+							<a onclick="loginAlert();">login</a>
+						</li>
+						<li><a href="https://graduate.uos.ac.kr/graduateNew/main.do?identified=anonymous&">korean</a>
+						</li>
+						<li><a href="https://www.uos.ac.kr/main.do" title="새창 열림" target="_blank">uos-kor</a></li>
+						<li><a href="/eng/web/main" title="새창 열림" target="_blank">uos-eng</a></li>
+					</ul>
+				</div>
 			</div>
-<div class="header-bot">
-            	<div class="inner">
-            		<h1 class="h-logo">
-            			<a href="/eng/web/main"><img src="/design/theme/engraduate/images/logo01_1.png" alt="UNIVERSITY OF SEOUL "></a>
-            			<a href="/engraduate/web/main"><img src="/design/theme/engraduate/images/logo01_2.png" alt="Graduate School"></a>
-           			</h1>
-            	
-            		<!-- gnb start -->		
+			<div class="header-bot">
+				<div class="inner">
+					<h1 class="h-logo">
+						<a href="/engraduate/web/main" class="logo-pc"><img
+								src="/design/theme/engraduate/images/logo-e.png"
+								alt="UNIVERSITY OF SEOUL Graduate School"></a>
+						<a href="/engraduate/web/main" class="logo-mob"><img
+								src="/design/theme/engraduate/images/logo-e-m.png"
+								alt="UNIVERSITY OF SEOUL Graduate School"></a>
+					</h1>
+
+					<!-- gnb start -->
 					<div class="gnb-wrp">
-	<ul class="depth1">
-	
-		<!-- <ul class="nav" id="nav"> -->
-				<li>
-						<a href="/engraduate/web/contents/GS_About_01" 
-							  class="nx" >
-							About UOS</a>
-						<div class="dp2-bx">
-												<div>
-													<div class="dp2-itx">
-				                                        <h2>About UOS</h2>
-				                                    </div>
-												
-											<ul class="depth2">
-										<li>
-						<a href="/engraduate/web/contents/GS_About_01" 
-							  class="nx" >
-							Welcome</a>
-						</li>
-										<li>
-						<a href="/engraduate/web/contents/GS_About_02" 
-							  class="nx" >
-							History</a>
-						</li>
-										<li>
-						<a href="/engraduate/web/contents/GS_About_03_01" 
-							  class="nx" >
-							Departments</a>
-						<ul class="depth3">
-										<li>
-						<a href="/engraduate/web/contents/GS_About_03_01" 
-							  class="nx" >
-							Liberal Arts</a>
-						</li>
-										<li>
-						<a href="/engraduate/web/contents/GS_About_03_02" 
-							  class="nx" >
-							Social Sciences</a>
-						</li>
-										<li>
-						<a href="/engraduate/web/contents/GS_About_03_03" 
-							  class="nx" >
-							Natural Sciences</a>
-						</li>
-										<li>
-						<a href="/engraduate/web/contents/GS_About_03_04" 
-							  class="nx" >
-							Engineering</a>
-						</li>
-										<li>
-						<a href="/engraduate/web/contents/GS_About_03_05" 
-							  class="nx" >
-							Arts & Sports</a>
-						</li>
-										<li>
-						<a href="/engraduate/web/contents/GS_About_03_06" 
-							  class="nx" >
-							Inter-dept. Coop</a>
-						</li>
-										</ul>
-												</li>
-												<li>
-						<a href="/engraduate/web/contents/GS_About_04" 
-							  class="nx" >
-							Organizations</a>
-						</li>
-										<li>
-						<a href="/engraduate/web/contents/GS_About_05" 
-							  class="nx" >
-							General Status</a>
-						</li>
-										<li>
-						<a href="https://rule.uos.ac.kr/lmxsrv/main/main.srv" 
-							  class="linkNwin" title="새창"  target="_blank">
-							Academic Rules and Regulations</a>
-						</li>
-										<li>
-						<a href="https://www.uos.ac.kr/kor/html/auos/guide/map/map.do?identified=anonymous&#a" 
-							  class="linkNwin" title="새창"  target="_blank">
-							Campus Guide</a>
-						</ul>
-											</div>
+						<ul class="depth1">
+
+							<!-- <ul class="nav" id="nav"> -->
+							<li>
+								<a href="/engraduate/web/contents/GS_About_01" class="nx">
+									About UOS</a>
+								<div class="dp2-bx">
+									<div>
+										<div class="dp2-itx">
+											<h2>About UOS</h2>
 										</div>
+
+										<ul class="depth2">
+											<li>
+												<a href="/engraduate/web/contents/GS_About_01" class="nx">
+													Welcome</a>
 											</li>
 											<li>
-						<a href="/engraduate/web/contents/GS_Admission_01_01" 
-							  class="nx" >
-							Admission</a>
-						<div class="dp2-bx">
-												<div>
-													<div class="dp2-itx">
-				                                        <h2>Admission</h2>
-				                                    </div>
-												
-											<ul class="depth2">
-										<li>
-						<a href="/engraduate/web/contents/GS_Admission_01_01" 
-							  class="nx" >
-							General Admission</a>
-						<ul class="depth3">
-										<li>
-						<a href="/engraduate/web/contents/GS_Admission_01_01" 
-							  class="nx" >
-							New Students</a>
-						</li>
-										<li>
-						<a href="/engraduate/web/contents/GS_Admission_01_02" 
-							  class="nx" >
-							Transfer Students</a>
-						</li>
-										</ul>
-												</li>
-												<li>
-						<a href="/engraduate/web/contents/GS_Admission_02" 
-							  class="nx" >
-							Special Admission For International Students</a>
-						</li>
-										<li>
-						<a href="/engraduate/web/contents/GS_Admission_03_01" 
-							  class="nx" >
-							Admission For Combined Bachelor’s/Master’s Program</a>
-						<ul class="depth3">
-										<li>
-						<a href="/engraduate/web/contents/GS_Admission_03_01" 
-							  class="nx" >
-							Recruitment Guidelines & Forms</a>
-						</li>
-										<li>
-						<a href="/engraduate/web/contents/GS_Admission_03_02" 
-							  class="nx" >
-							FAQ</a>
-						</li>
-										</ul>
-												</li>
-												<li>
-						<a href="/engraduate/web/contents/GS_Admission_04" 
-							  class="nx" >
-							Special Admission For Combined Master’s/Doctorate’s Program</a>
-						</li>
-										<li>
-						<a href="/engraduate/web/contents/GS_Admission_05" 
-							  class="nx" >
-							Recruitment For Early Employment Contract Departme</a>
-						</ul>
-											</div>
-										</div>
+												<a href="/engraduate/web/contents/GS_About_02" class="nx">
+													History</a>
 											</li>
 											<li>
-						<a href="/engraduate/web/uosBbs/30001C4/calendar" 
-							  class="nx" >
-							Academic Affairs</a>
-						<div class="dp2-bx">
-												<div>
-													<div class="dp2-itx">
-				                                        <h2>Academic Affairs</h2>
-				                                    </div>
-												
-											<ul class="depth2">
-										<li>
-						<a href="/engraduate/web/uosBbs/30001C4/calendar" 
-							  class="nx" >
-							Academic Calendar</a>
-						</li>
-										<li>
-						<a href="/engraduate/web/contents/GS_Academic_02" 
-							  class="nx" >
-							Academic Information</a>
-						</li>
-										<li>
-						<a href="/engraduate/web/contents/GS_Academic_03_01" 
-							  class="nx" >
-							Classes / Grades</a>
-						<ul class="depth3">
-										<li>
-						<a href="/engraduate/web/contents/GS_Academic_03_01" 
-							  class="nx" >
-							Course Registration</a>
-						</li>
-										<li>
-						<a href="/engraduate/web/contents/GS_Academic_03_02" 
-							  class="nx" >
-							Grade Processing</a>
-						</li>
-										</ul>
-												</li>
-												<li>
-						<a href="/engraduate/web/contents/GS_Academic_04_01" 
-							  class="nx" >
-							Credit Exchange</a>
-						</li>
-										<li>
-						<a href="https://his.uos.ac.kr/eng/web/contents/UOS_CampusLife_02_06_01" 
-							  class="linkNwin" title="새창"  target="_blank">
-							Registration / Tuition Fees</a>
-						</li>
-										<li>
-						<a href="/engraduate/web/contents/GS_Academic_06_01" 
-							  class="nx" >
-							Academic Status Change</a>
-						<ul class="depth3">
-										<li>
-						<a href="/engraduate/web/contents/GS_Academic_06_01" 
-							  class="nx" >
-							Leave of Absence / Return to School / Change of Major</a>
-						</li>
-										<li>
-						<a href="/engraduate/web/contents/GS_Academic_06_02" 
-							  class="nx" >
-							Disciplinary Action / Expulsion / Withdrawal</a>
-						</li>
-										<li>
-						<a href="/engraduate/web/contents/GS_Academic_06_03" 
-							  class="nx" >
-							Readmission</a>
-						</li>
-										</ul>
-												</li>
-												<li>
-						<a href="/engraduate/web/contents/GS_Academic_07_01" 
-							  class="nx" >
-							Completion / Graduation</a>
-						<ul class="depth3">
-										<li>
-						<a href="/engraduate/web/contents/GS_Academic_07_01" 
-							  class="nx" >
-							Completion</a>
-						</li>
-										<li>
-						<a href="/engraduate/web/contents/GS_Academic_07_02" 
-							  class="nx" >
-							Thesis Supervision & Examination</a>
-						</li>
-										<li>
-						<a href="/engraduate/web/contents/GS_Academic_07_03" 
-							  class="nx" >
-							Foreign Language & Comprehensive Exams</a>
-						</li>
-										</ul>
-												</li>
-												<li>
-						<a href="/engraduate/web/contents/GS_Academic_08" 
-							  class="nx" >
-							Graduate Research Students</a>
-						</ul>
-											</div>
-										</div>
+												<a href="/engraduate/web/contents/GS_About_03_01" class="nx">
+													Departments</a>
+												<ul class="depth3">
+													<li>
+														<a href="/engraduate/web/contents/GS_About_03_01" class="nx">
+															Liberal Arts</a>
+													</li>
+													<li>
+														<a href="/engraduate/web/contents/GS_About_03_02" class="nx">
+															Social Sciences</a>
+													</li>
+													<li>
+														<a href="/engraduate/web/contents/GS_About_03_03" class="nx">
+															Natural Sciences</a>
+													</li>
+													<li>
+														<a href="/engraduate/web/contents/GS_About_03_04" class="nx">
+															Engineering</a>
+													</li>
+													<li>
+														<a href="/engraduate/web/contents/GS_About_03_05" class="nx">
+															Arts & Sports</a>
+													</li>
+													<li>
+														<a href="/engraduate/web/contents/GS_About_03_06" class="nx">
+															Inter-dept. Coop</a>
+													</li>
+												</ul>
 											</li>
 											<li>
-						<a href="/engraduate/web/contents/GS_Student-Support_01_01" 
-							  class="nx" >
-							Student Support</a>
-						<div class="dp2-bx">
-												<div>
-													<div class="dp2-itx">
-				                                        <h2>Student Support</h2>
-				                                    </div>
-												
-											<ul class="depth2">
-										<li>
-						<a href="/engraduate/web/contents/GS_Student-Support_01_01" 
-							  class="nx" >
-							Scholarships & Student Loans</a>
-						<ul class="depth3">
-										<li>
-						<a href="/engraduate/web/contents/GS_Student-Support_01_01" 
-							  class="nx" >
-							Internal Scholarships</a>
-						</li>
-										<li>
-						<a href="/engraduate/web/contents/GS_Student-Support_01_02" 
-							  class="nx" >
-							External Scholarships</a>
-						</li>
-										<li>
-						<a href="/engraduate/web/contents/GS_Student-Support_01_03" 
-							  class="nx" >
-							Student Loans</a>
-						</li>
-										</ul>
-												</li>
-												<li>
-						<a href="/engraduate/web/contents/GS_Student-Support_02" 
-							  class="nx" >
-							International Exchange</a>
-						</li>
-										<li>
-						<a href="/engraduate/web/contents/GS_Student-Support_03" 
-							  class="nx" >
-							Dormitory</a>
-						</li>
-										<li>
-						<a href="/engraduate/web/bbs/egrad_form01/list" 
-							  class="nx" >
-							Academic Forms</a>
-						</li>
-										<li>
-						<a href="https://cert.uos.ac.kr/icerti" 
-							  class="linkNwin" title="새창"  target="_blank">
-							Certificate Issuance</a>
-						</li>
-										<li>
-						<a href="https://www.uos.ac.kr/kor/html/auos/prospectus/2023.do?epTicket=LOG&amp;identified=anonymous&amp;" 
-							  class="linkNwin" title="새창"  target="_blank">
-							UOS Handbook</a>
-						</ul>
-											</div>
-										</div>
+												<a href="/engraduate/web/contents/GS_About_04" class="nx">
+													Organizations</a>
 											</li>
 											<li>
-						<a href="/engraduate/web/contents/GS_Research_01" 
-							  class="nx" >
-							Research</a>
-						<div class="dp2-bx">
-												<div>
-													<div class="dp2-itx">
-				                                        <h2>Research</h2>
-				                                    </div>
-												
-											<ul class="depth2">
-										<li>
-						<a href="/engraduate/web/contents/GS_Research_01" 
-							  class="nx" >
-							On-Campus Research Institutions</a>
-						</li>
-										<li>
-						<a href="https://research.uos.ac.kr/r-support" 
-							  class="linkNwin" title="새창"  target="_blank">
-							On-Campus Faculty Research Support</a>
-						</li>
-										<li>
-						<a href="/engraduate/web/contents/GS_Research_03" 
-							  class="nx" >
-							Research Ethics Regulations</a>
-						</li>
-										<li>
-						<a href="https://www.uos.ac.kr/kor/bk21/introduce/introduce.do?menuid=2000003004011000000&amp;identified=anonymou" 
-							  class="linkNwin" title="새창"  target="_blank">
-							BK21 Teams</a>
-						</ul>
-											</div>
-										</div>
+												<a href="/engraduate/web/contents/GS_About_05" class="nx">
+													General Status</a>
 											</li>
 											<li>
-						<a href="/engraduate/web/contents/GS_Bulletin_01" 
-							  class="nx" >
-							Bulletin</a>
-						<div class="dp2-bx">
-												<div>
-													<div class="dp2-itx">
-				                                        <h2>Bulletin</h2>
-				                                    </div>
-												
-											<ul class="depth2">
-										<li>
-						<a href="/engraduate/web/bbs/egrad_not01/list" 
-							  class="nx" >
-							Graduate School Notices</a>
-						</li>
-										<li>
-						<a href="/engraduate/web/contents/GS_Bulletin_02" 
-							  class="linkNwin" title="새창"  target="_blank">
-							UOS Notices</a>
-						</li>
-										<li>
-						<a href="/engraduate/web/uosBbs/30001F5/list" 
-							  class="nx" >
-							Student Council</a>
-						</li>
-										<li>
-						<a href="/engraduate/web/uosBbs/30001F6/list" 
-							  class="nx" >
-							Credit Exchange</a>
-						</li>
-										<li>
-						<a href="/engraduate/web/bbs/egrad_faq02/list" 
-							  class="nx" >
-							FAQ</a>
-						<ul class="depth3">
-										<li>
-						<a href="/engraduate/web/bbs/egrad_faq02/list" 
-							  class="nx" >
-							Admission</a>
-						</li>
+												<a href="https://rule.uos.ac.kr/lmxsrv/main/main.srv" class="linkNwin"
+													title="새창" target="_blank">
+													Academic Rules and Regulations</a>
+											</li>
+											<li>
+												<a href="https://www.uos.ac.kr/kor/html/auos/guide/map/map.do?identified=anonymous&#a"
+													class="linkNwin" title="새창" target="_blank">
+													Campus Guide</a>
 										</ul>
-												</li>
-												<li>
-						<a href="/engraduate/web/bbs/egrad_qna03/list" 
-							  class="nx" >
-							Q&amp;A</a>
-						</li>
-								
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="/engraduate/web/contents/GS_Admission_01_01" class="nx">
+									Admission</a>
+								<div class="dp2-bx">
+									<div>
+										<div class="dp2-itx">
+											<h2>Admission</h2>
+										</div>
+
+										<ul class="depth2">
+											<li>
+												<a href="/engraduate/web/contents/GS_Admission_01_01" class="nx">
+													General Admission</a>
+												<ul class="depth3">
+													<li>
+														<a href="/engraduate/web/contents/GS_Admission_01_01"
+															class="nx">
+															New Students</a>
+													</li>
+													<li>
+														<a href="/engraduate/web/contents/GS_Admission_01_02"
+															class="nx">
+															Transfer Students</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a href="/engraduate/web/contents/GS_Admission_02" class="nx">
+													Special Admission For International Students</a>
+											</li>
+											<li>
+												<a href="/engraduate/web/contents/GS_Admission_03_01" class="nx">
+													Admission For Combined Bachelor’s/Master’s Program</a>
+												<ul class="depth3">
+													<li>
+														<a href="/engraduate/web/contents/GS_Admission_03_01"
+															class="nx">
+															Recruitment Guidelines & Forms</a>
+													</li>
+													<li>
+														<a href="/engraduate/web/contents/GS_Admission_03_02"
+															class="nx">
+															FAQ</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a href="/engraduate/web/contents/GS_Admission_04" class="nx">
+													Special Admission For Combined Master’s/Doctorate’s Program</a>
+											</li>
+											<li>
+												<a href="/engraduate/web/contents/GS_Admission_05" class="nx">
+													Recruitment For Early Employment Contract Departme</a>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="/engraduate/web/uosBbs/30001C4/calendar" class="nx">
+									Academic Affairs</a>
+								<div class="dp2-bx">
+									<div>
+										<div class="dp2-itx">
+											<h2>Academic Affairs</h2>
+										</div>
+
+										<ul class="depth2">
+											<li>
+												<a href="/engraduate/web/uosBbs/30001C4/calendar" class="nx">
+													Academic Calendar</a>
+											</li>
+											<li>
+												<a href="/engraduate/web/contents/GS_Academic_02" class="nx">
+													Academic Information</a>
+											</li>
+											<li>
+												<a href="/engraduate/web/contents/GS_Academic_03_01" class="nx">
+													Classes / Grades</a>
+												<ul class="depth3">
+													<li>
+														<a href="/engraduate/web/contents/GS_Academic_03_01" class="nx">
+															Course Registration</a>
+													</li>
+													<li>
+														<a href="/engraduate/web/contents/GS_Academic_03_02" class="nx">
+															Grade Processing</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a href="/engraduate/web/contents/GS_Academic_04_01" class="nx">
+													Credit Exchange</a>
+											</li>
+											<li>
+												<a href="https://his.uos.ac.kr/eng/web/contents/UOS_CampusLife_02_06_01"
+													class="linkNwin" title="새창" target="_blank">
+													Registration / Tuition Fees</a>
+											</li>
+											<li>
+												<a href="/engraduate/web/contents/GS_Academic_06_01" class="nx">
+													Academic Status Change</a>
+												<ul class="depth3">
+													<li>
+														<a href="/engraduate/web/contents/GS_Academic_06_01" class="nx">
+															Leave of Absence / Return to School / Change of Major</a>
+													</li>
+													<li>
+														<a href="/engraduate/web/contents/GS_Academic_06_02" class="nx">
+															Disciplinary Action / Expulsion / Withdrawal</a>
+													</li>
+													<li>
+														<a href="/engraduate/web/contents/GS_Academic_06_03" class="nx">
+															Readmission</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a href="/engraduate/web/contents/GS_Academic_07_01" class="nx">
+													Completion / Graduation</a>
+												<ul class="depth3">
+													<li>
+														<a href="/engraduate/web/contents/GS_Academic_07_01" class="nx">
+															Completion</a>
+													</li>
+													<li>
+														<a href="/engraduate/web/contents/GS_Academic_07_02" class="nx">
+															Thesis Supervision & Examination</a>
+													</li>
+													<li>
+														<a href="/engraduate/web/contents/GS_Academic_07_03" class="nx">
+															Foreign Language & Comprehensive Exams</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a href="/engraduate/web/contents/GS_Academic_08" class="nx">
+													Graduate Research Students</a>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="/engraduate/web/contents/GS_Student-Support_01_01" class="nx">
+									Student Support</a>
+								<div class="dp2-bx">
+									<div>
+										<div class="dp2-itx">
+											<h2>Student Support</h2>
+										</div>
+
+										<ul class="depth2">
+											<li>
+												<a href="/engraduate/web/contents/GS_Student-Support_01_01" class="nx">
+													Scholarships & Student Loans</a>
+												<ul class="depth3">
+													<li>
+														<a href="/engraduate/web/contents/GS_Student-Support_01_01"
+															class="nx">
+															Internal Scholarships</a>
+													</li>
+													<li>
+														<a href="/engraduate/web/contents/GS_Student-Support_01_02"
+															class="nx">
+															External Scholarships</a>
+													</li>
+													<li>
+														<a href="/engraduate/web/contents/GS_Student-Support_01_03"
+															class="nx">
+															Student Loans</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a href="/engraduate/web/contents/GS_Student-Support_02" class="nx">
+													International Exchange</a>
+											</li>
+											<li>
+												<a href="/engraduate/web/contents/GS_Student-Support_03" class="nx">
+													Dormitory</a>
+											</li>
+											<li>
+												<a href="/engraduate/web/bbs/egrad_form01/list" class="nx">
+													Academic Forms</a>
+											</li>
+											<li>
+												<a href="https://cert.uos.ac.kr/icerti" class="linkNwin" title="새창"
+													target="_blank">
+													Certificate Issuance</a>
+											</li>
+											<li>
+												<a href="https://www.uos.ac.kr/kor/html/auos/prospectus/2023.do?epTicket=LOG&amp;identified=anonymous&amp;"
+													class="linkNwin" title="새창" target="_blank">
+													UOS Handbook</a>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="/engraduate/web/contents/GS_Research_01" class="nx">
+									Research</a>
+								<div class="dp2-bx">
+									<div>
+										<div class="dp2-itx">
+											<h2>Research</h2>
+										</div>
+
+										<ul class="depth2">
+											<li>
+												<a href="/engraduate/web/contents/GS_Research_01" class="nx">
+													On-Campus Research Institutions</a>
+											</li>
+											<li>
+												<a href="https://research.uos.ac.kr/r-support" class="linkNwin"
+													title="새창" target="_blank">
+													On-Campus Faculty Research Support</a>
+											</li>
+											<li>
+												<a href="/engraduate/web/contents/GS_Research_03" class="nx">
+													Research Ethics Regulations</a>
+											</li>
+											<li>
+												<a href="https://www.uos.ac.kr/kor/bk21/introduce/introduce.do?menuid=2000003004011000000&amp;identified=anonymou"
+													class="linkNwin" title="새창" target="_blank">
+													BK21 Teams</a>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="/engraduate/web/bbs/egrad_not01/list" class="nx">
+									Bulletin</a>
+								<div class="dp2-bx">
+									<div>
+										<div class="dp2-itx">
+											<h2>Bulletin</h2>
+										</div>
+
+										<ul class="depth2">
+											<li>
+												<a href="/engraduate/web/bbs/egrad_not01/list" class="nx">
+													Graduate School Notices</a>
+											</li>
+											<li>
+												<a href="/engraduate/web/contents/GS_Bulletin_02" class="linkNwin"
+													title="새창" target="_blank">
+													UOS Notices</a>
+											</li>
+											<li>
+												<a href="/engraduate/web/uosBbs/30001F5/list" class="nx">
+													Student Council</a>
+											</li>
+											<li>
+												<a href="/engraduate/web/uosBbs/30001F6/list" class="nx">
+													Credit Exchange</a>
+											</li>
+											<li>
+												<a href="/engraduate/web/bbs/egrad_faq02/list" class="nx">
+													FAQ</a>
+												<ul class="depth3">
+													<li>
+														<a href="/engraduate/web/bbs/egrad_faq02/list" class="nx">
+															Admission</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a href="/engraduate/web/bbs/egrad_qna03/list" class="nx">
+													Q&amp;A</a>
+											</li>
+
+											<!-- </ul> -->
+										</ul>
+									</div>
+								</div>
 								<!-- </ul> -->
-									</ul>
-										</div>
-										</div>
-									<!-- </ul> -->
-									</li>
-									</ul>
-</div>
-<!-- gnb end -->
-					
+							</li>
+						</ul>
+					</div>
+					<!-- gnb end -->
+
 					<div class="srch-wrp">
 						<button type="button" class="srch-btn"><span class="blind">Search</span></button>
 						<!-- 검색창 -->
 						<div class="srch-box">
 							<div class="srch-box-in clearfix">
-								<form id="searchForm" name="searchForm" action="https://www.uos.ac.kr/search/search.do" method="get" onsubmit="return goQuicksearch();">
+								<form id="searchForm" name="searchForm" action="https://www.uos.ac.kr/search/search.do"
+									method="get" onsubmit="return goQuicksearch();">
 									<fieldset>
 										<legend class="blind">통합검색</legend>
 										<div class="srch-df">
 											<div class="srch-line">
-												<input type="text" id="searchword" name="searchword" title="검색어 입력"  placeholder="Search">
+												<input type="text" id="searchword" name="searchword" title="검색어 입력"
+													placeholder="Search">
 												<button class="serch-btn"><span class="blind">검색</span></button>
 											</div>
-											<button class="srch-close" type="button" title="닫기"><span class="blind">닫기</span></button>
+											<button class="srch-close" type="button" title="닫기"><span
+													class="blind">닫기</span></button>
 										</div>
 									</fieldset>
 								</form>
 							</div>
 						</div>
 						<!-- //검색창 -->
-						
-                        <button type="button" class="all-menu">
-                            <span class="bar top"></span>
-			                <span class="bar mid"></span>
-			                <span class="bar bot"></span>
-			                <span class="blind">all-menu</span>                            
-                        </button>
-                    </div><!-- /srch-wrp -->
-            	
-            	</div><!-- /inner -->
-            </div><!-- /header-bot -->
+
+						<button type="button" class="all-menu">
+							<span class="bar top"></span>
+							<span class="bar mid"></span>
+							<span class="bar bot"></span>
+							<span class="blind">all-menu</span>
+						</button>
+					</div><!-- /srch-wrp -->
+
+				</div><!-- /inner -->
+			</div><!-- /header-bot -->
 		</header>
 		<!--header E-->
-		
+
 		<!-- 모달팝업 -->
-        <!-- popup1 -->
-        <div class="modal-popup-wrap" style="display: none;" id="popup1">
-            <div class="modal-popup">
-                <div class="txt">
-                    <p id="messgae-header"><b>MESSAGE</b></p>
-                    <p id="messgae-detail"></p>
-                </div>
-                <div class="pop_btn_group"><button type="button" class="popup-btn prpl-bg" onclick="closePopup(this);">확인</button></div>
-            </div>
-        </div>
-        <!-- popup2 -->
-        <div class="modal-popup-wrap" style="display: none;" id="popup2">
-            <div class="modal-popup">
-                <div class="txt">
-                    <p id="messgae-header2"><b>MESSAGE</b></p>
-                    <p id="messgae-detail2"></p>
-                </div>
-                <div class="pop_btn_group">
-                    <button type="button" class="popup-btn prpl-line" onclick="closePopup(this);">취소</button>
-                    <button type="button" class="popup-btn prpl-bg" onclick="checked(this);">확인</button>
-                </div>
-            </div>
-        </div>
-<!-- sidebar -->
-<div class="s-container">
-	
-	<div class="sub-banner sub3">
-	    <div class="inner">
-	        <div class="ban-tit">University of Seoul Global Top Brand</div>
-			<!-- location -->
-            <ul class="line-map">
-	 	<li><img src="/design/theme/engraduate/images/home_ic.png" alt="home"></li>
-		
-		<li>Academic Affairs</li>
-			<li>Credit Exchange</li>
-			<li>UOS graduate school departments</li>
-			</ul>
-</div>
-	</div>
-        
-	<div id="content">
-		<div class="inner clearfix">
-            
-	            <!-- snb -->
-	            <div id="snb-wrap">
-					<div class="snb-box">
-<div class="snb-tit">Academic Affairs</div>
-			<div class="snb-depth1">
-			<ul>
-		<li class="">
-				<a href="/engraduate/web/uosBbs/30001C4/calendar" 
-					 data-mid="GS_Academic_01">
-					Academic Calendar</a>
-			
-			</li>
-					<li class="">
-				<a href="/engraduate/web/contents/GS_Academic_02" 
-					 data-mid="GS_Academic_02">
-					Academic Information</a>
-			
-			</li>
-					<li class="">
-				<a href="/engraduate/web/contents/GS_Academic_03_01" 
-					 data-mid="GS_Academic_03">
-					Classes / Grades</a>
-			
-			<div class="snb-depth3">
-						<ul class="snbdepth3">
-					<li class="">
-				<a href="/engraduate/web/contents/GS_Academic_03_01" 
-					 data-mid="GS_Academic_03_01">
-					Course Registration</a>
-			
-			</li>
-					<li class="">
-				<a href="/engraduate/web/contents/GS_Academic_03_02" 
-					 data-mid="GS_Academic_03_02">
-					Grade Processing</a>
-			
-			</li>
+		<!-- popup1 -->
+		<div class="modal-popup-wrap" style="display: none;" id="popup1">
+			<div class="modal-popup">
+				<div class="txt">
+					<p id="messgae-header"><b>MESSAGE</b></p>
+					<p id="messgae-detail"></p>
+				</div>
+				<div class="pop_btn_group"><button type="button" class="popup-btn prpl-bg"
+						onclick="closePopup(this);">확인</button></div>
+			</div>
+		</div>
+		<!-- popup2 -->
+		<div class="modal-popup-wrap" style="display: none;" id="popup2">
+			<div class="modal-popup">
+				<div class="txt">
+					<p id="messgae-header2"><b>MESSAGE</b></p>
+					<p id="messgae-detail2"></p>
+				</div>
+				<div class="pop_btn_group">
+					<button type="button" class="popup-btn prpl-line" onclick="closePopup(this);">취소</button>
+					<button type="button" class="popup-btn prpl-bg" onclick="checked(this);">확인</button>
+				</div>
+			</div>
+		</div>
+		<!-- sidebar -->
+		<div class="s-container">
+
+			<div class="sub-banner sub1">
+				<div class="inner">
+					<div class="ban-tit">University of Seoul Global Top Brand</div>
+					<!-- location -->
+					<ul class="line-map">
+						<li><img src="/design/theme/engraduate/images/home_ic.png" alt="home"></li>
+
+						<li>About UOS</li>
+						<li>Departments</li>
+						<li>Liberal Arts</li>
+						<li>Department of Korean Language and Literature</li>
 					</ul>
-								</div>
-							</li>
-						<li class="on">
-				<a href="/engraduate/web/contents/GS_Academic_04_01" 
-					 data-mid="GS_Academic_04">
-					Credit Exchange</a>
-			
-			</li>
-					<li class="">
-				<a href="https://his.uos.ac.kr/eng/web/contents/UOS_CampusLife_02_06_01" 
-					 title="새창"  target="_blank" class="linkNwin" data-mid="GS_Academic_05">
-					Registration / Tuition Fees</a>
-			
-			</li>
-					<li class="">
-				<a href="/engraduate/web/contents/GS_Academic_06_01" 
-					 data-mid="GS_Academic_06">
-					Academic Status Change</a>
-			
-			<div class="snb-depth3">
-						<ul class="snbdepth3">
-					<li class="">
-				<a href="/engraduate/web/contents/GS_Academic_06_01" 
-					 data-mid="GS_Academic_06_01">
-					Leave of Absence / Return to School / Change of Major</a>
-			
-			</li>
-					<li class="">
-				<a href="/engraduate/web/contents/GS_Academic_06_02" 
-					 data-mid="GS_Academic_06_02">
-					Disciplinary Action / Expulsion / Withdrawal</a>
-			
-			</li>
-					<li class="">
-				<a href="/engraduate/web/contents/GS_Academic_06_03" 
-					 data-mid="GS_Academic_06_03">
-					Readmission</a>
-			
-			</li>
-					</ul>
-								</div>
-							</li>
-						<li class="">
-				<a href="/engraduate/web/contents/GS_Academic_07_01" 
-					 data-mid="GS_Academic_07">
-					Completion / Graduation</a>
-			
-			<div class="snb-depth3">
-						<ul class="snbdepth3">
-					<li class="">
-				<a href="/engraduate/web/contents/GS_Academic_07_01" 
-					 data-mid="GS_Academic_07_01">
-					Completion</a>
-			
-			</li>
-					<li class="">
-				<a href="/engraduate/web/contents/GS_Academic_07_02" 
-					 data-mid="GS_Academic_07_02">
-					Thesis Supervision & Examination</a>
-			
-			</li>
-					<li class="">
-				<a href="/engraduate/web/contents/GS_Academic_07_03" 
-					 data-mid="GS_Academic_07_03">
-					Foreign Language & Comprehensive Exams</a>
-			
-			</li>
-					</ul>
-								</div>
-							</li>
-						<li class="">
-				<a href="/engraduate/web/contents/GS_Academic_08" 
-					 data-mid="GS_Academic_08">
-					Graduate Research Students</a>
-			
-			</li>
-					</ul>
-					</div>
-				</div></div>
-				<!-- /snb -->
-				
-				<!-- sub content -->
-				<div class="sub-content" id="sub-content">
-					
-					<!-- etc 공유하기, 인쇄-->
-					<script>
+				</div>
+			</div>
 
-jQuery(function($){
-	
-	//프린트
-	$('.prt').on('click', function(e){
-		e.preventDefault();
-		//window.print();
-		
-		$('#wrap').printThis({
-			//canvas: false,  
-			//importStyle: true, 
-			importCSS: true,
-			//loadCSS: "/design/theme/engraduate/css/print.css"
-		});
-		
-	});
-	
-	//url클립보드 복사
-	$('.urlClipboard').on('click', function(e){
-		e.preventDefault();
-		
-		var clipboard = new ClipboardJS('.urlClipboard');
+			<div id="content">
+				<div class="inner clearfix">
 
-		clipboard.on('success', function(e) {
-		    /* console.info('Action:', e.action);
-		    console.info('Text:', e.text);
-		    console.info('Trigger:', e.trigger); */
-		    alert("링크 복사가 완료되었습니다.")
-		    e.clearSelection();
-		});
+					<!-- snb -->
+					<div id="snb-wrap">
+						<div class="snb-box">
+							<div class="snb-tit">About UOS</div>
+							<div class="snb-depth1">
+								<ul>
+									<li class="">
+										<a href="/engraduate/web/contents/GS_About_01" data-mid="GS_About_01">
+											Welcome</a>
 
-		clipboard.on('error', function(e) {
-		    /* console.error('Action:', e.action);
-		    console.error('Trigger:', e.trigger); */
-		    alert("Ctrl + C 를 누르면 복사가 완료됩니다.")
-		});
-	});
-});
+									</li>
+									<li class="">
+										<a href="/engraduate/web/contents/GS_About_02" data-mid="GS_About_02">
+											History</a>
 
+									</li>
+									<li class="on">
+										<a href="/engraduate/web/contents/GS_About_03_01" data-mid="GS_About_03">
+											Departments</a>
 
-</script>
+										<div class="snb-depth3">
+											<ul class="snbdepth3">
+												<li class="on">
+													<a href="/engraduate/web/contents/GS_About_03_01"
+														data-mid="GS_About_03_01">
+														Liberal Arts</a>
 
-<div class="sub-tit-box">
-	<h3 class="subTit01">UOS graduate school departments</h3>
-	
-	<!-- sns 공유 -->
-	<ul class="stp-bt">
-		<li><a href="#none" class="print-ic prt"><span class="blind">인쇄</span></a></li>
-		<li><a href="#none" class="urlClipboard share-ic" data-clipboard-text="http://his.uos.ac.kr/engraduate/web/contents/GS_Academic_04_01"><span class="blind">공유</span></a></li>
-		</ul>
-</div>
+												</li>
+												<li class="">
+													<a href="/engraduate/web/contents/GS_About_03_02"
+														data-mid="GS_About_03_02">
+														Social Sciences</a>
 
-<!-- tab -->
-					<div class="tab-area layer">
-							<!-- tab list -->
-							<div class="tab">            
-								<ul role="tablist">
-									<li id="tab_dept_01" role="tab" aria-selected="true" aria-controls="panel_dept_01"  class="active">
-												<a href="/engraduate/web/contents/GS_Academic_04_01"  class="btn-tab active">
-													UOS graduate school departments</a>
-											</li>
-										<li id="tab_dept_02" role="tab" aria-selected="true" aria-controls="panel_dept_02" >
-												<a href="/engraduate/web/contents/GS_Academic_04_02"  class="btn-tab ">
-													UOS graduate schools</a>
-											</li>
-										<li id="tab_dept_03" role="tab" aria-selected="true" aria-controls="panel_dept_03" >
-												<a href="/engraduate/web/contents/GS_Academic_04_03"  class="btn-tab ">
-													non-UOS graduate schools</a>
-											</li>
-										</ul>
+												</li>
+												<li class="">
+													<a href="/engraduate/web/contents/GS_About_03_03"
+														data-mid="GS_About_03_03">
+														Natural Sciences</a>
+
+												</li>
+												<li class="">
+													<a href="/engraduate/web/contents/GS_About_03_04"
+														data-mid="GS_About_03_04">
+														Engineering</a>
+
+												</li>
+												<li class="">
+													<a href="/engraduate/web/contents/GS_About_03_05"
+														data-mid="GS_About_03_05">
+														Arts & Sports</a>
+
+												</li>
+												<li class="">
+													<a href="/engraduate/web/contents/GS_About_03_06"
+														data-mid="GS_About_03_06">
+														Inter-dept. Coop</a>
+
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li class="">
+										<a href="/engraduate/web/contents/GS_About_04" data-mid="GS_About_04">
+											Organizations</a>
+
+									</li>
+									<li class="">
+										<a href="/engraduate/web/contents/GS_About_05" data-mid="GS_About_05">
+											General Status</a>
+
+									</li>
+									<li class="">
+										<a href="https://rule.uos.ac.kr/lmxsrv/main/main.srv" title="새창" target="_blank"
+											class="linkNwin" data-mid="GS_About_06">
+											Academic Rules and Regulations</a>
+
+									</li>
+									<li class="">
+										<a href="https://www.uos.ac.kr/kor/html/auos/guide/map/map.do?identified=anonymous&#a"
+											title="새창" target="_blank" class="linkNwin" data-mid="GS_About_07">
+											Campus Guide</a>
+
+									</li>
+								</ul>
 							</div>
-					<!--컨텐츠 타이틀-->
-	            	<!--//컨텐츠 타이틀-->
-            	
-<!--컨텐츠 시작-->
-	<h4 class="subTit03">UOS graduate school departments</h4>
-<div class="desc"> 
-<h5 class="subTit04">Related regulations</h5> 
-<ul class="dot-list02"> 
-<li>Article 31 of the UOS Graduate School Implementation Regulations</li> 
-</ul> 
-<h5 class="subTit04">Cooperating departments</h5> 
-<ul class="dot-list02"> 
-<li>Other UOS graduate school departments</li> 
-</ul> 
-<h5 class="subTit04">Qualifications for completion</h5> 
-<ul class="dot-list02"> 
-<li>Currently enrolled graduate students (including those planning to re-enroll in the current semester)</li> 
-</ul> 
-<h5 class="subTit04">Range of transferable credits</h5> 
-<ul class="dot-list02"> 
-<li>A. Master's program - Up to 12 credits during the entire enrollment period</li> 
-<li> B. Doctorate's program - Up to 18 credits during the entire enrollment period 
-<div class="point mt10"> ※ Students belonging to a participating department in the interdepartmental cooperative program may take courses established in the cooperative program with the approval of their department and the head professor of the cooperative program. Similarly, students from participating departments can take courses established in the cooperative program with the approval of the supervising professor of that program. In addition, students from departments participating in interdisciplinary majors may take courses established in the interdisciplinary major with the approval of their department and the head professor of the interdisciplinary operating department. In such cases, they can earn credits for courses offered in other graduate departments without restriction. </div> </li> 
-</ul> 
-<h5 class="subTit04">Application procedure</h5> 
-<div class="course"> 
-<div class="course_square type2"> 
-<div class="course_content"> 
-<p class="imgs"><img src="/design/theme/engraduate/images/square_img01.png" alt=""></p> <span>Course enrollment for requested subjects</span> </div> </div> 
-<div class="course_square type2"> 
-<div class="course_content"> 
-<p class="imgs"><img src="/design/theme/engraduate/images/square_img02.png" alt=""></p> <span>Approval from affiliated department and head professor</span> </div> </div> 
-<div class="course_square type2"> 
-<div class="course_content"> 
-<p class="imgs"><img src="/design/theme/engraduate/images/square_img03.png" alt=""></p> <span>Approval from the responsible professor of the other department</span> </div> </div> 
-<div class="course_square type2"> 
-<div class="course_content"> 
-<p class="imgs"><img src="/design/theme/engraduate/images/square_img04.png" alt=""></p> <span>Course enrollment for requested subjects<br>(UOS portal)</span> </div> </div> </div> </div><!--컨텐츠 종료-->
+						</div>
+					</div>
+					<!-- /snb -->
 
-<!-- footer -->
-</div><!-- /sub-content -->
-					
-				</div><!-- /inner -->
-	        </div><!-- /content -->
-		</div><!-- /s-container -->
-		
-		
-		<!-- satisfaction -->
-		<script>
-jQuery(function($){
-	$('.satisfactionBtn').on('click', function(e){
-		e.preventDefault();
-		
-		var menuId = $('#satisfactionForm [name=menuId]').val(); 
-		if( !menuId || ( menuId != GLOBAL.menuId ) ){
-			alert('페이지정보가 없어 평가를 처리할 수 없습니다.');
-			return;
-		}
-		
-		if( !$('#satisfactionForm [name=satisScore]:checked').size() ){
-			alert('평가점수를 선택해 주세요.');
-			return;
-		} 
-		
-		var params = $('#satisfactionForm').serialize();
-			
-		$.ajax({
-			url : $('#satisfactionForm').attr('action')
-			, type : 'post'
-			, data : params
-			, context : this
-		}).done(function(data){
-			if( data.success ){
-				alert('평가해주셔서 감사합니다.');
-				location.reload();
-			} else {
-				alert(data.text);
-			}
-		}).fail(function(){
-			alert('서버오류로 평가를 처리하지 못하였습니다.[failure]');
-		});
-		
-	});
-});
-</script>
-<!-- <div class="gap80"></div> -->
-<div class="satisfy_area">
-	<!-- page manager info -->
-	<script>
-jQuery(function($){
-	
-});
+					<!-- sub content -->
+					<div class="sub-content" id="sub-content">
 
-</script>
-</div>
-<!-- footer -->
-		<footer id="footer">
-			<div class="inner">
-                <ul class="foot-link">
-                    <li><a href="https://www.uos.ac.kr/kor/html/site/personalInfo/personalInfo.do?identified=anonymous&">Privacy Policy</a></li>
-                    <li><a href="https://www.academyinfo.go.kr/popup/pubinfo1690/list.do?schlId=0000040">University Information Disclosure</a></li>
-                    <li><a href="https://www.uos.ac.kr/kor/html/auos/uos/evaluate/evaluate.do?menuid=2000001006005001000&identified=anonymous&">University Self-Evaluation</a></li>
-                    <li><a href="/eng/web/contents/UOS_About_05_01">Faculty & Staff Contact Information</a></li>
-                    <li><a href="https://graduate.uos.ac.kr/graduateNew/html/etc/waytocome.do?menuid=3000100002000000000&identified=anonymous&">Directions</a></li>
-                </ul>
-                <p>University of Seoul 163 Seoulsiripdaero, Dongdaemun-gu, Seoul 02504 KOREA Tel: 02-6490-5015</p>
-                <p>ⓒThe University of Seoul. All Rights Reserved.</p>
-            </div>
-		</footer> 
-		
-		<!-- allMenu -->
-		<div id="all-menu-pop" >
-	<script>
-	//로그인 이동
-	function loginAlert(){
-		if (window.confirm('통합로그인은 포털홈페이지에서 가능합니다. 포털홈페이지로 이동하시겠습니까?'))
-		{
-			window.location = 'https://sso.uos.ac.kr/svc/tk/Auth.eps?ac=Y&ifa=N&id=portal&';
-		}
-		else
-		{
-		    return false;
-		}
-	}
-	</script>
-	
-	<!-- 전체메뉴 -->
-	<div class="all-menu-box">
-		<div class="pop-header">
-			<a href="/engraduate/web/main" title="main"><img src="/design/theme/engraduate/images/logo02.png" alt=""></a>
-			<ul class="util-wrp clearfix">
-				<li>
-						<a onclick="loginAlert();">login</a>
-					</li>
-					<li><a href="https://graduate.uos.ac.kr/graduateNew/main.do?identified=anonymous&">korean</a></li>
-				<li><a href="https://www.uos.ac.kr/main.do" title="새창 열림" target="_blank">uos-kor</a></li>
-				<li><a href="/eng/web/main" title="새창 열림" target="_blank">uos-eng</a></li>
-			</ul>
-		</div><!-- .pop-header -->
-		
-		<div class="pop-content">
-			<ul class="all-menu-depth">
-				<!-- <ul class="nav" id="nav"> -->
-						<li class="active">
-							<a href="/engraduate/web/contents/GS_About_01" 
-								
-									class="menu-depth1"
-								>
-								About UOS</a>
-							<ul class="depth2">
-											<li >
-							<a href="/engraduate/web/contents/GS_About_01" 
-								>
-								Welcome</a>
-							</li>
-											<li >
-							<a href="/engraduate/web/contents/GS_About_02" 
-								>
-								History</a>
-							</li>
-											<li >
-							<a href="/engraduate/web/contents/GS_About_03_01" 
-								
-									class="menu-depth2"
-								>
-								Departments</a>
-							<ul class="depth3">
-											<li >
-							<a href="/engraduate/web/contents/GS_About_03_01" 
-								>
-								Liberal Arts</a>
-							</li>
-											<li >
-							<a href="/engraduate/web/contents/GS_About_03_02" 
-								>
-								Social Sciences</a>
-							</li>
-											<li >
-							<a href="/engraduate/web/contents/GS_About_03_03" 
-								>
-								Natural Sciences</a>
-							</li>
-											<li >
-							<a href="/engraduate/web/contents/GS_About_03_04" 
-								>
-								Engineering</a>
-							</li>
-											<li >
-							<a href="/engraduate/web/contents/GS_About_03_05" 
-								>
-								Arts & Sports</a>
-							</li>
-											<li >
-							<a href="/engraduate/web/contents/GS_About_03_06" 
-								>
-								Inter-dept. Coop</a>
-							</li>
-											</ul>
-													</li>
-													<li >
-							<a href="/engraduate/web/contents/GS_About_04" 
-								>
-								Organizations</a>
-							</li>
-											<li >
-							<a href="/engraduate/web/contents/GS_About_05" 
-								>
-								General Status</a>
-							</li>
-											<li >
-							<a href="https://rule.uos.ac.kr/lmxsrv/main/main.srv" 
-								class="linkNwin" title="새창"  target="_blank">
-								Academic Rules and Regulations</a>
-							</li>
-											<li >
-							<a href="https://www.uos.ac.kr/kor/html/auos/guide/map/map.do?identified=anonymous&#a" 
-								class="linkNwin" title="새창"  target="_blank">
-								Campus Guide</a>
+						<!-- etc 공유하기, 인쇄-->
+						<script>
+
+							jQuery(function ($) {
+
+								//프린트
+								$('.prt').on('click', function (e) {
+									e.preventDefault();
+									//window.print();
+
+									$('#wrap').printThis({
+										//canvas: false,  
+										//importStyle: true, 
+										importCSS: true,
+										//loadCSS: "/design/theme/engraduate/css/print.css"
+									});
+
+								});
+
+								//url클립보드 복사
+								$('.urlClipboard').on('click', function (e) {
+									e.preventDefault();
+
+									var clipboard = new ClipboardJS('.urlClipboard');
+
+									clipboard.on('success', function (e) {
+										/* console.info('Action:', e.action);
+										console.info('Text:', e.text);
+										console.info('Trigger:', e.trigger); */
+										alert("링크 복사가 완료되었습니다.")
+										e.clearSelection();
+									});
+
+									clipboard.on('error', function (e) {
+										/* console.error('Action:', e.action);
+										console.error('Trigger:', e.trigger); */
+										alert("Ctrl + C 를 누르면 복사가 완료됩니다.")
+									});
+								});
+							});
+
+
+						</script>
+
+						<div class="sub-tit-box">
+							<h3 class="subTit01">Department of Korean Language and Literature</h3>
+							<!-- sns 공유 -->
+							<ul class="stp-bt">
+								<li><a href="#none" class="print-ic prt"><span class="blind">인쇄</span></a></li>
+								<li><a href="#none" class="urlClipboard share-ic"
+										data-clipboard-text="http://his.uos.ac.kr/engraduate/web/contents/GS_About_03_01_01?identified=anonymous&amp;"><span
+											class="blind">공유</span></a></li>
 							</ul>
-												</li>
-												<li >
-							<a href="/engraduate/web/contents/GS_Admission_01_01" 
-								
-									class="menu-depth1"
-								>
-								Admission</a>
-							<ul class="depth2">
-											<li >
-							<a href="/engraduate/web/contents/GS_Admission_01_01" 
-								
-									class="menu-depth2"
-								>
-								General Admission</a>
-							<ul class="depth3">
-											<li >
-							<a href="/engraduate/web/contents/GS_Admission_01_01" 
-								>
-								New Students</a>
+						</div>
+
+						<!-- tab -->
+						<div class="tab-area layer">
+							<!-- tab list -->
+							<div class="tab">
+								<ul role="tablist">
+									<li id="tab_dept_01" role="tab" aria-selected="true" aria-controls="panel_dept_01">
+										<a href="/engraduate/web/contents/GS_About_03_01_01_tab01" class="btn-tab ">
+											Departments</a>
+									</li>
+									<li id="tab_dept_02" role="tab" aria-selected="true" aria-controls="panel_dept_02">
+										<a href="/engraduate/web/contents/GS_About_03_01_01_tab02" class="btn-tab ">
+											Admission</a>
+									</li>
+									<li id="tab_dept_03" role="tab" aria-selected="true" aria-controls="panel_dept_03">
+										<a href="/engraduate/web/contents/GS_About_03_01_01_tab03" class="btn-tab ">
+											Assistance, etc</a>
+									</li>
+								</ul>
+							</div>
+							<!--컨텐츠 타이틀-->
+							<!--//컨텐츠 타이틀-->
+
+							<!--컨텐츠 시작-->
+							<!--컨텐츠 종료-->
+
+							<!-- footer -->
+						</div><!-- /sub-content -->
+
+					</div><!-- /inner -->
+				</div><!-- /content -->
+			</div><!-- /s-container -->
+
+
+			<!-- satisfaction -->
+			<script>
+				jQuery(function ($) {
+					$('.satisfactionBtn').on('click', function (e) {
+						e.preventDefault();
+
+						var menuId = $('#satisfactionForm [name=menuId]').val();
+						if (!menuId || (menuId != GLOBAL.menuId)) {
+							alert('페이지정보가 없어 평가를 처리할 수 없습니다.');
+							return;
+						}
+
+						if (!$('#satisfactionForm [name=satisScore]:checked').size()) {
+							alert('평가점수를 선택해 주세요.');
+							return;
+						}
+
+						var params = $('#satisfactionForm').serialize();
+
+						$.ajax({
+							url: $('#satisfactionForm').attr('action')
+							, type: 'post'
+							, data: params
+							, context: this
+						}).done(function (data) {
+							if (data.success) {
+								alert('평가해주셔서 감사합니다.');
+								location.reload();
+							} else {
+								alert(data.text);
+							}
+						}).fail(function () {
+							alert('서버오류로 평가를 처리하지 못하였습니다.[failure]');
+						});
+
+					});
+				});
+			</script>
+			<!-- <div class="gap80"></div> -->
+			<div class="satisfy_area">
+				<!-- page manager info -->
+				<script>
+					jQuery(function ($) {
+
+					});
+
+				</script>
+			</div>
+			<!-- footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="foot-link">
+						<li><a
+								href="https://www.uos.ac.kr/kor/html/site/personalInfo/personalInfo.do?identified=anonymous&">Privacy
+								Policy</a></li>
+						<li><a href="https://www.academyinfo.go.kr/popup/pubinfo1690/list.do?schlId=0000040">University
+								Information Disclosure</a></li>
+						<li><a
+								href="https://www.uos.ac.kr/kor/html/auos/uos/evaluate/evaluate.do?menuid=2000001006005001000&identified=anonymous&">University
+								Self-Evaluation</a></li>
+						<li><a href="/eng/web/contents/UOS_About_05_01">Faculty & Staff Contact Information</a></li>
+						<li><a
+								href="https://graduate.uos.ac.kr/graduateNew/html/etc/waytocome.do?menuid=3000100002000000000&identified=anonymous&">Directions</a>
+						</li>
+					</ul>
+					<p>University of Seoul 163 Seoulsiripdaero, Dongdaemun-gu, Seoul 02504 KOREA Tel: 02-6490-5015</p>
+					<p>ⓒThe University of Seoul. All Rights Reserved.</p>
+				</div>
+			</footer>
+
+			<!-- allMenu -->
+			<div id="all-menu-pop">
+				<script>
+					//로그인 이동
+					function loginAlert() {
+						if (window.confirm('통합로그인은 포털홈페이지에서 가능합니다. 포털홈페이지로 이동하시겠습니까?')) {
+							window.location = 'https://sso.uos.ac.kr/svc/tk/Auth.eps?ac=Y&ifa=N&id=portal&';
+						}
+						else {
+							return false;
+						}
+					}
+				</script>
+
+				<!-- 전체메뉴 -->
+				<div class="all-menu-box">
+					<div class="pop-header">
+						<a href="/engraduate/web/main" title="main"><img
+								src="/design/theme/engraduate/images/logo02.png" alt=""></a>
+						<ul class="util-wrp clearfix">
+							<li>
+								<a onclick="loginAlert();">login</a>
 							</li>
-											<li >
-							<a href="/engraduate/web/contents/GS_Admission_01_02" 
-								>
-								Transfer Students</a>
+							<li><a
+									href="https://graduate.uos.ac.kr/graduateNew/main.do?identified=anonymous&">korean</a>
 							</li>
-											</ul>
-													</li>
-													<li >
-							<a href="/engraduate/web/contents/GS_Admission_02" 
-								>
-								Special Admission For International Students</a>
-							</li>
-											<li >
-							<a href="/engraduate/web/contents/GS_Admission_03_01" 
-								
-									class="menu-depth2"
-								>
-								Admission For Combined Bachelor’s/Master’s Program</a>
-							<ul class="depth3">
-											<li >
-							<a href="/engraduate/web/contents/GS_Admission_03_01" 
-								>
-								Recruitment Guidelines & Forms</a>
-							</li>
-											<li >
-							<a href="/engraduate/web/contents/GS_Admission_03_02" 
-								>
-								FAQ</a>
-							</li>
-											</ul>
-													</li>
-													<li >
-							<a href="/engraduate/web/contents/GS_Admission_04" 
-								>
-								Special Admission For Combined Master’s/Doctorate’s Program</a>
-							</li>
-											<li >
-							<a href="/engraduate/web/contents/GS_Admission_05" 
-								>
-								Recruitment For Early Employment Contract Departme</a>
-							</ul>
-												</li>
-												<li >
-							<a href="/engraduate/web/uosBbs/30001C4/calendar" 
-								
-									class="menu-depth1"
-								>
-								Academic Affairs</a>
-							<ul class="depth2">
-											<li >
-							<a href="/engraduate/web/uosBbs/30001C4/calendar" 
-								>
-								Academic Calendar</a>
-							</li>
-											<li >
-							<a href="/engraduate/web/contents/GS_Academic_02" 
-								>
-								Academic Information</a>
-							</li>
-											<li >
-							<a href="/engraduate/web/contents/GS_Academic_03_01" 
-								
-									class="menu-depth2"
-								>
-								Classes / Grades</a>
-							<ul class="depth3">
-											<li >
-							<a href="/engraduate/web/contents/GS_Academic_03_01" 
-								>
-								Course Registration</a>
-							</li>
-											<li >
-							<a href="/engraduate/web/contents/GS_Academic_03_02" 
-								>
-								Grade Processing</a>
-							</li>
-											</ul>
-													</li>
-													<li >
-							<a href="/engraduate/web/contents/GS_Academic_04_01" 
-								>
-								Credit Exchange</a>
-							</li>
-											<li >
-							<a href="https://his.uos.ac.kr/eng/web/contents/UOS_CampusLife_02_06_01" 
-								class="linkNwin" title="새창"  target="_blank">
-								Registration / Tuition Fees</a>
-							</li>
-											<li >
-							<a href="/engraduate/web/contents/GS_Academic_06_01" 
-								
-									class="menu-depth2"
-								>
-								Academic Status Change</a>
-							<ul class="depth3">
-											<li >
-							<a href="/engraduate/web/contents/GS_Academic_06_01" 
-								>
-								Leave of Absence / Return to School / Change of Major</a>
-							</li>
-											<li >
-							<a href="/engraduate/web/contents/GS_Academic_06_02" 
-								>
-								Disciplinary Action / Expulsion / Withdrawal</a>
-							</li>
-											<li >
-							<a href="/engraduate/web/contents/GS_Academic_06_03" 
-								>
-								Readmission</a>
-							</li>
-											</ul>
-													</li>
-													<li >
-							<a href="/engraduate/web/contents/GS_Academic_07_01" 
-								
-									class="menu-depth2"
-								>
-								Completion / Graduation</a>
-							<ul class="depth3">
-											<li >
-							<a href="/engraduate/web/contents/GS_Academic_07_01" 
-								>
-								Completion</a>
-							</li>
-											<li >
-							<a href="/engraduate/web/contents/GS_Academic_07_02" 
-								>
-								Thesis Supervision & Examination</a>
-							</li>
-											<li >
-							<a href="/engraduate/web/contents/GS_Academic_07_03" 
-								>
-								Foreign Language & Comprehensive Exams</a>
-							</li>
-											</ul>
-													</li>
-													<li >
-							<a href="/engraduate/web/contents/GS_Academic_08" 
-								>
-								Graduate Research Students</a>
-							</ul>
-												</li>
-												<li >
-							<a href="/engraduate/web/contents/GS_Student-Support_01_01" 
-								
-									class="menu-depth1"
-								>
-								Student Support</a>
-							<ul class="depth2">
-											<li >
-							<a href="/engraduate/web/contents/GS_Student-Support_01_01" 
-								
-									class="menu-depth2"
-								>
-								Scholarships & Student Loans</a>
-							<ul class="depth3">
-											<li >
-							<a href="/engraduate/web/contents/GS_Student-Support_01_01" 
-								>
-								Internal Scholarships</a>
-							</li>
-											<li >
-							<a href="/engraduate/web/contents/GS_Student-Support_01_02" 
-								>
-								External Scholarships</a>
-							</li>
-											<li >
-							<a href="/engraduate/web/contents/GS_Student-Support_01_03" 
-								>
-								Student Loans</a>
-							</li>
-											</ul>
-													</li>
-													<li >
-							<a href="/engraduate/web/contents/GS_Student-Support_02" 
-								>
-								International Exchange</a>
-							</li>
-											<li >
-							<a href="/engraduate/web/contents/GS_Student-Support_03" 
-								>
-								Dormitory</a>
-							</li>
-											<li >
-							<a href="/engraduate/web/bbs/egrad_form01/list" 
-								>
-								Academic Forms</a>
-							</li>
-											<li >
-							<a href="https://cert.uos.ac.kr/icerti" 
-								class="linkNwin" title="새창"  target="_blank">
-								Certificate Issuance</a>
-							</li>
-											<li >
-							<a href="https://www.uos.ac.kr/kor/html/auos/prospectus/2023.do?epTicket=LOG&amp;identified=anonymous&amp;" 
-								class="linkNwin" title="새창"  target="_blank">
-								UOS Handbook</a>
-							</ul>
-												</li>
-												<li >
-							<a href="/engraduate/web/contents/GS_Research_01" 
-								
-									class="menu-depth1"
-								>
-								Research</a>
-							<ul class="depth2">
-											<li >
-							<a href="/engraduate/web/contents/GS_Research_01" 
-								>
-								On-Campus Research Institutions</a>
-							</li>
-											<li >
-							<a href="https://research.uos.ac.kr/r-support" 
-								class="linkNwin" title="새창"  target="_blank">
-								On-Campus Faculty Research Support</a>
-							</li>
-											<li >
-							<a href="/engraduate/web/contents/GS_Research_03" 
-								>
-								Research Ethics Regulations</a>
-							</li>
-											<li >
-							<a href="https://www.uos.ac.kr/kor/bk21/introduce/introduce.do?menuid=2000003004011000000&amp;identified=anonymou" 
-								class="linkNwin" title="새창"  target="_blank">
-								BK21 Teams</a>
-							</ul>
-												</li>
-												<li >
-							<a href="/engraduate/web/contents/GS_Bulletin_01" 
-								
-									class="menu-depth1"
-								>
-								Bulletin</a>
-							<ul class="depth2">
-											<li >
-							<a href="/engraduate/web/bbs/egrad_not01/list" 
-								>
-								Graduate School Notices</a>
-							</li>
-											<li >
-							<a href="/engraduate/web/contents/GS_Bulletin_02" 
-								class="linkNwin" title="새창"  target="_blank">
-								UOS Notices</a>
-							</li>
-											<li >
-							<a href="/engraduate/web/uosBbs/30001F5/list" 
-								>
-								Student Council</a>
-							</li>
-											<li >
-							<a href="/engraduate/web/uosBbs/30001F6/list" 
-								>
-								Credit Exchange</a>
-							</li>
-											<li >
-							<a href="/engraduate/web/bbs/egrad_faq02/list" 
-								
-									class="menu-depth2"
-								>
-								FAQ</a>
-							<ul class="depth3">
-											<li >
-							<a href="/engraduate/web/bbs/egrad_faq02/list" 
-								>
-								Admission</a>
-							</li>
-											</ul>
-													</li>
-													<li >
-							<a href="/engraduate/web/bbs/egrad_qna03/list" 
-								>
-								Q&amp;A</a>
-							</li>
-									
-									</ul>
-										</li>
+							<li><a href="https://www.uos.ac.kr/main.do" title="새창 열림" target="_blank">uos-kor</a></li>
+							<li><a href="/eng/web/main" title="새창 열림" target="_blank">uos-eng</a></li>
+						</ul>
+					</div><!-- .pop-header -->
+
+					<div class="pop-content">
+						<ul class="all-menu-depth">
+							<!-- <ul class="nav" id="nav"> -->
+							<li class="active">
+								<a href="/engraduate/web/contents/GS_About_01" class="menu-depth1">
+									About UOS</a>
+								<ul class="depth2">
+									<li>
+										<a href="/engraduate/web/contents/GS_About_01">
+											Welcome</a>
+									</li>
+									<li>
+										<a href="/engraduate/web/contents/GS_About_02">
+											History</a>
+									</li>
+									<li>
+										<a href="/engraduate/web/contents/GS_About_03_01" class="menu-depth2">
+											Departments</a>
+										<ul class="depth3">
+											<li>
+												<a href="/engraduate/web/contents/GS_About_03_01">
+													Liberal Arts</a>
+											</li>
+											<li>
+												<a href="/engraduate/web/contents/GS_About_03_02">
+													Social Sciences</a>
+											</li>
+											<li>
+												<a href="/engraduate/web/contents/GS_About_03_03">
+													Natural Sciences</a>
+											</li>
+											<li>
+												<a href="/engraduate/web/contents/GS_About_03_04">
+													Engineering</a>
+											</li>
+											<li>
+												<a href="/engraduate/web/contents/GS_About_03_05">
+													Arts & Sports</a>
+											</li>
+											<li>
+												<a href="/engraduate/web/contents/GS_About_03_06">
+													Inter-dept. Coop</a>
+											</li>
 										</ul>
-			<button type="button" class="menu-close" title="전체메뉴닫기"><span class="blind">전체메뉴닫기</span></button>
-		</div><!-- .pop-content -->
-	</div>
-	<!-- //전체메뉴 -->
-</div>
-<!-- allMenu end -->
-		
-		<!--퀵메뉴-->
-        <!--//퀵메뉴-->
-        
-		<div class="overlay"></div> <!-- 헤더검색 활성화 시 깔리는 전체 overlay-->
-		
-	</div> <!-- #wrap -->
+									</li>
+									<li>
+										<a href="/engraduate/web/contents/GS_About_04">
+											Organizations</a>
+									</li>
+									<li>
+										<a href="/engraduate/web/contents/GS_About_05">
+											General Status</a>
+									</li>
+									<li>
+										<a href="https://rule.uos.ac.kr/lmxsrv/main/main.srv" class="linkNwin"
+											title="새창" target="_blank">
+											Academic Rules and Regulations</a>
+									</li>
+									<li>
+										<a href="https://www.uos.ac.kr/kor/html/auos/guide/map/map.do?identified=anonymous&#a"
+											class="linkNwin" title="새창" target="_blank">
+											Campus Guide</a>
+								</ul>
+							</li>
+							<li>
+								<a href="/engraduate/web/contents/GS_Admission_01_01" class="menu-depth1">
+									Admission</a>
+								<ul class="depth2">
+									<li>
+										<a href="/engraduate/web/contents/GS_Admission_01_01" class="menu-depth2">
+											General Admission</a>
+										<ul class="depth3">
+											<li>
+												<a href="/engraduate/web/contents/GS_Admission_01_01">
+													New Students</a>
+											</li>
+											<li>
+												<a href="/engraduate/web/contents/GS_Admission_01_02">
+													Transfer Students</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="/engraduate/web/contents/GS_Admission_02">
+											Special Admission For International Students</a>
+									</li>
+									<li>
+										<a href="/engraduate/web/contents/GS_Admission_03_01" class="menu-depth2">
+											Admission For Combined Bachelor’s/Master’s Program</a>
+										<ul class="depth3">
+											<li>
+												<a href="/engraduate/web/contents/GS_Admission_03_01">
+													Recruitment Guidelines & Forms</a>
+											</li>
+											<li>
+												<a href="/engraduate/web/contents/GS_Admission_03_02">
+													FAQ</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="/engraduate/web/contents/GS_Admission_04">
+											Special Admission For Combined Master’s/Doctorate’s Program</a>
+									</li>
+									<li>
+										<a href="/engraduate/web/contents/GS_Admission_05">
+											Recruitment For Early Employment Contract Departme</a>
+								</ul>
+							</li>
+							<li>
+								<a href="/engraduate/web/uosBbs/30001C4/calendar" class="menu-depth1">
+									Academic Affairs</a>
+								<ul class="depth2">
+									<li>
+										<a href="/engraduate/web/uosBbs/30001C4/calendar">
+											Academic Calendar</a>
+									</li>
+									<li>
+										<a href="/engraduate/web/contents/GS_Academic_02">
+											Academic Information</a>
+									</li>
+									<li>
+										<a href="/engraduate/web/contents/GS_Academic_03_01" class="menu-depth2">
+											Classes / Grades</a>
+										<ul class="depth3">
+											<li>
+												<a href="/engraduate/web/contents/GS_Academic_03_01">
+													Course Registration</a>
+											</li>
+											<li>
+												<a href="/engraduate/web/contents/GS_Academic_03_02">
+													Grade Processing</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="/engraduate/web/contents/GS_Academic_04_01">
+											Credit Exchange</a>
+									</li>
+									<li>
+										<a href="https://his.uos.ac.kr/eng/web/contents/UOS_CampusLife_02_06_01"
+											class="linkNwin" title="새창" target="_blank">
+											Registration / Tuition Fees</a>
+									</li>
+									<li>
+										<a href="/engraduate/web/contents/GS_Academic_06_01" class="menu-depth2">
+											Academic Status Change</a>
+										<ul class="depth3">
+											<li>
+												<a href="/engraduate/web/contents/GS_Academic_06_01">
+													Leave of Absence / Return to School / Change of Major</a>
+											</li>
+											<li>
+												<a href="/engraduate/web/contents/GS_Academic_06_02">
+													Disciplinary Action / Expulsion / Withdrawal</a>
+											</li>
+											<li>
+												<a href="/engraduate/web/contents/GS_Academic_06_03">
+													Readmission</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="/engraduate/web/contents/GS_Academic_07_01" class="menu-depth2">
+											Completion / Graduation</a>
+										<ul class="depth3">
+											<li>
+												<a href="/engraduate/web/contents/GS_Academic_07_01">
+													Completion</a>
+											</li>
+											<li>
+												<a href="/engraduate/web/contents/GS_Academic_07_02">
+													Thesis Supervision & Examination</a>
+											</li>
+											<li>
+												<a href="/engraduate/web/contents/GS_Academic_07_03">
+													Foreign Language & Comprehensive Exams</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="/engraduate/web/contents/GS_Academic_08">
+											Graduate Research Students</a>
+								</ul>
+							</li>
+							<li>
+								<a href="/engraduate/web/contents/GS_Student-Support_01_01" class="menu-depth1">
+									Student Support</a>
+								<ul class="depth2">
+									<li>
+										<a href="/engraduate/web/contents/GS_Student-Support_01_01" class="menu-depth2">
+											Scholarships & Student Loans</a>
+										<ul class="depth3">
+											<li>
+												<a href="/engraduate/web/contents/GS_Student-Support_01_01">
+													Internal Scholarships</a>
+											</li>
+											<li>
+												<a href="/engraduate/web/contents/GS_Student-Support_01_02">
+													External Scholarships</a>
+											</li>
+											<li>
+												<a href="/engraduate/web/contents/GS_Student-Support_01_03">
+													Student Loans</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="/engraduate/web/contents/GS_Student-Support_02">
+											International Exchange</a>
+									</li>
+									<li>
+										<a href="/engraduate/web/contents/GS_Student-Support_03">
+											Dormitory</a>
+									</li>
+									<li>
+										<a href="/engraduate/web/bbs/egrad_form01/list">
+											Academic Forms</a>
+									</li>
+									<li>
+										<a href="https://cert.uos.ac.kr/icerti" class="linkNwin" title="새창"
+											target="_blank">
+											Certificate Issuance</a>
+									</li>
+									<li>
+										<a href="https://www.uos.ac.kr/kor/html/auos/prospectus/2023.do?epTicket=LOG&amp;identified=anonymous&amp;"
+											class="linkNwin" title="새창" target="_blank">
+											UOS Handbook</a>
+								</ul>
+							</li>
+							<li>
+								<a href="/engraduate/web/contents/GS_Research_01" class="menu-depth1">
+									Research</a>
+								<ul class="depth2">
+									<li>
+										<a href="/engraduate/web/contents/GS_Research_01">
+											On-Campus Research Institutions</a>
+									</li>
+									<li>
+										<a href="https://research.uos.ac.kr/r-support" class="linkNwin" title="새창"
+											target="_blank">
+											On-Campus Faculty Research Support</a>
+									</li>
+									<li>
+										<a href="/engraduate/web/contents/GS_Research_03">
+											Research Ethics Regulations</a>
+									</li>
+									<li>
+										<a href="https://www.uos.ac.kr/kor/bk21/introduce/introduce.do?menuid=2000003004011000000&amp;identified=anonymou"
+											class="linkNwin" title="새창" target="_blank">
+											BK21 Teams</a>
+								</ul>
+							</li>
+							<li>
+								<a href="/engraduate/web/bbs/egrad_not01/list" class="menu-depth1">
+									Bulletin</a>
+								<ul class="depth2">
+									<li>
+										<a href="/engraduate/web/bbs/egrad_not01/list">
+											Graduate School Notices</a>
+									</li>
+									<li>
+										<a href="/engraduate/web/contents/GS_Bulletin_02" class="linkNwin" title="새창"
+											target="_blank">
+											UOS Notices</a>
+									</li>
+									<li>
+										<a href="/engraduate/web/uosBbs/30001F5/list">
+											Student Council</a>
+									</li>
+									<li>
+										<a href="/engraduate/web/uosBbs/30001F6/list">
+											Credit Exchange</a>
+									</li>
+									<li>
+										<a href="/engraduate/web/bbs/egrad_faq02/list" class="menu-depth2">
+											FAQ</a>
+										<ul class="depth3">
+											<li>
+												<a href="/engraduate/web/bbs/egrad_faq02/list">
+													Admission</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="/engraduate/web/bbs/egrad_qna03/list">
+											Q&amp;A</a>
+									</li>
 
-<!-- <script>
+								</ul>
+							</li>
+						</ul>
+						<button type="button" class="menu-close" title="전체메뉴닫기"><span
+								class="blind">전체메뉴닫기</span></button>
+					</div><!-- .pop-content -->
+				</div>
+				<!-- //전체메뉴 -->
+			</div>
+			<!-- allMenu end -->
+
+			<!--퀵메뉴-->
+			<!--//퀵메뉴-->
+
+			<div class="overlay"></div> <!-- 헤더검색 활성화 시 깔리는 전체 overlay-->
+
+		</div> <!-- #wrap -->
+
+		<!-- <script>
 		
 	// 서울시 접속로그 스크립트
 	// GNB 로딩 스크립트
@@ -1484,4 +1377,5 @@ jQuery(function($){
 <script src="//weblog.eseoul.go.kr/wlo/js/install.js" ></script>
  -->
 </body>
+
 </html>

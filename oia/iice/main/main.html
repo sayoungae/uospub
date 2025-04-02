@@ -51,6 +51,7 @@
                             <div id="google_translate_element">
                                 <div class="skiptranslate goog-te-gadget" dir="ltr" >
                                     <div id=":0.targetLanguage"><select class="goog-te-combo" aria-label="언어 번역 위젯">
+                                            <option value="ko">한국어</option>
                                             <option value="en">영어</option>
                                             <option value="vi">베트남어</option>
                                             <option value="ja">일본어</option>
@@ -70,6 +71,11 @@
                                     </span>
                                 </button>
                                 <ul class="translation-links">
+                                    <li>
+                                        <a href="javascript:void(0)" data-lang="ko">
+                                            <span>Korea</span>
+                                        </a>
+                                    </li>
                                     <li>
                                         <a href="javascript:void(0)" data-lang="en">
                                             <span>English</span>
@@ -97,7 +103,7 @@
                             function googleTranslateElementInit() {
                                 new google.translate.TranslateElement({
                                     pageLanguage: "en",
-                                    includedLanguages: 'en,ja,zh-CN,zh-TW,vi',
+                                    includedLanguages: 'ko,en,ja,zh-CN,zh-TW,vi',
                                     autoDisplay: false
                                 },
                                     "google_translate_element"
@@ -110,7 +116,7 @@
                                     let el = event.target;
                                     if (el != null) {
                                         // a 안에 span 태그 클릭시, 부모로 올라가도록 처리
-                                        while (el.nodeName == 'SPAN') {
+                                        while (el.nodeName == 'SPAN' || el.nodeName == 'FONT') {
                                             el = el.parentElement;
                                         }
                                         const tolang = el.dataset.lang;

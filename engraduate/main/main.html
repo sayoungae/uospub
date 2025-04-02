@@ -95,7 +95,7 @@
                                 let el = event.target;
                                 if (el != null) {
                                     // a 안에 span 태그 클릭시, 부모로 올라가도록 처리
-                                    while (el.nodeName == 'SPAN') {
+                                    while (el.nodeName == 'SPAN' || el.nodeName == 'FONT') {
                                         el = el.parentElement;
                                     }
                                     const tolang = el.dataset.lang;
