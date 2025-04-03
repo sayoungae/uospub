@@ -3,7 +3,7 @@
 function googleTranslateElementInit() {
     new google.translate.TranslateElement({
         pageLanguage: "en",
-        includedLanguages: 'en,ja,zh-CN,zh-TW,vi',
+        includedLanguages: 'ko,en,ja,zh-CN,zh-TW,vi',
         autoDisplay: false
     },
         "google_translate_element"
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
         let el = event.target;
         if (el != null) {
             // a 안에 span 태그 클릭시, 부모로 올라가도록 처리
-            while (el.nodeName == 'SPAN') {
+            while (el.nodeName == 'SPAN' || el.nodeName == 'FONT') {
                 el = el.parentElement;
             }
             const tolang = el.dataset.lang;
@@ -28,19 +28,17 @@ document.addEventListener('DOMContentLoaded', function () {
                 alert('Error: Could not find Google translate Combolist.');
                 return false;
             }
+            // 리로드하지 않음 _250403
             gtcombo.value = tolang;
             gtcombo.dispatchEvent(new Event('change'));
-            if (tolang == "ko") {
-                location.reload();
-                return false;
-            }
+            return false; 
         }
         return false;
     });
 
     const dropBox = document.querySelector('.drop-box');
     const tipButton = document.querySelector('.tip button');
-
+    
     //dropBox 클릭 시 on 클래스 추가
     dropBox.addEventListener('click', function (event) {
         event.preventDefault();

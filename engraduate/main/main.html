@@ -110,7 +110,7 @@
 
                                 if (dropBox.classList.contains('expanded')) {
                                     dropBox.classList.remove('on', 'expanded');
-                                } 
+                                }
                             });
 
                             // tip 안의 버튼 클릭 시 dropBox에 expanded 추가 + on 제거
@@ -125,6 +125,7 @@
                             document.addEventListener('click', function () {
                                 dropBox.classList.remove('on', 'expanded');
                             });
+                            
                             $(document).ready(function() {
                                 if (window.history.length == 1) {
                                     document.cookie = "googtrans=; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
