@@ -233,7 +233,7 @@ body {top: 0 !important;}
 /* --font */
 
 /* header */
-#wrap{position: relative;}
+#wrap{position: relative; overflow: hidden;}
 
 
 .header .header-top{padding:20px 0; border-bottom: 1px solid #D8D8D8; font-size: 15px; position: relative; }

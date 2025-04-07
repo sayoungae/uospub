@@ -24,7 +24,7 @@
 
 
 .subWrap.snbFix #snb-wrap {width: 100%; position: fixed; left:0; top:0; z-index: 9999;}
-.content-area {padding:45px 0 90px; min-height: 600px;}
+.content-area {padding:45px 0 90px; min-height: 800px;}
 .con-prepar{padding: 60px 0; text-align: center;}
 
 
@@ -553,7 +553,7 @@ table.type02 tr.al >td{padding:10px 20px; text-align: left; vertical-align: base
 .elig-step-wrap{font-size: 15px; padding:40px 0; border-bottom:1px solid #E1E1E1;}
 .elig-step-wrap > li{ position: relative; z-index: 99;}
 .elig-step-wrap > li + li{margin-top: 20px;}
-.elig-step-wrap > li > .step-box{padding:20px 30px; background-color: #fff;}
+.elig-step-wrap > li > .step-box{padding:20px 30px; background-color: #fff; min-height: 150px;}
 .elig-step-wrap > li .step{width: 175px; height: 130px; background-image:  url("../images/eliq-step1.png");  background-repeat: no-repeat; background-size: 100% auto; position: absolute; left:24px; top:-25px;}
 .elig-step-wrap > li:nth-child(2) .step{background-image:  url("../images/eliq-step2.png"); }
 .elig-step-wrap > li:nth-child(3) .step{background-image:  url("../images/eliq-step3.png"); }
