@@ -37,7 +37,7 @@ $(function(){
         init:true,
         intialSlide:0,
         speed: 800,
-		loop: true, // 접근성시 loop 주석처리 필요
+		//loop: true, // 접근성시 loop 주석처리 필요
         slidesPerView: 1.2,
         slidesPerGroup : 1,
         spaceBetween: 10,

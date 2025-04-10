@@ -79,6 +79,9 @@ a.linkNwin {
         background-position:  96% center;
 
 }
+/* skip-nav */
+.skip-nav {position: absolute; width: 100%; left: 0;top: -30px; z-index: 100000;}
+.skip-nav a:focus, .skip-nav a:active {position: absolute; left: 0;top: 30px; height: 30px; line-height: 30px; width: 100%; text-align: center; color: #fff; background:#014195; overflow: visible; clip: unset;}
 /* 구글번역 css */
 body {top: 0 !important;}
 .skiptranslate {display: none;}

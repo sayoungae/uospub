@@ -593,7 +593,7 @@ table.type02 tr.al >td{padding:10px 20px; text-align: left; vertical-align: base
 /* 해외교류대학 */
 .Agreement-type{margin:30px 0 20px; display: flex; gap: 40px; align-items: center; flex-wrap: wrap;}
 .Agreement-type > li{display: flex; align-items: center; gap: 10px;}
-.Agreement-type > li > span{display: inline-block;width: 35px; height: 35px; text-align: center; font-weight: 700; color:#fff; background-color: #EB8A2B; border-radius: 50%; padding:7px 0;}
+.Agreement-type > li > span{display: inline-block;width: 35px; height: 35px; text-align: center; font-weight: 700; color:#fff; background-color: #4370AD; border-radius: 50%; padding:7px 0;}
 .tbl-select select{width: 100%; max-width: 300px; border: 1px solid #e4e4e4; font-size: 18px; border-radius: 5px; padding: 10px 10px;}
 /* -- 해외교류대학 */
 
