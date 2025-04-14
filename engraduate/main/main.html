@@ -103,6 +103,26 @@
                                 }
                                 return false;
                             });
+                            //20250414_추가 s
+                            //votingFrame에 title 추가
+                            const addTitleToVotingFrame = () => {
+                                const iframe = document.querySelector('iframe[name="votingFrame"]');
+                                if (iframe && !iframe.hasAttribute('title')) {
+                                    //iframe.setAttribute('title', 'Google 번역 평가용 프레임'); //국문
+                                    iframe.setAttribute('title', 'Google Translate Feedback Frame'); //영문
+                                }
+                            };
+
+                            // DOM에 iframe이 나중에 삽입되므로 MutationObserver 사용
+                            const observer = new MutationObserver(() => {
+                                addTitleToVotingFrame();
+                            });
+
+                            observer.observe(document.body, { childList: true, subtree: true });
+
+                            // 또는 일정 시간 간격으로 재확인 (보조용)
+                            setInterval(addTitleToVotingFrame, 2000);
+                            //20250414_추가 e
 
                             const dropBox = document.querySelector('.drop-box');
                             const tipButton = document.querySelector('.tip button');
