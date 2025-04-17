@@ -384,6 +384,10 @@
 .faq-list-box .tag{display: flex; justify-content: center;  align-items: center; width: 40px; height: 40px; margin-right: 20px; border-radius: 50%;font-size: 17px; font-weight: bold;}
 .faq-list-box dt .tag {background: #ebe6e3; color: #0C2E86;}
 .faq-list-box dd .tag {background: #0C2E86; color: #fff; float: left;}
+
+.downFile{margin-top: 20px;}
+.downFile .fileList li+li{margin-top: 10px;}
+.faq-answer .downFile .file-down{background: url("../images/icon_file2.png") no-repeat; padding-left: 28px;}
 /* --faq */
 /* -- boards */
 /* paging */
