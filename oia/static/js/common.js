@@ -202,8 +202,47 @@ $(document).ready(function(){
 			}
 		},100);
 	});
-	
-	
+
+	//layer popup 250417
+	document.querySelectorAll('.close-btn').forEach(function(btn) {
+		btn.addEventListener('click', function () {
+		const currentPopup = btn.closest('.layer-popup');
+
+		if (currentPopup) {
+			// fade out 효과 주기
+			currentPopup.classList.add('hide');
+
+			// 애니메이션 끝나면 display: none 처리
+			currentPopup.addEventListener('transitionend', function handler() {
+				currentPopup.style.display = 'none';
+				currentPopup.removeEventListener('transitionend', handler);
+
+				// 남은 팝업들 중 보여지는 게 있는지 확인
+				const allPopups = document.querySelectorAll('.layer-popup');
+				const visiblePopups = Array.from(allPopups).filter(p => 
+					p.style.display !== 'none'
+				);
+
+				// 마지막 팝업도 닫히면 layer-popup-wrap' 숨김
+				if (visiblePopups.length === 0) {
+					const popupWrap = document.querySelector('.layer-popup-wrap');
+					if (wrap) {
+						popupWrap.style.display = 'none';
+					}
+				}
+			});
+		}
+		});
+  	});
+
+	//tab-popup
+	document.querySelectorAll('.tab_pop_close').forEach(function(btn){
+		btn.addEventListener('click', function () {
+			const tabPopup = btn.closest('.tab-popup-wrap');
+			tabPopup.style.display='none';
+		})
+
+	})
 });
 
 
@@ -331,5 +370,7 @@ window.addEventListener("DOMContentLoaded", () => {
 	}
 	popOpen();
 	popClose();
+
+	
 });
 
