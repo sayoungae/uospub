@@ -1,0 +1,238 @@
+@charset "utf-8";
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    /*iOS와 IE에서 기기 회전시에 사용자가 확대하지 않아도 글씨 크기가 재조정되는 것을 예방.*/
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, select {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+    box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+caption{position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); margin: -1px;}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+img {
+    vertical-align: top;
+    border: 0;
+    max-width: 100%;
+}
+strong {
+	font-weight: bold;
+}
+
+b {
+    font-weight: bold;
+}
+
+button {
+    cursor: pointer;
+    border: 0;
+    background-color: transparent;
+    overflow: visible; /** * IE 8/9/10/11에서 `overflow` 속성값이 `hidden`으로 설정되어 있는 것을 수정 */
+}
+
+/** * `button`과 `select` 요소에 `text-transform` 상속이 일치하지 않는 것을 해결 */
+button,
+select {
+    text-transform: none;
+}
+
+/** 
+    * 1. Android 4.0.*에서 `audio`와 `video` 컨트롤을 파괴하는 웹킷 버그를 방지. 
+    * 2. iOS에서 클릭가능한 `input` 유형에 스타일링을 할 수 없는 것을 수정.
+    * 3. `input` 요소와 다른 요소들의 image-type의 커서 모양을 일치시켜 가용성을 향상. * `input` and others. 
+**/
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    cursor: pointer;
+    /* 3 */
+}
+
+/** * disabled된 요소의 기본 커서를 재설정 */
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+/** * Firefox 4+에서 내부 `padding`과 `border`를 제거 */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/** * Firefox 4+에서 UA(User Agent) 스타일시트에 `!important`를 사용한 `input` 요소의 * `line-height` 설정값을 해결. */
+input {
+    line-height: normal;
+}
+
+/**
+ * 1. IE 8/9/10에서 box sizing 속성값을 `content-box`에서 `border-box`로 변경 
+ * 2. IE 8/9/10에서 영역을 벗어나지 않도록 `padding`을 제거 
+**/
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box;
+    /* 1 */
+    padding: 0;
+    /* 2 */
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    color: inherit;
+    /* 1 */
+    font: inherit;
+    /* 2 */
+    margin: 0;
+    /* 3 */
+    /* textarea */
+    resize: none;
+}
+
+/* fonts */
+@font-face {
+    font-family: 'S-Core';
+    src: url('../fonts/S-Core1.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-Core';
+    src: url('../fonts/S-Core2.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-Core';
+    src: url('../fonts/S-Core3.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-Core';
+    src: url('../fonts/S-Core4.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-Core';
+    src: url('../fonts/S-Core5.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-Core';
+    src: url('../fonts/S-Core6.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-Core';
+    src: url('../fonts/S-Core7.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-Core';
+    src: url('../fonts/S-Core8.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-Core';
+    src: url('../fonts/S-Core9.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Britannic-Bold';
+    src: url('../fonts/OPTIBritannic-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+/* -- fonts */
+
+/*전체 공통*/
+input::placeholder{color:#757575; font-size: 14px;}
+a, span, b, strong{display: inline-block;}
+
+body{font-weight: 400; min-width: 320px; line-height: 1.4; font-family: 'S-Core'; letter-spacing: -0.02em;  }
+.blind {position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); margin: -1px;}
+.clearfix:after{content: "";display: block;height: 0;clear: both;visibility: hidden;}
+a.linkNwin {
+    background-image: url(".../images/nWindow_ic.png");
+    background-repeat: no-repeat;
+    background-position:  96% center;
+
+}
+
+.intro-wrap{background-image: url("../images/bg_body.png");}
+.intro-box{ min-height: 650px; position: relative; z-index: 99;}
+.intro-wrap .cont{max-width: 1024px; margin:0 auto; padding:0 40px;}
+.intro-tit{text-align: center; padding:40px 0 ;}
+.intro-link{display: flex; align-items: center; justify-content: center; gap: 20px; margin-bottom: 60px;}
+.intro-link > li{width:430px; padding-top: 368px; background-position: center center; background-repeat: no-repeat; position: relative; border-radius: 5px; overflow: hidden; background-size: cover; }
+.intro-link .koia{background-image: url("../images/img_01.png");}
+.intro-link .oia{background-image: url("../images/img_02.png");}
+.intro-link > li >a{position: absolute; right: 0; bottom: 0; padding:20px 60px 40px 20px; background-color: rgba(112, 163, 143,0.6);color:#fff; font-size: var(--fz-18); border-radius: 5px 0 0 0; background-image: url("../images/arrw01.png"); background-repeat: no-repeat; background-position: right 20px bottom 20px; transition: all 0.3s;}
+
+.intro-link > li >a:hover,.intro-link > li >a:focus{background-color: rgba(112, 163, 143,1); background-position: right 10px bottom 20px;}
+
+.intro-box::before{content:""; display: inline-block; width: 297px; height: 204px; background-image: url("../images/bg_01.png"); position: absolute; right: 0; top:0; z-index: -1;}
+.intro-box::after{content:""; display: inline-block; width: 491px; height: 230px; background-image: url("../images/bg_02.png"); position: absolute; left: 0; bottom:0; z-index: -1;}
+
+
+.address-box{text-align: center; padding:46px 0; background-color: #333;}
+.address-box .info01{color:#fff; font-weight: 500;}
+.address-box .info02{color: rgb(116, 116, 116); margin-top: 20px; font-size: 14px;}
+@media (max-width: 670px) { 
+    .intro-link{flex-direction: column;}
+    .intro-link > li{padding-top: 200px; background-position: center top; width: 100%; max-width: 430px;}
+    .address-box .info02{font-size: 13px;}
+    .intro-box::before,.intro-box::after{display: none}
+
+}

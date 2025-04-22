@@ -191,6 +191,12 @@
 
 .btn-wrap .btnSm{display: block;  border-radius: 5px; font-size: var(--fz-16); padding:8px 20px; background-color: #2241B6; color:#fff;}
 .btn-wrap .btnSm > span{display: inline-block;}
+/* 수정 250418 */
+.btn-wrap .btnSm.ty2{ background-color:#0E6D92 ; color: #fff;}
+.btn-wrap .btnSm.ty2:hover,.btn-wrap .btnSm.ty2:focus{ background-color: #147B99 ;}
+/* 삭제 */
+.btn-wrap .btnSm.ty3{ background-color:#D9534F ; color: #fff;}
+.btn-wrap .btnSm.ty3:hover,.btn-wrap .btnSm.ty3:focus{ background-color:#C9302C ;}
 /* -- 버튼 */
 /* tab */
 .tab-area{width: 100%;}
