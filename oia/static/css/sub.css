@@ -421,6 +421,9 @@ table.type02 tr.al >td{padding:10px 20px; text-align: left; vertical-align: base
 /* active*/
 .accordion-header > .tit-list > li > .btn-accordion.active:after{transform: rotate(180deg); }
 .accordion-body.active{max-height: 100vh;}
+/* 등록된 글없을때 */
+.accordion-item:not(:has(.accordion-header)),
+.accordion-item:not(:has(.accordion-body)){text-align: center; padding:20px;}
 /* -- faq accordion */
 /* -- 공통  */
 
