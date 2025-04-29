@@ -70,7 +70,7 @@
 input::placeholder{color:#757575; font-size: 14px;}
 a, span, b, strong{display: inline-block;}
 
-body{font-weight: 400; min-width: 320px; line-height: 1.4; font-family: 'S-Core'; letter-spacing: -0.02em;  }
+body{font-weight: 400; min-width: 320px; line-height: 1.4; font-family: 'S-Core'; letter-spacing: -0.02em; min-height: 100%; overflow-x: hidden;}
 .blind {position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); margin: -1px;}
 .clearfix:after{content: "";display: block;height: 0;clear: both;visibility: hidden;}
 a.linkNwin {

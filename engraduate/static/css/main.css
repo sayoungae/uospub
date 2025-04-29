@@ -1,5 +1,5 @@
 
-.m-container{padding-top: 156px;}
+.m-container{padding-top: 156px; width: 100%;}
 .m-content{padding:70px 0;}
 .m-tit{font-size: 36px; font-weight: 600; padding-left: 20px; position: relative; margin-bottom: 40px;}
 .m-tit.whc{color:#fff}

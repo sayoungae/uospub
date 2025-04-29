@@ -62,10 +62,11 @@
 /*전체 공통*/
 input::placeholder{color:#757575; font-size: 14px;}
 a, span, b, strong{display: inline-block;}
-body{font-weight: 400; min-width: 320px; line-height: 1.4; font-family: 'Pretendard'; color:#333;}
+body{font-weight: 400; min-width: 320px; line-height: 1.4; font-family: 'Pretendard'; color:#333; min-height: 100%; overflow-x: hidden;}
 .blind {position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); margin: -1px;}
 .clearfix:after{content: "";display: block;height: 0;clear: both;visibility: hidden;}
 .hide{display: none;}
+#wrap { min-height: 100%;}
 /* skip-nav */
 .skip-nav {position: absolute; width: 100%; left: 0;top: -30px; z-index: 100000;}
 .skip-nav a:focus, .skip-nav a:active {position: absolute; left: 0;top: 30px; height: 30px; line-height: 30px; width: 100%; text-align: center; color: #fff; background:#014195; overflow: visible; clip: unset;}
