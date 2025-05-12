@@ -72,31 +72,28 @@
                             
                             <div class="drop-box">
                                 <button type="button" class="openLanguageG" title="Close Language">
-                                    <span>
-                                        Google Trans.
-                                    </span>
+                                    <img src="../../static/images/google_txt.png" alt="Google trans">
                                 </button>
                                 <ul class="translation-links">
                                     <li>
                                         <a href="javascript:void(0)" data-lang="ko">
-                                            <span>Korea</span>
+                                            <img src="../../static/images/korea_txt.png" alt="한국어">
                                         </a>
                                     </li>
                                     <li>
                                         <a href="javascript:void(0)" data-lang="en">
-                                            <span>English</span>
+                                            <img src="../../static/images/english_txt.png" alt="English">
                                         </a>
                                     </li>
-                                    <li><a href="javascript:void(0)" data-lang="vi">
-                                        <span>Vietnamese</span>
-                                    </a></li>
-                                    <li><a href="javascript:void(0)" data-lang="ja">
-                                        <span>Japanese</span>
-                                    </a></li>
                                     <li><a href="javascript:void(0)" data-lang="zh-CN">
-                                            <span>Chinese</span>
-                                        </a>
-                                    </li>                                    
+                                            <img src="../../static/images/chinese_txt.png" alt="中文">
+                                        </a></li>
+                                    <li><a href="javascript:void(0)" data-lang="vi">
+                                            <img src="../../static/images/vietnamese_txt.png" alt="Tiếng Việt">
+                                        </a></li>
+                                    <li><a href="javascript:void(0)" data-lang="ja">
+                                            <img src="../../static/images/japanese_txt.png" alt="日本語">
+                                        </a></li>
                                 </ul>
                                 <div class="tip">
                                     <p>This provides an unofficial translation by the Google Trans.</p>
@@ -122,7 +119,7 @@
                                     let el = event.target;
                                     if (el != null) {
                                         // a 안에 span 태그 클릭시, 부모로 올라가도록 처리
-                                        while (el.nodeName == 'SPAN' || el.nodeName == 'FONT') {
+                                        while (el.nodeName == 'IMG' || el.nodeName == 'SPAN' || el.nodeName == 'FONT') {
                                             el = el.parentElement;
                                         }
                                         const tolang = el.dataset.lang;
